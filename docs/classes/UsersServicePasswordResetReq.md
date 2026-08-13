@@ -2,7 +2,11 @@
 
 # Class: UsersServicePasswordResetReq
 
-Describes the message that is required to reset a user's password through an email
+Request message used to safely initiate an asynchronous user password recovery and reset sequence via email.
+
+**Side Effects:**
+- Generates a secure, short-lived single-use cryptographic verification token.
+- Dispatches a automated recovery email containing a deep-linked "magic link" to the user's primary registered address.
 
 **`Generated`**
 
@@ -67,23 +71,41 @@ Message\&lt;UsersServicePasswordResetReq\&gt;.constructor
 
 #### Defined in
 
-[src/users.scailo_pb.ts:2446](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L2446)
+[src/users.scailo_pb.ts:3439](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L3439)
 
 ## Properties
 
 ### domainPrefix
 
-• **domainPrefix**: `string` = `""`
+• `Optional` **domainPrefix**: `string`
 
-The optional domain prefix that is used to generate the magic link that will allow the user to update the password. If this is empty, then the default authless access domain is used. This is useful in case of password redirections need to happen at custom domains.
+**`Optional`**
+
+**`Description`**
+
+A custom domain prefix or external FQDN string used to override standard redirect endpoints when constructing the recovery link.
+
+**`Example`**
+
+```ts
+"https://users.acme.com/auth/reset"
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+If omitted, the system defaults to the pre-configured authless gateway domain. Highly recommended when integrating white-labeled portals.
 
 **`Generated`**
 
-from field: string domain_prefix = 20;
+from field: optional string domain_prefix = 20;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:2444](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L2444)
+[src/users.scailo_pb.ts:3437](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L3437)
 
 ___
 
@@ -91,7 +113,25 @@ ___
 
 • **username**: `string` = `""`
 
-The username of the user
+**`Mandatory`**
+
+**`Description`**
+
+The unique system-level login alias matching the account requiring a password recovery event.
+
+**`Example`**
+
+```ts
+"jane.doe"
+```
+
+**`Regex`**
+
+.+
+
+**`Format`**
+
+Must be a non-empty string.
 
 **`Generated`**
 
@@ -99,7 +139,7 @@ from field: string username = 10;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:2437](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L2437)
+[src/users.scailo_pb.ts:3421](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L3421)
 
 ___
 
@@ -109,7 +149,7 @@ ___
 
 #### Defined in
 
-[src/users.scailo_pb.ts:2453](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L2453)
+[src/users.scailo_pb.ts:3446](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L3446)
 
 ___
 
@@ -119,7 +159,7 @@ ___
 
 #### Defined in
 
-[src/users.scailo_pb.ts:2451](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L2451)
+[src/users.scailo_pb.ts:3444](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L3444)
 
 ___
 
@@ -129,7 +169,7 @@ ___
 
 #### Defined in
 
-[src/users.scailo_pb.ts:2452](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L2452)
+[src/users.scailo_pb.ts:3445](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L3445)
 
 ## Methods
 
@@ -417,7 +457,7 @@ ___
 
 #### Defined in
 
-[src/users.scailo_pb.ts:2470](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L2470)
+[src/users.scailo_pb.ts:3463](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L3463)
 
 ___
 
@@ -438,7 +478,7 @@ ___
 
 #### Defined in
 
-[src/users.scailo_pb.ts:2458](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L2458)
+[src/users.scailo_pb.ts:3451](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L3451)
 
 ___
 
@@ -459,7 +499,7 @@ ___
 
 #### Defined in
 
-[src/users.scailo_pb.ts:2462](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L2462)
+[src/users.scailo_pb.ts:3455](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L3455)
 
 ___
 
@@ -480,4 +520,4 @@ ___
 
 #### Defined in
 
-[src/users.scailo_pb.ts:2466](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L2466)
+[src/users.scailo_pb.ts:3459](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L3459)

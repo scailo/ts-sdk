@@ -2,7 +2,11 @@
 
 # Class: GoodsDispatchesServiceCreateRequest
 
-Describes the parameters necessary to create a record
+Request message for defining and initiating a new Goods Dispatch record within the system.
+This record represents the physical fulfillment, packing, and outbound shipping of products
+to a buyer. It is heavily constrained by its parent source document (e.g., a Sales Order),
+ensuring that the warehouse or fulfillment center only dispatches quantities that have been formally
+negotiated and approved.
 
 **`Generated`**
 
@@ -73,13 +77,13 @@ Message\&lt;GoodsDispatchesServiceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:380](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L380)
+[src/goods_dispatches.scailo_pb.ts:432](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L432)
 
 ## Properties
 
 ### entityUuid
 
-• **entityUuid**: `string` = `""`
+• `Optional` **entityUuid**: `string`
 
 **`Optional`**
 
@@ -103,11 +107,11 @@ If provided, must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
-from field: string entity_uuid = 1;
+from field: optional string entity_uuid = 1;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:311](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L311)
+[src/goods_dispatches.scailo_pb.ts:320](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L320)
 
 ___
 
@@ -115,7 +119,21 @@ ___
 
 • **formData**: [`FormFieldDatumCreateRequest`](FormFieldDatumCreateRequest.md)[] = `[]`
 
-The list of dynamic forms
+**`Optional`**
+
+**`Description`**
+
+A collection of dynamic form fields for organization-specific data.
+
+**`Example`**
+
+```ts
+[]
+```
+
+**`Format`**
+
+An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
 
 **`Generated`**
 
@@ -123,7 +141,7 @@ from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:378](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L378)
+[src/goods_dispatches.scailo_pb.ts:430](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L430)
 
 ___
 
@@ -131,7 +149,25 @@ ___
 
 • **locationId**: `bigint` = `protoInt64.zero`
 
-The location ID of where the record is created
+**`Mandatory`**
+
+**`Description`**
+
+The unique internal identifier of the physical location, warehouse, or fulfillment center from which these goods are being picked, packed, and dispatched.
+
+**`Example`**
+
+```ts
+42
+```
+
+**`Regex`**
+
+^[1-9][0-9]*$
+
+**`Format`**
+
+Unsigned 64-bit integer greater than 0.
 
 **`Generated`**
 
@@ -139,7 +175,7 @@ from field: uint64 location_id = 15;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:371](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L371)
+[src/goods_dispatches.scailo_pb.ts:416](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L416)
 
 ___
 
@@ -147,7 +183,25 @@ ___
 
 • **refFrom**: [`GOODS_DISPATCH_REF_FROM`](../enums/GOODS_DISPATCH_REF_FROM.md) = `GOODS_DISPATCH_REF_FROM.GOODS_DISPATCH_REF_FROM_ANY_UNSPECIFIED`
 
-The associated reference
+**`Mandatory`**
+
+**`Description`**
+
+The specific module or record type from which this physical fulfillment operation originates (e.g., Sales Order).
+
+**`Example`**
+
+```ts
+"GOODS_DISPATCH_REF_FROM_SALES_ORDER"
+```
+
+**`Regex`**
+
+^[A-Z_]+$
+
+**`Format`**
+
+Valid GOODS_DISPATCH_REF_FROM enum value. Cannot be unspecified (0).
 
 **`Generated`**
 
@@ -155,7 +209,7 @@ from field: Scailo.GOODS_DISPATCH_REF_FROM ref_from = 12;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:357](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L357)
+[src/goods_dispatches.scailo_pb.ts:384](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L384)
 
 ___
 
@@ -163,7 +217,25 @@ ___
 
 • **refId**: `bigint` = `protoInt64.zero`
 
-The associated ID of the reference
+**`Mandatory`**
+
+**`Description`**
+
+The unique internal identifier of the specific referenced source document (e.g., the ID of the actual Sales Order dictating this fulfillment).
+
+**`Example`**
+
+```ts
+1024
+```
+
+**`Regex`**
+
+^[1-9][0-9]*$
+
+**`Format`**
+
+Unsigned 64-bit integer greater than 0.
 
 **`Generated`**
 
@@ -171,7 +243,7 @@ from field: uint64 ref_id = 13;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:364](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L364)
+[src/goods_dispatches.scailo_pb.ts:400](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L400)
 
 ___
 
@@ -205,29 +277,47 @@ from field: string reference_id = 10;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:350](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L350)
+[src/goods_dispatches.scailo_pb.ts:368](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L368)
 
 ___
 
 ### userComment
 
-• **userComment**: `string` = `""`
+• `Optional` **userComment**: `string`
 
-Stores any comment that the user might add during this operation
+**`Optional`**
+
+**`Description`**
+
+Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+
+**`Example`**
+
+```ts
+"This is a comment for audit purposes."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
-from field: string user_comment = 2;
+from field: optional string user_comment = 2;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:318](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L318)
+[src/goods_dispatches.scailo_pb.ts:336](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L336)
 
 ___
 
 ### vaultFolderId
 
-• **vaultFolderId**: `bigint` = `protoInt64.zero`
+• `Optional` **vaultFolderId**: `bigint`
 
 **`Optional`**
 
@@ -251,11 +341,11 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 vault_folder_id = 9;
+from field: optional uint64 vault_folder_id = 9;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:334](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L334)
+[src/goods_dispatches.scailo_pb.ts:352](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L352)
 
 ___
 
@@ -265,7 +355,7 @@ ___
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:387](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L387)
+[src/goods_dispatches.scailo_pb.ts:439](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L439)
 
 ___
 
@@ -275,7 +365,7 @@ ___
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:385](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L385)
+[src/goods_dispatches.scailo_pb.ts:437](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L437)
 
 ___
 
@@ -285,7 +375,7 @@ ___
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:386](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L386)
+[src/goods_dispatches.scailo_pb.ts:438](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L438)
 
 ## Methods
 
@@ -573,7 +663,7 @@ ___
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:410](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L410)
+[src/goods_dispatches.scailo_pb.ts:462](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L462)
 
 ___
 
@@ -594,7 +684,7 @@ ___
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:398](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L398)
+[src/goods_dispatches.scailo_pb.ts:450](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L450)
 
 ___
 
@@ -615,7 +705,7 @@ ___
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:402](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L402)
+[src/goods_dispatches.scailo_pb.ts:454](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L454)
 
 ___
 
@@ -636,4 +726,4 @@ ___
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:406](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L406)
+[src/goods_dispatches.scailo_pb.ts:458](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L458)

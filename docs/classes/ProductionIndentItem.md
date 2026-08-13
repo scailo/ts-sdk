@@ -73,7 +73,7 @@ Message\&lt;ProductionIndentItem\&gt;.constructor
 
 #### Defined in
 
-[src/production_indents.scailo_pb.ts:992](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/production_indents.scailo_pb.ts#L992)
+[src/production_indents.scailo_pb.ts:1065](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/production_indents.scailo_pb.ts#L1065)
 
 ## Properties
 
@@ -91,7 +91,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-[src/production_indents.scailo_pb.ts:954](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/production_indents.scailo_pb.ts#L954)
+[src/production_indents.scailo_pb.ts:1023](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/production_indents.scailo_pb.ts#L1023)
 
 ___
 
@@ -115,7 +115,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-[src/production_indents.scailo_pb.ts:938](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/production_indents.scailo_pb.ts#L938)
+[src/production_indents.scailo_pb.ts:1007](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/production_indents.scailo_pb.ts#L1007)
 
 ___
 
@@ -131,7 +131,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-[src/production_indents.scailo_pb.ts:983](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/production_indents.scailo_pb.ts#L983)
+[src/production_indents.scailo_pb.ts:1056](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/production_indents.scailo_pb.ts#L1056)
 
 ___
 
@@ -147,7 +147,7 @@ from field: uint64 internal_quantity = 12;
 
 #### Defined in
 
-[src/production_indents.scailo_pb.ts:990](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/production_indents.scailo_pb.ts#L990)
+[src/production_indents.scailo_pb.ts:1063](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/production_indents.scailo_pb.ts#L1063)
 
 ___
 
@@ -165,7 +165,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-[src/production_indents.scailo_pb.ts:946](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/production_indents.scailo_pb.ts#L946)
+[src/production_indents.scailo_pb.ts:1015](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/production_indents.scailo_pb.ts#L1015)
 
 ___
 
@@ -175,7 +175,17 @@ ___
 
 **`Description`**
 
-The approval state of the record
+A boolean flag indicating whether this specific record requires further administrative approval.
+
+**`Example`**
+
+```ts
+false
+```
+
+**`Format`**
+
+Boolean true or false.
 
 **`Generated`**
 
@@ -183,7 +193,7 @@ from field: bool need_approval = 4;
 
 #### Defined in
 
-[src/production_indents.scailo_pb.ts:962](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/production_indents.scailo_pb.ts#L962)
+[src/production_indents.scailo_pb.ts:1035](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/production_indents.scailo_pb.ts#L1035)
 
 ___
 
@@ -199,7 +209,7 @@ from field: uint64 production_indent_id = 10;
 
 #### Defined in
 
-[src/production_indents.scailo_pb.ts:976](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/production_indents.scailo_pb.ts#L976)
+[src/production_indents.scailo_pb.ts:1049](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/production_indents.scailo_pb.ts#L1049)
 
 ___
 
@@ -215,7 +225,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-[src/production_indents.scailo_pb.ts:969](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/production_indents.scailo_pb.ts#L969)
+[src/production_indents.scailo_pb.ts:1042](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/production_indents.scailo_pb.ts#L1042)
 
 ___
 
@@ -225,7 +235,7 @@ ___
 
 #### Defined in
 
-[src/production_indents.scailo_pb.ts:999](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/production_indents.scailo_pb.ts#L999)
+[src/production_indents.scailo_pb.ts:1072](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/production_indents.scailo_pb.ts#L1072)
 
 ___
 
@@ -235,7 +245,7 @@ ___
 
 #### Defined in
 
-[src/production_indents.scailo_pb.ts:997](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/production_indents.scailo_pb.ts#L997)
+[src/production_indents.scailo_pb.ts:1070](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/production_indents.scailo_pb.ts#L1070)
 
 ___
 
@@ -245,7 +255,7 @@ ___
 
 #### Defined in
 
-[src/production_indents.scailo_pb.ts:998](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/production_indents.scailo_pb.ts#L998)
+[src/production_indents.scailo_pb.ts:1071](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/production_indents.scailo_pb.ts#L1071)
 
 ## Methods
 
@@ -533,7 +543,7 @@ ___
 
 #### Defined in
 
-[src/production_indents.scailo_pb.ts:1022](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/production_indents.scailo_pb.ts#L1022)
+[src/production_indents.scailo_pb.ts:1095](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/production_indents.scailo_pb.ts#L1095)
 
 ___
 
@@ -554,7 +564,7 @@ ___
 
 #### Defined in
 
-[src/production_indents.scailo_pb.ts:1010](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/production_indents.scailo_pb.ts#L1010)
+[src/production_indents.scailo_pb.ts:1083](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/production_indents.scailo_pb.ts#L1083)
 
 ___
 
@@ -575,7 +585,7 @@ ___
 
 #### Defined in
 
-[src/production_indents.scailo_pb.ts:1014](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/production_indents.scailo_pb.ts#L1014)
+[src/production_indents.scailo_pb.ts:1087](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/production_indents.scailo_pb.ts#L1087)
 
 ___
 
@@ -596,4 +606,4 @@ ___
 
 #### Defined in
 
-[src/production_indents.scailo_pb.ts:1018](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/production_indents.scailo_pb.ts#L1018)
+[src/production_indents.scailo_pb.ts:1091](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/production_indents.scailo_pb.ts#L1091)

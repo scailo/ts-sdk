@@ -2,7 +2,7 @@
 
 # Class: TeamsServicePaginationReq
 
-Describes a pagination request to retrieve records
+Pagination request for retrieving slices of Team records.
 
 **`Generated`**
 
@@ -71,7 +71,7 @@ Message\&lt;TeamsServicePaginationReq\&gt;.constructor
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:992](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/teams.scailo_pb.ts#L992)
+[src/teams.scailo_pb.ts:1202](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/teams.scailo_pb.ts#L1202)
 
 ## Properties
 
@@ -105,13 +105,13 @@ from field: int64 count = 2;
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:945](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/teams.scailo_pb.ts#L945)
+[src/teams.scailo_pb.ts:1150](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/teams.scailo_pb.ts#L1150)
 
 ___
 
 ### isActive
 
-• **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
+• `Optional` **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md)
 
 **`Optional`**
 
@@ -127,17 +127,17 @@ ANY
 
 **`Generated`**
 
-from field: Scailo.BOOL_FILTER is_active = 1;
+from field: optional Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:929](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/teams.scailo_pb.ts#L929)
+[src/teams.scailo_pb.ts:1134](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/teams.scailo_pb.ts#L1134)
 
 ___
 
 ### offset
 
-• **offset**: `bigint` = `protoInt64.zero`
+• `Optional` **offset**: `bigint`
 
 **`Optional`**
 
@@ -161,17 +161,17 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 offset = 3;
+from field: optional uint64 offset = 3;
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:961](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/teams.scailo_pb.ts#L961)
+[src/teams.scailo_pb.ts:1166](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/teams.scailo_pb.ts#L1166)
 
 ___
 
 ### sortKey
 
-• **sortKey**: [`TEAM_SORT_KEY`](../enums/TEAM_SORT_KEY.md) = `TEAM_SORT_KEY.TEAM_SORT_KEY_ID_UNSPECIFIED`
+• `Optional` **sortKey**: [`TEAM_SORT_KEY`](../enums/TEAM_SORT_KEY.md)
 
 **`Optional`**
 
@@ -181,17 +181,17 @@ The specific field key to sort the results by.
 
 **`Generated`**
 
-from field: Scailo.TEAM_SORT_KEY sort_key = 5;
+from field: optional Scailo.TEAM_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:983](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/teams.scailo_pb.ts#L983)
+[src/teams.scailo_pb.ts:1188](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/teams.scailo_pb.ts#L1188)
 
 ___
 
 ### sortOrder
 
-• **sortOrder**: [`SORT_ORDER`](../enums/SORT_ORDER.md) = `SORT_ORDER.ASCENDING_UNSPECIFIED`
+• `Optional` **sortOrder**: [`SORT_ORDER`](../enums/SORT_ORDER.md)
 
 **`Optional`**
 
@@ -207,27 +207,37 @@ DESCENDING
 
 **`Generated`**
 
-from field: Scailo.SORT_ORDER sort_order = 4;
+from field: optional Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:973](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/teams.scailo_pb.ts#L973)
+[src/teams.scailo_pb.ts:1178](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/teams.scailo_pb.ts#L1178)
 
 ___
 
 ### status
 
-• **status**: [`STANDARD_LIFECYCLE_STATUS`](../enums/STANDARD_LIFECYCLE_STATUS.md) = `STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED`
+• `Optional` **status**: [`STANDARD_LIFECYCLE_STATUS`](../enums/STANDARD_LIFECYCLE_STATUS.md)
 
-The status of this team
+**`Optional`**
+
+**`Description`**
+
+Filter results by a specific lifecycle status.
+
+**`Example`**
+
+```ts
+STANDING
+```
 
 **`Generated`**
 
-from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
+from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:990](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/teams.scailo_pb.ts#L990)
+[src/teams.scailo_pb.ts:1200](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/teams.scailo_pb.ts#L1200)
 
 ___
 
@@ -237,7 +247,7 @@ ___
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:999](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/teams.scailo_pb.ts#L999)
+[src/teams.scailo_pb.ts:1209](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/teams.scailo_pb.ts#L1209)
 
 ___
 
@@ -247,7 +257,7 @@ ___
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:997](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/teams.scailo_pb.ts#L997)
+[src/teams.scailo_pb.ts:1207](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/teams.scailo_pb.ts#L1207)
 
 ___
 
@@ -257,7 +267,7 @@ ___
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:998](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/teams.scailo_pb.ts#L998)
+[src/teams.scailo_pb.ts:1208](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/teams.scailo_pb.ts#L1208)
 
 ## Methods
 
@@ -545,7 +555,7 @@ ___
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:1020](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/teams.scailo_pb.ts#L1020)
+[src/teams.scailo_pb.ts:1230](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/teams.scailo_pb.ts#L1230)
 
 ___
 
@@ -566,7 +576,7 @@ ___
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:1008](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/teams.scailo_pb.ts#L1008)
+[src/teams.scailo_pb.ts:1218](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/teams.scailo_pb.ts#L1218)
 
 ___
 
@@ -587,7 +597,7 @@ ___
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:1012](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/teams.scailo_pb.ts#L1012)
+[src/teams.scailo_pb.ts:1222](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/teams.scailo_pb.ts#L1222)
 
 ___
 
@@ -608,4 +618,4 @@ ___
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:1016](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/teams.scailo_pb.ts#L1016)
+[src/teams.scailo_pb.ts:1226](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/teams.scailo_pb.ts#L1226)

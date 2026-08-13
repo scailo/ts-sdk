@@ -3,7 +3,9 @@ import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, Ident
 import { MethodKind } from "@bufbuild/protobuf";
 /**
  *
- * Describes the common methods applicable on each location
+ * The LocationsService manages the full lifecycle of locations.
+ * It provides standard CRUD operations alongside a robust state machine for
+ * verification, manager approval, and completion.
  *
  * @generated from service Scailo.LocationsService
  */
@@ -11,7 +13,18 @@ export declare const LocationsService: {
     readonly typeName: "Scailo.LocationsService";
     readonly methods: {
         /**
-         * Create and send for verification
+         * Creates a new record and immediately moves it to the verification workflow.
+         *
+         * This method validates all required fields.
+         * The record is created with a `STANDARD_LIFECYCLE_STATUS.PREVERIFY` status.
+         *
+         * **Side Effects:**
+         * - Generates a unique system UUID.
+         * - Records an audit log for the "Create" action.
+         * - May trigger automated verification workflows.
+         *
+         * **Errors:**
+         * - `INVALID_ARGUMENT`: If validation rules fail.
          *
          * @generated from rpc Scailo.LocationsService.Create
          */
@@ -257,7 +270,12 @@ export declare const LocationsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View by location's code (logs aren't returned)
+         * Retrieves a single record via the assigned internal code.
+         *
+         * **Note:** High-volume compliance data, audit records, and system logs are excluded from the response payload.
+         *
+         * **Errors:**
+         * - `NOT_FOUND`: If the provided internal code does not exist.
          *
          * @generated from rpc Scailo.LocationsService.ViewByCode
          */

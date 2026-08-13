@@ -67,7 +67,7 @@ Message\&lt;InwardJobsServiceAutofillRequest\&gt;.constructor
 
 #### Defined in
 
-[src/inward_jobs.scailo_pb.ts:685](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/inward_jobs.scailo_pb.ts#L685)
+[src/inward_jobs.scailo_pb.ts:735](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/inward_jobs.scailo_pb.ts#L735)
 
 ## Properties
 
@@ -75,7 +75,25 @@ Message\&lt;InwardJobsServiceAutofillRequest\&gt;.constructor
 
 • **userComment**: `string` = `""`
 
-Stores any comment that the user might add during this operation
+**`Optional`**
+
+**`Description`**
+
+Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+
+**`Example`**
+
+```ts
+"This is a comment for audit purposes."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
@@ -83,7 +101,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-[src/inward_jobs.scailo_pb.ts:676](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/inward_jobs.scailo_pb.ts#L676)
+[src/inward_jobs.scailo_pb.ts:726](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/inward_jobs.scailo_pb.ts#L726)
 
 ___
 
@@ -99,7 +117,7 @@ from field: string uuid = 2;
 
 #### Defined in
 
-[src/inward_jobs.scailo_pb.ts:683](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/inward_jobs.scailo_pb.ts#L683)
+[src/inward_jobs.scailo_pb.ts:733](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/inward_jobs.scailo_pb.ts#L733)
 
 ___
 
@@ -109,7 +127,7 @@ ___
 
 #### Defined in
 
-[src/inward_jobs.scailo_pb.ts:692](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/inward_jobs.scailo_pb.ts#L692)
+[src/inward_jobs.scailo_pb.ts:742](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/inward_jobs.scailo_pb.ts#L742)
 
 ___
 
@@ -119,7 +137,7 @@ ___
 
 #### Defined in
 
-[src/inward_jobs.scailo_pb.ts:690](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/inward_jobs.scailo_pb.ts#L690)
+[src/inward_jobs.scailo_pb.ts:740](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/inward_jobs.scailo_pb.ts#L740)
 
 ___
 
@@ -129,7 +147,7 @@ ___
 
 #### Defined in
 
-[src/inward_jobs.scailo_pb.ts:691](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/inward_jobs.scailo_pb.ts#L691)
+[src/inward_jobs.scailo_pb.ts:741](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/inward_jobs.scailo_pb.ts#L741)
 
 ## Methods
 
@@ -417,7 +435,7 @@ ___
 
 #### Defined in
 
-[src/inward_jobs.scailo_pb.ts:709](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/inward_jobs.scailo_pb.ts#L709)
+[src/inward_jobs.scailo_pb.ts:759](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/inward_jobs.scailo_pb.ts#L759)
 
 ___
 
@@ -438,7 +456,7 @@ ___
 
 #### Defined in
 
-[src/inward_jobs.scailo_pb.ts:697](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/inward_jobs.scailo_pb.ts#L697)
+[src/inward_jobs.scailo_pb.ts:747](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/inward_jobs.scailo_pb.ts#L747)
 
 ___
 
@@ -459,7 +477,7 @@ ___
 
 #### Defined in
 
-[src/inward_jobs.scailo_pb.ts:701](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/inward_jobs.scailo_pb.ts#L701)
+[src/inward_jobs.scailo_pb.ts:751](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/inward_jobs.scailo_pb.ts#L751)
 
 ___
 
@@ -480,4 +498,4 @@ ___
 
 #### Defined in
 
-[src/inward_jobs.scailo_pb.ts:705](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/inward_jobs.scailo_pb.ts#L705)
+[src/inward_jobs.scailo_pb.ts:755](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/inward_jobs.scailo_pb.ts#L755)

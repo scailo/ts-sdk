@@ -2,7 +2,13 @@
 
 # Class: AnnouncementsServiceCountReq
 
-Describes the base request payload of a count search
+Target filter request for counting announcement records matching specific logical criteria.
+This message encapsulates lifecycle status filters, timestamp ranges, workflow markers,
+and entity references to determine the total size of a targeted dataset.
+
+**Note:** This is the primary message layout used by backend calculation engines, reporting
+services, and frontend pagination headers to evaluate total record matches dynamically
+before or alongside retrieving paginated results.
 
 **`Generated`**
 
@@ -84,13 +90,13 @@ Message\&lt;AnnouncementsServiceCountReq\&gt;.constructor
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:1297](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L1297)
+[src/announcements.scailo_pb.ts:1543](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L1543)
 
 ## Properties
 
 ### approvedByUserId
 
-• **approvedByUserId**: `bigint` = `protoInt64.zero`
+• `Optional` **approvedByUserId**: `bigint`
 
 **`Optional`**
 
@@ -114,17 +120,17 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 approved_by_user_id = 13;
+from field: optional uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:1205](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L1205)
+[src/announcements.scailo_pb.ts:1397](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L1397)
 
 ___
 
 ### approvedOnEnd
 
-• **approvedOnEnd**: `bigint` = `protoInt64.zero`
+• `Optional` **approvedOnEnd**: `bigint`
 
 **`Optional`**
 
@@ -148,17 +154,17 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 approved_on_end = 12;
+from field: optional uint64 approved_on_end = 12;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:1189](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L1189)
+[src/announcements.scailo_pb.ts:1381](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L1381)
 
 ___
 
 ### approvedOnStart
 
-• **approvedOnStart**: `bigint` = `protoInt64.zero`
+• `Optional` **approvedOnStart**: `bigint`
 
 **`Optional`**
 
@@ -182,17 +188,17 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 approved_on_start = 11;
+from field: optional uint64 approved_on_start = 11;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:1173](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L1173)
+[src/announcements.scailo_pb.ts:1365](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L1365)
 
 ___
 
 ### approverRoleId
 
-• **approverRoleId**: `bigint` = `protoInt64.zero`
+• `Optional` **approverRoleId**: `bigint`
 
 **`Optional`**
 
@@ -216,17 +222,17 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 approver_role_id = 14;
+from field: optional uint64 approver_role_id = 14;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:1221](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L1221)
+[src/announcements.scailo_pb.ts:1413](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L1413)
 
 ___
 
 ### completedOnEnd
 
-• **completedOnEnd**: `bigint` = `protoInt64.zero`
+• `Optional` **completedOnEnd**: `bigint`
 
 **`Optional`**
 
@@ -250,17 +256,17 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 completed_on_end = 16;
+from field: optional uint64 completed_on_end = 16;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:1253](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L1253)
+[src/announcements.scailo_pb.ts:1445](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L1445)
 
 ___
 
 ### completedOnStart
 
-• **completedOnStart**: `bigint` = `protoInt64.zero`
+• `Optional` **completedOnStart**: `bigint`
 
 **`Optional`**
 
@@ -284,17 +290,17 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 completed_on_start = 15;
+from field: optional uint64 completed_on_start = 15;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:1237](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L1237)
+[src/announcements.scailo_pb.ts:1429](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L1429)
 
 ___
 
 ### creationTimestampEnd
 
-• **creationTimestampEnd**: `bigint` = `protoInt64.zero`
+• `Optional` **creationTimestampEnd**: `bigint`
 
 **`Optional`**
 
@@ -318,17 +324,17 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 creation_timestamp_end = 102;
+from field: optional uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:1097](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L1097)
+[src/announcements.scailo_pb.ts:1289](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L1289)
 
 ___
 
 ### creationTimestampStart
 
-• **creationTimestampStart**: `bigint` = `protoInt64.zero`
+• `Optional` **creationTimestampStart**: `bigint`
 
 **`Optional`**
 
@@ -352,65 +358,119 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 creation_timestamp_start = 101;
+from field: optional uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:1081](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L1081)
+[src/announcements.scailo_pb.ts:1273](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L1273)
 
 ___
 
 ### description
 
-• **description**: `string` = `""`
+• `Optional` **description**: `string`
 
-The description of the announcement
+**`Optional`**
+
+**`Description`**
+
+Filter by the announcement's main body or description text. Typically supports partial matching or substring searches.
+
+**`Example`**
+
+```ts
+"database will be offline"
+```
+
+**`Regex`**
+
+^[0-9A-Za-z ]+$
+
+**`Format`**
+
+Alphanumeric characters and spaces only.
 
 **`Generated`**
 
-from field: string description = 21;
+from field: optional string description = 21;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:1267](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L1267)
+[src/announcements.scailo_pb.ts:1477](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L1477)
 
 ___
 
 ### endOnEnd
 
-• **endOnEnd**: `bigint` = `protoInt64.zero`
+• `Optional` **endOnEnd**: `bigint`
 
-The end range of end timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records where the announcement's expiration date is ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1783555200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer representing epoch time.
 
 **`Generated`**
 
-from field: uint64 end_on_end = 25;
+from field: optional uint64 end_on_end = 25;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:1295](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L1295)
+[src/announcements.scailo_pb.ts:1541](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L1541)
 
 ___
 
 ### endOnStart
 
-• **endOnStart**: `bigint` = `protoInt64.zero`
+• `Optional` **endOnStart**: `bigint`
 
-The start range of end timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records where the announcement's expiration date is ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1783468800
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer representing epoch time.
 
 **`Generated`**
 
-from field: uint64 end_on_start = 24;
+from field: optional uint64 end_on_start = 24;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:1288](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L1288)
+[src/announcements.scailo_pb.ts:1525](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L1525)
 
 ___
 
 ### entityUuid
 
-• **entityUuid**: `string` = `""`
+• `Optional` **entityUuid**: `string`
 
 **`Optional`**
 
@@ -434,17 +494,17 @@ If provided, must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
-from field: string entity_uuid = 8;
+from field: optional string entity_uuid = 8;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:1145](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L1145)
+[src/announcements.scailo_pb.ts:1337](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L1337)
 
 ___
 
 ### isActive
 
-• **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
+• `Optional` **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md)
 
 **`Optional`**
 
@@ -460,17 +520,17 @@ ANY
 
 **`Generated`**
 
-from field: Scailo.BOOL_FILTER is_active = 1;
+from field: optional Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:1065](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L1065)
+[src/announcements.scailo_pb.ts:1257](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L1257)
 
 ___
 
 ### modificationTimestampEnd
 
-• **modificationTimestampEnd**: `bigint` = `protoInt64.zero`
+• `Optional` **modificationTimestampEnd**: `bigint`
 
 **`Optional`**
 
@@ -494,17 +554,17 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 modification_timestamp_end = 104;
+from field: optional uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:1129](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L1129)
+[src/announcements.scailo_pb.ts:1321](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L1321)
 
 ___
 
 ### modificationTimestampStart
 
-• **modificationTimestampStart**: `bigint` = `protoInt64.zero`
+• `Optional` **modificationTimestampStart**: `bigint`
 
 **`Optional`**
 
@@ -528,49 +588,85 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 modification_timestamp_start = 103;
+from field: optional uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:1113](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L1113)
+[src/announcements.scailo_pb.ts:1305](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L1305)
 
 ___
 
 ### startOnEnd
 
-• **startOnEnd**: `bigint` = `protoInt64.zero`
+• `Optional` **startOnEnd**: `bigint`
 
-The end range of start timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records where the announcement's start publication date is ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1783468800
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer representing epoch time.
 
 **`Generated`**
 
-from field: uint64 start_on_end = 23;
+from field: optional uint64 start_on_end = 23;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:1281](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L1281)
+[src/announcements.scailo_pb.ts:1509](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L1509)
 
 ___
 
 ### startOnStart
 
-• **startOnStart**: `bigint` = `protoInt64.zero`
+• `Optional` **startOnStart**: `bigint`
 
-The start range of start timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records where the announcement's start publication date is ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1783382400
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer representing epoch time.
 
 **`Generated`**
 
-from field: uint64 start_on_start = 22;
+from field: optional uint64 start_on_start = 22;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:1274](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L1274)
+[src/announcements.scailo_pb.ts:1493](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L1493)
 
 ___
 
 ### status
 
-• **status**: [`STANDARD_LIFECYCLE_STATUS`](../enums/STANDARD_LIFECYCLE_STATUS.md) = `STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED`
+• `Optional` **status**: [`STANDARD_LIFECYCLE_STATUS`](../enums/STANDARD_LIFECYCLE_STATUS.md)
 
 **`Optional`**
 
@@ -586,27 +682,45 @@ STANDING
 
 **`Generated`**
 
-from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:1157](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L1157)
+[src/announcements.scailo_pb.ts:1349](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L1349)
 
 ___
 
 ### title
 
-• **title**: `string` = `""`
+• `Optional` **title**: `string`
 
-The title of the announcement
+**`Optional`**
+
+**`Description`**
+
+Filter by the announcement's title. Typically supports partial matching or substring searches.
+
+**`Example`**
+
+```ts
+"System Maintenance"
+```
+
+**`Regex`**
+
+^[0-9A-Za-z ]+$
+
+**`Format`**
+
+Alphanumeric characters and spaces only.
 
 **`Generated`**
 
-from field: string title = 20;
+from field: optional string title = 20;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:1260](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L1260)
+[src/announcements.scailo_pb.ts:1461](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L1461)
 
 ___
 
@@ -616,7 +730,7 @@ ___
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:1304](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L1304)
+[src/announcements.scailo_pb.ts:1550](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L1550)
 
 ___
 
@@ -626,7 +740,7 @@ ___
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:1302](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L1302)
+[src/announcements.scailo_pb.ts:1548](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L1548)
 
 ___
 
@@ -636,7 +750,7 @@ ___
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:1303](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L1303)
+[src/announcements.scailo_pb.ts:1549](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L1549)
 
 ## Methods
 
@@ -924,7 +1038,7 @@ ___
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:1338](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L1338)
+[src/announcements.scailo_pb.ts:1584](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L1584)
 
 ___
 
@@ -945,7 +1059,7 @@ ___
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:1326](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L1326)
+[src/announcements.scailo_pb.ts:1572](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L1572)
 
 ___
 
@@ -966,7 +1080,7 @@ ___
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:1330](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L1330)
+[src/announcements.scailo_pb.ts:1576](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L1576)
 
 ___
 
@@ -987,4 +1101,4 @@ ___
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:1334](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L1334)
+[src/announcements.scailo_pb.ts:1580](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L1580)

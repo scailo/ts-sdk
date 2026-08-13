@@ -2,7 +2,7 @@
 
 # Enumeration: SALES\_QUOTATION\_REFERENCE\_REF\_FROM
 
-Describes the possible options for ref_from field for a sales quotation reference
+Enumeration of the supported source record types that can be linked to a Sales Quotation.
 
 **`Generated`**
 
@@ -21,7 +21,9 @@ from enum Scailo.SALES_QUOTATION_REFERENCE_REF_FROM
 
 • **SALES\_QUOTATION\_REFERENCE\_REF\_FROM\_ANY\_UNSPECIFIED** = ``0``
 
-Denotes that the ref from be disregarded. This is used only within search APIs
+**`Description`**
+
+Default behavior, ignoring the source record type. Utilized primarily within search and listing APIs.
 
 **`Generated`**
 
@@ -29,7 +31,7 @@ from enum value: SALES_QUOTATION_REFERENCE_REF_FROM_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:189](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_quotations.scailo_pb.ts#L189)
+[src/sales_quotations.scailo_pb.ts:189](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_quotations.scailo_pb.ts#L189)
 
 ___
 
@@ -37,9 +39,9 @@ ___
 
 • **SALES\_QUOTATION\_REFERENCE\_REF\_FROM\_SALES\_ENQUIRY** = ``2``
 
-// Denotes inward job
-  SALES_QUOTATION_REFERENCE_REF_FROM_INWARD_JOB = 1;
-Denotes sales enquiry
+**`Description`**
+
+Denotes that the reference originates from a Sales Enquiry.
 
 **`Generated`**
 
@@ -47,4 +49,4 @@ from enum value: SALES_QUOTATION_REFERENCE_REF_FROM_SALES_ENQUIRY = 2;
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:198](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_quotations.scailo_pb.ts#L198)
+[src/sales_quotations.scailo_pb.ts:196](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_quotations.scailo_pb.ts#L196)

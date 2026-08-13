@@ -2,7 +2,12 @@
 
 # Class: AnnouncementsServiceCreateRequest
 
-Describes the parameters necessary to create a record
+Request message for broadcasting a new organizational announcement.
+This record tracks internal communications, system alerts, or company-wide
+updates distributed to specific target audiences or entities.
+
+**Note:** This is the primary entry point for HR, Internal Comms, and Admins
+to publish time-bound informational updates and compliance notifications.
 
 **`Generated`**
 
@@ -72,7 +77,7 @@ Message\&lt;AnnouncementsServiceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:183](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L183)
+[src/announcements.scailo_pb.ts:233](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L233)
 
 ## Properties
 
@@ -80,7 +85,25 @@ Message\&lt;AnnouncementsServiceCreateRequest\&gt;.constructor
 
 • **description**: `string` = `""`
 
-The description of the announcement
+**`Mandatory`**
+
+**`Description`**
+
+The main body text or details of the announcement, elaborating on the core message.
+
+**`Example`**
+
+```ts
+"The primary database will be offline for maintenance on Saturday from 2 AM to 4 AM UTC."
+```
+
+**`Regex`**
+
+^[0-9A-Za-z ]+$
+
+**`Format`**
+
+Alphanumeric characters and spaces only. Must not be empty.
 
 **`Generated`**
 
@@ -88,7 +111,7 @@ from field: string description = 11;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:167](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L167)
+[src/announcements.scailo_pb.ts:199](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L199)
 
 ___
 
@@ -96,7 +119,25 @@ ___
 
 • **endOn**: `bigint` = `protoInt64.zero`
 
-The end timestamp
+**`Mandatory`**
+
+**`Description`**
+
+The expiration Unix timestamp (in seconds) indicating when the announcement should stop being displayed.
+
+**`Example`**
+
+```ts
+1783468800
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative 64-bit integer representing epoch time. Must be greater than or equal to start_on.
 
 **`Generated`**
 
@@ -104,13 +145,13 @@ from field: uint64 end_on = 13;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:181](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L181)
+[src/announcements.scailo_pb.ts:231](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L231)
 
 ___
 
 ### entityUuid
 
-• **entityUuid**: `string` = `""`
+• `Optional` **entityUuid**: `string`
 
 **`Optional`**
 
@@ -134,11 +175,11 @@ If provided, must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
-from field: string entity_uuid = 1;
+from field: optional string entity_uuid = 1;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:130](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L130)
+[src/announcements.scailo_pb.ts:135](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L135)
 
 ___
 
@@ -146,7 +187,25 @@ ___
 
 • **startOn**: `bigint` = `protoInt64.zero`
 
-The start timestamp
+**`Mandatory`**
+
+**`Description`**
+
+The effective Unix timestamp (in seconds) indicating when the announcement becomes active and visible.
+
+**`Example`**
+
+```ts
+1783382400
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative 64-bit integer representing epoch time.
 
 **`Generated`**
 
@@ -154,7 +213,7 @@ from field: uint64 start_on = 12;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:174](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L174)
+[src/announcements.scailo_pb.ts:215](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L215)
 
 ___
 
@@ -162,7 +221,25 @@ ___
 
 • **title**: `string` = `""`
 
-The title of the announcement
+**`Mandatory`**
+
+**`Description`**
+
+The headline or title of the announcement. This is the primary text displayed to targeted users.
+
+**`Example`**
+
+```ts
+"Scheduled System Maintenance - This Weekend"
+```
+
+**`Regex`**
+
+^[0-9A-Za-z ]+$
+
+**`Format`**
+
+Alphanumeric characters and spaces only. Must not be empty.
 
 **`Generated`**
 
@@ -170,29 +247,47 @@ from field: string title = 10;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:160](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L160)
+[src/announcements.scailo_pb.ts:183](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L183)
 
 ___
 
 ### userComment
 
-• **userComment**: `string` = `""`
+• `Optional` **userComment**: `string`
 
-Stores any comment that the user might add during this operation
+**`Optional`**
+
+**`Description`**
+
+Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+
+**`Example`**
+
+```ts
+"This is a comment for audit purposes."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
-from field: string user_comment = 2;
+from field: optional string user_comment = 2;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:137](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L137)
+[src/announcements.scailo_pb.ts:151](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L151)
 
 ___
 
 ### vaultFolderId
 
-• **vaultFolderId**: `bigint` = `protoInt64.zero`
+• `Optional` **vaultFolderId**: `bigint`
 
 **`Optional`**
 
@@ -216,11 +311,11 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 vault_folder_id = 9;
+from field: optional uint64 vault_folder_id = 9;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:153](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L153)
+[src/announcements.scailo_pb.ts:167](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L167)
 
 ___
 
@@ -230,7 +325,7 @@ ___
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:190](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L190)
+[src/announcements.scailo_pb.ts:240](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L240)
 
 ___
 
@@ -240,7 +335,7 @@ ___
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:188](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L188)
+[src/announcements.scailo_pb.ts:238](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L238)
 
 ___
 
@@ -250,7 +345,7 @@ ___
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:189](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L189)
+[src/announcements.scailo_pb.ts:239](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L239)
 
 ## Methods
 
@@ -538,7 +633,7 @@ ___
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:212](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L212)
+[src/announcements.scailo_pb.ts:262](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L262)
 
 ___
 
@@ -559,7 +654,7 @@ ___
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:200](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L200)
+[src/announcements.scailo_pb.ts:250](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L250)
 
 ___
 
@@ -580,7 +675,7 @@ ___
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:204](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L204)
+[src/announcements.scailo_pb.ts:254](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L254)
 
 ___
 
@@ -601,4 +696,4 @@ ___
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:208](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L208)
+[src/announcements.scailo_pb.ts:258](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L258)

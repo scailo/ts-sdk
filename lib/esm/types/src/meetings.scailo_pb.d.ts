@@ -259,7 +259,16 @@ export declare class MeetingsServiceCreateRequest extends Message<MeetingsServic
      */
     entityUuid: string;
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 2;
      */
@@ -301,7 +310,14 @@ export declare class MeetingsServiceCreateRequest extends Message<MeetingsServic
      */
     description: string;
     /**
-     * The list of dynamic forms
+     *
+     * @optional
+     *
+     * @description A collection of dynamic form fields for organization-specific data.
+     *
+     * @example []
+     *
+     * @format An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
      *
      * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
      */
@@ -323,13 +339,31 @@ export declare class MeetingsServiceCreateRequest extends Message<MeetingsServic
  */
 export declare class MeetingsServiceUpdateRequest extends Message<MeetingsServiceUpdateRequest> {
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 1;
      */
     userComment: string;
     /**
-     * The ID of the record that needs to be updated
+     *
+     * @mandatory
+     *
+     * @description The unique internal identifier of the target record that needs to be updated.
+     *
+     * @example 1024
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 id = 2;
      */
@@ -382,7 +416,14 @@ export declare class MeetingsServiceUpdateRequest extends Message<MeetingsServic
      */
     description: string;
     /**
-     * The list of dynamic forms
+     *
+     * @optional
+     *
+     * @description A collection of dynamic form fields for organization-specific data.
+     *
+     * @example []
+     *
+     * @format An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
      *
      * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
      */
@@ -473,7 +514,8 @@ export declare class Meeting extends Message<Meeting> {
      */
     description: string;
     /**
-     * The list of dynamic forms
+     *
+     * @description Collection of organization-specific dynamic data.
      *
      * @generated from field: repeated Scailo.FormFieldDatum form_data = 30;
      */
@@ -1053,7 +1095,10 @@ export declare class MeetingsServiceCountReq extends Message<MeetingsServiceCoun
      */
     activityTagId: bigint;
     /**
-     * The list of form data filters
+     *
+     * @optional
+     *
+     * @description Count based on dynamic form field values.
      *
      * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
      */
@@ -1206,7 +1251,16 @@ export declare class MeetingsServiceSearchAllReq extends Message<MeetingsService
  */
 export declare class MeetingsServiceActionableCreateRequest extends Message<MeetingsServiceActionableCreateRequest> {
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 1;
      */
@@ -1252,7 +1306,16 @@ export declare class MeetingsServiceActionableCreateRequest extends Message<Meet
  */
 export declare class MeetingsServiceActionableUpdateRequest extends Message<MeetingsServiceActionableUpdateRequest> {
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 1;
      */
@@ -1569,7 +1632,16 @@ export declare class MeetingsServicePaginatedActionablesResponse extends Message
  */
 export declare class MeetingsServiceEmployeeCreateRequest extends Message<MeetingsServiceEmployeeCreateRequest> {
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 1;
      */
@@ -1686,7 +1758,16 @@ export declare class MeetingEmployeesList extends Message<MeetingEmployeesList> 
  */
 export declare class MeetingsServiceAssociateCreateRequest extends Message<MeetingsServiceAssociateCreateRequest> {
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 1;
      */
@@ -1803,7 +1884,16 @@ export declare class MeetingAssociatesList extends Message<MeetingAssociatesList
  */
 export declare class MeetingsServiceImportEmployeesRequest extends Message<MeetingsServiceImportEmployeesRequest> {
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 1;
      */

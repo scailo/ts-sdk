@@ -2,7 +2,10 @@
 
 # Enumeration: ASSOCIATE\_ORG\_REF\_FROM
 
-Describes the available options that a associate can be associated with
+Defines the available organizational entity types that an associate can be mapped or linked to.
+
+This enumeration is primarily utilized across filtering workflows, search indices,
+and relationship routing matrices to classify an associate's organizational alignment.
 
 **`Generated`**
 
@@ -23,7 +26,10 @@ from enum Scailo.ASSOCIATE_ORG_REF_FROM
 
 • **ASSOCIATE\_ORG\_REF\_FROM\_ANY\_UNSPECIFIED** = ``0``
 
-Useful only in filter and search requests
+Default fallback value. Evaluates to any or all types during broad filter queries.
+
+This option is reserved exclusively for wide-scope search criteria and should not
+be used as a permanent state value on a persisted record.
 
 **`Generated`**
 
@@ -31,7 +37,7 @@ from enum value: ASSOCIATE_ORG_REF_FROM_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:22](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/associates.scailo_pb.ts#L22)
+[src/associates.scailo_pb.ts:28](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/associates.scailo_pb.ts#L28)
 
 ___
 
@@ -39,7 +45,9 @@ ___
 
 • **ASSOCIATE\_ORG\_REF\_FROM\_CLIENT** = ``2``
 
-When the associate has been associated to a client
+Indicates that the associate is officially linked to an external Client profile.
+
+This mapping governs relevant customer-facing workflows, access permissions, and billing routing.
 
 **`Generated`**
 
@@ -47,7 +55,7 @@ from enum value: ASSOCIATE_ORG_REF_FROM_CLIENT = 2;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:36](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/associates.scailo_pb.ts#L36)
+[src/associates.scailo_pb.ts:46](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/associates.scailo_pb.ts#L46)
 
 ___
 
@@ -55,7 +63,9 @@ ___
 
 • **ASSOCIATE\_ORG\_REF\_FROM\_EMPTY** = ``1``
 
-When the associate has no association
+Indicates that the associate currently maintains no organizational mapping.
+
+Use this state to locate unassigned, orphaned, or standalone associate profiles.
 
 **`Generated`**
 
@@ -63,7 +73,7 @@ from enum value: ASSOCIATE_ORG_REF_FROM_EMPTY = 1;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:29](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/associates.scailo_pb.ts#L29)
+[src/associates.scailo_pb.ts:37](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/associates.scailo_pb.ts#L37)
 
 ___
 
@@ -71,7 +81,9 @@ ___
 
 • **ASSOCIATE\_ORG\_REF\_FROM\_VENDOR** = ``3``
 
-When the associate has been associated to a vendor
+Indicates that the associate is officially linked to an external Vendor or Supplier profile.
+
+This mapping governs supply chain linkages, procurement authorization, and fulfillment tracking.
 
 **`Generated`**
 
@@ -79,4 +91,4 @@ from enum value: ASSOCIATE_ORG_REF_FROM_VENDOR = 3;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:43](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/associates.scailo_pb.ts#L43)
+[src/associates.scailo_pb.ts:55](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/associates.scailo_pb.ts#L55)

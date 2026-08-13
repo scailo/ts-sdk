@@ -68,7 +68,7 @@ Message\&lt;SalariesServiceAdditionItemUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/salaries.scailo_pb.ts:1027](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/salaries.scailo_pb.ts#L1027)
+[src/salaries.scailo_pb.ts:1096](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/salaries.scailo_pb.ts#L1096)
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-[src/salaries.scailo_pb.ts:1018](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/salaries.scailo_pb.ts#L1018)
+[src/salaries.scailo_pb.ts:1087](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/salaries.scailo_pb.ts#L1087)
 
 ___
 
@@ -100,7 +100,7 @@ from field: int64 quantity = 13;
 
 #### Defined in
 
-[src/salaries.scailo_pb.ts:1025](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/salaries.scailo_pb.ts#L1025)
+[src/salaries.scailo_pb.ts:1094](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/salaries.scailo_pb.ts#L1094)
 
 ___
 
@@ -108,7 +108,25 @@ ___
 
 • **userComment**: `string` = `""`
 
-Stores any comment that the user might add during this operation
+**`Optional`**
+
+**`Description`**
+
+Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+
+**`Example`**
+
+```ts
+"This is a comment for audit purposes."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
@@ -116,7 +134,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-[src/salaries.scailo_pb.ts:1011](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/salaries.scailo_pb.ts#L1011)
+[src/salaries.scailo_pb.ts:1080](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/salaries.scailo_pb.ts#L1080)
 
 ___
 
@@ -126,7 +144,7 @@ ___
 
 #### Defined in
 
-[src/salaries.scailo_pb.ts:1034](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/salaries.scailo_pb.ts#L1034)
+[src/salaries.scailo_pb.ts:1103](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/salaries.scailo_pb.ts#L1103)
 
 ___
 
@@ -136,7 +154,7 @@ ___
 
 #### Defined in
 
-[src/salaries.scailo_pb.ts:1032](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/salaries.scailo_pb.ts#L1032)
+[src/salaries.scailo_pb.ts:1101](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/salaries.scailo_pb.ts#L1101)
 
 ___
 
@@ -146,7 +164,7 @@ ___
 
 #### Defined in
 
-[src/salaries.scailo_pb.ts:1033](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/salaries.scailo_pb.ts#L1033)
+[src/salaries.scailo_pb.ts:1102](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/salaries.scailo_pb.ts#L1102)
 
 ## Methods
 
@@ -434,7 +452,7 @@ ___
 
 #### Defined in
 
-[src/salaries.scailo_pb.ts:1052](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/salaries.scailo_pb.ts#L1052)
+[src/salaries.scailo_pb.ts:1121](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/salaries.scailo_pb.ts#L1121)
 
 ___
 
@@ -455,7 +473,7 @@ ___
 
 #### Defined in
 
-[src/salaries.scailo_pb.ts:1040](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/salaries.scailo_pb.ts#L1040)
+[src/salaries.scailo_pb.ts:1109](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/salaries.scailo_pb.ts#L1109)
 
 ___
 
@@ -476,7 +494,7 @@ ___
 
 #### Defined in
 
-[src/salaries.scailo_pb.ts:1044](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/salaries.scailo_pb.ts#L1044)
+[src/salaries.scailo_pb.ts:1113](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/salaries.scailo_pb.ts#L1113)
 
 ___
 
@@ -497,4 +515,4 @@ ___
 
 #### Defined in
 
-[src/salaries.scailo_pb.ts:1048](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/salaries.scailo_pb.ts#L1048)
+[src/salaries.scailo_pb.ts:1117](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/salaries.scailo_pb.ts#L1117)

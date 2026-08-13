@@ -2,7 +2,8 @@
 
 # Class: GoodsDispatchItemsSearchRequest
 
-Describes the request payload to retrieve approved or unapproved items.
+Request payload structure used to search and filter Goods Dispatch Item records.
+Supports pagination controls, tenancy isolation, status grouping, and text-based matching.
 
 **`Generated`**
 
@@ -82,103 +83,211 @@ Message\&lt;GoodsDispatchItemsSearchRequest\&gt;.constructor
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:1607](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L1607)
+[src/goods_dispatches.scailo_pb.ts:2161](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L2161)
 
 ## Properties
 
 ### approvedByUserId
 
-• **approvedByUserId**: `bigint` = `protoInt64.zero`
+• `Optional` **approvedByUserId**: `bigint`
 
-The ID of the approver
+**`Optional`**
+
+**`Description`**
+
+Filter by the specific user ID who approved the records.
+
+**`Example`**
+
+```ts
+501
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 approved_by_user_id = 12;
+from field: optional uint64 approved_by_user_id = 12;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:1556](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L1556)
+[src/goods_dispatches.scailo_pb.ts:2047](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L2047)
 
 ___
 
 ### approvedOnEnd
 
-• **approvedOnEnd**: `bigint` = `protoInt64.zero`
+• `Optional` **approvedOnEnd**: `bigint`
 
-The end range of approved timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records approved ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 approved_on_end = 11;
+from field: optional uint64 approved_on_end = 11;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:1549](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L1549)
+[src/goods_dispatches.scailo_pb.ts:2031](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L2031)
 
 ___
 
 ### approvedOnStart
 
-• **approvedOnStart**: `bigint` = `protoInt64.zero`
+• `Optional` **approvedOnStart**: `bigint`
 
-The start range of approved timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records approved ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 approved_on_start = 10;
+from field: optional uint64 approved_on_start = 10;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:1542](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L1542)
+[src/goods_dispatches.scailo_pb.ts:2015](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L2015)
 
 ___
 
 ### approverRoleId
 
-• **approverRoleId**: `bigint` = `protoInt64.zero`
+• `Optional` **approverRoleId**: `bigint`
 
-The role ID of the approver
+**`Optional`**
+
+**`Description`**
+
+Filter by the role ID of the approver.
+
+**`Example`**
+
+```ts
+5
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 approver_role_id = 13;
+from field: optional uint64 approver_role_id = 13;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:1563](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L1563)
+[src/goods_dispatches.scailo_pb.ts:2063](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L2063)
 
 ___
 
 ### clientFamilyCode
 
-• **clientFamilyCode**: `string` = `""`
+• `Optional` **clientFamilyCode**: `string`
 
-Stores the family code as given by the client
+**`Optional`**
+
+**`Description`**
+
+Fuzzy match for the client's specific alphanumeric part number, SKU, or family code.
+
+**`Example`**
+
+```ts
+"CLI-SKU-992"
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
-from field: string client_family_code = 26;
+from field: optional string client_family_code = 26;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:1598](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L1598)
+[src/goods_dispatches.scailo_pb.ts:2143](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L2143)
 
 ___
 
 ### clientUomId
 
-• **clientUomId**: `bigint` = `protoInt64.zero`
+• `Optional` **clientUomId**: `bigint`
 
-The ID of the client's unit of material
+**`Optional`**
+
+**`Description`**
+
+Filter line items requesting a specific client Unit of Measure (UOM).
+
+**`Example`**
+
+```ts
+12
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 client_uom_id = 24;
+from field: optional uint64 client_uom_id = 24;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:1591](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L1591)
+[src/goods_dispatches.scailo_pb.ts:2127](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L2127)
 
 ___
 
@@ -212,13 +321,13 @@ from field: int64 count = 2;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:1474](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L1474)
+[src/goods_dispatches.scailo_pb.ts:1935](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L1935)
 
 ___
 
 ### entityUuid
 
-• **entityUuid**: `string` = `""`
+• `Optional` **entityUuid**: `string`
 
 **`Optional`**
 
@@ -242,49 +351,85 @@ If provided, must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
-from field: string entity_uuid = 6;
+from field: optional string entity_uuid = 6;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:1528](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L1528)
+[src/goods_dispatches.scailo_pb.ts:1989](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L1989)
 
 ___
 
 ### familyId
 
-• **familyId**: `bigint` = `protoInt64.zero`
+• `Optional` **familyId**: `bigint`
 
-The ID of the family
+**`Optional`**
+
+**`Description`**
+
+Filter line items belonging to a specific family.
+
+**`Example`**
+
+```ts
+505
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 family_id = 22;
+from field: optional uint64 family_id = 22;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:1577](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L1577)
+[src/goods_dispatches.scailo_pb.ts:2095](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L2095)
 
 ___
 
 ### goodsDispatchId
 
-• **goodsDispatchId**: `bigint` = `protoInt64.zero`
+• `Optional` **goodsDispatchId**: `bigint`
 
-The ID of the goods dispatch
+**`Optional`**
+
+**`Description`**
+
+Filter line items belonging to a specific parent goods dispatch.
+
+**`Example`**
+
+```ts
+1024
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 goods_dispatch_id = 20;
+from field: optional uint64 goods_dispatch_id = 20;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:1570](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L1570)
+[src/goods_dispatches.scailo_pb.ts:2079](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L2079)
 
 ___
 
 ### isActive
 
-• **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
+• `Optional` **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md)
 
 **`Optional`**
 
@@ -300,33 +445,51 @@ ANY
 
 **`Generated`**
 
-from field: Scailo.BOOL_FILTER is_active = 1;
+from field: optional Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:1458](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L1458)
+[src/goods_dispatches.scailo_pb.ts:1919](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L1919)
 
 ___
 
 ### itemHash
 
-• **itemHash**: `string` = `""`
+• `Optional` **itemHash**: `string`
 
-Stores the item hash to be dispatched
+**`Optional`**
+
+**`Description`**
+
+Filter line items by the cryptographic hash representing the exact inventory instance, batch, or serial pool being dispatched.
+
+**`Example`**
+
+```ts
+"a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a7b8c9d0e1f2a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a7b8c9d0e1f2"
+```
+
+**`Regex`**
+
+^.{128}$
+
+**`Format`**
+
+Exact 128-character string.
 
 **`Generated`**
 
-from field: string item_hash = 23;
+from field: optional string item_hash = 23;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:1584](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L1584)
+[src/goods_dispatches.scailo_pb.ts:2111](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L2111)
 
 ___
 
 ### offset
 
-• **offset**: `bigint` = `protoInt64.zero`
+• `Optional` **offset**: `bigint`
 
 **`Optional`**
 
@@ -350,33 +513,49 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 offset = 3;
+from field: optional uint64 offset = 3;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:1490](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L1490)
+[src/goods_dispatches.scailo_pb.ts:1951](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L1951)
 
 ___
 
 ### searchKey
 
-• **searchKey**: `string` = `""`
+• `Optional` **searchKey**: `string`
 
-Describes the key with which the search operation needs to be performed
+**`Optional`**
+
+**`Description`**
+
+The search string to match against reference IDs.
+
+**`Example`**
+
+```ts
+"Medical 2023"
+```
+
+**`Regex`**
+
+.*
+
+@format: May contain any UTF-8 characters.
 
 **`Generated`**
 
-from field: string search_key = 40;
+from field: optional string search_key = 40;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:1605](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L1605)
+[src/goods_dispatches.scailo_pb.ts:2159](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L2159)
 
 ___
 
 ### sortKey
 
-• **sortKey**: [`GOODS_DISPATCH_ITEM_SORT_KEY`](../enums/GOODS_DISPATCH_ITEM_SORT_KEY.md) = `GOODS_DISPATCH_ITEM_SORT_KEY.GOODS_DISPATCH_ITEM_SORT_KEY_ID_UNSPECIFIED`
+• `Optional` **sortKey**: [`GOODS_DISPATCH_ITEM_SORT_KEY`](../enums/GOODS_DISPATCH_ITEM_SORT_KEY.md)
 
 **`Optional`**
 
@@ -386,17 +565,17 @@ The field used for sorting.
 
 **`Generated`**
 
-from field: Scailo.GOODS_DISPATCH_ITEM_SORT_KEY sort_key = 5;
+from field: optional Scailo.GOODS_DISPATCH_ITEM_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:1512](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L1512)
+[src/goods_dispatches.scailo_pb.ts:1973](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L1973)
 
 ___
 
 ### sortOrder
 
-• **sortOrder**: [`SORT_ORDER`](../enums/SORT_ORDER.md) = `SORT_ORDER.ASCENDING_UNSPECIFIED`
+• `Optional` **sortOrder**: [`SORT_ORDER`](../enums/SORT_ORDER.md)
 
 **`Optional`**
 
@@ -412,27 +591,31 @@ DESCENDING
 
 **`Generated`**
 
-from field: Scailo.SORT_ORDER sort_order = 4;
+from field: optional Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:1502](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L1502)
+[src/goods_dispatches.scailo_pb.ts:1963](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L1963)
 
 ___
 
 ### status
 
-• **status**: [`GOODS_DISPATCH_ITEM_STATUS`](../enums/GOODS_DISPATCH_ITEM_STATUS.md) = `GOODS_DISPATCH_ITEM_STATUS.GOODS_DISPATCH_ITEM_STATUS_ANY_UNSPECIFIED`
+• `Optional` **status**: [`GOODS_DISPATCH_ITEM_STATUS`](../enums/GOODS_DISPATCH_ITEM_STATUS.md)
 
-The status of the items
+**`Optional`**
+
+**`Description`**
+
+The field used for sorting.
 
 **`Generated`**
 
-from field: Scailo.GOODS_DISPATCH_ITEM_STATUS status = 7;
+from field: optional Scailo.GOODS_DISPATCH_ITEM_STATUS status = 7;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:1535](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L1535)
+[src/goods_dispatches.scailo_pb.ts:1999](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L1999)
 
 ___
 
@@ -442,7 +625,7 @@ ___
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:1614](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L1614)
+[src/goods_dispatches.scailo_pb.ts:2168](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L2168)
 
 ___
 
@@ -452,7 +635,7 @@ ___
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:1612](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L1612)
+[src/goods_dispatches.scailo_pb.ts:2166](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L2166)
 
 ___
 
@@ -462,7 +645,7 @@ ___
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:1613](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L1613)
+[src/goods_dispatches.scailo_pb.ts:2167](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L2167)
 
 ## Methods
 
@@ -750,7 +933,7 @@ ___
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:1646](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L1646)
+[src/goods_dispatches.scailo_pb.ts:2200](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L2200)
 
 ___
 
@@ -771,7 +954,7 @@ ___
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:1634](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L1634)
+[src/goods_dispatches.scailo_pb.ts:2188](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L2188)
 
 ___
 
@@ -792,7 +975,7 @@ ___
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:1638](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L1638)
+[src/goods_dispatches.scailo_pb.ts:2192](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L2192)
 
 ___
 
@@ -813,4 +996,4 @@ ___
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:1642](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L1642)
+[src/goods_dispatches.scailo_pb.ts:2196](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L2196)

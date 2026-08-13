@@ -2,7 +2,7 @@
 
 # Class: Client
 
-Describes the parameters that are part of a standard response
+Represents a full Client within the system.
 
 **`Generated`**
 
@@ -76,7 +76,7 @@ Message\&lt;Client\&gt;.constructor
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:467](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L467)
+[src/clients.scailo_pb.ts:604](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L604)
 
 ## Properties
 
@@ -94,7 +94,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:404](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L404)
+[src/clients.scailo_pb.ts:528](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L528)
 
 ___
 
@@ -102,7 +102,15 @@ ___
 
 • **code**: `string` = `""`
 
-The unique code by which the client is classified
+**`Description`**
+
+The unique code or alphanumeric token by which the client is classified or categorized internally.
+
+**`Example`**
+
+```ts
+"CLI-ACME-001"
+```
 
 **`Generated`**
 
@@ -110,7 +118,7 @@ from field: string code = 11;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:444](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L444)
+[src/clients.scailo_pb.ts:574](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L574)
 
 ___
 
@@ -118,7 +126,15 @@ ___
 
 • **email**: `string` = `""`
 
-The primary email of the client
+**`Description`**
+
+The primary communication email address of the client.
+
+**`Example`**
+
+```ts
+"billing@acme.com"
+```
 
 **`Generated`**
 
@@ -126,7 +142,7 @@ from field: string email = 12;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:451](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L451)
+[src/clients.scailo_pb.ts:584](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L584)
 
 ___
 
@@ -150,7 +166,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:388](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L388)
+[src/clients.scailo_pb.ts:512](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L512)
 
 ___
 
@@ -158,7 +174,9 @@ ___
 
 • **formData**: [`FormFieldDatum`](FormFieldDatum.md)[] = `[]`
 
-The list of dynamic forms
+**`Description`**
+
+Collection of organization-specific dynamic data.
 
 **`Generated`**
 
@@ -166,7 +184,7 @@ from field: repeated Scailo.FormFieldDatum form_data = 30;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:465](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L465)
+[src/clients.scailo_pb.ts:602](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L602)
 
 ___
 
@@ -184,7 +202,7 @@ from field: repeated Scailo.LogbookLogConciseSLC logs = 5;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:420](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L420)
+[src/clients.scailo_pb.ts:544](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L544)
 
 ___
 
@@ -202,7 +220,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:396](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L396)
+[src/clients.scailo_pb.ts:520](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L520)
 
 ___
 
@@ -210,7 +228,15 @@ ___
 
 • **name**: `string` = `""`
 
-The name of the client
+**`Description`**
+
+The official or legal name of the client organization or individual.
+
+**`Example`**
+
+```ts
+"Acme Corporation"
+```
 
 **`Generated`**
 
@@ -218,7 +244,7 @@ from field: string name = 10;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:437](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L437)
+[src/clients.scailo_pb.ts:564](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L564)
 
 ___
 
@@ -226,7 +252,15 @@ ___
 
 • **phone**: `string` = `""`
 
-The primary contact number of the client
+**`Description`**
+
+The primary contact phone number of the client, typically including country and area codes.
+
+**`Example`**
+
+```ts
+"+1-555-222-0199"
+```
 
 **`Generated`**
 
@@ -234,7 +268,7 @@ from field: string phone = 13;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:458](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L458)
+[src/clients.scailo_pb.ts:594](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L594)
 
 ___
 
@@ -252,7 +286,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 4;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:412](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L412)
+[src/clients.scailo_pb.ts:536](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L536)
 
 ___
 
@@ -276,7 +310,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:430](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L430)
+[src/clients.scailo_pb.ts:554](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L554)
 
 ___
 
@@ -286,7 +320,7 @@ ___
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:474](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L474)
+[src/clients.scailo_pb.ts:611](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L611)
 
 ___
 
@@ -296,7 +330,7 @@ ___
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:472](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L472)
+[src/clients.scailo_pb.ts:609](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L609)
 
 ___
 
@@ -306,7 +340,7 @@ ___
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:473](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L473)
+[src/clients.scailo_pb.ts:610](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L610)
 
 ## Methods
 
@@ -594,7 +628,7 @@ ___
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:500](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L500)
+[src/clients.scailo_pb.ts:637](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L637)
 
 ___
 
@@ -615,7 +649,7 @@ ___
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:488](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L488)
+[src/clients.scailo_pb.ts:625](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L625)
 
 ___
 
@@ -636,7 +670,7 @@ ___
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:492](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L492)
+[src/clients.scailo_pb.ts:629](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L629)
 
 ___
 
@@ -657,4 +691,4 @@ ___
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:496](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L496)
+[src/clients.scailo_pb.ts:633](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L633)

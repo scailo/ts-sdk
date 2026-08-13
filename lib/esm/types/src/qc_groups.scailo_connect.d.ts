@@ -1,6 +1,7 @@
 import { QCGroup, QCGroupItem, QCGroupItemHistoryRequest, QCGroupItemsSearchRequest, QCGroupsItemsList, QCGroupsList, QCGroupsServiceCountReq, QCGroupsServiceCreateRequest, QCGroupsServiceFilterReq, QCGroupsServiceItemCreateRequest, QCGroupsServiceItemUpdateRequest, QCGroupsServicePaginatedItemsResponse, QCGroupsServicePaginationReq, QCGroupsServicePaginationResponse, QCGroupsServiceSearchAllReq, QCGroupsServiceUpdateRequest } from "./qc_groups.scailo_pb.js";
 import { ActiveStatus, CloneRequest, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
+import { VaultFolderAttachRequest } from "./vault_folders.scailo_pb.js";
 /**
  *
  * Describes the common methods applicable on each qc group
@@ -217,7 +218,13 @@ export declare const QCGroupsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Reopen
+         * Reopens a finalized or closed record for further modifications.
+         *
+         * **Status Transition:** -> `REVISION`
+         *
+         * **Side Effects:**
+         * - Unlocks the record to allow edits.
+         * - Logs the required user comment into the audit trail for compliance tracking.
          *
          * @generated from rpc Scailo.QCGroupsService.Reopen
          */
@@ -242,7 +249,32 @@ export declare const QCGroupsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Clone qc group from an existing qc group (denoted by the identifier)
+         * Attaches a specified folder directly to a record without requiring a full revision workflow.
+         *
+         * This is a convenience API designed to bypass the traditional multi-step modification lifecycle
+         * (e.g., creating a revision, updating data, submitting for verification, and awaiting approval).
+         * It allows for the immediate, single-step association of a vault folder.
+         *
+         * **Side Effects & Lifecycle:**
+         * * The overall status of the record remains unchanged.
+         * * The record's modification timestamp is automatically updated to the current time.
+         * * An entry is appended to the record's audit log tracking this attachment.
+         *
+         * @generated from rpc Scailo.QCGroupsService.AttachVaultFolder
+         */
+        readonly attachVaultFolder: {
+            readonly name: "AttachVaultFolder";
+            readonly I: typeof VaultFolderAttachRequest;
+            readonly O: typeof IdentifierResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Initiates the creation of a new record by duplicating the structural properties of an existing record.
+         *
+         * **Side Effects:**
+         * - Provisions a new record populated with the metadata and configurations of the source record.
+         * - Does not clone operational transactions or historical logs of the source.
+         * - Appends an audit trail entry tracking the cloning operation and justification.
          *
          * @generated from rpc Scailo.QCGroupsService.Clone
          */
@@ -441,7 +473,12 @@ export declare const QCGroupsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View by Code (returns the latest record in case of duplicates)
+         * Retrieves a single record via the assigned internal code. In case duplicates are found, this method retrieves the latest record.
+         *
+         * **Note:** High-volume compliance data, audit records, and system logs are excluded from the response payload.
+         *
+         * **Errors:**
+         * - `NOT_FOUND`: If the provided internal code does not exist.
          *
          * @generated from rpc Scailo.QCGroupsService.ViewByCode
          */

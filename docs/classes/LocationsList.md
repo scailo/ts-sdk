@@ -2,7 +2,7 @@
 
 # Class: LocationsList
 
-Describes the message consisting of the list of records
+Container message for a collection of Location records.
 
 **`Generated`**
 
@@ -66,7 +66,7 @@ Message\&lt;LocationsList\&gt;.constructor
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:468](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L468)
+[src/locations.scailo_pb.ts:613](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/locations.scailo_pb.ts#L613)
 
 ## Properties
 
@@ -74,7 +74,9 @@ Message\&lt;LocationsList\&gt;.constructor
 
 • **list**: [`Location`](Location.md)[] = `[]`
 
-List of records
+**`Description`**
+
+An array of Location records.
 
 **`Generated`**
 
@@ -82,7 +84,7 @@ from field: repeated Scailo.Location list = 1;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:466](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L466)
+[src/locations.scailo_pb.ts:611](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/locations.scailo_pb.ts#L611)
 
 ___
 
@@ -92,7 +94,7 @@ ___
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:475](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L475)
+[src/locations.scailo_pb.ts:620](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/locations.scailo_pb.ts#L620)
 
 ___
 
@@ -102,7 +104,7 @@ ___
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:473](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L473)
+[src/locations.scailo_pb.ts:618](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/locations.scailo_pb.ts#L618)
 
 ___
 
@@ -112,7 +114,7 @@ ___
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:474](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L474)
+[src/locations.scailo_pb.ts:619](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/locations.scailo_pb.ts#L619)
 
 ## Methods
 
@@ -400,7 +402,7 @@ ___
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:491](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L491)
+[src/locations.scailo_pb.ts:636](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/locations.scailo_pb.ts#L636)
 
 ___
 
@@ -421,7 +423,7 @@ ___
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:479](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L479)
+[src/locations.scailo_pb.ts:624](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/locations.scailo_pb.ts#L624)
 
 ___
 
@@ -442,7 +444,7 @@ ___
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:483](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L483)
+[src/locations.scailo_pb.ts:628](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/locations.scailo_pb.ts#L628)
 
 ___
 
@@ -463,4 +465,4 @@ ___
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:487](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L487)
+[src/locations.scailo_pb.ts:632](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/locations.scailo_pb.ts#L632)

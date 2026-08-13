@@ -2,7 +2,8 @@
 
 # Class: FamiliesServiceStorageCreateRequest
 
-Describes the parameters necessary to create a family storage
+Request message for associating a physical or logical storage location with a specific family.
+This instructs the inventory management system where items within this family are permitted to be stored.
 
 **`Generated`**
 
@@ -68,7 +69,7 @@ Message\&lt;FamiliesServiceStorageCreateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2449](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2449)
+[src/families.scailo_pb.ts:3302](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3302)
 
 ## Properties
 
@@ -76,7 +77,25 @@ Message\&lt;FamiliesServiceStorageCreateRequest\&gt;.constructor
 
 • **familyId**: `bigint` = `protoInt64.zero`
 
-Stores the family ID
+**`Mandatory`**
+
+**`Description`**
+
+The unique internal identifier of the target family.
+
+**`Example`**
+
+```ts
+582
+```
+
+**`Regex`**
+
+^[1-9][0-9]*$
+
+**`Format`**
+
+Unsigned 64-bit integer greater than 0.
 
 **`Generated`**
 
@@ -84,7 +103,7 @@ from field: uint64 family_id = 10;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2440](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2440)
+[src/families.scailo_pb.ts:3284](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3284)
 
 ___
 
@@ -92,7 +111,25 @@ ___
 
 • **storageId**: `bigint` = `protoInt64.zero`
 
-Stores the storage ID
+**`Mandatory`**
+
+**`Description`**
+
+The unique internal identifier of the target storage location to associate with the family.
+
+**`Example`**
+
+```ts
+1050
+```
+
+**`Regex`**
+
+^[1-9][0-9]*$
+
+**`Format`**
+
+Unsigned 64-bit integer greater than 0.
 
 **`Generated`**
 
@@ -100,23 +137,41 @@ from field: uint64 storage_id = 11;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2447](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2447)
+[src/families.scailo_pb.ts:3300](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3300)
 
 ___
 
 ### userComment
 
-• **userComment**: `string` = `""`
+• `Optional` **userComment**: `string`
 
-Stores any comment that the user might add during this operation
+**`Optional`**
+
+**`Description`**
+
+Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+
+**`Example`**
+
+```ts
+"This is a comment for audit purposes."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
-from field: string user_comment = 1;
+from field: optional string user_comment = 1;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2433](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2433)
+[src/families.scailo_pb.ts:3268](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3268)
 
 ___
 
@@ -126,7 +181,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2456](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2456)
+[src/families.scailo_pb.ts:3309](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3309)
 
 ___
 
@@ -136,7 +191,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2454](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2454)
+[src/families.scailo_pb.ts:3307](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3307)
 
 ___
 
@@ -146,7 +201,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2455](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2455)
+[src/families.scailo_pb.ts:3308](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3308)
 
 ## Methods
 
@@ -434,7 +489,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2474](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2474)
+[src/families.scailo_pb.ts:3327](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3327)
 
 ___
 
@@ -455,7 +510,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2462](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2462)
+[src/families.scailo_pb.ts:3315](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3315)
 
 ___
 
@@ -476,7 +531,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2466](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2466)
+[src/families.scailo_pb.ts:3319](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3319)
 
 ___
 
@@ -497,4 +552,4 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2470](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2470)
+[src/families.scailo_pb.ts:3323](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3323)

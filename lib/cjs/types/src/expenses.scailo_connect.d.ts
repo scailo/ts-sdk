@@ -1,6 +1,7 @@
 import { Expense, ExpenseItem, ExpenseItemHistoryRequest, ExpenseItemsSearchRequest, ExpensesItemsList, ExpensesList, ExpensesServiceCountReq, ExpensesServiceCreateRequest, ExpensesServiceFilterReq, ExpensesServiceItemCreateRequest, ExpensesServiceItemUpdateRequest, ExpensesServicePaginatedItemsResponse, ExpensesServicePaginationReq, ExpensesServicePaginationResponse, ExpensesServiceSearchAllReq, ExpensesServiceUpdateRequest } from "./expenses.scailo_pb.js";
 import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
+import { VaultFolderAttachRequest } from "./vault_folders.scailo_pb.js";
 import { MagicLink, MagicLinksServiceCreateRequestForSpecificResource } from "./magic_links.scailo_pb.js";
 /**
  *
@@ -218,7 +219,13 @@ export declare const ExpensesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Reopen
+         * Reopens a finalized or closed record for further modifications.
+         *
+         * **Status Transition:** -> `REVISION`
+         *
+         * **Side Effects:**
+         * - Unlocks the record to allow edits.
+         * - Logs the required user comment into the audit trail for compliance tracking.
          *
          * @generated from rpc Scailo.ExpensesService.Reopen
          */
@@ -240,13 +247,37 @@ export declare const ExpensesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Send Email
+         * Triggers an automated email notification related to the record.
+         *
+         * **Side Effects:**
+         * - Dispatches a structured email to the designated recipients based on the provided attributes.
+         * - Appends an entry to the system communication logs for auditing purposes.
          *
          * @generated from rpc Scailo.ExpensesService.SendEmail
          */
         readonly sendEmail: {
             readonly name: "SendEmail";
             readonly I: typeof IdentifierWithEmailAttributes;
+            readonly O: typeof IdentifierResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Attaches a specified folder directly to a record without requiring a full revision workflow.
+         *
+         * This is a convenience API designed to bypass the traditional multi-step modification lifecycle
+         * (e.g., creating a revision, updating data, submitting for verification, and awaiting approval).
+         * It allows for the immediate, single-step association of a vault folder.
+         *
+         * **Side Effects & Lifecycle:**
+         * * The overall status of the record remains unchanged.
+         * * The record's modification timestamp is automatically updated to the current time.
+         * * An entry is appended to the record's audit log tracking this attachment.
+         *
+         * @generated from rpc Scailo.ExpensesService.AttachVaultFolder
+         */
+        readonly attachVaultFolder: {
+            readonly name: "AttachVaultFolder";
+            readonly I: typeof VaultFolderAttachRequest;
             readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
@@ -452,7 +483,12 @@ export declare const ExpensesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View by Reference ID (returns the latest record in case of duplicates)
+         * Retrieves a single record based on its user-defined, external reference ID.
+         *
+         * This read-only operation is utilized for targeted lookups using human-readable identifiers (e.g., "REF-2023-001") rather than internal system IDs or unpredictable UUIDs.
+         * Because external reference IDs might occasionally be duplicated across a tenant's dataset (due to legacy data imports, external CRM syncing overlaps, or manual entry overrides),
+         * this query guarantees a deterministic response. In the event of a collision, it automatically resolves the conflict by returning only the most recently created or modified record
+         * that matches the requested reference string.
          *
          * @generated from rpc Scailo.ExpensesService.ViewByReferenceID
          */
@@ -529,7 +565,14 @@ export declare const ExpensesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Checks if the record is downloadable (checks if the custom download function has been implemented)
+         * Evaluates the download eligibility of a specific record using its universally unique identifier (UUID).
+         *
+         * This endpoint serves as a lightweight precursor to the actual file retrieval process. It verifies
+         * whether the target record supports file extraction by checking if a custom download function has
+         * been implemented for the underlying asset. By utilizing this check, client applications can
+         * preemptively determine file availability and dynamically adjust user interface elements
+         * (e.g., enabling or disabling a download button) without initiating a full, potentially heavy
+         * download request.
          *
          * @generated from rpc Scailo.ExpensesService.IsDownloadable
          */
@@ -540,7 +583,13 @@ export declare const ExpensesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Download expense with the given IdentifierUUID (can be used to allow public downloads)
+         * Retrieves the underlying file or document payload associated with a specific entity
+         * using its universally unique identifier (UUID).
+         *
+         * This endpoint is designed for versatile resource retrieval and is commonly utilized
+         * to facilitate direct, secure, or public-facing downloads. By relying on an obscure
+         * UUID rather than predictable internal sequential IDs, it ensures that external
+         * download links remain unguessable and safe for broad distribution.
          *
          * @generated from rpc Scailo.ExpensesService.DownloadByUUID
          */

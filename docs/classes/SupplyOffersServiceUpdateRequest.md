@@ -80,7 +80,7 @@ Message\&lt;SupplyOffersServiceUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:632](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/supply_offers.scailo_pb.ts#L632)
+[src/supply_offers.scailo_pb.ts:673](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/supply_offers.scailo_pb.ts#L673)
 
 ## Properties
 
@@ -96,7 +96,7 @@ from field: uint64 buyer_location_id = 13;
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:574](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/supply_offers.scailo_pb.ts#L574)
+[src/supply_offers.scailo_pb.ts:608](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/supply_offers.scailo_pb.ts#L608)
 
 ___
 
@@ -112,7 +112,7 @@ from field: uint64 consignee_location_id = 12;
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:567](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/supply_offers.scailo_pb.ts#L567)
+[src/supply_offers.scailo_pb.ts:601](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/supply_offers.scailo_pb.ts#L601)
 
 ___
 
@@ -128,7 +128,7 @@ from field: uint64 currency_id = 15;
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:581](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/supply_offers.scailo_pb.ts#L581)
+[src/supply_offers.scailo_pb.ts:615](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/supply_offers.scailo_pb.ts#L615)
 
 ___
 
@@ -136,7 +136,21 @@ ___
 
 • **formData**: [`FormFieldDatumCreateRequest`](FormFieldDatumCreateRequest.md)[] = `[]`
 
-The list of dynamic forms
+**`Optional`**
+
+**`Description`**
+
+A collection of dynamic form fields for organization-specific data.
+
+**`Example`**
+
+```ts
+[]
+```
+
+**`Format`**
+
+An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
 
 **`Generated`**
 
@@ -144,7 +158,7 @@ from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:630](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/supply_offers.scailo_pb.ts#L630)
+[src/supply_offers.scailo_pb.ts:671](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/supply_offers.scailo_pb.ts#L671)
 
 ___
 
@@ -152,7 +166,25 @@ ___
 
 • **id**: `bigint` = `protoInt64.zero`
 
-The ID of the record that needs to be updated
+**`Mandatory`**
+
+**`Description`**
+
+The unique internal identifier of the target record that needs to be updated.
+
+**`Example`**
+
+```ts
+1024
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -160,7 +192,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:516](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/supply_offers.scailo_pb.ts#L516)
+[src/supply_offers.scailo_pb.ts:550](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/supply_offers.scailo_pb.ts#L550)
 
 ___
 
@@ -176,7 +208,7 @@ from field: uint64 miscellaneous_cost = 17;
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:595](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/supply_offers.scailo_pb.ts#L595)
+[src/supply_offers.scailo_pb.ts:629](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/supply_offers.scailo_pb.ts#L629)
 
 ___
 
@@ -202,7 +234,7 @@ from field: bool notify_users = 3;
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:528](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/supply_offers.scailo_pb.ts#L528)
+[src/supply_offers.scailo_pb.ts:562](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/supply_offers.scailo_pb.ts#L562)
 
 ___
 
@@ -218,7 +250,7 @@ from field: uint64 overall_discount = 18;
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:602](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/supply_offers.scailo_pb.ts#L602)
+[src/supply_offers.scailo_pb.ts:636](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/supply_offers.scailo_pb.ts#L636)
 
 ___
 
@@ -234,7 +266,7 @@ from field: uint64 payment_advance = 20;
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:616](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/supply_offers.scailo_pb.ts#L616)
+[src/supply_offers.scailo_pb.ts:650](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/supply_offers.scailo_pb.ts#L650)
 
 ___
 
@@ -250,7 +282,7 @@ from field: uint64 payment_cycle_in_days = 21;
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:623](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/supply_offers.scailo_pb.ts#L623)
+[src/supply_offers.scailo_pb.ts:657](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/supply_offers.scailo_pb.ts#L657)
 
 ___
 
@@ -266,7 +298,7 @@ from field: uint64 project_id = 16;
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:588](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/supply_offers.scailo_pb.ts#L588)
+[src/supply_offers.scailo_pb.ts:622](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/supply_offers.scailo_pb.ts#L622)
 
 ___
 
@@ -300,7 +332,7 @@ from field: string reference_id = 10;
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:560](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/supply_offers.scailo_pb.ts#L560)
+[src/supply_offers.scailo_pb.ts:594](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/supply_offers.scailo_pb.ts#L594)
 
 ___
 
@@ -316,7 +348,7 @@ from field: int64 round_off = 19;
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:609](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/supply_offers.scailo_pb.ts#L609)
+[src/supply_offers.scailo_pb.ts:643](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/supply_offers.scailo_pb.ts#L643)
 
 ___
 
@@ -324,7 +356,25 @@ ___
 
 • **userComment**: `string` = `""`
 
-Stores any comment that the user might add during this operation
+**`Optional`**
+
+**`Description`**
+
+Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+
+**`Example`**
+
+```ts
+"This is a comment for audit purposes."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
@@ -332,7 +382,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:509](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/supply_offers.scailo_pb.ts#L509)
+[src/supply_offers.scailo_pb.ts:534](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/supply_offers.scailo_pb.ts#L534)
 
 ___
 
@@ -366,7 +416,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:544](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/supply_offers.scailo_pb.ts#L544)
+[src/supply_offers.scailo_pb.ts:578](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/supply_offers.scailo_pb.ts#L578)
 
 ___
 
@@ -376,7 +426,7 @@ ___
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:639](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/supply_offers.scailo_pb.ts#L639)
+[src/supply_offers.scailo_pb.ts:680](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/supply_offers.scailo_pb.ts#L680)
 
 ___
 
@@ -386,7 +436,7 @@ ___
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:637](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/supply_offers.scailo_pb.ts#L637)
+[src/supply_offers.scailo_pb.ts:678](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/supply_offers.scailo_pb.ts#L678)
 
 ___
 
@@ -396,7 +446,7 @@ ___
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:638](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/supply_offers.scailo_pb.ts#L638)
+[src/supply_offers.scailo_pb.ts:679](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/supply_offers.scailo_pb.ts#L679)
 
 ## Methods
 
@@ -684,7 +734,7 @@ ___
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:669](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/supply_offers.scailo_pb.ts#L669)
+[src/supply_offers.scailo_pb.ts:710](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/supply_offers.scailo_pb.ts#L710)
 
 ___
 
@@ -705,7 +755,7 @@ ___
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:657](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/supply_offers.scailo_pb.ts#L657)
+[src/supply_offers.scailo_pb.ts:698](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/supply_offers.scailo_pb.ts#L698)
 
 ___
 
@@ -726,7 +776,7 @@ ___
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:661](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/supply_offers.scailo_pb.ts#L661)
+[src/supply_offers.scailo_pb.ts:702](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/supply_offers.scailo_pb.ts#L702)
 
 ___
 
@@ -747,4 +797,4 @@ ___
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:665](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/supply_offers.scailo_pb.ts#L665)
+[src/supply_offers.scailo_pb.ts:706](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/supply_offers.scailo_pb.ts#L706)

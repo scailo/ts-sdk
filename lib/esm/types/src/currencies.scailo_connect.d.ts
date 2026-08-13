@@ -3,7 +3,9 @@ import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, Ident
 import { MethodKind } from "@bufbuild/protobuf";
 /**
  *
- * Describes the common methods applicable on each currency
+ * The CurrenciesService manages the full lifecycle of currencies.
+ * It provides standard CRUD operations alongside a robust state machine for
+ * verification, manager approval, and completion.
  *
  * @generated from service Scailo.CurrenciesService
  */
@@ -11,7 +13,18 @@ export declare const CurrenciesService: {
     readonly typeName: "Scailo.CurrenciesService";
     readonly methods: {
         /**
-         * Create and send for verification
+         * Creates a new record and immediately moves it to the verification workflow.
+         *
+         * This method validates all required fields.
+         * The record is created with a `STANDARD_LIFECYCLE_STATUS.PREVERIFY` status.
+         *
+         * **Side Effects:**
+         * - Generates a unique system UUID.
+         * - Records an audit log for the "Create" action.
+         * - May trigger automated verification workflows.
+         *
+         * **Errors:**
+         * - `INVALID_ARGUMENT`: If validation rules fail.
          *
          * @generated from rpc Scailo.CurrenciesService.Create
          */

@@ -2,7 +2,12 @@
 
 # Class: RepeatWithDeliveryDate
 
-Describes the payload necessary for performing Repeat requests with a specific delivery date
+Request message for duplicating an existing record while projecting it onto a new timeline.
+This payload identifies the source record to be cloned and provides the mandatory overrides
+(such as a new reference ID and delivery date) required to instantiate the new entity.
+
+**Note:** This is commonly used in procurement and sales workflows to rapidly recreate
+frequent or recurring orders without manually re-entering line items and complex configurations.
 
 **`Generated`**
 
@@ -69,7 +74,7 @@ Message\&lt;RepeatWithDeliveryDate\&gt;.constructor
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2389](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/base.scailo_pb.ts#L2389)
+[src/base.scailo_pb.ts:2497](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/base.scailo_pb.ts#L2497)
 
 ## Properties
 
@@ -77,7 +82,25 @@ Message\&lt;RepeatWithDeliveryDate\&gt;.constructor
 
 • **deliveryDate**: `string` = `""`
 
-The common delivery date
+**`Mandatory`**
+
+**`Description`**
+
+The target delivery date to be applied to the newly created record, overriding the schedule of the original source.
+
+**`Example`**
+
+```ts
+"2023-12-31"
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+Must be a non-empty string. Expected to follow the standard date format designated by the client (e.g., YYYY-MM-DD).
 
 **`Generated`**
 
@@ -85,7 +108,7 @@ from field: string delivery_date = 13;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2387](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/base.scailo_pb.ts#L2387)
+[src/base.scailo_pb.ts:2495](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/base.scailo_pb.ts#L2495)
 
 ___
 
@@ -119,7 +142,7 @@ from field: string reference_id = 10;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2380](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/base.scailo_pb.ts#L2380)
+[src/base.scailo_pb.ts:2479](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/base.scailo_pb.ts#L2479)
 
 ___
 
@@ -127,7 +150,25 @@ ___
 
 • **userComment**: `string` = `""`
 
-Stores any comment that the user might add during this operation
+**`Optional`**
+
+**`Description`**
+
+Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+
+**`Example`**
+
+```ts
+"This is a comment for audit purposes."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
@@ -135,7 +176,7 @@ from field: string user_comment = 2;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2364](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/base.scailo_pb.ts#L2364)
+[src/base.scailo_pb.ts:2463](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/base.scailo_pb.ts#L2463)
 
 ___
 
@@ -143,7 +184,25 @@ ___
 
 • **uuid**: `string` = `""`
 
-UUID of the resource
+**`Mandatory`**
+
+**`Description`**
+
+The globally unique identifier (UUID) of the source record that serves as the blueprint for duplication.
+
+**`Example`**
+
+```ts
+"550e8400-e29b-41d4-a716-446655440000"
+```
+
+**`Regex`**
+
+^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+
+**`Format`**
+
+Must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
@@ -151,7 +210,7 @@ from field: string uuid = 1;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2357](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/base.scailo_pb.ts#L2357)
+[src/base.scailo_pb.ts:2447](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/base.scailo_pb.ts#L2447)
 
 ___
 
@@ -161,7 +220,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2396](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/base.scailo_pb.ts#L2396)
+[src/base.scailo_pb.ts:2504](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/base.scailo_pb.ts#L2504)
 
 ___
 
@@ -171,7 +230,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2394](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/base.scailo_pb.ts#L2394)
+[src/base.scailo_pb.ts:2502](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/base.scailo_pb.ts#L2502)
 
 ___
 
@@ -181,7 +240,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2395](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/base.scailo_pb.ts#L2395)
+[src/base.scailo_pb.ts:2503](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/base.scailo_pb.ts#L2503)
 
 ## Methods
 
@@ -469,7 +528,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2415](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/base.scailo_pb.ts#L2415)
+[src/base.scailo_pb.ts:2523](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/base.scailo_pb.ts#L2523)
 
 ___
 
@@ -490,7 +549,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2403](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/base.scailo_pb.ts#L2403)
+[src/base.scailo_pb.ts:2511](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/base.scailo_pb.ts#L2511)
 
 ___
 
@@ -511,7 +570,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2407](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/base.scailo_pb.ts#L2407)
+[src/base.scailo_pb.ts:2515](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/base.scailo_pb.ts#L2515)
 
 ___
 
@@ -532,4 +591,4 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2411](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/base.scailo_pb.ts#L2411)
+[src/base.scailo_pb.ts:2519](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/base.scailo_pb.ts#L2519)

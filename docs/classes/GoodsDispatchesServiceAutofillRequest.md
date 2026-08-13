@@ -2,7 +2,11 @@
 
 # Class: GoodsDispatchesServiceAutofillRequest
 
-Describes the parameters necessary to perform an autofill request
+Request message to automatically populate a Goods Dispatch with pending line items from its source document.
+This operational "autofill" mechanism accelerates the warehouse fulfillment process by querying the linked
+parent record (e.g., an approved Sales Order) and automatically generating preliminary dispatch items for all
+remaining unfulfilled quantities. This drastically reduces manual data entry errors and ensures strict
+logistical alignment with the original commercial contract.
 
 **`Generated`**
 
@@ -68,39 +72,75 @@ Message\&lt;GoodsDispatchesServiceAutofillRequest\&gt;.constructor
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:548](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L548)
+[src/goods_dispatches.scailo_pb.ts:662](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L662)
 
 ## Properties
 
 ### splitIntoUnitQuantity
 
-• **splitIntoUnitQuantity**: `boolean` = `false`
+• `Optional` **splitIntoUnitQuantity**: `boolean`
 
-Stores if the inventory needs to be split into unit quantities
+**`Optional`**
+
+**`Description`**
+
+A boolean flag indicating whether the auto-populated inventory should be split into individual line items of unit quantity (quantity = 1). This is highly valuable for serialized inventory operations where warehouse staff must scan, track, or assign serial numbers to individual items (e.g., electronics, high-value goods) during packing.
+
+**`Example`**
+
+```ts
+true
+```
+
+**`Regex`**
+
+^(?:true|false)$
+
+**`Format`**
+
+Boolean true or false.
 
 **`Generated`**
 
-from field: bool split_into_unit_quantity = 10;
+from field: optional bool split_into_unit_quantity = 10;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:546](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L546)
+[src/goods_dispatches.scailo_pb.ts:660](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L660)
 
 ___
 
 ### userComment
 
-• **userComment**: `string` = `""`
+• `Optional` **userComment**: `string`
 
-Stores any comment that the user might add during this operation
+**`Optional`**
+
+**`Description`**
+
+Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+
+**`Example`**
+
+```ts
+"This is a comment for audit purposes."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
-from field: string user_comment = 1;
+from field: optional string user_comment = 1;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:532](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L532)
+[src/goods_dispatches.scailo_pb.ts:628](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L628)
 
 ___
 
@@ -108,7 +148,25 @@ ___
 
 • **uuid**: `string` = `""`
 
-The UUID of the record that needs to be updated
+**`Mandatory`**
+
+**`Description`**
+
+The globally unique identifier (UUID) of the target Goods Dispatch document that needs to be autofilled.
+
+**`Example`**
+
+```ts
+"550e8400-e29b-41d4-a716-446655440000"
+```
+
+**`Regex`**
+
+^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+
+**`Format`**
+
+Must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
@@ -116,7 +174,7 @@ from field: string uuid = 2;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:539](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L539)
+[src/goods_dispatches.scailo_pb.ts:644](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L644)
 
 ___
 
@@ -126,7 +184,7 @@ ___
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:555](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L555)
+[src/goods_dispatches.scailo_pb.ts:669](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L669)
 
 ___
 
@@ -136,7 +194,7 @@ ___
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:553](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L553)
+[src/goods_dispatches.scailo_pb.ts:667](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L667)
 
 ___
 
@@ -146,7 +204,7 @@ ___
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:554](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L554)
+[src/goods_dispatches.scailo_pb.ts:668](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L668)
 
 ## Methods
 
@@ -434,7 +492,7 @@ ___
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:573](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L573)
+[src/goods_dispatches.scailo_pb.ts:687](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L687)
 
 ___
 
@@ -455,7 +513,7 @@ ___
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:561](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L561)
+[src/goods_dispatches.scailo_pb.ts:675](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L675)
 
 ___
 
@@ -476,7 +534,7 @@ ___
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:565](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L565)
+[src/goods_dispatches.scailo_pb.ts:679](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L679)
 
 ___
 
@@ -497,4 +555,4 @@ ___
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:569](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L569)
+[src/goods_dispatches.scailo_pb.ts:683](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L683)

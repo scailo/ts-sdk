@@ -1,6 +1,7 @@
 import { Absence, AbsencesList, AbsencesServiceCountReq, AbsencesServiceCreateRequest, AbsencesServiceFilterReq, AbsencesServicePaginationReq, AbsencesServicePaginationResponse, AbsencesServiceSearchAllReq, AbsencesServiceUpdateRequest } from "./absences.scailo_pb.js";
 import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
+import { VaultFolderAttachRequest } from "./vault_folders.scailo_pb.js";
 import { MagicLink, MagicLinksServiceCreateRequestForSpecificResource } from "./magic_links.scailo_pb.js";
 /**
  *
@@ -26,7 +27,7 @@ export declare const AbsencesService: {
          *
          * **Errors:**
          * - `INVALID_ARGUMENT`: If validation rules fail (e.g., negative quantity, invalid timestamps).
-         * - `ALREADY_EXISTS`: If the `reference_id` or `final_ref_number` is already taken.
+         * - `ALREADY_EXISTS`: If the `reference_id` is already taken.
          *
          * @generated from rpc Scailo.AbsencesService.Create
          */
@@ -239,6 +240,26 @@ export declare const AbsencesService: {
         readonly commentAdd: {
             readonly name: "CommentAdd";
             readonly I: typeof IdentifierUUIDWithUserComment;
+            readonly O: typeof IdentifierResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Attaches a specified folder directly to a record without requiring a full revision workflow.
+         *
+         * This is a convenience API designed to bypass the traditional multi-step modification lifecycle
+         * (e.g., creating a revision, updating data, submitting for verification, and awaiting approval).
+         * It allows for the immediate, single-step association of a vault folder.
+         *
+         * **Side Effects & Lifecycle:**
+         * * The overall status of the record remains unchanged.
+         * * The record's modification timestamp is automatically updated to the current time.
+         * * An entry is appended to the record's audit log tracking this attachment.
+         *
+         * @generated from rpc Scailo.AbsencesService.AttachVaultFolder
+         */
+        readonly attachVaultFolder: {
+            readonly name: "AttachVaultFolder";
+            readonly I: typeof VaultFolderAttachRequest;
             readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };

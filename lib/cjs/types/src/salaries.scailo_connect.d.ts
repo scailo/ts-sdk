@@ -1,6 +1,7 @@
 import { SalariesAdditionItemsList, SalariesDeductionItemsList, SalariesList, SalariesReimbursementItemsList, SalariesServiceAdditionItemCreateRequest, SalariesServiceAdditionItemUpdateRequest, SalariesServiceAutofillRequest, SalariesServiceCountReq, SalariesServiceCreateRequest, SalariesServiceDeductionItemCreateRequest, SalariesServiceDeductionItemUpdateRequest, SalariesServiceFilterReq, SalariesServicePaginationReq, SalariesServicePaginationResponse, SalariesServiceReimbursementItemCreateRequest, SalariesServiceReimbursementItemUpdateRequest, SalariesServiceSearchAllReq, SalariesServiceUpdateRequest, Salary, SalaryAdditionItem, SalaryAdditionItemHistoryRequest, SalaryAdditionItemProspectiveInfoRequest, SalaryDeductionItem, SalaryDeductionItemHistoryRequest, SalaryDeductionItemProspectiveInfoRequest, SalaryReimbursementItem, SalaryReimbursementItemHistoryRequest, SalaryReimbursementItemProspectiveInfoRequest } from "./salaries.scailo_pb.js";
 import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
+import { VaultFolderAttachRequest } from "./vault_folders.scailo_pb.js";
 /**
  *
  * Describes the common methods applicable on each salary
@@ -217,7 +218,13 @@ export declare const SalariesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Reopen
+         * Reopens a finalized or closed record for further modifications.
+         *
+         * **Status Transition:** -> `REVISION`
+         *
+         * **Side Effects:**
+         * - Unlocks the record to allow edits.
+         * - Logs the required user comment into the audit trail for compliance tracking.
          *
          * @generated from rpc Scailo.SalariesService.Reopen
          */
@@ -239,7 +246,11 @@ export declare const SalariesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Send Email
+         * Triggers an automated email notification related to the record.
+         *
+         * **Side Effects:**
+         * - Dispatches a structured email to the designated recipients based on the provided attributes.
+         * - Appends an entry to the system communication logs for auditing purposes.
          *
          * @generated from rpc Scailo.SalariesService.SendEmail
          */
@@ -250,7 +261,32 @@ export declare const SalariesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Autofill the salary
+         * Attaches a specified folder directly to a record without requiring a full revision workflow.
+         *
+         * This is a convenience API designed to bypass the traditional multi-step modification lifecycle
+         * (e.g., creating a revision, updating data, submitting for verification, and awaiting approval).
+         * It allows for the immediate, single-step association of a vault folder.
+         *
+         * **Side Effects & Lifecycle:**
+         * * The overall status of the record remains unchanged.
+         * * The record's modification timestamp is automatically updated to the current time.
+         * * An entry is appended to the record's audit log tracking this attachment.
+         *
+         * @generated from rpc Scailo.SalariesService.AttachVaultFolder
+         */
+        readonly attachVaultFolder: {
+            readonly name: "AttachVaultFolder";
+            readonly I: typeof VaultFolderAttachRequest;
+            readonly O: typeof IdentifierResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Automatically populates a record with line items and configurations derived from its linked references.
+         *
+         * **Side Effects:**
+         * - Queries the target record (identified by its UUID) for any attached operational constraints or references.
+         * - Dynamically generates and attaches the corresponding line items to the record based on the sourced data, minimizing manual data entry.
+         * - Appends an audit trail entry tracking the execution of the autofill operation and the provided justification comment.
          *
          * @generated from rpc Scailo.SalariesService.Autofill
          */

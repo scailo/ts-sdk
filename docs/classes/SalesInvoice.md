@@ -2,7 +2,15 @@
 
 # Class: SalesInvoice
 
-Describes the parameters that are part of a standard response
+Represents a complete, finalized Sales Invoice entity within the system.
+This message encapsulates the comprehensive state of a formal billing document issued to a buyer,
+including its identity metadata, strict linkage to the originating operational record (e.g., Sales Order),
+designated payment destination (bank account), financial aggregates (taxes, discounts, and round-offs),
+approval lifecycle, audit history, and the complete collection of billed line items.
+
+**Note:** This payload is typically utilized in read operations (e.g., View, Search)
+and provides frontend clients, financial dashboards, and external accounting systems with the
+entire context needed to render, process, collect payment, and reconcile the invoice.
 
 **`Generated`**
 
@@ -87,7 +95,7 @@ Message\&lt;SalesInvoice\&gt;.constructor
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:909](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L909)
+[src/sales_invoices.scailo_pb.ts:1206](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L1206)
 
 ## Properties
 
@@ -95,7 +103,15 @@ Message\&lt;SalesInvoice\&gt;.constructor
 
 • **amendmentCount**: `bigint` = `protoInt64.zero`
 
-The number of times that the sales invoice has been amended
+**`Description`**
+
+The number of times that this record has been amended after approval.
+
+**`Example`**
+
+```ts
+5
+```
 
 **`Generated`**
 
@@ -103,7 +119,7 @@ from field: uint64 amendment_count = 22;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:893](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L893)
+[src/sales_invoices.scailo_pb.ts:1184](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L1184)
 
 ___
 
@@ -121,7 +137,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:760](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L760)
+[src/sales_invoices.scailo_pb.ts:1016](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L1016)
 
 ___
 
@@ -129,7 +145,15 @@ ___
 
 • **bankAccountId**: `bigint` = `protoInt64.zero`
 
-The associated ID of the bank account
+**`Description`**
+
+The unique internal identifier of the organization's bank account designated to receive the payment for this invoice.
+
+**`Example`**
+
+```ts
+15
+```
 
 **`Generated`**
 
@@ -137,7 +161,7 @@ from field: uint64 bank_account_id = 15;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:844](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L844)
+[src/sales_invoices.scailo_pb.ts:1112](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L1112)
 
 ___
 
@@ -161,7 +185,7 @@ from field: uint64 completed_on = 6;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:786](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L786)
+[src/sales_invoices.scailo_pb.ts:1042](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L1042)
 
 ___
 
@@ -169,7 +193,15 @@ ___
 
 • **cumulativeExcessTaxAmount**: `bigint` = `protoInt64.zero`
 
-The excess tax amount
+**`Description`**
+
+The monetary amount of the cumulative excess tax applied to the invoice, represented in the base currency subunit.
+
+**`Example`**
+
+```ts
+1250
+```
 
 **`Generated`**
 
@@ -177,7 +209,7 @@ from field: uint64 cumulative_excess_tax_amount = 20;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:879](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L879)
+[src/sales_invoices.scailo_pb.ts:1162](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L1162)
 
 ___
 
@@ -185,7 +217,15 @@ ___
 
 • **cumulativeExcessTaxGroupId**: `bigint` = `protoInt64.zero`
 
-The excess tax group
+**`Description`**
+
+The unique internal identifier of an excess tax group applied at the cumulative/invoice level (e.g., for specialized regional surcharges or cumulative tax brackets).
+
+**`Example`**
+
+```ts
+6
+```
 
 **`Generated`**
 
@@ -193,7 +233,7 @@ from field: uint64 cumulative_excess_tax_group_id = 19;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:872](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L872)
+[src/sales_invoices.scailo_pb.ts:1152](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L1152)
 
 ___
 
@@ -201,7 +241,15 @@ ___
 
 • **currencyId**: `bigint` = `protoInt64.zero`
 
-The associated ID of the currency
+**`Description`**
+
+The unique internal identifier of the currency used for all financial calculations and billing within this invoice.
+
+**`Example`**
+
+```ts
+3
+```
 
 **`Generated`**
 
@@ -209,7 +257,7 @@ from field: uint64 currency_id = 14;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:837](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L837)
+[src/sales_invoices.scailo_pb.ts:1102](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L1102)
 
 ___
 
@@ -233,7 +281,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:744](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L744)
+[src/sales_invoices.scailo_pb.ts:1000](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L1000)
 
 ___
 
@@ -257,7 +305,7 @@ from field: string final_ref_number = 11;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:816](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L816)
+[src/sales_invoices.scailo_pb.ts:1072](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L1072)
 
 ___
 
@@ -265,7 +313,9 @@ ___
 
 • **formData**: [`FormFieldDatum`](FormFieldDatum.md)[] = `[]`
 
-The list of dynamic forms
+**`Description`**
+
+Collection of organization-specific dynamic data.
 
 **`Generated`**
 
@@ -273,7 +323,7 @@ from field: repeated Scailo.FormFieldDatum form_data = 40;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:907](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L907)
+[src/sales_invoices.scailo_pb.ts:1204](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L1204)
 
 ___
 
@@ -281,7 +331,19 @@ ___
 
 • **list**: [`SalesInvoiceItem`](SalesInvoiceItem.md)[] = `[]`
 
-The list of associated sales invoice items
+**`Description`**
+
+The complete, aggregated list of individual line items, products, or services that constitute this sales invoice.
+
+**`Example`**
+
+```ts
+[]
+```
+
+**`Format`**
+
+Repeated array of SalesOrderItem message blocks.
 
 **`Generated`**
 
@@ -289,7 +351,7 @@ from field: repeated Scailo.SalesInvoiceItem list = 30;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:900](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L900)
+[src/sales_invoices.scailo_pb.ts:1196](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L1196)
 
 ___
 
@@ -307,7 +369,7 @@ from field: repeated Scailo.LogbookLogConciseSLC logs = 5;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:776](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L776)
+[src/sales_invoices.scailo_pb.ts:1032](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L1032)
 
 ___
 
@@ -325,7 +387,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:752](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L752)
+[src/sales_invoices.scailo_pb.ts:1008](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L1008)
 
 ___
 
@@ -333,7 +395,15 @@ ___
 
 • **miscellaneousCost**: `bigint` = `protoInt64.zero`
 
-Any miscellaneous cost
+**`Description`**
+
+Any additional miscellaneous costs (e.g., late fees, freight charges) applied to the invoice, represented in the base currency subunit (e.g., cents).
+
+**`Example`**
+
+```ts
+1500
+```
 
 **`Generated`**
 
@@ -341,7 +411,7 @@ from field: uint64 miscellaneous_cost = 16;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:851](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L851)
+[src/sales_invoices.scailo_pb.ts:1122](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L1122)
 
 ___
 
@@ -349,7 +419,15 @@ ___
 
 • **overallDiscount**: `bigint` = `protoInt64.zero`
 
-The optional discount amount
+**`Description`**
+
+A flat discount amount applied across the entire invoice total, represented in the base currency subunit (e.g., cents).
+
+**`Example`**
+
+```ts
+500
+```
 
 **`Generated`**
 
@@ -357,7 +435,7 @@ from field: uint64 overall_discount = 17;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:858](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L858)
+[src/sales_invoices.scailo_pb.ts:1132](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L1132)
 
 ___
 
@@ -365,7 +443,15 @@ ___
 
 • **refFrom**: [`SALES_INVOICE_REF_FROM`](../enums/SALES_INVOICE_REF_FROM.md) = `SALES_INVOICE_REF_FROM.SALES_INVOICE_REF_FROM_ANY_UNSPECIFIED`
 
-The associated reference
+**`Description`**
+
+The specific module or record type from which this invoice originates (e.g., Sales Order).
+
+**`Example`**
+
+```ts
+"SALES_INVOICE_REF_FROM_SALES_ORDER"
+```
 
 **`Generated`**
 
@@ -373,7 +459,7 @@ from field: Scailo.SALES_INVOICE_REF_FROM ref_from = 12;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:823](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L823)
+[src/sales_invoices.scailo_pb.ts:1082](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L1082)
 
 ___
 
@@ -381,7 +467,15 @@ ___
 
 • **refId**: `bigint` = `protoInt64.zero`
 
-The associated ID of the reference
+**`Description`**
+
+The unique internal identifier of the specific referenced source document (e.g., the ID of the actual Sales Order being billed).
+
+**`Example`**
+
+```ts
+1024
+```
 
 **`Generated`**
 
@@ -389,7 +483,7 @@ from field: uint64 ref_id = 13;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:830](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L830)
+[src/sales_invoices.scailo_pb.ts:1092](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L1092)
 
 ___
 
@@ -413,7 +507,7 @@ from field: string reference_id = 10;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:806](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L806)
+[src/sales_invoices.scailo_pb.ts:1062](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L1062)
 
 ___
 
@@ -421,7 +515,15 @@ ___
 
 • **roundOff**: `bigint` = `protoInt64.zero`
 
-The applicable round off amount (optional, and can be positive or negative)
+**`Description`**
+
+The applicable rounding adjustment amount to align the final invoice total. Can be positive or negative, represented in the base currency subunit.
+
+**`Example`**
+
+```ts
+-15
+```
 
 **`Generated`**
 
@@ -429,7 +531,7 @@ from field: int64 round_off = 18;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:865](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L865)
+[src/sales_invoices.scailo_pb.ts:1142](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L1142)
 
 ___
 
@@ -447,7 +549,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 4;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:768](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L768)
+[src/sales_invoices.scailo_pb.ts:1024](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L1024)
 
 ___
 
@@ -455,7 +557,19 @@ ___
 
 • **totalValue**: `number` = `0`
 
-Stores the total value of the sales invoice (as a double, which requires no adjustments)
+**`Description`**
+
+The calculated grand total value of the sales invoice, including all items, discounts, costs, and round-offs. Represented as a standard decimal value.
+
+**`Example`**
+
+```ts
+15250.75
+```
+
+**`Format`**
+
+Double-precision floating-point number.
 
 **`Generated`**
 
@@ -463,7 +577,7 @@ from field: double total_value = 21;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:886](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L886)
+[src/sales_invoices.scailo_pb.ts:1174](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L1174)
 
 ___
 
@@ -487,7 +601,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:796](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L796)
+[src/sales_invoices.scailo_pb.ts:1052](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L1052)
 
 ___
 
@@ -497,7 +611,7 @@ ___
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:916](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L916)
+[src/sales_invoices.scailo_pb.ts:1213](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L1213)
 
 ___
 
@@ -507,7 +621,7 @@ ___
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:914](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L914)
+[src/sales_invoices.scailo_pb.ts:1211](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L1211)
 
 ___
 
@@ -517,7 +631,7 @@ ___
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:915](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L915)
+[src/sales_invoices.scailo_pb.ts:1212](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L1212)
 
 ## Methods
 
@@ -805,7 +919,7 @@ ___
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:953](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L953)
+[src/sales_invoices.scailo_pb.ts:1250](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L1250)
 
 ___
 
@@ -826,7 +940,7 @@ ___
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:941](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L941)
+[src/sales_invoices.scailo_pb.ts:1238](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L1238)
 
 ___
 
@@ -847,7 +961,7 @@ ___
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:945](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L945)
+[src/sales_invoices.scailo_pb.ts:1242](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L1242)
 
 ___
 
@@ -868,4 +982,4 @@ ___
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:949](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L949)
+[src/sales_invoices.scailo_pb.ts:1246](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L1246)

@@ -146,6 +146,12 @@ export * from "./src/qc_params.scailo_connect";
 export * from "./src/qc_params.scailo_pb";
 export * from "./src/qc_samples.scailo_connect";
 export * from "./src/qc_samples.scailo_pb";
+export * from "./src/questionnaire_option_groups.scailo_connect";
+export * from "./src/questionnaire_option_groups.scailo_pb";
+export * from "./src/questionnaire_sections.scailo_connect";
+export * from "./src/questionnaire_sections.scailo_pb";
+export * from "./src/questionnaire_templates.scailo_connect";
+export * from "./src/questionnaire_templates.scailo_pb";
 export * from "./src/quotations_requests.scailo_connect";
 export * from "./src/quotations_requests.scailo_pb";
 export * from "./src/quotations_responses.scailo_connect";
@@ -291,6 +297,9 @@ import { PurchasesReturnsService } from "./src/purchases_returns.scailo_connect"
 import { QCGroupsService } from "./src/qc_groups.scailo_connect";
 import { QCParamsService } from "./src/qc_params.scailo_connect";
 import { QCSamplesService } from "./src/qc_samples.scailo_connect";
+import { QuestionnaireOptionGroupsService } from "./src/questionnaire_option_groups.scailo_connect";
+import { QuestionnaireSectionsService } from "./src/questionnaire_sections.scailo_connect";
+import { QuestionnaireTemplatesService } from "./src/questionnaire_templates.scailo_connect";
 import { QuotationsRequestsService } from "./src/quotations_requests.scailo_connect";
 import { QuotationsResponsesService } from "./src/quotations_responses.scailo_connect";
 import { ReplaceableIndentsService } from "./src/replaceable_indents.scailo_connect";
@@ -2369,6 +2378,90 @@ function getNodeTransport(apiEndPoint: string) {
 
 */
 export declare function getScailoClientForQCSamplesService(transport: Transport): Client<typeof QCSamplesService>;
+/**
+
+Get the client to access the QuestionnaireOptionGroupsService. Transport is a connectrpc Transport, which is created as follows:
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node:
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+*/
+export declare function getScailoClientForQuestionnaireOptionGroupsService(transport: Transport): Client<typeof QuestionnaireOptionGroupsService>;
+/**
+
+Get the client to access the QuestionnaireSectionsService. Transport is a connectrpc Transport, which is created as follows:
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node:
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+*/
+export declare function getScailoClientForQuestionnaireSectionsService(transport: Transport): Client<typeof QuestionnaireSectionsService>;
+/**
+
+Get the client to access the QuestionnaireTemplatesService. Transport is a connectrpc Transport, which is created as follows:
+
+For web:
+```
+import { createConnectTransport } from "@connectrpc/connect-web";
+
+function getWebTransport(apiEndPoint: string = location.origin) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+For node:
+```
+import { createConnectTransport } from "@connectrpc/connect-node";
+
+function getNodeTransport(apiEndPoint: string) {
+    return createConnectTransport({
+        baseUrl: apiEndPoint, httpVersion: "1.1", useBinaryFormat: false, interceptors: []
+    });
+}
+```
+
+*/
+export declare function getScailoClientForQuestionnaireTemplatesService(transport: Transport): Client<typeof QuestionnaireTemplatesService>;
 /**
 
 Get the client to access the QuotationsRequestsService. Transport is a connectrpc Transport, which is created as follows:

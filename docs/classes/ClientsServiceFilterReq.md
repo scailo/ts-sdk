@@ -2,7 +2,12 @@
 
 # Class: ClientsServiceFilterReq
 
-Describes the base request payload of a filter search
+Advanced filter request for searching and paginating clients using multiple logical criteria.
+This message encapsulates pagination controls, sorting keys, lifecycle status filters,
+timestamp ranges, and entity references.
+
+**Note:** This is the primary message layout used by the frontend and external API clients
+to build robust data-table queries, reporting views, and targeted record lookups.
 
 **`Generated`**
 
@@ -86,13 +91,13 @@ Message\&lt;ClientsServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:1016](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L1016)
+[src/clients.scailo_pb.ts:1199](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L1199)
 
 ## Properties
 
 ### approvedByUserId
 
-• **approvedByUserId**: `bigint` = `protoInt64.zero`
+• `Optional` **approvedByUserId**: `bigint`
 
 **`Optional`**
 
@@ -116,17 +121,17 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 approved_by_user_id = 13;
+from field: optional uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:947](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L947)
+[src/clients.scailo_pb.ts:1094](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L1094)
 
 ___
 
 ### approvedOnEnd
 
-• **approvedOnEnd**: `bigint` = `protoInt64.zero`
+• `Optional` **approvedOnEnd**: `bigint`
 
 **`Optional`**
 
@@ -150,17 +155,17 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 approved_on_end = 12;
+from field: optional uint64 approved_on_end = 12;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:931](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L931)
+[src/clients.scailo_pb.ts:1078](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L1078)
 
 ___
 
 ### approvedOnStart
 
-• **approvedOnStart**: `bigint` = `protoInt64.zero`
+• `Optional` **approvedOnStart**: `bigint`
 
 **`Optional`**
 
@@ -184,17 +189,17 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 approved_on_start = 11;
+from field: optional uint64 approved_on_start = 11;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:915](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L915)
+[src/clients.scailo_pb.ts:1062](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L1062)
 
 ___
 
 ### approverRoleId
 
-• **approverRoleId**: `bigint` = `protoInt64.zero`
+• `Optional` **approverRoleId**: `bigint`
 
 **`Optional`**
 
@@ -218,27 +223,45 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 approver_role_id = 14;
+from field: optional uint64 approver_role_id = 14;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:963](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L963)
+[src/clients.scailo_pb.ts:1110](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L1110)
 
 ___
 
 ### code
 
-• **code**: `string` = `""`
+• `Optional` **code**: `string`
 
-The unique code by which the client is classified
+**`Optional`**
+
+**`Description`**
+
+The unique code or alphanumeric token by which the client is classified or categorized internally.
+
+**`Example`**
+
+```ts
+"CLI-ACME-001"
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+Must be a non-empty string.
 
 **`Generated`**
 
-from field: string code = 21;
+from field: optional string code = 21;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:977](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L977)
+[src/clients.scailo_pb.ts:1142](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L1142)
 
 ___
 
@@ -272,13 +295,13 @@ from field: int64 count = 2;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:769](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L769)
+[src/clients.scailo_pb.ts:916](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L916)
 
 ___
 
 ### creationTimestampEnd
 
-• **creationTimestampEnd**: `bigint` = `protoInt64.zero`
+• `Optional` **creationTimestampEnd**: `bigint`
 
 **`Optional`**
 
@@ -302,17 +325,17 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 creation_timestamp_end = 102;
+from field: optional uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:839](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L839)
+[src/clients.scailo_pb.ts:986](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L986)
 
 ___
 
 ### creationTimestampStart
 
-• **creationTimestampStart**: `bigint` = `protoInt64.zero`
+• `Optional` **creationTimestampStart**: `bigint`
 
 **`Optional`**
 
@@ -336,33 +359,51 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 creation_timestamp_start = 101;
+from field: optional uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:823](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L823)
+[src/clients.scailo_pb.ts:970](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L970)
 
 ___
 
 ### email
 
-• **email**: `string` = `""`
+• `Optional` **email**: `string`
 
-The primary email of the client
+**`Optional`**
+
+**`Description`**
+
+The primary communication email address of the client.
+
+**`Example`**
+
+```ts
+"billing@acme.com"
+```
+
+**`Regex`**
+
+^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
+
+**`Format`**
+
+Must be a valid and structurally sound email address format.
 
 **`Generated`**
 
-from field: string email = 22;
+from field: optional string email = 22;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:984](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L984)
+[src/clients.scailo_pb.ts:1158](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L1158)
 
 ___
 
 ### entityUuid
 
-• **entityUuid**: `string` = `""`
+• `Optional` **entityUuid**: `string`
 
 **`Optional`**
 
@@ -386,11 +427,11 @@ If provided, must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
-from field: string entity_uuid = 8;
+from field: optional string entity_uuid = 8;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:887](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L887)
+[src/clients.scailo_pb.ts:1034](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L1034)
 
 ___
 
@@ -410,13 +451,13 @@ from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:1001](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L1001)
+[src/clients.scailo_pb.ts:1184](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L1184)
 
 ___
 
 ### includeFormData
 
-• **includeFormData**: `boolean` = `false`
+• `Optional` **includeFormData**: `boolean`
 
 **`Optional`**
 
@@ -433,17 +474,17 @@ true
 
 **`Generated`**
 
-from field: bool include_form_data = 501;
+from field: optional bool include_form_data = 501;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:1014](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L1014)
+[src/clients.scailo_pb.ts:1197](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L1197)
 
 ___
 
 ### isActive
 
-• **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
+• `Optional` **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md)
 
 **`Optional`**
 
@@ -459,17 +500,17 @@ ANY
 
 **`Generated`**
 
-from field: Scailo.BOOL_FILTER is_active = 1;
+from field: optional Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:753](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L753)
+[src/clients.scailo_pb.ts:900](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L900)
 
 ___
 
 ### modificationTimestampEnd
 
-• **modificationTimestampEnd**: `bigint` = `protoInt64.zero`
+• `Optional` **modificationTimestampEnd**: `bigint`
 
 **`Optional`**
 
@@ -493,17 +534,17 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 modification_timestamp_end = 104;
+from field: optional uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:871](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L871)
+[src/clients.scailo_pb.ts:1018](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L1018)
 
 ___
 
 ### modificationTimestampStart
 
-• **modificationTimestampStart**: `bigint` = `protoInt64.zero`
+• `Optional` **modificationTimestampStart**: `bigint`
 
 **`Optional`**
 
@@ -527,33 +568,51 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 modification_timestamp_start = 103;
+from field: optional uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:855](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L855)
+[src/clients.scailo_pb.ts:1002](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L1002)
 
 ___
 
 ### name
 
-• **name**: `string` = `""`
+• `Optional` **name**: `string`
 
-The name of the client
+**`Optional`**
+
+**`Description`**
+
+The official or legal name of the client organization or individual.
+
+**`Example`**
+
+```ts
+"Acme Corporation"
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+Must be a non-empty string.
 
 **`Generated`**
 
-from field: string name = 20;
+from field: optional string name = 20;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:970](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L970)
+[src/clients.scailo_pb.ts:1126](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L1126)
 
 ___
 
 ### offset
 
-• **offset**: `bigint` = `protoInt64.zero`
+• `Optional` **offset**: `bigint`
 
 **`Optional`**
 
@@ -577,33 +636,51 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 offset = 3;
+from field: optional uint64 offset = 3;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:785](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L785)
+[src/clients.scailo_pb.ts:932](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L932)
 
 ___
 
 ### phone
 
-• **phone**: `string` = `""`
+• `Optional` **phone**: `string`
 
-The primary contact number of the client
+**`Optional`**
+
+**`Description`**
+
+The primary contact phone number of the client, typically including country and area codes.
+
+**`Example`**
+
+```ts
+"+1-555-222-0199"
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+Must be a non-empty string string representing a valid phone number format.
 
 **`Generated`**
 
-from field: string phone = 23;
+from field: optional string phone = 23;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:991](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L991)
+[src/clients.scailo_pb.ts:1174](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L1174)
 
 ___
 
 ### sortKey
 
-• **sortKey**: [`CLIENT_SORT_KEY`](../enums/CLIENT_SORT_KEY.md) = `CLIENT_SORT_KEY.CLIENT_SORT_KEY_ID_UNSPECIFIED`
+• `Optional` **sortKey**: [`CLIENT_SORT_KEY`](../enums/CLIENT_SORT_KEY.md)
 
 **`Optional`**
 
@@ -613,17 +690,17 @@ The field used for sorting.
 
 **`Generated`**
 
-from field: Scailo.CLIENT_SORT_KEY sort_key = 5;
+from field: optional Scailo.CLIENT_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:807](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L807)
+[src/clients.scailo_pb.ts:954](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L954)
 
 ___
 
 ### sortOrder
 
-• **sortOrder**: [`SORT_ORDER`](../enums/SORT_ORDER.md) = `SORT_ORDER.ASCENDING_UNSPECIFIED`
+• `Optional` **sortOrder**: [`SORT_ORDER`](../enums/SORT_ORDER.md)
 
 **`Optional`**
 
@@ -639,17 +716,17 @@ DESCENDING
 
 **`Generated`**
 
-from field: Scailo.SORT_ORDER sort_order = 4;
+from field: optional Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:797](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L797)
+[src/clients.scailo_pb.ts:944](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L944)
 
 ___
 
 ### status
 
-• **status**: [`STANDARD_LIFECYCLE_STATUS`](../enums/STANDARD_LIFECYCLE_STATUS.md) = `STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED`
+• `Optional` **status**: [`STANDARD_LIFECYCLE_STATUS`](../enums/STANDARD_LIFECYCLE_STATUS.md)
 
 **`Optional`**
 
@@ -665,11 +742,11 @@ STANDING
 
 **`Generated`**
 
-from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:899](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L899)
+[src/clients.scailo_pb.ts:1046](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L1046)
 
 ___
 
@@ -679,7 +756,7 @@ ___
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:1023](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L1023)
+[src/clients.scailo_pb.ts:1206](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L1206)
 
 ___
 
@@ -689,7 +766,7 @@ ___
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:1021](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L1021)
+[src/clients.scailo_pb.ts:1204](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L1204)
 
 ___
 
@@ -699,7 +776,7 @@ ___
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:1022](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L1022)
+[src/clients.scailo_pb.ts:1205](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L1205)
 
 ## Methods
 
@@ -987,7 +1064,7 @@ ___
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:1059](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L1059)
+[src/clients.scailo_pb.ts:1242](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L1242)
 
 ___
 
@@ -1008,7 +1085,7 @@ ___
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:1047](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L1047)
+[src/clients.scailo_pb.ts:1230](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L1230)
 
 ___
 
@@ -1029,7 +1106,7 @@ ___
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:1051](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L1051)
+[src/clients.scailo_pb.ts:1234](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L1234)
 
 ___
 
@@ -1050,4 +1127,4 @@ ___
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:1055](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L1055)
+[src/clients.scailo_pb.ts:1238](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L1238)

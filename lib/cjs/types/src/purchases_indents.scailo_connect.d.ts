@@ -1,6 +1,7 @@
 import { PurchaseIndent, PurchaseIndentItem, PurchaseIndentItemHistoryRequest, PurchaseIndentItemProspectiveInfoRequest, PurchaseIndentItemsSearchRequest, PurchaseIndentOrderedStatisticsList, PurchasesIndentsItemsList, PurchasesIndentsList, PurchasesIndentsServiceAutofillRequest, PurchasesIndentsServiceCountReq, PurchasesIndentsServiceCreateRequest, PurchasesIndentsServiceFilterReq, PurchasesIndentsServiceItemCreateRequest, PurchasesIndentsServiceItemSpecificationsUpdateRequest, PurchasesIndentsServiceItemUpdateRequest, PurchasesIndentsServiceMultipleItemsCreateRequest, PurchasesIndentsServicePaginatedItemsResponse, PurchasesIndentsServicePaginationReq, PurchasesIndentsServicePaginationResponse, PurchasesIndentsServiceSearchAllReq, PurchasesIndentsServiceUpdateRequest } from "./purchases_indents.scailo_pb.js";
 import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, RepeatWithDeliveryDate, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
+import { VaultFolderAttachRequest } from "./vault_folders.scailo_pb.js";
 import { MagicLink, MagicLinksServiceCreateRequestForSpecificResource } from "./magic_links.scailo_pb.js";
 import { FamiliesList, FilterFamiliesReqForIdentifier } from "./families.scailo_pb.js";
 /**
@@ -206,7 +207,13 @@ export declare const PurchasesIndentsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Repeat
+         * Duplicates an existing operational record (e.g., an order, schedule, or requisition) to create a new, distinct entity with a specified delivery date.
+         *
+         * **Side Effects:**
+         * - Provisions a completely new record that inherits the core attributes, line items, and configurations of the source record identified by the UUID.
+         * - Overrides the original delivery schedule with the newly provided `delivery_date` and assigns the newly provided external `reference_id`.
+         * - Appends an audit trail entry linking the new record to its original source, tracking the duplication event and justification comment.
+         * - Returns the internal identifier and UUID of the newly generated record.
          *
          * @generated from rpc Scailo.PurchasesIndentsService.Repeat
          */
@@ -217,7 +224,13 @@ export declare const PurchasesIndentsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Reopen
+         * Reopens a finalized or closed record for further modifications.
+         *
+         * **Status Transition:** -> `REVISION`
+         *
+         * **Side Effects:**
+         * - Unlocks the record to allow edits.
+         * - Logs the required user comment into the audit trail for compliance tracking.
          *
          * @generated from rpc Scailo.PurchasesIndentsService.Reopen
          */
@@ -239,13 +252,37 @@ export declare const PurchasesIndentsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Send Email
+         * Triggers an automated email notification related to the record.
+         *
+         * **Side Effects:**
+         * - Dispatches a structured email to the designated recipients based on the provided attributes.
+         * - Appends an entry to the system communication logs for auditing purposes.
          *
          * @generated from rpc Scailo.PurchasesIndentsService.SendEmail
          */
         readonly sendEmail: {
             readonly name: "SendEmail";
             readonly I: typeof IdentifierWithEmailAttributes;
+            readonly O: typeof IdentifierResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Attaches a specified folder directly to a record without requiring a full revision workflow.
+         *
+         * This is a convenience API designed to bypass the traditional multi-step modification lifecycle
+         * (e.g., creating a revision, updating data, submitting for verification, and awaiting approval).
+         * It allows for the immediate, single-step association of a vault folder.
+         *
+         * **Side Effects & Lifecycle:**
+         * * The overall status of the record remains unchanged.
+         * * The record's modification timestamp is automatically updated to the current time.
+         * * An entry is appended to the record's audit log tracking this attachment.
+         *
+         * @generated from rpc Scailo.PurchasesIndentsService.AttachVaultFolder
+         */
+        readonly attachVaultFolder: {
+            readonly name: "AttachVaultFolder";
+            readonly I: typeof VaultFolderAttachRequest;
             readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
@@ -263,7 +300,12 @@ export declare const PurchasesIndentsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Autofill the purchase indent
+         * Automatically populates a record with line items and configurations derived from its linked references.
+         *
+         * **Side Effects:**
+         * - Queries the target record (identified by its UUID) for any attached operational constraints or references.
+         * - Dynamically generates and attaches the corresponding line items to the record based on the sourced data, minimizing manual data entry.
+         * - Appends an audit trail entry tracking the execution of the autofill operation and the provided justification comment.
          *
          * @generated from rpc Scailo.PurchasesIndentsService.Autofill
          */
@@ -274,7 +316,10 @@ export declare const PurchasesIndentsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Checks if the Purchase Indent can be marked as completed
+         * Evaluates whether the specified record has satisfied all prerequisite business rules required to transition into a completed lifecycle state.
+         *
+         * This is a non-mutating, read-only query that performs comprehensive server-side validation against the record's current operational constraints. Depending on the specific domain context, the underlying checks may verify that all dependent workflows are resolved, associated child records (such as line items or sub-tasks) have reached their terminal states, and no mandatory actions remain pending.
+         * Client applications typically utilize this endpoint to dynamically determine whether the "Complete" action should be enabled or exposed in the user interface.
          *
          * @generated from rpc Scailo.PurchasesIndentsService.IsCompletable
          */
@@ -495,7 +540,12 @@ export declare const PurchasesIndentsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View by Reference ID (returns the latest record in case of duplicates)
+         * Retrieves a single record based on its user-defined, external reference ID.
+         *
+         * This read-only operation is utilized for targeted lookups using human-readable identifiers (e.g., "REF-2023-001") rather than internal system IDs or unpredictable UUIDs.
+         * Because external reference IDs might occasionally be duplicated across a tenant's dataset (due to legacy data imports, external CRM syncing overlaps, or manual entry overrides),
+         * this query guarantees a deterministic response. In the event of a collision, it automatically resolves the conflict by returning only the most recently created or modified record
+         * that matches the requested reference string.
          *
          * @generated from rpc Scailo.PurchasesIndentsService.ViewByReferenceID
          */
@@ -627,7 +677,14 @@ export declare const PurchasesIndentsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Checks if the record is downloadable (checks if the custom download function has been implemented)
+         * Evaluates the download eligibility of a specific record using its universally unique identifier (UUID).
+         *
+         * This endpoint serves as a lightweight precursor to the actual file retrieval process. It verifies
+         * whether the target record supports file extraction by checking if a custom download function has
+         * been implemented for the underlying asset. By utilizing this check, client applications can
+         * preemptively determine file availability and dynamically adjust user interface elements
+         * (e.g., enabling or disabling a download button) without initiating a full, potentially heavy
+         * download request.
          *
          * @generated from rpc Scailo.PurchasesIndentsService.IsDownloadable
          */
@@ -638,7 +695,13 @@ export declare const PurchasesIndentsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Download equation with the given IdentifierUUID
+         * Retrieves the underlying file or document payload associated with a specific entity
+         * using its universally unique identifier (UUID).
+         *
+         * This endpoint is designed for versatile resource retrieval and is commonly utilized
+         * to facilitate direct, secure, or public-facing downloads. By relying on an obscure
+         * UUID rather than predictable internal sequential IDs, it ensures that external
+         * download links remain unguessable and safe for broad distribution.
          *
          * @generated from rpc Scailo.PurchasesIndentsService.DownloadByUUID
          */

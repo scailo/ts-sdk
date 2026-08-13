@@ -2,7 +2,8 @@
 
 # Class: TeamMembersSearchRequest
 
-Describes the request payload to retrieve approved or unapproved members.
+Request payload structure used to search and filter Team Member records.
+Supports pagination controls, tenancy isolation, status grouping, and text-based matching.
 
 **`Generated`**
 
@@ -79,71 +80,143 @@ Message\&lt;TeamMembersSearchRequest\&gt;.constructor
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:2014](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/teams.scailo_pb.ts#L2014)
+[src/teams.scailo_pb.ts:2382](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/teams.scailo_pb.ts#L2382)
 
 ## Properties
 
 ### approvedByUserId
 
-• **approvedByUserId**: `bigint` = `protoInt64.zero`
+• `Optional` **approvedByUserId**: `bigint`
 
-The ID of the approver
+**`Optional`**
+
+**`Description`**
+
+Filter by the specific user ID who approved the records.
+
+**`Example`**
+
+```ts
+501
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 approved_by_user_id = 12;
+from field: optional uint64 approved_by_user_id = 12;
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:1984](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/teams.scailo_pb.ts#L1984)
+[src/teams.scailo_pb.ts:2316](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/teams.scailo_pb.ts#L2316)
 
 ___
 
 ### approvedOnEnd
 
-• **approvedOnEnd**: `bigint` = `protoInt64.zero`
+• `Optional` **approvedOnEnd**: `bigint`
 
-The end range of approved timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records approved ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 approved_on_end = 11;
+from field: optional uint64 approved_on_end = 11;
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:1977](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/teams.scailo_pb.ts#L1977)
+[src/teams.scailo_pb.ts:2300](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/teams.scailo_pb.ts#L2300)
 
 ___
 
 ### approvedOnStart
 
-• **approvedOnStart**: `bigint` = `protoInt64.zero`
+• `Optional` **approvedOnStart**: `bigint`
 
-The start range of approved timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records approved ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 approved_on_start = 10;
+from field: optional uint64 approved_on_start = 10;
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:1970](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/teams.scailo_pb.ts#L1970)
+[src/teams.scailo_pb.ts:2284](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/teams.scailo_pb.ts#L2284)
 
 ___
 
 ### approverRoleId
 
-• **approverRoleId**: `bigint` = `protoInt64.zero`
+• `Optional` **approverRoleId**: `bigint`
 
-The role ID of the approver
+**`Optional`**
+
+**`Description`**
+
+Filter by the role ID of the approver.
+
+**`Example`**
+
+```ts
+5
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 approver_role_id = 13;
+from field: optional uint64 approver_role_id = 13;
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:1991](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/teams.scailo_pb.ts#L1991)
+[src/teams.scailo_pb.ts:2332](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/teams.scailo_pb.ts#L2332)
 
 ___
 
@@ -177,13 +250,13 @@ from field: int64 count = 2;
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:1902](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/teams.scailo_pb.ts#L1902)
+[src/teams.scailo_pb.ts:2202](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/teams.scailo_pb.ts#L2202)
 
 ___
 
 ### entityUuid
 
-• **entityUuid**: `string` = `""`
+• `Optional` **entityUuid**: `string`
 
 **`Optional`**
 
@@ -207,17 +280,17 @@ If provided, must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
-from field: string entity_uuid = 6;
+from field: optional string entity_uuid = 6;
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:1956](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/teams.scailo_pb.ts#L1956)
+[src/teams.scailo_pb.ts:2256](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/teams.scailo_pb.ts#L2256)
 
 ___
 
 ### isActive
 
-• **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
+• `Optional` **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md)
 
 **`Optional`**
 
@@ -233,17 +306,17 @@ ANY
 
 **`Generated`**
 
-from field: Scailo.BOOL_FILTER is_active = 1;
+from field: optional Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:1886](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/teams.scailo_pb.ts#L1886)
+[src/teams.scailo_pb.ts:2186](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/teams.scailo_pb.ts#L2186)
 
 ___
 
 ### offset
 
-• **offset**: `bigint` = `protoInt64.zero`
+• `Optional` **offset**: `bigint`
 
 **`Optional`**
 
@@ -267,33 +340,49 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 offset = 3;
+from field: optional uint64 offset = 3;
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:1918](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/teams.scailo_pb.ts#L1918)
+[src/teams.scailo_pb.ts:2218](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/teams.scailo_pb.ts#L2218)
 
 ___
 
 ### searchKey
 
-• **searchKey**: `string` = `""`
+• `Optional` **searchKey**: `string`
 
-Describes the key with which the search operation needs to be performed
+**`Optional`**
+
+**`Description`**
+
+The search string to match against reference IDs.
+
+**`Example`**
+
+```ts
+"Medical 2023"
+```
+
+**`Regex`**
+
+.*
+
+@format: May contain any UTF-8 characters.
 
 **`Generated`**
 
-from field: string search_key = 40;
+from field: optional string search_key = 40;
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:2012](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/teams.scailo_pb.ts#L2012)
+[src/teams.scailo_pb.ts:2380](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/teams.scailo_pb.ts#L2380)
 
 ___
 
 ### sortKey
 
-• **sortKey**: [`TEAM_MEMBER_SORT_KEY`](../enums/TEAM_MEMBER_SORT_KEY.md) = `TEAM_MEMBER_SORT_KEY.TEAM_MEMBER_SORT_KEY_ID_UNSPECIFIED`
+• `Optional` **sortKey**: [`TEAM_MEMBER_SORT_KEY`](../enums/TEAM_MEMBER_SORT_KEY.md)
 
 **`Optional`**
 
@@ -303,17 +392,17 @@ The field used for sorting.
 
 **`Generated`**
 
-from field: Scailo.TEAM_MEMBER_SORT_KEY sort_key = 5;
+from field: optional Scailo.TEAM_MEMBER_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:1940](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/teams.scailo_pb.ts#L1940)
+[src/teams.scailo_pb.ts:2240](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/teams.scailo_pb.ts#L2240)
 
 ___
 
 ### sortOrder
 
-• **sortOrder**: [`SORT_ORDER`](../enums/SORT_ORDER.md) = `SORT_ORDER.ASCENDING_UNSPECIFIED`
+• `Optional` **sortOrder**: [`SORT_ORDER`](../enums/SORT_ORDER.md)
 
 **`Optional`**
 
@@ -329,59 +418,105 @@ DESCENDING
 
 **`Generated`**
 
-from field: Scailo.SORT_ORDER sort_order = 4;
+from field: optional Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:1930](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/teams.scailo_pb.ts#L1930)
+[src/teams.scailo_pb.ts:2230](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/teams.scailo_pb.ts#L2230)
 
 ___
 
 ### status
 
-• **status**: [`TEAM_MEMBER_STATUS`](../enums/TEAM_MEMBER_STATUS.md) = `TEAM_MEMBER_STATUS.TEAM_MEMBER_STATUS_ANY_UNSPECIFIED`
+• `Optional` **status**: [`TEAM_MEMBER_STATUS`](../enums/TEAM_MEMBER_STATUS.md)
 
-The status of the members
+**`Optional`**
+
+**`Description`**
+
+Filter records by their verification lifecycle state (e.g., Approved, Unapproved). Defaults to unspecified/any.
+
+**`Example`**
+
+```ts
+TEAM_MEMBER_STATUS_APPROVED
+```
 
 **`Generated`**
 
-from field: Scailo.TEAM_MEMBER_STATUS status = 7;
+from field: optional Scailo.TEAM_MEMBER_STATUS status = 7;
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:1963](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/teams.scailo_pb.ts#L1963)
+[src/teams.scailo_pb.ts:2268](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/teams.scailo_pb.ts#L2268)
 
 ___
 
 ### teamId
 
-• **teamId**: `bigint` = `protoInt64.zero`
+• `Optional` **teamId**: `bigint`
 
-The ID of the team
+**`Optional`**
+
+**`Description`**
+
+The unique internal identifier of the target team to which the user will be added.
+
+**`Example`**
+
+```ts
+105
+```
+
+**`Regex`**
+
+^[1-9][0-9]*$
+
+**`Format`**
+
+Unsigned 64-bit integer greater than 0.
 
 **`Generated`**
 
-from field: uint64 team_id = 20;
+from field: optional uint64 team_id = 20;
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:1998](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/teams.scailo_pb.ts#L1998)
+[src/teams.scailo_pb.ts:2348](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/teams.scailo_pb.ts#L2348)
 
 ___
 
 ### userId
 
-• **userId**: `bigint` = `protoInt64.zero`
+• `Optional` **userId**: `bigint`
 
-The ID of the member
+**`Optional`**
+
+**`Description`**
+
+The unique internal identifier of the user being mapped to the team.
+
+**`Example`**
+
+```ts
+420
+```
+
+**`Regex`**
+
+^[1-9][0-9]*$
+
+**`Format`**
+
+Unsigned 64-bit integer greater than 0.
 
 **`Generated`**
 
-from field: uint64 user_id = 21;
+from field: optional uint64 user_id = 21;
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:2005](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/teams.scailo_pb.ts#L2005)
+[src/teams.scailo_pb.ts:2364](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/teams.scailo_pb.ts#L2364)
 
 ___
 
@@ -391,7 +526,7 @@ ___
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:2021](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/teams.scailo_pb.ts#L2021)
+[src/teams.scailo_pb.ts:2389](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/teams.scailo_pb.ts#L2389)
 
 ___
 
@@ -401,7 +536,7 @@ ___
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:2019](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/teams.scailo_pb.ts#L2019)
+[src/teams.scailo_pb.ts:2387](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/teams.scailo_pb.ts#L2387)
 
 ___
 
@@ -411,7 +546,7 @@ ___
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:2020](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/teams.scailo_pb.ts#L2020)
+[src/teams.scailo_pb.ts:2388](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/teams.scailo_pb.ts#L2388)
 
 ## Methods
 
@@ -699,7 +834,7 @@ ___
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:2050](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/teams.scailo_pb.ts#L2050)
+[src/teams.scailo_pb.ts:2418](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/teams.scailo_pb.ts#L2418)
 
 ___
 
@@ -720,7 +855,7 @@ ___
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:2038](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/teams.scailo_pb.ts#L2038)
+[src/teams.scailo_pb.ts:2406](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/teams.scailo_pb.ts#L2406)
 
 ___
 
@@ -741,7 +876,7 @@ ___
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:2042](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/teams.scailo_pb.ts#L2042)
+[src/teams.scailo_pb.ts:2410](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/teams.scailo_pb.ts#L2410)
 
 ___
 
@@ -762,4 +897,4 @@ ___
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:2046](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/teams.scailo_pb.ts#L2046)
+[src/teams.scailo_pb.ts:2414](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/teams.scailo_pb.ts#L2414)

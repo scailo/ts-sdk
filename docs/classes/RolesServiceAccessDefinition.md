@@ -2,7 +2,8 @@
 
 # Class: RolesServiceAccessDefinition
 
-Describes the parameters for a role definition
+Explanatory metadata container describing a system access point or application view component.
+This structure aggregates human-readable attributes to render authorization trees inside administrative dashboards.
 
 **`Generated`**
 
@@ -68,7 +69,7 @@ Message\&lt;RolesServiceAccessDefinition\&gt;.constructor
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:577](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/roles.scailo_pb.ts#L577)
+[src/roles.scailo_pb.ts:790](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/roles.scailo_pb.ts#L790)
 
 ## Properties
 
@@ -76,7 +77,15 @@ Message\&lt;RolesServiceAccessDefinition\&gt;.constructor
 
 • **menuDescription**: `string` = `""`
 
-The description of the menu
+**`Description`**
+
+Functional description summarizing the feature set, workflows, and operations tied to this interface component.
+
+**`Example`**
+
+```ts
+"Provides controls to add, verify, and hierarchy-map internal corporate ledger accounts."
+```
 
 **`Generated`**
 
@@ -84,7 +93,7 @@ from field: string menu_description = 13;
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:575](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/roles.scailo_pb.ts#L575)
+[src/roles.scailo_pb.ts:788](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/roles.scailo_pb.ts#L788)
 
 ___
 
@@ -92,7 +101,15 @@ ___
 
 • **menuName**: `string` = `""`
 
-The name of the menu
+**`Description`**
+
+The human-readable or display-friendly name of the module or layout segment as seen on UI components.
+
+**`Example`**
+
+```ts
+"General Ledger Settings"
+```
 
 **`Generated`**
 
@@ -100,7 +117,7 @@ from field: string menu_name = 12;
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:568](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/roles.scailo_pb.ts#L568)
+[src/roles.scailo_pb.ts:778](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/roles.scailo_pb.ts#L778)
 
 ___
 
@@ -108,7 +125,15 @@ ___
 
 • **menuUid**: `string` = `""`
 
-The menu UID (or internal code)
+**`Description`**
+
+The unique system-level alphanumeric token or internal code representing the application component.
+
+**`Example`**
+
+```ts
+"MENU_FINANCE_LEDGER"
+```
 
 **`Generated`**
 
@@ -116,7 +141,7 @@ from field: string menu_uid = 11;
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:561](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/roles.scailo_pb.ts#L561)
+[src/roles.scailo_pb.ts:768](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/roles.scailo_pb.ts#L768)
 
 ___
 
@@ -126,7 +151,7 @@ ___
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:584](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/roles.scailo_pb.ts#L584)
+[src/roles.scailo_pb.ts:797](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/roles.scailo_pb.ts#L797)
 
 ___
 
@@ -136,7 +161,7 @@ ___
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:582](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/roles.scailo_pb.ts#L582)
+[src/roles.scailo_pb.ts:795](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/roles.scailo_pb.ts#L795)
 
 ___
 
@@ -146,7 +171,7 @@ ___
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:583](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/roles.scailo_pb.ts#L583)
+[src/roles.scailo_pb.ts:796](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/roles.scailo_pb.ts#L796)
 
 ## Methods
 
@@ -434,7 +459,7 @@ ___
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:602](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/roles.scailo_pb.ts#L602)
+[src/roles.scailo_pb.ts:815](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/roles.scailo_pb.ts#L815)
 
 ___
 
@@ -455,7 +480,7 @@ ___
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:590](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/roles.scailo_pb.ts#L590)
+[src/roles.scailo_pb.ts:803](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/roles.scailo_pb.ts#L803)
 
 ___
 
@@ -476,7 +501,7 @@ ___
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:594](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/roles.scailo_pb.ts#L594)
+[src/roles.scailo_pb.ts:807](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/roles.scailo_pb.ts#L807)
 
 ___
 
@@ -497,4 +522,4 @@ ___
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:598](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/roles.scailo_pb.ts#L598)
+[src/roles.scailo_pb.ts:811](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/roles.scailo_pb.ts#L811)

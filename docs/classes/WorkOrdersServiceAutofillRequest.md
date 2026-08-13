@@ -68,7 +68,7 @@ Message\&lt;WorkOrdersServiceAutofillRequest\&gt;.constructor
 
 #### Defined in
 
-[src/work_orders.scailo_pb.ts:513](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/work_orders.scailo_pb.ts#L513)
+[src/work_orders.scailo_pb.ts:563](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/work_orders.scailo_pb.ts#L563)
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: bool populate_using_equation_dependencies = 3;
 
 #### Defined in
 
-[src/work_orders.scailo_pb.ts:511](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/work_orders.scailo_pb.ts#L511)
+[src/work_orders.scailo_pb.ts:561](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/work_orders.scailo_pb.ts#L561)
 
 ___
 
@@ -92,7 +92,25 @@ ___
 
 • **userComment**: `string` = `""`
 
-Stores any comment that the user might add during this operation
+**`Optional`**
+
+**`Description`**
+
+Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+
+**`Example`**
+
+```ts
+"This is a comment for audit purposes."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
@@ -100,7 +118,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-[src/work_orders.scailo_pb.ts:497](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/work_orders.scailo_pb.ts#L497)
+[src/work_orders.scailo_pb.ts:547](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/work_orders.scailo_pb.ts#L547)
 
 ___
 
@@ -116,7 +134,7 @@ from field: string uuid = 2;
 
 #### Defined in
 
-[src/work_orders.scailo_pb.ts:504](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/work_orders.scailo_pb.ts#L504)
+[src/work_orders.scailo_pb.ts:554](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/work_orders.scailo_pb.ts#L554)
 
 ___
 
@@ -126,7 +144,7 @@ ___
 
 #### Defined in
 
-[src/work_orders.scailo_pb.ts:520](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/work_orders.scailo_pb.ts#L520)
+[src/work_orders.scailo_pb.ts:570](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/work_orders.scailo_pb.ts#L570)
 
 ___
 
@@ -136,7 +154,7 @@ ___
 
 #### Defined in
 
-[src/work_orders.scailo_pb.ts:518](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/work_orders.scailo_pb.ts#L518)
+[src/work_orders.scailo_pb.ts:568](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/work_orders.scailo_pb.ts#L568)
 
 ___
 
@@ -146,7 +164,7 @@ ___
 
 #### Defined in
 
-[src/work_orders.scailo_pb.ts:519](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/work_orders.scailo_pb.ts#L519)
+[src/work_orders.scailo_pb.ts:569](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/work_orders.scailo_pb.ts#L569)
 
 ## Methods
 
@@ -434,7 +452,7 @@ ___
 
 #### Defined in
 
-[src/work_orders.scailo_pb.ts:538](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/work_orders.scailo_pb.ts#L538)
+[src/work_orders.scailo_pb.ts:588](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/work_orders.scailo_pb.ts#L588)
 
 ___
 
@@ -455,7 +473,7 @@ ___
 
 #### Defined in
 
-[src/work_orders.scailo_pb.ts:526](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/work_orders.scailo_pb.ts#L526)
+[src/work_orders.scailo_pb.ts:576](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/work_orders.scailo_pb.ts#L576)
 
 ___
 
@@ -476,7 +494,7 @@ ___
 
 #### Defined in
 
-[src/work_orders.scailo_pb.ts:530](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/work_orders.scailo_pb.ts#L530)
+[src/work_orders.scailo_pb.ts:580](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/work_orders.scailo_pb.ts#L580)
 
 ___
 
@@ -497,4 +515,4 @@ ___
 
 #### Defined in
 
-[src/work_orders.scailo_pb.ts:534](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/work_orders.scailo_pb.ts#L534)
+[src/work_orders.scailo_pb.ts:584](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/work_orders.scailo_pb.ts#L584)

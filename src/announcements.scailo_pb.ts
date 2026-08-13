@@ -9,83 +9,83 @@ import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, 
 
 /**
  *
- * Describes the available sort keys
+ * Enumeration of fields available for sorting announcement search results.
  *
  * @generated from enum Scailo.ANNOUNCEMENT_SORT_KEY
  */
 export enum ANNOUNCEMENT_SORT_KEY {
   /**
-   * Fetch ordered results by id
+   * @description Default sort behavior (by internal ID).
    *
    * @generated from enum value: ANNOUNCEMENT_SORT_KEY_ID_UNSPECIFIED = 0;
    */
   ANNOUNCEMENT_SORT_KEY_ID_UNSPECIFIED = 0,
 
   /**
-   * Fetch ordered results by the creation timestamp
+   * @description Sort by the timestamp the record was initially created.
    *
    * @generated from enum value: ANNOUNCEMENT_SORT_KEY_CREATED_AT = 1;
    */
   ANNOUNCEMENT_SORT_KEY_CREATED_AT = 1,
 
   /**
-   * Fetch ordered results by the modified timestamp
+   * @description Sort by the timestamp the record was last modified.
    *
    * @generated from enum value: ANNOUNCEMENT_SORT_KEY_MODIFIED_AT = 2;
    */
   ANNOUNCEMENT_SORT_KEY_MODIFIED_AT = 2,
 
   /**
-   * Fetch ordered results by the approved on timestamp
+   * @description Sort by the official approval timestamp.
    *
    * @generated from enum value: ANNOUNCEMENT_SORT_KEY_APPROVED_ON = 3;
    */
   ANNOUNCEMENT_SORT_KEY_APPROVED_ON = 3,
 
   /**
-   * Fetch ordered results by the approved by field
+   * @description Sort by the system ID of the approving user.
    *
    * @generated from enum value: ANNOUNCEMENT_SORT_KEY_APPROVED_BY = 4;
    */
   ANNOUNCEMENT_SORT_KEY_APPROVED_BY = 4,
 
   /**
-   * Fetch ordered results by the approver's role ID
+   * @description Sort by the security role ID used by the approver.
    *
    * @generated from enum value: ANNOUNCEMENT_SORT_KEY_APPROVER_ROLE_ID = 5;
    */
   ANNOUNCEMENT_SORT_KEY_APPROVER_ROLE_ID = 5,
 
   /**
-   * Fetch ordered results by the approver's completed on timestamp
+   * @description Sort by the timestamp of record completion.
    *
    * @generated from enum value: ANNOUNCEMENT_SORT_KEY_COMPLETED_ON = 6;
    */
   ANNOUNCEMENT_SORT_KEY_COMPLETED_ON = 6,
 
   /**
-   * Fetch ordered results by the title
+   * @description Sort alphabetically by the user-provided title.
    *
    * @generated from enum value: ANNOUNCEMENT_SORT_KEY_TITLE = 10;
    */
   ANNOUNCEMENT_SORT_KEY_TITLE = 10,
 
   /**
-   * Fetch ordered results by the description
+   * @description Sort alphabetically by the user-provided description.
    *
    * @generated from enum value: ANNOUNCEMENT_SORT_KEY_DESCRIPTION = 11;
    */
   ANNOUNCEMENT_SORT_KEY_DESCRIPTION = 11,
 
   /**
-   * Fetch ordered results by the start on timestamp
+   * @description Sort chronologically by the announcement's start timestamp.
    *
    * @generated from enum value: ANNOUNCEMENT_SORT_KEY_START_ON = 12;
    */
   ANNOUNCEMENT_SORT_KEY_START_ON = 12,
 
   /**
-   * Fetch ordered results by the end on timestamp
+   * @description Sort chronologically by the announcement's end timestamp.
    *
    * @generated from enum value: ANNOUNCEMENT_SORT_KEY_END_ON = 13;
    */
@@ -108,7 +108,12 @@ proto3.util.setEnumType(ANNOUNCEMENT_SORT_KEY, "Scailo.ANNOUNCEMENT_SORT_KEY", [
 
 /**
  *
- * Describes the parameters necessary to create a record
+ * Request message for broadcasting a new organizational announcement.
+ * This record tracks internal communications, system alerts, or company-wide
+ * updates distributed to specific target audiences or entities.
+ *
+ * **Note:** This is the primary entry point for HR, Internal Comms, and Admins
+ * to publish time-bound informational updates and compliance notifications.
  *
  * @generated from message Scailo.AnnouncementsServiceCreateRequest
  */
@@ -125,16 +130,25 @@ export class AnnouncementsServiceCreateRequest extends Message<AnnouncementsServ
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 1;
+   * @generated from field: optional string entity_uuid = 1;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 2;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 2;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
    *
@@ -148,33 +162,69 @@ export class AnnouncementsServiceCreateRequest extends Message<AnnouncementsServ
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 vault_folder_id = 9;
+   * @generated from field: optional uint64 vault_folder_id = 9;
    */
-  vaultFolderId = protoInt64.zero;
+  vaultFolderId?: bigint;
 
   /**
-   * The title of the announcement
+   *
+   * @mandatory
+   *
+   * @description The headline or title of the announcement. This is the primary text displayed to targeted users.
+   *
+   * @example "Scheduled System Maintenance - This Weekend"
+   *
+   * @regex ^[0-9A-Za-z ]+$
+   *
+   * @format Alphanumeric characters and spaces only. Must not be empty.
    *
    * @generated from field: string title = 10;
    */
   title = "";
 
   /**
-   * The description of the announcement
+   *
+   * @mandatory
+   *
+   * @description The main body text or details of the announcement, elaborating on the core message.
+   *
+   * @example "The primary database will be offline for maintenance on Saturday from 2 AM to 4 AM UTC."
+   *
+   * @regex ^[0-9A-Za-z ]+$
+   *
+   * @format Alphanumeric characters and spaces only. Must not be empty.
    *
    * @generated from field: string description = 11;
    */
   description = "";
 
   /**
-   * The start timestamp
+   *
+   * @mandatory
+   *
+   * @description The effective Unix timestamp (in seconds) indicating when the announcement becomes active and visible.
+   *
+   * @example 1783382400
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative 64-bit integer representing epoch time.
    *
    * @generated from field: uint64 start_on = 12;
    */
   startOn = protoInt64.zero;
 
   /**
-   * The end timestamp
+   *
+   * @mandatory
+   *
+   * @description The expiration Unix timestamp (in seconds) indicating when the announcement should stop being displayed.
+   *
+   * @example 1783468800
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative 64-bit integer representing epoch time. Must be greater than or equal to start_on.
    *
    * @generated from field: uint64 end_on = 13;
    */
@@ -188,9 +238,9 @@ export class AnnouncementsServiceCreateRequest extends Message<AnnouncementsServ
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.AnnouncementsServiceCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
     { no: 10, name: "title", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 12, name: "start_on", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
@@ -216,20 +266,44 @@ export class AnnouncementsServiceCreateRequest extends Message<AnnouncementsServ
 
 /**
  *
- * Describes the parameters necessary to update a record
+ * Request message for updating an existing Announcement record.
+ * Only applicable for records in `DRAFT` or `REVISION` states.
+ * This message allows for modifying the title, description, start and end timestamps
+ * of an established Announcement.
+ *
+ * **Note:** Only fields provided in the request will typically be updated.
+ * The unique system ID is required to locate the target record.
  *
  * @generated from message Scailo.AnnouncementsServiceUpdateRequest
  */
 export class AnnouncementsServiceUpdateRequest extends Message<AnnouncementsServiceUpdateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * The ID of the record that needs to be updated
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target record that needs to be updated.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 id = 2;
    */
@@ -243,9 +317,9 @@ export class AnnouncementsServiceUpdateRequest extends Message<AnnouncementsServ
    *
    * @example true
    *
-   * @generated from field: bool notify_users = 3;
+   * @generated from field: optional bool notify_users = 3;
    */
-  notifyUsers = false;
+  notifyUsers?: boolean;
 
   /**
    *
@@ -259,37 +333,73 @@ export class AnnouncementsServiceUpdateRequest extends Message<AnnouncementsServ
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 vault_folder_id = 9;
+   * @generated from field: optional uint64 vault_folder_id = 9;
    */
-  vaultFolderId = protoInt64.zero;
+  vaultFolderId?: bigint;
 
   /**
-   * The title of the announcement
    *
-   * @generated from field: string title = 10;
+   * @optional
+   *
+   * @description The headline or title of the announcement. This is the primary text displayed to targeted users.
+   *
+   * @example "Scheduled System Maintenance - This Weekend"
+   *
+   * @regex ^[0-9A-Za-z ]+$
+   *
+   * @format Alphanumeric characters and spaces only. Must not be empty.
+   *
+   * @generated from field: optional string title = 10;
    */
-  title = "";
+  title?: string;
 
   /**
-   * The description of the announcement
    *
-   * @generated from field: string description = 11;
+   * @optional
+   *
+   * @description The main body text or details of the announcement, elaborating on the core message.
+   *
+   * @example "The primary database will be offline for maintenance on Saturday from 2 AM to 4 AM UTC."
+   *
+   * @regex ^[0-9A-Za-z ]+$
+   *
+   * @format Alphanumeric characters and spaces only. Must not be empty.
+   *
+   * @generated from field: optional string description = 11;
    */
-  description = "";
+  description?: string;
 
   /**
-   * The start timestamp
    *
-   * @generated from field: uint64 start_on = 12;
+   * @optional
+   *
+   * @description The effective Unix timestamp (in seconds) indicating when the announcement becomes active and visible.
+   *
+   * @example 1783382400
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative 64-bit integer representing epoch time.
+   *
+   * @generated from field: optional uint64 start_on = 12;
    */
-  startOn = protoInt64.zero;
+  startOn?: bigint;
 
   /**
-   * The end timestamp
    *
-   * @generated from field: uint64 end_on = 13;
+   * @optional
+   *
+   * @description The expiration Unix timestamp (in seconds) indicating when the announcement should stop being displayed.
+   *
+   * @example 1783468800
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative 64-bit integer representing epoch time. Must be greater than or equal to start_on.
+   *
+   * @generated from field: optional uint64 end_on = 13;
    */
-  endOn = protoInt64.zero;
+  endOn?: bigint;
 
   constructor(data?: PartialMessage<AnnouncementsServiceUpdateRequest>) {
     super();
@@ -299,14 +409,14 @@ export class AnnouncementsServiceUpdateRequest extends Message<AnnouncementsServ
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.AnnouncementsServiceUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 2, name: "id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
-    { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 10, name: "title", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 11, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 12, name: "start_on", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 13, name: "end_on", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 10, name: "title", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 11, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 12, name: "start_on", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 13, name: "end_on", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): AnnouncementsServiceUpdateRequest {
@@ -328,7 +438,7 @@ export class AnnouncementsServiceUpdateRequest extends Message<AnnouncementsServ
 
 /**
  *
- * Describes the parameters that are part of a standard response
+ * Represents a full Announcement within the system.
  *
  * @generated from message Scailo.Announcement
  */
@@ -396,28 +506,40 @@ export class Announcement extends Message<Announcement> {
   vaultFolderId = protoInt64.zero;
 
   /**
-   * The title of the announcement
+   *
+   * @description The headline or title of the announcement. This is the primary text displayed to targeted users.
+   *
+   * @example "Scheduled System Maintenance - This Weekend"
    *
    * @generated from field: string title = 10;
    */
   title = "";
 
   /**
-   * The description of the announcement
+   *
+   * @description The main body text or details of the announcement, elaborating on the core message.
+   *
+   * @example "The primary database will be offline for maintenance on Saturday from 2 AM to 4 AM UTC."
    *
    * @generated from field: string description = 11;
    */
   description = "";
 
   /**
-   * The start timestamp
+   *
+   * @description The effective Unix timestamp (in seconds) indicating when the announcement becomes active and visible.
+   *
+   * @example 1783382400
    *
    * @generated from field: uint64 start_on = 12;
    */
   startOn = protoInt64.zero;
 
   /**
-   * The end timestamp
+   *
+   * @description The expiration Unix timestamp (in seconds) indicating when the announcement should stop being displayed.
+   *
+   * @example 1783468800
    *
    * @generated from field: uint64 end_on = 13;
    */
@@ -463,13 +585,13 @@ export class Announcement extends Message<Announcement> {
 
 /**
  *
- * Describes the message consisting of the list of records
+ * Container message for a collection of Announcement records.
  *
  * @generated from message Scailo.AnnouncementsList
  */
 export class AnnouncementsList extends Message<AnnouncementsList> {
   /**
-   * List of records
+   * @description An array of Announcement records.
    *
    * @generated from field: repeated Scailo.Announcement list = 1;
    */
@@ -505,7 +627,7 @@ export class AnnouncementsList extends Message<AnnouncementsList> {
 
 /**
  *
- * Describes a pagination request to retrieve records
+ * Pagination request for retrieving slices of announcement records.
  *
  * @generated from message Scailo.AnnouncementsServicePaginationReq
  */
@@ -518,9 +640,9 @@ export class AnnouncementsServicePaginationReq extends Message<AnnouncementsServ
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -550,9 +672,9 @@ export class AnnouncementsServicePaginationReq extends Message<AnnouncementsServ
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -562,9 +684,9 @@ export class AnnouncementsServicePaginationReq extends Message<AnnouncementsServ
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -572,16 +694,21 @@ export class AnnouncementsServicePaginationReq extends Message<AnnouncementsServ
    *
    * @description The specific field key to sort the results by.
    *
-   * @generated from field: Scailo.ANNOUNCEMENT_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.ANNOUNCEMENT_SORT_KEY sort_key = 5;
    */
-  sortKey = ANNOUNCEMENT_SORT_KEY.ANNOUNCEMENT_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: ANNOUNCEMENT_SORT_KEY;
 
   /**
-   * The status of this announcement
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
+   * @optional
+   *
+   * @description Filter results by a specific lifecycle status.
+   *
+   * @example STANDING
+   *
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   constructor(data?: PartialMessage<AnnouncementsServicePaginationReq>) {
     super();
@@ -591,12 +718,12 @@ export class AnnouncementsServicePaginationReq extends Message<AnnouncementsServ
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.AnnouncementsServicePaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(ANNOUNCEMENT_SORT_KEY) },
-    { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(ANNOUNCEMENT_SORT_KEY), opt: true },
+    { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): AnnouncementsServicePaginationReq {
@@ -618,7 +745,7 @@ export class AnnouncementsServicePaginationReq extends Message<AnnouncementsServ
 
 /**
  *
- * Describes the response to a pagination request
+ * Response message for paginated queries, including total counts for UI elements.
  *
  * @generated from message Scailo.AnnouncementsServicePaginationResponse
  */
@@ -694,7 +821,12 @@ export class AnnouncementsServicePaginationResponse extends Message<Announcement
 
 /**
  *
- * Describes the base request payload of a filter search
+ * Advanced filter request for searching and paginating announcements using multiple logical criteria.
+ * This message encapsulates pagination controls, sorting keys, lifecycle status filters,
+ * timestamp ranges, and entity references.
+ *
+ * **Note:** This is the primary message layout used by the frontend and external API clients
+ * to build robust data-table queries, reporting views, and targeted record lookups.
  *
  * @generated from message Scailo.AnnouncementsServiceFilterReq
  */
@@ -707,9 +839,9 @@ export class AnnouncementsServiceFilterReq extends Message<AnnouncementsServiceF
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -739,9 +871,9 @@ export class AnnouncementsServiceFilterReq extends Message<AnnouncementsServiceF
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -751,9 +883,9 @@ export class AnnouncementsServiceFilterReq extends Message<AnnouncementsServiceF
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -761,9 +893,9 @@ export class AnnouncementsServiceFilterReq extends Message<AnnouncementsServiceF
    *
    * @description The field used for sorting.
    *
-   * @generated from field: Scailo.ANNOUNCEMENT_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.ANNOUNCEMENT_SORT_KEY sort_key = 5;
    */
-  sortKey = ANNOUNCEMENT_SORT_KEY.ANNOUNCEMENT_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: ANNOUNCEMENT_SORT_KEY;
 
   /**
    *
@@ -777,9 +909,9 @@ export class AnnouncementsServiceFilterReq extends Message<AnnouncementsServiceF
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_start = 101;
+   * @generated from field: optional uint64 creation_timestamp_start = 101;
    */
-  creationTimestampStart = protoInt64.zero;
+  creationTimestampStart?: bigint;
 
   /**
    *
@@ -793,9 +925,9 @@ export class AnnouncementsServiceFilterReq extends Message<AnnouncementsServiceF
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_end = 102;
+   * @generated from field: optional uint64 creation_timestamp_end = 102;
    */
-  creationTimestampEnd = protoInt64.zero;
+  creationTimestampEnd?: bigint;
 
   /**
    *
@@ -809,9 +941,9 @@ export class AnnouncementsServiceFilterReq extends Message<AnnouncementsServiceF
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_start = 103;
+   * @generated from field: optional uint64 modification_timestamp_start = 103;
    */
-  modificationTimestampStart = protoInt64.zero;
+  modificationTimestampStart?: bigint;
 
   /**
    *
@@ -825,9 +957,9 @@ export class AnnouncementsServiceFilterReq extends Message<AnnouncementsServiceF
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_end = 104;
+   * @generated from field: optional uint64 modification_timestamp_end = 104;
    */
-  modificationTimestampEnd = protoInt64.zero;
+  modificationTimestampEnd?: bigint;
 
   /**
    *
@@ -841,9 +973,9 @@ export class AnnouncementsServiceFilterReq extends Message<AnnouncementsServiceF
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 8;
+   * @generated from field: optional string entity_uuid = 8;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
    *
@@ -853,9 +985,9 @@ export class AnnouncementsServiceFilterReq extends Message<AnnouncementsServiceF
    *
    * @example STANDING
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   /**
    *
@@ -869,9 +1001,9 @@ export class AnnouncementsServiceFilterReq extends Message<AnnouncementsServiceF
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_start = 11;
+   * @generated from field: optional uint64 approved_on_start = 11;
    */
-  approvedOnStart = protoInt64.zero;
+  approvedOnStart?: bigint;
 
   /**
    *
@@ -885,9 +1017,9 @@ export class AnnouncementsServiceFilterReq extends Message<AnnouncementsServiceF
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_end = 12;
+   * @generated from field: optional uint64 approved_on_end = 12;
    */
-  approvedOnEnd = protoInt64.zero;
+  approvedOnEnd?: bigint;
 
   /**
    *
@@ -901,9 +1033,9 @@ export class AnnouncementsServiceFilterReq extends Message<AnnouncementsServiceF
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_by_user_id = 13;
+   * @generated from field: optional uint64 approved_by_user_id = 13;
    */
-  approvedByUserId = protoInt64.zero;
+  approvedByUserId?: bigint;
 
   /**
    *
@@ -917,9 +1049,9 @@ export class AnnouncementsServiceFilterReq extends Message<AnnouncementsServiceF
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approver_role_id = 14;
+   * @generated from field: optional uint64 approver_role_id = 14;
    */
-  approverRoleId = protoInt64.zero;
+  approverRoleId?: bigint;
 
   /**
    *
@@ -933,9 +1065,9 @@ export class AnnouncementsServiceFilterReq extends Message<AnnouncementsServiceF
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 completed_on_start = 15;
+   * @generated from field: optional uint64 completed_on_start = 15;
    */
-  completedOnStart = protoInt64.zero;
+  completedOnStart?: bigint;
 
   /**
    *
@@ -949,51 +1081,105 @@ export class AnnouncementsServiceFilterReq extends Message<AnnouncementsServiceF
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 completed_on_end = 16;
+   * @generated from field: optional uint64 completed_on_end = 16;
    */
-  completedOnEnd = protoInt64.zero;
+  completedOnEnd?: bigint;
 
   /**
-   * The title of the announcement
    *
-   * @generated from field: string title = 20;
+   * @optional
+   *
+   * @description Filter by the announcement's title. Typically supports partial matching or substring searches.
+   *
+   * @example "System Maintenance"
+   *
+   * @regex ^[0-9A-Za-z ]+$
+   *
+   * @format Alphanumeric characters and spaces only.
+   *
+   * @generated from field: optional string title = 20;
    */
-  title = "";
+  title?: string;
 
   /**
-   * The description of the announcement
    *
-   * @generated from field: string description = 21;
+   * @optional
+   *
+   * @description Filter by the announcement's main body or description text. Typically supports partial matching or substring searches.
+   *
+   * @example "database will be offline"
+   *
+   * @regex ^[0-9A-Za-z ]+$
+   *
+   * @format Alphanumeric characters and spaces only.
+   *
+   * @generated from field: optional string description = 21;
    */
-  description = "";
+  description?: string;
 
   /**
-   * The start range of start timestamp
    *
-   * @generated from field: uint64 start_on_start = 22;
+   * @optional
+   *
+   * @description Filter records where the announcement's start publication date is ON or AFTER this UNIX timestamp.
+   *
+   * @example 1783382400
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer representing epoch time.
+   *
+   * @generated from field: optional uint64 start_on_start = 22;
    */
-  startOnStart = protoInt64.zero;
+  startOnStart?: bigint;
 
   /**
-   * The end range of start timestamp
    *
-   * @generated from field: uint64 start_on_end = 23;
+   * @optional
+   *
+   * @description Filter records where the announcement's start publication date is ON or BEFORE this UNIX timestamp.
+   *
+   * @example 1783468800
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer representing epoch time.
+   *
+   * @generated from field: optional uint64 start_on_end = 23;
    */
-  startOnEnd = protoInt64.zero;
+  startOnEnd?: bigint;
 
   /**
-   * The start range of end timestamp
    *
-   * @generated from field: uint64 end_on_start = 24;
+   * @optional
+   *
+   * @description Filter records where the announcement's expiration date is ON or AFTER this UNIX timestamp.
+   *
+   * @example 1783468800
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer representing epoch time.
+   *
+   * @generated from field: optional uint64 end_on_start = 24;
    */
-  endOnStart = protoInt64.zero;
+  endOnStart?: bigint;
 
   /**
-   * The end range of end timestamp
    *
-   * @generated from field: uint64 end_on_end = 25;
+   * @optional
+   *
+   * @description Filter records where the announcement's expiration date is ON or BEFORE this UNIX timestamp.
+   *
+   * @example 1783555200
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer representing epoch time.
+   *
+   * @generated from field: optional uint64 end_on_end = 25;
    */
-  endOnEnd = protoInt64.zero;
+  endOnEnd?: bigint;
 
   constructor(data?: PartialMessage<AnnouncementsServiceFilterReq>) {
     super();
@@ -1003,29 +1189,29 @@ export class AnnouncementsServiceFilterReq extends Message<AnnouncementsServiceF
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.AnnouncementsServiceFilterReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(ANNOUNCEMENT_SORT_KEY) },
-    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
-    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 15, name: "completed_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 20, name: "title", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 21, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "start_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 23, name: "start_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 24, name: "end_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 25, name: "end_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(ANNOUNCEMENT_SORT_KEY), opt: true },
+    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
+    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 15, name: "completed_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 20, name: "title", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 21, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 22, name: "start_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 23, name: "start_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 24, name: "end_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 25, name: "end_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): AnnouncementsServiceFilterReq {
@@ -1047,7 +1233,13 @@ export class AnnouncementsServiceFilterReq extends Message<AnnouncementsServiceF
 
 /**
  *
- * Describes the base request payload of a count search
+ * Target filter request for counting announcement records matching specific logical criteria.
+ * This message encapsulates lifecycle status filters, timestamp ranges, workflow markers,
+ * and entity references to determine the total size of a targeted dataset.
+ *
+ * **Note:** This is the primary message layout used by backend calculation engines, reporting
+ * services, and frontend pagination headers to evaluate total record matches dynamically
+ * before or alongside retrieving paginated results.
  *
  * @generated from message Scailo.AnnouncementsServiceCountReq
  */
@@ -1060,9 +1252,9 @@ export class AnnouncementsServiceCountReq extends Message<AnnouncementsServiceCo
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -1076,9 +1268,9 @@ export class AnnouncementsServiceCountReq extends Message<AnnouncementsServiceCo
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_start = 101;
+   * @generated from field: optional uint64 creation_timestamp_start = 101;
    */
-  creationTimestampStart = protoInt64.zero;
+  creationTimestampStart?: bigint;
 
   /**
    *
@@ -1092,9 +1284,9 @@ export class AnnouncementsServiceCountReq extends Message<AnnouncementsServiceCo
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_end = 102;
+   * @generated from field: optional uint64 creation_timestamp_end = 102;
    */
-  creationTimestampEnd = protoInt64.zero;
+  creationTimestampEnd?: bigint;
 
   /**
    *
@@ -1108,9 +1300,9 @@ export class AnnouncementsServiceCountReq extends Message<AnnouncementsServiceCo
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_start = 103;
+   * @generated from field: optional uint64 modification_timestamp_start = 103;
    */
-  modificationTimestampStart = protoInt64.zero;
+  modificationTimestampStart?: bigint;
 
   /**
    *
@@ -1124,9 +1316,9 @@ export class AnnouncementsServiceCountReq extends Message<AnnouncementsServiceCo
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_end = 104;
+   * @generated from field: optional uint64 modification_timestamp_end = 104;
    */
-  modificationTimestampEnd = protoInt64.zero;
+  modificationTimestampEnd?: bigint;
 
   /**
    *
@@ -1140,9 +1332,9 @@ export class AnnouncementsServiceCountReq extends Message<AnnouncementsServiceCo
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 8;
+   * @generated from field: optional string entity_uuid = 8;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
    *
@@ -1152,9 +1344,9 @@ export class AnnouncementsServiceCountReq extends Message<AnnouncementsServiceCo
    *
    * @example STANDING
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   /**
    *
@@ -1168,9 +1360,9 @@ export class AnnouncementsServiceCountReq extends Message<AnnouncementsServiceCo
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_start = 11;
+   * @generated from field: optional uint64 approved_on_start = 11;
    */
-  approvedOnStart = protoInt64.zero;
+  approvedOnStart?: bigint;
 
   /**
    *
@@ -1184,9 +1376,9 @@ export class AnnouncementsServiceCountReq extends Message<AnnouncementsServiceCo
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_end = 12;
+   * @generated from field: optional uint64 approved_on_end = 12;
    */
-  approvedOnEnd = protoInt64.zero;
+  approvedOnEnd?: bigint;
 
   /**
    *
@@ -1200,9 +1392,9 @@ export class AnnouncementsServiceCountReq extends Message<AnnouncementsServiceCo
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_by_user_id = 13;
+   * @generated from field: optional uint64 approved_by_user_id = 13;
    */
-  approvedByUserId = protoInt64.zero;
+  approvedByUserId?: bigint;
 
   /**
    *
@@ -1216,9 +1408,9 @@ export class AnnouncementsServiceCountReq extends Message<AnnouncementsServiceCo
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approver_role_id = 14;
+   * @generated from field: optional uint64 approver_role_id = 14;
    */
-  approverRoleId = protoInt64.zero;
+  approverRoleId?: bigint;
 
   /**
    *
@@ -1232,9 +1424,9 @@ export class AnnouncementsServiceCountReq extends Message<AnnouncementsServiceCo
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 completed_on_start = 15;
+   * @generated from field: optional uint64 completed_on_start = 15;
    */
-  completedOnStart = protoInt64.zero;
+  completedOnStart?: bigint;
 
   /**
    *
@@ -1248,51 +1440,105 @@ export class AnnouncementsServiceCountReq extends Message<AnnouncementsServiceCo
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 completed_on_end = 16;
+   * @generated from field: optional uint64 completed_on_end = 16;
    */
-  completedOnEnd = protoInt64.zero;
+  completedOnEnd?: bigint;
 
   /**
-   * The title of the announcement
    *
-   * @generated from field: string title = 20;
+   * @optional
+   *
+   * @description Filter by the announcement's title. Typically supports partial matching or substring searches.
+   *
+   * @example "System Maintenance"
+   *
+   * @regex ^[0-9A-Za-z ]+$
+   *
+   * @format Alphanumeric characters and spaces only.
+   *
+   * @generated from field: optional string title = 20;
    */
-  title = "";
+  title?: string;
 
   /**
-   * The description of the announcement
    *
-   * @generated from field: string description = 21;
+   * @optional
+   *
+   * @description Filter by the announcement's main body or description text. Typically supports partial matching or substring searches.
+   *
+   * @example "database will be offline"
+   *
+   * @regex ^[0-9A-Za-z ]+$
+   *
+   * @format Alphanumeric characters and spaces only.
+   *
+   * @generated from field: optional string description = 21;
    */
-  description = "";
+  description?: string;
 
   /**
-   * The start range of start timestamp
    *
-   * @generated from field: uint64 start_on_start = 22;
+   * @optional
+   *
+   * @description Filter records where the announcement's start publication date is ON or AFTER this UNIX timestamp.
+   *
+   * @example 1783382400
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer representing epoch time.
+   *
+   * @generated from field: optional uint64 start_on_start = 22;
    */
-  startOnStart = protoInt64.zero;
+  startOnStart?: bigint;
 
   /**
-   * The end range of start timestamp
    *
-   * @generated from field: uint64 start_on_end = 23;
+   * @optional
+   *
+   * @description Filter records where the announcement's start publication date is ON or BEFORE this UNIX timestamp.
+   *
+   * @example 1783468800
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer representing epoch time.
+   *
+   * @generated from field: optional uint64 start_on_end = 23;
    */
-  startOnEnd = protoInt64.zero;
+  startOnEnd?: bigint;
 
   /**
-   * The start range of end timestamp
    *
-   * @generated from field: uint64 end_on_start = 24;
+   * @optional
+   *
+   * @description Filter records where the announcement's expiration date is ON or AFTER this UNIX timestamp.
+   *
+   * @example 1783468800
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer representing epoch time.
+   *
+   * @generated from field: optional uint64 end_on_start = 24;
    */
-  endOnStart = protoInt64.zero;
+  endOnStart?: bigint;
 
   /**
-   * The end range of end timestamp
    *
-   * @generated from field: uint64 end_on_end = 25;
+   * @optional
+   *
+   * @description Filter records where the announcement's expiration date is ON or BEFORE this UNIX timestamp.
+   *
+   * @example 1783555200
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer representing epoch time.
+   *
+   * @generated from field: optional uint64 end_on_end = 25;
    */
-  endOnEnd = protoInt64.zero;
+  endOnEnd?: bigint;
 
   constructor(data?: PartialMessage<AnnouncementsServiceCountReq>) {
     super();
@@ -1302,25 +1548,25 @@ export class AnnouncementsServiceCountReq extends Message<AnnouncementsServiceCo
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.AnnouncementsServiceCountReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
-    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
-    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 15, name: "completed_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 20, name: "title", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 21, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "start_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 23, name: "start_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 24, name: "end_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 25, name: "end_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
+    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
+    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 15, name: "completed_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 20, name: "title", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 21, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 22, name: "start_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 23, name: "start_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 24, name: "end_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 25, name: "end_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): AnnouncementsServiceCountReq {
@@ -1342,7 +1588,13 @@ export class AnnouncementsServiceCountReq extends Message<AnnouncementsServiceCo
 
 /**
  *
- * Describes the request payload for performing a generic search operation on records
+ * Broad-spectrum search and lookup request for locating and paginating announcements via text matching.
+ * This message encapsulates full-text query parameters, pagination controls, sorting keys,
+ * lifecycle status constraints, and other core references.
+ *
+ * **Note:** This is the primary message layout used for global search bars, fast-filtering dashboard
+ * inputs, and omni-box search utilities where users need to match loose textual terms against
+ * records while retaining structural pagination.
  *
  * @generated from message Scailo.AnnouncementsServiceSearchAllReq
  */
@@ -1355,9 +1607,9 @@ export class AnnouncementsServiceSearchAllReq extends Message<AnnouncementsServi
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -1387,9 +1639,9 @@ export class AnnouncementsServiceSearchAllReq extends Message<AnnouncementsServi
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -1399,9 +1651,9 @@ export class AnnouncementsServiceSearchAllReq extends Message<AnnouncementsServi
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -1409,9 +1661,9 @@ export class AnnouncementsServiceSearchAllReq extends Message<AnnouncementsServi
    *
    * @description The field used for sorting.
    *
-   * @generated from field: Scailo.ANNOUNCEMENT_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.ANNOUNCEMENT_SORT_KEY sort_key = 5;
    */
-  sortKey = ANNOUNCEMENT_SORT_KEY.ANNOUNCEMENT_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: ANNOUNCEMENT_SORT_KEY;
 
   /**
    *
@@ -1425,9 +1677,9 @@ export class AnnouncementsServiceSearchAllReq extends Message<AnnouncementsServi
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 6;
+   * @generated from field: optional string entity_uuid = 6;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
    *
@@ -1437,13 +1689,13 @@ export class AnnouncementsServiceSearchAllReq extends Message<AnnouncementsServi
    *
    * @example STANDING
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   /**
    *
-   * @mandatory
+   * @optional
    *
    * @description The search string to match against reference IDs.
    *
@@ -1453,9 +1705,9 @@ export class AnnouncementsServiceSearchAllReq extends Message<AnnouncementsServi
    *
    * @format: May contain any UTF-8 characters.
    *
-   * @generated from field: string search_key = 11;
+   * @generated from field: optional string search_key = 11;
    */
-  searchKey = "";
+  searchKey?: string;
 
   constructor(data?: PartialMessage<AnnouncementsServiceSearchAllReq>) {
     super();
@@ -1465,14 +1717,14 @@ export class AnnouncementsServiceSearchAllReq extends Message<AnnouncementsServi
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.AnnouncementsServiceSearchAllReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(ANNOUNCEMENT_SORT_KEY) },
-    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
-    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(ANNOUNCEMENT_SORT_KEY), opt: true },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
+    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): AnnouncementsServiceSearchAllReq {

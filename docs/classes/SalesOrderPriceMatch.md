@@ -2,7 +2,13 @@
 
 # Class: SalesOrderPriceMatch
 
-Describes the parameters that are part of a sales order's price match
+Represents a highly granular financial reconciliation record mapping revenue aggregated at the family level.
+This payload compares expected cumulative revenue (from the sales order) against realized cumulative revenue
+(from one or more sales invoices) and cumulative adjustments (from credit notes).
+
+**Critical Context:** The values within this message are cumulative totals. It groups all downstream financial
+transactions associated with a specific family ID, ensuring airtight accounting across both the internal primary
+unit of measure and the client's requested unit (secondary unit) regardless of how many individual invoices were generated.
 
 **`Generated`**
 
@@ -76,7 +82,7 @@ Message\&lt;SalesOrderPriceMatch\&gt;.constructor
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:4414](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L4414)
+[src/sales_orders.scailo_pb.ts:6106](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L6106)
 
 ## Properties
 
@@ -84,7 +90,25 @@ Message\&lt;SalesOrderPriceMatch\&gt;.constructor
 
 • **clientUomId**: `bigint` = `protoInt64.zero`
 
-Stores the client unit of material ID
+**`Mandatory`**
+
+**`Description`**
+
+The unique internal identifier of the specific Unit of Measure (UOM) requested by the client (which acts as the secondary tracking unit).
+
+**`Example`**
+
+```ts
+12
+```
+
+**`Regex`**
+
+^[1-9][0-9]*$
+
+**`Format`**
+
+Unsigned 64-bit integer greater than 0.
 
 **`Generated`**
 
@@ -92,7 +116,7 @@ from field: uint64 client_uom_id = 2;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:4349](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L4349)
+[src/sales_orders.scailo_pb.ts:5960](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5960)
 
 ___
 
@@ -100,7 +124,25 @@ ___
 
 • **creditedPrimary**: `bigint` = `protoInt64.zero`
 
-Stores the credited quantity in primary unit of material
+**`Mandatory`**
+
+**`Description`**
+
+The cumulative credited (refunded) quantity aggregated across all credit notes for this family, evaluated in the system's internal primary unit of measure.
+
+**`Example`**
+
+```ts
+500
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -108,7 +150,7 @@ from field: uint64 credited_primary = 14;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:4398](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L4398)
+[src/sales_orders.scailo_pb.ts:6072](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L6072)
 
 ___
 
@@ -116,7 +158,25 @@ ___
 
 • **creditedSecondary**: `bigint` = `protoInt64.zero`
 
-Stores the credited quantity in secondary unit of material
+**`Mandatory`**
+
+**`Description`**
+
+The cumulative credited (refunded) quantity aggregated across all credit notes for this family, evaluated in the client's requested unit of measure (secondary unit).
+
+**`Example`**
+
+```ts
+50
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -124,7 +184,7 @@ from field: uint64 credited_secondary = 24;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:4405](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L4405)
+[src/sales_orders.scailo_pb.ts:6088](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L6088)
 
 ___
 
@@ -132,7 +192,25 @@ ___
 
 • **creditedTotalValue**: `bigint` = `protoInt64.zero`
 
-Stores the total credit note value (at the family level) in primary unit of material
+**`Mandatory`**
+
+**`Description`**
+
+The cumulative refunded monetary value for this family, aggregated across all associated credit notes. Represented in the base currency subunit.
+
+**`Example`**
+
+```ts
+25000
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -140,7 +218,7 @@ from field: uint64 credited_total_value = 34;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:4412](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L4412)
+[src/sales_orders.scailo_pb.ts:6104](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L6104)
 
 ___
 
@@ -148,7 +226,25 @@ ___
 
 • **familyId**: `bigint` = `protoInt64.zero`
 
-Stores the family ID
+**`Mandatory`**
+
+**`Description`**
+
+The unique internal identifier of the family serving as the aggregation grouping key.
+
+**`Example`**
+
+```ts
+505
+```
+
+**`Regex`**
+
+^[1-9][0-9]*$
+
+**`Format`**
+
+Unsigned 64-bit integer greater than 0.
 
 **`Generated`**
 
@@ -156,7 +252,7 @@ from field: uint64 family_id = 1;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:4342](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L4342)
+[src/sales_orders.scailo_pb.ts:5944](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5944)
 
 ___
 
@@ -164,7 +260,25 @@ ___
 
 • **invoicedPrimary**: `bigint` = `protoInt64.zero`
 
-Stores the invoiced quantity in primary unit of material
+**`Mandatory`**
+
+**`Description`**
+
+The cumulative invoiced (billed) quantity aggregated across all generated invoices for this family, evaluated in the system's internal primary unit of measure.
+
+**`Example`**
+
+```ts
+4500
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -172,7 +286,7 @@ from field: uint64 invoiced_primary = 12;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:4377](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L4377)
+[src/sales_orders.scailo_pb.ts:6024](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L6024)
 
 ___
 
@@ -180,7 +294,25 @@ ___
 
 • **invoicedSecondary**: `bigint` = `protoInt64.zero`
 
-Stores the invoiced quantity in secondary unit of material
+**`Mandatory`**
+
+**`Description`**
+
+The cumulative invoiced (billed) quantity aggregated across all generated invoices for this family, evaluated in the client's requested unit of measure (secondary unit).
+
+**`Example`**
+
+```ts
+450
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -188,7 +320,7 @@ from field: uint64 invoiced_secondary = 22;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:4384](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L4384)
+[src/sales_orders.scailo_pb.ts:6040](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L6040)
 
 ___
 
@@ -196,7 +328,25 @@ ___
 
 • **invoicedTotalValue**: `bigint` = `protoInt64.zero`
 
-Stores the total invoiced value (at the family level) in primary unit of material
+**`Mandatory`**
+
+**`Description`**
+
+The cumulative actual billed monetary value for this family, aggregated across all downstream sales invoices. Represented in the base currency subunit.
+
+**`Example`**
+
+```ts
+225000
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -204,7 +354,7 @@ from field: uint64 invoiced_total_value = 32;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:4391](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L4391)
+[src/sales_orders.scailo_pb.ts:6056](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L6056)
 
 ___
 
@@ -212,7 +362,25 @@ ___
 
 • **orderedPrimary**: `bigint` = `protoInt64.zero`
 
-Stores the ordered quantity in primary unit of material
+**`Mandatory`**
+
+**`Description`**
+
+The cumulative ordered quantity for this family, evaluated in the system's internal primary unit of measure (in subunits).
+
+**`Example`**
+
+```ts
+5000
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -220,7 +388,7 @@ from field: uint64 ordered_primary = 10;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:4356](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L4356)
+[src/sales_orders.scailo_pb.ts:5976](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5976)
 
 ___
 
@@ -228,7 +396,25 @@ ___
 
 • **orderedSecondary**: `bigint` = `protoInt64.zero`
 
-Stores the ordered quantity in secondary unit of material
+**`Mandatory`**
+
+**`Description`**
+
+The cumulative ordered quantity for this family, evaluated in the client's specifically requested unit of measure (secondary unit). Stored in subunits.
+
+**`Example`**
+
+```ts
+500
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -236,7 +422,7 @@ from field: uint64 ordered_secondary = 20;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:4363](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L4363)
+[src/sales_orders.scailo_pb.ts:5992](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5992)
 
 ___
 
@@ -244,7 +430,25 @@ ___
 
 • **orderedTotalValue**: `bigint` = `protoInt64.zero`
 
-Stores the total ordered value (at the family level) in primary unit of material
+**`Mandatory`**
+
+**`Description`**
+
+The cumulative expected monetary value for the entire ordered quantity of this family, represented in the base currency subunit (e.g., cents).
+
+**`Example`**
+
+```ts
+250000
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -252,7 +456,7 @@ from field: uint64 ordered_total_value = 30;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:4370](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L4370)
+[src/sales_orders.scailo_pb.ts:6008](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L6008)
 
 ___
 
@@ -262,7 +466,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:4421](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L4421)
+[src/sales_orders.scailo_pb.ts:6113](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L6113)
 
 ___
 
@@ -272,7 +476,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:4419](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L4419)
+[src/sales_orders.scailo_pb.ts:6111](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L6111)
 
 ___
 
@@ -282,7 +486,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:4420](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L4420)
+[src/sales_orders.scailo_pb.ts:6112](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L6112)
 
 ## Methods
 
@@ -570,7 +774,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:4447](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L4447)
+[src/sales_orders.scailo_pb.ts:6139](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L6139)
 
 ___
 
@@ -591,7 +795,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:4435](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L4435)
+[src/sales_orders.scailo_pb.ts:6127](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L6127)
 
 ___
 
@@ -612,7 +816,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:4439](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L4439)
+[src/sales_orders.scailo_pb.ts:6131](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L6131)
 
 ___
 
@@ -633,4 +837,4 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:4443](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L4443)
+[src/sales_orders.scailo_pb.ts:6135](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L6135)

@@ -2,7 +2,7 @@
 
 # Class: SalesQuotationsServicePaginationReq
 
-Describes a pagination request to retrieve records
+Pagination request for retrieving slices of Sales Quotation records.
 
 **`Generated`**
 
@@ -71,7 +71,7 @@ Message\&lt;SalesQuotationsServicePaginationReq\&gt;.constructor
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:1955](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_quotations.scailo_pb.ts#L1955)
+[src/sales_quotations.scailo_pb.ts:2720](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_quotations.scailo_pb.ts#L2720)
 
 ## Properties
 
@@ -105,13 +105,13 @@ from field: int64 count = 2;
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:1908](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_quotations.scailo_pb.ts#L1908)
+[src/sales_quotations.scailo_pb.ts:2668](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_quotations.scailo_pb.ts#L2668)
 
 ___
 
 ### isActive
 
-• **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
+• `Optional` **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md)
 
 **`Optional`**
 
@@ -127,17 +127,17 @@ ANY
 
 **`Generated`**
 
-from field: Scailo.BOOL_FILTER is_active = 1;
+from field: optional Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:1892](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_quotations.scailo_pb.ts#L1892)
+[src/sales_quotations.scailo_pb.ts:2652](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_quotations.scailo_pb.ts#L2652)
 
 ___
 
 ### offset
 
-• **offset**: `bigint` = `protoInt64.zero`
+• `Optional` **offset**: `bigint`
 
 **`Optional`**
 
@@ -161,17 +161,17 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 offset = 3;
+from field: optional uint64 offset = 3;
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:1924](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_quotations.scailo_pb.ts#L1924)
+[src/sales_quotations.scailo_pb.ts:2684](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_quotations.scailo_pb.ts#L2684)
 
 ___
 
 ### sortKey
 
-• **sortKey**: [`SALES_QUOTATION_SORT_KEY`](../enums/SALES_QUOTATION_SORT_KEY.md) = `SALES_QUOTATION_SORT_KEY.SALES_QUOTATION_SORT_KEY_ID_UNSPECIFIED`
+• `Optional` **sortKey**: [`SALES_QUOTATION_SORT_KEY`](../enums/SALES_QUOTATION_SORT_KEY.md)
 
 **`Optional`**
 
@@ -181,17 +181,17 @@ The specific field key to sort the results by.
 
 **`Generated`**
 
-from field: Scailo.SALES_QUOTATION_SORT_KEY sort_key = 5;
+from field: optional Scailo.SALES_QUOTATION_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:1946](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_quotations.scailo_pb.ts#L1946)
+[src/sales_quotations.scailo_pb.ts:2706](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_quotations.scailo_pb.ts#L2706)
 
 ___
 
 ### sortOrder
 
-• **sortOrder**: [`SORT_ORDER`](../enums/SORT_ORDER.md) = `SORT_ORDER.ASCENDING_UNSPECIFIED`
+• `Optional` **sortOrder**: [`SORT_ORDER`](../enums/SORT_ORDER.md)
 
 **`Optional`**
 
@@ -207,27 +207,37 @@ DESCENDING
 
 **`Generated`**
 
-from field: Scailo.SORT_ORDER sort_order = 4;
+from field: optional Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:1936](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_quotations.scailo_pb.ts#L1936)
+[src/sales_quotations.scailo_pb.ts:2696](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_quotations.scailo_pb.ts#L2696)
 
 ___
 
 ### status
 
-• **status**: [`STANDARD_LIFECYCLE_STATUS`](../enums/STANDARD_LIFECYCLE_STATUS.md) = `STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED`
+• `Optional` **status**: [`STANDARD_LIFECYCLE_STATUS`](../enums/STANDARD_LIFECYCLE_STATUS.md)
 
-The status of this sales quotation
+**`Optional`**
+
+**`Description`**
+
+Filter results by a specific lifecycle status.
+
+**`Example`**
+
+```ts
+STANDING
+```
 
 **`Generated`**
 
-from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
+from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:1953](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_quotations.scailo_pb.ts#L1953)
+[src/sales_quotations.scailo_pb.ts:2718](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_quotations.scailo_pb.ts#L2718)
 
 ___
 
@@ -237,7 +247,7 @@ ___
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:1962](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_quotations.scailo_pb.ts#L1962)
+[src/sales_quotations.scailo_pb.ts:2727](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_quotations.scailo_pb.ts#L2727)
 
 ___
 
@@ -247,7 +257,7 @@ ___
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:1960](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_quotations.scailo_pb.ts#L1960)
+[src/sales_quotations.scailo_pb.ts:2725](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_quotations.scailo_pb.ts#L2725)
 
 ___
 
@@ -257,7 +267,7 @@ ___
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:1961](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_quotations.scailo_pb.ts#L1961)
+[src/sales_quotations.scailo_pb.ts:2726](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_quotations.scailo_pb.ts#L2726)
 
 ## Methods
 
@@ -545,7 +555,7 @@ ___
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:1983](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_quotations.scailo_pb.ts#L1983)
+[src/sales_quotations.scailo_pb.ts:2748](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_quotations.scailo_pb.ts#L2748)
 
 ___
 
@@ -566,7 +576,7 @@ ___
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:1971](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_quotations.scailo_pb.ts#L1971)
+[src/sales_quotations.scailo_pb.ts:2736](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_quotations.scailo_pb.ts#L2736)
 
 ___
 
@@ -587,7 +597,7 @@ ___
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:1975](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_quotations.scailo_pb.ts#L1975)
+[src/sales_quotations.scailo_pb.ts:2740](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_quotations.scailo_pb.ts#L2740)
 
 ___
 
@@ -608,4 +618,4 @@ ___
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:1979](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_quotations.scailo_pb.ts#L1979)
+[src/sales_quotations.scailo_pb.ts:2744](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_quotations.scailo_pb.ts#L2744)

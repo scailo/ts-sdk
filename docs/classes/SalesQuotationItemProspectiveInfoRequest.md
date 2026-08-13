@@ -2,7 +2,10 @@
 
 # Class: SalesQuotationItemProspectiveInfoRequest
 
-Describes the parameters that are required to retrieve the info of a prospective sales quotation item
+Request message for retrieving preliminary contextual information about a prospective line item.
+This payload is typically utilized by frontend interfaces to dynamically fetch default pricing,
+historical terms, or tax configurations for a specific family prior to officially
+adding it to a Sales Quotation. This ensures accurate data pre-filling during the quotation creation workflow.
 
 **`Generated`**
 
@@ -68,23 +71,41 @@ Message\&lt;SalesQuotationItemProspectiveInfoRequest\&gt;.constructor
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:1845](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_quotations.scailo_pb.ts#L1845)
+[src/sales_quotations.scailo_pb.ts:2605](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_quotations.scailo_pb.ts#L2605)
 
 ## Properties
 
 ### clientUomId
 
-• **clientUomId**: `bigint` = `protoInt64.zero`
+• `Optional` **clientUomId**: `bigint`
 
-Stores the ID of the client's unit of material (if 0, the value is ignored while retrieving records)
+**`Optional`**
+
+**`Description`**
+
+The unique internal identifier of the specific Unit of Measure (UOM) requested by the client. If set to `0`, this filter is ignored, and standard product default parameters are returned instead.
+
+**`Example`**
+
+```ts
+12
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 client_uom_id = 13;
+from field: optional uint64 client_uom_id = 13;
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:1843](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_quotations.scailo_pb.ts#L1843)
+[src/sales_quotations.scailo_pb.ts:2603](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_quotations.scailo_pb.ts#L2603)
 
 ___
 
@@ -92,7 +113,25 @@ ___
 
 • **familyId**: `bigint` = `protoInt64.zero`
 
-Stores the family ID
+**`Mandatory`**
+
+**`Description`**
+
+The unique internal identifier of the family or catalog item being evaluated for addition to the quotation.
+
+**`Example`**
+
+```ts
+505
+```
+
+**`Regex`**
+
+^[1-9][0-9]*$
+
+**`Format`**
+
+Unsigned 64-bit integer greater than 0.
 
 **`Generated`**
 
@@ -100,7 +139,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:1836](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_quotations.scailo_pb.ts#L1836)
+[src/sales_quotations.scailo_pb.ts:2587](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_quotations.scailo_pb.ts#L2587)
 
 ___
 
@@ -108,7 +147,25 @@ ___
 
 • **salesQuotationId**: `bigint` = `protoInt64.zero`
 
-Stores the sales quotation ID
+**`Mandatory`**
+
+**`Description`**
+
+The unique internal identifier of the parent sales quotation that is currently being evaluated or constructed.
+
+**`Example`**
+
+```ts
+1024
+```
+
+**`Regex`**
+
+^[1-9][0-9]*$
+
+**`Format`**
+
+Unsigned 64-bit integer greater than 0.
 
 **`Generated`**
 
@@ -116,7 +173,7 @@ from field: uint64 sales_quotation_id = 10;
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:1829](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_quotations.scailo_pb.ts#L1829)
+[src/sales_quotations.scailo_pb.ts:2571](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_quotations.scailo_pb.ts#L2571)
 
 ___
 
@@ -126,7 +183,7 @@ ___
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:1852](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_quotations.scailo_pb.ts#L1852)
+[src/sales_quotations.scailo_pb.ts:2612](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_quotations.scailo_pb.ts#L2612)
 
 ___
 
@@ -136,7 +193,7 @@ ___
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:1850](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_quotations.scailo_pb.ts#L1850)
+[src/sales_quotations.scailo_pb.ts:2610](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_quotations.scailo_pb.ts#L2610)
 
 ___
 
@@ -146,7 +203,7 @@ ___
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:1851](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_quotations.scailo_pb.ts#L1851)
+[src/sales_quotations.scailo_pb.ts:2611](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_quotations.scailo_pb.ts#L2611)
 
 ## Methods
 
@@ -434,7 +491,7 @@ ___
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:1870](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_quotations.scailo_pb.ts#L1870)
+[src/sales_quotations.scailo_pb.ts:2630](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_quotations.scailo_pb.ts#L2630)
 
 ___
 
@@ -455,7 +512,7 @@ ___
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:1858](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_quotations.scailo_pb.ts#L1858)
+[src/sales_quotations.scailo_pb.ts:2618](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_quotations.scailo_pb.ts#L2618)
 
 ___
 
@@ -476,7 +533,7 @@ ___
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:1862](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_quotations.scailo_pb.ts#L1862)
+[src/sales_quotations.scailo_pb.ts:2622](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_quotations.scailo_pb.ts#L2622)
 
 ___
 
@@ -497,4 +554,4 @@ ___
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:1866](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_quotations.scailo_pb.ts#L1866)
+[src/sales_quotations.scailo_pb.ts:2626](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_quotations.scailo_pb.ts#L2626)

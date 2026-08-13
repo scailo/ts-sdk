@@ -67,7 +67,7 @@ Message\&lt;VendorInvoiceItemProspectiveInfoRequest\&gt;.constructor
 
 #### Defined in
 
-[src/vendor_invoices.scailo_pb.ts:1718](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendor_invoices.scailo_pb.ts#L1718)
+[src/vendor_invoices.scailo_pb.ts:1809](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendor_invoices.scailo_pb.ts#L1809)
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-[src/vendor_invoices.scailo_pb.ts:1716](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendor_invoices.scailo_pb.ts#L1716)
+[src/vendor_invoices.scailo_pb.ts:1807](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendor_invoices.scailo_pb.ts#L1807)
 
 ___
 
@@ -99,7 +99,7 @@ from field: uint64 vendor_invoice_id = 10;
 
 #### Defined in
 
-[src/vendor_invoices.scailo_pb.ts:1709](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendor_invoices.scailo_pb.ts#L1709)
+[src/vendor_invoices.scailo_pb.ts:1800](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendor_invoices.scailo_pb.ts#L1800)
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-[src/vendor_invoices.scailo_pb.ts:1725](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendor_invoices.scailo_pb.ts#L1725)
+[src/vendor_invoices.scailo_pb.ts:1816](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendor_invoices.scailo_pb.ts#L1816)
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-[src/vendor_invoices.scailo_pb.ts:1723](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendor_invoices.scailo_pb.ts#L1723)
+[src/vendor_invoices.scailo_pb.ts:1814](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendor_invoices.scailo_pb.ts#L1814)
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-[src/vendor_invoices.scailo_pb.ts:1724](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendor_invoices.scailo_pb.ts#L1724)
+[src/vendor_invoices.scailo_pb.ts:1815](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendor_invoices.scailo_pb.ts#L1815)
 
 ## Methods
 
@@ -417,7 +417,7 @@ ___
 
 #### Defined in
 
-[src/vendor_invoices.scailo_pb.ts:1742](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendor_invoices.scailo_pb.ts#L1742)
+[src/vendor_invoices.scailo_pb.ts:1833](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendor_invoices.scailo_pb.ts#L1833)
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-[src/vendor_invoices.scailo_pb.ts:1730](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendor_invoices.scailo_pb.ts#L1730)
+[src/vendor_invoices.scailo_pb.ts:1821](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendor_invoices.scailo_pb.ts#L1821)
 
 ___
 
@@ -459,7 +459,7 @@ ___
 
 #### Defined in
 
-[src/vendor_invoices.scailo_pb.ts:1734](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendor_invoices.scailo_pb.ts#L1734)
+[src/vendor_invoices.scailo_pb.ts:1825](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendor_invoices.scailo_pb.ts#L1825)
 
 ___
 
@@ -480,4 +480,4 @@ ___
 
 #### Defined in
 
-[src/vendor_invoices.scailo_pb.ts:1738](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendor_invoices.scailo_pb.ts#L1738)
+[src/vendor_invoices.scailo_pb.ts:1829](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendor_invoices.scailo_pb.ts#L1829)

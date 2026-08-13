@@ -4,31 +4,35 @@ import { FormFieldDatum, FormFieldDatumCreateRequest, FormFieldDatumFilterReques
 import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base.scailo_pb.js";
 /**
  *
- * Describes the available user types
+ * Enum defining the primary account classifications and systemic access types for users on the platform.
  *
  * @generated from enum Scailo.USER_TYPE
  */
 export declare enum USER_TYPE {
     /**
-     * Useful for filter and count operation when this field needs to be ignored
+     *
+     * @description Denotes that the user type filter should be disregarded. Used exclusively within search APIs to bypass classification restrictions.
      *
      * @generated from enum value: USER_TYPE_ANY_UNSPECIFIED = 0;
      */
     USER_TYPE_ANY_UNSPECIFIED = 0,
     /**
-     * Denotes that the user is an employee
+     *
+     * @description Denotes an internal employee lifecycle record bound to corporate attendance, shift scheduling, and payroll.
      *
      * @generated from enum value: USER_TYPE_EMPLOYEE = 1;
      */
     USER_TYPE_EMPLOYEE = 1,
     /**
-     * Denotes that the user is a client
+     *
+     * @description Denotes an external client user mapping linked directly to a client organization or billing profile.
      *
      * @generated from enum value: USER_TYPE_CLIENT = 2;
      */
     USER_TYPE_CLIENT = 2,
     /**
-     * Denotes that the user is a vendor
+     *
+     * @description Denotes an external vendor contact profile linked to supply chain logistics or procurement tracking.
      *
      * @generated from enum value: USER_TYPE_VENDOR = 3;
      */
@@ -36,73 +40,73 @@ export declare enum USER_TYPE {
 }
 /**
  *
- * Describes the available sort keys
+ * Enumeration of fields available for sorting user search results.
  *
  * @generated from enum Scailo.USER_SORT_KEY
  */
 export declare enum USER_SORT_KEY {
     /**
-     * Fetch ordered results by id
+     * @description Default sort behavior (by internal ID).
      *
      * @generated from enum value: USER_SORT_KEY_ID_UNSPECIFIED = 0;
      */
     USER_SORT_KEY_ID_UNSPECIFIED = 0,
     /**
-     * Fetch ordered results by the creation timestamp
+     * @description Sort by the timestamp the record was initially created.
      *
      * @generated from enum value: USER_SORT_KEY_CREATED_AT = 1;
      */
     USER_SORT_KEY_CREATED_AT = 1,
     /**
-     * Fetch ordered results by the modified timestamp
+     * @description Sort by the timestamp the record was last modified.
      *
      * @generated from enum value: USER_SORT_KEY_MODIFIED_AT = 2;
      */
     USER_SORT_KEY_MODIFIED_AT = 2,
     /**
-     * Fetch ordered results by the approved on timestamp
+     * @description Sort by the official approval timestamp.
      *
      * @generated from enum value: USER_SORT_KEY_APPROVED_ON = 3;
      */
     USER_SORT_KEY_APPROVED_ON = 3,
     /**
-     * Fetch ordered results by the approved by field
+     * @description Sort by the system ID of the approving user.
      *
      * @generated from enum value: USER_SORT_KEY_APPROVED_BY = 4;
      */
     USER_SORT_KEY_APPROVED_BY = 4,
     /**
-     * Fetch ordered results by the approver's role ID
+     * @description Sort by the security role ID used by the approver.
      *
      * @generated from enum value: USER_SORT_KEY_APPROVER_ROLE_ID = 5;
      */
     USER_SORT_KEY_APPROVER_ROLE_ID = 5,
     /**
-     * Fetch ordered results by the username
+     * @description Sort alphabetically by the user-provided username.
      *
      * @generated from enum value: USER_SORT_KEY_USERNAME = 10;
      */
     USER_SORT_KEY_USERNAME = 10,
     /**
-     * Fetch ordered results by the name
+     * @description Sort alphabetically by the user-provided name.
      *
      * @generated from enum value: USER_SORT_KEY_NAME = 11;
      */
     USER_SORT_KEY_NAME = 11,
     /**
-     * Fetch ordered results by the code
+     * @description Sort alphabetically by the user-provided code.
      *
      * @generated from enum value: USER_SORT_KEY_CODE = 12;
      */
     USER_SORT_KEY_CODE = 12,
     /**
-     * Fetch ordered results by the email address
+     * @description Sort alphabetically by the user-provided email.
      *
      * @generated from enum value: USER_SORT_KEY_EMAIL = 13;
      */
     USER_SORT_KEY_EMAIL = 13,
     /**
-     * Fetch ordered results by the phone number
+     * @description Sort alphabetically by the user-provided phone number.
      *
      * @generated from enum value: USER_SORT_KEY_PHONE = 14;
      */
@@ -133,18 +137,31 @@ export declare class UsersServiceCreateRequest extends Message<UsersServiceCreat
      *
      * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
      *
-     * @generated from field: string entity_uuid = 1;
+     * @generated from field: optional string entity_uuid = 1;
      */
-    entityUuid: string;
+    entityUuid?: string;
     /**
-     * [Optional] Internal notes or audit comments for this creation event.
-     * Maximum 500 characters.
      *
-     * @generated from field: string user_comment = 2;
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
+     *
+     * @generated from field: optional string user_comment = 2;
      */
-    userComment: string;
+    userComment?: string;
     /**
-     * [Required] The classification of the user (e.g., CLIENT, EMPLOYEE, VENDOR).
+     *
+     * @mandatory
+     *
+     * @description The categorical classification of the user entity determining their system scope and behavioral rules.
+     *
+     * @example USER_TYPE_EMPLOYEE
      *
      * @generated from field: Scailo.USER_TYPE user_type = 7;
      */
@@ -161,174 +178,393 @@ export declare class UsersServiceCreateRequest extends Message<UsersServiceCreat
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 vault_folder_id = 9;
+     * @generated from field: optional uint64 vault_folder_id = 9;
      */
-    vaultFolderId: bigint;
+    vaultFolderId?: bigint;
     /**
-     * [Required] The unique login identifier.
-     * Must be at least 1 character and unique across the entity.
+     *
+     * @mandatory
+     *
+     * @description The unique system-level login alias used by the actor to authenticate against the platform.
+     *
+     * @example "jane.doe"
+     *
+     * @regex .+
+     *
+     * @format Must be a non-empty string and completely unique across the given business entity space.
      *
      * @generated from field: string username = 10;
      */
     username: string;
     /**
-     * [Required] The unique employee or payroll code.
-     * Used for cross-referencing with external HR or ERP systems.
+     *
+     * @mandatory
+     *
+     * @description The unique internal enterprise code assigned to the individual, utilized for cross-referencing external platforms.
+     *
+     * @example "EMP-2026-992"
+     *
+     * @regex .+
+     *
+     * @format Must be a non-empty string.
      *
      * @generated from field: string code = 11;
      */
     code: string;
     /**
-     * [Required] The full legal name of the user.
+     *
+     * @mandatory
+     *
+     * @description The official or full legal name of the user as recognized on statutory documentation.
+     *
+     * @example "Jane Doe"
+     *
+     * @regex .+
+     *
+     * @format Must be a non-empty string.
      *
      * @generated from field: string name = 12;
      */
     name: string;
     /**
-     * [Required] The plain text password for the account.
-     * This value is hashed before storage.
+     *
+     * @mandatory
+     *
+     * @description The raw plain text password string supplied for account registration. This token is cryptographically hashed before commitment to persistent storage.
+     *
+     * @example "S3cureP@ssword123!"
+     *
+     * @regex .+
+     *
+     * @format Must be a non-empty string meeting organizational length and entropy guidelines.
      *
      * @generated from field: string plain_text_password = 13;
      */
     plainTextPassword: string;
     /**
-     * [Required] The primary security Role ID (System/Web access).
+     *
+     * @mandatory
+     *
+     * @description The unique internal identifier of the primary web application access or RBAC security role.
+     *
+     * @example 1024
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative 64-bit integer greater than zero.
      *
      * @generated from field: uint64 role_id = 14;
      */
     roleId: bigint;
     /**
-     * [Optional] The secondary Role ID for mobile application access.
      *
-     * @generated from field: uint64 mobile_role_id = 15;
+     * @optional
+     *
+     * @description The unique internal identifier of a secondary security role tailored exclusively for mobile application endpoints.
+     *
+     * @example 2048
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative 64-bit integer. Defaults to 0 if unassigned.
+     *
+     * @generated from field: optional uint64 mobile_role_id = 15;
      */
-    mobileRoleId: bigint;
+    mobileRoleId?: bigint;
     /**
-     * [Required] The primary email address for system notifications.
-     * Example: "jane.doe@example.com"
+     *
+     * @mandatory
+     *
+     * @description The primary communication or routing email address where structural system notifications are dispatched.
+     *
+     * @example "jane.doe@example.com"
+     *
+     * @regex ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
+     *
+     * @format Must be a structurally sound and valid email address string.
      *
      * @generated from field: string email = 16;
      */
     email: string;
     /**
-     * [Optional] The secondary/corporate work email address.
      *
-     * @generated from field: string work_email = 17;
+     * @optional
+     *
+     * @description A secondary, fallback, or corporate work email address for overlapping communication loops.
+     *
+     * @example "j.doe@corporate-hub.com"
+     *
+     * @regex ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
+     *
+     * @format If provided, must be a valid email address string.
+     *
+     * @generated from field: optional string work_email = 17;
      */
-    workEmail: string;
+    workEmail?: string;
     /**
-     * [Required] The primary contact number (e.g., Mobile or Landline).
-     * Recommended format: E.164 (e.g., "+12125550123").
+     *
+     * @mandatory
+     *
+     * @description The primary telephone contact or mobile line number assigned to the account profile.
+     *
+     * @example "+12125550123"
+     *
+     * @regex .+
+     *
+     * @format Non-empty string; adoption of standard international E.164 formats is highly recommended.
      *
      * @generated from field: string phone = 18;
      */
     phone: string;
     /**
-     * [Optional] The user's date of birth.
-     * **Format:** `Day Month Date Year`
-     * Example: "Mon Jan 02 2006"
      *
-     * @generated from field: string birthday = 30;
-     */
-    birthday: string;
-    /**
-     * [Optional] The official start date for the user.
-     * **Format:** `Day Month Date Year`
-     * Example: "Wed Oct 25 2023"
+     * @optional
      *
-     * @generated from field: string joining_date = 31;
-     */
-    joiningDate: string;
-    /**
-     * [Optional] Primary residential or mailing address.
+     * @description The calendar date of birth of the user, primarily captured for verification workflows.
      *
-     * @generated from field: string address = 32;
-     */
-    address: string;
-    /**
-     * [Optional] City of residence.
+     * @example "Mon Jan 02 2006"
      *
-     * @generated from field: string city = 33;
-     */
-    city: string;
-    /**
-     * [Optional] State, Province, or Region of residence.
+     * @regex .*
      *
-     * @generated from field: string state = 34;
-     */
-    state: string;
-    /**
-     * [Optional] Country of residence (ISO 3166-1 alpha-2 recommended).
-     * Example: "US", "GB", "IN"
+     * @format Must follow the specific string syntax format: `Day Month Date Year`.
      *
-     * @generated from field: string country = 35;
+     * @generated from field: optional string birthday = 30;
      */
-    country: string;
+    birthday?: string;
     /**
-     * [Optional] Postal or ZIP code.
      *
-     * @generated from field: string pin_code = 36;
-     */
-    pinCode: string;
-    /**
-     * [Optional] The user's blood group.
-     * Example: "O+", "A-", "B+"
+     * @optional
      *
-     * @generated from field: string blood_group = 37;
-     */
-    bloodGroup: string;
-    /**
-     * [Optional] Assigned shift group for attendance scheduling.
+     * @description The formal start or contract initialization date marking when the individual officially joins the team roster.
      *
-     * @generated from field: uint64 shift_group_id = 50;
-     */
-    shiftGroupId: bigint;
-    /**
-     * [Optional] Unit of Measure (UOM) for tracking attendance duration.
+     * @example "Wed Oct 25 2023"
      *
-     * @generated from field: uint64 attendance_uom_id = 51;
-     */
-    attendanceUomId: bigint;
-    /**
-     * [Optional] The department ID. Set to 0 for unassigned/general.
+     * @regex .*
      *
-     * @generated from field: uint64 department_id = 52;
-     */
-    departmentId: bigint;
-    /**
-     * [Optional] The payroll group used for salary batching.
+     * @format Must follow the specific string syntax format: `Day Month Date Year`.
      *
-     * @generated from field: uint64 payroll_group_id = 53;
+     * @generated from field: optional string joining_date = 31;
      */
-    payrollGroupId: bigint;
+    joiningDate?: string;
     /**
-     * [Optional] The tax group used for statutory deductions.
      *
-     * @generated from field: uint64 payroll_tax_group_id = 54;
-     */
-    payrollTaxGroupId: bigint;
-    /**
-     * [Optional] The ID of the currency for the user's base salary.
+     * @optional
      *
-     * @generated from field: uint64 payroll_currency_id = 55;
-     */
-    payrollCurrencyId: bigint;
-    /**
-     * [Optional] The base salary amount in the **smallest currency unit**.
-     * For USD, 500000 represents $5,000.00.
+     * @description Primary street details, building number, or geographic line matching residential or official mailing location records.
      *
-     * @generated from field: uint64 basic_pay_amount = 56;
-     */
-    basicPayAmount: bigint;
-    /**
-     * [Optional] The UOM ID for the basic pay (e.g., Per Month, Per Year).
+     * @example "123 Business Park Drive, Suite 400"
      *
-     * @generated from field: uint64 basic_pay_uom_id = 57;
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters.
+     *
+     * @generated from field: optional string address = 32;
      */
-    basicPayUomId: bigint;
+    address?: string;
     /**
-     * [Optional] A collection of custom field data.
-     * Use this for any organization-specific dynamic attributes.
+     *
+     * @optional
+     *
+     * @description The explicit city name corresponding to the user's primary residence or workplace assignment.
+     *
+     * @example "Austin"
+     *
+     * @regex .*
+     *
+     * @format String value, can be empty.
+     *
+     * @generated from field: optional string city = 33;
+     */
+    city?: string;
+    /**
+     *
+     * @optional
+     *
+     * @description The administrative territory, province, state, or regional zone of residence.
+     *
+     * @example "Texas"
+     *
+     * @regex .*
+     *
+     * @format String value, can be empty.
+     *
+     * @generated from field: optional string state = 34;
+     */
+    state?: string;
+    /**
+     *
+     * @optional
+     *
+     * @description The country code corresponding to the user's operational location.
+     *
+     * @example "US"
+     *
+     * @regex ^[A-Z]{2}$
+     *
+     * @format Strict ISO 3166-1 alpha-2 standard country codes are highly recommended.
+     *
+     * @generated from field: optional string country = 35;
+     */
+    country?: string;
+    /**
+     *
+     * @optional
+     *
+     * @description The standardized postal index number or geographic ZIP routing code.
+     *
+     * @example "78701"
+     *
+     * @regex .*
+     *
+     * @format String value, can be empty.
+     *
+     * @generated from field: optional string pin_code = 36;
+     */
+    pinCode?: string;
+    /**
+     *
+     * @optional
+     *
+     * @description Medical identifier indicating the user's legal ABO blood group for emergency or corporate wellness logs.
+     *
+     * @example "O+"
+     *
+     * @regex ^(A|B|AB|O)[+-]$
+     *
+     * @format Alphanumeric value containing classification type followed by rh factor sign.
+     *
+     * @generated from field: optional string blood_group = 37;
+     */
+    bloodGroup?: string;
+    /**
+     *
+     * @optional
+     *
+     * @description The unique internal identifier of the operational work shift group mapped to this account profile for scheduling and timecard verification.
+     *
+     * @example 45
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative 64-bit integer. Defaults to 0 if unallocated.
+     *
+     * @generated from field: optional uint64 shift_group_id = 50;
+     */
+    shiftGroupId?: bigint;
+    /**
+     *
+     * @optional
+     *
+     * @description The internal Unit of Measure (UOM) tracking ID used to evaluate time structures, shifts, or active work hour configurations.
+     *
+     * @example 12
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative 64-bit integer. Defaults to 0 if unallocated.
+     *
+     * @generated from field: optional uint64 attendance_uom_id = 51;
+     */
+    attendanceUomId?: bigint;
+    /**
+     *
+     * @optional
+     *
+     * @description The unique internal sequence identifier of the corporate Department or business unit to which the user is structurally assigned.
+     *
+     * @example 304
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative 64-bit integer. Defaults to 0 for general or unassigned staff vectors.
+     *
+     * @generated from field: optional uint64 department_id = 52;
+     */
+    departmentId?: bigint;
+    /**
+     *
+     * @optional
+     *
+     * @description The unique internal identifier of the designated payroll distribution group used for localized batch processing and compensation disbursement.
+     *
+     * @example 88
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative 64-bit integer. Defaults to 0 if unassigned.
+     *
+     * @generated from field: optional uint64 payroll_group_id = 53;
+     */
+    payrollGroupId?: bigint;
+    /**
+     *
+     * @optional
+     *
+     * @description The unique internal identifier of the tax matrix or statutory configuration rule governing payroll deductions.
+     *
+     * @example 19
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative 64-bit integer. Defaults to 0 if no deductions are assigned.
+     *
+     * @generated from field: optional uint64 payroll_tax_group_id = 54;
+     */
+    payrollTaxGroupId?: bigint;
+    /**
+     *
+     * @optional
+     *
+     * @description The internal identifier matching the currency context in which the user's base salary and line compensation amounts are denominated.
+     *
+     * @example 3
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative 64-bit integer. Defaults to 0 if unassigned.
+     *
+     * @generated from field: optional uint64 payroll_currency_id = 55;
+     */
+    payrollCurrencyId?: bigint;
+    /**
+     *
+     * @optional
+     *
+     * @description The raw volume integer representing basic salary compensation. **Critical:** Value must be defined in the minor unit of the currency.
+     *
+     * @example 500000
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative 64-bit integer. For example, a value of 500000 in USD represents $5,000.00.
+     *
+     * @generated from field: optional uint64 basic_pay_amount = 56;
+     */
+    basicPayAmount?: bigint;
+    /**
+     *
+     * @optional
+     *
+     * @description The internal Unit of Measure (UOM) tracking ID applied to contextualize basic pay duration distributions (e.g., Per Month, Per Annum).
+     *
+     * @example 701
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative 64-bit integer. Defaults to 0 if unassigned.
+     *
+     * @generated from field: optional uint64 basic_pay_uom_id = 57;
+     */
+    basicPayUomId?: bigint;
+    /**
+     *
+     * @optional
+     *
+     * @description A collection of dynamic form fields for organization-specific data.
+     *
+     * @example []
+     *
+     * @format An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
      *
      * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 70;
      */
@@ -344,19 +580,43 @@ export declare class UsersServiceCreateRequest extends Message<UsersServiceCreat
 }
 /**
  *
- * Describes the parameters necessary to update a record
+ * Request message for updating an existing User record.
+ * Only applicable for records in `DRAFT` or `REVISION` states.
+ * This message allows for modifying the code, name, role ID, mobile role ID, email, work email, phone, birthday, joining date, address, city, state, country, pin code, blood group, shift group ID, attendance uom ID, department ID, payroll group ID, payroll tax group ID, payroll currency ID, basic pay amount, basic pay uom ID and other custom form fields
+ * of an established User.
+ *
+ * **Note:** Only fields provided in the request will typically be updated.
+ * The unique system ID is required to locate the target record.
  *
  * @generated from message Scailo.UsersServiceUpdateRequest
  */
 export declare class UsersServiceUpdateRequest extends Message<UsersServiceUpdateRequest> {
     /**
-     * Stores any comment that the user might add during this operation
      *
-     * @generated from field: string user_comment = 1;
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
+     *
+     * @generated from field: optional string user_comment = 1;
      */
-    userComment: string;
+    userComment?: string;
     /**
-     * The ID of the record that needs to be updated
+     *
+     * @mandatory
+     *
+     * @description The unique internal identifier of the target record that needs to be updated.
+     *
+     * @example 1024
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 id = 2;
      */
@@ -369,9 +629,9 @@ export declare class UsersServiceUpdateRequest extends Message<UsersServiceUpdat
      *
      * @example true
      *
-     * @generated from field: bool notify_users = 3;
+     * @generated from field: optional bool notify_users = 3;
      */
-    notifyUsers: boolean;
+    notifyUsers?: boolean;
     /**
      *
      * @optional
@@ -384,149 +644,363 @@ export declare class UsersServiceUpdateRequest extends Message<UsersServiceUpdat
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 vault_folder_id = 9;
+     * @generated from field: optional uint64 vault_folder_id = 9;
      */
-    vaultFolderId: bigint;
+    vaultFolderId?: bigint;
     /**
-     * The unique employee code by which the user is classified
      *
-     * @generated from field: string code = 11;
-     */
-    code: string;
-    /**
-     * The name of the user
+     * @optional
      *
-     * @generated from field: string name = 12;
-     */
-    name: string;
-    /**
-     * The associated role ID
+     * @description The unique internal enterprise code assigned to the individual, utilized for cross-referencing external platforms.
      *
-     * @generated from field: uint64 role_id = 14;
-     */
-    roleId: bigint;
-    /**
-     * The associated mobile role ID
+     * @example "EMP-2026-992"
      *
-     * @generated from field: uint64 mobile_role_id = 15;
-     */
-    mobileRoleId: bigint;
-    /**
-     * The primary email of the user
+     * @regex .*
      *
-     * @generated from field: string email = 16;
-     */
-    email: string;
-    /**
-     * The optional work email of the user
+     * @format Must be a non-empty string.
      *
-     * @generated from field: string work_email = 17;
+     * @generated from field: optional string code = 11;
      */
-    workEmail: string;
+    code?: string;
     /**
-     * The primary contact number of the user
      *
-     * @generated from field: string phone = 18;
-     */
-    phone: string;
-    /**
-     * The birthday of the user
+     * @optional
      *
-     * @generated from field: string birthday = 30;
-     */
-    birthday: string;
-    /**
-     * The joining date of the user
+     * @description The official or full legal name of the user as recognized on statutory documentation.
      *
-     * @generated from field: string joining_date = 31;
-     */
-    joiningDate: string;
-    /**
-     * The address of the user
+     * @example "Jane Doe"
      *
-     * @generated from field: string address = 32;
-     */
-    address: string;
-    /**
-     * The city of residence
+     * @regex .*
      *
-     * @generated from field: string city = 33;
-     */
-    city: string;
-    /**
-     * The state of residence
+     * @format Must be a non-empty string.
      *
-     * @generated from field: string state = 34;
+     * @generated from field: optional string name = 12;
      */
-    state: string;
+    name?: string;
     /**
-     * The country of residence
      *
-     * @generated from field: string country = 35;
-     */
-    country: string;
-    /**
-     * THe PIN Code of residence
+     * @optional
      *
-     * @generated from field: string pin_code = 36;
-     */
-    pinCode: string;
-    /**
-     * THe Blood Group of the user
+     * @description The unique internal identifier of the primary web application access or RBAC security role.
      *
-     * @generated from field: string blood_group = 37;
-     */
-    bloodGroup: string;
-    /**
-     * The associated shift group ID
+     * @example 1024
      *
-     * @generated from field: uint64 shift_group_id = 50;
-     */
-    shiftGroupId: bigint;
-    /**
-     * The associated unit of material of the user's attendance record
+     * @regex ^[0-9]+$
      *
-     * @generated from field: uint64 attendance_uom_id = 51;
-     */
-    attendanceUomId: bigint;
-    /**
-     * The associated department (can be 0 to allow seamless transition)
+     * @format Non-negative 64-bit integer greater than zero.
      *
-     * @generated from field: uint64 department_id = 52;
+     * @generated from field: optional uint64 role_id = 14;
      */
-    departmentId: bigint;
+    roleId?: bigint;
     /**
-     * The associated payroll group ID of the user
      *
-     * @generated from field: uint64 payroll_group_id = 53;
-     */
-    payrollGroupId: bigint;
-    /**
-     * The associated tax group ID using which the user's payroll needs to be calculated
+     * @optional
      *
-     * @generated from field: uint64 payroll_tax_group_id = 54;
-     */
-    payrollTaxGroupId: bigint;
-    /**
-     * The associated currency ID of the user's payroll
+     * @description The unique internal identifier of a secondary security role tailored exclusively for mobile application endpoints.
      *
-     * @generated from field: uint64 payroll_currency_id = 55;
-     */
-    payrollCurrencyId: bigint;
-    /**
-     * The basic pay amount of the user (in cents)
+     * @example 2048
      *
-     * @generated from field: uint64 basic_pay_amount = 56;
-     */
-    basicPayAmount: bigint;
-    /**
-     * The associated unit of material for storing the basic pay amount
+     * @regex ^[0-9]+$
      *
-     * @generated from field: uint64 basic_pay_uom_id = 57;
+     * @format Non-negative 64-bit integer. Defaults to 0 if unassigned.
+     *
+     * @generated from field: optional uint64 mobile_role_id = 15;
      */
-    basicPayUomId: bigint;
+    mobileRoleId?: bigint;
     /**
-     * The list of dynamic forms
+     *
+     * @optional
+     *
+     * @description The primary communication or routing email address where structural system notifications are dispatched.
+     *
+     * @example "jane.doe@example.com"
+     *
+     * @regex ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
+     *
+     * @format Must be a structurally sound and valid email address string.
+     *
+     * @generated from field: optional string email = 16;
+     */
+    email?: string;
+    /**
+     *
+     * @optional
+     *
+     * @description A secondary, fallback, or corporate work email address for overlapping communication loops.
+     *
+     * @example "j.doe@corporate-hub.com"
+     *
+     * @regex ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
+     *
+     * @format If provided, must be a valid email address string.
+     *
+     * @generated from field: optional string work_email = 17;
+     */
+    workEmail?: string;
+    /**
+     *
+     * @optional
+     *
+     * @description The primary telephone contact or mobile line number assigned to the account profile.
+     *
+     * @example "+12125550123"
+     *
+     * @regex .*
+     *
+     * @format Non-empty string; adoption of standard international E.164 formats is highly recommended.
+     *
+     * @generated from field: optional string phone = 18;
+     */
+    phone?: string;
+    /**
+     *
+     * @optional
+     *
+     * @description The calendar date of birth of the user, primarily captured for verification workflows.
+     *
+     * @example "Mon Jan 02 2006"
+     *
+     * @regex .*
+     *
+     * @format Must follow the specific string syntax format: `Day Month Date Year`.
+     *
+     * @generated from field: optional string birthday = 30;
+     */
+    birthday?: string;
+    /**
+     *
+     * @optional
+     *
+     * @description The formal start or contract initialization date marking when the individual officially joins the team roster.
+     *
+     * @example "Wed Oct 25 2023"
+     *
+     * @regex .*
+     *
+     * @format Must follow the specific string syntax format: `Day Month Date Year`.
+     *
+     * @generated from field: optional string joining_date = 31;
+     */
+    joiningDate?: string;
+    /**
+     *
+     * @optional
+     *
+     * @description Primary street details, building number, or geographic line matching residential or official mailing location records.
+     *
+     * @example "123 Business Park Drive, Suite 400"
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters.
+     *
+     * @generated from field: optional string address = 32;
+     */
+    address?: string;
+    /**
+     *
+     * @optional
+     *
+     * @description The explicit city name corresponding to the user's primary residence or workplace assignment.
+     *
+     * @example "Austin"
+     *
+     * @regex .*
+     *
+     * @format String value, can be empty.
+     *
+     * @generated from field: optional string city = 33;
+     */
+    city?: string;
+    /**
+     *
+     * @optional
+     *
+     * @description The administrative territory, province, state, or regional zone of residence.
+     *
+     * @example "Texas"
+     *
+     * @regex .*
+     *
+     * @format String value, can be empty.
+     *
+     * @generated from field: optional string state = 34;
+     */
+    state?: string;
+    /**
+     *
+     * @optional
+     *
+     * @description The country code corresponding to the user's operational location.
+     *
+     * @example "US"
+     *
+     * @regex ^[A-Z]{2}$
+     *
+     * @format Strict ISO 3166-1 alpha-2 standard country codes are highly recommended.
+     *
+     * @generated from field: optional string country = 35;
+     */
+    country?: string;
+    /**
+     *
+     * @optional
+     *
+     * @description The standardized postal index number or geographic ZIP routing code.
+     *
+     * @example "78701"
+     *
+     * @regex .*
+     *
+     * @format String value, can be empty.
+     *
+     * @generated from field: optional string pin_code = 36;
+     */
+    pinCode?: string;
+    /**
+     *
+     * @optional
+     *
+     * @description Medical identifier indicating the user's legal ABO blood group for emergency or corporate wellness logs.
+     *
+     * @example "O+"
+     *
+     * @regex ^(A|B|AB|O)[+-]$
+     *
+     * @format Alphanumeric value containing classification type followed by rh factor sign.
+     *
+     * @generated from field: optional string blood_group = 37;
+     */
+    bloodGroup?: string;
+    /**
+     *
+     * @optional
+     *
+     * @description The unique internal identifier of the operational work shift group mapped to this account profile for scheduling and timecard verification.
+     *
+     * @example 45
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative 64-bit integer. Defaults to 0 if unallocated.
+     *
+     * @generated from field: optional uint64 shift_group_id = 50;
+     */
+    shiftGroupId?: bigint;
+    /**
+     *
+     * @optional
+     *
+     * @description The internal Unit of Measure (UOM) tracking ID used to evaluate time structures, shifts, or active work hour configurations.
+     *
+     * @example 12
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative 64-bit integer. Defaults to 0 if unallocated.
+     *
+     * @generated from field: optional uint64 attendance_uom_id = 51;
+     */
+    attendanceUomId?: bigint;
+    /**
+     *
+     * @optional
+     *
+     * @description The unique internal sequence identifier of the corporate Department or business unit to which the user is structurally assigned.
+     *
+     * @example 304
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative 64-bit integer. Defaults to 0 for general or unassigned staff vectors.
+     *
+     * @generated from field: optional uint64 department_id = 52;
+     */
+    departmentId?: bigint;
+    /**
+     *
+     * @optional
+     *
+     * @description The unique internal identifier of the designated payroll distribution group used for localized batch processing and compensation disbursement.
+     *
+     * @example 88
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative 64-bit integer. Defaults to 0 if unassigned.
+     *
+     * @generated from field: optional uint64 payroll_group_id = 53;
+     */
+    payrollGroupId?: bigint;
+    /**
+     *
+     * @optional
+     *
+     * @description The unique internal identifier of the tax matrix or statutory configuration rule governing payroll deductions.
+     *
+     * @example 19
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative 64-bit integer. Defaults to 0 if no deductions are assigned.
+     *
+     * @generated from field: optional uint64 payroll_tax_group_id = 54;
+     */
+    payrollTaxGroupId?: bigint;
+    /**
+     *
+     * @optional
+     *
+     * @description The internal identifier matching the currency context in which the user's base salary and line compensation amounts are denominated.
+     *
+     * @example 3
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative 64-bit integer. Defaults to 0 if unassigned.
+     *
+     * @generated from field: optional uint64 payroll_currency_id = 55;
+     */
+    payrollCurrencyId?: bigint;
+    /**
+     *
+     * @optional
+     *
+     * @description The raw volume integer representing basic salary compensation. **Critical:** Value must be defined in the minor unit of the currency.
+     *
+     * @example 500000
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative 64-bit integer. For example, a value of 500000 in USD represents $5,000.00.
+     *
+     * @generated from field: optional uint64 basic_pay_amount = 56;
+     */
+    basicPayAmount?: bigint;
+    /**
+     *
+     * @optional
+     *
+     * @description The internal Unit of Measure (UOM) tracking ID applied to contextualize basic pay duration distributions (e.g., Per Month, Per Annum).
+     *
+     * @example 701
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative 64-bit integer. Defaults to 0 if unassigned.
+     *
+     * @generated from field: optional uint64 basic_pay_uom_id = 57;
+     */
+    basicPayUomId?: bigint;
+    /**
+     *
+     * @optional
+     *
+     * @description A collection of dynamic form fields for organization-specific data.
+     *
+     * @example []
+     *
+     * @format An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
      *
      * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 70;
      */
@@ -542,7 +1016,7 @@ export declare class UsersServiceUpdateRequest extends Message<UsersServiceUpdat
 }
 /**
  *
- * Describes the parameters that are part of a standard response
+ * Represents a full User within the system.
  *
  * @generated from message Scailo.User
  */
@@ -585,7 +1059,10 @@ export declare class User extends Message<User> {
      */
     logs: LogbookLogConciseSLC[];
     /**
-     * Stores the user type
+     *
+     * @description The categorical classification of the user entity determining their system scope and behavioral rules.
+     *
+     * @example USER_TYPE_EMPLOYEE
      *
      * @generated from field: Scailo.USER_TYPE user_type = 7;
      */
@@ -600,157 +1077,233 @@ export declare class User extends Message<User> {
      */
     vaultFolderId: bigint;
     /**
-     * The username of the user
+     *
+     * @description The unique system-level login alias used by the actor to authenticate against the platform.
+     *
+     * @example "jane.doe"
      *
      * @generated from field: string username = 10;
      */
     username: string;
     /**
-     * The unique employee code by which the user is classified
+     *
+     * @description The unique internal enterprise code assigned to the individual, utilized for cross-referencing external platforms.
+     *
+     * @example "EMP-2026-992"
      *
      * @generated from field: string code = 11;
      */
     code: string;
     /**
-     * The name of the user
+     *
+     * @description The official or full legal name of the user as recognized on statutory documentation.
+     *
+     * @example "Jane Doe"
      *
      * @generated from field: string name = 12;
      */
     name: string;
     /**
-     * The associated role ID
+     *
+     * @description The unique internal identifier of the primary web application access or RBAC security role.
+     *
+     * @example 1024
      *
      * @generated from field: uint64 role_id = 14;
      */
     roleId: bigint;
     /**
-     * The associated mobile role ID
+     *
+     * @description The unique internal identifier of a secondary security role tailored exclusively for mobile application endpoints.
+     *
+     * @example 2048
      *
      * @generated from field: uint64 mobile_role_id = 15;
      */
     mobileRoleId: bigint;
     /**
-     * The primary email of the user
+     *
+     * @description The primary communication or routing email address where structural system notifications are dispatched.
+     *
+     * @example "jane.doe@example.com"
      *
      * @generated from field: string email = 16;
      */
     email: string;
     /**
-     * The optional work email of the user
+     *
+     * @description A secondary, fallback, or corporate work email address for overlapping communication loops.
+     *
+     * @example "j.doe@corporate-hub.com"
      *
      * @generated from field: string work_email = 17;
      */
     workEmail: string;
     /**
-     * The primary contact number of the user
+     *
+     * @description The primary telephone contact or mobile line number assigned to the account profile.
+     *
+     * @example "+12125550123"
      *
      * @generated from field: string phone = 18;
      */
     phone: string;
     /**
-     * The birthday of the user
+     *
+     * @description The calendar date of birth of the user, primarily captured for verification workflows.
+     *
+     * @example "Mon Jan 02 2006"
      *
      * @generated from field: string birthday = 30;
      */
     birthday: string;
     /**
-     * The joining date of the user
+     *
+     * @description The formal start or contract initialization date marking when the individual officially joins the team roster.
+     *
+     * @example "Wed Oct 25 2023"
      *
      * @generated from field: string joining_date = 31;
      */
     joiningDate: string;
     /**
-     * The address of the user
+     *
+     * @description Primary street details, building number, or geographic line matching residential or official mailing location records.
+     *
+     * @example "123 Business Park Drive, Suite 400"
      *
      * @generated from field: string address = 32;
      */
     address: string;
     /**
-     * The city of residence
+     *
+     * @description The explicit city name corresponding to the user's primary residence or workplace assignment.
+     *
+     * @example "Austin"
      *
      * @generated from field: string city = 33;
      */
     city: string;
     /**
-     * The state of residence
+     *
+     * @description The administrative territory, province, state, or regional zone of residence.
+     *
+     * @example "Texas"
      *
      * @generated from field: string state = 34;
      */
     state: string;
     /**
-     * The country of residence
+     *
+     * @description The country code corresponding to the user's operational location.
+     *
+     * @example "US"
      *
      * @generated from field: string country = 35;
      */
     country: string;
     /**
-     * THe PIN Code of residence
+     *
+     * @description The standardized postal index number or geographic ZIP routing code.
+     *
+     * @example "78701"
      *
      * @generated from field: string pin_code = 36;
      */
     pinCode: string;
     /**
-     * THe Blood Group of the user
+     *
+     * @description Medical identifier indicating the user's legal ABO blood group for emergency or corporate wellness logs.
+     *
+     * @example "O+"
      *
      * @generated from field: string blood_group = 37;
      */
     bloodGroup: string;
     /**
-     * The associated shift group ID
+     *
+     * @description The unique internal identifier of the operational work shift group mapped to this account profile for scheduling and timecard verification.
+     *
+     * @example 45
      *
      * @generated from field: uint64 shift_group_id = 50;
      */
     shiftGroupId: bigint;
     /**
-     * The associated unit of material of the user's attendance record
+     *
+     * @description The internal Unit of Measure (UOM) tracking ID used to evaluate time structures, shifts, or active work hour configurations.
+     *
+     * @example 12
      *
      * @generated from field: uint64 attendance_uom_id = 51;
      */
     attendanceUomId: bigint;
     /**
-     * The associated department
+     *
+     * @description The unique internal sequence identifier of the corporate Department or business unit to which the user is structurally assigned.
+     *
+     * @example 304
      *
      * @generated from field: uint64 department_id = 52;
      */
     departmentId: bigint;
     /**
-     * The associated payroll group ID of the user
+     *
+     * @description The unique internal identifier of the designated payroll distribution group used for localized batch processing and compensation disbursement.
+     *
+     * @example 88
      *
      * @generated from field: uint64 payroll_group_id = 53;
      */
     payrollGroupId: bigint;
     /**
-     * The associated tax group ID using which the user's payroll needs to be calculated
+     *
+     * @description The unique internal identifier of the tax matrix or statutory configuration rule governing payroll deductions.
+     *
+     * @example 19
      *
      * @generated from field: uint64 payroll_tax_group_id = 54;
      */
     payrollTaxGroupId: bigint;
     /**
-     * The associated currency ID of the user's payroll
+     *
+     * @description The internal identifier matching the currency context in which the user's base salary and line compensation amounts are denominated.
+     *
+     * @example 3
      *
      * @generated from field: uint64 payroll_currency_id = 55;
      */
     payrollCurrencyId: bigint;
     /**
-     * The basic pay amount of the user (in cents)
+     *
+     * @description The raw volume integer representing basic salary compensation. **Critical:** Value must be defined in the minor unit of the currency.
+     *
+     * @example 500000
      *
      * @generated from field: uint64 basic_pay_amount = 56;
      */
     basicPayAmount: bigint;
     /**
-     * The associated unit of material for storing the basic pay amount
+     *
+     * @description The internal Unit of Measure (UOM) tracking ID applied to contextualize basic pay duration distributions (e.g., Per Month, Per Annum).
+     *
+     * @example 701
      *
      * @generated from field: uint64 basic_pay_uom_id = 57;
      */
     basicPayUomId: bigint;
     /**
-     * Stores if MFA has been enabled by the user
+     *
+     * @description Security flag determining whether Multi-Factor Authentication (MFA) has been explicitly provisioned and enabled for this user account.
+     *
+     * @example true
      *
      * @generated from field: bool mfa_status = 60;
      */
     mfaStatus: boolean;
     /**
-     * The list of dynamic forms
+     *
+     * @description Collection of organization-specific dynamic data.
      *
      * @generated from field: repeated Scailo.FormFieldDatum form_data = 70;
      */
@@ -766,61 +1319,99 @@ export declare class User extends Message<User> {
 }
 /**
  *
- * Describes the message that is used internally to validate user
+ * Micro-structure utilized strictly for internal authentication, identity verification, and cryptographic evaluation.
+ * This message isolates sensitive credential states, role matrices, Multi-Factor Authentication (MFA) secrets,
+ * and critical baseline attributes required to securely issue session tokens.
+ *
+ * **Security Warning:** This message handles raw cryptographic data and password hashes. It must never
+ * be exposed directly to public-facing edge services or untrusted client layers.
  *
  * @generated from message Scailo.UserPrimaryInfo
  */
 export declare class UserPrimaryInfo extends Message<UserPrimaryInfo> {
     /**
-     * Stores the user type
+     *
+     * @description The categorical classification of the user entity determining their system scope and behavioral rules.
+     *
+     * @example USER_TYPE_EMPLOYEE
      *
      * @generated from field: Scailo.USER_TYPE user_type = 7;
      */
     userType: USER_TYPE;
     /**
-     * The username of the user
+     *
+     * @description The unique system-level login alias used by the actor to authenticate against the platform.
+     *
+     * @example "jane.doe"
      *
      * @generated from field: string username = 10;
      */
     username: string;
     /**
-     * The name of the user
+     *
+     * @description The official or full legal name of the user as recognized on statutory documentation.
+     *
+     * @example "Jane Doe"
      *
      * @generated from field: string name = 11;
      */
     name: string;
     /**
-     * Stores the hashed password
+     *
+     * @description The securely salted and compiled binary representation of the user's password hash.
+     *
+     * @example "\x24\x32\x61\x24\x31\x32\x24\x4b\x53..."
+     *
+     * @format Byte array containing the evaluated cryptographic digest (e.g., bcrypt payload).
      *
      * @generated from field: bytes password = 12;
      */
     password: Uint8Array;
     /**
-     * The associated role ID
+     *
+     * @description The unique internal identifier of the primary web application access or RBAC security role.
+     *
+     * @example 1024
      *
      * @generated from field: uint64 role_id = 13;
      */
     roleId: bigint;
     /**
-     * The associated mobile role ID
+     *
+     * @description The unique internal identifier of a secondary security role tailored exclusively for mobile application endpoints.
+     *
+     * @example 2048
      *
      * @generated from field: uint64 mobile_role_id = 14;
      */
     mobileRoleId: bigint;
     /**
-     * Stores if MFA has been enabled by the user
+     *
+     * @description Security flag determining whether Multi-Factor Authentication (MFA) has been explicitly provisioned and enabled for this user account.
+     *
+     * @example true
+     *
+     * @format Boolean value (`true` or `false`).
      *
      * @generated from field: bool mfa_status = 15;
      */
     mfaStatus: boolean;
     /**
-     * Stores the MFA secret
+     *
+     * @description The encrypted or raw binary cryptographic secret used to evaluate Time-Based One-Time Password (TOTP) seed structures during verification loops.
+     *
+     * @example "\x4e\x58\x57\x32\x4d\x34\x33\x55..."
+     *
+     * @format Sensitive byte array. Access must remain strictly isolated within internal authentication boundaries.
      *
      * @generated from field: bytes mfa_secret = 16;
      */
     mfaSecret: Uint8Array;
     /**
-     * THe Blood Group of the user
+     *
+     * @description Medical identifier indicating the user's legal ABO blood group for emergency or corporate wellness logs.
+     *
+     * @example "O+"
      *
      * @generated from field: string blood_group = 20;
      */
@@ -836,13 +1427,13 @@ export declare class UserPrimaryInfo extends Message<UserPrimaryInfo> {
 }
 /**
  *
- * Describes the message consisting of the list of records
+ * Container message for a collection of User records.
  *
  * @generated from message Scailo.UsersList
  */
 export declare class UsersList extends Message<UsersList> {
     /**
-     * List of records
+     * @description An array of User records.
      *
      * @generated from field: repeated Scailo.User list = 1;
      */
@@ -858,7 +1449,7 @@ export declare class UsersList extends Message<UsersList> {
 }
 /**
  *
- * Describes a pagination request to retrieve records
+ * Pagination request for retrieving slices of User records.
  *
  * @generated from message Scailo.UsersServicePaginationReq
  */
@@ -871,9 +1462,9 @@ export declare class UsersServicePaginationReq extends Message<UsersServicePagin
      *
      * @example ANY
      *
-     * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+     * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
      */
-    isActive: BOOL_FILTER;
+    isActive?: BOOL_FILTER;
     /**
      *
      * @mandatory
@@ -901,9 +1492,9 @@ export declare class UsersServicePaginationReq extends Message<UsersServicePagin
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 offset = 3;
+     * @generated from field: optional uint64 offset = 3;
      */
-    offset: bigint;
+    offset?: bigint;
     /**
      *
      * @optional
@@ -912,24 +1503,29 @@ export declare class UsersServicePaginationReq extends Message<UsersServicePagin
      *
      * @example DESCENDING
      *
-     * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+     * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
      */
-    sortOrder: SORT_ORDER;
+    sortOrder?: SORT_ORDER;
     /**
      *
      * @optional
      *
      * @description The specific field key to sort the results by.
      *
-     * @generated from field: Scailo.USER_SORT_KEY sort_key = 5;
+     * @generated from field: optional Scailo.USER_SORT_KEY sort_key = 5;
      */
-    sortKey: USER_SORT_KEY;
+    sortKey?: USER_SORT_KEY;
     /**
-     * The status of this user
      *
-     * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
+     * @optional
+     *
+     * @description Filter results by a specific lifecycle status.
+     *
+     * @example STANDING
+     *
+     * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
      */
-    status: STANDARD_LIFECYCLE_STATUS;
+    status?: STANDARD_LIFECYCLE_STATUS;
     constructor(data?: PartialMessage<UsersServicePaginationReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.UsersServicePaginationReq";
@@ -941,7 +1537,7 @@ export declare class UsersServicePaginationReq extends Message<UsersServicePagin
 }
 /**
  *
- * Describes the response to a pagination request
+ * Response message for paginated queries, including total counts for UI elements.
  *
  * @generated from message Scailo.UsersServicePaginationResponse
  */
@@ -991,7 +1587,12 @@ export declare class UsersServicePaginationResponse extends Message<UsersService
 }
 /**
  *
- * Describes the base request payload of a filter search
+ * Advanced filter request for searching and paginating users using multiple logical criteria.
+ * This message encapsulates pagination controls, sorting keys, lifecycle status filters,
+ * timestamp ranges, and entity references.
+ *
+ * **Note:** This is the primary message layout used by the frontend and external API clients
+ * to build robust data-table queries, reporting views, and targeted record lookups.
  *
  * @generated from message Scailo.UsersServiceFilterReq
  */
@@ -1004,9 +1605,9 @@ export declare class UsersServiceFilterReq extends Message<UsersServiceFilterReq
      *
      * @example ANY
      *
-     * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+     * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
      */
-    isActive: BOOL_FILTER;
+    isActive?: BOOL_FILTER;
     /**
      *
      * @mandatory
@@ -1034,9 +1635,9 @@ export declare class UsersServiceFilterReq extends Message<UsersServiceFilterReq
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 offset = 3;
+     * @generated from field: optional uint64 offset = 3;
      */
-    offset: bigint;
+    offset?: bigint;
     /**
      *
      * @optional
@@ -1045,18 +1646,18 @@ export declare class UsersServiceFilterReq extends Message<UsersServiceFilterReq
      *
      * @example DESCENDING
      *
-     * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+     * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
      */
-    sortOrder: SORT_ORDER;
+    sortOrder?: SORT_ORDER;
     /**
      *
      * @optional
      *
      * @description The field used for sorting.
      *
-     * @generated from field: Scailo.USER_SORT_KEY sort_key = 5;
+     * @generated from field: optional Scailo.USER_SORT_KEY sort_key = 5;
      */
-    sortKey: USER_SORT_KEY;
+    sortKey?: USER_SORT_KEY;
     /**
      *
      * @optional
@@ -1069,9 +1670,9 @@ export declare class UsersServiceFilterReq extends Message<UsersServiceFilterReq
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 creation_timestamp_start = 101;
+     * @generated from field: optional uint64 creation_timestamp_start = 101;
      */
-    creationTimestampStart: bigint;
+    creationTimestampStart?: bigint;
     /**
      *
      * @optional
@@ -1084,9 +1685,9 @@ export declare class UsersServiceFilterReq extends Message<UsersServiceFilterReq
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 creation_timestamp_end = 102;
+     * @generated from field: optional uint64 creation_timestamp_end = 102;
      */
-    creationTimestampEnd: bigint;
+    creationTimestampEnd?: bigint;
     /**
      *
      * @optional
@@ -1099,9 +1700,9 @@ export declare class UsersServiceFilterReq extends Message<UsersServiceFilterReq
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 modification_timestamp_start = 103;
+     * @generated from field: optional uint64 modification_timestamp_start = 103;
      */
-    modificationTimestampStart: bigint;
+    modificationTimestampStart?: bigint;
     /**
      *
      * @optional
@@ -1114,15 +1715,20 @@ export declare class UsersServiceFilterReq extends Message<UsersServiceFilterReq
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 modification_timestamp_end = 104;
+     * @generated from field: optional uint64 modification_timestamp_end = 104;
      */
-    modificationTimestampEnd: bigint;
+    modificationTimestampEnd?: bigint;
     /**
-     * Stores the user type
      *
-     * @generated from field: Scailo.USER_TYPE user_type = 7;
+     * @optional
+     *
+     * @description The categorical classification of the user entity determining their system scope and behavioral rules.
+     *
+     * @example USER_TYPE_EMPLOYEE
+     *
+     * @generated from field: optional Scailo.USER_TYPE user_type = 7;
      */
-    userType: USER_TYPE;
+    userType?: USER_TYPE;
     /**
      *
      * @optional
@@ -1135,9 +1741,9 @@ export declare class UsersServiceFilterReq extends Message<UsersServiceFilterReq
      *
      * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
      *
-     * @generated from field: string entity_uuid = 8;
+     * @generated from field: optional string entity_uuid = 8;
      */
-    entityUuid: string;
+    entityUuid?: string;
     /**
      *
      * @optional
@@ -1146,9 +1752,9 @@ export declare class UsersServiceFilterReq extends Message<UsersServiceFilterReq
      *
      * @example STANDING
      *
-     * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+     * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
      */
-    status: STANDARD_LIFECYCLE_STATUS;
+    status?: STANDARD_LIFECYCLE_STATUS;
     /**
      *
      * @optional
@@ -1161,9 +1767,9 @@ export declare class UsersServiceFilterReq extends Message<UsersServiceFilterReq
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approved_on_start = 11;
+     * @generated from field: optional uint64 approved_on_start = 11;
      */
-    approvedOnStart: bigint;
+    approvedOnStart?: bigint;
     /**
      *
      * @optional
@@ -1176,9 +1782,9 @@ export declare class UsersServiceFilterReq extends Message<UsersServiceFilterReq
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approved_on_end = 12;
+     * @generated from field: optional uint64 approved_on_end = 12;
      */
-    approvedOnEnd: bigint;
+    approvedOnEnd?: bigint;
     /**
      *
      * @optional
@@ -1191,9 +1797,9 @@ export declare class UsersServiceFilterReq extends Message<UsersServiceFilterReq
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approved_by_user_id = 13;
+     * @generated from field: optional uint64 approved_by_user_id = 13;
      */
-    approvedByUserId: bigint;
+    approvedByUserId?: bigint;
     /**
      *
      * @optional
@@ -1206,108 +1812,251 @@ export declare class UsersServiceFilterReq extends Message<UsersServiceFilterReq
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approver_role_id = 14;
+     * @generated from field: optional uint64 approver_role_id = 14;
      */
-    approverRoleId: bigint;
+    approverRoleId?: bigint;
     /**
-     * The username of the user
      *
-     * @generated from field: string username = 20;
-     */
-    username: string;
-    /**
-     * The name of the user
+     * @optional
      *
-     * @generated from field: string name = 21;
-     */
-    name: string;
-    /**
-     * The unique code by which the user is classified
+     * @description The unique system-level login alias used by the actor to authenticate against the platform.
      *
-     * @generated from field: string code = 22;
-     */
-    code: string;
-    /**
-     * The primary email of the user
+     * @example "jane.doe"
      *
-     * @generated from field: string email = 23;
-     */
-    email: string;
-    /**
-     * The primary contact number of the user
+     * @regex .*
      *
-     * @generated from field: string phone = 24;
-     */
-    phone: string;
-    /**
-     * The associated role ID
+     * @format Must be a non-empty string and completely unique across the given business entity space.
      *
-     * @generated from field: uint64 role_id = 25;
+     * @generated from field: optional string username = 20;
      */
-    roleId: bigint;
+    username?: string;
     /**
-     * The associated shift group ID
      *
-     * @generated from field: uint64 shift_group_id = 26;
-     */
-    shiftGroupId: bigint;
-    /**
-     * The associated unit of material of the user's attendance record
+     * @optional
      *
-     * @generated from field: uint64 attendance_uom_id = 27;
-     */
-    attendanceUomId: bigint;
-    /**
-     * The associated department
+     * @description The official or full legal name of the user as recognized on statutory documentation.
      *
-     * @generated from field: uint64 department_id = 28;
-     */
-    departmentId: bigint;
-    /**
-     * The associated payroll group ID of the user
+     * @example "Jane Doe"
      *
-     * @generated from field: uint64 payroll_group_id = 29;
-     */
-    payrollGroupId: bigint;
-    /**
-     * The associated tax group ID using which the user's payroll needs to be calculated
+     * @regex .*
      *
-     * @generated from field: uint64 payroll_tax_group_id = 30;
-     */
-    payrollTaxGroupId: bigint;
-    /**
-     * The associated currency ID of the user's payroll
+     * @format Must be a non-empty string.
      *
-     * @generated from field: uint64 payroll_currency_id = 31;
+     * @generated from field: optional string name = 21;
      */
-    payrollCurrencyId: bigint;
+    name?: string;
     /**
-     * The associated unit of material for storing the basic pay amount
      *
-     * @generated from field: uint64 basic_pay_uom_id = 32;
-     */
-    basicPayUomId: bigint;
-    /**
-     * The optional work email of the user
+     * @optional
      *
-     * @generated from field: string work_email = 33;
+     * @description The unique internal enterprise code assigned to the individual, utilized for cross-referencing external platforms.
+     *
+     * @example "EMP-2026-992"
+     *
+     * @regex .*
+     *
+     * @format Must be a non-empty string.
+     *
+     * @generated from field: optional string code = 22;
      */
-    workEmail: string;
+    code?: string;
     /**
+     *
+     * @optional
+     *
+     * @description The primary communication or routing email address where structural system notifications are dispatched.
+     *
+     * @example "jane.doe@example.com"
+     *
+     * @regex ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
+     *
+     * @format Must be a structurally sound and valid email address string.
+     *
+     * @generated from field: optional string email = 23;
+     */
+    email?: string;
+    /**
+     *
+     * @optional
+     *
+     * @description The primary telephone contact or mobile line number assigned to the account profile.
+     *
+     * @example "+12125550123"
+     *
+     * @regex .*
+     *
+     * @format Non-empty string; adoption of standard international E.164 formats is highly recommended.
+     *
+     * @generated from field: optional string phone = 24;
+     */
+    phone?: string;
+    /**
+     *
+     * @optional
+     *
+     * @description The unique internal identifier of the primary web application access or RBAC security role.
+     *
+     * @example 1024
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative 64-bit integer greater than zero.
+     *
+     * @generated from field: optional uint64 role_id = 25;
+     */
+    roleId?: bigint;
+    /**
+     *
+     * @optional
+     *
+     * @description The unique internal identifier of the operational work shift group mapped to this account profile for scheduling and timecard verification.
+     *
+     * @example 45
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative 64-bit integer. Defaults to 0 if unallocated.
+     *
+     * @generated from field: optional uint64 shift_group_id = 26;
+     */
+    shiftGroupId?: bigint;
+    /**
+     *
+     * @optional
+     *
+     * @description The internal Unit of Measure (UOM) tracking ID used to evaluate time structures, shifts, or active work hour configurations.
+     *
+     * @example 12
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative 64-bit integer. Defaults to 0 if unallocated.
+     *
+     * @generated from field: optional uint64 attendance_uom_id = 27;
+     */
+    attendanceUomId?: bigint;
+    /**
+     *
+     * @optional
+     *
+     * @description The unique internal sequence identifier of the corporate Department or business unit to which the user is structurally assigned.
+     *
+     * @example 304
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative 64-bit integer. Defaults to 0 for general or unassigned staff vectors.
+     *
+     * @generated from field: optional uint64 department_id = 28;
+     */
+    departmentId?: bigint;
+    /**
+     *
+     * @optional
+     *
+     * @description The unique internal identifier of the designated payroll distribution group used for localized batch processing and compensation disbursement.
+     *
+     * @example 88
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative 64-bit integer. Defaults to 0 if unassigned.
+     *
+     * @generated from field: optional uint64 payroll_group_id = 29;
+     */
+    payrollGroupId?: bigint;
+    /**
+     *
+     * @optional
+     *
+     * @description The unique internal identifier of the tax matrix or statutory configuration rule governing payroll deductions.
+     *
+     * @example 19
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative 64-bit integer. Defaults to 0 if no deductions are assigned.
+     *
+     * @generated from field: optional uint64 payroll_tax_group_id = 30;
+     */
+    payrollTaxGroupId?: bigint;
+    /**
+     *
+     * @optional
+     *
+     * @description The internal identifier matching the currency context in which the user's base salary and line compensation amounts are denominated.
+     *
+     * @example 3
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative 64-bit integer. Defaults to 0 if unassigned.
+     *
+     * @generated from field: optional uint64 payroll_currency_id = 31;
+     */
+    payrollCurrencyId?: bigint;
+    /**
+     *
+     * @optional
+     *
+     * @description The internal Unit of Measure (UOM) tracking ID applied to contextualize basic pay duration distributions (e.g., Per Month, Per Annum).
+     *
+     * @example 701
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative 64-bit integer. Defaults to 0 if unassigned.
+     *
+     * @generated from field: optional uint64 basic_pay_uom_id = 32;
+     */
+    basicPayUomId?: bigint;
+    /**
+     *
+     * @optional
+     *
+     * @description A secondary, fallback, or corporate work email address for overlapping communication loops.
+     *
+     * @example "j.doe@corporate-hub.com"
+     *
+     * @regex ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
+     *
+     * @format If provided, must be a valid email address string.
+     *
+     * @generated from field: optional string work_email = 33;
+     */
+    workEmail?: string;
+    /**
+     *
+     * @optional
+     *
+     * @description Filter results to retrieve only the users associated with or belonging to a specific external Vendor profile.
+     *
+     * @example 5402
+     *
+     * @regex ^[0-9]*$
+     *
+     * @format Non-negative 64-bit integer.
+     *
+     * @generated from field: optional uint64 vendor_id = 70;
+     */
+    vendorId?: bigint;
+    /**
+     *
+     * @optional
+     *
+     * @description Filter results to retrieve only the users associated with or belonging to a specific external Client profile.
+     *
+     * @example 9107
+     *
+     * @regex ^[0-9]*$
+     *
+     * @format Non-negative 64-bit integer.
+     *
      * --------------------------------------------------------------------------------
-     * Filter by the associated vendor ID (return all the users that belong to this vendor)
      *
-     * @generated from field: uint64 vendor_id = 70;
+     * @generated from field: optional uint64 client_id = 71;
      */
-    vendorId: bigint;
-    /**
-     * Filter by the associated client ID (return all the users that belong to this client)
-     *
-     * --------------------------------------------------------------------------------
-     *
-     * @generated from field: uint64 client_id = 71;
-     */
-    clientId: bigint;
+    clientId?: bigint;
     /**
      *
      * @optional
@@ -1326,9 +2075,9 @@ export declare class UsersServiceFilterReq extends Message<UsersServiceFilterReq
      *
      * @example true
      *
-     * @generated from field: bool include_form_data = 501;
+     * @generated from field: optional bool include_form_data = 501;
      */
-    includeFormData: boolean;
+    includeFormData?: boolean;
     constructor(data?: PartialMessage<UsersServiceFilterReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.UsersServiceFilterReq";
@@ -1340,7 +2089,13 @@ export declare class UsersServiceFilterReq extends Message<UsersServiceFilterReq
 }
 /**
  *
- * Describes the base request payload of a count search
+ * Target filter request for counting user records matching specific logical criteria.
+ * This message encapsulates lifecycle status filters, timestamp ranges, workflow markers,
+ * and entity references to determine the total size of a targeted dataset.
+ *
+ * **Note:** This is the primary message layout used by backend calculation engines, reporting
+ * services, and frontend pagination headers to evaluate total record matches dynamically
+ * before or alongside retrieving paginated results.
  *
  * @generated from message Scailo.UsersServiceCountReq
  */
@@ -1353,9 +2108,9 @@ export declare class UsersServiceCountReq extends Message<UsersServiceCountReq> 
      *
      * @example ANY
      *
-     * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+     * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
      */
-    isActive: BOOL_FILTER;
+    isActive?: BOOL_FILTER;
     /**
      *
      * @optional
@@ -1368,9 +2123,9 @@ export declare class UsersServiceCountReq extends Message<UsersServiceCountReq> 
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 creation_timestamp_start = 101;
+     * @generated from field: optional uint64 creation_timestamp_start = 101;
      */
-    creationTimestampStart: bigint;
+    creationTimestampStart?: bigint;
     /**
      *
      * @optional
@@ -1383,9 +2138,9 @@ export declare class UsersServiceCountReq extends Message<UsersServiceCountReq> 
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 creation_timestamp_end = 102;
+     * @generated from field: optional uint64 creation_timestamp_end = 102;
      */
-    creationTimestampEnd: bigint;
+    creationTimestampEnd?: bigint;
     /**
      *
      * @optional
@@ -1398,9 +2153,9 @@ export declare class UsersServiceCountReq extends Message<UsersServiceCountReq> 
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 modification_timestamp_start = 103;
+     * @generated from field: optional uint64 modification_timestamp_start = 103;
      */
-    modificationTimestampStart: bigint;
+    modificationTimestampStart?: bigint;
     /**
      *
      * @optional
@@ -1413,15 +2168,20 @@ export declare class UsersServiceCountReq extends Message<UsersServiceCountReq> 
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 modification_timestamp_end = 104;
+     * @generated from field: optional uint64 modification_timestamp_end = 104;
      */
-    modificationTimestampEnd: bigint;
+    modificationTimestampEnd?: bigint;
     /**
-     * Stores the user type
      *
-     * @generated from field: Scailo.USER_TYPE user_type = 7;
+     * @optional
+     *
+     * @description The categorical classification of the user entity determining their system scope and behavioral rules.
+     *
+     * @example USER_TYPE_EMPLOYEE
+     *
+     * @generated from field: optional Scailo.USER_TYPE user_type = 7;
      */
-    userType: USER_TYPE;
+    userType?: USER_TYPE;
     /**
      *
      * @optional
@@ -1434,9 +2194,9 @@ export declare class UsersServiceCountReq extends Message<UsersServiceCountReq> 
      *
      * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
      *
-     * @generated from field: string entity_uuid = 8;
+     * @generated from field: optional string entity_uuid = 8;
      */
-    entityUuid: string;
+    entityUuid?: string;
     /**
      *
      * @optional
@@ -1445,9 +2205,9 @@ export declare class UsersServiceCountReq extends Message<UsersServiceCountReq> 
      *
      * @example STANDING
      *
-     * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+     * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
      */
-    status: STANDARD_LIFECYCLE_STATUS;
+    status?: STANDARD_LIFECYCLE_STATUS;
     /**
      *
      * @optional
@@ -1460,9 +2220,9 @@ export declare class UsersServiceCountReq extends Message<UsersServiceCountReq> 
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approved_on_start = 11;
+     * @generated from field: optional uint64 approved_on_start = 11;
      */
-    approvedOnStart: bigint;
+    approvedOnStart?: bigint;
     /**
      *
      * @optional
@@ -1475,9 +2235,9 @@ export declare class UsersServiceCountReq extends Message<UsersServiceCountReq> 
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approved_on_end = 12;
+     * @generated from field: optional uint64 approved_on_end = 12;
      */
-    approvedOnEnd: bigint;
+    approvedOnEnd?: bigint;
     /**
      *
      * @optional
@@ -1490,9 +2250,9 @@ export declare class UsersServiceCountReq extends Message<UsersServiceCountReq> 
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approved_by_user_id = 13;
+     * @generated from field: optional uint64 approved_by_user_id = 13;
      */
-    approvedByUserId: bigint;
+    approvedByUserId?: bigint;
     /**
      *
      * @optional
@@ -1505,110 +2265,256 @@ export declare class UsersServiceCountReq extends Message<UsersServiceCountReq> 
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approver_role_id = 14;
+     * @generated from field: optional uint64 approver_role_id = 14;
      */
-    approverRoleId: bigint;
+    approverRoleId?: bigint;
     /**
-     * The username of the user
      *
-     * @generated from field: string username = 20;
-     */
-    username: string;
-    /**
-     * The name of the user
+     * @optional
      *
-     * @generated from field: string name = 21;
-     */
-    name: string;
-    /**
-     * The unique code by which the user is classified
+     * @description The unique system-level login alias used by the actor to authenticate against the platform.
      *
-     * @generated from field: string code = 22;
-     */
-    code: string;
-    /**
-     * The primary email of the user
+     * @example "jane.doe"
      *
-     * @generated from field: string email = 23;
-     */
-    email: string;
-    /**
-     * The primary contact number of the user
+     * @regex .*
      *
-     * @generated from field: string phone = 24;
-     */
-    phone: string;
-    /**
-     * The associated role ID
+     * @format Must be a non-empty string and completely unique across the given business entity space.
      *
-     * @generated from field: uint64 role_id = 25;
+     * @generated from field: optional string username = 20;
      */
-    roleId: bigint;
+    username?: string;
     /**
-     * The associated shift group ID
      *
-     * @generated from field: uint64 shift_group_id = 26;
-     */
-    shiftGroupId: bigint;
-    /**
-     * The associated unit of material of the user's attendance record
+     * @optional
      *
-     * @generated from field: uint64 attendance_uom_id = 27;
-     */
-    attendanceUomId: bigint;
-    /**
-     * The associated department
+     * @description The official or full legal name of the user as recognized on statutory documentation.
      *
-     * @generated from field: uint64 department_id = 28;
-     */
-    departmentId: bigint;
-    /**
-     * The associated payroll group ID of the user
+     * @example "Jane Doe"
      *
-     * @generated from field: uint64 payroll_group_id = 29;
-     */
-    payrollGroupId: bigint;
-    /**
-     * The associated tax group ID using which the user's payroll needs to be calculated
+     * @regex .*
      *
-     * @generated from field: uint64 payroll_tax_group_id = 30;
-     */
-    payrollTaxGroupId: bigint;
-    /**
-     * The associated currency ID of the user's payroll
+     * @format Must be a non-empty string.
      *
-     * @generated from field: uint64 payroll_currency_id = 31;
+     * @generated from field: optional string name = 21;
      */
-    payrollCurrencyId: bigint;
+    name?: string;
     /**
-     * The associated unit of material for storing the basic pay amount
      *
-     * @generated from field: uint64 basic_pay_uom_id = 32;
-     */
-    basicPayUomId: bigint;
-    /**
-     * The optional work email of the user
+     * @optional
      *
-     * @generated from field: string work_email = 33;
+     * @description The unique internal enterprise code assigned to the individual, utilized for cross-referencing external platforms.
+     *
+     * @example "EMP-2026-992"
+     *
+     * @regex .*
+     *
+     * @format Must be a non-empty string.
+     *
+     * @generated from field: optional string code = 22;
      */
-    workEmail: string;
+    code?: string;
     /**
+     *
+     * @optional
+     *
+     * @description The primary communication or routing email address where structural system notifications are dispatched.
+     *
+     * @example "jane.doe@example.com"
+     *
+     * @regex ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
+     *
+     * @format Must be a structurally sound and valid email address string.
+     *
+     * @generated from field: optional string email = 23;
+     */
+    email?: string;
+    /**
+     *
+     * @optional
+     *
+     * @description The primary telephone contact or mobile line number assigned to the account profile.
+     *
+     * @example "+12125550123"
+     *
+     * @regex .*
+     *
+     * @format Non-empty string; adoption of standard international E.164 formats is highly recommended.
+     *
+     * @generated from field: optional string phone = 24;
+     */
+    phone?: string;
+    /**
+     *
+     * @optional
+     *
+     * @description The unique internal identifier of the primary web application access or RBAC security role.
+     *
+     * @example 1024
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative 64-bit integer greater than zero.
+     *
+     * @generated from field: optional uint64 role_id = 25;
+     */
+    roleId?: bigint;
+    /**
+     *
+     * @optional
+     *
+     * @description The unique internal identifier of the operational work shift group mapped to this account profile for scheduling and timecard verification.
+     *
+     * @example 45
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative 64-bit integer. Defaults to 0 if unallocated.
+     *
+     * @generated from field: optional uint64 shift_group_id = 26;
+     */
+    shiftGroupId?: bigint;
+    /**
+     *
+     * @optional
+     *
+     * @description The internal Unit of Measure (UOM) tracking ID used to evaluate time structures, shifts, or active work hour configurations.
+     *
+     * @example 12
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative 64-bit integer. Defaults to 0 if unallocated.
+     *
+     * @generated from field: optional uint64 attendance_uom_id = 27;
+     */
+    attendanceUomId?: bigint;
+    /**
+     *
+     * @optional
+     *
+     * @description The unique internal sequence identifier of the corporate Department or business unit to which the user is structurally assigned.
+     *
+     * @example 304
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative 64-bit integer. Defaults to 0 for general or unassigned staff vectors.
+     *
+     * @generated from field: optional uint64 department_id = 28;
+     */
+    departmentId?: bigint;
+    /**
+     *
+     * @optional
+     *
+     * @description The unique internal identifier of the designated payroll distribution group used for localized batch processing and compensation disbursement.
+     *
+     * @example 88
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative 64-bit integer. Defaults to 0 if unassigned.
+     *
+     * @generated from field: optional uint64 payroll_group_id = 29;
+     */
+    payrollGroupId?: bigint;
+    /**
+     *
+     * @optional
+     *
+     * @description The unique internal identifier of the tax matrix or statutory configuration rule governing payroll deductions.
+     *
+     * @example 19
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative 64-bit integer. Defaults to 0 if no deductions are assigned.
+     *
+     * @generated from field: optional uint64 payroll_tax_group_id = 30;
+     */
+    payrollTaxGroupId?: bigint;
+    /**
+     *
+     * @optional
+     *
+     * @description The internal identifier matching the currency context in which the user's base salary and line compensation amounts are denominated.
+     *
+     * @example 3
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative 64-bit integer. Defaults to 0 if unassigned.
+     *
+     * @generated from field: optional uint64 payroll_currency_id = 31;
+     */
+    payrollCurrencyId?: bigint;
+    /**
+     *
+     * @optional
+     *
+     * @description The internal Unit of Measure (UOM) tracking ID applied to contextualize basic pay duration distributions (e.g., Per Month, Per Annum).
+     *
+     * @example 701
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative 64-bit integer. Defaults to 0 if unassigned.
+     *
+     * @generated from field: optional uint64 basic_pay_uom_id = 32;
+     */
+    basicPayUomId?: bigint;
+    /**
+     *
+     * @optional
+     *
+     * @description A secondary, fallback, or corporate work email address for overlapping communication loops.
+     *
+     * @example "j.doe@corporate-hub.com"
+     *
+     * @regex ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
+     *
+     * @format If provided, must be a valid email address string.
+     *
+     * @generated from field: optional string work_email = 33;
+     */
+    workEmail?: string;
+    /**
+     *
+     * @optional
+     *
+     * @description Filter results to retrieve only the users associated with or belonging to a specific external Vendor profile.
+     *
+     * @example 5402
+     *
+     * @regex ^[0-9]*$
+     *
+     * @format Non-negative 64-bit integer.
+     *
+     * @generated from field: optional uint64 vendor_id = 70;
+     */
+    vendorId?: bigint;
+    /**
+     *
+     * @optional
+     *
+     * @description Filter results to retrieve only the users associated with or belonging to a specific external Client profile.
+     *
+     * @example 9107
+     *
+     * @regex ^[0-9]*$
+     *
+     * @format Non-negative 64-bit integer.
+     *
      * --------------------------------------------------------------------------------
-     * Filter by the associated vendor ID (return all the users that belong to this vendor)
      *
-     * @generated from field: uint64 vendor_id = 70;
+     * @generated from field: optional uint64 client_id = 71;
      */
-    vendorId: bigint;
+    clientId?: bigint;
     /**
-     * Filter by the associated client ID (return all the users that belong to this client)
      *
-     * --------------------------------------------------------------------------------
+     * @optional
      *
-     * @generated from field: uint64 client_id = 71;
-     */
-    clientId: bigint;
-    /**
-     * The list of form data filters
+     * @description Count based on dynamic form field values.
      *
      * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
      */
@@ -1624,7 +2530,13 @@ export declare class UsersServiceCountReq extends Message<UsersServiceCountReq> 
 }
 /**
  *
- * Describes the request payload for performing a generic search operation on records
+ * Broad-spectrum search and lookup request for locating and paginating users via text matching.
+ * This message encapsulates full-text query parameters, pagination controls, sorting keys,
+ * lifecycle status constraints, and other core references.
+ *
+ * **Note:** This is the primary message layout used for global search bars, fast-filtering dashboard
+ * inputs, and omni-box search utilities where users need to match loose textual terms against
+ * records while retaining structural pagination.
  *
  * @generated from message Scailo.UsersServiceSearchAllReq
  */
@@ -1637,9 +2549,9 @@ export declare class UsersServiceSearchAllReq extends Message<UsersServiceSearch
      *
      * @example ANY
      *
-     * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+     * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
      */
-    isActive: BOOL_FILTER;
+    isActive?: BOOL_FILTER;
     /**
      *
      * @mandatory
@@ -1667,9 +2579,9 @@ export declare class UsersServiceSearchAllReq extends Message<UsersServiceSearch
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 offset = 3;
+     * @generated from field: optional uint64 offset = 3;
      */
-    offset: bigint;
+    offset?: bigint;
     /**
      *
      * @optional
@@ -1678,18 +2590,18 @@ export declare class UsersServiceSearchAllReq extends Message<UsersServiceSearch
      *
      * @example DESCENDING
      *
-     * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+     * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
      */
-    sortOrder: SORT_ORDER;
+    sortOrder?: SORT_ORDER;
     /**
      *
      * @optional
      *
      * @description The field used for sorting.
      *
-     * @generated from field: Scailo.USER_SORT_KEY sort_key = 5;
+     * @generated from field: optional Scailo.USER_SORT_KEY sort_key = 5;
      */
-    sortKey: USER_SORT_KEY;
+    sortKey?: USER_SORT_KEY;
     /**
      *
      * @optional
@@ -1702,15 +2614,20 @@ export declare class UsersServiceSearchAllReq extends Message<UsersServiceSearch
      *
      * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
      *
-     * @generated from field: string entity_uuid = 6;
+     * @generated from field: optional string entity_uuid = 6;
      */
-    entityUuid: string;
+    entityUuid?: string;
     /**
-     * Stores the user type
      *
-     * @generated from field: Scailo.USER_TYPE user_type = 7;
+     * @optional
+     *
+     * @description The categorical classification of the user entity determining their system scope and behavioral rules.
+     *
+     * @example USER_TYPE_EMPLOYEE
+     *
+     * @generated from field: optional Scailo.USER_TYPE user_type = 7;
      */
-    userType: USER_TYPE;
+    userType?: USER_TYPE;
     /**
      *
      * @optional
@@ -1719,9 +2636,9 @@ export declare class UsersServiceSearchAllReq extends Message<UsersServiceSearch
      *
      * @example STANDING
      *
-     * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+     * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
      */
-    status: STANDARD_LIFECYCLE_STATUS;
+    status?: STANDARD_LIFECYCLE_STATUS;
     /**
      *
      * @mandatory
@@ -1734,24 +2651,39 @@ export declare class UsersServiceSearchAllReq extends Message<UsersServiceSearch
      *
      * @format: May contain any UTF-8 characters.
      *
-     * @generated from field: string search_key = 11;
+     * @generated from field: optional string search_key = 11;
      */
-    searchKey: string;
+    searchKey?: string;
     /**
-     * --------------------------------------------------------------------------------
-     * Filter by the associated vendor ID (return all the users that belong to this vendor)
      *
-     * @generated from field: uint64 vendor_id = 70;
+     * @optional
+     *
+     * @description Filter results to retrieve only the users associated with or belonging to a specific external Vendor profile.
+     *
+     * @example 5402
+     *
+     * @regex ^[0-9]*$
+     *
+     * @format Non-negative 64-bit integer.
+     *
+     * @generated from field: optional uint64 vendor_id = 70;
      */
-    vendorId: bigint;
+    vendorId?: bigint;
     /**
-     * Filter by the associated client ID (return all the users that belong to this client)
      *
-     * --------------------------------------------------------------------------------
+     * @optional
      *
-     * @generated from field: uint64 client_id = 71;
+     * @description Filter results to retrieve only the users associated with or belonging to a specific external Client profile.
+     *
+     * @example 9107
+     *
+     * @regex ^[0-9]*$
+     *
+     * @format Non-negative 64-bit integer.
+     *
+     * @generated from field: optional uint64 client_id = 71;
      */
-    clientId: bigint;
+    clientId?: bigint;
     constructor(data?: PartialMessage<UsersServiceSearchAllReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.UsersServiceSearchAllReq";
@@ -1763,34 +2695,73 @@ export declare class UsersServiceSearchAllReq extends Message<UsersServiceSearch
 }
 /**
  *
- * Describes the message that is required to register a user's device
+ * Request message for registering an authenticated user's mobile device endpoint.
+ * This structure maps pushing target tokens, hardware operating systems, and user profiles
+ * to handle automated system routing for high-volume push alerts.
+ *
+ * **Side Effects:**
+ * - Registers or overwrites the active Firebase Cloud Messaging (FCM) token mapped to the user asset.
+ * - Subscribes the device endpoint to relevant corporate notification topics.
  *
  * @generated from message Scailo.UsersServiceRegisterMobileDeviceRequest
  */
 export declare class UsersServiceRegisterMobileDeviceRequest extends Message<UsersServiceRegisterMobileDeviceRequest> {
     /**
      *
-     * @description The organization's globally unique identifier.
+     * @optional
+     *
+     * @description The globally unique identifier for the Organization or Business Entity.
      *
      * @example "550e8400-e29b-41d4-a716-446655440000"
      *
-     * @generated from field: string entity_uuid = 1;
+     * @regex ^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+     *
+     * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
+     *
+     * @generated from field: optional string entity_uuid = 1;
      */
-    entityUuid: string;
+    entityUuid?: string;
     /**
-     * The ID of the user who has possession of the device
+     *
+     * @mandatory
+     *
+     * @description The unique internal sequence identifier of the user who owns or possesses the mobile device.
+     *
+     * @example 1024
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative 64-bit integer greater than zero.
      *
      * @generated from field: uint64 user_id = 11;
      */
     userId: bigint;
     /**
-     * The operating system of the device
+     *
+     * @mandatory
+     *
+     * @description The primary operating system classification of the physical mobile device.
+     *
+     * @example "Android"
+     *
+     * @regex ^[0-9A-Za-z]+$
+     *
+     * @format Alphanumeric characters only. Spaces and special characters are strictly prohibited.
      *
      * @generated from field: string device_os = 12;
      */
     deviceOs: string;
     /**
-     * The generated FCM Token
+     *
+     * @mandatory
+     *
+     * @description The unique hardware token generated by Firebase Cloud Messaging (FCM) or Apple Push Notification service (APNs).
+     *
+     * @example "bk3RNwAz3B0:CI2gDEstbXGYadIDZsTY2s4YckCustomTokenString..."
+     *
+     * @regex .*
+     *
+     * @format Non-empty string constraint with a strict boundary enforcement between 1 and 300 characters.
      *
      * @generated from field: string device_token = 13;
      */
@@ -1806,23 +2777,45 @@ export declare class UsersServiceRegisterMobileDeviceRequest extends Message<Use
 }
 /**
  *
- * Describes the message that is required to reset a user's password through an email
+ * Request message used to safely initiate an asynchronous user password recovery and reset sequence via email.
+ *
+ * **Side Effects:**
+ * - Generates a secure, short-lived single-use cryptographic verification token.
+ * - Dispatches a automated recovery email containing a deep-linked "magic link" to the user's primary registered address.
  *
  * @generated from message Scailo.UsersServicePasswordResetReq
  */
 export declare class UsersServicePasswordResetReq extends Message<UsersServicePasswordResetReq> {
     /**
-     * The username of the user
+     *
+     * @mandatory
+     *
+     * @description The unique system-level login alias matching the account requiring a password recovery event.
+     *
+     * @example "jane.doe"
+     *
+     * @regex .+
+     *
+     * @format Must be a non-empty string.
      *
      * @generated from field: string username = 10;
      */
     username: string;
     /**
-     * The optional domain prefix that is used to generate the magic link that will allow the user to update the password. If this is empty, then the default authless access domain is used. This is useful in case of password redirections need to happen at custom domains.
      *
-     * @generated from field: string domain_prefix = 20;
+     * @optional
+     *
+     * @description A custom domain prefix or external FQDN string used to override standard redirect endpoints when constructing the recovery link.
+     *
+     * @example "https://users.acme.com/auth/reset"
+     *
+     * @regex .*
+     *
+     * @format If omitted, the system defaults to the pre-configured authless gateway domain. Highly recommended when integrating white-labeled portals.
+     *
+     * @generated from field: optional string domain_prefix = 20;
      */
-    domainPrefix: string;
+    domainPrefix?: string;
     constructor(data?: PartialMessage<UsersServicePasswordResetReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.UsersServicePasswordResetReq";

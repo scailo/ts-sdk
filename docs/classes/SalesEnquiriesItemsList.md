@@ -2,7 +2,7 @@
 
 # Class: SalesEnquiriesItemsList
 
-Describes the message consisting of the list of sales enquiry items
+Container message for a collection of Sales Enquiry Item records.
 
 **`Generated`**
 
@@ -66,7 +66,7 @@ Message\&lt;SalesEnquiriesItemsList\&gt;.constructor
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:1341](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L1341)
+[src/sales_enquiries.scailo_pb.ts:1801](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L1801)
 
 ## Properties
 
@@ -74,7 +74,9 @@ Message\&lt;SalesEnquiriesItemsList\&gt;.constructor
 
 • **list**: [`SalesEnquiryItem`](SalesEnquiryItem.md)[] = `[]`
 
-List of records
+**`Description`**
+
+An array of Sales Enquiry Item records.
 
 **`Generated`**
 
@@ -82,7 +84,7 @@ from field: repeated Scailo.SalesEnquiryItem list = 1;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:1339](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L1339)
+[src/sales_enquiries.scailo_pb.ts:1799](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L1799)
 
 ___
 
@@ -92,7 +94,7 @@ ___
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:1348](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L1348)
+[src/sales_enquiries.scailo_pb.ts:1808](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L1808)
 
 ___
 
@@ -102,7 +104,7 @@ ___
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:1346](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L1346)
+[src/sales_enquiries.scailo_pb.ts:1806](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L1806)
 
 ___
 
@@ -112,7 +114,7 @@ ___
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:1347](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L1347)
+[src/sales_enquiries.scailo_pb.ts:1807](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L1807)
 
 ## Methods
 
@@ -400,7 +402,7 @@ ___
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:1364](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L1364)
+[src/sales_enquiries.scailo_pb.ts:1824](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L1824)
 
 ___
 
@@ -421,7 +423,7 @@ ___
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:1352](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L1352)
+[src/sales_enquiries.scailo_pb.ts:1812](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L1812)
 
 ___
 
@@ -442,7 +444,7 @@ ___
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:1356](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L1356)
+[src/sales_enquiries.scailo_pb.ts:1816](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L1816)
 
 ___
 
@@ -463,4 +465,4 @@ ___
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:1360](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L1360)
+[src/sales_enquiries.scailo_pb.ts:1820](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L1820)

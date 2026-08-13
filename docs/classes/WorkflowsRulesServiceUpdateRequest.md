@@ -77,7 +77,7 @@ Message\&lt;WorkflowsRulesServiceUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/workflows_rules.scailo_pb.ts:1043](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/workflows_rules.scailo_pb.ts#L1043)
+[src/workflows_rules.scailo_pb.ts:1110](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/workflows_rules.scailo_pb.ts#L1110)
 
 ## Properties
 
@@ -93,7 +93,7 @@ from field: string description = 13;
 
 #### Defined in
 
-[src/workflows_rules.scailo_pb.ts:1006](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/workflows_rules.scailo_pb.ts#L1006)
+[src/workflows_rules.scailo_pb.ts:1073](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/workflows_rules.scailo_pb.ts#L1073)
 
 ___
 
@@ -109,7 +109,7 @@ from field: Scailo.WORKFLOW_RULE_EXECUTE_ON execute_on = 23;
 
 #### Defined in
 
-[src/workflows_rules.scailo_pb.ts:1034](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/workflows_rules.scailo_pb.ts#L1034)
+[src/workflows_rules.scailo_pb.ts:1101](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/workflows_rules.scailo_pb.ts#L1101)
 
 ___
 
@@ -117,7 +117,25 @@ ___
 
 • **id**: `bigint` = `protoInt64.zero`
 
-The ID of the record that needs to be updated
+**`Mandatory`**
+
+**`Description`**
+
+The unique internal identifier of the target record that needs to be updated.
+
+**`Example`**
+
+```ts
+1024
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -125,7 +143,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-[src/workflows_rules.scailo_pb.ts:957](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/workflows_rules.scailo_pb.ts#L957)
+[src/workflows_rules.scailo_pb.ts:1024](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/workflows_rules.scailo_pb.ts#L1024)
 
 ___
 
@@ -141,7 +159,7 @@ from field: Scailo.WORKFLOW_RULE_MOMENT moment = 22;
 
 #### Defined in
 
-[src/workflows_rules.scailo_pb.ts:1027](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/workflows_rules.scailo_pb.ts#L1027)
+[src/workflows_rules.scailo_pb.ts:1094](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/workflows_rules.scailo_pb.ts#L1094)
 
 ___
 
@@ -157,7 +175,7 @@ from field: string name = 10;
 
 #### Defined in
 
-[src/workflows_rules.scailo_pb.ts:992](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/workflows_rules.scailo_pb.ts#L992)
+[src/workflows_rules.scailo_pb.ts:1059](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/workflows_rules.scailo_pb.ts#L1059)
 
 ___
 
@@ -173,7 +191,7 @@ from field: uint64 notify_user_id = 12;
 
 #### Defined in
 
-[src/workflows_rules.scailo_pb.ts:999](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/workflows_rules.scailo_pb.ts#L999)
+[src/workflows_rules.scailo_pb.ts:1066](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/workflows_rules.scailo_pb.ts#L1066)
 
 ___
 
@@ -199,7 +217,7 @@ from field: bool notify_users = 3;
 
 #### Defined in
 
-[src/workflows_rules.scailo_pb.ts:969](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/workflows_rules.scailo_pb.ts#L969)
+[src/workflows_rules.scailo_pb.ts:1036](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/workflows_rules.scailo_pb.ts#L1036)
 
 ___
 
@@ -215,7 +233,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS record_status = 21;
 
 #### Defined in
 
-[src/workflows_rules.scailo_pb.ts:1020](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/workflows_rules.scailo_pb.ts#L1020)
+[src/workflows_rules.scailo_pb.ts:1087](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/workflows_rules.scailo_pb.ts#L1087)
 
 ___
 
@@ -231,7 +249,7 @@ from field: Scailo.WORKFLOW_RULE_SERVICE_NAME service_name = 20;
 
 #### Defined in
 
-[src/workflows_rules.scailo_pb.ts:1013](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/workflows_rules.scailo_pb.ts#L1013)
+[src/workflows_rules.scailo_pb.ts:1080](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/workflows_rules.scailo_pb.ts#L1080)
 
 ___
 
@@ -239,7 +257,25 @@ ___
 
 • **userComment**: `string` = `""`
 
-Stores any comment that the user might add during this operation
+**`Optional`**
+
+**`Description`**
+
+Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+
+**`Example`**
+
+```ts
+"This is a comment for audit purposes."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
@@ -247,7 +283,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-[src/workflows_rules.scailo_pb.ts:950](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/workflows_rules.scailo_pb.ts#L950)
+[src/workflows_rules.scailo_pb.ts:1008](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/workflows_rules.scailo_pb.ts#L1008)
 
 ___
 
@@ -263,7 +299,7 @@ from field: bytes user_payload = 40;
 
 #### Defined in
 
-[src/workflows_rules.scailo_pb.ts:1041](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/workflows_rules.scailo_pb.ts#L1041)
+[src/workflows_rules.scailo_pb.ts:1108](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/workflows_rules.scailo_pb.ts#L1108)
 
 ___
 
@@ -297,7 +333,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-[src/workflows_rules.scailo_pb.ts:985](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/workflows_rules.scailo_pb.ts#L985)
+[src/workflows_rules.scailo_pb.ts:1052](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/workflows_rules.scailo_pb.ts#L1052)
 
 ___
 
@@ -307,7 +343,7 @@ ___
 
 #### Defined in
 
-[src/workflows_rules.scailo_pb.ts:1050](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/workflows_rules.scailo_pb.ts#L1050)
+[src/workflows_rules.scailo_pb.ts:1117](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/workflows_rules.scailo_pb.ts#L1117)
 
 ___
 
@@ -317,7 +353,7 @@ ___
 
 #### Defined in
 
-[src/workflows_rules.scailo_pb.ts:1048](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/workflows_rules.scailo_pb.ts#L1048)
+[src/workflows_rules.scailo_pb.ts:1115](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/workflows_rules.scailo_pb.ts#L1115)
 
 ___
 
@@ -327,7 +363,7 @@ ___
 
 #### Defined in
 
-[src/workflows_rules.scailo_pb.ts:1049](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/workflows_rules.scailo_pb.ts#L1049)
+[src/workflows_rules.scailo_pb.ts:1116](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/workflows_rules.scailo_pb.ts#L1116)
 
 ## Methods
 
@@ -615,7 +651,7 @@ ___
 
 #### Defined in
 
-[src/workflows_rules.scailo_pb.ts:1077](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/workflows_rules.scailo_pb.ts#L1077)
+[src/workflows_rules.scailo_pb.ts:1144](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/workflows_rules.scailo_pb.ts#L1144)
 
 ___
 
@@ -636,7 +672,7 @@ ___
 
 #### Defined in
 
-[src/workflows_rules.scailo_pb.ts:1065](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/workflows_rules.scailo_pb.ts#L1065)
+[src/workflows_rules.scailo_pb.ts:1132](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/workflows_rules.scailo_pb.ts#L1132)
 
 ___
 
@@ -657,7 +693,7 @@ ___
 
 #### Defined in
 
-[src/workflows_rules.scailo_pb.ts:1069](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/workflows_rules.scailo_pb.ts#L1069)
+[src/workflows_rules.scailo_pb.ts:1136](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/workflows_rules.scailo_pb.ts#L1136)
 
 ___
 
@@ -678,4 +714,4 @@ ___
 
 #### Defined in
 
-[src/workflows_rules.scailo_pb.ts:1073](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/workflows_rules.scailo_pb.ts#L1073)
+[src/workflows_rules.scailo_pb.ts:1140](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/workflows_rules.scailo_pb.ts#L1140)

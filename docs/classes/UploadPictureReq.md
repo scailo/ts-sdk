@@ -69,7 +69,7 @@ Message\&lt;UploadPictureReq\&gt;.constructor
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2274](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/base.scailo_pb.ts#L2274)
+[src/base.scailo_pb.ts:2350](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/base.scailo_pb.ts#L2350)
 
 ## Properties
 
@@ -77,7 +77,25 @@ Message\&lt;UploadPictureReq\&gt;.constructor
 
 • **id**: `bigint` = `protoInt64.zero`
 
-The ID of the record that needs to be updated
+**`Mandatory`**
+
+**`Description`**
+
+The unique internal identifier of the target record that needs to be updated.
+
+**`Example`**
+
+```ts
+1024
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -85,7 +103,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2258](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/base.scailo_pb.ts#L2258)
+[src/base.scailo_pb.ts:2334](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/base.scailo_pb.ts#L2334)
 
 ___
 
@@ -101,7 +119,7 @@ from field: string img = 10;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2265](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/base.scailo_pb.ts#L2265)
+[src/base.scailo_pb.ts:2341](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/base.scailo_pb.ts#L2341)
 
 ___
 
@@ -117,7 +135,7 @@ from field: string mime_type = 11;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2272](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/base.scailo_pb.ts#L2272)
+[src/base.scailo_pb.ts:2348](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/base.scailo_pb.ts#L2348)
 
 ___
 
@@ -125,7 +143,25 @@ ___
 
 • **userComment**: `string` = `""`
 
-Stores any comment that the user might add during this operation
+**`Optional`**
+
+**`Description`**
+
+Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+
+**`Example`**
+
+```ts
+"This is a comment for audit purposes."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
@@ -133,7 +169,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2251](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/base.scailo_pb.ts#L2251)
+[src/base.scailo_pb.ts:2318](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/base.scailo_pb.ts#L2318)
 
 ___
 
@@ -143,7 +179,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2281](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/base.scailo_pb.ts#L2281)
+[src/base.scailo_pb.ts:2357](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/base.scailo_pb.ts#L2357)
 
 ___
 
@@ -153,7 +189,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2279](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/base.scailo_pb.ts#L2279)
+[src/base.scailo_pb.ts:2355](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/base.scailo_pb.ts#L2355)
 
 ___
 
@@ -163,7 +199,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2280](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/base.scailo_pb.ts#L2280)
+[src/base.scailo_pb.ts:2356](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/base.scailo_pb.ts#L2356)
 
 ## Methods
 
@@ -451,7 +487,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2300](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/base.scailo_pb.ts#L2300)
+[src/base.scailo_pb.ts:2376](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/base.scailo_pb.ts#L2376)
 
 ___
 
@@ -472,7 +508,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2288](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/base.scailo_pb.ts#L2288)
+[src/base.scailo_pb.ts:2364](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/base.scailo_pb.ts#L2364)
 
 ___
 
@@ -493,7 +529,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2292](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/base.scailo_pb.ts#L2292)
+[src/base.scailo_pb.ts:2368](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/base.scailo_pb.ts#L2368)
 
 ___
 
@@ -514,4 +550,4 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2296](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/base.scailo_pb.ts#L2296)
+[src/base.scailo_pb.ts:2372](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/base.scailo_pb.ts#L2372)

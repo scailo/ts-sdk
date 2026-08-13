@@ -71,7 +71,7 @@ Message\&lt;StockAuditsServiceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/stock_audits.scailo_pb.ts:288](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stock_audits.scailo_pb.ts#L288)
+[src/stock_audits.scailo_pb.ts:304](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stock_audits.scailo_pb.ts#L304)
 
 ## Properties
 
@@ -105,7 +105,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-[src/stock_audits.scailo_pb.ts:233](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stock_audits.scailo_pb.ts#L233)
+[src/stock_audits.scailo_pb.ts:233](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stock_audits.scailo_pb.ts#L233)
 
 ___
 
@@ -113,7 +113,21 @@ ___
 
 • **formData**: [`FormFieldDatumCreateRequest`](FormFieldDatumCreateRequest.md)[] = `[]`
 
-The list of dynamic forms
+**`Optional`**
+
+**`Description`**
+
+A collection of dynamic form fields for organization-specific data.
+
+**`Example`**
+
+```ts
+[]
+```
+
+**`Format`**
+
+An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
 
 **`Generated`**
 
@@ -121,7 +135,7 @@ from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
 
 #### Defined in
 
-[src/stock_audits.scailo_pb.ts:286](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stock_audits.scailo_pb.ts#L286)
+[src/stock_audits.scailo_pb.ts:302](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stock_audits.scailo_pb.ts#L302)
 
 ___
 
@@ -137,7 +151,7 @@ from field: uint64 location_id = 15;
 
 #### Defined in
 
-[src/stock_audits.scailo_pb.ts:279](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stock_audits.scailo_pb.ts#L279)
+[src/stock_audits.scailo_pb.ts:288](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stock_audits.scailo_pb.ts#L288)
 
 ___
 
@@ -171,7 +185,7 @@ from field: string reference_id = 10;
 
 #### Defined in
 
-[src/stock_audits.scailo_pb.ts:272](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stock_audits.scailo_pb.ts#L272)
+[src/stock_audits.scailo_pb.ts:281](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stock_audits.scailo_pb.ts#L281)
 
 ___
 
@@ -179,7 +193,25 @@ ___
 
 • **userComment**: `string` = `""`
 
-Stores any comment that the user might add during this operation
+**`Optional`**
+
+**`Description`**
+
+Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+
+**`Example`**
+
+```ts
+"This is a comment for audit purposes."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
@@ -187,7 +219,7 @@ from field: string user_comment = 2;
 
 #### Defined in
 
-[src/stock_audits.scailo_pb.ts:240](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stock_audits.scailo_pb.ts#L240)
+[src/stock_audits.scailo_pb.ts:249](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stock_audits.scailo_pb.ts#L249)
 
 ___
 
@@ -221,7 +253,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-[src/stock_audits.scailo_pb.ts:256](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stock_audits.scailo_pb.ts#L256)
+[src/stock_audits.scailo_pb.ts:265](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stock_audits.scailo_pb.ts#L265)
 
 ___
 
@@ -231,7 +263,7 @@ ___
 
 #### Defined in
 
-[src/stock_audits.scailo_pb.ts:295](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stock_audits.scailo_pb.ts#L295)
+[src/stock_audits.scailo_pb.ts:311](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stock_audits.scailo_pb.ts#L311)
 
 ___
 
@@ -241,7 +273,7 @@ ___
 
 #### Defined in
 
-[src/stock_audits.scailo_pb.ts:293](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stock_audits.scailo_pb.ts#L293)
+[src/stock_audits.scailo_pb.ts:309](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stock_audits.scailo_pb.ts#L309)
 
 ___
 
@@ -251,7 +283,7 @@ ___
 
 #### Defined in
 
-[src/stock_audits.scailo_pb.ts:294](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stock_audits.scailo_pb.ts#L294)
+[src/stock_audits.scailo_pb.ts:310](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stock_audits.scailo_pb.ts#L310)
 
 ## Methods
 
@@ -539,7 +571,7 @@ ___
 
 #### Defined in
 
-[src/stock_audits.scailo_pb.ts:316](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stock_audits.scailo_pb.ts#L316)
+[src/stock_audits.scailo_pb.ts:332](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stock_audits.scailo_pb.ts#L332)
 
 ___
 
@@ -560,7 +592,7 @@ ___
 
 #### Defined in
 
-[src/stock_audits.scailo_pb.ts:304](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stock_audits.scailo_pb.ts#L304)
+[src/stock_audits.scailo_pb.ts:320](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stock_audits.scailo_pb.ts#L320)
 
 ___
 
@@ -581,7 +613,7 @@ ___
 
 #### Defined in
 
-[src/stock_audits.scailo_pb.ts:308](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stock_audits.scailo_pb.ts#L308)
+[src/stock_audits.scailo_pb.ts:324](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stock_audits.scailo_pb.ts#L324)
 
 ___
 
@@ -602,4 +634,4 @@ ___
 
 #### Defined in
 
-[src/stock_audits.scailo_pb.ts:312](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stock_audits.scailo_pb.ts#L312)
+[src/stock_audits.scailo_pb.ts:328](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stock_audits.scailo_pb.ts#L328)

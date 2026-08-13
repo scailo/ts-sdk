@@ -6,10 +6,13 @@
 import { Associate, AssociatePaginationResp, AssociatesList, AssociatesServiceCountReq, AssociatesServiceCreateRequest, AssociatesServiceFilterReq, AssociatesServiceImportRequest, AssociatesServicePaginationReq, AssociatesServiceSearchAllReq, AssociatesServiceUpdateRequest } from "./associates.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { ActiveStatus, BooleanResponse, BytesResponse, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, StandardFile } from "./base.scailo_pb.js";
+import { VaultFolderAttachRequest } from "./vault_folders.scailo_pb.js";
 
 /**
  *
- * Describes the methods applicable on each associate
+ * The AssociatesService manages the full operational lifecycle of associates.
+ * It provides standard CRUD infrastructure, enterprise data ingestion, audit-logged state
+ * transitions, compliance-driven file attachments, and granular permission checking.
  *
  * @generated from service Scailo.AssociatesService
  */
@@ -17,7 +20,15 @@ export const AssociatesService = {
   typeName: "Scailo.AssociatesService",
   methods: {
     /**
-     * Import associates
+     * Bulk imports associate records from a structured request payload.
+     *
+     * **Side Effects:**
+     * - Validates, parses, and persists multiple associate profiles simultaneously.
+     * - Automatically generates unique system UUIDs for new entries.
+     * - Dispatches asynchronous background synchronization jobs to downstream systems.
+     *
+     * **Errors:**
+     * - `INVALID_ARGUMENT`: If the payload contains structurally malformed entries.
      *
      * @generated from rpc Scailo.AssociatesService.ImportFromReq
      */
@@ -28,7 +39,14 @@ export const AssociatesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Create a associate
+     * Creates a new associate record and establishes their initial profile context.
+     *
+     * **Side Effects:**
+     * - Reserves an incremental internal ID and provisions a globally unique UUID.
+     * - Records a creation entry in the system compliance log.
+     *
+     * **Errors:**
+     * - `INVALID_ARGUMENT`: If structural or business validation rules fail.
      *
      * @generated from rpc Scailo.AssociatesService.Create
      */
@@ -39,7 +57,17 @@ export const AssociatesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Update a associate
+     * Updates an existing associate record with modified profile attributes.
+     *
+     * This method modifies primary operational data field-by-field based on the provided request.
+     *
+     * **Side Effects:**
+     * - Overwrites mutable associate properties.
+     * - Refreshes the record's primary modification timestamp.
+     *
+     * **Errors:**
+     * - `NOT_FOUND`: If the targeted associate record does not exist.
+     * - `FAILED_PRECONDITION`: If the associate is in a state that locks modification.
      *
      * @generated from rpc Scailo.AssociatesService.Update
      */
@@ -50,7 +78,13 @@ export const AssociatesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Discard the associate
+     * Permanently cancels or deactivates the associate record within the system.
+     *
+     * **Status Transition:** -> `DISCARDED`
+     *
+     * **Side Effects:**
+     * - Immediately revokes the associate's active visibility flags across primary lookups.
+     * - Logs the required user justification comment into the system compliance trail.
      *
      * @generated from rpc Scailo.AssociatesService.Discard
      */
@@ -61,13 +95,39 @@ export const AssociatesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Restore the associate
+     * Restores a previously `DISCARDED` associate record back to an active state.
+     *
+     * **Status Transition:** -> `ACTIVE`
+     *
+     * **Side Effects:**
+     * - Re-instates the associate record to standard search indices and data views.
+     * - Records the restoration action and associated user notes in the audit trail.
      *
      * @generated from rpc Scailo.AssociatesService.Restore
      */
     restore: {
       name: "Restore",
       I: IdentifierUUIDWithUserComment,
+      O: IdentifierResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Attaches a specified folder directly to a record without requiring a full revision workflow.
+     *
+     * This is a convenience API designed to bypass the traditional multi-step modification lifecycle
+     * (e.g., creating a revision, updating data, submitting for verification, and awaiting approval).
+     * It allows for the immediate, single-step association of a vault folder.
+     *
+     * **Side Effects & Lifecycle:**
+     * * The overall status of the record remains unchanged.
+     * * The record's modification timestamp is automatically updated to the current time.
+     * * An entry is appended to the record's audit log tracking this attachment.
+     *
+     * @generated from rpc Scailo.AssociatesService.AttachVaultFolder
+     */
+    attachVaultFolder: {
+      name: "AttachVaultFolder",
+      I: VaultFolderAttachRequest,
       O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
@@ -127,7 +187,12 @@ export const AssociatesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Download Associate by ID as a vCard
+     * Generates and downloads the contact details of a specified associate formatted as an electronic business card (vCard).
+     *
+     * The resulting binary stream can be parsed directly by standard external email and contact clients.
+     *
+     * **Errors:**
+     * - `NOT_FOUND`: If the associate target ID is missing.
      *
      * @generated from rpc Scailo.AssociatesService.DownloadVCard
      */
@@ -138,7 +203,7 @@ export const AssociatesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View all associates
+     * Returns all records filtered by their active status.
      *
      * @generated from rpc Scailo.AssociatesService.ViewAll
      */
@@ -149,7 +214,7 @@ export const AssociatesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View all associates with the given entity UUID
+     * Returns all records belonging to a specific organization/entity UUID.
      *
      * @generated from rpc Scailo.AssociatesService.ViewAllForEntityUUID
      */
@@ -160,7 +225,7 @@ export const AssociatesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View associates with pagination
+     * Retrieves a paginated list of records based on status, sort keys, and offsets.
      *
      * @generated from rpc Scailo.AssociatesService.ViewWithPagination
      */
@@ -171,7 +236,9 @@ export const AssociatesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Check if the user has permission to modify an associate
+     * Evaluates if the currently authenticated caller has sufficient permissions to modify an associate record.
+     *
+     * **Note:** This acts as a pre-flight authorization check for client applications to dynamically adjust UI capabilities.
      *
      * @generated from rpc Scailo.AssociatesService.CheckModifyPermission
      */
@@ -182,7 +249,9 @@ export const AssociatesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Check if the user has permission to add an associate
+     * Evaluates if the currently authenticated caller has sufficient permissions to add a new associate to the platform.
+     *
+     * **Note:** This acts as a pre-flight authorization check for client applications to dynamically adjust UI capabilities.
      *
      * @generated from rpc Scailo.AssociatesService.CheckAddPermission
      */
@@ -193,7 +262,7 @@ export const AssociatesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View all associates that match the given search key
+     * Performs a free-text search across records using a search key.
      *
      * @generated from rpc Scailo.AssociatesService.SearchAll
      */

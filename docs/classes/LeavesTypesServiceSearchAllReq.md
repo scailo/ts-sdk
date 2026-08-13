@@ -73,7 +73,7 @@ Message\&lt;LeavesTypesServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-[src/leaves_types.scailo_pb.ts:1335](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/leaves_types.scailo_pb.ts#L1335)
+[src/leaves_types.scailo_pb.ts:1362](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/leaves_types.scailo_pb.ts#L1362)
 
 ## Properties
 
@@ -107,7 +107,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-[src/leaves_types.scailo_pb.ts:1251](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/leaves_types.scailo_pb.ts#L1251)
+[src/leaves_types.scailo_pb.ts:1278](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/leaves_types.scailo_pb.ts#L1278)
 
 ___
 
@@ -141,7 +141,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-[src/leaves_types.scailo_pb.ts:1305](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/leaves_types.scailo_pb.ts#L1305)
+[src/leaves_types.scailo_pb.ts:1332](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/leaves_types.scailo_pb.ts#L1332)
 
 ___
 
@@ -167,7 +167,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/leaves_types.scailo_pb.ts:1235](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/leaves_types.scailo_pb.ts#L1235)
+[src/leaves_types.scailo_pb.ts:1262](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/leaves_types.scailo_pb.ts#L1262)
 
 ___
 
@@ -201,7 +201,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-[src/leaves_types.scailo_pb.ts:1267](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/leaves_types.scailo_pb.ts#L1267)
+[src/leaves_types.scailo_pb.ts:1294](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/leaves_types.scailo_pb.ts#L1294)
 
 ___
 
@@ -233,7 +233,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-[src/leaves_types.scailo_pb.ts:1333](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/leaves_types.scailo_pb.ts#L1333)
+[src/leaves_types.scailo_pb.ts:1360](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/leaves_types.scailo_pb.ts#L1360)
 
 ___
 
@@ -253,7 +253,7 @@ from field: Scailo.LEAVE_TYPE_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-[src/leaves_types.scailo_pb.ts:1289](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/leaves_types.scailo_pb.ts#L1289)
+[src/leaves_types.scailo_pb.ts:1316](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/leaves_types.scailo_pb.ts#L1316)
 
 ___
 
@@ -279,7 +279,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-[src/leaves_types.scailo_pb.ts:1279](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/leaves_types.scailo_pb.ts#L1279)
+[src/leaves_types.scailo_pb.ts:1306](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/leaves_types.scailo_pb.ts#L1306)
 
 ___
 
@@ -305,7 +305,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-[src/leaves_types.scailo_pb.ts:1317](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/leaves_types.scailo_pb.ts#L1317)
+[src/leaves_types.scailo_pb.ts:1344](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/leaves_types.scailo_pb.ts#L1344)
 
 ___
 
@@ -315,7 +315,7 @@ ___
 
 #### Defined in
 
-[src/leaves_types.scailo_pb.ts:1342](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/leaves_types.scailo_pb.ts#L1342)
+[src/leaves_types.scailo_pb.ts:1369](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/leaves_types.scailo_pb.ts#L1369)
 
 ___
 
@@ -325,7 +325,7 @@ ___
 
 #### Defined in
 
-[src/leaves_types.scailo_pb.ts:1340](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/leaves_types.scailo_pb.ts#L1340)
+[src/leaves_types.scailo_pb.ts:1367](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/leaves_types.scailo_pb.ts#L1367)
 
 ___
 
@@ -335,7 +335,7 @@ ___
 
 #### Defined in
 
-[src/leaves_types.scailo_pb.ts:1341](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/leaves_types.scailo_pb.ts#L1341)
+[src/leaves_types.scailo_pb.ts:1368](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/leaves_types.scailo_pb.ts#L1368)
 
 ## Methods
 
@@ -623,7 +623,7 @@ ___
 
 #### Defined in
 
-[src/leaves_types.scailo_pb.ts:1365](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/leaves_types.scailo_pb.ts#L1365)
+[src/leaves_types.scailo_pb.ts:1392](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/leaves_types.scailo_pb.ts#L1392)
 
 ___
 
@@ -644,7 +644,7 @@ ___
 
 #### Defined in
 
-[src/leaves_types.scailo_pb.ts:1353](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/leaves_types.scailo_pb.ts#L1353)
+[src/leaves_types.scailo_pb.ts:1380](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/leaves_types.scailo_pb.ts#L1380)
 
 ___
 
@@ -665,7 +665,7 @@ ___
 
 #### Defined in
 
-[src/leaves_types.scailo_pb.ts:1357](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/leaves_types.scailo_pb.ts#L1357)
+[src/leaves_types.scailo_pb.ts:1384](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/leaves_types.scailo_pb.ts#L1384)
 
 ___
 
@@ -686,4 +686,4 @@ ___
 
 #### Defined in
 
-[src/leaves_types.scailo_pb.ts:1361](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/leaves_types.scailo_pb.ts#L1361)
+[src/leaves_types.scailo_pb.ts:1388](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/leaves_types.scailo_pb.ts#L1388)

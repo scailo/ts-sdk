@@ -101,7 +101,7 @@ Message\&lt;InfrastructuresServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-[src/infrastructures.scailo_pb.ts:1344](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/infrastructures.scailo_pb.ts#L1344)
+[src/infrastructures.scailo_pb.ts:1404](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/infrastructures.scailo_pb.ts#L1404)
 
 ## Properties
 
@@ -117,7 +117,7 @@ from field: string code = 34;
 
 #### Defined in
 
-[src/infrastructures.scailo_pb.ts:1219](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/infrastructures.scailo_pb.ts#L1219)
+[src/infrastructures.scailo_pb.ts:1279](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/infrastructures.scailo_pb.ts#L1279)
 
 ___
 
@@ -151,7 +151,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-[src/infrastructures.scailo_pb.ts:1031](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/infrastructures.scailo_pb.ts#L1031)
+[src/infrastructures.scailo_pb.ts:1091](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/infrastructures.scailo_pb.ts#L1091)
 
 ___
 
@@ -185,7 +185,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-[src/infrastructures.scailo_pb.ts:1101](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/infrastructures.scailo_pb.ts#L1101)
+[src/infrastructures.scailo_pb.ts:1161](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/infrastructures.scailo_pb.ts#L1161)
 
 ___
 
@@ -219,7 +219,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-[src/infrastructures.scailo_pb.ts:1085](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/infrastructures.scailo_pb.ts#L1085)
+[src/infrastructures.scailo_pb.ts:1145](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/infrastructures.scailo_pb.ts#L1145)
 
 ___
 
@@ -235,7 +235,7 @@ from field: uint64 discarded_at_end = 23;
 
 #### Defined in
 
-[src/infrastructures.scailo_pb.ts:1184](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/infrastructures.scailo_pb.ts#L1184)
+[src/infrastructures.scailo_pb.ts:1244](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/infrastructures.scailo_pb.ts#L1244)
 
 ___
 
@@ -251,7 +251,7 @@ from field: uint64 discarded_at_start = 22;
 
 #### Defined in
 
-[src/infrastructures.scailo_pb.ts:1177](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/infrastructures.scailo_pb.ts#L1177)
+[src/infrastructures.scailo_pb.ts:1237](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/infrastructures.scailo_pb.ts#L1237)
 
 ___
 
@@ -285,7 +285,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-[src/infrastructures.scailo_pb.ts:1149](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/infrastructures.scailo_pb.ts#L1149)
+[src/infrastructures.scailo_pb.ts:1209](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/infrastructures.scailo_pb.ts#L1209)
 
 ___
 
@@ -301,7 +301,7 @@ from field: uint64 family_id = 33;
 
 #### Defined in
 
-[src/infrastructures.scailo_pb.ts:1212](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/infrastructures.scailo_pb.ts#L1212)
+[src/infrastructures.scailo_pb.ts:1272](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/infrastructures.scailo_pb.ts#L1272)
 
 ___
 
@@ -321,7 +321,7 @@ from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
 
 #### Defined in
 
-[src/infrastructures.scailo_pb.ts:1329](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/infrastructures.scailo_pb.ts#L1329)
+[src/infrastructures.scailo_pb.ts:1389](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/infrastructures.scailo_pb.ts#L1389)
 
 ___
 
@@ -337,7 +337,7 @@ from field: string hash = 36;
 
 #### Defined in
 
-[src/infrastructures.scailo_pb.ts:1233](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/infrastructures.scailo_pb.ts#L1233)
+[src/infrastructures.scailo_pb.ts:1293](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/infrastructures.scailo_pb.ts#L1293)
 
 ___
 
@@ -364,7 +364,7 @@ from field: bool include_form_data = 501;
 
 #### Defined in
 
-[src/infrastructures.scailo_pb.ts:1342](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/infrastructures.scailo_pb.ts#L1342)
+[src/infrastructures.scailo_pb.ts:1402](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/infrastructures.scailo_pb.ts#L1402)
 
 ___
 
@@ -380,7 +380,7 @@ from field: string internal_item_code = 35;
 
 #### Defined in
 
-[src/infrastructures.scailo_pb.ts:1226](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/infrastructures.scailo_pb.ts#L1226)
+[src/infrastructures.scailo_pb.ts:1286](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/infrastructures.scailo_pb.ts#L1286)
 
 ___
 
@@ -406,7 +406,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/infrastructures.scailo_pb.ts:1015](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/infrastructures.scailo_pb.ts#L1015)
+[src/infrastructures.scailo_pb.ts:1075](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/infrastructures.scailo_pb.ts#L1075)
 
 ___
 
@@ -422,7 +422,7 @@ from field: Scailo.BOOL_FILTER is_qc_report_public = 52;
 
 #### Defined in
 
-[src/infrastructures.scailo_pb.ts:1303](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/infrastructures.scailo_pb.ts#L1303)
+[src/infrastructures.scailo_pb.ts:1363](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/infrastructures.scailo_pb.ts#L1363)
 
 ___
 
@@ -438,7 +438,7 @@ from field: uint64 location_id = 54;
 
 #### Defined in
 
-[src/infrastructures.scailo_pb.ts:1310](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/infrastructures.scailo_pb.ts#L1310)
+[src/infrastructures.scailo_pb.ts:1370](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/infrastructures.scailo_pb.ts#L1370)
 
 ___
 
@@ -472,7 +472,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-[src/infrastructures.scailo_pb.ts:1133](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/infrastructures.scailo_pb.ts#L1133)
+[src/infrastructures.scailo_pb.ts:1193](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/infrastructures.scailo_pb.ts#L1193)
 
 ___
 
@@ -506,7 +506,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-[src/infrastructures.scailo_pb.ts:1117](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/infrastructures.scailo_pb.ts#L1117)
+[src/infrastructures.scailo_pb.ts:1177](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/infrastructures.scailo_pb.ts#L1177)
 
 ___
 
@@ -540,7 +540,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-[src/infrastructures.scailo_pb.ts:1047](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/infrastructures.scailo_pb.ts#L1047)
+[src/infrastructures.scailo_pb.ts:1107](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/infrastructures.scailo_pb.ts#L1107)
 
 ___
 
@@ -556,7 +556,7 @@ from field: uint64 parent_ref_id = 30;
 
 #### Defined in
 
-[src/infrastructures.scailo_pb.ts:1191](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/infrastructures.scailo_pb.ts#L1191)
+[src/infrastructures.scailo_pb.ts:1251](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/infrastructures.scailo_pb.ts#L1251)
 
 ___
 
@@ -572,7 +572,7 @@ from field: uint64 quantity_remaining_max = 38;
 
 #### Defined in
 
-[src/infrastructures.scailo_pb.ts:1247](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/infrastructures.scailo_pb.ts#L1247)
+[src/infrastructures.scailo_pb.ts:1307](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/infrastructures.scailo_pb.ts#L1307)
 
 ___
 
@@ -588,7 +588,7 @@ from field: uint64 quantity_remaining_min = 37;
 
 #### Defined in
 
-[src/infrastructures.scailo_pb.ts:1240](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/infrastructures.scailo_pb.ts#L1240)
+[src/infrastructures.scailo_pb.ts:1300](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/infrastructures.scailo_pb.ts#L1300)
 
 ___
 
@@ -604,7 +604,7 @@ from field: Scailo.INFRASTRUCTURE_REF_FROM ref_from = 31;
 
 #### Defined in
 
-[src/infrastructures.scailo_pb.ts:1198](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/infrastructures.scailo_pb.ts#L1198)
+[src/infrastructures.scailo_pb.ts:1258](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/infrastructures.scailo_pb.ts#L1258)
 
 ___
 
@@ -620,7 +620,7 @@ from field: uint64 ref_id = 32;
 
 #### Defined in
 
-[src/infrastructures.scailo_pb.ts:1205](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/infrastructures.scailo_pb.ts#L1205)
+[src/infrastructures.scailo_pb.ts:1265](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/infrastructures.scailo_pb.ts#L1265)
 
 ___
 
@@ -636,7 +636,7 @@ from field: uint64 secondary_uom_id = 39;
 
 #### Defined in
 
-[src/infrastructures.scailo_pb.ts:1254](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/infrastructures.scailo_pb.ts#L1254)
+[src/infrastructures.scailo_pb.ts:1314](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/infrastructures.scailo_pb.ts#L1314)
 
 ___
 
@@ -652,7 +652,7 @@ from field: uint64 shelf_life_timestamp_end = 41;
 
 #### Defined in
 
-[src/infrastructures.scailo_pb.ts:1268](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/infrastructures.scailo_pb.ts#L1268)
+[src/infrastructures.scailo_pb.ts:1328](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/infrastructures.scailo_pb.ts#L1328)
 
 ___
 
@@ -668,7 +668,7 @@ from field: uint64 shelf_life_timestamp_start = 40;
 
 #### Defined in
 
-[src/infrastructures.scailo_pb.ts:1261](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/infrastructures.scailo_pb.ts#L1261)
+[src/infrastructures.scailo_pb.ts:1321](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/infrastructures.scailo_pb.ts#L1321)
 
 ___
 
@@ -688,7 +688,7 @@ from field: Scailo.INVENTORY_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-[src/infrastructures.scailo_pb.ts:1069](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/infrastructures.scailo_pb.ts#L1069)
+[src/infrastructures.scailo_pb.ts:1129](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/infrastructures.scailo_pb.ts#L1129)
 
 ___
 
@@ -714,7 +714,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-[src/infrastructures.scailo_pb.ts:1059](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/infrastructures.scailo_pb.ts#L1059)
+[src/infrastructures.scailo_pb.ts:1119](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/infrastructures.scailo_pb.ts#L1119)
 
 ___
 
@@ -730,7 +730,7 @@ from field: Scailo.INVENTORY_LIFECYCLE status = 10;
 
 #### Defined in
 
-[src/infrastructures.scailo_pb.ts:1156](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/infrastructures.scailo_pb.ts#L1156)
+[src/infrastructures.scailo_pb.ts:1216](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/infrastructures.scailo_pb.ts#L1216)
 
 ___
 
@@ -746,7 +746,7 @@ from field: uint64 storage_id = 51;
 
 #### Defined in
 
-[src/infrastructures.scailo_pb.ts:1296](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/infrastructures.scailo_pb.ts#L1296)
+[src/infrastructures.scailo_pb.ts:1356](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/infrastructures.scailo_pb.ts#L1356)
 
 ___
 
@@ -762,7 +762,7 @@ from field: uint64 store_id = 50;
 
 #### Defined in
 
-[src/infrastructures.scailo_pb.ts:1289](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/infrastructures.scailo_pb.ts#L1289)
+[src/infrastructures.scailo_pb.ts:1349](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/infrastructures.scailo_pb.ts#L1349)
 
 ___
 
@@ -778,7 +778,7 @@ from field: uint64 store_intake_at_end = 21;
 
 #### Defined in
 
-[src/infrastructures.scailo_pb.ts:1170](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/infrastructures.scailo_pb.ts#L1170)
+[src/infrastructures.scailo_pb.ts:1230](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/infrastructures.scailo_pb.ts#L1230)
 
 ___
 
@@ -794,7 +794,7 @@ from field: uint64 store_intake_at_start = 20;
 
 #### Defined in
 
-[src/infrastructures.scailo_pb.ts:1163](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/infrastructures.scailo_pb.ts#L1163)
+[src/infrastructures.scailo_pb.ts:1223](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/infrastructures.scailo_pb.ts#L1223)
 
 ___
 
@@ -812,7 +812,7 @@ from field: uint64 vendor_id = 81;
 
 #### Defined in
 
-[src/infrastructures.scailo_pb.ts:1319](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/infrastructures.scailo_pb.ts#L1319)
+[src/infrastructures.scailo_pb.ts:1379](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/infrastructures.scailo_pb.ts#L1379)
 
 ___
 
@@ -828,7 +828,7 @@ from field: uint64 warranty_timestamp_end = 43;
 
 #### Defined in
 
-[src/infrastructures.scailo_pb.ts:1282](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/infrastructures.scailo_pb.ts#L1282)
+[src/infrastructures.scailo_pb.ts:1342](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/infrastructures.scailo_pb.ts#L1342)
 
 ___
 
@@ -844,7 +844,7 @@ from field: uint64 warranty_timestamp_start = 42;
 
 #### Defined in
 
-[src/infrastructures.scailo_pb.ts:1275](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/infrastructures.scailo_pb.ts#L1275)
+[src/infrastructures.scailo_pb.ts:1335](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/infrastructures.scailo_pb.ts#L1335)
 
 ___
 
@@ -854,7 +854,7 @@ ___
 
 #### Defined in
 
-[src/infrastructures.scailo_pb.ts:1351](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/infrastructures.scailo_pb.ts#L1351)
+[src/infrastructures.scailo_pb.ts:1411](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/infrastructures.scailo_pb.ts#L1411)
 
 ___
 
@@ -864,7 +864,7 @@ ___
 
 #### Defined in
 
-[src/infrastructures.scailo_pb.ts:1349](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/infrastructures.scailo_pb.ts#L1349)
+[src/infrastructures.scailo_pb.ts:1409](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/infrastructures.scailo_pb.ts#L1409)
 
 ___
 
@@ -874,7 +874,7 @@ ___
 
 #### Defined in
 
-[src/infrastructures.scailo_pb.ts:1350](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/infrastructures.scailo_pb.ts#L1350)
+[src/infrastructures.scailo_pb.ts:1410](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/infrastructures.scailo_pb.ts#L1410)
 
 ## Methods
 
@@ -1162,7 +1162,7 @@ ___
 
 #### Defined in
 
-[src/infrastructures.scailo_pb.ts:1402](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/infrastructures.scailo_pb.ts#L1402)
+[src/infrastructures.scailo_pb.ts:1462](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/infrastructures.scailo_pb.ts#L1462)
 
 ___
 
@@ -1183,7 +1183,7 @@ ___
 
 #### Defined in
 
-[src/infrastructures.scailo_pb.ts:1390](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/infrastructures.scailo_pb.ts#L1390)
+[src/infrastructures.scailo_pb.ts:1450](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/infrastructures.scailo_pb.ts#L1450)
 
 ___
 
@@ -1204,7 +1204,7 @@ ___
 
 #### Defined in
 
-[src/infrastructures.scailo_pb.ts:1394](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/infrastructures.scailo_pb.ts#L1394)
+[src/infrastructures.scailo_pb.ts:1454](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/infrastructures.scailo_pb.ts#L1454)
 
 ___
 
@@ -1225,4 +1225,4 @@ ___
 
 #### Defined in
 
-[src/infrastructures.scailo_pb.ts:1398](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/infrastructures.scailo_pb.ts#L1398)
+[src/infrastructures.scailo_pb.ts:1458](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/infrastructures.scailo_pb.ts#L1458)

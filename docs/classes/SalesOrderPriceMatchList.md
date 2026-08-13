@@ -2,7 +2,7 @@
 
 # Class: SalesOrderPriceMatchList
 
-Describes the list of inventory match families
+Represents a consolidated collection of detailed financial price matches for a Sales Order.
 
 **`Generated`**
 
@@ -66,7 +66,7 @@ Message\&lt;SalesOrderPriceMatchList\&gt;.constructor
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:4466](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L4466)
+[src/sales_orders.scailo_pb.ts:6163](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L6163)
 
 ## Properties
 
@@ -74,7 +74,19 @@ Message\&lt;SalesOrderPriceMatchList\&gt;.constructor
 
 • **list**: [`SalesOrderPriceMatch`](SalesOrderPriceMatch.md)[] = `[]`
 
-List of records
+**`Description`**
+
+An array containing the individual family-level price match records for the order.
+
+**`Example`**
+
+```ts
+[]
+```
+
+**`Format`**
+
+Repeated array of SalesOrderPriceMatch message blocks.
 
 **`Generated`**
 
@@ -82,7 +94,7 @@ from field: repeated Scailo.SalesOrderPriceMatch list = 1;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:4464](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L4464)
+[src/sales_orders.scailo_pb.ts:6161](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L6161)
 
 ___
 
@@ -92,7 +104,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:4473](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L4473)
+[src/sales_orders.scailo_pb.ts:6170](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L6170)
 
 ___
 
@@ -102,7 +114,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:4471](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L4471)
+[src/sales_orders.scailo_pb.ts:6168](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L6168)
 
 ___
 
@@ -112,7 +124,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:4472](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L4472)
+[src/sales_orders.scailo_pb.ts:6169](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L6169)
 
 ## Methods
 
@@ -400,7 +412,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:4489](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L4489)
+[src/sales_orders.scailo_pb.ts:6186](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L6186)
 
 ___
 
@@ -421,7 +433,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:4477](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L4477)
+[src/sales_orders.scailo_pb.ts:6174](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L6174)
 
 ___
 
@@ -442,7 +454,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:4481](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L4481)
+[src/sales_orders.scailo_pb.ts:6178](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L6178)
 
 ___
 
@@ -463,4 +475,4 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:4485](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L4485)
+[src/sales_orders.scailo_pb.ts:6182](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L6182)

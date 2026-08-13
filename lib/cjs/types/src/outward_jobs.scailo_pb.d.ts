@@ -275,7 +275,16 @@ export declare class OutwardJobsServiceCreateRequest extends Message<OutwardJobs
      */
     entityUuid: string;
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 2;
      */
@@ -329,7 +338,14 @@ export declare class OutwardJobsServiceCreateRequest extends Message<OutwardJobs
      */
     projectId: bigint;
     /**
-     * The list of dynamic forms
+     *
+     * @optional
+     *
+     * @description A collection of dynamic form fields for organization-specific data.
+     *
+     * @example []
+     *
+     * @format An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
      *
      * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
      */
@@ -351,13 +367,31 @@ export declare class OutwardJobsServiceCreateRequest extends Message<OutwardJobs
  */
 export declare class OutwardJobsServiceUpdateRequest extends Message<OutwardJobsServiceUpdateRequest> {
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 1;
      */
     userComment: string;
     /**
-     * The ID of the record that needs to be updated
+     *
+     * @mandatory
+     *
+     * @description The unique internal identifier of the target record that needs to be updated.
+     *
+     * @example 1024
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 id = 2;
      */
@@ -410,7 +444,14 @@ export declare class OutwardJobsServiceUpdateRequest extends Message<OutwardJobs
      */
     projectId: bigint;
     /**
-     * The list of dynamic forms
+     *
+     * @optional
+     *
+     * @description A collection of dynamic form fields for organization-specific data.
+     *
+     * @example []
+     *
+     * @format An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
      *
      * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
      */
@@ -432,7 +473,16 @@ export declare class OutwardJobsServiceUpdateRequest extends Message<OutwardJobs
  */
 export declare class OutwardJobsServiceAutofillRequest extends Message<OutwardJobsServiceAutofillRequest> {
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 1;
      */
@@ -591,7 +641,8 @@ export declare class OutwardJob extends Message<OutwardJob> {
      */
     outwardItemsList: OutwardJobOutwardItem[];
     /**
-     * The list of dynamic forms
+     *
+     * @description Collection of organization-specific dynamic data.
      *
      * @generated from field: repeated Scailo.FormFieldDatum form_data = 30;
      */
@@ -613,7 +664,16 @@ export declare class OutwardJob extends Message<OutwardJob> {
  */
 export declare class OutwardJobsServiceInwardItemCreateRequest extends Message<OutwardJobsServiceInwardItemCreateRequest> {
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 1;
      */
@@ -705,7 +765,16 @@ export declare class OutwardJobsServiceMultipleInwardItemsSingleton extends Mess
  */
 export declare class OutwardJobsServiceMultipleInwardItemsCreateRequest extends Message<OutwardJobsServiceMultipleInwardItemsCreateRequest> {
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 1;
      */
@@ -739,7 +808,16 @@ export declare class OutwardJobsServiceMultipleInwardItemsCreateRequest extends 
  */
 export declare class OutwardJobsServiceInwardItemUpdateRequest extends Message<OutwardJobsServiceInwardItemUpdateRequest> {
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 1;
      */
@@ -809,7 +887,11 @@ export declare class OutwardJobInwardItem extends Message<OutwardJobInwardItem> 
     approvalMetadata?: ApprovalMetadata;
     /**
      *
-     * @description The approval state of the record
+     * @description A boolean flag indicating whether this specific record requires further administrative approval.
+     *
+     * @example false
+     *
+     * @format Boolean true or false.
      *
      * @generated from field: bool need_approval = 4;
      */
@@ -1720,7 +1802,10 @@ export declare class OutwardJobsServiceCountReq extends Message<OutwardJobsServi
      */
     inwardFamilyId: bigint;
     /**
-     * The list of form data filters
+     *
+     * @optional
+     *
+     * @description Count based on dynamic form field values.
      *
      * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
      */
@@ -2096,7 +2181,16 @@ export declare class OutwardJobsServicePaginatedInwardItemsResponse extends Mess
  */
 export declare class OutwardJobsServiceOutwardItemCreateRequest extends Message<OutwardJobsServiceOutwardItemCreateRequest> {
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 1;
      */
@@ -2188,7 +2282,16 @@ export declare class OutwardJobsServiceMultipleOutwardItemsSingleton extends Mes
  */
 export declare class OutwardJobsServiceMultipleOutwardItemsCreateRequest extends Message<OutwardJobsServiceMultipleOutwardItemsCreateRequest> {
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 1;
      */
@@ -2222,7 +2325,16 @@ export declare class OutwardJobsServiceMultipleOutwardItemsCreateRequest extends
  */
 export declare class OutwardJobsServiceOutwardItemUpdateRequest extends Message<OutwardJobsServiceOutwardItemUpdateRequest> {
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 1;
      */
@@ -2292,7 +2404,11 @@ export declare class OutwardJobOutwardItem extends Message<OutwardJobOutwardItem
     approvalMetadata?: ApprovalMetadata;
     /**
      *
-     * @description The approval state of the record
+     * @description A boolean flag indicating whether this specific record requires further administrative approval.
+     *
+     * @example false
+     *
+     * @format Boolean true or false.
      *
      * @generated from field: bool need_approval = 4;
      */
@@ -2649,7 +2765,16 @@ export declare class OutwardJobsServicePaginatedOutwardItemsResponse extends Mes
  */
 export declare class OutwardJobsServiceContactCreateRequest extends Message<OutwardJobsServiceContactCreateRequest> {
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 1;
      */
@@ -2707,7 +2832,11 @@ export declare class OutwardJobContact extends Message<OutwardJobContact> {
     approvalMetadata?: ApprovalMetadata;
     /**
      *
-     * @description The approval state of the record
+     * @description A boolean flag indicating whether this specific record requires further administrative approval.
+     *
+     * @example false
+     *
+     * @format Boolean true or false.
      *
      * @generated from field: bool need_approval = 4;
      */

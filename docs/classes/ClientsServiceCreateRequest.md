@@ -2,7 +2,12 @@
 
 # Class: ClientsServiceCreateRequest
 
-Describes the parameters necessary to create a record
+Request message for onboarding and creating a new Client profile.
+This record tracks critical client metadata, unique business identifiers,
+contact details, and custom fields associated with a target entity.
+
+**Note:** This is the primary entry point for Sales, Account Management, and Admins
+to register new customer profiles or external entities for billing and compliance tracking.
 
 **`Generated`**
 
@@ -73,7 +78,7 @@ Message\&lt;ClientsServiceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:218](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L218)
+[src/clients.scailo_pb.ts:275](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L275)
 
 ## Properties
 
@@ -81,7 +86,25 @@ Message\&lt;ClientsServiceCreateRequest\&gt;.constructor
 
 • **code**: `string` = `""`
 
-The unique code by which the client is classified
+**`Mandatory`**
+
+**`Description`**
+
+The unique code or alphanumeric token by which the client is classified or categorized internally.
+
+**`Example`**
+
+```ts
+"CLI-ACME-001"
+```
+
+**`Regex`**
+
+.+
+
+**`Format`**
+
+Must be a non-empty string.
 
 **`Generated`**
 
@@ -89,7 +112,7 @@ from field: string code = 11;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:195](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L195)
+[src/clients.scailo_pb.ts:227](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L227)
 
 ___
 
@@ -97,7 +120,25 @@ ___
 
 • **email**: `string` = `""`
 
-The primary email of the client
+**`Mandatory`**
+
+**`Description`**
+
+The primary communication email address of the client.
+
+**`Example`**
+
+```ts
+"billing@acme.com"
+```
+
+**`Regex`**
+
+^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
+
+**`Format`**
+
+Must be a valid and structurally sound email address format.
 
 **`Generated`**
 
@@ -105,13 +146,13 @@ from field: string email = 12;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:202](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L202)
+[src/clients.scailo_pb.ts:243](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L243)
 
 ___
 
 ### entityUuid
 
-• **entityUuid**: `string` = `""`
+• `Optional` **entityUuid**: `string`
 
 **`Optional`**
 
@@ -135,11 +176,11 @@ If provided, must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
-from field: string entity_uuid = 1;
+from field: optional string entity_uuid = 1;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:158](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L158)
+[src/clients.scailo_pb.ts:163](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L163)
 
 ___
 
@@ -147,7 +188,21 @@ ___
 
 • **formData**: [`FormFieldDatumCreateRequest`](FormFieldDatumCreateRequest.md)[] = `[]`
 
-The list of dynamic forms
+**`Optional`**
+
+**`Description`**
+
+A collection of dynamic form fields for organization-specific data.
+
+**`Example`**
+
+```ts
+[]
+```
+
+**`Format`**
+
+An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
 
 **`Generated`**
 
@@ -155,7 +210,7 @@ from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:216](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L216)
+[src/clients.scailo_pb.ts:273](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L273)
 
 ___
 
@@ -163,7 +218,25 @@ ___
 
 • **name**: `string` = `""`
 
-The name of the client
+**`Mandatory`**
+
+**`Description`**
+
+The official or legal name of the client organization or individual.
+
+**`Example`**
+
+```ts
+"Acme Corporation"
+```
+
+**`Regex`**
+
+.+
+
+**`Format`**
+
+Must be a non-empty string.
 
 **`Generated`**
 
@@ -171,7 +244,7 @@ from field: string name = 10;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:188](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L188)
+[src/clients.scailo_pb.ts:211](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L211)
 
 ___
 
@@ -179,7 +252,25 @@ ___
 
 • **phone**: `string` = `""`
 
-The primary contact number of the client
+**`Mandatory`**
+
+**`Description`**
+
+The primary contact phone number of the client, typically including country and area codes.
+
+**`Example`**
+
+```ts
+"+1-555-222-0199"
+```
+
+**`Regex`**
+
+.+
+
+**`Format`**
+
+Must be a non-empty string string representing a valid phone number format.
 
 **`Generated`**
 
@@ -187,29 +278,47 @@ from field: string phone = 13;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:209](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L209)
+[src/clients.scailo_pb.ts:259](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L259)
 
 ___
 
 ### userComment
 
-• **userComment**: `string` = `""`
+• `Optional` **userComment**: `string`
 
-Stores any comment that the user might add during this operation
+**`Optional`**
+
+**`Description`**
+
+Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+
+**`Example`**
+
+```ts
+"This is a comment for audit purposes."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
-from field: string user_comment = 2;
+from field: optional string user_comment = 2;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:165](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L165)
+[src/clients.scailo_pb.ts:179](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L179)
 
 ___
 
 ### vaultFolderId
 
-• **vaultFolderId**: `bigint` = `protoInt64.zero`
+• `Optional` **vaultFolderId**: `bigint`
 
 **`Optional`**
 
@@ -233,11 +342,11 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 vault_folder_id = 9;
+from field: optional uint64 vault_folder_id = 9;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:181](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L181)
+[src/clients.scailo_pb.ts:195](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L195)
 
 ___
 
@@ -247,7 +356,7 @@ ___
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:225](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L225)
+[src/clients.scailo_pb.ts:282](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L282)
 
 ___
 
@@ -257,7 +366,7 @@ ___
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:223](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L223)
+[src/clients.scailo_pb.ts:280](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L280)
 
 ___
 
@@ -267,7 +376,7 @@ ___
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:224](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L224)
+[src/clients.scailo_pb.ts:281](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L281)
 
 ## Methods
 
@@ -555,7 +664,7 @@ ___
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:248](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L248)
+[src/clients.scailo_pb.ts:305](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L305)
 
 ___
 
@@ -576,7 +685,7 @@ ___
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:236](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L236)
+[src/clients.scailo_pb.ts:293](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L293)
 
 ___
 
@@ -597,7 +706,7 @@ ___
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:240](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L240)
+[src/clients.scailo_pb.ts:297](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L297)
 
 ___
 
@@ -618,4 +727,4 @@ ___
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:244](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L244)
+[src/clients.scailo_pb.ts:301](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L301)

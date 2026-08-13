@@ -2,7 +2,10 @@
 
 # Class: SalesOrderInventoryStatistics
 
-Describes the parameters that are part of a sales order's inventory statistics payload
+Represents aggregated, order-level inventory fulfillment statistics.
+This analytics payload is designed for high-level dashboards, providing a quick summary
+of the total ordered quantities versus what has physically left the warehouse (dispatched)
+and what has been sent back (returned).
 
 **`Generated`**
 
@@ -68,7 +71,7 @@ Message\&lt;SalesOrderInventoryStatistics\&gt;.constructor
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:4070](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L4070)
+[src/sales_orders.scailo_pb.ts:5507](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5507)
 
 ## Properties
 
@@ -76,7 +79,25 @@ Message\&lt;SalesOrderInventoryStatistics\&gt;.constructor
 
 • **dispatched**: `bigint` = `protoInt64.zero`
 
-Stores the cumulative quantity of the dispatched inventory
+**`Mandatory`**
+
+**`Description`**
+
+The cumulative quantity of inventory that has been successfully dispatched or shipped against this order.
+
+**`Example`**
+
+```ts
+10000
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -84,7 +105,7 @@ from field: uint64 dispatched = 2;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:4061](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L4061)
+[src/sales_orders.scailo_pb.ts:5489](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5489)
 
 ___
 
@@ -92,7 +113,25 @@ ___
 
 • **ordered**: `bigint` = `protoInt64.zero`
 
-Stores the cumulative quantity of the ordered inventory
+**`Mandatory`**
+
+**`Description`**
+
+The cumulative quantity of inventory ordered across all line items, typically represented in the system's base unit.
+
+**`Example`**
+
+```ts
+15000
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -100,7 +139,7 @@ from field: uint64 ordered = 1;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:4054](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L4054)
+[src/sales_orders.scailo_pb.ts:5473](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5473)
 
 ___
 
@@ -108,7 +147,25 @@ ___
 
 • **returned**: `bigint` = `protoInt64.zero`
 
-Stores the cumulative quantity of the returned inventory
+**`Mandatory`**
+
+**`Description`**
+
+The cumulative quantity of inventory that has been returned by the client against this order.
+
+**`Example`**
+
+```ts
+500
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -116,7 +173,7 @@ from field: uint64 returned = 3;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:4068](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L4068)
+[src/sales_orders.scailo_pb.ts:5505](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5505)
 
 ___
 
@@ -126,7 +183,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:4077](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L4077)
+[src/sales_orders.scailo_pb.ts:5514](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5514)
 
 ___
 
@@ -136,7 +193,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:4075](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L4075)
+[src/sales_orders.scailo_pb.ts:5512](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5512)
 
 ___
 
@@ -146,7 +203,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:4076](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L4076)
+[src/sales_orders.scailo_pb.ts:5513](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5513)
 
 ## Methods
 
@@ -434,7 +491,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:4095](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L4095)
+[src/sales_orders.scailo_pb.ts:5532](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5532)
 
 ___
 
@@ -455,7 +512,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:4083](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L4083)
+[src/sales_orders.scailo_pb.ts:5520](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5520)
 
 ___
 
@@ -476,7 +533,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:4087](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L4087)
+[src/sales_orders.scailo_pb.ts:5524](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5524)
 
 ___
 
@@ -497,4 +554,4 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:4091](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L4091)
+[src/sales_orders.scailo_pb.ts:5528](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5528)

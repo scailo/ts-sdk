@@ -391,6 +391,13 @@ export enum MAGIC_LINK_RESOURCE_TYPE {
    * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_USER_PASSWORD_RESET_EMAIL = 1610;
    */
   MAGIC_LINK_RESOURCE_TYPE_USER_PASSWORD_RESET_EMAIL = 1610,
+
+  /**
+   * Denotes that the magic link was created for a vault file
+   *
+   * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_VAULT_FILE = 2000;
+   */
+  MAGIC_LINK_RESOURCE_TYPE_VAULT_FILE = 2000,
 }
 // Retrieve enum metadata with: proto3.getEnumType(MAGIC_LINK_RESOURCE_TYPE)
 proto3.util.setEnumType(MAGIC_LINK_RESOURCE_TYPE, "Scailo.MAGIC_LINK_RESOURCE_TYPE", [
@@ -448,6 +455,7 @@ proto3.util.setEnumType(MAGIC_LINK_RESOURCE_TYPE, "Scailo.MAGIC_LINK_RESOURCE_TY
   { no: 1500, name: "MAGIC_LINK_RESOURCE_TYPE_EXPENSE" },
   { no: 1600, name: "MAGIC_LINK_RESOURCE_TYPE_USER_SIGNATURE" },
   { no: 1610, name: "MAGIC_LINK_RESOURCE_TYPE_USER_PASSWORD_RESET_EMAIL" },
+  { no: 2000, name: "MAGIC_LINK_RESOURCE_TYPE_VAULT_FILE" },
 ]);
 
 /**
@@ -744,7 +752,16 @@ export class MagicLinksServiceCreateRequest extends Message<MagicLinksServiceCre
   entityUuid = "";
 
   /**
-   * Stores any comment that the user might add during this operation
+   *
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
    *
    * @generated from field: string user_comment = 2;
    */
@@ -835,7 +852,16 @@ export class MagicLinksServiceCreateRequest extends Message<MagicLinksServiceCre
  */
 export class MagicLinksServiceCreateRequestForSpecificResource extends Message<MagicLinksServiceCreateRequestForSpecificResource> {
   /**
-   * Stores any comment that the user might add during this operation
+   *
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
    *
    * @generated from field: string user_comment = 2;
    */
@@ -917,7 +943,16 @@ export class MagicLinksServiceCreateRequestForSpecificResource extends Message<M
  */
 export class MagicLinksServiceUpdateRequest extends Message<MagicLinksServiceUpdateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
+   *
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
    *
    * @generated from field: string user_comment = 1;
    */

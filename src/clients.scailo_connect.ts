@@ -6,10 +6,13 @@
 import { Client, ClientsList, ClientsServiceCountReq, ClientsServiceCreateRequest, ClientsServiceFilterReq, ClientsServicePaginatedUsersResponse, ClientsServicePaginationReq, ClientsServicePaginationResponse, ClientsServiceSearchAllReq, ClientsServiceUpdateRequest, ClientsServiceUserCreateRequest, ClientUser, ClientUsersList, ClientUsersSearchRequest } from "./clients.scailo_pb.js";
 import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, IdentifierWithUserComment, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
+import { VaultFolderAttachRequest } from "./vault_folders.scailo_pb.js";
 
 /**
  *
- * Describes the common methods applicable on each client
+ * The ClientsService manages the full lifecycle of clients.
+ * It provides standard CRUD operations alongside a robust state machine for
+ * verification, manager approval, and completion.
  *
  * @generated from service Scailo.ClientsService
  */
@@ -17,7 +20,18 @@ export const ClientsService = {
   typeName: "Scailo.ClientsService",
   methods: {
     /**
-     * Create and send for verification
+     * Creates a new record and immediately moves it to the verification workflow.
+     *
+     * This method validates all required fields.
+     * The record is created with a `STANDARD_LIFECYCLE_STATUS.PREVERIFY` status.
+     *
+     * **Side Effects:**
+     * - Generates a unique system UUID.
+     * - Records an audit log for the "Create" action.
+     * - May trigger automated verification workflows.
+     *
+     * **Errors:**
+     * - `INVALID_ARGUMENT`: If validation rules fail.
      *
      * @generated from rpc Scailo.ClientsService.Create
      */
@@ -208,7 +222,31 @@ export const ClientsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Add a user
+     * Attaches a specified folder directly to a record without requiring a full revision workflow.
+     *
+     * This is a convenience API designed to bypass the traditional multi-step modification lifecycle
+     * (e.g., creating a revision, updating data, submitting for verification, and awaiting approval).
+     * It allows for the immediate, single-step association of a vault folder.
+     *
+     * **Side Effects & Lifecycle:**
+     * * The overall status of the record remains unchanged.
+     * * The record's modification timestamp is automatically updated to the current time.
+     * * An entry is appended to the record's audit log tracking this attachment.
+     *
+     * @generated from rpc Scailo.ClientsService.AttachVaultFolder
+     */
+    attachVaultFolder: {
+      name: "AttachVaultFolder",
+      I: VaultFolderAttachRequest,
+      O: IdentifierResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Associates a new personnel user with an existing client.
+     *
+     * **Side Effects:**
+     * - Validates the structural relationship between the client and user.
+     * - Depending on system configurations, may place the new client user association into a pending approval state.
      *
      * @generated from rpc Scailo.ClientsService.AddClientUser
      */
@@ -219,7 +257,11 @@ export const ClientsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Approve a user
+     * Approves a pending client user record, finalizing their access and mapping to the client account.
+     *
+     * **Side Effects:**
+     * - Activates the user mapping within the client scope.
+     * - Appends the required approval metadata and audit comment to the record history.
      *
      * @generated from rpc Scailo.ClientsService.ApproveClientUser
      */
@@ -230,7 +272,11 @@ export const ClientsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Delete a user
+     * Permanently removes or deactivates a user association from a client profile.
+     *
+     * **Side Effects:**
+     * - Revokes client-specific context, tenancy permissions, and data access linked to this user.
+     * - Logs the deletion justification comment into the system compliance log.
      *
      * @generated from rpc Scailo.ClientsService.DeleteClientUser
      */
@@ -241,7 +287,9 @@ export const ClientsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View a user for the given ID
+     * Retrieves the complete, granular details of a specific client user by its internal sequence ID.
+     *
+     * This is a read-only operation that fetches full metadata, user contexts, and approval histories.
      *
      * @generated from rpc Scailo.ClientsService.ViewClientUserByID
      */
@@ -252,7 +300,9 @@ export const ClientsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View all users for given client ID
+     * Lists all user associations mapped to a given client unique internal identifier.
+     *
+     * This read-only query aggregates and returns the collection of personnel assigned to the client entity.
      *
      * @generated from rpc Scailo.ClientsService.ViewClientUsers
      */
@@ -263,7 +313,10 @@ export const ClientsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Search through client users with pagination
+     * Searches through client user records using filters, status flags, and pagination tokens.
+     *
+     * This read-only query is optimized for administrative data grids, supporting complex lookups,
+     * multi-tenant isolation, and explicit windowing parameters (count and offset).
      *
      * @generated from rpc Scailo.ClientsService.SearchClientUsersWithPagination
      */
@@ -318,7 +371,9 @@ export const ClientsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View only essential components (without logs) that matches the first given email address
+     * Retrieves a client record using their primary email address, omitting compliance logs and non-essential metadata.
+     *
+     * This operation is tailored for fast, low-overhead lookups where only core profile traits and basic identification keys are required.
      *
      * @generated from rpc Scailo.ClientsService.ViewEssentialByEmail
      */
@@ -329,7 +384,9 @@ export const ClientsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View only essential components (without logs) that matches the first given phone number
+     * Retrieves a client record using their primary phone number, omitting compliance logs and non-essential metadata.
+     *
+     * This operation is tailored for fast, low-overhead lookups where only core profile traits and basic identification keys are required.
      *
      * @generated from rpc Scailo.ClientsService.ViewEssentialByPhone
      */

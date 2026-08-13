@@ -74,7 +74,7 @@ Message\&lt;TransactionalEmailsServiceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/transactional_emails.scailo_pb.ts:124](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/transactional_emails.scailo_pb.ts#L124)
+[src/transactional_emails.scailo_pb.ts:133](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/transactional_emails.scailo_pb.ts#L133)
 
 ## Properties
 
@@ -90,7 +90,7 @@ from field: repeated Scailo.TransactionalEmailsServiceAddAttachmentRequest attac
 
 #### Defined in
 
-[src/transactional_emails.scailo_pb.ts:122](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/transactional_emails.scailo_pb.ts#L122)
+[src/transactional_emails.scailo_pb.ts:131](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/transactional_emails.scailo_pb.ts#L131)
 
 ___
 
@@ -106,7 +106,7 @@ from field: string content = 14;
 
 #### Defined in
 
-[src/transactional_emails.scailo_pb.ts:108](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/transactional_emails.scailo_pb.ts#L108)
+[src/transactional_emails.scailo_pb.ts:117](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/transactional_emails.scailo_pb.ts#L117)
 
 ___
 
@@ -140,7 +140,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-[src/transactional_emails.scailo_pb.ts:66](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/transactional_emails.scailo_pb.ts#L66)
+[src/transactional_emails.scailo_pb.ts:66](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/transactional_emails.scailo_pb.ts#L66)
 
 ___
 
@@ -156,7 +156,7 @@ from field: repeated Scailo.TransactionalEmailsServiceAddRecipientRequest recipi
 
 #### Defined in
 
-[src/transactional_emails.scailo_pb.ts:115](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/transactional_emails.scailo_pb.ts#L115)
+[src/transactional_emails.scailo_pb.ts:124](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/transactional_emails.scailo_pb.ts#L124)
 
 ___
 
@@ -172,7 +172,7 @@ from field: string reply_to = 12;
 
 #### Defined in
 
-[src/transactional_emails.scailo_pb.ts:94](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/transactional_emails.scailo_pb.ts#L94)
+[src/transactional_emails.scailo_pb.ts:103](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/transactional_emails.scailo_pb.ts#L103)
 
 ___
 
@@ -188,7 +188,7 @@ from field: string sender_name = 10;
 
 #### Defined in
 
-[src/transactional_emails.scailo_pb.ts:80](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/transactional_emails.scailo_pb.ts#L80)
+[src/transactional_emails.scailo_pb.ts:89](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/transactional_emails.scailo_pb.ts#L89)
 
 ___
 
@@ -204,7 +204,7 @@ from field: string subject = 13;
 
 #### Defined in
 
-[src/transactional_emails.scailo_pb.ts:101](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/transactional_emails.scailo_pb.ts#L101)
+[src/transactional_emails.scailo_pb.ts:110](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/transactional_emails.scailo_pb.ts#L110)
 
 ___
 
@@ -220,7 +220,7 @@ from field: string title = 11;
 
 #### Defined in
 
-[src/transactional_emails.scailo_pb.ts:87](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/transactional_emails.scailo_pb.ts#L87)
+[src/transactional_emails.scailo_pb.ts:96](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/transactional_emails.scailo_pb.ts#L96)
 
 ___
 
@@ -228,7 +228,25 @@ ___
 
 • **userComment**: `string` = `""`
 
-Stores any comment that the user might add during this operation
+**`Optional`**
+
+**`Description`**
+
+Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+
+**`Example`**
+
+```ts
+"This is a comment for audit purposes."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
@@ -236,7 +254,7 @@ from field: string user_comment = 2;
 
 #### Defined in
 
-[src/transactional_emails.scailo_pb.ts:73](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/transactional_emails.scailo_pb.ts#L73)
+[src/transactional_emails.scailo_pb.ts:82](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/transactional_emails.scailo_pb.ts#L82)
 
 ___
 
@@ -246,7 +264,7 @@ ___
 
 #### Defined in
 
-[src/transactional_emails.scailo_pb.ts:131](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/transactional_emails.scailo_pb.ts#L131)
+[src/transactional_emails.scailo_pb.ts:140](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/transactional_emails.scailo_pb.ts#L140)
 
 ___
 
@@ -256,7 +274,7 @@ ___
 
 #### Defined in
 
-[src/transactional_emails.scailo_pb.ts:129](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/transactional_emails.scailo_pb.ts#L129)
+[src/transactional_emails.scailo_pb.ts:138](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/transactional_emails.scailo_pb.ts#L138)
 
 ___
 
@@ -266,7 +284,7 @@ ___
 
 #### Defined in
 
-[src/transactional_emails.scailo_pb.ts:130](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/transactional_emails.scailo_pb.ts#L130)
+[src/transactional_emails.scailo_pb.ts:139](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/transactional_emails.scailo_pb.ts#L139)
 
 ## Methods
 
@@ -554,7 +572,7 @@ ___
 
 #### Defined in
 
-[src/transactional_emails.scailo_pb.ts:155](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/transactional_emails.scailo_pb.ts#L155)
+[src/transactional_emails.scailo_pb.ts:164](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/transactional_emails.scailo_pb.ts#L164)
 
 ___
 
@@ -575,7 +593,7 @@ ___
 
 #### Defined in
 
-[src/transactional_emails.scailo_pb.ts:143](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/transactional_emails.scailo_pb.ts#L143)
+[src/transactional_emails.scailo_pb.ts:152](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/transactional_emails.scailo_pb.ts#L152)
 
 ___
 
@@ -596,7 +614,7 @@ ___
 
 #### Defined in
 
-[src/transactional_emails.scailo_pb.ts:147](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/transactional_emails.scailo_pb.ts#L147)
+[src/transactional_emails.scailo_pb.ts:156](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/transactional_emails.scailo_pb.ts#L156)
 
 ___
 
@@ -617,4 +635,4 @@ ___
 
 #### Defined in
 
-[src/transactional_emails.scailo_pb.ts:151](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/transactional_emails.scailo_pb.ts#L151)
+[src/transactional_emails.scailo_pb.ts:160](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/transactional_emails.scailo_pb.ts#L160)

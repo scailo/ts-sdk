@@ -2,7 +2,13 @@
 
 # Class: CurrenciesServiceCountReq
 
-Describes the base request payload of a count search
+Target filter request for counting currency records matching specific logical criteria.
+This message encapsulates lifecycle status filters, timestamp ranges, workflow markers,
+and entity references to determine the total size of a targeted dataset.
+
+**Note:** This is the primary message layout used by backend calculation engines, reporting
+services, and frontend pagination headers to evaluate total record matches dynamically
+before or alongside retrieving paginated results.
 
 **`Generated`**
 
@@ -78,13 +84,13 @@ Message\&lt;CurrenciesServiceCountReq\&gt;.constructor
 
 #### Defined in
 
-[src/currencies.scailo_pb.ts:1106](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/currencies.scailo_pb.ts#L1106)
+[src/currencies.scailo_pb.ts:1310](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/currencies.scailo_pb.ts#L1310)
 
 ## Properties
 
 ### approvedByUserId
 
-• **approvedByUserId**: `bigint` = `protoInt64.zero`
+• `Optional` **approvedByUserId**: `bigint`
 
 **`Optional`**
 
@@ -108,17 +114,17 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 approved_by_user_id = 13;
+from field: optional uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-[src/currencies.scailo_pb.ts:1074](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/currencies.scailo_pb.ts#L1074)
+[src/currencies.scailo_pb.ts:1260](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/currencies.scailo_pb.ts#L1260)
 
 ___
 
 ### approvedOnEnd
 
-• **approvedOnEnd**: `bigint` = `protoInt64.zero`
+• `Optional` **approvedOnEnd**: `bigint`
 
 **`Optional`**
 
@@ -142,17 +148,17 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 approved_on_end = 12;
+from field: optional uint64 approved_on_end = 12;
 
 #### Defined in
 
-[src/currencies.scailo_pb.ts:1058](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/currencies.scailo_pb.ts#L1058)
+[src/currencies.scailo_pb.ts:1244](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/currencies.scailo_pb.ts#L1244)
 
 ___
 
 ### approvedOnStart
 
-• **approvedOnStart**: `bigint` = `protoInt64.zero`
+• `Optional` **approvedOnStart**: `bigint`
 
 **`Optional`**
 
@@ -176,17 +182,17 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 approved_on_start = 11;
+from field: optional uint64 approved_on_start = 11;
 
 #### Defined in
 
-[src/currencies.scailo_pb.ts:1042](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/currencies.scailo_pb.ts#L1042)
+[src/currencies.scailo_pb.ts:1228](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/currencies.scailo_pb.ts#L1228)
 
 ___
 
 ### approverRoleId
 
-• **approverRoleId**: `bigint` = `protoInt64.zero`
+• `Optional` **approverRoleId**: `bigint`
 
 **`Optional`**
 
@@ -210,17 +216,17 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 approver_role_id = 14;
+from field: optional uint64 approver_role_id = 14;
 
 #### Defined in
 
-[src/currencies.scailo_pb.ts:1090](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/currencies.scailo_pb.ts#L1090)
+[src/currencies.scailo_pb.ts:1276](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/currencies.scailo_pb.ts#L1276)
 
 ___
 
 ### creationTimestampEnd
 
-• **creationTimestampEnd**: `bigint` = `protoInt64.zero`
+• `Optional` **creationTimestampEnd**: `bigint`
 
 **`Optional`**
 
@@ -244,17 +250,17 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 creation_timestamp_end = 102;
+from field: optional uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-[src/currencies.scailo_pb.ts:966](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/currencies.scailo_pb.ts#L966)
+[src/currencies.scailo_pb.ts:1152](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/currencies.scailo_pb.ts#L1152)
 
 ___
 
 ### creationTimestampStart
 
-• **creationTimestampStart**: `bigint` = `protoInt64.zero`
+• `Optional` **creationTimestampStart**: `bigint`
 
 **`Optional`**
 
@@ -278,17 +284,17 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 creation_timestamp_start = 101;
+from field: optional uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-[src/currencies.scailo_pb.ts:950](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/currencies.scailo_pb.ts#L950)
+[src/currencies.scailo_pb.ts:1136](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/currencies.scailo_pb.ts#L1136)
 
 ___
 
 ### entityUuid
 
-• **entityUuid**: `string` = `""`
+• `Optional` **entityUuid**: `string`
 
 **`Optional`**
 
@@ -312,17 +318,17 @@ If provided, must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
-from field: string entity_uuid = 8;
+from field: optional string entity_uuid = 8;
 
 #### Defined in
 
-[src/currencies.scailo_pb.ts:1014](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/currencies.scailo_pb.ts#L1014)
+[src/currencies.scailo_pb.ts:1200](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/currencies.scailo_pb.ts#L1200)
 
 ___
 
 ### isActive
 
-• **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
+• `Optional` **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md)
 
 **`Optional`**
 
@@ -338,17 +344,17 @@ ANY
 
 **`Generated`**
 
-from field: Scailo.BOOL_FILTER is_active = 1;
+from field: optional Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/currencies.scailo_pb.ts:934](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/currencies.scailo_pb.ts#L934)
+[src/currencies.scailo_pb.ts:1120](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/currencies.scailo_pb.ts#L1120)
 
 ___
 
 ### modificationTimestampEnd
 
-• **modificationTimestampEnd**: `bigint` = `protoInt64.zero`
+• `Optional` **modificationTimestampEnd**: `bigint`
 
 **`Optional`**
 
@@ -372,17 +378,17 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 modification_timestamp_end = 104;
+from field: optional uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-[src/currencies.scailo_pb.ts:998](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/currencies.scailo_pb.ts#L998)
+[src/currencies.scailo_pb.ts:1184](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/currencies.scailo_pb.ts#L1184)
 
 ___
 
 ### modificationTimestampStart
 
-• **modificationTimestampStart**: `bigint` = `protoInt64.zero`
+• `Optional` **modificationTimestampStart**: `bigint`
 
 **`Optional`**
 
@@ -406,33 +412,51 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 modification_timestamp_start = 103;
+from field: optional uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-[src/currencies.scailo_pb.ts:982](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/currencies.scailo_pb.ts#L982)
+[src/currencies.scailo_pb.ts:1168](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/currencies.scailo_pb.ts#L1168)
 
 ___
 
 ### name
 
-• **name**: `string` = `""`
+• `Optional` **name**: `string`
 
-The name of the currency
+**`Optional`**
+
+**`Description`**
+
+The official or canonical name of the currency.
+
+**`Example`**
+
+```ts
+"US Dollar"
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+Must be a non-empty string.
 
 **`Generated`**
 
-from field: string name = 20;
+from field: optional string name = 20;
 
 #### Defined in
 
-[src/currencies.scailo_pb.ts:1097](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/currencies.scailo_pb.ts#L1097)
+[src/currencies.scailo_pb.ts:1292](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/currencies.scailo_pb.ts#L1292)
 
 ___
 
 ### status
 
-• **status**: [`STANDARD_LIFECYCLE_STATUS`](../enums/STANDARD_LIFECYCLE_STATUS.md) = `STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED`
+• `Optional` **status**: [`STANDARD_LIFECYCLE_STATUS`](../enums/STANDARD_LIFECYCLE_STATUS.md)
 
 **`Optional`**
 
@@ -448,27 +472,45 @@ STANDING
 
 **`Generated`**
 
-from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-[src/currencies.scailo_pb.ts:1026](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/currencies.scailo_pb.ts#L1026)
+[src/currencies.scailo_pb.ts:1212](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/currencies.scailo_pb.ts#L1212)
 
 ___
 
 ### symbol
 
-• **symbol**: `string` = `""`
+• `Optional` **symbol**: `string`
 
-The unique symbol by which the currency is classified
+**`Optional`**
+
+**`Description`**
+
+The unique symbol, shorthand token, or ISO code by which the currency is structurally classified.
+
+**`Example`**
+
+```ts
+"USD"
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+Must be a non-empty string.
 
 **`Generated`**
 
-from field: string symbol = 21;
+from field: optional string symbol = 21;
 
 #### Defined in
 
-[src/currencies.scailo_pb.ts:1104](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/currencies.scailo_pb.ts#L1104)
+[src/currencies.scailo_pb.ts:1308](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/currencies.scailo_pb.ts#L1308)
 
 ___
 
@@ -478,7 +520,7 @@ ___
 
 #### Defined in
 
-[src/currencies.scailo_pb.ts:1113](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/currencies.scailo_pb.ts#L1113)
+[src/currencies.scailo_pb.ts:1317](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/currencies.scailo_pb.ts#L1317)
 
 ___
 
@@ -488,7 +530,7 @@ ___
 
 #### Defined in
 
-[src/currencies.scailo_pb.ts:1111](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/currencies.scailo_pb.ts#L1111)
+[src/currencies.scailo_pb.ts:1315](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/currencies.scailo_pb.ts#L1315)
 
 ___
 
@@ -498,7 +540,7 @@ ___
 
 #### Defined in
 
-[src/currencies.scailo_pb.ts:1112](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/currencies.scailo_pb.ts#L1112)
+[src/currencies.scailo_pb.ts:1316](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/currencies.scailo_pb.ts#L1316)
 
 ## Methods
 
@@ -786,7 +828,7 @@ ___
 
 #### Defined in
 
-[src/currencies.scailo_pb.ts:1141](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/currencies.scailo_pb.ts#L1141)
+[src/currencies.scailo_pb.ts:1345](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/currencies.scailo_pb.ts#L1345)
 
 ___
 
@@ -807,7 +849,7 @@ ___
 
 #### Defined in
 
-[src/currencies.scailo_pb.ts:1129](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/currencies.scailo_pb.ts#L1129)
+[src/currencies.scailo_pb.ts:1333](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/currencies.scailo_pb.ts#L1333)
 
 ___
 
@@ -828,7 +870,7 @@ ___
 
 #### Defined in
 
-[src/currencies.scailo_pb.ts:1133](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/currencies.scailo_pb.ts#L1133)
+[src/currencies.scailo_pb.ts:1337](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/currencies.scailo_pb.ts#L1337)
 
 ___
 
@@ -849,4 +891,4 @@ ___
 
 #### Defined in
 
-[src/currencies.scailo_pb.ts:1137](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/currencies.scailo_pb.ts#L1137)
+[src/currencies.scailo_pb.ts:1341](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/currencies.scailo_pb.ts#L1341)

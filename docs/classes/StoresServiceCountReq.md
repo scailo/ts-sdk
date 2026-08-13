@@ -2,7 +2,13 @@
 
 # Class: StoresServiceCountReq
 
-Describes the base request payload of a count search
+Target filter request for counting store records matching specific logical criteria.
+This message encapsulates lifecycle status filters, timestamp ranges, workflow markers,
+and entity references to determine the total size of a targeted dataset.
+
+**Note:** This is the primary message layout used by backend calculation engines, reporting
+services, and frontend pagination headers to evaluate total record matches dynamically
+before or alongside retrieving paginated results.
 
 **`Generated`**
 
@@ -79,13 +85,13 @@ Message\&lt;StoresServiceCountReq\&gt;.constructor
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:1146](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stores.scailo_pb.ts#L1146)
+[src/stores.scailo_pb.ts:1371](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stores.scailo_pb.ts#L1371)
 
 ## Properties
 
 ### approvedByUserId
 
-• **approvedByUserId**: `bigint` = `protoInt64.zero`
+• `Optional` **approvedByUserId**: `bigint`
 
 **`Optional`**
 
@@ -109,17 +115,17 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 approved_by_user_id = 13;
+from field: optional uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:1107](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stores.scailo_pb.ts#L1107)
+[src/stores.scailo_pb.ts:1305](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stores.scailo_pb.ts#L1305)
 
 ___
 
 ### approvedOnEnd
 
-• **approvedOnEnd**: `bigint` = `protoInt64.zero`
+• `Optional` **approvedOnEnd**: `bigint`
 
 **`Optional`**
 
@@ -143,17 +149,17 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 approved_on_end = 12;
+from field: optional uint64 approved_on_end = 12;
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:1091](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stores.scailo_pb.ts#L1091)
+[src/stores.scailo_pb.ts:1289](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stores.scailo_pb.ts#L1289)
 
 ___
 
 ### approvedOnStart
 
-• **approvedOnStart**: `bigint` = `protoInt64.zero`
+• `Optional` **approvedOnStart**: `bigint`
 
 **`Optional`**
 
@@ -177,17 +183,17 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 approved_on_start = 11;
+from field: optional uint64 approved_on_start = 11;
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:1075](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stores.scailo_pb.ts#L1075)
+[src/stores.scailo_pb.ts:1273](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stores.scailo_pb.ts#L1273)
 
 ___
 
 ### approverRoleId
 
-• **approverRoleId**: `bigint` = `protoInt64.zero`
+• `Optional` **approverRoleId**: `bigint`
 
 **`Optional`**
 
@@ -211,33 +217,51 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 approver_role_id = 14;
+from field: optional uint64 approver_role_id = 14;
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:1123](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stores.scailo_pb.ts#L1123)
+[src/stores.scailo_pb.ts:1321](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stores.scailo_pb.ts#L1321)
 
 ___
 
 ### code
 
-• **code**: `string` = `""`
+• `Optional` **code**: `string`
 
-The unique code by which the store is classified
+**`Optional`**
+
+**`Description`**
+
+The unique code or internal alphanumeric token used to classify the store facility for accounting, delivery, or inventory mapping.
+
+**`Example`**
+
+```ts
+"STR-DT-01"
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+Must be a non-empty string.
 
 **`Generated`**
 
-from field: string code = 21;
+from field: optional string code = 21;
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:1137](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stores.scailo_pb.ts#L1137)
+[src/stores.scailo_pb.ts:1353](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stores.scailo_pb.ts#L1353)
 
 ___
 
 ### creationTimestampEnd
 
-• **creationTimestampEnd**: `bigint` = `protoInt64.zero`
+• `Optional` **creationTimestampEnd**: `bigint`
 
 **`Optional`**
 
@@ -261,17 +285,17 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 creation_timestamp_end = 102;
+from field: optional uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:999](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stores.scailo_pb.ts#L999)
+[src/stores.scailo_pb.ts:1197](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stores.scailo_pb.ts#L1197)
 
 ___
 
 ### creationTimestampStart
 
-• **creationTimestampStart**: `bigint` = `protoInt64.zero`
+• `Optional` **creationTimestampStart**: `bigint`
 
 **`Optional`**
 
@@ -295,17 +319,17 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 creation_timestamp_start = 101;
+from field: optional uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:983](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stores.scailo_pb.ts#L983)
+[src/stores.scailo_pb.ts:1181](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stores.scailo_pb.ts#L1181)
 
 ___
 
 ### entityUuid
 
-• **entityUuid**: `string` = `""`
+• `Optional` **entityUuid**: `string`
 
 **`Optional`**
 
@@ -329,17 +353,17 @@ If provided, must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
-from field: string entity_uuid = 8;
+from field: optional string entity_uuid = 8;
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:1047](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stores.scailo_pb.ts#L1047)
+[src/stores.scailo_pb.ts:1245](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stores.scailo_pb.ts#L1245)
 
 ___
 
 ### isActive
 
-• **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
+• `Optional` **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md)
 
 **`Optional`**
 
@@ -355,33 +379,51 @@ ANY
 
 **`Generated`**
 
-from field: Scailo.BOOL_FILTER is_active = 1;
+from field: optional Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:967](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stores.scailo_pb.ts#L967)
+[src/stores.scailo_pb.ts:1165](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stores.scailo_pb.ts#L1165)
 
 ___
 
 ### locationId
 
-• **locationId**: `bigint` = `protoInt64.zero`
+• `Optional` **locationId**: `bigint`
 
-The ID of the associated location
+**`Optional`**
+
+**`Description`**
+
+The unique internal identifier of the geographic or logical location under which this store is situated.
+
+**`Example`**
+
+```ts
+1024
+```
+
+**`Regex`**
+
+^[0-9]*$
+
+**`Format`**
+
+Non-negative 64-bit integer greater than zero.
 
 **`Generated`**
 
-from field: uint64 location_id = 22;
+from field: optional uint64 location_id = 22;
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:1144](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stores.scailo_pb.ts#L1144)
+[src/stores.scailo_pb.ts:1369](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stores.scailo_pb.ts#L1369)
 
 ___
 
 ### modificationTimestampEnd
 
-• **modificationTimestampEnd**: `bigint` = `protoInt64.zero`
+• `Optional` **modificationTimestampEnd**: `bigint`
 
 **`Optional`**
 
@@ -405,17 +447,17 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 modification_timestamp_end = 104;
+from field: optional uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:1031](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stores.scailo_pb.ts#L1031)
+[src/stores.scailo_pb.ts:1229](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stores.scailo_pb.ts#L1229)
 
 ___
 
 ### modificationTimestampStart
 
-• **modificationTimestampStart**: `bigint` = `protoInt64.zero`
+• `Optional` **modificationTimestampStart**: `bigint`
 
 **`Optional`**
 
@@ -439,33 +481,51 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 modification_timestamp_start = 103;
+from field: optional uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:1015](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stores.scailo_pb.ts#L1015)
+[src/stores.scailo_pb.ts:1213](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stores.scailo_pb.ts#L1213)
 
 ___
 
 ### name
 
-• **name**: `string` = `""`
+• `Optional` **name**: `string`
 
-The name of the store
+**`Optional`**
+
+**`Description`**
+
+The official, friendly, or legal branding name of the store facility.
+
+**`Example`**
+
+```ts
+"Downtown Flagship Store"
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+Must be a non-empty string.
 
 **`Generated`**
 
-from field: string name = 20;
+from field: optional string name = 20;
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:1130](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stores.scailo_pb.ts#L1130)
+[src/stores.scailo_pb.ts:1337](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stores.scailo_pb.ts#L1337)
 
 ___
 
 ### status
 
-• **status**: [`STANDARD_LIFECYCLE_STATUS`](../enums/STANDARD_LIFECYCLE_STATUS.md) = `STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED`
+• `Optional` **status**: [`STANDARD_LIFECYCLE_STATUS`](../enums/STANDARD_LIFECYCLE_STATUS.md)
 
 **`Optional`**
 
@@ -481,11 +541,11 @@ STANDING
 
 **`Generated`**
 
-from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:1059](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stores.scailo_pb.ts#L1059)
+[src/stores.scailo_pb.ts:1257](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stores.scailo_pb.ts#L1257)
 
 ___
 
@@ -495,7 +555,7 @@ ___
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:1153](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stores.scailo_pb.ts#L1153)
+[src/stores.scailo_pb.ts:1378](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stores.scailo_pb.ts#L1378)
 
 ___
 
@@ -505,7 +565,7 @@ ___
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:1151](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stores.scailo_pb.ts#L1151)
+[src/stores.scailo_pb.ts:1376](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stores.scailo_pb.ts#L1376)
 
 ___
 
@@ -515,7 +575,7 @@ ___
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:1152](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stores.scailo_pb.ts#L1152)
+[src/stores.scailo_pb.ts:1377](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stores.scailo_pb.ts#L1377)
 
 ## Methods
 
@@ -803,7 +863,7 @@ ___
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:1182](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stores.scailo_pb.ts#L1182)
+[src/stores.scailo_pb.ts:1407](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stores.scailo_pb.ts#L1407)
 
 ___
 
@@ -824,7 +884,7 @@ ___
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:1170](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stores.scailo_pb.ts#L1170)
+[src/stores.scailo_pb.ts:1395](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stores.scailo_pb.ts#L1395)
 
 ___
 
@@ -845,7 +905,7 @@ ___
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:1174](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stores.scailo_pb.ts#L1174)
+[src/stores.scailo_pb.ts:1399](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stores.scailo_pb.ts#L1399)
 
 ___
 
@@ -866,4 +926,4 @@ ___
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:1178](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stores.scailo_pb.ts#L1178)
+[src/stores.scailo_pb.ts:1403](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stores.scailo_pb.ts#L1403)

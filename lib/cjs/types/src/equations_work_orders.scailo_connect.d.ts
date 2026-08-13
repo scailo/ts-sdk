@@ -1,6 +1,7 @@
 import { EquationsWorkOrdersItemsList, EquationsWorkOrdersList, EquationsWorkOrdersServiceCountReq, EquationsWorkOrdersServiceCreateRequest, EquationsWorkOrdersServiceFilterReq, EquationsWorkOrdersServiceItemCreateRequest, EquationsWorkOrdersServiceItemUpdateRequest, EquationsWorkOrdersServicePaginatedItemsResponse, EquationsWorkOrdersServicePaginationReq, EquationsWorkOrdersServicePaginationResponse, EquationsWorkOrdersServiceSearchAllReq, EquationsWorkOrdersServiceUpdateRequest, EquationWorkOrder, EquationWorkOrderItem, EquationWorkOrderItemHistoryRequest, EquationWorkOrderItemsSearchRequest } from "./equations_work_orders.scailo_pb.js";
 import { ActiveStatus, AmendmentLogsList, BooleanResponse, CloneRequest, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
+import { VaultFolderAttachRequest } from "./vault_folders.scailo_pb.js";
 import { MagicLink, MagicLinksServiceCreateRequestForSpecificResource } from "./magic_links.scailo_pb.js";
 /**
  *
@@ -218,7 +219,13 @@ export declare const EquationsWorkOrdersService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Reopen
+         * Reopens a finalized or closed record for further modifications.
+         *
+         * **Status Transition:** -> `REVISION`
+         *
+         * **Side Effects:**
+         * - Unlocks the record to allow edits.
+         * - Logs the required user comment into the audit trail for compliance tracking.
          *
          * @generated from rpc Scailo.EquationsWorkOrdersService.Reopen
          */
@@ -243,6 +250,26 @@ export declare const EquationsWorkOrdersService: {
             readonly kind: MethodKind.Unary;
         };
         /**
+         * Attaches a specified folder directly to a record without requiring a full revision workflow.
+         *
+         * This is a convenience API designed to bypass the traditional multi-step modification lifecycle
+         * (e.g., creating a revision, updating data, submitting for verification, and awaiting approval).
+         * It allows for the immediate, single-step association of a vault folder.
+         *
+         * **Side Effects & Lifecycle:**
+         * * The overall status of the record remains unchanged.
+         * * The record's modification timestamp is automatically updated to the current time.
+         * * An entry is appended to the record's audit log tracking this attachment.
+         *
+         * @generated from rpc Scailo.EquationsWorkOrdersService.AttachVaultFolder
+         */
+        readonly attachVaultFolder: {
+            readonly name: "AttachVaultFolder";
+            readonly I: typeof VaultFolderAttachRequest;
+            readonly O: typeof IdentifierResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
          * Generates a magic link for temporary, authenticated access to the resource.
          *
          * This enables non-system users (or users without active sessions) to view specific details.
@@ -256,7 +283,16 @@ export declare const EquationsWorkOrdersService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Amend the equation work order and send for revision
+         * Initiates a formal amendment process for a specific record, transitioning it into a structured revision workflow.
+         *
+         * This API is utilized when substantive modifications are required for an already finalized or approved record.
+         * Rather than mutating the active data directly, it explicitly triggers a compliance-driven revision cycle,
+         * ensuring that all proposed changes are tracked and undergo standard review and authorization procedures.
+         *
+         * **Side Effects & Lifecycle:**
+         * * The record's internal amendment count property is strictly incremented by 1.
+         * * The record is placed into a pending revision state, typically preserving the availability of the currently approved version until the amendment is finalized.
+         * * The optional user comment is permanently appended to the record's audit log as the formal justification for initiating the change.
          *
          * @generated from rpc Scailo.EquationsWorkOrdersService.Amend
          */
@@ -267,7 +303,12 @@ export declare const EquationsWorkOrdersService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Clone equation from an existing equation (denoted by the identifier)
+         * Initiates the creation of a new record by duplicating the structural properties of an existing record.
+         *
+         * **Side Effects:**
+         * - Provisions a new record populated with the metadata and configurations of the source record.
+         * - Does not clone operational transactions or historical logs of the source.
+         * - Appends an audit trail entry tracking the cloning operation and justification.
          *
          * @generated from rpc Scailo.EquationsWorkOrdersService.Clone
          */
@@ -565,7 +606,15 @@ export declare const EquationsWorkOrdersService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View all the amendments made
+         * Retrieves the comprehensive, chronological history of formal amendments applied to a specific record.
+         *
+         * This read-only query exposes the complete audit trail of revision workflows that the entity has undergone.
+         * It is explicitly designed to support compliance checks, historical tracking, and administrative reviews by
+         * detailing exactly how and when a record evolved over its lifecycle.
+         *
+         * **Side Effects & Lifecycle:**
+         * * This is a strictly read-only operation; the underlying record and its current lifecycle state remain entirely unchanged.
+         * * Aggregates and returns a sequential log of amendment events, which typically include revision counts, initiation timestamps, and the justification comments provided when the amendments were triggered.
          *
          * @generated from rpc Scailo.EquationsWorkOrdersService.ViewAmendments
          */
@@ -576,7 +625,14 @@ export declare const EquationsWorkOrdersService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Checks if the record is downloadable (checks if the custom download function has been implemented)
+         * Evaluates the download eligibility of a specific record using its universally unique identifier (UUID).
+         *
+         * This endpoint serves as a lightweight precursor to the actual file retrieval process. It verifies
+         * whether the target record supports file extraction by checking if a custom download function has
+         * been implemented for the underlying asset. By utilizing this check, client applications can
+         * preemptively determine file availability and dynamically adjust user interface elements
+         * (e.g., enabling or disabling a download button) without initiating a full, potentially heavy
+         * download request.
          *
          * @generated from rpc Scailo.EquationsWorkOrdersService.IsDownloadable
          */
@@ -587,7 +643,13 @@ export declare const EquationsWorkOrdersService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Download equation with the given IdentifierUUID
+         * Retrieves the underlying file or document payload associated with a specific entity
+         * using its universally unique identifier (UUID).
+         *
+         * This endpoint is designed for versatile resource retrieval and is commonly utilized
+         * to facilitate direct, secure, or public-facing downloads. By relying on an obscure
+         * UUID rather than predictable internal sequential IDs, it ensures that external
+         * download links remain unguessable and safe for broad distribution.
          *
          * @generated from rpc Scailo.EquationsWorkOrdersService.DownloadByUUID
          */

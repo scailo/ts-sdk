@@ -10,20 +10,21 @@ import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, 
 
 /**
  *
- * Stores all the possible references from which a proforma invoice can be added
+ * Enumeration of the supported source record types from which a Proforma Invoice can be generated.
+ * This determines the operational linkage and financial inheritance of the preliminary billing document.
  *
  * @generated from enum Scailo.PROFORMA_INVOICE_REF_FROM
  */
 export enum PROFORMA_INVOICE_REF_FROM {
   /**
-   * Used only in filters
+   * @description Default behavior, ignoring the source record type. Utilized primarily within search and listing APIs.
    *
    * @generated from enum value: PROFORMA_INVOICE_REF_FROM_ANY_UNSPECIFIED = 0;
    */
   PROFORMA_INVOICE_REF_FROM_ANY_UNSPECIFIED = 0,
 
   /**
-   * Denotes that the proforma invoice originated from a sales order
+   * @description Denotes that the proforma invoice was generated directly from a fulfilled or approved Sales Order.
    *
    * @generated from enum value: PROFORMA_INVOICE_REF_FROM_SALES_ORDER = 1;
    */
@@ -37,83 +38,83 @@ proto3.util.setEnumType(PROFORMA_INVOICE_REF_FROM, "Scailo.PROFORMA_INVOICE_REF_
 
 /**
  *
- * Describes the available sort keys
+ * Enumeration of fields available for sorting proforma invoice search results.
  *
  * @generated from enum Scailo.PROFORMA_INVOICE_SORT_KEY
  */
 export enum PROFORMA_INVOICE_SORT_KEY {
   /**
-   * Fetch ordered results by id
+   * @description Default sort behavior (by internal ID).
    *
    * @generated from enum value: PROFORMA_INVOICE_SORT_KEY_ID_UNSPECIFIED = 0;
    */
   PROFORMA_INVOICE_SORT_KEY_ID_UNSPECIFIED = 0,
 
   /**
-   * Fetch ordered results by the creation timestamp
+   * @description Sort by the timestamp the record was initially created.
    *
    * @generated from enum value: PROFORMA_INVOICE_SORT_KEY_CREATED_AT = 1;
    */
   PROFORMA_INVOICE_SORT_KEY_CREATED_AT = 1,
 
   /**
-   * Fetch ordered results by the modified timestamp
+   * @description Sort by the timestamp the record was last modified.
    *
    * @generated from enum value: PROFORMA_INVOICE_SORT_KEY_MODIFIED_AT = 2;
    */
   PROFORMA_INVOICE_SORT_KEY_MODIFIED_AT = 2,
 
   /**
-   * Fetch ordered results by the approved on timestamp
+   * @description Sort by the official approval timestamp.
    *
    * @generated from enum value: PROFORMA_INVOICE_SORT_KEY_APPROVED_ON = 3;
    */
   PROFORMA_INVOICE_SORT_KEY_APPROVED_ON = 3,
 
   /**
-   * Fetch ordered results by the approved by field
+   * @description Sort by the system ID of the approving user.
    *
    * @generated from enum value: PROFORMA_INVOICE_SORT_KEY_APPROVED_BY = 4;
    */
   PROFORMA_INVOICE_SORT_KEY_APPROVED_BY = 4,
 
   /**
-   * Fetch ordered results by the approver's role ID
+   * @description Sort by the security role ID used by the approver.
    *
    * @generated from enum value: PROFORMA_INVOICE_SORT_KEY_APPROVER_ROLE_ID = 5;
    */
   PROFORMA_INVOICE_SORT_KEY_APPROVER_ROLE_ID = 5,
 
   /**
-   * Fetch ordered results by the approver's completed on timestamp
+   * @description Sort by the timestamp of record completion.
    *
    * @generated from enum value: PROFORMA_INVOICE_SORT_KEY_COMPLETED_ON = 6;
    */
   PROFORMA_INVOICE_SORT_KEY_COMPLETED_ON = 6,
 
   /**
-   * Fetch ordered results by the reference ID
+   * @description Sort alphabetically by the user-provided reference ID.
    *
    * @generated from enum value: PROFORMA_INVOICE_SORT_KEY_REFERENCE_ID = 10;
    */
   PROFORMA_INVOICE_SORT_KEY_REFERENCE_ID = 10,
 
   /**
-   * Fetch ordered results by the final ref number
+   * @description Sort alphabetically by the system-generated reference number.
    *
    * @generated from enum value: PROFORMA_INVOICE_SORT_KEY_FINAL_REF_NUMBER = 11;
    */
   PROFORMA_INVOICE_SORT_KEY_FINAL_REF_NUMBER = 11,
 
   /**
-   * Fetch ordered results by the amendment count
+   * @description Sort by the total number of times the sales invoice has been amended.
    *
    * @generated from enum value: PROFORMA_INVOICE_SORT_KEY_AMENDMENT_COUNT = 18;
    */
   PROFORMA_INVOICE_SORT_KEY_AMENDMENT_COUNT = 18,
 
   /**
-   * Fetch ordered results by the total value
+   * @description Sort by the calculated grand total value of the sales invoice.
    *
    * @generated from enum value: PROFORMA_INVOICE_SORT_KEY_TOTAL_VALUE = 30;
    */
@@ -136,27 +137,29 @@ proto3.util.setEnumType(PROFORMA_INVOICE_SORT_KEY, "Scailo.PROFORMA_INVOICE_SORT
 
 /**
  *
- * Describes the available billing statuses
+ * Enumeration of the supported financial conversion statuses for a Proforma Invoice.
+ * This tracks the lifecycle progression of a preliminary billing document, identifying
+ * whether its estimated charges have been formally realized and converted into a final, legally binding Sales Invoice.
  *
  * @generated from enum Scailo.PROFORMA_INVOICE_BILLING_STATUS
  */
 export enum PROFORMA_INVOICE_BILLING_STATUS {
   /**
-   * Any billing status
+   * @description Default behavior, ignoring the billing status criteria. Utilized primarily within search and filtering payloads to return all records regardless of their conversion state.
    *
    * @generated from enum value: PROFORMA_INVOICE_BILLING_STATUS_ANY_UNSPECIFIED = 0;
    */
   PROFORMA_INVOICE_BILLING_STATUS_ANY_UNSPECIFIED = 0,
 
   /**
-   * Goods dispatch is billed
+   * @description Indicates that the proforma invoice has been formally converted into a finalized, legally binding Sales Invoice (typically after physical fulfillment is complete).
    *
    * @generated from enum value: PROFORMA_INVOICE_BILLING_STATUS_BILLED = 1;
    */
   PROFORMA_INVOICE_BILLING_STATUS_BILLED = 1,
 
   /**
-   * Goods dispatch is unbilled
+   * @description Indicates that the proforma invoice remains in a preliminary state (e.g., acting as an estimate or awaiting advance payment) and has not yet been converted into a formal Sales Invoice.
    *
    * @generated from enum value: PROFORMA_INVOICE_BILLING_STATUS_UNBILLED = 2;
    */
@@ -171,97 +174,97 @@ proto3.util.setEnumType(PROFORMA_INVOICE_BILLING_STATUS, "Scailo.PROFORMA_INVOIC
 
 /**
  *
- * Describes the available sort keys
+ * Enumeration of fields available for sorting proforma invoice item search results.
  *
  * @generated from enum Scailo.PROFORMA_INVOICE_ITEM_SORT_KEY
  */
 export enum PROFORMA_INVOICE_ITEM_SORT_KEY {
   /**
-   * Fetch invoiced results by id
+   * @description Default sort behavior (by internal item sequence ID).
    *
    * @generated from enum value: PROFORMA_INVOICE_ITEM_SORT_KEY_ID_UNSPECIFIED = 0;
    */
   PROFORMA_INVOICE_ITEM_SORT_KEY_ID_UNSPECIFIED = 0,
 
   /**
-   * Fetch invoiced results by the creation timestamp
+   * @description Sort by the timestamp the item record was initially created.
    *
    * @generated from enum value: PROFORMA_INVOICE_ITEM_SORT_KEY_CREATED_AT = 1;
    */
   PROFORMA_INVOICE_ITEM_SORT_KEY_CREATED_AT = 1,
 
   /**
-   * Fetch invoiced results by the modified timestamp
+   * @description Sort by the timestamp the item record was last modified.
    *
    * @generated from enum value: PROFORMA_INVOICE_ITEM_SORT_KEY_MODIFIED_AT = 2;
    */
   PROFORMA_INVOICE_ITEM_SORT_KEY_MODIFIED_AT = 2,
 
   /**
-   * Fetch invoiced results by the approved on timestamp
+   * @description Sort by the official approval timestamp of the item.
    *
    * @generated from enum value: PROFORMA_INVOICE_ITEM_SORT_KEY_APPROVED_ON = 3;
    */
   PROFORMA_INVOICE_ITEM_SORT_KEY_APPROVED_ON = 3,
 
   /**
-   * Fetch invoiced results by the approved by field
+   * @description Sort by the system ID of the approving user.
    *
    * @generated from enum value: PROFORMA_INVOICE_ITEM_SORT_KEY_APPROVED_BY = 4;
    */
   PROFORMA_INVOICE_ITEM_SORT_KEY_APPROVED_BY = 4,
 
   /**
-   * Fetch invoiced results by the approver's role ID
+   * @description Sort by the security role ID used by the approver.
    *
    * @generated from enum value: PROFORMA_INVOICE_ITEM_SORT_KEY_APPROVER_ROLE_ID = 5;
    */
   PROFORMA_INVOICE_ITEM_SORT_KEY_APPROVER_ROLE_ID = 5,
 
   /**
-   * Fetch invoiced results by the family ID
+   * @description Sort by the internal ID of the family.
    *
    * @generated from enum value: PROFORMA_INVOICE_ITEM_SORT_KEY_FAMILY_ID = 10;
    */
   PROFORMA_INVOICE_ITEM_SORT_KEY_FAMILY_ID = 10,
 
   /**
-   * Fetch invoiced results by the internal quantity
+   * @description Sort by the invoiced quantity evaluated in the internal unit of measure.
    *
    * @generated from enum value: PROFORMA_INVOICE_ITEM_SORT_KEY_INTERNAL_QUANTITY = 11;
    */
   PROFORMA_INVOICE_ITEM_SORT_KEY_INTERNAL_QUANTITY = 11,
 
   /**
-   * Fetch invoiced results by the client unit of material ID
+   * @description Sort by the internal ID of the client's requested unit of measure.
    *
    * @generated from enum value: PROFORMA_INVOICE_ITEM_SORT_KEY_CLIENT_UOM_ID = 12;
    */
   PROFORMA_INVOICE_ITEM_SORT_KEY_CLIENT_UOM_ID = 12,
 
   /**
-   * Fetch invoiced results by the client quantity
+   * @description Sort by the invoiced quantity evaluated in the client's unit of measure.
    *
    * @generated from enum value: PROFORMA_INVOICE_ITEM_SORT_KEY_CLIENT_QUANTITY = 13;
    */
   PROFORMA_INVOICE_ITEM_SORT_KEY_CLIENT_QUANTITY = 13,
 
   /**
-   * Fetch invoiced results by the client family code
+   * @description Sort alphabetically by the client's specific family code or SKU.
    *
    * @generated from enum value: PROFORMA_INVOICE_ITEM_SORT_KEY_CLIENT_FAMILY_CODE = 14;
    */
   PROFORMA_INVOICE_ITEM_SORT_KEY_CLIENT_FAMILY_CODE = 14,
 
   /**
-   * Fetch invoiced results by the unit price
+   * @description Sort by the invoiced base unit price.
    *
    * @generated from enum value: PROFORMA_INVOICE_ITEM_SORT_KEY_UNIT_PRICE = 15;
    */
   PROFORMA_INVOICE_ITEM_SORT_KEY_UNIT_PRICE = 15,
 
   /**
-   * Fetch invoiced results by the tax group ID
+   * @description Sort by the internal ID of the assigned tax group.
    *
    * @generated from enum value: PROFORMA_INVOICE_ITEM_SORT_KEY_TAX_GROUP_ID = 16;
    */
@@ -286,27 +289,27 @@ proto3.util.setEnumType(PROFORMA_INVOICE_ITEM_SORT_KEY, "Scailo.PROFORMA_INVOICE
 
 /**
  *
- * Describes the applicable statuses of proforma invoice items
+ * Enum defining the applicable lifecycle and verification statuses for proforma invoice items.
  *
  * @generated from enum Scailo.PROFORMA_INVOICE_ITEM_STATUS
  */
 export enum PROFORMA_INVOICE_ITEM_STATUS {
   /**
-   * Denotes that status be disregarded. This is used only within search APIs
+   * @description Denotes that the status filter should be disregarded. Used exclusively within search APIs to bypass status restrictions.
    *
    * @generated from enum value: PROFORMA_INVOICE_ITEM_STATUS_ANY_UNSPECIFIED = 0;
    */
   PROFORMA_INVOICE_ITEM_STATUS_ANY_UNSPECIFIED = 0,
 
   /**
-   * Denotes that the proforma invoice items must have been approved
+   * @description Denotes that the proforma invoice item association has passed verification and is actively approved.
    *
    * @generated from enum value: PROFORMA_INVOICE_ITEM_STATUS_APPROVED = 1;
    */
   PROFORMA_INVOICE_ITEM_STATUS_APPROVED = 1,
 
   /**
-   * Denotes that the proforma invoice items must be waiting for approval
+   * @description Denotes that the proforma invoice item association is pending review and waiting for administrative approval.
    *
    * @generated from enum value: PROFORMA_INVOICE_ITEM_STATUS_UNAPPROVED = 2;
    */
@@ -321,7 +324,11 @@ proto3.util.setEnumType(PROFORMA_INVOICE_ITEM_STATUS, "Scailo.PROFORMA_INVOICE_I
 
 /**
  *
- * Describes the parameters necessary to create a record
+ * Request message for defining and creating a new Proforma Invoice within the system.
+ * This record serves as a preliminary bill of sale or estimated invoice sent to a buyer in advance
+ * of a shipment or final delivery. It encapsulates the anticipated financial demands for goods or services
+ * (based on a source document like a Sales Order) and is frequently used to secure advance payments,
+ * facilitate customs declarations, or secure internal purchasing approvals on the buyer's end.
  *
  * @generated from message Scailo.ProformaInvoicesServiceCreateRequest
  */
@@ -338,16 +345,25 @@ export class ProformaInvoicesServiceCreateRequest extends Message<ProformaInvoic
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 1;
+   * @generated from field: optional string entity_uuid = 1;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 2;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 2;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
    *
@@ -361,9 +377,9 @@ export class ProformaInvoicesServiceCreateRequest extends Message<ProformaInvoic
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 vault_folder_id = 9;
+   * @generated from field: optional uint64 vault_folder_id = 9;
    */
-  vaultFolderId = protoInt64.zero;
+  vaultFolderId?: bigint;
 
   /**
    *
@@ -382,70 +398,158 @@ export class ProformaInvoicesServiceCreateRequest extends Message<ProformaInvoic
   referenceId = "";
 
   /**
-   * The associated reference
+   *
+   * @mandatory
+   *
+   * @description The specific module or record type from which this preliminary invoice originates (e.g., Sales Order).
+   *
+   * @example "PROFORMA_INVOICE_REF_FROM_SALES_ORDER"
+   *
+   * @regex ^[A-Z_]+$
+   *
+   * @format Valid PROFORMA_INVOICE_REF_FROM enum value.
    *
    * @generated from field: Scailo.PROFORMA_INVOICE_REF_FROM ref_from = 12;
    */
   refFrom = PROFORMA_INVOICE_REF_FROM.PROFORMA_INVOICE_REF_FROM_ANY_UNSPECIFIED;
 
   /**
-   * The associated ID of the reference
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the specific referenced source document (e.g., the ID of the actual Sales Order being estimated).
+   *
+   * @example 1024
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 ref_id = 13;
    */
   refId = protoInt64.zero;
 
   /**
-   * The associated ID of the currency
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the currency used for all financial estimations within this proforma invoice.
+   *
+   * @example 3
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 currency_id = 14;
    */
   currencyId = protoInt64.zero;
 
   /**
-   * The associated ID of the bank account
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the organization's bank account designated to receive advance payments based on this proforma invoice.
+   *
+   * @example 15
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 bank_account_id = 15;
    */
   bankAccountId = protoInt64.zero;
 
   /**
-   * Any miscellaneous cost
    *
-   * @generated from field: uint64 miscellaneous_cost = 16;
+   * @optional
+   *
+   * @description Any estimated additional miscellaneous costs (e.g., anticipated freight charges) applied to the proforma invoice, represented in the base currency subunit (e.g., cents).
+   *
+   * @example 1500
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer. Defaults to 0.
+   *
+   * @generated from field: optional uint64 miscellaneous_cost = 16;
    */
-  miscellaneousCost = protoInt64.zero;
+  miscellaneousCost?: bigint;
 
   /**
-   * The optional discount amount
    *
-   * @generated from field: uint64 overall_discount = 17;
+   * @optional
+   *
+   * @description A flat estimated discount amount applied across the entire proforma invoice total, represented in the base currency subunit (e.g., cents).
+   *
+   * @example 500
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer. Defaults to 0.
+   *
+   * @generated from field: optional uint64 overall_discount = 17;
    */
-  overallDiscount = protoInt64.zero;
+  overallDiscount?: bigint;
 
   /**
-   * The applicable round off amount (optional, and can be positive or negative)
    *
-   * @generated from field: int64 round_off = 18;
+   * @optional
+   *
+   * @description The estimated rounding adjustment amount to align the anticipated final invoice total. Can be positive or negative, represented in the base currency subunit.
+   *
+   * @example -15
+   *
+   * @regex ^-?[0-9]+$
+   *
+   * @format Signed 64-bit integer. Defaults to 0.
+   *
+   * @generated from field: optional int64 round_off = 18;
    */
-  roundOff = protoInt64.zero;
+  roundOff?: bigint;
 
   /**
-   * The excess tax group
    *
-   * @generated from field: uint64 cumulative_excess_tax_group_id = 19;
+   * @optional
+   *
+   * @description The unique internal identifier of an excess tax group anticipated at the cumulative/invoice level (e.g., for specialized regional surcharges).
+   *
+   * @example 6
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer. Defaults to 0.
+   *
+   * @generated from field: optional uint64 cumulative_excess_tax_group_id = 19;
    */
-  cumulativeExcessTaxGroupId = protoInt64.zero;
+  cumulativeExcessTaxGroupId?: bigint;
 
   /**
-   * The excess tax amount
    *
-   * @generated from field: uint64 cumulative_excess_tax_amount = 20;
+   * @optional
+   *
+   * @description The anticipated monetary amount of the cumulative excess tax applied to the proforma invoice, represented in the base currency subunit.
+   *
+   * @example 1250
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer. Defaults to 0.
+   *
+   * @generated from field: optional uint64 cumulative_excess_tax_amount = 20;
    */
-  cumulativeExcessTaxAmount = protoInt64.zero;
+  cumulativeExcessTaxAmount?: bigint;
 
   /**
-   * The list of dynamic forms
+   *
+   * @optional
+   *
+   * @description A collection of dynamic form fields for organization-specific data.
+   *
+   * @example []
+   *
+   * @format An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
    *
    * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
    */
@@ -459,19 +563,19 @@ export class ProformaInvoicesServiceCreateRequest extends Message<ProformaInvoic
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.ProformaInvoicesServiceCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
     { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 12, name: "ref_from", kind: "enum", T: proto3.getEnumType(PROFORMA_INVOICE_REF_FROM) },
     { no: 13, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 14, name: "currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 15, name: "bank_account_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 16, name: "miscellaneous_cost", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 17, name: "overall_discount", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 18, name: "round_off", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 19, name: "cumulative_excess_tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 20, name: "cumulative_excess_tax_amount", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 16, name: "miscellaneous_cost", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 17, name: "overall_discount", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 18, name: "round_off", kind: "scalar", T: 3 /* ScalarType.INT64 */, opt: true },
+    { no: 19, name: "cumulative_excess_tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 20, name: "cumulative_excess_tax_amount", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
     { no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
 
@@ -494,20 +598,44 @@ export class ProformaInvoicesServiceCreateRequest extends Message<ProformaInvoic
 
 /**
  *
- * Describes the parameters necessary to update a record
+ * Request message for updating an existing Proforma Invoice record.
+ * Only applicable for records in `DRAFT` or `REVISION` states.
+ * This message allows for modifying the references, consignee & buyer, currency, project linkage, costs & discounts, payment terms, and other custom form fields
+ * of an established Proforma Invoice.
+ *
+ * **Note:** Only fields provided in the request will typically be updated.
+ * The unique system ID is required to locate the target record.
  *
  * @generated from message Scailo.ProformaInvoicesServiceUpdateRequest
  */
 export class ProformaInvoicesServiceUpdateRequest extends Message<ProformaInvoicesServiceUpdateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * The ID of the record that needs to be updated
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target record that needs to be updated.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 id = 2;
    */
@@ -521,9 +649,9 @@ export class ProformaInvoicesServiceUpdateRequest extends Message<ProformaInvoic
    *
    * @example true
    *
-   * @generated from field: bool notify_users = 3;
+   * @generated from field: optional bool notify_users = 3;
    */
-  notifyUsers = false;
+  notifyUsers?: boolean;
 
   /**
    *
@@ -537,13 +665,13 @@ export class ProformaInvoicesServiceUpdateRequest extends Message<ProformaInvoic
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 vault_folder_id = 9;
+   * @generated from field: optional uint64 vault_folder_id = 9;
    */
-  vaultFolderId = protoInt64.zero;
+  vaultFolderId?: bigint;
 
   /**
    *
-   * @mandatory
+   * @optional
    *
    * @description Updated alphanumeric reference ID. Must contain at least 1 character.
    *
@@ -553,61 +681,131 @@ export class ProformaInvoicesServiceUpdateRequest extends Message<ProformaInvoic
    *
    * @format Alphanumeric characters and spaces only. No special symbols or punctuation allowed.
    *
-   * @generated from field: string reference_id = 10;
+   * @generated from field: optional string reference_id = 10;
    */
-  referenceId = "";
+  referenceId?: string;
 
   /**
-   * The associated ID of the currency
    *
-   * @generated from field: uint64 currency_id = 14;
-   */
-  currencyId = protoInt64.zero;
-
-  /**
-   * The associated ID of the bank account
+   * @optional
    *
-   * @generated from field: uint64 bank_account_id = 15;
-   */
-  bankAccountId = protoInt64.zero;
-
-  /**
-   * Any miscellaneous cost
+   * @description The unique internal identifier of the currency used for all financial estimations within this proforma invoice.
    *
-   * @generated from field: uint64 miscellaneous_cost = 16;
-   */
-  miscellaneousCost = protoInt64.zero;
-
-  /**
-   * The optional discount amount
+   * @example 3
    *
-   * @generated from field: uint64 overall_discount = 17;
-   */
-  overallDiscount = protoInt64.zero;
-
-  /**
-   * The applicable round off amount (optional, and can be positive or negative)
+   * @regex ^[1-9][0-9]*$
    *
-   * @generated from field: int64 round_off = 18;
-   */
-  roundOff = protoInt64.zero;
-
-  /**
-   * The excess tax group
+   * @format Unsigned 64-bit integer greater than 0.
    *
-   * @generated from field: uint64 cumulative_excess_tax_group_id = 19;
+   * @generated from field: optional uint64 currency_id = 14;
    */
-  cumulativeExcessTaxGroupId = protoInt64.zero;
+  currencyId?: bigint;
 
   /**
-   * The excess tax amount
    *
-   * @generated from field: uint64 cumulative_excess_tax_amount = 20;
+   * @optional
+   *
+   * @description The unique internal identifier of the organization's bank account designated to receive advance payments based on this proforma invoice.
+   *
+   * @example 15
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: optional uint64 bank_account_id = 15;
    */
-  cumulativeExcessTaxAmount = protoInt64.zero;
+  bankAccountId?: bigint;
 
   /**
-   * The list of dynamic forms
+   *
+   * @optional
+   *
+   * @description Any estimated additional miscellaneous costs (e.g., anticipated freight charges) applied to the proforma invoice, represented in the base currency subunit (e.g., cents).
+   *
+   * @example 1500
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer. Defaults to 0.
+   *
+   * @generated from field: optional uint64 miscellaneous_cost = 16;
+   */
+  miscellaneousCost?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description A flat estimated discount amount applied across the entire proforma invoice total, represented in the base currency subunit (e.g., cents).
+   *
+   * @example 500
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer. Defaults to 0.
+   *
+   * @generated from field: optional uint64 overall_discount = 17;
+   */
+  overallDiscount?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description The estimated rounding adjustment amount to align the anticipated final invoice total. Can be positive or negative, represented in the base currency subunit.
+   *
+   * @example -15
+   *
+   * @regex ^-?[0-9]+$
+   *
+   * @format Signed 64-bit integer. Defaults to 0.
+   *
+   * @generated from field: optional int64 round_off = 18;
+   */
+  roundOff?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description The unique internal identifier of an excess tax group anticipated at the cumulative/invoice level (e.g., for specialized regional surcharges).
+   *
+   * @example 6
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer. Defaults to 0.
+   *
+   * @generated from field: optional uint64 cumulative_excess_tax_group_id = 19;
+   */
+  cumulativeExcessTaxGroupId?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description The anticipated monetary amount of the cumulative excess tax applied to the proforma invoice, represented in the base currency subunit.
+   *
+   * @example 1250
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer. Defaults to 0.
+   *
+   * @generated from field: optional uint64 cumulative_excess_tax_amount = 20;
+   */
+  cumulativeExcessTaxAmount?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description A collection of dynamic form fields for organization-specific data.
+   *
+   * @example []
+   *
+   * @format An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
    *
    * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
    */
@@ -621,18 +819,18 @@ export class ProformaInvoicesServiceUpdateRequest extends Message<ProformaInvoic
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.ProformaInvoicesServiceUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 2, name: "id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
-    { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 14, name: "currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 15, name: "bank_account_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 16, name: "miscellaneous_cost", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 17, name: "overall_discount", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 18, name: "round_off", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 19, name: "cumulative_excess_tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 20, name: "cumulative_excess_tax_amount", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 14, name: "currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 15, name: "bank_account_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 16, name: "miscellaneous_cost", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 17, name: "overall_discount", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 18, name: "round_off", kind: "scalar", T: 3 /* ScalarType.INT64 */, opt: true },
+    { no: 19, name: "cumulative_excess_tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 20, name: "cumulative_excess_tax_amount", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
     { no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
 
@@ -655,31 +853,63 @@ export class ProformaInvoicesServiceUpdateRequest extends Message<ProformaInvoic
 
 /**
  *
- * Describes the parameters necessary to perform an autofill request
+ * Request message for triggering an autofill operation on an existing Proforma Invoice.
+ * This operation automatically populates the invoice with relevant line items (and optionally services)
+ * by pulling them directly from the associated source document (e.g., the parent Sales Order).
+ *
+ * **Note:** The invoice must already be created and explicitly linked to a source reference
+ * before this operation can be invoked.
  *
  * @generated from message Scailo.ProformaInvoicesServiceAutofillRequest
  */
 export class ProformaInvoicesServiceAutofillRequest extends Message<ProformaInvoicesServiceAutofillRequest> {
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * The UUID of the record that needs to be updated
+   *
+   * @mandatory
+   *
+   * @description The globally unique identifier (UUID) of the target proforma invoice that needs to be autofilled.
+   *
+   * @example "550e8400-e29b-41d4-a716-446655440000"
+   *
+   * @regex ^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+   *
+   * @format Must be a valid v4 UUID in canonical hyphenated form.
    *
    * @generated from field: string uuid = 2;
    */
   uuid = "";
 
   /**
-   * Stores if services should also be autofilled
    *
-   * @generated from field: bool include_services = 10;
+   * @optional
+   *
+   * @description A boolean flag indicating whether service-type line items should also be pulled from the source document during the autofill operation (in addition to standard physical inventory goods).
+   *
+   * @example true
+   *
+   * @regex ^(?:true|false)$
+   *
+   * @format Boolean true or false.
+   *
+   * @generated from field: optional bool include_services = 10;
    */
-  includeServices = false;
+  includeServices?: boolean;
 
   constructor(data?: PartialMessage<ProformaInvoicesServiceAutofillRequest>) {
     super();
@@ -689,9 +919,9 @@ export class ProformaInvoicesServiceAutofillRequest extends Message<ProformaInvo
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.ProformaInvoicesServiceAutofillRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 2, name: "uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "include_services", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 10, name: "include_services", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProformaInvoicesServiceAutofillRequest {
@@ -713,20 +943,40 @@ export class ProformaInvoicesServiceAutofillRequest extends Message<ProformaInvo
 
 /**
  *
- * Stores the UUID references of the record
+ * Represents a read-only container for universally unique identifiers (UUIDs) of related external entities.
+ * This message securely exposes the downstream linkages (like the source order or currency) to external
+ * clients or frontend interfaces without revealing internal sequential IDs.
  *
  * @generated from message Scailo.ProformaInvoiceAncillaryParameters
  */
 export class ProformaInvoiceAncillaryParameters extends Message<ProformaInvoiceAncillaryParameters> {
   /**
-   * The UUID of the ref_id (the UUID of the associated ref_id)
+   *
+   * @mandatory
+   *
+   * @description The globally unique identifier (UUID) of the associated source document (e.g., the parent Sales Order).
+   *
+   * @example "661f9511-f39c-42d5-b827-557766551111"
+   *
+   * @regex ^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+   *
+   * @format Valid v4 UUID in canonical hyphenated form.
    *
    * @generated from field: string ref_uuid = 213;
    */
   refUuid = "";
 
   /**
-   * The UUID of the currency (the UUID of the associated currency)
+   *
+   * @mandatory
+   *
+   * @description The globally unique identifier (UUID) of the currency used for financial calculations within this invoice.
+   *
+   * @example "772a8422-e18b-42d4-a815-446655442222"
+   *
+   * @regex ^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+   *
+   * @format Valid v4 UUID in canonical hyphenated form.
    *
    * @generated from field: string currency_uuid = 214;
    */
@@ -763,7 +1013,17 @@ export class ProformaInvoiceAncillaryParameters extends Message<ProformaInvoiceA
 
 /**
  *
- * Describes the parameters that are part of a standard response
+ * Represents a complete, finalized Proforma Invoice entity within the system.
+ * This message encapsulates the comprehensive state of a preliminary billing document
+ * issued to a buyer prior to physical fulfillment or final delivery. It includes the
+ * document's identity metadata, operational linkages to a source record (e.g., Sales Order),
+ * designated bank accounts for advance payments, financial estimations (taxes, discounts, and round-offs),
+ * approval lifecycle, audit history, and the complete collection of estimated line items.
+ *
+ * **Note:** This payload is typically utilized in read operations (e.g., View, Search)
+ * and provides frontend clients, financial dashboards, and external systems with the
+ * entire context needed to render the proforma document for customs declarations,
+ * secure advance payments, or facilitate internal purchasing approvals on the buyer's end.
  *
  * @generated from message Scailo.ProformaInvoice
  */
@@ -851,91 +1111,132 @@ export class ProformaInvoice extends Message<ProformaInvoice> {
   finalRefNumber = "";
 
   /**
-   * The associated reference
+   *
+   * @description The specific module or record type from which this preliminary invoice originates (e.g., Sales Order).
+   *
+   * @example "PROFORMA_INVOICE_REF_FROM_SALES_ORDER"
    *
    * @generated from field: Scailo.PROFORMA_INVOICE_REF_FROM ref_from = 12;
    */
   refFrom = PROFORMA_INVOICE_REF_FROM.PROFORMA_INVOICE_REF_FROM_ANY_UNSPECIFIED;
 
   /**
-   * The associated ID of the reference
+   *
+   * @description The unique internal identifier of the specific referenced source document (e.g., the ID of the actual Sales Order being estimated).
+   *
+   * @example 1024
    *
    * @generated from field: uint64 ref_id = 13;
    */
   refId = protoInt64.zero;
 
   /**
-   * The associated ID of the currency
+   *
+   * @description The unique internal identifier of the currency used for all financial estimations within this proforma invoice.
+   *
+   * @example 3
    *
    * @generated from field: uint64 currency_id = 14;
    */
   currencyId = protoInt64.zero;
 
   /**
-   * The associated ID of the bank account
+   *
+   * @description The unique internal identifier of the organization's bank account designated to receive advance payments based on this proforma invoice.
+   *
+   * @example 15
    *
    * @generated from field: uint64 bank_account_id = 15;
    */
   bankAccountId = protoInt64.zero;
 
   /**
-   * Any miscellaneous cost
+   *
+   * @description Any estimated additional miscellaneous costs (e.g., anticipated freight charges) applied to the proforma invoice, represented in the base currency subunit (e.g., cents).
+   *
+   * @example 1500
    *
    * @generated from field: uint64 miscellaneous_cost = 16;
    */
   miscellaneousCost = protoInt64.zero;
 
   /**
-   * The optional discount amount
+   *
+   * @description A flat estimated discount amount applied across the entire proforma invoice total, represented in the base currency subunit (e.g., cents).
+   *
+   * @example 500
    *
    * @generated from field: uint64 overall_discount = 17;
    */
   overallDiscount = protoInt64.zero;
 
   /**
-   * The applicable round off amount (optional, and can be positive or negative)
+   *
+   * @description The estimated rounding adjustment amount to align the anticipated final invoice total. Can be positive or negative, represented in the base currency subunit.
+   *
+   * @example -15
    *
    * @generated from field: int64 round_off = 18;
    */
   roundOff = protoInt64.zero;
 
   /**
-   * The excess tax group
+   *
+   * @description The unique internal identifier of an excess tax group anticipated at the cumulative/invoice level (e.g., for specialized regional surcharges).
+   *
+   * @example 6
    *
    * @generated from field: uint64 cumulative_excess_tax_group_id = 19;
    */
   cumulativeExcessTaxGroupId = protoInt64.zero;
 
   /**
-   * The excess tax amount
+   *
+   * @description The anticipated monetary amount of the cumulative excess tax applied to the proforma invoice, represented in the base currency subunit.
+   *
+   * @example 1250
    *
    * @generated from field: uint64 cumulative_excess_tax_amount = 20;
    */
   cumulativeExcessTaxAmount = protoInt64.zero;
 
   /**
-   * Stores the total value of the proforma invoice (as a double, which requires no adjustments)
+   *
+   * @description The calculated grand total value of the proforma invoice, including all items, discounts, costs, and round-offs. Represented as a standard decimal value.
+   *
+   * @example 15250.75
+   *
+   * @format Double-precision floating-point number.
    *
    * @generated from field: double total_value = 21;
    */
   totalValue = 0;
 
   /**
-   * The number of times that the proforma invoice has been amended
+   *
+   * @description The number of times that this record has been amended after approval.
+   *
+   * @example 5
    *
    * @generated from field: uint64 amendment_count = 22;
    */
   amendmentCount = protoInt64.zero;
 
   /**
-   * The list of associated proforma invoice items
+   *
+   * @description The complete, aggregated list of individual line items, products, or services that constitute this proforma invoice.
+   *
+   * @example []
+   *
+   * @format Repeated array of ProformaInvoiceItem message blocks.
    *
    * @generated from field: repeated Scailo.ProformaInvoiceItem list = 30;
    */
   list: ProformaInvoiceItem[] = [];
 
   /**
-   * The list of dynamic forms
+   *
+   * @description Collection of organization-specific dynamic data.
    *
    * @generated from field: repeated Scailo.FormFieldDatum form_data = 40;
    */
@@ -992,87 +1293,189 @@ export class ProformaInvoice extends Message<ProformaInvoice> {
 
 /**
  *
- * Describes the parameters required to add an item to a proforma invoice
+ * Request message for appending a preliminary line item to an existing Proforma Invoice.
+ * This payload defines the specific family, estimated quantities mapped between internal
+ * and client-specific units of measure, and the anticipated commercial terms (price, tax, round-offs)
+ * presented to the buyer in advance of actual fulfillment or final billing.
  *
  * @generated from message Scailo.ProformaInvoicesServiceItemCreateRequest
  */
 export class ProformaInvoicesServiceItemCreateRequest extends Message<ProformaInvoicesServiceItemCreateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * Stores the proforma invoice ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the parent proforma invoice to which this preliminary item will be attached.
+   *
+   * @example 1024
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 proforma_invoice_id = 10;
    */
   proformaInvoiceId = protoInt64.zero;
 
   /**
-   * Stores the family ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the family or catalog item being estimated in this proforma invoice.
+   *
+   * @example 505
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 family_id = 11;
    */
   familyId = protoInt64.zero;
 
   /**
-   * The quantity (in cents) being supplied in internal unit of material
+   *
+   * @mandatory
+   *
+   * @description The estimated quantity represented in the system's internal base unit of measure. Stored in subunits (cents) to maintain fractional precision.
+   *
+   * @example 10000
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 internal_quantity = 12;
    */
   internalQuantity = protoInt64.zero;
 
   /**
-   * Stores the ID of the client's unit of material
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the Unit of Measure (UOM) requested by the client for this estimated item.
+   *
+   * @example 12
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 client_uom_id = 13;
    */
   clientUomId = protoInt64.zero;
 
   /**
-   * Stores the quantity (in cents) being admitted in client's unit of material
+   *
+   * @mandatory
+   *
+   * @description The estimated quantity represented in the client's specific unit of measure. Stored in subunits (cents) to maintain fractional precision.
+   *
+   * @example 5000
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 client_quantity = 14;
    */
   clientQuantity = protoInt64.zero;
 
   /**
-   * The family code as represented by the client
    *
-   * @generated from field: string client_family_code = 15;
+   * @optional
+   *
+   * @description The client's specific alphanumeric part number, SKU, or family code used for their internal referencing of this item.
+   *
+   * @example "CLI-SKU-992"
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string client_family_code = 15;
    */
-  clientFamilyCode = "";
+  clientFamilyCode?: string;
 
   /**
-   * The unit price of the item (as supplied to the client)
+   *
+   * @mandatory
+   *
+   * @description The estimated price per unit for this item, represented in the base currency subunit (e.g., cents).
+   *
+   * @example 2500
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 unit_price = 16;
    */
   unitPrice = protoInt64.zero;
 
   /**
-   * The ID of the associated tax group
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the tax group or tax bracket anticipated for this specific line item.
+   *
+   * @example 4
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 tax_group_id = 17;
    */
   taxGroupId = protoInt64.zero;
 
   /**
-   * The applicable round off amount (optional, and can be positive or negative)
    *
-   * @generated from field: int64 round_off = 18;
+   * @optional
+   *
+   * @description The applicable rounding adjustment amount for this specific item's estimated financial total. Can be positive or negative, represented in the base currency subunit.
+   *
+   * @example -15
+   *
+   * @regex ^-?[0-9]+$
+   *
+   * @format Signed 64-bit integer.
+   *
+   * @generated from field: optional int64 round_off = 18;
    */
-  roundOff = protoInt64.zero;
+  roundOff?: bigint;
 
   /**
-   * Optional specifications
    *
-   * @generated from field: string specifications = 19;
+   * @optional
+   *
+   * @description Additional custom textual requirements, notes, or specifications associated with this preliminary item.
+   *
+   * @example "Estimated based on current freight rates."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string specifications = 19;
    */
-  specifications = "";
+  specifications?: string;
 
   constructor(data?: PartialMessage<ProformaInvoicesServiceItemCreateRequest>) {
     super();
@@ -1082,17 +1485,17 @@ export class ProformaInvoicesServiceItemCreateRequest extends Message<ProformaIn
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.ProformaInvoicesServiceItemCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 10, name: "proforma_invoice_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 11, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 12, name: "internal_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 13, name: "client_uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 14, name: "client_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 15, name: "client_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 15, name: "client_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 16, name: "unit_price", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 17, name: "tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 18, name: "round_off", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 19, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 18, name: "round_off", kind: "scalar", T: 3 /* ScalarType.INT64 */, opt: true },
+    { no: 19, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProformaInvoicesServiceItemCreateRequest {
@@ -1114,73 +1517,156 @@ export class ProformaInvoicesServiceItemCreateRequest extends Message<ProformaIn
 
 /**
  *
- * Describes the parameters required to add an individual item as part of multiple item addition to a proforma invoice
+ * Represents a single line item payload within a bulk creation request.
+ * Contains the exact same transactional parameters as a standard item creation request,
+ * omitting the parent invoice ID which is declared once at the batch level.
  *
  * @generated from message Scailo.ProformaInvoicesServiceMultipleItemsSingleton
  */
 export class ProformaInvoicesServiceMultipleItemsSingleton extends Message<ProformaInvoicesServiceMultipleItemsSingleton> {
   /**
-   * Stores the family ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the family or catalog item being estimated in this proforma invoice.
+   *
+   * @example 505
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 family_id = 11;
    */
   familyId = protoInt64.zero;
 
   /**
-   * The quantity (in cents) being supplied in internal unit of material
+   *
+   * @mandatory
+   *
+   * @description The estimated quantity represented in the system's internal base unit of measure. Stored in subunits (cents) to maintain fractional precision.
+   *
+   * @example 10000
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 internal_quantity = 12;
    */
   internalQuantity = protoInt64.zero;
 
   /**
-   * Stores the ID of the client's unit of material
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the Unit of Measure (UOM) requested by the client for this estimated item.
+   *
+   * @example 12
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 client_uom_id = 13;
    */
   clientUomId = protoInt64.zero;
 
   /**
-   * Stores the quantity (in cents) being admitted in client's unit of material
+   *
+   * @mandatory
+   *
+   * @description The estimated quantity represented in the client's specific unit of measure. Stored in subunits (cents) to maintain fractional precision.
+   *
+   * @example 5000
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 client_quantity = 14;
    */
   clientQuantity = protoInt64.zero;
 
   /**
-   * The family code as represented by the client
    *
-   * @generated from field: string client_family_code = 15;
+   * @optional
+   *
+   * @description The client's specific alphanumeric part number, SKU, or family code used for their internal referencing of this item.
+   *
+   * @example "CLI-SKU-992"
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string client_family_code = 15;
    */
-  clientFamilyCode = "";
+  clientFamilyCode?: string;
 
   /**
-   * The unit price of the item (as supplied to the client)
+   *
+   * @mandatory
+   *
+   * @description The estimated price per unit for this item, represented in the base currency subunit (e.g., cents).
+   *
+   * @example 2500
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 unit_price = 16;
    */
   unitPrice = protoInt64.zero;
 
   /**
-   * The ID of the associated tax group
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the tax group or tax bracket anticipated for this specific line item.
+   *
+   * @example 4
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 tax_group_id = 17;
    */
   taxGroupId = protoInt64.zero;
 
   /**
-   * The applicable round off amount (optional, and can be positive or negative)
    *
-   * @generated from field: int64 round_off = 18;
+   * @optional
+   *
+   * @description The applicable rounding adjustment amount for this specific item's estimated financial total. Can be positive or negative, represented in the base currency subunit.
+   *
+   * @example -15
+   *
+   * @regex ^-?[0-9]+$
+   *
+   * @format Signed 64-bit integer.
+   *
+   * @generated from field: optional int64 round_off = 18;
    */
-  roundOff = protoInt64.zero;
+  roundOff?: bigint;
 
   /**
-   * Optional specifications
    *
-   * @generated from field: string specifications = 19;
+   * @optional
+   *
+   * @description Additional custom textual requirements, notes, or specifications associated with this preliminary item.
+   *
+   * @example "Estimated based on current freight rates."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string specifications = 19;
    */
-  specifications = "";
+  specifications?: string;
 
   constructor(data?: PartialMessage<ProformaInvoicesServiceMultipleItemsSingleton>) {
     super();
@@ -1194,11 +1680,11 @@ export class ProformaInvoicesServiceMultipleItemsSingleton extends Message<Profo
     { no: 12, name: "internal_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 13, name: "client_uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 14, name: "client_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 15, name: "client_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 15, name: "client_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 16, name: "unit_price", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 17, name: "tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 18, name: "round_off", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 19, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 18, name: "round_off", kind: "scalar", T: 3 /* ScalarType.INT64 */, opt: true },
+    { no: 19, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProformaInvoicesServiceMultipleItemsSingleton {
@@ -1220,27 +1706,54 @@ export class ProformaInvoicesServiceMultipleItemsSingleton extends Message<Profo
 
 /**
  *
- * Describes the parameters required to add multiple items to a proforma invoice
+ * Request message for appending multiple line items to a Proforma Invoice in a single batch transaction.
+ * Optimized for scenarios like invoice imports or autofill operations where dozens of items
+ * are attached simultaneously to a parent record.
  *
  * @generated from message Scailo.ProformaInvoicesServiceMultipleItemsCreateRequest
  */
 export class ProformaInvoicesServiceMultipleItemsCreateRequest extends Message<ProformaInvoicesServiceMultipleItemsCreateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * Stores the proforma invoice ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the parent proforma invoice to which this batch of items will be attached.
+   *
+   * @example 1024
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 proforma_invoice_id = 10;
    */
   proformaInvoiceId = protoInt64.zero;
 
   /**
-   * List of items
+   *
+   * @mandatory
+   *
+   * @description An array containing the individual line item payloads to be appended to the invoice.
+   *
+   * @example []
+   *
+   * @format Repeated array of ProformaInvoicesServiceMultipleItemsSingleton message blocks.
    *
    * @generated from field: repeated Scailo.ProformaInvoicesServiceMultipleItemsSingleton list = 11;
    */
@@ -1254,7 +1767,7 @@ export class ProformaInvoicesServiceMultipleItemsCreateRequest extends Message<P
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.ProformaInvoicesServiceMultipleItemsCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 10, name: "proforma_invoice_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 11, name: "list", kind: "message", T: ProformaInvoicesServiceMultipleItemsSingleton, repeated: true },
   ]);
@@ -1278,80 +1791,176 @@ export class ProformaInvoicesServiceMultipleItemsCreateRequest extends Message<P
 
 /**
  *
- * Describes the parameters required to update an item in a proforma invoice
+ * Request message for modifying the core transactional parameters of an existing preliminary line item within a Proforma Invoice.
+ * This payload supports updating estimated quantities (across both internal and client-specific units of measure),
+ * anticipated commercial terms (unit price, tax group, round-offs), and custom specifications.
+ *
+ * **Note:** These modifications are typically utilized during the negotiation or internal approval phases
+ * of the pre-billing lifecycle, ensuring the proforma document accurately reflects the expected financial
+ * obligations before advance payments are requested or final shipments occur.
  *
  * @generated from message Scailo.ProformaInvoicesServiceItemUpdateRequest
  */
 export class ProformaInvoicesServiceItemUpdateRequest extends Message<ProformaInvoicesServiceItemUpdateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * The ID of the record
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target record that needs to be updated.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 id = 2;
    */
   id = protoInt64.zero;
 
   /**
-   * The quantity (in cents) being supplied in internal unit of material
+   *
+   * @mandatory
+   *
+   * @description The updated estimated quantity represented in the system's internal base unit of measure. Stored in subunits (cents) to maintain fractional precision.
+   *
+   * @example 10000
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 internal_quantity = 12;
    */
   internalQuantity = protoInt64.zero;
 
   /**
-   * Stores the ID of the client's unit of material
+   *
+   * @mandatory
+   *
+   * @description The updated unique internal identifier of the Unit of Measure (UOM) requested by the client for this estimated item.
+   *
+   * @example 12
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 client_uom_id = 13;
    */
   clientUomId = protoInt64.zero;
 
   /**
-   * Stores the quantity (in cents) being admitted in client's unit of material
+   *
+   * @mandatory
+   *
+   * @description The updated estimated quantity represented in the client's specific unit of measure. Stored in subunits (cents) to maintain fractional precision.
+   *
+   * @example 5000
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 client_quantity = 14;
    */
   clientQuantity = protoInt64.zero;
 
   /**
-   * The family code as represented by the client
    *
-   * @generated from field: string client_family_code = 15;
+   * @optional
+   *
+   * @description The updated client's specific alphanumeric part number, SKU, or family code used for their internal referencing.
+   *
+   * @example "CLI-SKU-992"
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string client_family_code = 15;
    */
-  clientFamilyCode = "";
+  clientFamilyCode?: string;
 
   /**
-   * The unit price of the item (as supplied to the client)
+   *
+   * @mandatory
+   *
+   * @description The updated anticipated price per unit for this item, represented in the base currency subunit (e.g., cents).
+   *
+   * @example 2500
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 unit_price = 16;
    */
   unitPrice = protoInt64.zero;
 
   /**
-   * The ID of the associated tax group
+   *
+   * @mandatory
+   *
+   * @description The updated unique internal identifier of the tax group or tax bracket anticipated for this specific line item.
+   *
+   * @example 4
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 tax_group_id = 17;
    */
   taxGroupId = protoInt64.zero;
 
   /**
-   * The applicable round off amount (optional, and can be positive or negative)
    *
-   * @generated from field: int64 round_off = 18;
+   * @optional
+   *
+   * @description The updated applicable rounding adjustment amount for this specific item's anticipated financial total. Can be positive or negative, represented in the base currency subunit.
+   *
+   * @example -15
+   *
+   * @regex ^-?[0-9]+$
+   *
+   * @format Signed 64-bit integer.
+   *
+   * @generated from field: optional int64 round_off = 18;
    */
-  roundOff = protoInt64.zero;
+  roundOff?: bigint;
 
   /**
-   * Optional specifications
    *
-   * @generated from field: string specifications = 19;
+   * @optional
+   *
+   * @description Updated additional custom textual requirements, notes, or specifications associated with this preliminary item.
+   *
+   * @example "Estimated based on current freight rates."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string specifications = 19;
    */
-  specifications = "";
+  specifications?: string;
 
   constructor(data?: PartialMessage<ProformaInvoicesServiceItemUpdateRequest>) {
     super();
@@ -1361,16 +1970,16 @@ export class ProformaInvoicesServiceItemUpdateRequest extends Message<ProformaIn
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.ProformaInvoicesServiceItemUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 2, name: "id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 12, name: "internal_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 13, name: "client_uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 14, name: "client_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 15, name: "client_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 15, name: "client_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 16, name: "unit_price", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 17, name: "tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 18, name: "round_off", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 19, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 18, name: "round_off", kind: "scalar", T: 3 /* ScalarType.INT64 */, opt: true },
+    { no: 19, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProformaInvoicesServiceItemUpdateRequest {
@@ -1392,27 +2001,57 @@ export class ProformaInvoicesServiceItemUpdateRequest extends Message<ProformaIn
 
 /**
  *
- * Describes the parameters required to update the specifications of an item in a proforma invoice
+ * Request message for isolating updates strictly to the textual specifications or notes
+ * of a Proforma Invoice line item.
+ * Designed for scenarios where operational instructions change without impacting any
+ * commercial terms, pricing, or quantities.
  *
  * @generated from message Scailo.ProformaInvoicesServiceItemSpecificationsUpdateRequest
  */
 export class ProformaInvoicesServiceItemSpecificationsUpdateRequest extends Message<ProformaInvoicesServiceItemSpecificationsUpdateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * The UUID of the record
+   *
+   * @mandatory
+   *
+   * @description The globally unique identifier (UUID) of the target record that needs to be updated.
+   *
+   * @example "550e8400-e29b-41d4-a716-446655440000"
+   *
+   * @regex ^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+   *
+   * @format Must be a valid v4 UUID in canonical hyphenated form.
    *
    * @generated from field: string uuid = 2;
    */
   uuid = "";
 
   /**
-   * The specifications that should be updated
+   *
+   * @mandatory
+   *
+   * @description Additional custom textual requirements, notes, or specifications associated with this preliminary item.
+   *
+   * @example "Estimated based on current freight rates."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
    *
    * @generated from field: string specifications = 21;
    */
@@ -1426,7 +2065,7 @@ export class ProformaInvoicesServiceItemSpecificationsUpdateRequest extends Mess
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.ProformaInvoicesServiceItemSpecificationsUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 2, name: "uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 21, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
@@ -1450,7 +2089,14 @@ export class ProformaInvoicesServiceItemSpecificationsUpdateRequest extends Mess
 
 /**
  *
- * Describes the parameters that constitute an item associated to a proforma invoice
+ * Represents a complete Proforma Invoice Item entity within the system.
+ * This message encapsulates the comprehensive state of a single product or service being preliminarily estimated
+ * for a buyer. It includes its relationship to the parent proforma invoice, mapped estimated quantities across
+ * internal and client units, anticipated commercial terms (pricing, taxes, round-offs), and custom specifications.
+ *
+ * **Note:** This payload is utilized in read operations to provide frontend clients, downstream financial systems,
+ * and approval workflows with the exact state of an individual estimated line item during the pre-billing,
+ * customs declaration, negotiation, or advance payment phases.
  *
  * @generated from message Scailo.ProformaInvoiceItem
  */
@@ -1483,84 +2129,121 @@ export class ProformaInvoiceItem extends Message<ProformaInvoiceItem> {
 
   /**
    *
-   * @description The approval state of the record
+   * @description A boolean flag indicating whether this specific record requires further administrative approval.
+   *
+   * @example false
+   *
+   * @format Boolean true or false.
    *
    * @generated from field: bool need_approval = 4;
    */
   needApproval = false;
 
   /**
-   * Stores any comment that the user might have added during an operation
+   *
+   * @description Audit log comment or justification captured during the last modification or transactional operation.
+   *
+   * @example "This is a comment for audit purposes."
    *
    * @generated from field: string user_comment = 5;
    */
   userComment = "";
 
   /**
-   * Stores the proforma invoice ID
+   *
+   * @description The unique internal identifier of the parent proforma invoice to which this preliminary item will be attached.
+   *
+   * @example 1024
    *
    * @generated from field: uint64 proforma_invoice_id = 10;
    */
   proformaInvoiceId = protoInt64.zero;
 
   /**
-   * Stores the family ID
+   *
+   * @description The unique internal identifier of the family or catalog item being estimated in this proforma invoice.
+   *
+   * @example 505
    *
    * @generated from field: uint64 family_id = 11;
    */
   familyId = protoInt64.zero;
 
   /**
-   * The quantity (in cents) being supplied in internal unit of material
+   *
+   * @description The estimated quantity represented in the system's internal base unit of measure. Stored in subunits (cents) to maintain fractional precision.
+   *
+   * @example 10000
    *
    * @generated from field: uint64 internal_quantity = 12;
    */
   internalQuantity = protoInt64.zero;
 
   /**
-   * Stores the ID of the client's unit of material
+   *
+   * @description The unique internal identifier of the Unit of Measure (UOM) requested by the client for this estimated item.
+   *
+   * @example 12
    *
    * @generated from field: uint64 client_uom_id = 13;
    */
   clientUomId = protoInt64.zero;
 
   /**
-   * Stores the quantity (in cents) being admitted in client's unit of material
+   *
+   * @description The estimated quantity represented in the client's specific unit of measure. Stored in subunits (cents) to maintain fractional precision.
+   *
+   * @example 5000
    *
    * @generated from field: uint64 client_quantity = 14;
    */
   clientQuantity = protoInt64.zero;
 
   /**
-   * The family code as represented by the client
+   *
+   * @description The client's specific alphanumeric part number, SKU, or family code used for their internal referencing of this item.
+   *
+   * @example "CLI-SKU-992"
    *
    * @generated from field: string client_family_code = 15;
    */
   clientFamilyCode = "";
 
   /**
-   * The unit price of the item (as supplied to the client)
+   *
+   * @description The estimated price per unit for this item, represented in the base currency subunit (e.g., cents).
+   *
+   * @example 2500
    *
    * @generated from field: uint64 unit_price = 16;
    */
   unitPrice = protoInt64.zero;
 
   /**
-   * The ID of the associated tax group
+   *
+   * @description The unique internal identifier of the tax group or tax bracket anticipated for this specific line item.
+   *
+   * @example 4
    *
    * @generated from field: uint64 tax_group_id = 17;
    */
   taxGroupId = protoInt64.zero;
 
   /**
-   * The applicable round off amount (optional, and can be positive or negative)
+   *
+   * @description The applicable rounding adjustment amount for this specific item's estimated financial total. Can be positive or negative, represented in the base currency subunit.
+   *
+   * @example -15
    *
    * @generated from field: int64 round_off = 18;
    */
   roundOff = protoInt64.zero;
 
   /**
-   * Optional specifications
+   *
+   * @description Additional custom textual requirements, notes, or specifications associated with this preliminary item.
+   *
+   * @example "Estimated based on current freight rates."
    *
    * @generated from field: string specifications = 19;
    */
@@ -1610,13 +2293,13 @@ export class ProformaInvoiceItem extends Message<ProformaInvoiceItem> {
 
 /**
  *
- * Describes the message consisting of the list of proforma invoices
+ * Container message for a collection of Proforma Invoice records.
  *
  * @generated from message Scailo.ProformaInvoicesList
  */
 export class ProformaInvoicesList extends Message<ProformaInvoicesList> {
   /**
-   * List of records
+   * @description An array of Proforma Invoice records.
    *
    * @generated from field: repeated Scailo.ProformaInvoice list = 1;
    */
@@ -1652,13 +2335,13 @@ export class ProformaInvoicesList extends Message<ProformaInvoicesList> {
 
 /**
  *
- * Describes the message consisting of the list of proforma invoice items
+ * Container message for a collection of Proforma Invoice Item records.
  *
  * @generated from message Scailo.ProformaInvoiceItemsList
  */
 export class ProformaInvoiceItemsList extends Message<ProformaInvoiceItemsList> {
   /**
-   * List of records
+   * @description An array of Proforma Invoice Item records.
    *
    * @generated from field: repeated Scailo.ProformaInvoiceItem list = 1;
    */
@@ -1694,20 +2377,39 @@ export class ProformaInvoiceItemsList extends Message<ProformaInvoiceItemsList> 
 
 /**
  *
- * Describes the parameters that are required to retrieve the history of the record
+ * Represents the request payload containing the parameter constraints required to
+ * retrieve the historical audit trail and lifecycle changes of a specific proforma invoice item record.
  *
  * @generated from message Scailo.ProformaInvoiceItemHistoryRequest
  */
 export class ProformaInvoiceItemHistoryRequest extends Message<ProformaInvoiceItemHistoryRequest> {
   /**
-   * Stores the proforma invoice ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target proforma invoice associated with the historical record.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer greater than zero.
    *
    * @generated from field: uint64 proforma_invoice_id = 10;
    */
   proformaInvoiceId = protoInt64.zero;
 
   /**
-   * Stores the family ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target family associated with the historical record.
+   *
+   * @example 582
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer greater than zero.
    *
    * @generated from field: uint64 family_id = 11;
    */
@@ -1744,20 +2446,44 @@ export class ProformaInvoiceItemHistoryRequest extends Message<ProformaInvoiceIt
 
 /**
  *
- * Describes the parameters that are required to retrieve the info of a prospective proforma invoice item
+ * Represents the request payload utilized to fetch the default, auto-populated configuration for a potential line item
+ * before it is formally added to a Proforma Invoice.
+ *
+ * **Note:** This is a critical templating operation utilized by frontend interfaces during the drafting phase.
+ * By evaluating the provided invoice ID and family, the system cross-references the originating source
+ * document (e.g., a Sales Order) to automatically determine the negotiated unit price, remaining unbilled quantities,
+ * and applicable tax brackets, thereby minimizing manual data entry and ensuring financial consistency.
  *
  * @generated from message Scailo.ProformaInvoiceItemProspectiveInfoRequest
  */
 export class ProformaInvoiceItemProspectiveInfoRequest extends Message<ProformaInvoiceItemProspectiveInfoRequest> {
   /**
-   * Stores the proforma invoice ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the parent proforma invoice that is currently being evaluated or constructed.
+   *
+   * @example 1024
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 proforma_invoice_id = 10;
    */
   proformaInvoiceId = protoInt64.zero;
 
   /**
-   * Stores the family ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the family or catalog item being evaluated for addition to the invoice.
+   *
+   * @example 505
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 family_id = 11;
    */
@@ -1794,27 +2520,59 @@ export class ProformaInvoiceItemProspectiveInfoRequest extends Message<ProformaI
 
 /**
  *
- * Describes the request payload to retrieve the quantity that has already been added for the specific ref_from, ref_id and family_id
+ * Represents the request payload utilized to retrieve the cumulative quantity of a specific family
+ * that has already been included in preliminary or proforma invoices against a given source document.
+ *
+ * **Note:** This query acts as a critical safeguard during the pre-billing phase. It evaluates
+ * historical estimations to prevent frontend clients and downstream APIs from estimating or
+ * requesting advance payment for more items than were originally constrained in the parent document (e.g., a Sales Order).
  *
  * @generated from message Scailo.ProformaInvoicesServiceAlreadyAddedQuantityForSourceRequest
  */
 export class ProformaInvoicesServiceAlreadyAddedQuantityForSourceRequest extends Message<ProformaInvoicesServiceAlreadyAddedQuantityForSourceRequest> {
   /**
-   * The associated reference
+   *
+   * @mandatory
+   *
+   * @description The specific module or record type from which the preliminary invoice originates and against which the estimated quantity is being checked (e.g., Sales Order).
+   *
+   * @example "PROFORMA_INVOICE_REF_FROM_SALES_ORDER"
+   *
+   * @regex ^[A-Z_]+$
+   *
+   * @format Valid PROFORMA_INVOICE_REF_FROM enum value. Cannot be unspecified (0).
    *
    * @generated from field: Scailo.PROFORMA_INVOICE_REF_FROM ref_from = 1;
    */
   refFrom = PROFORMA_INVOICE_REF_FROM.PROFORMA_INVOICE_REF_FROM_ANY_UNSPECIFIED;
 
   /**
-   * The associated ID of the reference
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the specific referenced source document (e.g., the ID of the actual Sales Order being evaluated).
+   *
+   * @example 1024
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 ref_id = 2;
    */
   refId = protoInt64.zero;
 
   /**
-   * The associated family ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the family or catalog item being queried to determine its cumulative billed quantity.
+   *
+   * @example 505
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 family_id = 3;
    */
@@ -1852,7 +2610,7 @@ export class ProformaInvoicesServiceAlreadyAddedQuantityForSourceRequest extends
 
 /**
  *
- * Describes a pagination request to retrieve records
+ * Pagination request for retrieving slices of Proforma Invoice records.
  *
  * @generated from message Scailo.ProformaInvoicesServicePaginationReq
  */
@@ -1865,9 +2623,9 @@ export class ProformaInvoicesServicePaginationReq extends Message<ProformaInvoic
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -1897,9 +2655,9 @@ export class ProformaInvoicesServicePaginationReq extends Message<ProformaInvoic
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -1909,9 +2667,9 @@ export class ProformaInvoicesServicePaginationReq extends Message<ProformaInvoic
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -1919,16 +2677,21 @@ export class ProformaInvoicesServicePaginationReq extends Message<ProformaInvoic
    *
    * @description The specific field key to sort the results by.
    *
-   * @generated from field: Scailo.PROFORMA_INVOICE_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.PROFORMA_INVOICE_SORT_KEY sort_key = 5;
    */
-  sortKey = PROFORMA_INVOICE_SORT_KEY.PROFORMA_INVOICE_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: PROFORMA_INVOICE_SORT_KEY;
 
   /**
-   * The status of this proforma invoice
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
+   * @optional
+   *
+   * @description Filter results by a specific lifecycle status.
+   *
+   * @example STANDING
+   *
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   constructor(data?: PartialMessage<ProformaInvoicesServicePaginationReq>) {
     super();
@@ -1938,12 +2701,12 @@ export class ProformaInvoicesServicePaginationReq extends Message<ProformaInvoic
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.ProformaInvoicesServicePaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(PROFORMA_INVOICE_SORT_KEY) },
-    { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(PROFORMA_INVOICE_SORT_KEY), opt: true },
+    { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProformaInvoicesServicePaginationReq {
@@ -1965,7 +2728,7 @@ export class ProformaInvoicesServicePaginationReq extends Message<ProformaInvoic
 
 /**
  *
- * Describes the response to a pagination request
+ * Response message for paginated queries, including total counts for UI elements.
  *
  * @generated from message Scailo.ProformaInvoicesServicePaginationResponse
  */
@@ -2041,7 +2804,12 @@ export class ProformaInvoicesServicePaginationResponse extends Message<ProformaI
 
 /**
  *
- * Describes the base request payload of a filter search
+ * Advanced filter request for searching and paginating proforma invoices using multiple logical criteria.
+ * This message encapsulates pagination controls, sorting keys, lifecycle status filters,
+ * timestamp ranges, and entity references.
+ *
+ * **Note:** This is the primary message layout used by the frontend and external API clients
+ * to build robust data-table queries, reporting views, and targeted record lookups.
  *
  * @generated from message Scailo.ProformaInvoicesServiceFilterReq
  */
@@ -2054,9 +2822,9 @@ export class ProformaInvoicesServiceFilterReq extends Message<ProformaInvoicesSe
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -2086,9 +2854,9 @@ export class ProformaInvoicesServiceFilterReq extends Message<ProformaInvoicesSe
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -2098,9 +2866,9 @@ export class ProformaInvoicesServiceFilterReq extends Message<ProformaInvoicesSe
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -2108,9 +2876,9 @@ export class ProformaInvoicesServiceFilterReq extends Message<ProformaInvoicesSe
    *
    * @description The field used for sorting.
    *
-   * @generated from field: Scailo.PROFORMA_INVOICE_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.PROFORMA_INVOICE_SORT_KEY sort_key = 5;
    */
-  sortKey = PROFORMA_INVOICE_SORT_KEY.PROFORMA_INVOICE_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: PROFORMA_INVOICE_SORT_KEY;
 
   /**
    *
@@ -2124,9 +2892,9 @@ export class ProformaInvoicesServiceFilterReq extends Message<ProformaInvoicesSe
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_start = 101;
+   * @generated from field: optional uint64 creation_timestamp_start = 101;
    */
-  creationTimestampStart = protoInt64.zero;
+  creationTimestampStart?: bigint;
 
   /**
    *
@@ -2140,9 +2908,9 @@ export class ProformaInvoicesServiceFilterReq extends Message<ProformaInvoicesSe
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_end = 102;
+   * @generated from field: optional uint64 creation_timestamp_end = 102;
    */
-  creationTimestampEnd = protoInt64.zero;
+  creationTimestampEnd?: bigint;
 
   /**
    *
@@ -2156,9 +2924,9 @@ export class ProformaInvoicesServiceFilterReq extends Message<ProformaInvoicesSe
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_start = 103;
+   * @generated from field: optional uint64 modification_timestamp_start = 103;
    */
-  modificationTimestampStart = protoInt64.zero;
+  modificationTimestampStart?: bigint;
 
   /**
    *
@@ -2172,9 +2940,9 @@ export class ProformaInvoicesServiceFilterReq extends Message<ProformaInvoicesSe
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_end = 104;
+   * @generated from field: optional uint64 modification_timestamp_end = 104;
    */
-  modificationTimestampEnd = protoInt64.zero;
+  modificationTimestampEnd?: bigint;
 
   /**
    *
@@ -2188,9 +2956,9 @@ export class ProformaInvoicesServiceFilterReq extends Message<ProformaInvoicesSe
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 8;
+   * @generated from field: optional string entity_uuid = 8;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
    *
@@ -2200,9 +2968,9 @@ export class ProformaInvoicesServiceFilterReq extends Message<ProformaInvoicesSe
    *
    * @example STANDING
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   /**
    *
@@ -2216,9 +2984,9 @@ export class ProformaInvoicesServiceFilterReq extends Message<ProformaInvoicesSe
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_start = 11;
+   * @generated from field: optional uint64 approved_on_start = 11;
    */
-  approvedOnStart = protoInt64.zero;
+  approvedOnStart?: bigint;
 
   /**
    *
@@ -2232,9 +3000,9 @@ export class ProformaInvoicesServiceFilterReq extends Message<ProformaInvoicesSe
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_end = 12;
+   * @generated from field: optional uint64 approved_on_end = 12;
    */
-  approvedOnEnd = protoInt64.zero;
+  approvedOnEnd?: bigint;
 
   /**
    *
@@ -2248,9 +3016,9 @@ export class ProformaInvoicesServiceFilterReq extends Message<ProformaInvoicesSe
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_by_user_id = 13;
+   * @generated from field: optional uint64 approved_by_user_id = 13;
    */
-  approvedByUserId = protoInt64.zero;
+  approvedByUserId?: bigint;
 
   /**
    *
@@ -2264,9 +3032,9 @@ export class ProformaInvoicesServiceFilterReq extends Message<ProformaInvoicesSe
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approver_role_id = 14;
+   * @generated from field: optional uint64 approver_role_id = 14;
    */
-  approverRoleId = protoInt64.zero;
+  approverRoleId?: bigint;
 
   /**
    *
@@ -2280,9 +3048,9 @@ export class ProformaInvoicesServiceFilterReq extends Message<ProformaInvoicesSe
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 completed_on_start = 15;
+   * @generated from field: optional uint64 completed_on_start = 15;
    */
-  completedOnStart = protoInt64.zero;
+  completedOnStart?: bigint;
 
   /**
    *
@@ -2296,9 +3064,9 @@ export class ProformaInvoicesServiceFilterReq extends Message<ProformaInvoicesSe
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 completed_on_end = 16;
+   * @generated from field: optional uint64 completed_on_end = 16;
    */
-  completedOnEnd = protoInt64.zero;
+  completedOnEnd?: bigint;
 
   /**
    *
@@ -2312,9 +3080,9 @@ export class ProformaInvoicesServiceFilterReq extends Message<ProformaInvoicesSe
    *
    * @format: Alphanumeric characters and spaces only. Can be left empty.
    *
-   * @generated from field: string reference_id = 20;
+   * @generated from field: optional string reference_id = 20;
    */
-  referenceId = "";
+  referenceId?: string;
 
   /**
    *
@@ -2328,87 +3096,185 @@ export class ProformaInvoicesServiceFilterReq extends Message<ProformaInvoicesSe
    *
    * @format: Alphanumeric characters and spaces only. Can be left empty.
    *
-   * @generated from field: string final_ref_number = 21;
+   * @generated from field: optional string final_ref_number = 21;
    */
-  finalRefNumber = "";
+  finalRefNumber?: string;
 
   /**
-   * The associated reference
    *
-   * @generated from field: Scailo.PROFORMA_INVOICE_REF_FROM ref_from = 22;
+   * @optional
+   *
+   * @description The specific module or record type from which the preliminary invoice originates and against which the estimated quantity is being checked (e.g., Sales Order).
+   *
+   * @example "PROFORMA_INVOICE_REF_FROM_SALES_ORDER"
+   *
+   * @regex ^[A-Z_]+$
+   *
+   * @format Valid PROFORMA_INVOICE_REF_FROM enum value. Cannot be unspecified (0).
+   *
+   * @generated from field: optional Scailo.PROFORMA_INVOICE_REF_FROM ref_from = 22;
    */
-  refFrom = PROFORMA_INVOICE_REF_FROM.PROFORMA_INVOICE_REF_FROM_ANY_UNSPECIFIED;
+  refFrom?: PROFORMA_INVOICE_REF_FROM;
 
   /**
-   * The associated ID of the reference
    *
-   * @generated from field: uint64 ref_id = 23;
+   * @optional
+   *
+   * @description The unique internal identifier of the specific referenced source document (e.g., the ID of the actual Sales Order being evaluated).
+   *
+   * @example 1024
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: optional uint64 ref_id = 23;
    */
-  refId = protoInt64.zero;
+  refId?: bigint;
 
   /**
-   * The ID of the associated currency
    *
-   * @generated from field: uint64 currency_id = 24;
+   * @optional
+   *
+   * @description The unique internal identifier of the currency used for all financial estimations within this proforma invoice.
+   *
+   * @example 3
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: optional uint64 currency_id = 24;
    */
-  currencyId = protoInt64.zero;
+  currencyId?: bigint;
 
   /**
-   * The associated ID of the bank account
    *
-   * @generated from field: uint64 bank_account_id = 25;
+   * @optional
+   *
+   * @description The unique internal identifier of the organization's bank account designated to receive advance payments based on this proforma invoice.
+   *
+   * @example 15
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: optional uint64 bank_account_id = 25;
    */
-  bankAccountId = protoInt64.zero;
+  bankAccountId?: bigint;
 
   /**
-   * The ID of the family
    *
-   * @generated from field: uint64 family_id = 40;
+   * @optional
+   *
+   * @description Filter proforma invoices that contain at least one line item belonging to this specific family ID.
+   *
+   * @example 505
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 family_id = 40;
    */
-  familyId = protoInt64.zero;
+  familyId?: bigint;
 
   /**
-   * The status of the proforma invoice bill
    *
-   * @generated from field: Scailo.PROFORMA_INVOICE_BILLING_STATUS billing_status = 50;
+   * @optional
+   *
+   * @description Filter proforma invoices based on their financial conversion lifecycle state—specifically, whether they remain as preliminary estimates (unbilled) or have been formally converted into finalized Sales Invoices (billed).
+   *
+   * @example PROFORMA_INVOICE_BILLING_STATUS_UNBILLED
+   *
+   * @regex ^[A-Z_]+$
+   *
+   * @format Valid PROFORMA_INVOICE_BILLING_STATUS enum value.
+   *
+   * @generated from field: optional Scailo.PROFORMA_INVOICE_BILLING_STATUS billing_status = 50;
    */
-  billingStatus = PROFORMA_INVOICE_BILLING_STATUS.PROFORMA_INVOICE_BILLING_STATUS_ANY_UNSPECIFIED;
+  billingStatus?: PROFORMA_INVOICE_BILLING_STATUS;
 
   /**
-   * Sales Order related filters
-   * The associated consignee client ID of the linked sales order
    *
-   * @generated from field: uint64 consignee_client_id = 60;
+   * @optional
+   *
+   * @description Filter proforma invoices by the unique internal identifier of the consignee client associated with the linked source document (e.g., Sales Order).
+   *
+   * @example 1050
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 consignee_client_id = 60;
    */
-  consigneeClientId = protoInt64.zero;
+  consigneeClientId?: bigint;
 
   /**
-   * The associated buyer client ID of the linked sales order
    *
-   * @generated from field: uint64 buyer_client_id = 61;
+   * @optional
+   *
+   * @description Filter proforma invoices by the unique internal identifier of the buyer client (the entity financially responsible) associated with the linked source document (e.g., Sales Order).
+   *
+   * @example 1051
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 buyer_client_id = 61;
    */
-  buyerClientId = protoInt64.zero;
+  buyerClientId?: bigint;
 
   /**
-   * The ID of the associated project of the linked sales order
    *
-   * @generated from field: uint64 project_id = 62;
+   * @optional
+   *
+   * @description Filter proforma invoices by the unique internal identifier of the project associated with the linked source document (e.g., Sales Order).
+   *
+   * @example 88
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 project_id = 62;
    */
-  projectId = protoInt64.zero;
+  projectId?: bigint;
 
   /**
-   * Stores the minimum value of the proforma invoice (ignored if 0)
    *
-   * @generated from field: uint64 total_value_min = 80;
+   * @optional
+   *
+   * @description Filter proforma invoices where the grand total value is greater than or equal to this amount. Evaluated in the base currency subunit (e.g., cents). Ignored if set to 0.
+   *
+   * @example 500000
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 total_value_min = 80;
    */
-  totalValueMin = protoInt64.zero;
+  totalValueMin?: bigint;
 
   /**
-   * Stores the maximum value of the proforma invoice (ignored if 0)
    *
-   * @generated from field: uint64 total_value_max = 81;
+   * @optional
+   *
+   * @description Filter proforma invoices where the grand total value is less than or equal to this amount. Evaluated in the base currency subunit (e.g., cents). Ignored if set to 0.
+   *
+   * @example 1500000
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 total_value_max = 81;
    */
-  totalValueMax = protoInt64.zero;
+  totalValueMax?: bigint;
 
   /**
    *
@@ -2429,9 +3295,9 @@ export class ProformaInvoicesServiceFilterReq extends Message<ProformaInvoicesSe
    *
    * @example true
    *
-   * @generated from field: bool include_form_data = 501;
+   * @generated from field: optional bool include_form_data = 501;
    */
-  includeFormData = false;
+  includeFormData?: boolean;
 
   constructor(data?: PartialMessage<ProformaInvoicesServiceFilterReq>) {
     super();
@@ -2441,38 +3307,38 @@ export class ProformaInvoicesServiceFilterReq extends Message<ProformaInvoicesSe
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.ProformaInvoicesServiceFilterReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(PROFORMA_INVOICE_SORT_KEY) },
-    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
-    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 15, name: "completed_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(PROFORMA_INVOICE_REF_FROM) },
-    { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 24, name: "currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 25, name: "bank_account_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 40, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 50, name: "billing_status", kind: "enum", T: proto3.getEnumType(PROFORMA_INVOICE_BILLING_STATUS) },
-    { no: 60, name: "consignee_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 61, name: "buyer_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 62, name: "project_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 80, name: "total_value_min", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 81, name: "total_value_max", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(PROFORMA_INVOICE_SORT_KEY), opt: true },
+    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
+    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 15, name: "completed_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(PROFORMA_INVOICE_REF_FROM), opt: true },
+    { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 24, name: "currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 25, name: "bank_account_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 40, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 50, name: "billing_status", kind: "enum", T: proto3.getEnumType(PROFORMA_INVOICE_BILLING_STATUS), opt: true },
+    { no: 60, name: "consignee_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 61, name: "buyer_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 62, name: "project_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 80, name: "total_value_min", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 81, name: "total_value_max", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
     { no: 500, name: "form_data", kind: "message", T: FormFieldDatumFilterRequest, repeated: true },
-    { no: 501, name: "include_form_data", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 501, name: "include_form_data", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProformaInvoicesServiceFilterReq {
@@ -2494,7 +3360,13 @@ export class ProformaInvoicesServiceFilterReq extends Message<ProformaInvoicesSe
 
 /**
  *
- * Describes the base request payload of a count search
+ * Target filter request for counting proforma invoice records matching specific logical criteria.
+ * This message encapsulates lifecycle status filters, timestamp ranges, workflow markers,
+ * and entity references to determine the total size of a targeted dataset.
+ *
+ * **Note:** This is the primary message layout used by backend calculation engines, reporting
+ * services, and frontend pagination headers to evaluate total record matches dynamically
+ * before or alongside retrieving paginated results.
  *
  * @generated from message Scailo.ProformaInvoicesServiceCountReq
  */
@@ -2507,9 +3379,9 @@ export class ProformaInvoicesServiceCountReq extends Message<ProformaInvoicesSer
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -2523,9 +3395,9 @@ export class ProformaInvoicesServiceCountReq extends Message<ProformaInvoicesSer
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_start = 101;
+   * @generated from field: optional uint64 creation_timestamp_start = 101;
    */
-  creationTimestampStart = protoInt64.zero;
+  creationTimestampStart?: bigint;
 
   /**
    *
@@ -2539,9 +3411,9 @@ export class ProformaInvoicesServiceCountReq extends Message<ProformaInvoicesSer
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_end = 102;
+   * @generated from field: optional uint64 creation_timestamp_end = 102;
    */
-  creationTimestampEnd = protoInt64.zero;
+  creationTimestampEnd?: bigint;
 
   /**
    *
@@ -2555,9 +3427,9 @@ export class ProformaInvoicesServiceCountReq extends Message<ProformaInvoicesSer
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_start = 103;
+   * @generated from field: optional uint64 modification_timestamp_start = 103;
    */
-  modificationTimestampStart = protoInt64.zero;
+  modificationTimestampStart?: bigint;
 
   /**
    *
@@ -2571,9 +3443,9 @@ export class ProformaInvoicesServiceCountReq extends Message<ProformaInvoicesSer
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_end = 104;
+   * @generated from field: optional uint64 modification_timestamp_end = 104;
    */
-  modificationTimestampEnd = protoInt64.zero;
+  modificationTimestampEnd?: bigint;
 
   /**
    *
@@ -2587,9 +3459,9 @@ export class ProformaInvoicesServiceCountReq extends Message<ProformaInvoicesSer
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 8;
+   * @generated from field: optional string entity_uuid = 8;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
    *
@@ -2599,9 +3471,9 @@ export class ProformaInvoicesServiceCountReq extends Message<ProformaInvoicesSer
    *
    * @example STANDING
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   /**
    *
@@ -2615,9 +3487,9 @@ export class ProformaInvoicesServiceCountReq extends Message<ProformaInvoicesSer
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_start = 11;
+   * @generated from field: optional uint64 approved_on_start = 11;
    */
-  approvedOnStart = protoInt64.zero;
+  approvedOnStart?: bigint;
 
   /**
    *
@@ -2631,9 +3503,9 @@ export class ProformaInvoicesServiceCountReq extends Message<ProformaInvoicesSer
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_end = 12;
+   * @generated from field: optional uint64 approved_on_end = 12;
    */
-  approvedOnEnd = protoInt64.zero;
+  approvedOnEnd?: bigint;
 
   /**
    *
@@ -2647,9 +3519,9 @@ export class ProformaInvoicesServiceCountReq extends Message<ProformaInvoicesSer
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_by_user_id = 13;
+   * @generated from field: optional uint64 approved_by_user_id = 13;
    */
-  approvedByUserId = protoInt64.zero;
+  approvedByUserId?: bigint;
 
   /**
    *
@@ -2663,9 +3535,9 @@ export class ProformaInvoicesServiceCountReq extends Message<ProformaInvoicesSer
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approver_role_id = 14;
+   * @generated from field: optional uint64 approver_role_id = 14;
    */
-  approverRoleId = protoInt64.zero;
+  approverRoleId?: bigint;
 
   /**
    *
@@ -2679,9 +3551,9 @@ export class ProformaInvoicesServiceCountReq extends Message<ProformaInvoicesSer
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 completed_on_start = 15;
+   * @generated from field: optional uint64 completed_on_start = 15;
    */
-  completedOnStart = protoInt64.zero;
+  completedOnStart?: bigint;
 
   /**
    *
@@ -2695,9 +3567,9 @@ export class ProformaInvoicesServiceCountReq extends Message<ProformaInvoicesSer
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 completed_on_end = 16;
+   * @generated from field: optional uint64 completed_on_end = 16;
    */
-  completedOnEnd = protoInt64.zero;
+  completedOnEnd?: bigint;
 
   /**
    *
@@ -2711,9 +3583,9 @@ export class ProformaInvoicesServiceCountReq extends Message<ProformaInvoicesSer
    *
    * @format: Alphanumeric characters and spaces only. Can be left empty.
    *
-   * @generated from field: string reference_id = 20;
+   * @generated from field: optional string reference_id = 20;
    */
-  referenceId = "";
+  referenceId?: string;
 
   /**
    *
@@ -2727,90 +3599,191 @@ export class ProformaInvoicesServiceCountReq extends Message<ProformaInvoicesSer
    *
    * @format: Alphanumeric characters and spaces only. Can be left empty.
    *
-   * @generated from field: string final_ref_number = 21;
+   * @generated from field: optional string final_ref_number = 21;
    */
-  finalRefNumber = "";
+  finalRefNumber?: string;
 
   /**
-   * The associated reference
    *
-   * @generated from field: Scailo.PROFORMA_INVOICE_REF_FROM ref_from = 22;
-   */
-  refFrom = PROFORMA_INVOICE_REF_FROM.PROFORMA_INVOICE_REF_FROM_ANY_UNSPECIFIED;
-
-  /**
-   * The associated ID of the reference
+   * @optional
    *
-   * @generated from field: uint64 ref_id = 23;
-   */
-  refId = protoInt64.zero;
-
-  /**
-   * The ID of the associated currency
+   * @description The specific module or record type from which the preliminary invoice originates and against which the estimated quantity is being checked (e.g., Sales Order).
    *
-   * @generated from field: uint64 currency_id = 24;
-   */
-  currencyId = protoInt64.zero;
-
-  /**
-   * The associated ID of the bank account
+   * @example "PROFORMA_INVOICE_REF_FROM_SALES_ORDER"
    *
-   * @generated from field: uint64 bank_account_id = 25;
-   */
-  bankAccountId = protoInt64.zero;
-
-  /**
-   * The ID of the family
+   * @regex ^[A-Z_]+$
    *
-   * @generated from field: uint64 family_id = 40;
-   */
-  familyId = protoInt64.zero;
-
-  /**
-   * The status of the proforma invoice bill
+   * @format Valid PROFORMA_INVOICE_REF_FROM enum value. Cannot be unspecified (0).
    *
-   * @generated from field: Scailo.PROFORMA_INVOICE_BILLING_STATUS billing_status = 50;
+   * @generated from field: optional Scailo.PROFORMA_INVOICE_REF_FROM ref_from = 22;
    */
-  billingStatus = PROFORMA_INVOICE_BILLING_STATUS.PROFORMA_INVOICE_BILLING_STATUS_ANY_UNSPECIFIED;
+  refFrom?: PROFORMA_INVOICE_REF_FROM;
 
   /**
-   * Sales Order related filters
-   * The associated consignee client ID of the linked sales order
    *
-   * @generated from field: uint64 consignee_client_id = 60;
-   */
-  consigneeClientId = protoInt64.zero;
-
-  /**
-   * The associated buyer client ID of the linked sales order
+   * @optional
    *
-   * @generated from field: uint64 buyer_client_id = 61;
-   */
-  buyerClientId = protoInt64.zero;
-
-  /**
-   * The ID of the associated project of the linked sales order
+   * @description The unique internal identifier of the specific referenced source document (e.g., the ID of the actual Sales Order being evaluated).
    *
-   * @generated from field: uint64 project_id = 62;
-   */
-  projectId = protoInt64.zero;
-
-  /**
-   * Stores the minimum value of the proforma invoice (ignored if 0)
+   * @example 1024
    *
-   * @generated from field: uint64 total_value_min = 80;
-   */
-  totalValueMin = protoInt64.zero;
-
-  /**
-   * Stores the maximum value of the proforma invoice (ignored if 0)
+   * @regex ^[1-9][0-9]*$
    *
-   * @generated from field: uint64 total_value_max = 81;
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: optional uint64 ref_id = 23;
    */
-  totalValueMax = protoInt64.zero;
+  refId?: bigint;
 
   /**
-   * The list of form data filters
+   *
+   * @optional
+   *
+   * @description The unique internal identifier of the currency used for all financial estimations within this proforma invoice.
+   *
+   * @example 3
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: optional uint64 currency_id = 24;
+   */
+  currencyId?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description The unique internal identifier of the organization's bank account designated to receive advance payments based on this proforma invoice.
+   *
+   * @example 15
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: optional uint64 bank_account_id = 25;
+   */
+  bankAccountId?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Filter proforma invoices that contain at least one line item belonging to this specific family ID.
+   *
+   * @example 505
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 family_id = 40;
+   */
+  familyId?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Filter proforma invoices based on their financial conversion lifecycle state—specifically, whether they remain as preliminary estimates (unbilled) or have been formally converted into finalized Sales Invoices (billed).
+   *
+   * @example PROFORMA_INVOICE_BILLING_STATUS_UNBILLED
+   *
+   * @regex ^[A-Z_]+$
+   *
+   * @format Valid PROFORMA_INVOICE_BILLING_STATUS enum value.
+   *
+   * @generated from field: optional Scailo.PROFORMA_INVOICE_BILLING_STATUS billing_status = 50;
+   */
+  billingStatus?: PROFORMA_INVOICE_BILLING_STATUS;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Filter proforma invoices by the unique internal identifier of the consignee client associated with the linked source document (e.g., Sales Order).
+   *
+   * @example 1050
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 consignee_client_id = 60;
+   */
+  consigneeClientId?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Filter proforma invoices by the unique internal identifier of the buyer client (the entity financially responsible) associated with the linked source document (e.g., Sales Order).
+   *
+   * @example 1051
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 buyer_client_id = 61;
+   */
+  buyerClientId?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Filter proforma invoices by the unique internal identifier of the project associated with the linked source document (e.g., Sales Order).
+   *
+   * @example 88
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 project_id = 62;
+   */
+  projectId?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Filter proforma invoices where the grand total value is greater than or equal to this amount. Evaluated in the base currency subunit (e.g., cents). Ignored if set to 0.
+   *
+   * @example 500000
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 total_value_min = 80;
+   */
+  totalValueMin?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Filter proforma invoices where the grand total value is less than or equal to this amount. Evaluated in the base currency subunit (e.g., cents). Ignored if set to 0.
+   *
+   * @example 1500000
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 total_value_max = 81;
+   */
+  totalValueMax?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Count based on dynamic form field values.
    *
    * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
    */
@@ -2824,32 +3797,32 @@ export class ProformaInvoicesServiceCountReq extends Message<ProformaInvoicesSer
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.ProformaInvoicesServiceCountReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
-    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
-    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 15, name: "completed_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(PROFORMA_INVOICE_REF_FROM) },
-    { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 24, name: "currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 25, name: "bank_account_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 40, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 50, name: "billing_status", kind: "enum", T: proto3.getEnumType(PROFORMA_INVOICE_BILLING_STATUS) },
-    { no: 60, name: "consignee_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 61, name: "buyer_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 62, name: "project_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 80, name: "total_value_min", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 81, name: "total_value_max", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
+    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
+    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 15, name: "completed_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(PROFORMA_INVOICE_REF_FROM), opt: true },
+    { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 24, name: "currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 25, name: "bank_account_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 40, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 50, name: "billing_status", kind: "enum", T: proto3.getEnumType(PROFORMA_INVOICE_BILLING_STATUS), opt: true },
+    { no: 60, name: "consignee_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 61, name: "buyer_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 62, name: "project_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 80, name: "total_value_min", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 81, name: "total_value_max", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
     { no: 500, name: "form_data", kind: "message", T: FormFieldDatumFilterRequest, repeated: true },
   ]);
 
@@ -2872,7 +3845,13 @@ export class ProformaInvoicesServiceCountReq extends Message<ProformaInvoicesSer
 
 /**
  *
- * Describes the request payload for performing a generic search operation on records
+ * Broad-spectrum search and lookup request for locating and paginating proforma invoices via text matching.
+ * This message encapsulates full-text query parameters, pagination controls, sorting keys,
+ * lifecycle status constraints, and other core references.
+ *
+ * **Note:** This is the primary message layout used for global search bars, fast-filtering dashboard
+ * inputs, and omni-box search utilities where users need to match loose textual terms against
+ * records while retaining structural pagination.
  *
  * @generated from message Scailo.ProformaInvoicesServiceSearchAllReq
  */
@@ -2885,9 +3864,9 @@ export class ProformaInvoicesServiceSearchAllReq extends Message<ProformaInvoice
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -2917,9 +3896,9 @@ export class ProformaInvoicesServiceSearchAllReq extends Message<ProformaInvoice
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -2929,9 +3908,9 @@ export class ProformaInvoicesServiceSearchAllReq extends Message<ProformaInvoice
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -2939,9 +3918,9 @@ export class ProformaInvoicesServiceSearchAllReq extends Message<ProformaInvoice
    *
    * @description The field used for sorting.
    *
-   * @generated from field: Scailo.PROFORMA_INVOICE_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.PROFORMA_INVOICE_SORT_KEY sort_key = 5;
    */
-  sortKey = PROFORMA_INVOICE_SORT_KEY.PROFORMA_INVOICE_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: PROFORMA_INVOICE_SORT_KEY;
 
   /**
    *
@@ -2955,9 +3934,9 @@ export class ProformaInvoicesServiceSearchAllReq extends Message<ProformaInvoice
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 6;
+   * @generated from field: optional string entity_uuid = 6;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
    *
@@ -2967,13 +3946,13 @@ export class ProformaInvoicesServiceSearchAllReq extends Message<ProformaInvoice
    *
    * @example STANDING
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   /**
    *
-   * @mandatory
+   * @optional
    *
    * @description The search string to match against reference IDs.
    *
@@ -2983,45 +3962,89 @@ export class ProformaInvoicesServiceSearchAllReq extends Message<ProformaInvoice
    *
    * @format: May contain any UTF-8 characters.
    *
-   * @generated from field: string search_key = 11;
+   * @generated from field: optional string search_key = 11;
    */
-  searchKey = "";
+  searchKey?: string;
 
   /**
-   * The associated reference
    *
-   * @generated from field: Scailo.PROFORMA_INVOICE_REF_FROM ref_from = 22;
+   * @optional
+   *
+   * @description The specific module or record type from which the preliminary invoice originates and against which the estimated quantity is being checked (e.g., Sales Order).
+   *
+   * @example "PROFORMA_INVOICE_REF_FROM_SALES_ORDER"
+   *
+   * @regex ^[A-Z_]+$
+   *
+   * @format Valid PROFORMA_INVOICE_REF_FROM enum value. Cannot be unspecified (0).
+   *
+   * @generated from field: optional Scailo.PROFORMA_INVOICE_REF_FROM ref_from = 22;
    */
-  refFrom = PROFORMA_INVOICE_REF_FROM.PROFORMA_INVOICE_REF_FROM_ANY_UNSPECIFIED;
+  refFrom?: PROFORMA_INVOICE_REF_FROM;
 
   /**
-   * The associated ID of the reference
    *
-   * @generated from field: uint64 ref_id = 23;
+   * @optional
+   *
+   * @description The unique internal identifier of the specific referenced source document (e.g., the ID of the actual Sales Order being evaluated).
+   *
+   * @example 1024
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: optional uint64 ref_id = 23;
    */
-  refId = protoInt64.zero;
+  refId?: bigint;
 
   /**
-   * The status of the proforma invoice bill
    *
-   * @generated from field: Scailo.PROFORMA_INVOICE_BILLING_STATUS billing_status = 40;
+   * @optional
+   *
+   * @description Filter proforma invoices based on their financial conversion lifecycle state—specifically, whether they remain as preliminary estimates (unbilled) or have been formally converted into finalized Sales Invoices (billed).
+   *
+   * @example PROFORMA_INVOICE_BILLING_STATUS_UNBILLED
+   *
+   * @regex ^[A-Z_]+$
+   *
+   * @format Valid PROFORMA_INVOICE_BILLING_STATUS enum value.
+   *
+   * @generated from field: optional Scailo.PROFORMA_INVOICE_BILLING_STATUS billing_status = 40;
    */
-  billingStatus = PROFORMA_INVOICE_BILLING_STATUS.PROFORMA_INVOICE_BILLING_STATUS_ANY_UNSPECIFIED;
+  billingStatus?: PROFORMA_INVOICE_BILLING_STATUS;
 
   /**
-   * Sales Order related filters
-   * The associated consignee client ID of the linked sales order
    *
-   * @generated from field: uint64 consignee_client_id = 50;
+   * @optional
+   *
+   * @description Filter proforma invoices by the unique internal identifier of the consignee client associated with the linked source document (e.g., Sales Order).
+   *
+   * @example 1050
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 consignee_client_id = 50;
    */
-  consigneeClientId = protoInt64.zero;
+  consigneeClientId?: bigint;
 
   /**
-   * The associated buyer client ID of the linked sales order
    *
-   * @generated from field: uint64 buyer_client_id = 51;
+   * @optional
+   *
+   * @description Filter proforma invoices by the unique internal identifier of the buyer client (the entity financially responsible) associated with the linked source document (e.g., Sales Order).
+   *
+   * @example 1051
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 buyer_client_id = 51;
    */
-  buyerClientId = protoInt64.zero;
+  buyerClientId?: bigint;
 
   constructor(data?: PartialMessage<ProformaInvoicesServiceSearchAllReq>) {
     super();
@@ -3031,19 +4054,19 @@ export class ProformaInvoicesServiceSearchAllReq extends Message<ProformaInvoice
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.ProformaInvoicesServiceSearchAllReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(PROFORMA_INVOICE_SORT_KEY) },
-    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
-    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(PROFORMA_INVOICE_REF_FROM) },
-    { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 40, name: "billing_status", kind: "enum", T: proto3.getEnumType(PROFORMA_INVOICE_BILLING_STATUS) },
-    { no: 50, name: "consignee_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 51, name: "buyer_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(PROFORMA_INVOICE_SORT_KEY), opt: true },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
+    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(PROFORMA_INVOICE_REF_FROM), opt: true },
+    { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 40, name: "billing_status", kind: "enum", T: proto3.getEnumType(PROFORMA_INVOICE_BILLING_STATUS), opt: true },
+    { no: 50, name: "consignee_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 51, name: "buyer_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProformaInvoicesServiceSearchAllReq {
@@ -3065,7 +4088,8 @@ export class ProformaInvoicesServiceSearchAllReq extends Message<ProformaInvoice
 
 /**
  *
- * Describes the request payload to retrieve approved or unapproved items.
+ * Request payload structure used to search and filter Proforma Invoice Item records.
+ * Supports pagination controls, tenancy isolation, status grouping, and text-based matching.
  *
  * @generated from message Scailo.ProformaInvoiceItemsSearchRequest
  */
@@ -3078,9 +4102,9 @@ export class ProformaInvoiceItemsSearchRequest extends Message<ProformaInvoiceIt
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -3110,9 +4134,9 @@ export class ProformaInvoiceItemsSearchRequest extends Message<ProformaInvoiceIt
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -3122,9 +4146,9 @@ export class ProformaInvoiceItemsSearchRequest extends Message<ProformaInvoiceIt
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -3132,9 +4156,9 @@ export class ProformaInvoiceItemsSearchRequest extends Message<ProformaInvoiceIt
    *
    * @description The field used for sorting.
    *
-   * @generated from field: Scailo.PROFORMA_INVOICE_ITEM_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.PROFORMA_INVOICE_ITEM_SORT_KEY sort_key = 5;
    */
-  sortKey = PROFORMA_INVOICE_ITEM_SORT_KEY.PROFORMA_INVOICE_ITEM_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: PROFORMA_INVOICE_ITEM_SORT_KEY;
 
   /**
    *
@@ -3148,86 +4172,179 @@ export class ProformaInvoiceItemsSearchRequest extends Message<ProformaInvoiceIt
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 6;
+   * @generated from field: optional string entity_uuid = 6;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
-   * The status of the items
    *
-   * @generated from field: Scailo.PROFORMA_INVOICE_ITEM_STATUS status = 7;
+   * @optional
+   *
+   * @description The field used for sorting.
+   *
+   * @generated from field: optional Scailo.PROFORMA_INVOICE_ITEM_STATUS status = 7;
    */
-  status = PROFORMA_INVOICE_ITEM_STATUS.PROFORMA_INVOICE_ITEM_STATUS_ANY_UNSPECIFIED;
+  status?: PROFORMA_INVOICE_ITEM_STATUS;
 
   /**
-   * The start range of approved timestamp
    *
-   * @generated from field: uint64 approved_on_start = 10;
+   * @optional
+   *
+   * @description Filter records approved ON or AFTER this UNIX timestamp.
+   *
+   * @example 1672531200
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 approved_on_start = 10;
    */
-  approvedOnStart = protoInt64.zero;
+  approvedOnStart?: bigint;
 
   /**
-   * The end range of approved timestamp
    *
-   * @generated from field: uint64 approved_on_end = 11;
+   * @optional
+   *
+   * @description Filter records approved ON or BEFORE this UNIX timestamp.
+   *
+   * @example 1704067199
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 approved_on_end = 11;
    */
-  approvedOnEnd = protoInt64.zero;
+  approvedOnEnd?: bigint;
 
   /**
-   * The ID of the approver
    *
-   * @generated from field: uint64 approved_by_user_id = 12;
+   * @optional
+   *
+   * @description Filter by the specific user ID who approved the records.
+   *
+   * @example 501
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 approved_by_user_id = 12;
    */
-  approvedByUserId = protoInt64.zero;
+  approvedByUserId?: bigint;
 
   /**
-   * The role ID of the approver
    *
-   * @generated from field: uint64 approver_role_id = 13;
+   * @optional
+   *
+   * @description Filter by the role ID of the approver.
+   *
+   * @example 5
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 approver_role_id = 13;
    */
-  approverRoleId = protoInt64.zero;
+  approverRoleId?: bigint;
 
   /**
-   * The ID of the proforma invoice
    *
-   * @generated from field: uint64 proforma_invoice_id = 20;
+   * @optional
+   *
+   * @description Filter line items belonging to a specific parent proforma invoice.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 proforma_invoice_id = 20;
    */
-  proformaInvoiceId = protoInt64.zero;
+  proformaInvoiceId?: bigint;
 
   /**
-   * The ID of the family
    *
-   * @generated from field: uint64 family_id = 21;
+   * @optional
+   *
+   * @description Filter line items belonging to a specific family.
+   *
+   * @example 505
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 family_id = 21;
    */
-  familyId = protoInt64.zero;
+  familyId?: bigint;
 
   /**
-   * The ID of the client's unit of material
    *
-   * @generated from field: uint64 client_uom_id = 23;
+   * @optional
+   *
+   * @description Filter line items requesting a specific client Unit of Measure (UOM).
+   *
+   * @example 12
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 client_uom_id = 23;
    */
-  clientUomId = protoInt64.zero;
+  clientUomId?: bigint;
 
   /**
-   * Stores the family code as given by the client
    *
-   * @generated from field: string client_family_code = 25;
+   * @optional
+   *
+   * @description Fuzzy match for the client's specific alphanumeric part number, SKU, or family code.
+   *
+   * @example "CLI-SKU-992"
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string client_family_code = 25;
    */
-  clientFamilyCode = "";
+  clientFamilyCode?: string;
 
   /**
-   * The ID of the tax group
    *
-   * @generated from field: uint64 tax_group_id = 27;
+   * @optional
+   *
+   * @description Filter line items mapped to a specific tax group.
+   *
+   * @example 4
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 tax_group_id = 27;
    */
-  taxGroupId = protoInt64.zero;
+  taxGroupId?: bigint;
 
   /**
-   * Describes the key with which the search operation needs to be performed
    *
-   * @generated from field: string search_key = 40;
+   * @optional
+   *
+   * @description The search string to match against reference IDs.
+   *
+   * @example "Medical 2023"
+   *
+   * @regex .*
+   *
+   * @format: May contain any UTF-8 characters.
+   *
+   * @generated from field: optional string search_key = 40;
    */
-  searchKey = "";
+  searchKey?: string;
 
   constructor(data?: PartialMessage<ProformaInvoiceItemsSearchRequest>) {
     super();
@@ -3237,23 +4354,23 @@ export class ProformaInvoiceItemsSearchRequest extends Message<ProformaInvoiceIt
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.ProformaInvoiceItemsSearchRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(PROFORMA_INVOICE_ITEM_SORT_KEY) },
-    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 7, name: "status", kind: "enum", T: proto3.getEnumType(PROFORMA_INVOICE_ITEM_STATUS) },
-    { no: 10, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 11, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 12, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 13, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 20, name: "proforma_invoice_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 21, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 23, name: "client_uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 25, name: "client_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 27, name: "tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 40, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(PROFORMA_INVOICE_ITEM_SORT_KEY), opt: true },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 7, name: "status", kind: "enum", T: proto3.getEnumType(PROFORMA_INVOICE_ITEM_STATUS), opt: true },
+    { no: 10, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 11, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 12, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 13, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 20, name: "proforma_invoice_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 21, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 23, name: "client_uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 25, name: "client_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 27, name: "tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 40, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProformaInvoiceItemsSearchRequest {
@@ -3275,7 +4392,8 @@ export class ProformaInvoiceItemsSearchRequest extends Message<ProformaInvoiceIt
 
 /**
  *
- * Describes the response to a pagination items request
+ * Paginated response packet containing a subset of Proforma Invoice Item records.
+ * Includes complete operational state parameters for rendering frontend data grids and tables.
  *
  * @generated from message Scailo.ProformaInvoicesServicePaginatedItemsResponse
  */

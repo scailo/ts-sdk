@@ -71,7 +71,7 @@ Message\&lt;PayrollGroupsServiceUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/payroll_groups.scailo_pb.ts:257](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/payroll_groups.scailo_pb.ts#L257)
+[src/payroll_groups.scailo_pb.ts:284](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/payroll_groups.scailo_pb.ts#L284)
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: string code = 11;
 
 #### Defined in
 
-[src/payroll_groups.scailo_pb.ts:248](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/payroll_groups.scailo_pb.ts#L248)
+[src/payroll_groups.scailo_pb.ts:275](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/payroll_groups.scailo_pb.ts#L275)
 
 ___
 
@@ -103,7 +103,7 @@ from field: string description = 13;
 
 #### Defined in
 
-[src/payroll_groups.scailo_pb.ts:255](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/payroll_groups.scailo_pb.ts#L255)
+[src/payroll_groups.scailo_pb.ts:282](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/payroll_groups.scailo_pb.ts#L282)
 
 ___
 
@@ -111,7 +111,25 @@ ___
 
 • **id**: `bigint` = `protoInt64.zero`
 
-The ID of the record that needs to be updated
+**`Mandatory`**
+
+**`Description`**
+
+The unique internal identifier of the target record that needs to be updated.
+
+**`Example`**
+
+```ts
+1024
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -119,7 +137,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-[src/payroll_groups.scailo_pb.ts:222](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/payroll_groups.scailo_pb.ts#L222)
+[src/payroll_groups.scailo_pb.ts:249](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/payroll_groups.scailo_pb.ts#L249)
 
 ___
 
@@ -135,7 +153,7 @@ from field: string name = 10;
 
 #### Defined in
 
-[src/payroll_groups.scailo_pb.ts:241](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/payroll_groups.scailo_pb.ts#L241)
+[src/payroll_groups.scailo_pb.ts:268](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/payroll_groups.scailo_pb.ts#L268)
 
 ___
 
@@ -161,7 +179,7 @@ from field: bool notify_users = 3;
 
 #### Defined in
 
-[src/payroll_groups.scailo_pb.ts:234](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/payroll_groups.scailo_pb.ts#L234)
+[src/payroll_groups.scailo_pb.ts:261](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/payroll_groups.scailo_pb.ts#L261)
 
 ___
 
@@ -169,7 +187,25 @@ ___
 
 • **userComment**: `string` = `""`
 
-Stores any comment that the user might add during this operation
+**`Optional`**
+
+**`Description`**
+
+Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+
+**`Example`**
+
+```ts
+"This is a comment for audit purposes."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
@@ -177,7 +213,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-[src/payroll_groups.scailo_pb.ts:215](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/payroll_groups.scailo_pb.ts#L215)
+[src/payroll_groups.scailo_pb.ts:233](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/payroll_groups.scailo_pb.ts#L233)
 
 ___
 
@@ -187,7 +223,7 @@ ___
 
 #### Defined in
 
-[src/payroll_groups.scailo_pb.ts:264](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/payroll_groups.scailo_pb.ts#L264)
+[src/payroll_groups.scailo_pb.ts:291](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/payroll_groups.scailo_pb.ts#L291)
 
 ___
 
@@ -197,7 +233,7 @@ ___
 
 #### Defined in
 
-[src/payroll_groups.scailo_pb.ts:262](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/payroll_groups.scailo_pb.ts#L262)
+[src/payroll_groups.scailo_pb.ts:289](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/payroll_groups.scailo_pb.ts#L289)
 
 ___
 
@@ -207,7 +243,7 @@ ___
 
 #### Defined in
 
-[src/payroll_groups.scailo_pb.ts:263](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/payroll_groups.scailo_pb.ts#L263)
+[src/payroll_groups.scailo_pb.ts:290](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/payroll_groups.scailo_pb.ts#L290)
 
 ## Methods
 
@@ -495,7 +531,7 @@ ___
 
 #### Defined in
 
-[src/payroll_groups.scailo_pb.ts:285](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/payroll_groups.scailo_pb.ts#L285)
+[src/payroll_groups.scailo_pb.ts:312](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/payroll_groups.scailo_pb.ts#L312)
 
 ___
 
@@ -516,7 +552,7 @@ ___
 
 #### Defined in
 
-[src/payroll_groups.scailo_pb.ts:273](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/payroll_groups.scailo_pb.ts#L273)
+[src/payroll_groups.scailo_pb.ts:300](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/payroll_groups.scailo_pb.ts#L300)
 
 ___
 
@@ -537,7 +573,7 @@ ___
 
 #### Defined in
 
-[src/payroll_groups.scailo_pb.ts:277](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/payroll_groups.scailo_pb.ts#L277)
+[src/payroll_groups.scailo_pb.ts:304](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/payroll_groups.scailo_pb.ts#L304)
 
 ___
 
@@ -558,4 +594,4 @@ ___
 
 #### Defined in
 
-[src/payroll_groups.scailo_pb.ts:281](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/payroll_groups.scailo_pb.ts#L281)
+[src/payroll_groups.scailo_pb.ts:308](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/payroll_groups.scailo_pb.ts#L308)

@@ -2,7 +2,7 @@
 
 # Class: ProformaInvoicesServicePaginationResponse
 
-Describes the response to a pagination request
+Response message for paginated queries, including total counts for UI elements.
 
 **`Generated`**
 
@@ -69,7 +69,7 @@ Message\&lt;ProformaInvoicesServicePaginationResponse\&gt;.constructor
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:2011](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L2011)
+[src/proforma_invoices.scailo_pb.ts:2774](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L2774)
 
 ## Properties
 
@@ -93,7 +93,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:1981](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L1981)
+[src/proforma_invoices.scailo_pb.ts:2744](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L2744)
 
 ___
 
@@ -117,7 +117,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:1991](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L1991)
+[src/proforma_invoices.scailo_pb.ts:2754](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L2754)
 
 ___
 
@@ -135,7 +135,7 @@ from field: repeated Scailo.ProformaInvoice payload = 4;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:2009](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L2009)
+[src/proforma_invoices.scailo_pb.ts:2772](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L2772)
 
 ___
 
@@ -159,7 +159,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:2001](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L2001)
+[src/proforma_invoices.scailo_pb.ts:2764](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L2764)
 
 ___
 
@@ -169,7 +169,7 @@ ___
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:2018](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L2018)
+[src/proforma_invoices.scailo_pb.ts:2781](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L2781)
 
 ___
 
@@ -179,7 +179,7 @@ ___
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:2016](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L2016)
+[src/proforma_invoices.scailo_pb.ts:2779](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L2779)
 
 ___
 
@@ -189,7 +189,7 @@ ___
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:2017](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L2017)
+[src/proforma_invoices.scailo_pb.ts:2780](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L2780)
 
 ## Methods
 
@@ -477,7 +477,7 @@ ___
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:2037](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L2037)
+[src/proforma_invoices.scailo_pb.ts:2800](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L2800)
 
 ___
 
@@ -498,7 +498,7 @@ ___
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:2025](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L2025)
+[src/proforma_invoices.scailo_pb.ts:2788](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L2788)
 
 ___
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:2029](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L2029)
+[src/proforma_invoices.scailo_pb.ts:2792](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L2792)
 
 ___
 
@@ -540,4 +540,4 @@ ___
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:2033](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L2033)
+[src/proforma_invoices.scailo_pb.ts:2796](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L2796)

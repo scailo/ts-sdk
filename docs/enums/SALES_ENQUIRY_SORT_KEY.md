@@ -2,7 +2,7 @@
 
 # Enumeration: SALES\_ENQUIRY\_SORT\_KEY
 
-Describes the available sort keys
+Enumeration of fields available for sorting sales enquiry search results.
 
 **`Generated`**
 
@@ -23,7 +23,6 @@ from enum Scailo.SALES_ENQUIRY_SORT_KEY
 - [SALES\_ENQUIRY\_SORT\_KEY\_FINAL\_REF\_NUMBER](SALES_ENQUIRY_SORT_KEY.md#sales_enquiry_sort_key_final_ref_number)
 - [SALES\_ENQUIRY\_SORT\_KEY\_ID\_UNSPECIFIED](SALES_ENQUIRY_SORT_KEY.md#sales_enquiry_sort_key_id_unspecified)
 - [SALES\_ENQUIRY\_SORT\_KEY\_MODIFIED\_AT](SALES_ENQUIRY_SORT_KEY.md#sales_enquiry_sort_key_modified_at)
-- [SALES\_ENQUIRY\_SORT\_KEY\_PRIORITY](SALES_ENQUIRY_SORT_KEY.md#sales_enquiry_sort_key_priority)
 - [SALES\_ENQUIRY\_SORT\_KEY\_REFERENCE\_ID](SALES_ENQUIRY_SORT_KEY.md#sales_enquiry_sort_key_reference_id)
 
 ## Enumeration Members
@@ -32,7 +31,9 @@ from enum Scailo.SALES_ENQUIRY_SORT_KEY
 
 • **SALES\_ENQUIRY\_SORT\_KEY\_AMENDMENT\_COUNT** = ``15``
 
-Fetch ordered results by the amendment count
+**`Description`**
+
+Sort by the total number of times the sales enquiry has been amended.
 
 **`Generated`**
 
@@ -40,7 +41,7 @@ from enum value: SALES_ENQUIRY_SORT_KEY_AMENDMENT_COUNT = 15;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:241](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L241)
+[src/sales_enquiries.scailo_pb.ts:234](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L234)
 
 ___
 
@@ -48,7 +49,9 @@ ___
 
 • **SALES\_ENQUIRY\_SORT\_KEY\_APPROVED\_BY** = ``4``
 
-Fetch ordered results by the approved by field
+**`Description`**
+
+Sort by the system ID of the approving user.
 
 **`Generated`**
 
@@ -56,7 +59,7 @@ from enum value: SALES_ENQUIRY_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:185](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L185)
+[src/sales_enquiries.scailo_pb.ts:185](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L185)
 
 ___
 
@@ -64,7 +67,9 @@ ___
 
 • **SALES\_ENQUIRY\_SORT\_KEY\_APPROVED\_ON** = ``3``
 
-Fetch ordered results by the approved on timestamp
+**`Description`**
+
+Sort by the official approval timestamp.
 
 **`Generated`**
 
@@ -72,7 +77,7 @@ from enum value: SALES_ENQUIRY_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:178](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L178)
+[src/sales_enquiries.scailo_pb.ts:178](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L178)
 
 ___
 
@@ -80,7 +85,9 @@ ___
 
 • **SALES\_ENQUIRY\_SORT\_KEY\_APPROVER\_ROLE\_ID** = ``5``
 
-Fetch ordered results by the approver's role ID
+**`Description`**
+
+Sort by the security role ID used by the approver.
 
 **`Generated`**
 
@@ -88,7 +95,7 @@ from enum value: SALES_ENQUIRY_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:192](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L192)
+[src/sales_enquiries.scailo_pb.ts:192](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L192)
 
 ___
 
@@ -96,7 +103,9 @@ ___
 
 • **SALES\_ENQUIRY\_SORT\_KEY\_BUYER\_CLIENT\_ID** = ``13``
 
-Fetch ordered results by the buyer client ID
+**`Description`**
+
+Sort by the internal ID of the buyer client.
 
 **`Generated`**
 
@@ -104,7 +113,7 @@ from enum value: SALES_ENQUIRY_SORT_KEY_BUYER_CLIENT_ID = 13;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:227](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L227)
+[src/sales_enquiries.scailo_pb.ts:227](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L227)
 
 ___
 
@@ -112,7 +121,9 @@ ___
 
 • **SALES\_ENQUIRY\_SORT\_KEY\_COMPLETED\_ON** = ``6``
 
-Fetch ordered results by the approver's completed on timestamp
+**`Description`**
+
+Sort by the timestamp of record completion.
 
 **`Generated`**
 
@@ -120,7 +131,7 @@ from enum value: SALES_ENQUIRY_SORT_KEY_COMPLETED_ON = 6;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:199](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L199)
+[src/sales_enquiries.scailo_pb.ts:199](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L199)
 
 ___
 
@@ -128,7 +139,9 @@ ___
 
 • **SALES\_ENQUIRY\_SORT\_KEY\_CONSIGNEE\_CLIENT\_ID** = ``12``
 
-Fetch ordered results by the consignee client ID
+**`Description`**
+
+Sort by the internal ID of the consignee client.
 
 **`Generated`**
 
@@ -136,7 +149,7 @@ from enum value: SALES_ENQUIRY_SORT_KEY_CONSIGNEE_CLIENT_ID = 12;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:220](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L220)
+[src/sales_enquiries.scailo_pb.ts:220](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L220)
 
 ___
 
@@ -144,7 +157,9 @@ ___
 
 • **SALES\_ENQUIRY\_SORT\_KEY\_CREATED\_AT** = ``1``
 
-Fetch ordered results by the creation timestamp
+**`Description`**
+
+Sort by the timestamp the record was initially created.
 
 **`Generated`**
 
@@ -152,7 +167,7 @@ from enum value: SALES_ENQUIRY_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:164](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L164)
+[src/sales_enquiries.scailo_pb.ts:164](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L164)
 
 ___
 
@@ -160,7 +175,9 @@ ___
 
 • **SALES\_ENQUIRY\_SORT\_KEY\_FINAL\_REF\_NUMBER** = ``11``
 
-Fetch ordered results by the final ref number
+**`Description`**
+
+Sort alphabetically by the system-generated reference number.
 
 **`Generated`**
 
@@ -168,7 +185,7 @@ from enum value: SALES_ENQUIRY_SORT_KEY_FINAL_REF_NUMBER = 11;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:213](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L213)
+[src/sales_enquiries.scailo_pb.ts:213](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L213)
 
 ___
 
@@ -176,7 +193,9 @@ ___
 
 • **SALES\_ENQUIRY\_SORT\_KEY\_ID\_UNSPECIFIED** = ``0``
 
-Fetch ordered results by id
+**`Description`**
+
+Default sort behavior (by internal ID).
 
 **`Generated`**
 
@@ -184,7 +203,7 @@ from enum value: SALES_ENQUIRY_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:157](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L157)
+[src/sales_enquiries.scailo_pb.ts:157](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L157)
 
 ___
 
@@ -192,7 +211,9 @@ ___
 
 • **SALES\_ENQUIRY\_SORT\_KEY\_MODIFIED\_AT** = ``2``
 
-Fetch ordered results by the modified timestamp
+**`Description`**
+
+Sort by the timestamp the record was last modified.
 
 **`Generated`**
 
@@ -200,23 +221,7 @@ from enum value: SALES_ENQUIRY_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:171](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L171)
-
-___
-
-### SALES\_ENQUIRY\_SORT\_KEY\_PRIORITY
-
-• **SALES\_ENQUIRY\_SORT\_KEY\_PRIORITY** = ``14``
-
-Fetch ordered results by the priority
-
-**`Generated`**
-
-from enum value: SALES_ENQUIRY_SORT_KEY_PRIORITY = 14;
-
-#### Defined in
-
-[src/sales_enquiries.scailo_pb.ts:234](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L234)
+[src/sales_enquiries.scailo_pb.ts:171](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L171)
 
 ___
 
@@ -224,7 +229,9 @@ ___
 
 • **SALES\_ENQUIRY\_SORT\_KEY\_REFERENCE\_ID** = ``10``
 
-Fetch ordered results by the reference ID
+**`Description`**
+
+Sort alphabetically by the user-provided reference ID.
 
 **`Generated`**
 
@@ -232,4 +239,4 @@ from enum value: SALES_ENQUIRY_SORT_KEY_REFERENCE_ID = 10;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:206](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L206)
+[src/sales_enquiries.scailo_pb.ts:206](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L206)

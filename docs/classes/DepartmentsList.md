@@ -2,7 +2,7 @@
 
 # Class: DepartmentsList
 
-Describes the message consisting of the list of departments
+Container message for a collection of Department records.
 
 **`Generated`**
 
@@ -66,7 +66,7 @@ Message\&lt;DepartmentsList\&gt;.constructor
 
 #### Defined in
 
-[src/departments.scailo_pb.ts:470](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/departments.scailo_pb.ts#L470)
+[src/departments.scailo_pb.ts:592](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/departments.scailo_pb.ts#L592)
 
 ## Properties
 
@@ -74,7 +74,9 @@ Message\&lt;DepartmentsList\&gt;.constructor
 
 • **list**: [`Department`](Department.md)[] = `[]`
 
-List of records
+**`Description`**
+
+An array of Department records.
 
 **`Generated`**
 
@@ -82,7 +84,7 @@ from field: repeated Scailo.Department list = 1;
 
 #### Defined in
 
-[src/departments.scailo_pb.ts:468](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/departments.scailo_pb.ts#L468)
+[src/departments.scailo_pb.ts:590](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/departments.scailo_pb.ts#L590)
 
 ___
 
@@ -92,7 +94,7 @@ ___
 
 #### Defined in
 
-[src/departments.scailo_pb.ts:477](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/departments.scailo_pb.ts#L477)
+[src/departments.scailo_pb.ts:599](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/departments.scailo_pb.ts#L599)
 
 ___
 
@@ -102,7 +104,7 @@ ___
 
 #### Defined in
 
-[src/departments.scailo_pb.ts:475](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/departments.scailo_pb.ts#L475)
+[src/departments.scailo_pb.ts:597](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/departments.scailo_pb.ts#L597)
 
 ___
 
@@ -112,7 +114,7 @@ ___
 
 #### Defined in
 
-[src/departments.scailo_pb.ts:476](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/departments.scailo_pb.ts#L476)
+[src/departments.scailo_pb.ts:598](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/departments.scailo_pb.ts#L598)
 
 ## Methods
 
@@ -400,7 +402,7 @@ ___
 
 #### Defined in
 
-[src/departments.scailo_pb.ts:493](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/departments.scailo_pb.ts#L493)
+[src/departments.scailo_pb.ts:615](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/departments.scailo_pb.ts#L615)
 
 ___
 
@@ -421,7 +423,7 @@ ___
 
 #### Defined in
 
-[src/departments.scailo_pb.ts:481](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/departments.scailo_pb.ts#L481)
+[src/departments.scailo_pb.ts:603](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/departments.scailo_pb.ts#L603)
 
 ___
 
@@ -442,7 +444,7 @@ ___
 
 #### Defined in
 
-[src/departments.scailo_pb.ts:485](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/departments.scailo_pb.ts#L485)
+[src/departments.scailo_pb.ts:607](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/departments.scailo_pb.ts#L607)
 
 ___
 
@@ -463,4 +465,4 @@ ___
 
 #### Defined in
 
-[src/departments.scailo_pb.ts:489](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/departments.scailo_pb.ts#L489)
+[src/departments.scailo_pb.ts:611](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/departments.scailo_pb.ts#L611)

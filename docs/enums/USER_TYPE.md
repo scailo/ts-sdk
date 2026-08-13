@@ -2,7 +2,7 @@
 
 # Enumeration: USER\_TYPE
 
-Describes the available user types
+Enum defining the primary account classifications and systemic access types for users on the platform.
 
 **`Generated`**
 
@@ -23,7 +23,9 @@ from enum Scailo.USER_TYPE
 
 • **USER\_TYPE\_ANY\_UNSPECIFIED** = ``0``
 
-Useful for filter and count operation when this field needs to be ignored
+**`Description`**
+
+Denotes that the user type filter should be disregarded. Used exclusively within search APIs to bypass classification restrictions.
 
 **`Generated`**
 
@@ -31,7 +33,7 @@ from enum value: USER_TYPE_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L23)
+[src/users.scailo_pb.ts:24](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L24)
 
 ___
 
@@ -39,7 +41,9 @@ ___
 
 • **USER\_TYPE\_CLIENT** = ``2``
 
-Denotes that the user is a client
+**`Description`**
+
+Denotes an external client user mapping linked directly to a client organization or billing profile.
 
 **`Generated`**
 
@@ -47,7 +51,7 @@ from enum value: USER_TYPE_CLIENT = 2;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:37](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L37)
+[src/users.scailo_pb.ts:40](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L40)
 
 ___
 
@@ -55,7 +59,9 @@ ___
 
 • **USER\_TYPE\_EMPLOYEE** = ``1``
 
-Denotes that the user is an employee
+**`Description`**
+
+Denotes an internal employee lifecycle record bound to corporate attendance, shift scheduling, and payroll.
 
 **`Generated`**
 
@@ -63,7 +69,7 @@ from enum value: USER_TYPE_EMPLOYEE = 1;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L30)
+[src/users.scailo_pb.ts:32](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L32)
 
 ___
 
@@ -71,7 +77,9 @@ ___
 
 • **USER\_TYPE\_VENDOR** = ``3``
 
-Denotes that the user is a vendor
+**`Description`**
+
+Denotes an external vendor contact profile linked to supply chain logistics or procurement tracking.
 
 **`Generated`**
 
@@ -79,4 +87,4 @@ from enum value: USER_TYPE_VENDOR = 3;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:44](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L44)
+[src/users.scailo_pb.ts:48](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L48)

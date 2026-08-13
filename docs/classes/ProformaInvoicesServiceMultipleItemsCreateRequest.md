@@ -2,7 +2,9 @@
 
 # Class: ProformaInvoicesServiceMultipleItemsCreateRequest
 
-Describes the parameters required to add multiple items to a proforma invoice
+Request message for appending multiple line items to a Proforma Invoice in a single batch transaction.
+Optimized for scenarios like invoice imports or autofill operations where dozens of items
+are attached simultaneously to a parent record.
 
 **`Generated`**
 
@@ -68,7 +70,7 @@ Message\&lt;ProformaInvoicesServiceMultipleItemsCreateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:1249](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L1249)
+[src/proforma_invoices.scailo_pb.ts:1762](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L1762)
 
 ## Properties
 
@@ -76,7 +78,21 @@ Message\&lt;ProformaInvoicesServiceMultipleItemsCreateRequest\&gt;.constructor
 
 • **list**: [`ProformaInvoicesServiceMultipleItemsSingleton`](ProformaInvoicesServiceMultipleItemsSingleton.md)[] = `[]`
 
-List of items
+**`Mandatory`**
+
+**`Description`**
+
+An array containing the individual line item payloads to be appended to the invoice.
+
+**`Example`**
+
+```ts
+[]
+```
+
+**`Format`**
+
+Repeated array of ProformaInvoicesServiceMultipleItemsSingleton message blocks.
 
 **`Generated`**
 
@@ -84,7 +100,7 @@ from field: repeated Scailo.ProformaInvoicesServiceMultipleItemsSingleton list =
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:1247](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L1247)
+[src/proforma_invoices.scailo_pb.ts:1760](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L1760)
 
 ___
 
@@ -92,7 +108,25 @@ ___
 
 • **proformaInvoiceId**: `bigint` = `protoInt64.zero`
 
-Stores the proforma invoice ID
+**`Mandatory`**
+
+**`Description`**
+
+The unique internal identifier of the parent proforma invoice to which this batch of items will be attached.
+
+**`Example`**
+
+```ts
+1024
+```
+
+**`Regex`**
+
+^[1-9][0-9]*$
+
+**`Format`**
+
+Unsigned 64-bit integer greater than 0.
 
 **`Generated`**
 
@@ -100,23 +134,41 @@ from field: uint64 proforma_invoice_id = 10;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:1240](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L1240)
+[src/proforma_invoices.scailo_pb.ts:1746](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L1746)
 
 ___
 
 ### userComment
 
-• **userComment**: `string` = `""`
+• `Optional` **userComment**: `string`
 
-Stores any comment that the user might add during this operation
+**`Optional`**
+
+**`Description`**
+
+Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+
+**`Example`**
+
+```ts
+"This is a comment for audit purposes."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
-from field: string user_comment = 1;
+from field: optional string user_comment = 1;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:1233](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L1233)
+[src/proforma_invoices.scailo_pb.ts:1730](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L1730)
 
 ___
 
@@ -126,7 +178,7 @@ ___
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:1256](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L1256)
+[src/proforma_invoices.scailo_pb.ts:1769](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L1769)
 
 ___
 
@@ -136,7 +188,7 @@ ___
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:1254](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L1254)
+[src/proforma_invoices.scailo_pb.ts:1767](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L1767)
 
 ___
 
@@ -146,7 +198,7 @@ ___
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:1255](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L1255)
+[src/proforma_invoices.scailo_pb.ts:1768](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L1768)
 
 ## Methods
 
@@ -434,7 +486,7 @@ ___
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:1274](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L1274)
+[src/proforma_invoices.scailo_pb.ts:1787](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L1787)
 
 ___
 
@@ -455,7 +507,7 @@ ___
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:1262](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L1262)
+[src/proforma_invoices.scailo_pb.ts:1775](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L1775)
 
 ___
 
@@ -476,7 +528,7 @@ ___
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:1266](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L1266)
+[src/proforma_invoices.scailo_pb.ts:1779](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L1779)
 
 ___
 
@@ -497,4 +549,4 @@ ___
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:1270](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L1270)
+[src/proforma_invoices.scailo_pb.ts:1783](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L1783)

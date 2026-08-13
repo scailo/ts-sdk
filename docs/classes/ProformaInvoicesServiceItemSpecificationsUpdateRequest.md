@@ -2,7 +2,10 @@
 
 # Class: ProformaInvoicesServiceItemSpecificationsUpdateRequest
 
-Describes the parameters required to update the specifications of an item in a proforma invoice
+Request message for isolating updates strictly to the textual specifications or notes
+of a Proforma Invoice line item.
+Designed for scenarios where operational instructions change without impacting any
+commercial terms, pricing, or quantities.
 
 **`Generated`**
 
@@ -68,7 +71,7 @@ Message\&lt;ProformaInvoicesServiceItemSpecificationsUpdateRequest\&gt;.construc
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:1421](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L1421)
+[src/proforma_invoices.scailo_pb.ts:2060](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L2060)
 
 ## Properties
 
@@ -76,7 +79,25 @@ Message\&lt;ProformaInvoicesServiceItemSpecificationsUpdateRequest\&gt;.construc
 
 • **specifications**: `string` = `""`
 
-The specifications that should be updated
+**`Mandatory`**
+
+**`Description`**
+
+Additional custom textual requirements, notes, or specifications associated with this preliminary item.
+
+**`Example`**
+
+```ts
+"Estimated based on current freight rates."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
@@ -84,23 +105,41 @@ from field: string specifications = 21;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:1419](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L1419)
+[src/proforma_invoices.scailo_pb.ts:2058](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L2058)
 
 ___
 
 ### userComment
 
-• **userComment**: `string` = `""`
+• `Optional` **userComment**: `string`
 
-Stores any comment that the user might add during this operation
+**`Optional`**
+
+**`Description`**
+
+Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+
+**`Example`**
+
+```ts
+"This is a comment for audit purposes."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
-from field: string user_comment = 1;
+from field: optional string user_comment = 1;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:1405](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L1405)
+[src/proforma_invoices.scailo_pb.ts:2026](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L2026)
 
 ___
 
@@ -108,7 +147,25 @@ ___
 
 • **uuid**: `string` = `""`
 
-The UUID of the record
+**`Mandatory`**
+
+**`Description`**
+
+The globally unique identifier (UUID) of the target record that needs to be updated.
+
+**`Example`**
+
+```ts
+"550e8400-e29b-41d4-a716-446655440000"
+```
+
+**`Regex`**
+
+^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+
+**`Format`**
+
+Must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
@@ -116,7 +173,7 @@ from field: string uuid = 2;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:1412](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L1412)
+[src/proforma_invoices.scailo_pb.ts:2042](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L2042)
 
 ___
 
@@ -126,7 +183,7 @@ ___
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:1428](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L1428)
+[src/proforma_invoices.scailo_pb.ts:2067](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L2067)
 
 ___
 
@@ -136,7 +193,7 @@ ___
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:1426](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L1426)
+[src/proforma_invoices.scailo_pb.ts:2065](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L2065)
 
 ___
 
@@ -146,7 +203,7 @@ ___
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:1427](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L1427)
+[src/proforma_invoices.scailo_pb.ts:2066](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L2066)
 
 ## Methods
 
@@ -434,7 +491,7 @@ ___
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:1446](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L1446)
+[src/proforma_invoices.scailo_pb.ts:2085](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L2085)
 
 ___
 
@@ -455,7 +512,7 @@ ___
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:1434](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L1434)
+[src/proforma_invoices.scailo_pb.ts:2073](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L2073)
 
 ___
 
@@ -476,7 +533,7 @@ ___
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:1438](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L1438)
+[src/proforma_invoices.scailo_pb.ts:2077](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L2077)
 
 ___
 
@@ -497,4 +554,4 @@ ___
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:1442](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L1442)
+[src/proforma_invoices.scailo_pb.ts:2081](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L2081)

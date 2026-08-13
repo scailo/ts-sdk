@@ -2,7 +2,9 @@
 
 # Class: SalesOrdersServiceMultipleItemsCreateRequest
 
-Describes the parameters required to add multiple items to a sales order
+Request message for appending multiple line items to a Sales Order in a single batch transaction.
+Optimized for scenarios like order imports or autofill operations where dozens of items
+are attached simultaneously to a parent record.
 
 **`Generated`**
 
@@ -68,7 +70,7 @@ Message\&lt;SalesOrdersServiceMultipleItemsCreateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:1393](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L1393)
+[src/sales_orders.scailo_pb.ts:1965](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L1965)
 
 ## Properties
 
@@ -76,7 +78,21 @@ Message\&lt;SalesOrdersServiceMultipleItemsCreateRequest\&gt;.constructor
 
 • **list**: [`SalesOrdersServiceMultipleItemsSingleton`](SalesOrdersServiceMultipleItemsSingleton.md)[] = `[]`
 
-List of items
+**`Mandatory`**
+
+**`Description`**
+
+An array containing the individual line item payloads to be appended to the order.
+
+**`Example`**
+
+```ts
+[]
+```
+
+**`Format`**
+
+Repeated array of SalesOrdersServiceMultipleItemsSingleton message blocks.
 
 **`Generated`**
 
@@ -84,7 +100,7 @@ from field: repeated Scailo.SalesOrdersServiceMultipleItemsSingleton list = 11;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:1391](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L1391)
+[src/sales_orders.scailo_pb.ts:1963](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L1963)
 
 ___
 
@@ -92,7 +108,25 @@ ___
 
 • **salesOrderId**: `bigint` = `protoInt64.zero`
 
-Stores the sales order ID
+**`Mandatory`**
+
+**`Description`**
+
+The unique internal identifier of the parent sales order to which this batch of items will be attached.
+
+**`Example`**
+
+```ts
+1024
+```
+
+**`Regex`**
+
+^[1-9][0-9]*$
+
+**`Format`**
+
+Unsigned 64-bit integer greater than 0.
 
 **`Generated`**
 
@@ -100,23 +134,41 @@ from field: uint64 sales_order_id = 10;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:1384](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L1384)
+[src/sales_orders.scailo_pb.ts:1949](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L1949)
 
 ___
 
 ### userComment
 
-• **userComment**: `string` = `""`
+• `Optional` **userComment**: `string`
 
-Stores any comment that the user might add during this operation
+**`Optional`**
+
+**`Description`**
+
+Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+
+**`Example`**
+
+```ts
+"This is a comment for audit purposes."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
-from field: string user_comment = 1;
+from field: optional string user_comment = 1;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:1377](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L1377)
+[src/sales_orders.scailo_pb.ts:1933](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L1933)
 
 ___
 
@@ -126,7 +178,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:1400](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L1400)
+[src/sales_orders.scailo_pb.ts:1972](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L1972)
 
 ___
 
@@ -136,7 +188,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:1398](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L1398)
+[src/sales_orders.scailo_pb.ts:1970](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L1970)
 
 ___
 
@@ -146,7 +198,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:1399](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L1399)
+[src/sales_orders.scailo_pb.ts:1971](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L1971)
 
 ## Methods
 
@@ -434,7 +486,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:1418](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L1418)
+[src/sales_orders.scailo_pb.ts:1990](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L1990)
 
 ___
 
@@ -455,7 +507,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:1406](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L1406)
+[src/sales_orders.scailo_pb.ts:1978](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L1978)
 
 ___
 
@@ -476,7 +528,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:1410](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L1410)
+[src/sales_orders.scailo_pb.ts:1982](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L1982)
 
 ___
 
@@ -497,4 +549,4 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:1414](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L1414)
+[src/sales_orders.scailo_pb.ts:1986](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L1986)

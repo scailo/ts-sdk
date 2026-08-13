@@ -30,7 +30,7 @@ from enum value: WORKFLOW_RULE_MOMENT_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/workflows_rules.scailo_pb.ts:657](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/workflows_rules.scailo_pb.ts#L657)
+[src/workflows_rules.scailo_pb.ts:697](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/workflows_rules.scailo_pb.ts#L697)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: WORKFLOW_RULE_MOMENT_BEGIN = 1;
 
 #### Defined in
 
-[src/workflows_rules.scailo_pb.ts:664](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/workflows_rules.scailo_pb.ts#L664)
+[src/workflows_rules.scailo_pb.ts:704](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/workflows_rules.scailo_pb.ts#L704)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: WORKFLOW_RULE_MOMENT_END = 2;
 
 #### Defined in
 
-[src/workflows_rules.scailo_pb.ts:671](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/workflows_rules.scailo_pb.ts#L671)
+[src/workflows_rules.scailo_pb.ts:711](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/workflows_rules.scailo_pb.ts#L711)

@@ -2,7 +2,7 @@
 
 # Class: SalesEnquiriesServicePaginationReq
 
-Describes a pagination request to retrieve records
+Pagination request for retrieving slices of Sales Enquiry records.
 
 **`Generated`**
 
@@ -71,7 +71,7 @@ Message\&lt;SalesEnquiriesServicePaginationReq\&gt;.constructor
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:1793](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L1793)
+[src/sales_enquiries.scailo_pb.ts:2381](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L2381)
 
 ## Properties
 
@@ -105,13 +105,13 @@ from field: int64 count = 2;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:1746](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L1746)
+[src/sales_enquiries.scailo_pb.ts:2329](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L2329)
 
 ___
 
 ### isActive
 
-• **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
+• `Optional` **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md)
 
 **`Optional`**
 
@@ -127,17 +127,17 @@ ANY
 
 **`Generated`**
 
-from field: Scailo.BOOL_FILTER is_active = 1;
+from field: optional Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:1730](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L1730)
+[src/sales_enquiries.scailo_pb.ts:2313](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L2313)
 
 ___
 
 ### offset
 
-• **offset**: `bigint` = `protoInt64.zero`
+• `Optional` **offset**: `bigint`
 
 **`Optional`**
 
@@ -161,17 +161,17 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 offset = 3;
+from field: optional uint64 offset = 3;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:1762](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L1762)
+[src/sales_enquiries.scailo_pb.ts:2345](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L2345)
 
 ___
 
 ### sortKey
 
-• **sortKey**: [`SALES_ENQUIRY_SORT_KEY`](../enums/SALES_ENQUIRY_SORT_KEY.md) = `SALES_ENQUIRY_SORT_KEY.SALES_ENQUIRY_SORT_KEY_ID_UNSPECIFIED`
+• `Optional` **sortKey**: [`SALES_ENQUIRY_SORT_KEY`](../enums/SALES_ENQUIRY_SORT_KEY.md)
 
 **`Optional`**
 
@@ -181,17 +181,17 @@ The specific field key to sort the results by.
 
 **`Generated`**
 
-from field: Scailo.SALES_ENQUIRY_SORT_KEY sort_key = 5;
+from field: optional Scailo.SALES_ENQUIRY_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:1784](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L1784)
+[src/sales_enquiries.scailo_pb.ts:2367](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L2367)
 
 ___
 
 ### sortOrder
 
-• **sortOrder**: [`SORT_ORDER`](../enums/SORT_ORDER.md) = `SORT_ORDER.ASCENDING_UNSPECIFIED`
+• `Optional` **sortOrder**: [`SORT_ORDER`](../enums/SORT_ORDER.md)
 
 **`Optional`**
 
@@ -207,27 +207,37 @@ DESCENDING
 
 **`Generated`**
 
-from field: Scailo.SORT_ORDER sort_order = 4;
+from field: optional Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:1774](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L1774)
+[src/sales_enquiries.scailo_pb.ts:2357](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L2357)
 
 ___
 
 ### status
 
-• **status**: [`STANDARD_LIFECYCLE_STATUS`](../enums/STANDARD_LIFECYCLE_STATUS.md) = `STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED`
+• `Optional` **status**: [`STANDARD_LIFECYCLE_STATUS`](../enums/STANDARD_LIFECYCLE_STATUS.md)
 
-The status of this sales enquiry
+**`Optional`**
+
+**`Description`**
+
+Filter results by a specific lifecycle status.
+
+**`Example`**
+
+```ts
+STANDING
+```
 
 **`Generated`**
 
-from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
+from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:1791](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L1791)
+[src/sales_enquiries.scailo_pb.ts:2379](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L2379)
 
 ___
 
@@ -237,7 +247,7 @@ ___
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:1800](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L1800)
+[src/sales_enquiries.scailo_pb.ts:2388](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L2388)
 
 ___
 
@@ -247,7 +257,7 @@ ___
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:1798](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L1798)
+[src/sales_enquiries.scailo_pb.ts:2386](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L2386)
 
 ___
 
@@ -257,7 +267,7 @@ ___
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:1799](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L1799)
+[src/sales_enquiries.scailo_pb.ts:2387](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L2387)
 
 ## Methods
 
@@ -545,7 +555,7 @@ ___
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:1821](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L1821)
+[src/sales_enquiries.scailo_pb.ts:2409](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L2409)
 
 ___
 
@@ -566,7 +576,7 @@ ___
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:1809](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L1809)
+[src/sales_enquiries.scailo_pb.ts:2397](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L2397)
 
 ___
 
@@ -587,7 +597,7 @@ ___
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:1813](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L1813)
+[src/sales_enquiries.scailo_pb.ts:2401](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L2401)
 
 ___
 
@@ -608,4 +618,4 @@ ___
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:1817](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L1817)
+[src/sales_enquiries.scailo_pb.ts:2405](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L2405)

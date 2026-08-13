@@ -72,7 +72,7 @@ Message\&lt;QCGroupsServiceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:329](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/qc_groups.scailo_pb.ts#L329)
+[src/qc_groups.scailo_pb.ts:345](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/qc_groups.scailo_pb.ts#L345)
 
 ## Properties
 
@@ -88,7 +88,7 @@ from field: string code = 11;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:313](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/qc_groups.scailo_pb.ts#L313)
+[src/qc_groups.scailo_pb.ts:322](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/qc_groups.scailo_pb.ts#L322)
 
 ___
 
@@ -104,7 +104,7 @@ from field: string description = 13;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:320](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/qc_groups.scailo_pb.ts#L320)
+[src/qc_groups.scailo_pb.ts:329](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/qc_groups.scailo_pb.ts#L329)
 
 ___
 
@@ -138,7 +138,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:276](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/qc_groups.scailo_pb.ts#L276)
+[src/qc_groups.scailo_pb.ts:276](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/qc_groups.scailo_pb.ts#L276)
 
 ___
 
@@ -146,7 +146,21 @@ ___
 
 • **formData**: [`FormFieldDatumCreateRequest`](FormFieldDatumCreateRequest.md)[] = `[]`
 
-The list of dynamic forms
+**`Optional`**
+
+**`Description`**
+
+A collection of dynamic form fields for organization-specific data.
+
+**`Example`**
+
+```ts
+[]
+```
+
+**`Format`**
+
+An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
 
 **`Generated`**
 
@@ -154,7 +168,7 @@ from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:327](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/qc_groups.scailo_pb.ts#L327)
+[src/qc_groups.scailo_pb.ts:343](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/qc_groups.scailo_pb.ts#L343)
 
 ___
 
@@ -170,7 +184,7 @@ from field: string name = 10;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:306](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/qc_groups.scailo_pb.ts#L306)
+[src/qc_groups.scailo_pb.ts:315](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/qc_groups.scailo_pb.ts#L315)
 
 ___
 
@@ -178,7 +192,25 @@ ___
 
 • **userComment**: `string` = `""`
 
-Stores any comment that the user might add during this operation
+**`Optional`**
+
+**`Description`**
+
+Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+
+**`Example`**
+
+```ts
+"This is a comment for audit purposes."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
@@ -186,7 +218,7 @@ from field: string user_comment = 2;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:283](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/qc_groups.scailo_pb.ts#L283)
+[src/qc_groups.scailo_pb.ts:292](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/qc_groups.scailo_pb.ts#L292)
 
 ___
 
@@ -220,7 +252,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:299](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/qc_groups.scailo_pb.ts#L299)
+[src/qc_groups.scailo_pb.ts:308](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/qc_groups.scailo_pb.ts#L308)
 
 ___
 
@@ -230,7 +262,7 @@ ___
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:336](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/qc_groups.scailo_pb.ts#L336)
+[src/qc_groups.scailo_pb.ts:352](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/qc_groups.scailo_pb.ts#L352)
 
 ___
 
@@ -240,7 +272,7 @@ ___
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:334](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/qc_groups.scailo_pb.ts#L334)
+[src/qc_groups.scailo_pb.ts:350](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/qc_groups.scailo_pb.ts#L350)
 
 ___
 
@@ -250,7 +282,7 @@ ___
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:335](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/qc_groups.scailo_pb.ts#L335)
+[src/qc_groups.scailo_pb.ts:351](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/qc_groups.scailo_pb.ts#L351)
 
 ## Methods
 
@@ -538,7 +570,7 @@ ___
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:358](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/qc_groups.scailo_pb.ts#L358)
+[src/qc_groups.scailo_pb.ts:374](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/qc_groups.scailo_pb.ts#L374)
 
 ___
 
@@ -559,7 +591,7 @@ ___
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:346](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/qc_groups.scailo_pb.ts#L346)
+[src/qc_groups.scailo_pb.ts:362](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/qc_groups.scailo_pb.ts#L362)
 
 ___
 
@@ -580,7 +612,7 @@ ___
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:350](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/qc_groups.scailo_pb.ts#L350)
+[src/qc_groups.scailo_pb.ts:366](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/qc_groups.scailo_pb.ts#L366)
 
 ___
 
@@ -601,4 +633,4 @@ ___
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:354](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/qc_groups.scailo_pb.ts#L354)
+[src/qc_groups.scailo_pb.ts:370](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/qc_groups.scailo_pb.ts#L370)

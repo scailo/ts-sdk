@@ -4,61 +4,61 @@ import { FormFieldDatum, FormFieldDatumCreateRequest, FormFieldDatumFilterReques
 import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base.scailo_pb.js";
 /**
  *
- * Describes the available sort keys
+ * Enumeration of fields available for sorting project search results.
  *
  * @generated from enum Scailo.PROJECT_SORT_KEY
  */
 export declare enum PROJECT_SORT_KEY {
     /**
-     * Fetch ordered results by id
+     * @description Default sort behavior (by internal ID).
      *
      * @generated from enum value: PROJECT_SORT_KEY_ID_UNSPECIFIED = 0;
      */
     PROJECT_SORT_KEY_ID_UNSPECIFIED = 0,
     /**
-     * Fetch ordered results by the creation timestamp
+     * @description Sort by the timestamp the record was initially created.
      *
      * @generated from enum value: PROJECT_SORT_KEY_CREATED_AT = 1;
      */
     PROJECT_SORT_KEY_CREATED_AT = 1,
     /**
-     * Fetch ordered results by the modified timestamp
+     * @description Sort by the timestamp the record was last modified.
      *
      * @generated from enum value: PROJECT_SORT_KEY_MODIFIED_AT = 2;
      */
     PROJECT_SORT_KEY_MODIFIED_AT = 2,
     /**
-     * Fetch ordered results by the approved on timestamp
+     * @description Sort by the official approval timestamp.
      *
      * @generated from enum value: PROJECT_SORT_KEY_APPROVED_ON = 3;
      */
     PROJECT_SORT_KEY_APPROVED_ON = 3,
     /**
-     * Fetch ordered results by the approved by field
+     * @description Sort by the system ID of the approving user.
      *
      * @generated from enum value: PROJECT_SORT_KEY_APPROVED_BY = 4;
      */
     PROJECT_SORT_KEY_APPROVED_BY = 4,
     /**
-     * Fetch ordered results by the approver's role ID
+     * @description Sort by the security role ID used by the approver.
      *
      * @generated from enum value: PROJECT_SORT_KEY_APPROVER_ROLE_ID = 5;
      */
     PROJECT_SORT_KEY_APPROVER_ROLE_ID = 5,
     /**
-     * Fetch ordered results by the approver's completed on timestamp
+     * @description Sort by the timestamp of record completion.
      *
      * @generated from enum value: PROJECT_SORT_KEY_COMPLETED_ON = 6;
      */
     PROJECT_SORT_KEY_COMPLETED_ON = 6,
     /**
-     * Fetch ordered results by the reference ID
+     * @description Sort alphabetically by the user-provided reference ID.
      *
      * @generated from enum value: PROJECT_SORT_KEY_REFERENCE_ID = 10;
      */
     PROJECT_SORT_KEY_REFERENCE_ID = 10,
     /**
-     * Fetch ordered results by the final ref number
+     * @description Sort alphabetically by the system-generated reference number.
      *
      * @generated from enum value: PROJECT_SORT_KEY_FINAL_REF_NUMBER = 11;
      */
@@ -66,7 +66,12 @@ export declare enum PROJECT_SORT_KEY {
 }
 /**
  *
- * Describes the parameters necessary to create a record
+ * Request message for creating a new project record.
+ * This message encapsulates all the foundational metadata, client associations,
+ * compliance details, and external system cross-references required to initialize a project.
+ *
+ * **Note:** This serves as the primary entry point for project provisioning, ensuring
+ * that required external mapping, auditing comments, and structural configurations are set.
  *
  * @generated from message Scailo.ProjectsServiceCreateRequest
  */
@@ -83,15 +88,24 @@ export declare class ProjectsServiceCreateRequest extends Message<ProjectsServic
      *
      * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
      *
-     * @generated from field: string entity_uuid = 1;
+     * @generated from field: optional string entity_uuid = 1;
      */
-    entityUuid: string;
+    entityUuid?: string;
     /**
-     * Stores any comment that the user might add during this operation
      *
-     * @generated from field: string user_comment = 2;
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
+     *
+     * @generated from field: optional string user_comment = 2;
      */
-    userComment: string;
+    userComment?: string;
     /**
      *
      * @optional
@@ -104,9 +118,9 @@ export declare class ProjectsServiceCreateRequest extends Message<ProjectsServic
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 vault_folder_id = 9;
+     * @generated from field: optional uint64 vault_folder_id = 9;
      */
-    vaultFolderId: bigint;
+    vaultFolderId?: bigint;
     /**
      *
      * @mandatory
@@ -123,19 +137,44 @@ export declare class ProjectsServiceCreateRequest extends Message<ProjectsServic
      */
     referenceId: string;
     /**
-     * The optional ID of the associated client
      *
-     * @generated from field: uint64 client_id = 12;
+     * @optional
+     *
+     * @description The unique identifier of the associated client.
+     *
+     * @example 455
+     *
+     * @regex ^[0-9]*$
+     *
+     * @format Non-negative 64-bit integer.
+     *
+     * @generated from field: optional uint64 client_id = 12;
      */
-    clientId: bigint;
+    clientId?: bigint;
     /**
-     * The description of the project
+     *
+     * @mandatory
+     *
+     * @description The core detailed description or summary of the project.
+     *
+     * @example "This is an exploratory project for Customer A."
+     *
+     * @regex ^[0-9A-Za-z ]+$
+     *
+     * @format Alphanumeric characters and spaces only. Must not be empty.
      *
      * @generated from field: string description = 13;
      */
     description: string;
     /**
-     * The list of dynamic forms
+     *
+     * @optional
+     *
+     * @description A collection of dynamic form fields for organization-specific data.
+     *
+     * @example []
+     *
+     * @format An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
      *
      * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
      */
@@ -151,19 +190,43 @@ export declare class ProjectsServiceCreateRequest extends Message<ProjectsServic
 }
 /**
  *
- * Describes the parameters necessary to update a record
+ * Request message for updating an existing Project record.
+ * Only applicable for records in `DRAFT` or `REVISION` states.
+ * This message allows for modifying the internal reference, client, description
+ * of an established Project.
+ *
+ * **Note:** Only fields provided in the request will typically be updated.
+ * The unique system ID is required to locate the target record.
  *
  * @generated from message Scailo.ProjectsServiceUpdateRequest
  */
 export declare class ProjectsServiceUpdateRequest extends Message<ProjectsServiceUpdateRequest> {
     /**
-     * Stores any comment that the user might add during this operation
      *
-     * @generated from field: string user_comment = 1;
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
+     *
+     * @generated from field: optional string user_comment = 1;
      */
-    userComment: string;
+    userComment?: string;
     /**
-     * The ID of the record that needs to be updated
+     *
+     * @mandatory
+     *
+     * @description The unique internal identifier of the target record that needs to be updated.
+     *
+     * @example 1024
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 id = 2;
      */
@@ -176,9 +239,9 @@ export declare class ProjectsServiceUpdateRequest extends Message<ProjectsServic
      *
      * @example true
      *
-     * @generated from field: bool notify_users = 3;
+     * @generated from field: optional bool notify_users = 3;
      */
-    notifyUsers: boolean;
+    notifyUsers?: boolean;
     /**
      *
      * @optional
@@ -191,12 +254,12 @@ export declare class ProjectsServiceUpdateRequest extends Message<ProjectsServic
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 vault_folder_id = 9;
+     * @generated from field: optional uint64 vault_folder_id = 9;
      */
-    vaultFolderId: bigint;
+    vaultFolderId?: bigint;
     /**
      *
-     * @mandatory
+     * @optional
      *
      * @description Updated alphanumeric reference ID. Must contain at least 1 character.
      *
@@ -206,23 +269,48 @@ export declare class ProjectsServiceUpdateRequest extends Message<ProjectsServic
      *
      * @format Alphanumeric characters and spaces only. No special symbols or punctuation allowed.
      *
-     * @generated from field: string reference_id = 10;
+     * @generated from field: optional string reference_id = 10;
      */
-    referenceId: string;
+    referenceId?: string;
     /**
-     * The optional ID of the associated client
      *
-     * @generated from field: uint64 client_id = 12;
-     */
-    clientId: bigint;
-    /**
-     * The description of the project
+     * @optional
      *
-     * @generated from field: string description = 13;
+     * @description The unique identifier of the associated client.
+     *
+     * @example 455
+     *
+     * @regex ^[0-9]*$
+     *
+     * @format Non-negative 64-bit integer.
+     *
+     * @generated from field: optional uint64 client_id = 12;
      */
-    description: string;
+    clientId?: bigint;
     /**
-     * The list of dynamic forms
+     *
+     * @optional
+     *
+     * @description The core detailed description or summary of the project.
+     *
+     * @example "This is an exploratory project for Customer A."
+     *
+     * @regex ^[0-9A-Za-z ]+$
+     *
+     * @format Alphanumeric characters and spaces only. Must not be empty.
+     *
+     * @generated from field: optional string description = 13;
+     */
+    description?: string;
+    /**
+     *
+     * @optional
+     *
+     * @description A collection of dynamic form fields for organization-specific data.
+     *
+     * @example []
+     *
+     * @format An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
      *
      * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
      */
@@ -238,7 +326,7 @@ export declare class ProjectsServiceUpdateRequest extends Message<ProjectsServic
 }
 /**
  *
- * Describes the parameters that are part of a standard response
+ * Represents a full Project within the system.
  *
  * @generated from message Scailo.Project
  */
@@ -317,19 +405,26 @@ export declare class Project extends Message<Project> {
      */
     finalRefNumber: string;
     /**
-     * The optional ID of the associated client
+     *
+     * @description The unique identifier of the associated client.
+     *
+     * @example 455
      *
      * @generated from field: uint64 client_id = 12;
      */
     clientId: bigint;
     /**
-     * The description of the project
+     *
+     * @description The core detailed description or summary of the project.
+     *
+     * @example "This is an exploratory project for Customer A."
      *
      * @generated from field: string description = 13;
      */
     description: string;
     /**
-     * The list of dynamic forms
+     *
+     * @description Collection of organization-specific dynamic data.
      *
      * @generated from field: repeated Scailo.FormFieldDatum form_data = 30;
      */
@@ -345,13 +440,13 @@ export declare class Project extends Message<Project> {
 }
 /**
  *
- * Describes the message consisting of the list of records
+ * Container message for a collection of Project records.
  *
  * @generated from message Scailo.ProjectsList
  */
 export declare class ProjectsList extends Message<ProjectsList> {
     /**
-     * List of records
+     * @description An array of Project records.
      *
      * @generated from field: repeated Scailo.Project list = 1;
      */
@@ -367,25 +462,36 @@ export declare class ProjectsList extends Message<ProjectsList> {
 }
 /**
  *
- * Describes the parameters that are part of a project's statistics payload
+ * Represents a snapshot of performance and progress metrics for a project.
+ * This message aggregates key performance indicators (KPIs) to provide a
+ * high-level overview of project health, effort, and completion status.
  *
  * @generated from message Scailo.ProjectStatistics
  */
 export declare class ProjectStatistics extends Message<ProjectStatistics> {
     /**
-     * Stores the total amount of time spent on the project
+     *
+     * @description The total accumulated time spent on the project in seconds.
+     *
+     * @example 86400
      *
      * @generated from field: uint64 total_duration = 1;
      */
     totalDuration: bigint;
     /**
-     * Stores the cumulative completion percentage of the project
+     *
+     * @description The cumulative progress of the project expressed as a percentage. Can have a range between 0 and 10000. A fully completed project would have a value of 10000.
+     *
+     * @example 10000
      *
      * @generated from field: uint64 total_completion_percentage = 2;
      */
     totalCompletionPercentage: bigint;
     /**
-     * Stores the total number of points
+     *
+     * @description The total number of points earned or assigned to the project. This is used to track effort or value delivery in agile-style workflows.
+     *
+     * @example 10000
      *
      * @generated from field: uint64 total_points = 3;
      */
@@ -401,7 +507,7 @@ export declare class ProjectStatistics extends Message<ProjectStatistics> {
 }
 /**
  *
- * Describes a pagination request to retrieve records
+ * Pagination request for retrieving slices of Project records.
  *
  * @generated from message Scailo.ProjectsServicePaginationReq
  */
@@ -414,9 +520,9 @@ export declare class ProjectsServicePaginationReq extends Message<ProjectsServic
      *
      * @example ANY
      *
-     * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+     * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
      */
-    isActive: BOOL_FILTER;
+    isActive?: BOOL_FILTER;
     /**
      *
      * @mandatory
@@ -444,9 +550,9 @@ export declare class ProjectsServicePaginationReq extends Message<ProjectsServic
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 offset = 3;
+     * @generated from field: optional uint64 offset = 3;
      */
-    offset: bigint;
+    offset?: bigint;
     /**
      *
      * @optional
@@ -455,24 +561,29 @@ export declare class ProjectsServicePaginationReq extends Message<ProjectsServic
      *
      * @example DESCENDING
      *
-     * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+     * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
      */
-    sortOrder: SORT_ORDER;
+    sortOrder?: SORT_ORDER;
     /**
      *
      * @optional
      *
      * @description The specific field key to sort the results by.
      *
-     * @generated from field: Scailo.PROJECT_SORT_KEY sort_key = 5;
+     * @generated from field: optional Scailo.PROJECT_SORT_KEY sort_key = 5;
      */
-    sortKey: PROJECT_SORT_KEY;
+    sortKey?: PROJECT_SORT_KEY;
     /**
-     * The status of this project
      *
-     * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
+     * @optional
+     *
+     * @description Filter results by a specific lifecycle status.
+     *
+     * @example STANDING
+     *
+     * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
      */
-    status: STANDARD_LIFECYCLE_STATUS;
+    status?: STANDARD_LIFECYCLE_STATUS;
     constructor(data?: PartialMessage<ProjectsServicePaginationReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.ProjectsServicePaginationReq";
@@ -484,7 +595,7 @@ export declare class ProjectsServicePaginationReq extends Message<ProjectsServic
 }
 /**
  *
- * Describes the response to a pagination request
+ * Response message for paginated queries, including total counts for UI elements.
  *
  * @generated from message Scailo.ProjectsServicePaginationResponse
  */
@@ -534,7 +645,12 @@ export declare class ProjectsServicePaginationResponse extends Message<ProjectsS
 }
 /**
  *
- * Describes the base request payload of a filter search
+ * Advanced filter request for searching and paginating projects using multiple logical criteria.
+ * This message encapsulates pagination controls, sorting keys, lifecycle status filters,
+ * timestamp ranges, and entity references.
+ *
+ * **Note:** This is the primary message layout used by the frontend and external API clients
+ * to build robust data-table queries, reporting views, and targeted record lookups.
  *
  * @generated from message Scailo.ProjectsServiceFilterReq
  */
@@ -547,9 +663,9 @@ export declare class ProjectsServiceFilterReq extends Message<ProjectsServiceFil
      *
      * @example ANY
      *
-     * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+     * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
      */
-    isActive: BOOL_FILTER;
+    isActive?: BOOL_FILTER;
     /**
      *
      * @mandatory
@@ -577,9 +693,9 @@ export declare class ProjectsServiceFilterReq extends Message<ProjectsServiceFil
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 offset = 3;
+     * @generated from field: optional uint64 offset = 3;
      */
-    offset: bigint;
+    offset?: bigint;
     /**
      *
      * @optional
@@ -588,18 +704,18 @@ export declare class ProjectsServiceFilterReq extends Message<ProjectsServiceFil
      *
      * @example DESCENDING
      *
-     * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+     * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
      */
-    sortOrder: SORT_ORDER;
+    sortOrder?: SORT_ORDER;
     /**
      *
      * @optional
      *
      * @description The field used for sorting.
      *
-     * @generated from field: Scailo.PROJECT_SORT_KEY sort_key = 5;
+     * @generated from field: optional Scailo.PROJECT_SORT_KEY sort_key = 5;
      */
-    sortKey: PROJECT_SORT_KEY;
+    sortKey?: PROJECT_SORT_KEY;
     /**
      *
      * @optional
@@ -612,9 +728,9 @@ export declare class ProjectsServiceFilterReq extends Message<ProjectsServiceFil
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 creation_timestamp_start = 101;
+     * @generated from field: optional uint64 creation_timestamp_start = 101;
      */
-    creationTimestampStart: bigint;
+    creationTimestampStart?: bigint;
     /**
      *
      * @optional
@@ -627,9 +743,9 @@ export declare class ProjectsServiceFilterReq extends Message<ProjectsServiceFil
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 creation_timestamp_end = 102;
+     * @generated from field: optional uint64 creation_timestamp_end = 102;
      */
-    creationTimestampEnd: bigint;
+    creationTimestampEnd?: bigint;
     /**
      *
      * @optional
@@ -642,9 +758,9 @@ export declare class ProjectsServiceFilterReq extends Message<ProjectsServiceFil
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 modification_timestamp_start = 103;
+     * @generated from field: optional uint64 modification_timestamp_start = 103;
      */
-    modificationTimestampStart: bigint;
+    modificationTimestampStart?: bigint;
     /**
      *
      * @optional
@@ -657,9 +773,9 @@ export declare class ProjectsServiceFilterReq extends Message<ProjectsServiceFil
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 modification_timestamp_end = 104;
+     * @generated from field: optional uint64 modification_timestamp_end = 104;
      */
-    modificationTimestampEnd: bigint;
+    modificationTimestampEnd?: bigint;
     /**
      *
      * @optional
@@ -672,9 +788,9 @@ export declare class ProjectsServiceFilterReq extends Message<ProjectsServiceFil
      *
      * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
      *
-     * @generated from field: string entity_uuid = 8;
+     * @generated from field: optional string entity_uuid = 8;
      */
-    entityUuid: string;
+    entityUuid?: string;
     /**
      *
      * @optional
@@ -683,9 +799,9 @@ export declare class ProjectsServiceFilterReq extends Message<ProjectsServiceFil
      *
      * @example STANDING
      *
-     * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+     * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
      */
-    status: STANDARD_LIFECYCLE_STATUS;
+    status?: STANDARD_LIFECYCLE_STATUS;
     /**
      *
      * @optional
@@ -698,9 +814,9 @@ export declare class ProjectsServiceFilterReq extends Message<ProjectsServiceFil
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approved_on_start = 11;
+     * @generated from field: optional uint64 approved_on_start = 11;
      */
-    approvedOnStart: bigint;
+    approvedOnStart?: bigint;
     /**
      *
      * @optional
@@ -713,9 +829,9 @@ export declare class ProjectsServiceFilterReq extends Message<ProjectsServiceFil
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approved_on_end = 12;
+     * @generated from field: optional uint64 approved_on_end = 12;
      */
-    approvedOnEnd: bigint;
+    approvedOnEnd?: bigint;
     /**
      *
      * @optional
@@ -728,9 +844,9 @@ export declare class ProjectsServiceFilterReq extends Message<ProjectsServiceFil
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approved_by_user_id = 13;
+     * @generated from field: optional uint64 approved_by_user_id = 13;
      */
-    approvedByUserId: bigint;
+    approvedByUserId?: bigint;
     /**
      *
      * @optional
@@ -743,9 +859,9 @@ export declare class ProjectsServiceFilterReq extends Message<ProjectsServiceFil
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approver_role_id = 14;
+     * @generated from field: optional uint64 approver_role_id = 14;
      */
-    approverRoleId: bigint;
+    approverRoleId?: bigint;
     /**
      *
      * @optional
@@ -758,9 +874,9 @@ export declare class ProjectsServiceFilterReq extends Message<ProjectsServiceFil
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 completed_on_start = 15;
+     * @generated from field: optional uint64 completed_on_start = 15;
      */
-    completedOnStart: bigint;
+    completedOnStart?: bigint;
     /**
      *
      * @optional
@@ -773,9 +889,9 @@ export declare class ProjectsServiceFilterReq extends Message<ProjectsServiceFil
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 completed_on_end = 16;
+     * @generated from field: optional uint64 completed_on_end = 16;
      */
-    completedOnEnd: bigint;
+    completedOnEnd?: bigint;
     /**
      *
      * @optional
@@ -786,11 +902,11 @@ export declare class ProjectsServiceFilterReq extends Message<ProjectsServiceFil
      *
      * @regex [0-9A-Za-z ]*$
      *
-     * @format: Alphanumeric characters and spaces only. Can be left empty.
+     * @format Alphanumeric characters and spaces only. Can be left empty.
      *
-     * @generated from field: string reference_id = 20;
+     * @generated from field: optional string reference_id = 20;
      */
-    referenceId: string;
+    referenceId?: string;
     /**
      *
      * @optional
@@ -801,53 +917,116 @@ export declare class ProjectsServiceFilterReq extends Message<ProjectsServiceFil
      *
      * @regex [0-9A-Za-z ]*$
      *
-     * @format: Alphanumeric characters and spaces only. Can be left empty.
+     * @format Alphanumeric characters and spaces only. Can be left empty.
      *
-     * @generated from field: string final_ref_number = 21;
+     * @generated from field: optional string final_ref_number = 21;
      */
-    finalRefNumber: string;
+    finalRefNumber?: string;
     /**
-     * The ID of the associated client. Returns all record if it is set to -1. 0 is a valid filter too.
      *
-     * @generated from field: int64 client_id = 22;
+     * @optional
+     *
+     * @description Filter projects assigned to a specific client. Explicitly set to `-1` to bypass this filter and return all client records. `0` acts as a valid, concrete filter ID.
+     *
+     * @example 455
+     *
+     * @regex ^[0-9]*$
+     *
+     * @format 64-bit integer that with a minimum value of -1.
+     *
+     * @generated from field: optional int64 client_id = 22;
      */
-    clientId: bigint;
+    clientId?: bigint;
     /**
-     * The ID of the associated sales order (ignored if 0)
      *
-     * @generated from field: uint64 sales_order_id = 40;
+     * @optional
+     *
+     * @description Filter projects assigned to a specific sales order. Ignored if set to 0.
+     *
+     * @example 455
+     *
+     * @regex ^[0-9]*$
+     *
+     * @format Non-negative 64-bit integer.
+     *
+     * @generated from field: optional uint64 sales_order_id = 40;
      */
-    salesOrderId: bigint;
+    salesOrderId?: bigint;
     /**
-     * The ID of the associated purchase order (ignored if 0)
      *
-     * @generated from field: uint64 purchase_order_id = 41;
+     * @optional
+     *
+     * @description Filter projects assigned to a specific purchase order. Ignored if set to 0.
+     *
+     * @example 455
+     *
+     * @regex ^[0-9]*$
+     *
+     * @format Non-negative 64-bit integer.
+     *
+     * @generated from field: optional uint64 purchase_order_id = 41;
      */
-    purchaseOrderId: bigint;
+    purchaseOrderId?: bigint;
     /**
-     * The ID of the associated outward job (ignored if 0)
      *
-     * @generated from field: uint64 outward_job_id = 42;
+     * @optional
+     *
+     * @description Filter projects assigned to a specific outward job. Ignored if set to 0.
+     *
+     * @example 455
+     *
+     * @regex ^[0-9]*$
+     *
+     * @format Non-negative 64-bit integer.
+     *
+     * @generated from field: optional uint64 outward_job_id = 42;
      */
-    outwardJobId: bigint;
+    outwardJobId?: bigint;
     /**
-     * The ID of the associated inward job (ignored if 0)
      *
-     * @generated from field: uint64 inward_job_id = 43;
+     * @optional
+     *
+     * @description Filter projects assigned to a specific inward job. Ignored if set to 0.
+     *
+     * @example 455
+     *
+     * @regex ^[0-9]*$
+     *
+     * @format Non-negative 64-bit integer.
+     *
+     * @generated from field: optional uint64 inward_job_id = 43;
      */
-    inwardJobId: bigint;
+    inwardJobId?: bigint;
     /**
-     * The ID of the associated production plan (ignored if 0)
      *
-     * @generated from field: uint64 production_plan_id = 44;
+     * @optional
+     *
+     * @description Filter projects assigned to a specific production plan. Ignored if set to 0.
+     *
+     * @example 455
+     *
+     * @regex ^[0-9]*$
+     *
+     * @format Non-negative 64-bit integer.
+     *
+     * @generated from field: optional uint64 production_plan_id = 44;
      */
-    productionPlanId: bigint;
+    productionPlanId?: bigint;
     /**
-     * The ID of the associated meeting (ignored if 0)
      *
-     * @generated from field: uint64 meeting_id = 45;
+     * @optional
+     *
+     * @description Filter projects assigned to a specific meeting. Ignored if set to 0.
+     *
+     * @example 455
+     *
+     * @regex ^[0-9]*$
+     *
+     * @format Non-negative 64-bit integer.
+     *
+     * @generated from field: optional uint64 meeting_id = 45;
      */
-    meetingId: bigint;
+    meetingId?: bigint;
     /**
      *
      * @optional
@@ -866,9 +1045,9 @@ export declare class ProjectsServiceFilterReq extends Message<ProjectsServiceFil
      *
      * @example true
      *
-     * @generated from field: bool include_form_data = 501;
+     * @generated from field: optional bool include_form_data = 501;
      */
-    includeFormData: boolean;
+    includeFormData?: boolean;
     constructor(data?: PartialMessage<ProjectsServiceFilterReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.ProjectsServiceFilterReq";
@@ -880,7 +1059,13 @@ export declare class ProjectsServiceFilterReq extends Message<ProjectsServiceFil
 }
 /**
  *
- * Describes the base request payload of a count search
+ * Target filter request for counting project records matching specific logical criteria.
+ * This message encapsulates lifecycle status filters, timestamp ranges, workflow markers,
+ * and entity references to determine the total size of a targeted dataset.
+ *
+ * **Note:** This is the primary message layout used by backend calculation engines, reporting
+ * services, and frontend pagination headers to evaluate total record matches dynamically
+ * before or alongside retrieving paginated results.
  *
  * @generated from message Scailo.ProjectsServiceCountReq
  */
@@ -893,9 +1078,9 @@ export declare class ProjectsServiceCountReq extends Message<ProjectsServiceCoun
      *
      * @example ANY
      *
-     * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+     * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
      */
-    isActive: BOOL_FILTER;
+    isActive?: BOOL_FILTER;
     /**
      *
      * @optional
@@ -908,9 +1093,9 @@ export declare class ProjectsServiceCountReq extends Message<ProjectsServiceCoun
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 creation_timestamp_start = 101;
+     * @generated from field: optional uint64 creation_timestamp_start = 101;
      */
-    creationTimestampStart: bigint;
+    creationTimestampStart?: bigint;
     /**
      *
      * @optional
@@ -923,9 +1108,9 @@ export declare class ProjectsServiceCountReq extends Message<ProjectsServiceCoun
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 creation_timestamp_end = 102;
+     * @generated from field: optional uint64 creation_timestamp_end = 102;
      */
-    creationTimestampEnd: bigint;
+    creationTimestampEnd?: bigint;
     /**
      *
      * @optional
@@ -938,9 +1123,9 @@ export declare class ProjectsServiceCountReq extends Message<ProjectsServiceCoun
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 modification_timestamp_start = 103;
+     * @generated from field: optional uint64 modification_timestamp_start = 103;
      */
-    modificationTimestampStart: bigint;
+    modificationTimestampStart?: bigint;
     /**
      *
      * @optional
@@ -953,9 +1138,9 @@ export declare class ProjectsServiceCountReq extends Message<ProjectsServiceCoun
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 modification_timestamp_end = 104;
+     * @generated from field: optional uint64 modification_timestamp_end = 104;
      */
-    modificationTimestampEnd: bigint;
+    modificationTimestampEnd?: bigint;
     /**
      *
      * @optional
@@ -968,9 +1153,9 @@ export declare class ProjectsServiceCountReq extends Message<ProjectsServiceCoun
      *
      * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
      *
-     * @generated from field: string entity_uuid = 8;
+     * @generated from field: optional string entity_uuid = 8;
      */
-    entityUuid: string;
+    entityUuid?: string;
     /**
      *
      * @optional
@@ -979,9 +1164,9 @@ export declare class ProjectsServiceCountReq extends Message<ProjectsServiceCoun
      *
      * @example STANDING
      *
-     * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+     * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
      */
-    status: STANDARD_LIFECYCLE_STATUS;
+    status?: STANDARD_LIFECYCLE_STATUS;
     /**
      *
      * @optional
@@ -994,9 +1179,9 @@ export declare class ProjectsServiceCountReq extends Message<ProjectsServiceCoun
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approved_on_start = 11;
+     * @generated from field: optional uint64 approved_on_start = 11;
      */
-    approvedOnStart: bigint;
+    approvedOnStart?: bigint;
     /**
      *
      * @optional
@@ -1009,9 +1194,9 @@ export declare class ProjectsServiceCountReq extends Message<ProjectsServiceCoun
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approved_on_end = 12;
+     * @generated from field: optional uint64 approved_on_end = 12;
      */
-    approvedOnEnd: bigint;
+    approvedOnEnd?: bigint;
     /**
      *
      * @optional
@@ -1024,9 +1209,9 @@ export declare class ProjectsServiceCountReq extends Message<ProjectsServiceCoun
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approved_by_user_id = 13;
+     * @generated from field: optional uint64 approved_by_user_id = 13;
      */
-    approvedByUserId: bigint;
+    approvedByUserId?: bigint;
     /**
      *
      * @optional
@@ -1039,9 +1224,9 @@ export declare class ProjectsServiceCountReq extends Message<ProjectsServiceCoun
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approver_role_id = 14;
+     * @generated from field: optional uint64 approver_role_id = 14;
      */
-    approverRoleId: bigint;
+    approverRoleId?: bigint;
     /**
      *
      * @optional
@@ -1054,9 +1239,9 @@ export declare class ProjectsServiceCountReq extends Message<ProjectsServiceCoun
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 completed_on_start = 15;
+     * @generated from field: optional uint64 completed_on_start = 15;
      */
-    completedOnStart: bigint;
+    completedOnStart?: bigint;
     /**
      *
      * @optional
@@ -1069,9 +1254,9 @@ export declare class ProjectsServiceCountReq extends Message<ProjectsServiceCoun
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 completed_on_end = 16;
+     * @generated from field: optional uint64 completed_on_end = 16;
      */
-    completedOnEnd: bigint;
+    completedOnEnd?: bigint;
     /**
      *
      * @optional
@@ -1082,11 +1267,11 @@ export declare class ProjectsServiceCountReq extends Message<ProjectsServiceCoun
      *
      * @regex [0-9A-Za-z ]*$
      *
-     * @format: Alphanumeric characters and spaces only. Can be left empty.
+     * @format Alphanumeric characters and spaces only. Can be left empty.
      *
-     * @generated from field: string reference_id = 20;
+     * @generated from field: optional string reference_id = 20;
      */
-    referenceId: string;
+    referenceId?: string;
     /**
      *
      * @optional
@@ -1097,55 +1282,121 @@ export declare class ProjectsServiceCountReq extends Message<ProjectsServiceCoun
      *
      * @regex [0-9A-Za-z ]*$
      *
-     * @format: Alphanumeric characters and spaces only. Can be left empty.
+     * @format Alphanumeric characters and spaces only. Can be left empty.
      *
-     * @generated from field: string final_ref_number = 21;
+     * @generated from field: optional string final_ref_number = 21;
      */
-    finalRefNumber: string;
+    finalRefNumber?: string;
     /**
-     * The ID of the associated client. Returns all record if it is set to -1. 0 is a valid filter too.
      *
-     * @generated from field: int64 client_id = 22;
-     */
-    clientId: bigint;
-    /**
-     * The ID of the associated sales order (ignored if 0)
+     * @optional
      *
-     * @generated from field: uint64 sales_order_id = 40;
-     */
-    salesOrderId: bigint;
-    /**
-     * The ID of the associated purchase order (ignored if 0)
+     * @description Filter projects assigned to a specific client. Explicitly set to `-1` to bypass this filter and return all client records. `0` acts as a valid, concrete filter ID.
      *
-     * @generated from field: uint64 purchase_order_id = 41;
-     */
-    purchaseOrderId: bigint;
-    /**
-     * The ID of the associated outward job (ignored if 0)
+     * @example 455
      *
-     * @generated from field: uint64 outward_job_id = 42;
-     */
-    outwardJobId: bigint;
-    /**
-     * The ID of the associated inward job (ignored if 0)
+     * @regex ^[0-9]*$
      *
-     * @generated from field: uint64 inward_job_id = 43;
-     */
-    inwardJobId: bigint;
-    /**
-     * The ID of the associated production plan (ignored if 0)
+     * @format 64-bit integer that with a minimum value of -1.
      *
-     * @generated from field: uint64 production_plan_id = 44;
+     * @generated from field: optional int64 client_id = 22;
      */
-    productionPlanId: bigint;
+    clientId?: bigint;
     /**
-     * The ID of the associated meeting (ignored if 0)
      *
-     * @generated from field: uint64 meeting_id = 45;
+     * @optional
+     *
+     * @description Filter projects assigned to a specific sales order. Ignored if set to 0.
+     *
+     * @example 455
+     *
+     * @regex ^[0-9]*$
+     *
+     * @format Non-negative 64-bit integer.
+     *
+     * @generated from field: optional uint64 sales_order_id = 40;
      */
-    meetingId: bigint;
+    salesOrderId?: bigint;
     /**
-     * The list of form data filters
+     *
+     * @optional
+     *
+     * @description Filter projects assigned to a specific purchase order. Ignored if set to 0.
+     *
+     * @example 455
+     *
+     * @regex ^[0-9]*$
+     *
+     * @format Non-negative 64-bit integer.
+     *
+     * @generated from field: optional uint64 purchase_order_id = 41;
+     */
+    purchaseOrderId?: bigint;
+    /**
+     *
+     * @optional
+     *
+     * @description Filter projects assigned to a specific outward job. Ignored if set to 0.
+     *
+     * @example 455
+     *
+     * @regex ^[0-9]*$
+     *
+     * @format Non-negative 64-bit integer.
+     *
+     * @generated from field: optional uint64 outward_job_id = 42;
+     */
+    outwardJobId?: bigint;
+    /**
+     *
+     * @optional
+     *
+     * @description Filter projects assigned to a specific inward job. Ignored if set to 0.
+     *
+     * @example 455
+     *
+     * @regex ^[0-9]*$
+     *
+     * @format Non-negative 64-bit integer.
+     *
+     * @generated from field: optional uint64 inward_job_id = 43;
+     */
+    inwardJobId?: bigint;
+    /**
+     *
+     * @optional
+     *
+     * @description Filter projects assigned to a specific production plan. Ignored if set to 0.
+     *
+     * @example 455
+     *
+     * @regex ^[0-9]*$
+     *
+     * @format Non-negative 64-bit integer.
+     *
+     * @generated from field: optional uint64 production_plan_id = 44;
+     */
+    productionPlanId?: bigint;
+    /**
+     *
+     * @optional
+     *
+     * @description Filter projects assigned to a specific meeting. Ignored if set to 0.
+     *
+     * @example 455
+     *
+     * @regex ^[0-9]*$
+     *
+     * @format Non-negative 64-bit integer.
+     *
+     * @generated from field: optional uint64 meeting_id = 45;
+     */
+    meetingId?: bigint;
+    /**
+     *
+     * @optional
+     *
+     * @description Count based on dynamic form field values.
      *
      * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
      */
@@ -1161,7 +1412,13 @@ export declare class ProjectsServiceCountReq extends Message<ProjectsServiceCoun
 }
 /**
  *
- * Describes the request payload for performing a generic search operation on records
+ * Broad-spectrum search and lookup request for locating and paginating projects via text matching.
+ * This message encapsulates full-text query parameters, pagination controls, sorting keys,
+ * lifecycle status constraints, and other core references.
+ *
+ * **Note:** This is the primary message layout used for global search bars, fast-filtering dashboard
+ * inputs, and omni-box search utilities where users need to match loose textual terms against
+ * records while retaining structural pagination.
  *
  * @generated from message Scailo.ProjectsServiceSearchAllReq
  */
@@ -1174,9 +1431,9 @@ export declare class ProjectsServiceSearchAllReq extends Message<ProjectsService
      *
      * @example ANY
      *
-     * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+     * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
      */
-    isActive: BOOL_FILTER;
+    isActive?: BOOL_FILTER;
     /**
      *
      * @mandatory
@@ -1204,9 +1461,9 @@ export declare class ProjectsServiceSearchAllReq extends Message<ProjectsService
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 offset = 3;
+     * @generated from field: optional uint64 offset = 3;
      */
-    offset: bigint;
+    offset?: bigint;
     /**
      *
      * @optional
@@ -1215,18 +1472,18 @@ export declare class ProjectsServiceSearchAllReq extends Message<ProjectsService
      *
      * @example DESCENDING
      *
-     * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+     * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
      */
-    sortOrder: SORT_ORDER;
+    sortOrder?: SORT_ORDER;
     /**
      *
      * @optional
      *
      * @description The field used for sorting.
      *
-     * @generated from field: Scailo.PROJECT_SORT_KEY sort_key = 5;
+     * @generated from field: optional Scailo.PROJECT_SORT_KEY sort_key = 5;
      */
-    sortKey: PROJECT_SORT_KEY;
+    sortKey?: PROJECT_SORT_KEY;
     /**
      *
      * @optional
@@ -1239,9 +1496,9 @@ export declare class ProjectsServiceSearchAllReq extends Message<ProjectsService
      *
      * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
      *
-     * @generated from field: string entity_uuid = 6;
+     * @generated from field: optional string entity_uuid = 6;
      */
-    entityUuid: string;
+    entityUuid?: string;
     /**
      *
      * @optional
@@ -1250,9 +1507,9 @@ export declare class ProjectsServiceSearchAllReq extends Message<ProjectsService
      *
      * @example STANDING
      *
-     * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+     * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
      */
-    status: STANDARD_LIFECYCLE_STATUS;
+    status?: STANDARD_LIFECYCLE_STATUS;
     /**
      *
      * @mandatory
@@ -1263,17 +1520,26 @@ export declare class ProjectsServiceSearchAllReq extends Message<ProjectsService
      *
      * @regex .*
      *
-     * @format: May contain any UTF-8 characters.
+     * @format May contain any UTF-8 characters.
      *
-     * @generated from field: string search_key = 11;
+     * @generated from field: optional string search_key = 11;
      */
-    searchKey: string;
+    searchKey?: string;
     /**
-     * The ID of the associated client. Returns all record if it is set to -1. 0 is a valid filter too.
      *
-     * @generated from field: int64 client_id = 21;
+     * @optional
+     *
+     * @description Search projects assigned to a specific client. Explicitly set to `-1` to bypass this filter and return all client records. `0` acts as a valid, concrete filter ID.
+     *
+     * @example 455
+     *
+     * @regex ^[0-9]*$
+     *
+     * @format 64-bit integer that with a minimum value of -1.
+     *
+     * @generated from field: optional int64 client_id = 21;
      */
-    clientId: bigint;
+    clientId?: bigint;
     constructor(data?: PartialMessage<ProjectsServiceSearchAllReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.ProjectsServiceSearchAllReq";
@@ -1285,25 +1551,57 @@ export declare class ProjectsServiceSearchAllReq extends Message<ProjectsService
 }
 /**
  *
- * Describes the parameters necessary to create a project contact
+ * Request message for creating a new project contact association.
+ * This message encapsulates the necessary identifiers to link an employee to a project,
+ * along with compliance details and audit logs required for record initialization.
+ *
+ * **Note:** This serves as the primary entry point for managing project personnel, ensuring
+ * that the relationship between the project and the internal employee is properly audited and validated.
  *
  * @generated from message Scailo.ProjectsServiceContactCreateRequest
  */
 export declare class ProjectsServiceContactCreateRequest extends Message<ProjectsServiceContactCreateRequest> {
     /**
-     * Stores any comment that the user might add during this operation
      *
-     * @generated from field: string user_comment = 1;
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
+     *
+     * @generated from field: optional string user_comment = 1;
      */
-    userComment: string;
+    userComment?: string;
     /**
-     * Stores the project ID
+     *
+     * @mandatory
+     *
+     * @description The unique identifier of the target project to which the contact will be associated.
+     *
+     * @example 1024
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 project_id = 10;
      */
     projectId: bigint;
     /**
-     * Stores the employee ID
+     *
+     * @mandatory
+     *
+     * @description The unique identifier of the employee being assigned as the project contact.
+     *
+     * @example 5678
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 employee_id = 11;
      */
@@ -1319,7 +1617,10 @@ export declare class ProjectsServiceContactCreateRequest extends Message<Project
 }
 /**
  *
- * Describes the parameters that constitute a project contact
+ * Represents a full Project Contact within the system.
+ * This message encapsulates the complete state of a project contact association,
+ * including organization tenancy, core entity identifiers, audit trails, and
+ * granular approval workflow metadata.
  *
  * @generated from message Scailo.ProjectContact
  */
@@ -1349,31 +1650,47 @@ export declare class ProjectContact extends Message<ProjectContact> {
     approvalMetadata?: ApprovalMetadata;
     /**
      *
-     * @description The approval state of the record
+     * @description A boolean flag indicating whether this specific record requires further administrative approval.
+     *
+     * @example false
+     *
+     * @format Boolean true or false.
      *
      * @generated from field: bool need_approval = 4;
      */
     needApproval: boolean;
     /**
-     * Stores any comment that the user might have added during an operation
+     *
+     * @description Audit log comment or justification captured during the last modification or transactional operation.
+     *
+     * @example "Updated contact assignment per Q3 structural reorganization."
      *
      * @generated from field: string user_comment = 5;
      */
     userComment: string;
     /**
-     * Stores the project ID
+     *
+     * @description The unique internal identifier of the associated project.
+     *
+     * @example 1024
      *
      * @generated from field: uint64 project_id = 10;
      */
     projectId: bigint;
     /**
-     * Stores the employee ID
+     *
+     * @description The unique internal identifier of the associated employee.
+     *
+     * @example 5678
      *
      * @generated from field: uint64 employee_id = 11;
      */
     employeeId: bigint;
     /**
-     * Stores the UUID of the employee
+     *
+     * @description The globally unique identifier for the employee, used for external cross-referencing and identity systems.
+     *
+     * @example "a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d"
      *
      * @generated from field: string employee_uuid = 211;
      */
@@ -1389,13 +1706,13 @@ export declare class ProjectContact extends Message<ProjectContact> {
 }
 /**
  *
- * Describes the message consisting of the list of project contacts
+ * Container message for a collection of Project Contact records.
  *
  * @generated from message Scailo.ProjectContactsList
  */
 export declare class ProjectContactsList extends Message<ProjectContactsList> {
     /**
-     * List of records
+     * @description An array of Project Contact records.
      *
      * @generated from field: repeated Scailo.ProjectContact list = 1;
      */

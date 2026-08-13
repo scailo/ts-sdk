@@ -10,76 +10,76 @@ import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, 
 
 /**
  *
- * Describes the available sort keys
+ * Enumeration of fields available for sorting location search results.
  *
  * @generated from enum Scailo.LOCATION_SORT_KEY
  */
 export enum LOCATION_SORT_KEY {
   /**
-   * Fetch ordered results by id
+   * @description Default sort behavior (by internal ID).
    *
    * @generated from enum value: LOCATION_SORT_KEY_ID_UNSPECIFIED = 0;
    */
   LOCATION_SORT_KEY_ID_UNSPECIFIED = 0,
 
   /**
-   * Fetch ordered results by the creation timestamp
+   * @description Sort by the timestamp the record was initially created.
    *
    * @generated from enum value: LOCATION_SORT_KEY_CREATED_AT = 1;
    */
   LOCATION_SORT_KEY_CREATED_AT = 1,
 
   /**
-   * Fetch ordered results by the modified timestamp
+   * @description Sort by the timestamp the record was last modified.
    *
    * @generated from enum value: LOCATION_SORT_KEY_MODIFIED_AT = 2;
    */
   LOCATION_SORT_KEY_MODIFIED_AT = 2,
 
   /**
-   * Fetch ordered results by the approved on timestamp
+   * @description Sort by the official approval timestamp.
    *
    * @generated from enum value: LOCATION_SORT_KEY_APPROVED_ON = 3;
    */
   LOCATION_SORT_KEY_APPROVED_ON = 3,
 
   /**
-   * Fetch ordered results by the approved by field
+   * @description Sort by the system ID of the approving user.
    *
    * @generated from enum value: LOCATION_SORT_KEY_APPROVED_BY = 4;
    */
   LOCATION_SORT_KEY_APPROVED_BY = 4,
 
   /**
-   * Fetch ordered results by the approver's role ID
+   * @description Sort by the security role ID used by the approver.
    *
    * @generated from enum value: LOCATION_SORT_KEY_APPROVER_ROLE_ID = 5;
    */
   LOCATION_SORT_KEY_APPROVER_ROLE_ID = 5,
 
   /**
-   * Fetch ordered results by the name
+   * @description Sort alphabetically by the user-provided name.
    *
    * @generated from enum value: LOCATION_SORT_KEY_NAME = 10;
    */
   LOCATION_SORT_KEY_NAME = 10,
 
   /**
-   * Fetch ordered results by the code
+   * @description Sort alphabetically by the user-provided code.
    *
    * @generated from enum value: LOCATION_SORT_KEY_CODE = 11;
    */
   LOCATION_SORT_KEY_CODE = 11,
 
   /**
-   * Fetch ordered results by the email address
+   * @description Sort alphabetically by the user-provided email address.
    *
    * @generated from enum value: LOCATION_SORT_KEY_EMAIL = 12;
    */
   LOCATION_SORT_KEY_EMAIL = 12,
 
   /**
-   * Fetch ordered results by the phone number
+   * @description Sort alphabetically by the user-provided phone number.
    *
    * @generated from enum value: LOCATION_SORT_KEY_PHONE = 13;
    */
@@ -101,7 +101,12 @@ proto3.util.setEnumType(LOCATION_SORT_KEY, "Scailo.LOCATION_SORT_KEY", [
 
 /**
  *
- * Describes the parameters necessary to create a record
+ * Request message for creating and registering a new geographic or logical Location.
+ * This record tracks physical operational sites, facility hierarchies (leaf vs. non-leaf parent nodes),
+ * primary contact endpoints, and tenant isolation parameters.
+ *
+ * **Note:** This is the primary entry point for Operations, Facilities Management, and Admins to
+ * construct corporate site maps, log logistics hubs, or declare regional branch offices.
  *
  * @generated from message Scailo.LocationsServiceCreateRequest
  */
@@ -118,61 +123,129 @@ export class LocationsServiceCreateRequest extends Message<LocationsServiceCreat
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 1;
+   * @generated from field: optional string entity_uuid = 1;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 2;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 2;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * The name of the location
+   *
+   * @mandatory
+   *
+   * @description The official or friendly descriptive name of the location.
+   *
+   * @example "Headquarters - Building B"
+   *
+   * @regex .+
+   *
+   * @format Must be a non-empty string.
    *
    * @generated from field: string name = 10;
    */
   name = "";
 
   /**
-   * The unique code by which the location is classified
+   *
+   * @mandatory
+   *
+   * @description The unique code or internal alphanumeric token used to classify the location for shipping, logistics, or tagging.
+   *
+   * @example "LOC-HQ-BLDGB"
+   *
+   * @regex .+
+   *
+   * @format Must be a non-empty string.
    *
    * @generated from field: string code = 11;
    */
   code = "";
 
   /**
-   * The primary email of the location
+   *
+   * @mandatory
+   *
+   * @description The primary communication or support email address linked specifically to this location.
+   *
+   * @example "facilities.loc1@acme.com"
+   *
+   * @regex ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
+   *
+   * @format Must be a valid and structurally sound email address format.
    *
    * @generated from field: string email = 12;
    */
   email = "";
 
   /**
-   * The primary contact number of the location
+   *
+   * @mandatory
+   *
+   * @description The primary contact or front desk telephone number for the location, typically including country and area codes.
+   *
+   * @example "+1-512-555-0144"
+   *
+   * @regex .+
+   *
+   * @format Must be a non-empty string representing a valid phone number format.
    *
    * @generated from field: string phone = 13;
    */
   phone = "";
 
   /**
-   * The ID of the associated non-leaf parent location (0, if the first location that is being created is a leaf location)
    *
-   * @generated from field: uint64 parent_location_id = 14;
+   * @optional
+   *
+   * @description The unique internal identifier of the parent non-leaf location. Defaults to 0 if this is the root or top-level node in the geographic hierarchy.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]*$
+   *
+   * @format Non-negative 64-bit integer.
+   *
+   * @generated from field: optional uint64 parent_location_id = 14;
    */
-  parentLocationId = protoInt64.zero;
+  parentLocationId?: bigint;
 
   /**
-   * Stores if this is a leaf location or a non-leaf location
+   *
+   * @mandatory
+   *
+   * @description Flag determining whether this location is a terminal 'leaf' node (e.g., a specific office room) or a 'non-leaf' grouping node (e.g., an entire region or campus).
+   *
+   * @example true
+   *
+   * @format Boolean value (`true` or `false`).
    *
    * @generated from field: bool is_leaf = 15;
    */
   isLeaf = false;
 
   /**
-   * The list of dynamic forms
+   *
+   * @optional
+   *
+   * @description A collection of dynamic form fields for organization-specific data.
+   *
+   * @example []
+   *
+   * @format An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
    *
    * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
    */
@@ -186,13 +259,13 @@ export class LocationsServiceCreateRequest extends Message<LocationsServiceCreat
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.LocationsServiceCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 12, name: "email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 13, name: "phone", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 14, name: "parent_location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 14, name: "parent_location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
     { no: 15, name: "is_leaf", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
     { no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
@@ -216,20 +289,44 @@ export class LocationsServiceCreateRequest extends Message<LocationsServiceCreat
 
 /**
  *
- * Describes the parameters necessary to update a record
+ * Request message for updating an existing Location record.
+ * Only applicable for records in `DRAFT` or `REVISION` states.
+ * This message allows for modifying the name, email, phone and other custom form fields
+ * of an established Location.
+ *
+ * **Note:** Only fields provided in the request will typically be updated.
+ * The unique system ID is required to locate the target record.
  *
  * @generated from message Scailo.LocationsServiceUpdateRequest
  */
 export class LocationsServiceUpdateRequest extends Message<LocationsServiceUpdateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * The ID of the record that needs to be updated
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target record that needs to be updated.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 id = 2;
    */
@@ -243,38 +340,67 @@ export class LocationsServiceUpdateRequest extends Message<LocationsServiceUpdat
    *
    * @example true
    *
-   * @generated from field: bool notify_users = 3;
+   * @generated from field: optional bool notify_users = 3;
    */
-  notifyUsers = false;
+  notifyUsers?: boolean;
 
   /**
-   * The name of the location
    *
-   * @generated from field: string name = 10;
-   */
-  name = "";
-
-  /**
-   * // The unique code by which the location is classified
-   * string code = 11 [(buf.validate.field).string = {
-   *   // pattern:   "^[^[0-9]A-Za-z]+( [^[0-9]A-Za-z]+)*$",
-   *   min_len: 1
-   * }];
-   * The primary email of the location
+   * @optional
    *
-   * @generated from field: string email = 12;
-   */
-  email = "";
-
-  /**
-   * The primary contact number of the location
+   * @description The official or friendly descriptive name of the location.
    *
-   * @generated from field: string phone = 13;
+   * @example "Headquarters - Building B"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string name = 10;
    */
-  phone = "";
+  name?: string;
 
   /**
-   * The list of dynamic forms
+   *
+   * @optional
+   *
+   * @description The primary communication or support email address linked specifically to this location.
+   *
+   * @example "facilities.loc1@acme.com"
+   *
+   * @regex ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
+   *
+   * @format Must be a valid and structurally sound email address format.
+   *
+   * @generated from field: optional string email = 12;
+   */
+  email?: string;
+
+  /**
+   *
+   * @optional
+   *
+   * @description The primary contact or front desk telephone number for the location, typically including country and area codes.
+   *
+   * @example "+1-512-555-0144"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string representing a valid phone number format.
+   *
+   * @generated from field: optional string phone = 13;
+   */
+  phone?: string;
+
+  /**
+   *
+   * @optional
+   *
+   * @description A collection of dynamic form fields for organization-specific data.
+   *
+   * @example []
+   *
+   * @format An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
    *
    * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
    */
@@ -288,12 +414,12 @@ export class LocationsServiceUpdateRequest extends Message<LocationsServiceUpdat
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.LocationsServiceUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 2, name: "id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
-    { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 12, name: "email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 13, name: "phone", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
+    { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 12, name: "email", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 13, name: "phone", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
 
@@ -316,7 +442,7 @@ export class LocationsServiceUpdateRequest extends Message<LocationsServiceUpdat
 
 /**
  *
- * Describes the parameters that are part of a standard response
+ * Represents a full Location within the system.
  *
  * @generated from message Scailo.Location
  */
@@ -364,49 +490,68 @@ export class Location extends Message<Location> {
   logs: LogbookLogConciseSLC[] = [];
 
   /**
-   * The name of the location
+   *
+   * @description The official or friendly descriptive name of the location.
+   *
+   * @example "Headquarters - Building B"
    *
    * @generated from field: string name = 10;
    */
   name = "";
 
   /**
-   * The unique code by which the location is classified
+   *
+   * @description The unique code or internal alphanumeric token used to classify the location for shipping, logistics, or tagging.
+   *
+   * @example "LOC-HQ-BLDGB"
    *
    * @generated from field: string code = 11;
    */
   code = "";
 
   /**
-   * The primary email of the location
+   *
+   * @description The primary communication or support email address linked specifically to this location.
+   *
+   * @example "facilities.loc1@acme.com"
    *
    * @generated from field: string email = 12;
    */
   email = "";
 
   /**
-   * The primary contact number of the location
+   *
+   * @description The primary contact or front desk telephone number for the location, typically including country and area codes.
+   *
+   * @example "+1-512-555-0144"
    *
    * @generated from field: string phone = 13;
    */
   phone = "";
 
   /**
-   * The ID of the associated non-leaf parent location (0, if the first location that is being created is a leaf location)
+   *
+   * @description The unique internal identifier of the parent non-leaf location. Defaults to 0 if this is the root or top-level node in the geographic hierarchy.
+   *
+   * @example 1024
    *
    * @generated from field: uint64 parent_location_id = 14;
    */
   parentLocationId = protoInt64.zero;
 
   /**
-   * Stores if this is a leaf location or a non-leaf location
+   *
+   * @description Flag determining whether this location is a terminal 'leaf' node (e.g., a specific office room) or a 'non-leaf' grouping node (e.g., an entire region or campus).
+   *
+   * @example true
    *
    * @generated from field: bool is_leaf = 15;
    */
   isLeaf = false;
 
   /**
-   * The list of dynamic forms
+   *
+   * @description Collection of organization-specific dynamic data.
    *
    * @generated from field: repeated Scailo.FormFieldDatum form_data = 30;
    */
@@ -453,13 +598,13 @@ export class Location extends Message<Location> {
 
 /**
  *
- * Describes the message consisting of the list of records
+ * Container message for a collection of Location records.
  *
  * @generated from message Scailo.LocationsList
  */
 export class LocationsList extends Message<LocationsList> {
   /**
-   * List of records
+   * @description An array of Location records.
    *
    * @generated from field: repeated Scailo.Location list = 1;
    */
@@ -495,7 +640,7 @@ export class LocationsList extends Message<LocationsList> {
 
 /**
  *
- * Describes a pagination request to retrieve records
+ * Pagination request for retrieving slices of Location records.
  *
  * @generated from message Scailo.LocationsServicePaginationReq
  */
@@ -508,9 +653,9 @@ export class LocationsServicePaginationReq extends Message<LocationsServicePagin
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -540,9 +685,9 @@ export class LocationsServicePaginationReq extends Message<LocationsServicePagin
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -552,9 +697,9 @@ export class LocationsServicePaginationReq extends Message<LocationsServicePagin
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -562,16 +707,21 @@ export class LocationsServicePaginationReq extends Message<LocationsServicePagin
    *
    * @description The specific field key to sort the results by.
    *
-   * @generated from field: Scailo.LOCATION_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.LOCATION_SORT_KEY sort_key = 5;
    */
-  sortKey = LOCATION_SORT_KEY.LOCATION_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: LOCATION_SORT_KEY;
 
   /**
-   * The status of this location
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
+   * @optional
+   *
+   * @description Filter results by a specific lifecycle status.
+   *
+   * @example STANDING
+   *
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   constructor(data?: PartialMessage<LocationsServicePaginationReq>) {
     super();
@@ -581,12 +731,12 @@ export class LocationsServicePaginationReq extends Message<LocationsServicePagin
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.LocationsServicePaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(LOCATION_SORT_KEY) },
-    { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(LOCATION_SORT_KEY), opt: true },
+    { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LocationsServicePaginationReq {
@@ -608,7 +758,7 @@ export class LocationsServicePaginationReq extends Message<LocationsServicePagin
 
 /**
  *
- * Describes the response to a pagination request
+ * Response message for paginated queries, including total counts for UI elements.
  *
  * @generated from message Scailo.LocationsServicePaginationResponse
  */
@@ -684,7 +834,12 @@ export class LocationsServicePaginationResponse extends Message<LocationsService
 
 /**
  *
- * Describes the base request payload of a filter search
+ * Advanced filter request for searching and paginating locations using multiple logical criteria.
+ * This message encapsulates pagination controls, sorting keys, lifecycle status filters,
+ * timestamp ranges, and entity references.
+ *
+ * **Note:** This is the primary message layout used by the frontend and external API clients
+ * to build robust data-table queries, reporting views, and targeted record lookups.
  *
  * @generated from message Scailo.LocationsServiceFilterReq
  */
@@ -697,9 +852,9 @@ export class LocationsServiceFilterReq extends Message<LocationsServiceFilterReq
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -729,9 +884,9 @@ export class LocationsServiceFilterReq extends Message<LocationsServiceFilterReq
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -741,9 +896,9 @@ export class LocationsServiceFilterReq extends Message<LocationsServiceFilterReq
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -751,9 +906,9 @@ export class LocationsServiceFilterReq extends Message<LocationsServiceFilterReq
    *
    * @description The field used for sorting.
    *
-   * @generated from field: Scailo.LOCATION_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.LOCATION_SORT_KEY sort_key = 5;
    */
-  sortKey = LOCATION_SORT_KEY.LOCATION_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: LOCATION_SORT_KEY;
 
   /**
    *
@@ -767,9 +922,9 @@ export class LocationsServiceFilterReq extends Message<LocationsServiceFilterReq
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_start = 101;
+   * @generated from field: optional uint64 creation_timestamp_start = 101;
    */
-  creationTimestampStart = protoInt64.zero;
+  creationTimestampStart?: bigint;
 
   /**
    *
@@ -783,9 +938,9 @@ export class LocationsServiceFilterReq extends Message<LocationsServiceFilterReq
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_end = 102;
+   * @generated from field: optional uint64 creation_timestamp_end = 102;
    */
-  creationTimestampEnd = protoInt64.zero;
+  creationTimestampEnd?: bigint;
 
   /**
    *
@@ -799,9 +954,9 @@ export class LocationsServiceFilterReq extends Message<LocationsServiceFilterReq
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_start = 103;
+   * @generated from field: optional uint64 modification_timestamp_start = 103;
    */
-  modificationTimestampStart = protoInt64.zero;
+  modificationTimestampStart?: bigint;
 
   /**
    *
@@ -815,9 +970,9 @@ export class LocationsServiceFilterReq extends Message<LocationsServiceFilterReq
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_end = 104;
+   * @generated from field: optional uint64 modification_timestamp_end = 104;
    */
-  modificationTimestampEnd = protoInt64.zero;
+  modificationTimestampEnd?: bigint;
 
   /**
    *
@@ -831,9 +986,9 @@ export class LocationsServiceFilterReq extends Message<LocationsServiceFilterReq
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 8;
+   * @generated from field: optional string entity_uuid = 8;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
    *
@@ -843,9 +998,9 @@ export class LocationsServiceFilterReq extends Message<LocationsServiceFilterReq
    *
    * @example STANDING
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   /**
    *
@@ -859,9 +1014,9 @@ export class LocationsServiceFilterReq extends Message<LocationsServiceFilterReq
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_start = 11;
+   * @generated from field: optional uint64 approved_on_start = 11;
    */
-  approvedOnStart = protoInt64.zero;
+  approvedOnStart?: bigint;
 
   /**
    *
@@ -875,9 +1030,9 @@ export class LocationsServiceFilterReq extends Message<LocationsServiceFilterReq
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_end = 12;
+   * @generated from field: optional uint64 approved_on_end = 12;
    */
-  approvedOnEnd = protoInt64.zero;
+  approvedOnEnd?: bigint;
 
   /**
    *
@@ -891,9 +1046,9 @@ export class LocationsServiceFilterReq extends Message<LocationsServiceFilterReq
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_by_user_id = 13;
+   * @generated from field: optional uint64 approved_by_user_id = 13;
    */
-  approvedByUserId = protoInt64.zero;
+  approvedByUserId?: bigint;
 
   /**
    *
@@ -907,51 +1062,103 @@ export class LocationsServiceFilterReq extends Message<LocationsServiceFilterReq
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approver_role_id = 14;
+   * @generated from field: optional uint64 approver_role_id = 14;
    */
-  approverRoleId = protoInt64.zero;
+  approverRoleId?: bigint;
 
   /**
-   * The name of the location
    *
-   * @generated from field: string name = 20;
+   * @optional
+   *
+   * @description The official or friendly descriptive name of the location.
+   *
+   * @example "Headquarters - Building B"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string name = 20;
    */
-  name = "";
+  name?: string;
 
   /**
-   * The unique code by which the location is classified
    *
-   * @generated from field: string code = 21;
+   * @optional
+   *
+   * @description The unique code or internal alphanumeric token used to classify the location for shipping, logistics, or tagging.
+   *
+   * @example "LOC-HQ-BLDGB"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string code = 21;
    */
-  code = "";
+  code?: string;
 
   /**
-   * The primary email of the location
    *
-   * @generated from field: string email = 22;
+   * @optional
+   *
+   * @description The primary communication or support email address linked specifically to this location.
+   *
+   * @example "facilities.loc1@acme.com"
+   *
+   * @regex ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
+   *
+   * @format Must be a valid and structurally sound email address format.
+   *
+   * @generated from field: optional string email = 22;
    */
-  email = "";
+  email?: string;
 
   /**
-   * The primary contact number of the location
    *
-   * @generated from field: string phone = 23;
+   * @optional
+   *
+   * @description The primary contact or front desk telephone number for the location, typically including country and area codes.
+   *
+   * @example "+1-512-555-0144"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string representing a valid phone number format.
+   *
+   * @generated from field: optional string phone = 23;
    */
-  phone = "";
+  phone?: string;
 
   /**
-   * The ID of the associated non-leaf parent location (0, if the first location that is being created is a leaf location)
    *
-   * @generated from field: uint64 parent_location_id = 24;
+   * @optional
+   *
+   * @description The unique internal identifier of the parent non-leaf location. Defaults to 0 if this is the root or top-level node in the geographic hierarchy.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]*$
+   *
+   * @format Non-negative 64-bit integer.
+   *
+   * @generated from field: optional uint64 parent_location_id = 24;
    */
-  parentLocationId = protoInt64.zero;
+  parentLocationId?: bigint;
 
   /**
-   * Stores if this is a leaf location or a non-leaf location
    *
-   * @generated from field: Scailo.BOOL_FILTER is_leaf = 25;
+   * @optional
+   *
+   * @description Flag determining whether this location is a terminal 'leaf' node (e.g., a specific office room) or a 'non-leaf' grouping node (e.g., an entire region or campus).
+   *
+   * @example true
+   *
+   * @format Boolean value (`true` or `false`).
+   *
+   * @generated from field: optional Scailo.BOOL_FILTER is_leaf = 25;
    */
-  isLeaf = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isLeaf?: BOOL_FILTER;
 
   /**
    *
@@ -972,9 +1179,9 @@ export class LocationsServiceFilterReq extends Message<LocationsServiceFilterReq
    *
    * @example true
    *
-   * @generated from field: bool include_form_data = 501;
+   * @generated from field: optional bool include_form_data = 501;
    */
-  includeFormData = false;
+  includeFormData?: boolean;
 
   constructor(data?: PartialMessage<LocationsServiceFilterReq>) {
     super();
@@ -984,29 +1191,29 @@ export class LocationsServiceFilterReq extends Message<LocationsServiceFilterReq
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.LocationsServiceFilterReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(LOCATION_SORT_KEY) },
-    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
-    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 23, name: "phone", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 24, name: "parent_location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 25, name: "is_leaf", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(LOCATION_SORT_KEY), opt: true },
+    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
+    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 22, name: "email", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 23, name: "phone", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 24, name: "parent_location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 25, name: "is_leaf", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 500, name: "form_data", kind: "message", T: FormFieldDatumFilterRequest, repeated: true },
-    { no: 501, name: "include_form_data", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 501, name: "include_form_data", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LocationsServiceFilterReq {
@@ -1028,7 +1235,13 @@ export class LocationsServiceFilterReq extends Message<LocationsServiceFilterReq
 
 /**
  *
- * Describes the base request payload of a count search
+ * Target filter request for counting location records matching specific logical criteria.
+ * This message encapsulates lifecycle status filters, timestamp ranges, workflow markers,
+ * and entity references to determine the total size of a targeted dataset.
+ *
+ * **Note:** This is the primary message layout used by backend calculation engines, reporting
+ * services, and frontend pagination headers to evaluate total record matches dynamically
+ * before or alongside retrieving paginated results.
  *
  * @generated from message Scailo.LocationsServiceCountReq
  */
@@ -1041,9 +1254,9 @@ export class LocationsServiceCountReq extends Message<LocationsServiceCountReq> 
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -1057,9 +1270,9 @@ export class LocationsServiceCountReq extends Message<LocationsServiceCountReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_start = 101;
+   * @generated from field: optional uint64 creation_timestamp_start = 101;
    */
-  creationTimestampStart = protoInt64.zero;
+  creationTimestampStart?: bigint;
 
   /**
    *
@@ -1073,9 +1286,9 @@ export class LocationsServiceCountReq extends Message<LocationsServiceCountReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_end = 102;
+   * @generated from field: optional uint64 creation_timestamp_end = 102;
    */
-  creationTimestampEnd = protoInt64.zero;
+  creationTimestampEnd?: bigint;
 
   /**
    *
@@ -1089,9 +1302,9 @@ export class LocationsServiceCountReq extends Message<LocationsServiceCountReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_start = 103;
+   * @generated from field: optional uint64 modification_timestamp_start = 103;
    */
-  modificationTimestampStart = protoInt64.zero;
+  modificationTimestampStart?: bigint;
 
   /**
    *
@@ -1105,9 +1318,9 @@ export class LocationsServiceCountReq extends Message<LocationsServiceCountReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_end = 104;
+   * @generated from field: optional uint64 modification_timestamp_end = 104;
    */
-  modificationTimestampEnd = protoInt64.zero;
+  modificationTimestampEnd?: bigint;
 
   /**
    *
@@ -1121,9 +1334,9 @@ export class LocationsServiceCountReq extends Message<LocationsServiceCountReq> 
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 8;
+   * @generated from field: optional string entity_uuid = 8;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
    *
@@ -1133,9 +1346,9 @@ export class LocationsServiceCountReq extends Message<LocationsServiceCountReq> 
    *
    * @example STANDING
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   /**
    *
@@ -1149,9 +1362,9 @@ export class LocationsServiceCountReq extends Message<LocationsServiceCountReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_start = 11;
+   * @generated from field: optional uint64 approved_on_start = 11;
    */
-  approvedOnStart = protoInt64.zero;
+  approvedOnStart?: bigint;
 
   /**
    *
@@ -1165,9 +1378,9 @@ export class LocationsServiceCountReq extends Message<LocationsServiceCountReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_end = 12;
+   * @generated from field: optional uint64 approved_on_end = 12;
    */
-  approvedOnEnd = protoInt64.zero;
+  approvedOnEnd?: bigint;
 
   /**
    *
@@ -1181,9 +1394,9 @@ export class LocationsServiceCountReq extends Message<LocationsServiceCountReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_by_user_id = 13;
+   * @generated from field: optional uint64 approved_by_user_id = 13;
    */
-  approvedByUserId = protoInt64.zero;
+  approvedByUserId?: bigint;
 
   /**
    *
@@ -1197,54 +1410,109 @@ export class LocationsServiceCountReq extends Message<LocationsServiceCountReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approver_role_id = 14;
+   * @generated from field: optional uint64 approver_role_id = 14;
    */
-  approverRoleId = protoInt64.zero;
+  approverRoleId?: bigint;
 
   /**
-   * The name of the location
    *
-   * @generated from field: string name = 20;
-   */
-  name = "";
-
-  /**
-   * The unique code by which the location is classified
+   * @optional
    *
-   * @generated from field: string code = 21;
-   */
-  code = "";
-
-  /**
-   * The primary email of the location
+   * @description The official or friendly descriptive name of the location.
    *
-   * @generated from field: string email = 22;
-   */
-  email = "";
-
-  /**
-   * The primary contact number of the location
+   * @example "Headquarters - Building B"
    *
-   * @generated from field: string phone = 23;
-   */
-  phone = "";
-
-  /**
-   * The ID of the associated non-leaf parent location (0, if the first location that is being created is a leaf location)
+   * @regex .*
    *
-   * @generated from field: uint64 parent_location_id = 24;
-   */
-  parentLocationId = protoInt64.zero;
-
-  /**
-   * Stores if this is a leaf location or a non-leaf location
+   * @format Must be a non-empty string.
    *
-   * @generated from field: Scailo.BOOL_FILTER is_leaf = 25;
+   * @generated from field: optional string name = 20;
    */
-  isLeaf = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  name?: string;
 
   /**
-   * The list of form data filters
+   *
+   * @optional
+   *
+   * @description The unique code or internal alphanumeric token used to classify the location for shipping, logistics, or tagging.
+   *
+   * @example "LOC-HQ-BLDGB"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string code = 21;
+   */
+  code?: string;
+
+  /**
+   *
+   * @optional
+   *
+   * @description The primary communication or support email address linked specifically to this location.
+   *
+   * @example "facilities.loc1@acme.com"
+   *
+   * @regex ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
+   *
+   * @format Must be a valid and structurally sound email address format.
+   *
+   * @generated from field: optional string email = 22;
+   */
+  email?: string;
+
+  /**
+   *
+   * @optional
+   *
+   * @description The primary contact or front desk telephone number for the location, typically including country and area codes.
+   *
+   * @example "+1-512-555-0144"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string representing a valid phone number format.
+   *
+   * @generated from field: optional string phone = 23;
+   */
+  phone?: string;
+
+  /**
+   *
+   * @optional
+   *
+   * @description The unique internal identifier of the parent non-leaf location. Defaults to 0 if this is the root or top-level node in the geographic hierarchy.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]*$
+   *
+   * @format Non-negative 64-bit integer.
+   *
+   * @generated from field: optional uint64 parent_location_id = 24;
+   */
+  parentLocationId?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Flag determining whether this location is a terminal 'leaf' node (e.g., a specific office room) or a 'non-leaf' grouping node (e.g., an entire region or campus).
+   *
+   * @example true
+   *
+   * @format Boolean value (`true` or `false`).
+   *
+   * @generated from field: optional Scailo.BOOL_FILTER is_leaf = 25;
+   */
+  isLeaf?: BOOL_FILTER;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Count based on dynamic form field values.
    *
    * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
    */
@@ -1258,23 +1526,23 @@ export class LocationsServiceCountReq extends Message<LocationsServiceCountReq> 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.LocationsServiceCountReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
-    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
-    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 23, name: "phone", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 24, name: "parent_location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 25, name: "is_leaf", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
+    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
+    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 22, name: "email", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 23, name: "phone", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 24, name: "parent_location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 25, name: "is_leaf", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 500, name: "form_data", kind: "message", T: FormFieldDatumFilterRequest, repeated: true },
   ]);
 
@@ -1297,7 +1565,13 @@ export class LocationsServiceCountReq extends Message<LocationsServiceCountReq> 
 
 /**
  *
- * Describes the request payload for performing a generic search operation on records
+ * Broad-spectrum search and lookup request for locating and paginating locations via text matching.
+ * This message encapsulates full-text query parameters, pagination controls, sorting keys,
+ * lifecycle status constraints, and other core references.
+ *
+ * **Note:** This is the primary message layout used for global search bars, fast-filtering dashboard
+ * inputs, and omni-box search utilities where users need to match loose textual terms against
+ * records while retaining structural pagination.
  *
  * @generated from message Scailo.LocationsServiceSearchAllReq
  */
@@ -1310,9 +1584,9 @@ export class LocationsServiceSearchAllReq extends Message<LocationsServiceSearch
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -1342,9 +1616,9 @@ export class LocationsServiceSearchAllReq extends Message<LocationsServiceSearch
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -1354,9 +1628,9 @@ export class LocationsServiceSearchAllReq extends Message<LocationsServiceSearch
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -1364,9 +1638,9 @@ export class LocationsServiceSearchAllReq extends Message<LocationsServiceSearch
    *
    * @description The field used for sorting.
    *
-   * @generated from field: Scailo.LOCATION_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.LOCATION_SORT_KEY sort_key = 5;
    */
-  sortKey = LOCATION_SORT_KEY.LOCATION_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: LOCATION_SORT_KEY;
 
   /**
    *
@@ -1380,9 +1654,9 @@ export class LocationsServiceSearchAllReq extends Message<LocationsServiceSearch
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 6;
+   * @generated from field: optional string entity_uuid = 6;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
    *
@@ -1392,13 +1666,13 @@ export class LocationsServiceSearchAllReq extends Message<LocationsServiceSearch
    *
    * @example STANDING
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   /**
    *
-   * @mandatory
+   * @optional
    *
    * @description The search string to match against reference IDs.
    *
@@ -1408,23 +1682,39 @@ export class LocationsServiceSearchAllReq extends Message<LocationsServiceSearch
    *
    * @format: May contain any UTF-8 characters.
    *
-   * @generated from field: string search_key = 11;
+   * @generated from field: optional string search_key = 11;
    */
-  searchKey = "";
+  searchKey?: string;
 
   /**
-   * The ID of the associated non-leaf parent location (0, if the first location that is being created is a leaf location)
    *
-   * @generated from field: uint64 parent_location_id = 24;
+   * @optional
+   *
+   * @description The unique internal identifier of the parent non-leaf location. Defaults to 0 if this is the root or top-level node in the geographic hierarchy.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]*$
+   *
+   * @format Non-negative 64-bit integer.
+   *
+   * @generated from field: optional uint64 parent_location_id = 24;
    */
-  parentLocationId = protoInt64.zero;
+  parentLocationId?: bigint;
 
   /**
-   * Stores if this is a leaf location or a non-leaf location
    *
-   * @generated from field: Scailo.BOOL_FILTER is_leaf = 25;
+   * @optional
+   *
+   * @description Flag determining whether this location is a terminal 'leaf' node (e.g., a specific office room) or a 'non-leaf' grouping node (e.g., an entire region or campus).
+   *
+   * @example true
+   *
+   * @format Boolean value (`true` or `false`).
+   *
+   * @generated from field: optional Scailo.BOOL_FILTER is_leaf = 25;
    */
-  isLeaf = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isLeaf?: BOOL_FILTER;
 
   constructor(data?: PartialMessage<LocationsServiceSearchAllReq>) {
     super();
@@ -1434,16 +1724,16 @@ export class LocationsServiceSearchAllReq extends Message<LocationsServiceSearch
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.LocationsServiceSearchAllReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(LOCATION_SORT_KEY) },
-    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
-    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 24, name: "parent_location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 25, name: "is_leaf", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(LOCATION_SORT_KEY), opt: true },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
+    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 24, name: "parent_location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 25, name: "is_leaf", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LocationsServiceSearchAllReq {

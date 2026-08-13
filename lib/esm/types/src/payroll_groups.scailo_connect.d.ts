@@ -217,7 +217,13 @@ export declare const PayrollGroupsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Reopen
+         * Reopens a finalized or closed record for further modifications.
+         *
+         * **Status Transition:** -> `REVISION`
+         *
+         * **Side Effects:**
+         * - Unlocks the record to allow edits.
+         * - Logs the required user comment into the audit trail for compliance tracking.
          *
          * @generated from rpc Scailo.PayrollGroupsService.Reopen
          */
@@ -242,7 +248,12 @@ export declare const PayrollGroupsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Clone payroll group from an existing payroll group (denoted by the identifier)
+         * Initiates the creation of a new record by duplicating the structural properties of an existing record.
+         *
+         * **Side Effects:**
+         * - Provisions a new record populated with the metadata and configurations of the source record.
+         * - Does not clone operational transactions or historical logs of the source.
+         * - Appends an audit trail entry tracking the cloning operation and justification.
          *
          * @generated from rpc Scailo.PayrollGroupsService.Clone
          */
@@ -408,7 +419,12 @@ export declare const PayrollGroupsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View by Code (returns the latest record in case of duplicates)
+         * Retrieves a single record via the assigned internal code. In case duplicates are found, this method retrieves the latest record.
+         *
+         * **Note:** High-volume compliance data, audit records, and system logs are excluded from the response payload.
+         *
+         * **Errors:**
+         * - `NOT_FOUND`: If the provided internal code does not exist.
          *
          * @generated from rpc Scailo.PayrollGroupsService.ViewByCode
          */

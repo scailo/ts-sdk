@@ -400,7 +400,16 @@ export class ClientStreamsServiceCreateRequest extends Message<ClientStreamsServ
   entityUuid = "";
 
   /**
-   * Stores any comment that the user might add during this operation
+   *
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
    *
    * @generated from field: string user_comment = 2;
    */
@@ -499,14 +508,32 @@ export class ClientStreamsServiceCreateRequest extends Message<ClientStreamsServ
  */
 export class ClientStreamsServiceUpdateRequest extends Message<ClientStreamsServiceUpdateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
+   *
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
    *
    * @generated from field: string user_comment = 1;
    */
   userComment = "";
 
   /**
-   * The ID of the record that needs to be updated
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target record that needs to be updated.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 id = 2;
    */
@@ -2202,7 +2229,16 @@ export class ClientStreamMessageReceiptsList extends Message<ClientStreamMessage
  */
 export class ClientStreamsServiceInternalSubscriberCreateRequest extends Message<ClientStreamsServiceInternalSubscriberCreateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
+   *
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
    *
    * @generated from field: string user_comment = 1;
    */
@@ -2387,7 +2423,16 @@ export class ClientStreamInternalSubscribersList extends Message<ClientStreamInt
  */
 export class ClientStreamsServiceImportInternalSubscribersRequest extends Message<ClientStreamsServiceImportInternalSubscribersRequest> {
   /**
-   * Stores any comment that the user might add during this operation
+   *
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
    *
    * @generated from field: string user_comment = 1;
    */
@@ -2453,7 +2498,16 @@ export class ClientStreamsServiceImportInternalSubscribersRequest extends Messag
  */
 export class ClientStreamsServiceClientSubscriberCreateRequest extends Message<ClientStreamsServiceClientSubscriberCreateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
+   *
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
    *
    * @generated from field: string user_comment = 1;
    */

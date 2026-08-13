@@ -83,7 +83,12 @@ export const FormsFieldsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View by Code
+     * Retrieves a single record via the assigned internal code.
+     *
+     * **Note:** High-volume compliance data, audit records, and system logs are excluded from the response payload.
+     *
+     * **Errors:**
+     * - `NOT_FOUND`: If the provided internal code does not exist.
      *
      * @generated from rpc Scailo.FormsFieldsService.ViewByCode
      */

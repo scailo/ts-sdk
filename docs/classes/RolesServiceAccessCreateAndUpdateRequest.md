@@ -2,7 +2,8 @@
 
 # Class: RolesServiceAccessCreateAndUpdateRequest
 
-Describes the necessary data structure during creation/updation of a role access
+Input structure used during the creation or modification of individual role access privileges.
+This maps explicit system modules or UI components directly to a lease-privilege accessibility state.
 
 **`Generated`**
 
@@ -67,7 +68,7 @@ Message\&lt;RolesServiceAccessCreateAndUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:520](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/roles.scailo_pb.ts#L520)
+[src/roles.scailo_pb.ts:723](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/roles.scailo_pb.ts#L723)
 
 ## Properties
 
@@ -75,7 +76,21 @@ Message\&lt;RolesServiceAccessCreateAndUpdateRequest\&gt;.constructor
 
 • **isAccessible**: `boolean` = `false`
 
-Denotes if the menu is accessible
+**`Mandatory`**
+
+**`Description`**
+
+Flag determining whether accounts assigned to the parent role are granted access to interact with this menu module.
+
+**`Example`**
+
+```ts
+true
+```
+
+**`Format`**
+
+Boolean value (`true` or `false`).
 
 **`Generated`**
 
@@ -83,7 +98,7 @@ from field: bool is_accessible = 12;
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:518](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/roles.scailo_pb.ts#L518)
+[src/roles.scailo_pb.ts:721](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/roles.scailo_pb.ts#L721)
 
 ___
 
@@ -91,7 +106,25 @@ ___
 
 • **menuUid**: `string` = `""`
 
-The menu UID (or internal code)
+**`Mandatory`**
+
+**`Description`**
+
+The globally unique alphanumeric identifier or standard internal code assigned to a system menu or routing module.
+
+**`Example`**
+
+```ts
+"MENU_COMPLIANCE_AUDIT"
+```
+
+**`Regex`**
+
+^[0-9A-Za-z_-]+$
+
+**`Format`**
+
+Alphanumeric characters, hyphens, and underscores only. Spaces are strictly prohibited.
 
 **`Generated`**
 
@@ -99,7 +132,7 @@ from field: string menu_uid = 11;
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:511](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/roles.scailo_pb.ts#L511)
+[src/roles.scailo_pb.ts:707](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/roles.scailo_pb.ts#L707)
 
 ___
 
@@ -109,7 +142,7 @@ ___
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:527](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/roles.scailo_pb.ts#L527)
+[src/roles.scailo_pb.ts:730](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/roles.scailo_pb.ts#L730)
 
 ___
 
@@ -119,7 +152,7 @@ ___
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:525](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/roles.scailo_pb.ts#L525)
+[src/roles.scailo_pb.ts:728](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/roles.scailo_pb.ts#L728)
 
 ___
 
@@ -129,7 +162,7 @@ ___
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:526](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/roles.scailo_pb.ts#L526)
+[src/roles.scailo_pb.ts:729](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/roles.scailo_pb.ts#L729)
 
 ## Methods
 
@@ -417,7 +450,7 @@ ___
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:544](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/roles.scailo_pb.ts#L544)
+[src/roles.scailo_pb.ts:747](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/roles.scailo_pb.ts#L747)
 
 ___
 
@@ -438,7 +471,7 @@ ___
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:532](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/roles.scailo_pb.ts#L532)
+[src/roles.scailo_pb.ts:735](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/roles.scailo_pb.ts#L735)
 
 ___
 
@@ -459,7 +492,7 @@ ___
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:536](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/roles.scailo_pb.ts#L536)
+[src/roles.scailo_pb.ts:739](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/roles.scailo_pb.ts#L739)
 
 ___
 
@@ -480,4 +513,4 @@ ___
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:540](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/roles.scailo_pb.ts#L540)
+[src/roles.scailo_pb.ts:743](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/roles.scailo_pb.ts#L743)

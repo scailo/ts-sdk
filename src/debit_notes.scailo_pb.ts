@@ -292,7 +292,16 @@ export class DebitNotesServiceCreateRequest extends Message<DebitNotesServiceCre
   entityUuid = "";
 
   /**
-   * Stores any comment that the user might add during this operation
+   *
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
    *
    * @generated from field: string user_comment = 2;
    */
@@ -373,7 +382,14 @@ export class DebitNotesServiceCreateRequest extends Message<DebitNotesServiceCre
   roundOff = protoInt64.zero;
 
   /**
-   * The list of dynamic forms
+   *
+   * @optional
+   *
+   * @description A collection of dynamic form fields for organization-specific data.
+   *
+   * @example []
+   *
+   * @format An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
    *
    * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
    */
@@ -425,14 +441,32 @@ export class DebitNotesServiceCreateRequest extends Message<DebitNotesServiceCre
  */
 export class DebitNotesServiceUpdateRequest extends Message<DebitNotesServiceUpdateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
+   *
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
    *
    * @generated from field: string user_comment = 1;
    */
   userComment = "";
 
   /**
-   * The ID of the record that needs to be updated
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target record that needs to be updated.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 id = 2;
    */
@@ -511,7 +545,14 @@ export class DebitNotesServiceUpdateRequest extends Message<DebitNotesServiceUpd
   roundOff = protoInt64.zero;
 
   /**
-   * The list of dynamic forms
+   *
+   * @optional
+   *
+   * @description A collection of dynamic form fields for organization-specific data.
+   *
+   * @example []
+   *
+   * @format An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
    *
    * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
    */
@@ -562,7 +603,16 @@ export class DebitNotesServiceUpdateRequest extends Message<DebitNotesServiceUpd
  */
 export class DebitNotesServiceAutofillRequest extends Message<DebitNotesServiceAutofillRequest> {
   /**
-   * Stores any comment that the user might add during this operation
+   *
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
    *
    * @generated from field: string user_comment = 1;
    */
@@ -800,7 +850,8 @@ export class DebitNote extends Message<DebitNote> {
   list: DebitNoteItem[] = [];
 
   /**
-   * The list of dynamic forms
+   *
+   * @description Collection of organization-specific dynamic data.
    *
    * @generated from field: repeated Scailo.FormFieldDatum form_data = 40;
    */
@@ -859,7 +910,16 @@ export class DebitNote extends Message<DebitNote> {
  */
 export class DebitNotesServiceItemCreateRequest extends Message<DebitNotesServiceItemCreateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
+   *
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
    *
    * @generated from field: string user_comment = 1;
    */
@@ -1071,7 +1131,16 @@ export class DebitNotesServiceMultipleItemsSingleton extends Message<DebitNotesS
  */
 export class DebitNotesServiceMultipleItemsCreateRequest extends Message<DebitNotesServiceMultipleItemsCreateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
+   *
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
    *
    * @generated from field: string user_comment = 1;
    */
@@ -1129,7 +1198,16 @@ export class DebitNotesServiceMultipleItemsCreateRequest extends Message<DebitNo
  */
 export class DebitNotesServiceItemUpdateRequest extends Message<DebitNotesServiceItemUpdateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
+   *
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
    *
    * @generated from field: string user_comment = 1;
    */
@@ -1262,7 +1340,11 @@ export class DebitNoteItem extends Message<DebitNoteItem> {
 
   /**
    *
-   * @description The approval state of the record
+   * @description A boolean flag indicating whether this specific record requires further administrative approval.
+   *
+   * @example false
+   *
+   * @format Boolean true or false.
    *
    * @generated from field: bool need_approval = 4;
    */
@@ -2812,7 +2894,10 @@ export class DebitNotesServiceCountReq extends Message<DebitNotesServiceCountReq
   totalValueMax = protoInt64.zero;
 
   /**
-   * The list of form data filters
+   *
+   * @optional
+   *
+   * @description Count based on dynamic form field values.
    *
    * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
    */
@@ -3053,7 +3138,16 @@ export class DebitNotesServiceSearchAllReq extends Message<DebitNotesServiceSear
  */
 export class DebitNotesServiceReferenceCreateRequest extends Message<DebitNotesServiceReferenceCreateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
+   *
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
    *
    * @generated from field: string user_comment = 1;
    */
@@ -3138,7 +3232,11 @@ export class DebitNoteReference extends Message<DebitNoteReference> {
 
   /**
    *
-   * @description The approval state of the record
+   * @description A boolean flag indicating whether this specific record requires further administrative approval.
+   *
+   * @example false
+   *
+   * @format Boolean true or false.
    *
    * @generated from field: bool need_approval = 4;
    */

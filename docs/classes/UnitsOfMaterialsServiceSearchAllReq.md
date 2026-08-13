@@ -2,7 +2,13 @@
 
 # Class: UnitsOfMaterialsServiceSearchAllReq
 
-Describes the request payload for performing a generic search operation on records
+Broad-spectrum search and lookup request for locating and paginating unit of materials via text matching.
+This message encapsulates full-text query parameters, pagination controls, sorting keys,
+lifecycle status constraints, and other core references.
+
+**Note:** This is the primary message layout used for global search bars, fast-filtering dashboard
+inputs, and omni-box search utilities where users need to match loose textual terms against
+records while retaining structural pagination.
 
 **`Generated`**
 
@@ -73,7 +79,7 @@ Message\&lt;UnitsOfMaterialsServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-[src/units_of_materials.scailo_pb.ts:1219](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/units_of_materials.scailo_pb.ts#L1219)
+[src/units_of_materials.scailo_pb.ts:1383](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/units_of_materials.scailo_pb.ts#L1383)
 
 ## Properties
 
@@ -107,13 +113,13 @@ from field: int64 count = 2;
 
 #### Defined in
 
-[src/units_of_materials.scailo_pb.ts:1135](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/units_of_materials.scailo_pb.ts#L1135)
+[src/units_of_materials.scailo_pb.ts:1299](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/units_of_materials.scailo_pb.ts#L1299)
 
 ___
 
 ### entityUuid
 
-• **entityUuid**: `string` = `""`
+• `Optional` **entityUuid**: `string`
 
 **`Optional`**
 
@@ -137,17 +143,17 @@ If provided, must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
-from field: string entity_uuid = 6;
+from field: optional string entity_uuid = 6;
 
 #### Defined in
 
-[src/units_of_materials.scailo_pb.ts:1189](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/units_of_materials.scailo_pb.ts#L1189)
+[src/units_of_materials.scailo_pb.ts:1353](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/units_of_materials.scailo_pb.ts#L1353)
 
 ___
 
 ### isActive
 
-• **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
+• `Optional` **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md)
 
 **`Optional`**
 
@@ -163,17 +169,17 @@ ANY
 
 **`Generated`**
 
-from field: Scailo.BOOL_FILTER is_active = 1;
+from field: optional Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/units_of_materials.scailo_pb.ts:1119](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/units_of_materials.scailo_pb.ts#L1119)
+[src/units_of_materials.scailo_pb.ts:1283](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/units_of_materials.scailo_pb.ts#L1283)
 
 ___
 
 ### offset
 
-• **offset**: `bigint` = `protoInt64.zero`
+• `Optional` **offset**: `bigint`
 
 **`Optional`**
 
@@ -197,17 +203,17 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 offset = 3;
+from field: optional uint64 offset = 3;
 
 #### Defined in
 
-[src/units_of_materials.scailo_pb.ts:1151](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/units_of_materials.scailo_pb.ts#L1151)
+[src/units_of_materials.scailo_pb.ts:1315](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/units_of_materials.scailo_pb.ts#L1315)
 
 ___
 
 ### searchKey
 
-• **searchKey**: `string` = `""`
+• `Optional` **searchKey**: `string`
 
 **`Mandatory`**
 
@@ -229,17 +235,17 @@ The search string to match against reference IDs.
 
 **`Generated`**
 
-from field: string search_key = 11;
+from field: optional string search_key = 11;
 
 #### Defined in
 
-[src/units_of_materials.scailo_pb.ts:1217](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/units_of_materials.scailo_pb.ts#L1217)
+[src/units_of_materials.scailo_pb.ts:1381](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/units_of_materials.scailo_pb.ts#L1381)
 
 ___
 
 ### sortKey
 
-• **sortKey**: [`UNIT_OF_MATERIAL_SORT_KEY`](../enums/UNIT_OF_MATERIAL_SORT_KEY.md) = `UNIT_OF_MATERIAL_SORT_KEY.UNIT_OF_MATERIAL_SORT_KEY_ID_UNSPECIFIED`
+• `Optional` **sortKey**: [`UNIT_OF_MATERIAL_SORT_KEY`](../enums/UNIT_OF_MATERIAL_SORT_KEY.md)
 
 **`Optional`**
 
@@ -249,17 +255,17 @@ The field used for sorting.
 
 **`Generated`**
 
-from field: Scailo.UNIT_OF_MATERIAL_SORT_KEY sort_key = 5;
+from field: optional Scailo.UNIT_OF_MATERIAL_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-[src/units_of_materials.scailo_pb.ts:1173](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/units_of_materials.scailo_pb.ts#L1173)
+[src/units_of_materials.scailo_pb.ts:1337](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/units_of_materials.scailo_pb.ts#L1337)
 
 ___
 
 ### sortOrder
 
-• **sortOrder**: [`SORT_ORDER`](../enums/SORT_ORDER.md) = `SORT_ORDER.ASCENDING_UNSPECIFIED`
+• `Optional` **sortOrder**: [`SORT_ORDER`](../enums/SORT_ORDER.md)
 
 **`Optional`**
 
@@ -275,17 +281,17 @@ DESCENDING
 
 **`Generated`**
 
-from field: Scailo.SORT_ORDER sort_order = 4;
+from field: optional Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-[src/units_of_materials.scailo_pb.ts:1163](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/units_of_materials.scailo_pb.ts#L1163)
+[src/units_of_materials.scailo_pb.ts:1327](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/units_of_materials.scailo_pb.ts#L1327)
 
 ___
 
 ### status
 
-• **status**: [`STANDARD_LIFECYCLE_STATUS`](../enums/STANDARD_LIFECYCLE_STATUS.md) = `STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED`
+• `Optional` **status**: [`STANDARD_LIFECYCLE_STATUS`](../enums/STANDARD_LIFECYCLE_STATUS.md)
 
 **`Optional`**
 
@@ -301,11 +307,11 @@ STANDING
 
 **`Generated`**
 
-from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-[src/units_of_materials.scailo_pb.ts:1201](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/units_of_materials.scailo_pb.ts#L1201)
+[src/units_of_materials.scailo_pb.ts:1365](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/units_of_materials.scailo_pb.ts#L1365)
 
 ___
 
@@ -315,7 +321,7 @@ ___
 
 #### Defined in
 
-[src/units_of_materials.scailo_pb.ts:1226](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/units_of_materials.scailo_pb.ts#L1226)
+[src/units_of_materials.scailo_pb.ts:1390](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/units_of_materials.scailo_pb.ts#L1390)
 
 ___
 
@@ -325,7 +331,7 @@ ___
 
 #### Defined in
 
-[src/units_of_materials.scailo_pb.ts:1224](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/units_of_materials.scailo_pb.ts#L1224)
+[src/units_of_materials.scailo_pb.ts:1388](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/units_of_materials.scailo_pb.ts#L1388)
 
 ___
 
@@ -335,7 +341,7 @@ ___
 
 #### Defined in
 
-[src/units_of_materials.scailo_pb.ts:1225](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/units_of_materials.scailo_pb.ts#L1225)
+[src/units_of_materials.scailo_pb.ts:1389](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/units_of_materials.scailo_pb.ts#L1389)
 
 ## Methods
 
@@ -623,7 +629,7 @@ ___
 
 #### Defined in
 
-[src/units_of_materials.scailo_pb.ts:1249](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/units_of_materials.scailo_pb.ts#L1249)
+[src/units_of_materials.scailo_pb.ts:1413](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/units_of_materials.scailo_pb.ts#L1413)
 
 ___
 
@@ -644,7 +650,7 @@ ___
 
 #### Defined in
 
-[src/units_of_materials.scailo_pb.ts:1237](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/units_of_materials.scailo_pb.ts#L1237)
+[src/units_of_materials.scailo_pb.ts:1401](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/units_of_materials.scailo_pb.ts#L1401)
 
 ___
 
@@ -665,7 +671,7 @@ ___
 
 #### Defined in
 
-[src/units_of_materials.scailo_pb.ts:1241](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/units_of_materials.scailo_pb.ts#L1241)
+[src/units_of_materials.scailo_pb.ts:1405](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/units_of_materials.scailo_pb.ts#L1405)
 
 ___
 
@@ -686,4 +692,4 @@ ___
 
 #### Defined in
 
-[src/units_of_materials.scailo_pb.ts:1245](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/units_of_materials.scailo_pb.ts#L1245)
+[src/units_of_materials.scailo_pb.ts:1409](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/units_of_materials.scailo_pb.ts#L1409)

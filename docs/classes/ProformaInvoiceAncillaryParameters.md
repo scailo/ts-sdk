@@ -2,7 +2,9 @@
 
 # Class: ProformaInvoiceAncillaryParameters
 
-Stores the UUID references of the record
+Represents a read-only container for universally unique identifiers (UUIDs) of related external entities.
+This message securely exposes the downstream linkages (like the source order or currency) to external
+clients or frontend interfaces without revealing internal sequential IDs.
 
 **`Generated`**
 
@@ -67,7 +69,7 @@ Message\&lt;ProformaInvoiceAncillaryParameters\&gt;.constructor
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:735](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L735)
+[src/proforma_invoices.scailo_pb.ts:985](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L985)
 
 ## Properties
 
@@ -75,7 +77,25 @@ Message\&lt;ProformaInvoiceAncillaryParameters\&gt;.constructor
 
 • **currencyUuid**: `string` = `""`
 
-The UUID of the currency (the UUID of the associated currency)
+**`Mandatory`**
+
+**`Description`**
+
+The globally unique identifier (UUID) of the currency used for financial calculations within this invoice.
+
+**`Example`**
+
+```ts
+"772a8422-e18b-42d4-a815-446655442222"
+```
+
+**`Regex`**
+
+^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+
+**`Format`**
+
+Valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
@@ -83,7 +103,7 @@ from field: string currency_uuid = 214;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:733](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L733)
+[src/proforma_invoices.scailo_pb.ts:983](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L983)
 
 ___
 
@@ -91,7 +111,25 @@ ___
 
 • **refUuid**: `string` = `""`
 
-The UUID of the ref_id (the UUID of the associated ref_id)
+**`Mandatory`**
+
+**`Description`**
+
+The globally unique identifier (UUID) of the associated source document (e.g., the parent Sales Order).
+
+**`Example`**
+
+```ts
+"661f9511-f39c-42d5-b827-557766551111"
+```
+
+**`Regex`**
+
+^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+
+**`Format`**
+
+Valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
@@ -99,7 +137,7 @@ from field: string ref_uuid = 213;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:726](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L726)
+[src/proforma_invoices.scailo_pb.ts:967](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L967)
 
 ___
 
@@ -109,7 +147,7 @@ ___
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:742](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L742)
+[src/proforma_invoices.scailo_pb.ts:992](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L992)
 
 ___
 
@@ -119,7 +157,7 @@ ___
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:740](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L740)
+[src/proforma_invoices.scailo_pb.ts:990](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L990)
 
 ___
 
@@ -129,7 +167,7 @@ ___
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:741](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L741)
+[src/proforma_invoices.scailo_pb.ts:991](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L991)
 
 ## Methods
 
@@ -417,7 +455,7 @@ ___
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:759](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L759)
+[src/proforma_invoices.scailo_pb.ts:1009](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L1009)
 
 ___
 
@@ -438,7 +476,7 @@ ___
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:747](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L747)
+[src/proforma_invoices.scailo_pb.ts:997](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L997)
 
 ___
 
@@ -459,7 +497,7 @@ ___
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:751](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L751)
+[src/proforma_invoices.scailo_pb.ts:1001](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L1001)
 
 ___
 
@@ -480,4 +518,4 @@ ___
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:755](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L755)
+[src/proforma_invoices.scailo_pb.ts:1005](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L1005)

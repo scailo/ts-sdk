@@ -2,7 +2,8 @@
 
 # Class: ClientsServicePaginatedUsersResponse
 
-Describes the response to a pagination items request
+Paginated response packet containing a subset of Client User records.
+Includes complete operational state parameters for rendering frontend data grids and tables.
 
 **`Generated`**
 
@@ -69,7 +70,7 @@ Message\&lt;ClientsServicePaginatedUsersResponse\&gt;.constructor
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:1846](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L1846)
+[src/clients.scailo_pb.ts:2189](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L2189)
 
 ## Properties
 
@@ -93,7 +94,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:1816](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L1816)
+[src/clients.scailo_pb.ts:2159](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L2159)
 
 ___
 
@@ -117,7 +118,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:1826](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L1826)
+[src/clients.scailo_pb.ts:2169](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L2169)
 
 ___
 
@@ -135,7 +136,7 @@ from field: repeated Scailo.ClientUser payload = 4;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:1844](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L1844)
+[src/clients.scailo_pb.ts:2187](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L2187)
 
 ___
 
@@ -159,7 +160,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:1836](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L1836)
+[src/clients.scailo_pb.ts:2179](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L2179)
 
 ___
 
@@ -169,7 +170,7 @@ ___
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:1853](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L1853)
+[src/clients.scailo_pb.ts:2196](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L2196)
 
 ___
 
@@ -179,7 +180,7 @@ ___
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:1851](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L1851)
+[src/clients.scailo_pb.ts:2194](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L2194)
 
 ___
 
@@ -189,7 +190,7 @@ ___
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:1852](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L1852)
+[src/clients.scailo_pb.ts:2195](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L2195)
 
 ## Methods
 
@@ -477,7 +478,7 @@ ___
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:1872](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L1872)
+[src/clients.scailo_pb.ts:2215](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L2215)
 
 ___
 
@@ -498,7 +499,7 @@ ___
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:1860](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L1860)
+[src/clients.scailo_pb.ts:2203](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L2203)
 
 ___
 
@@ -519,7 +520,7 @@ ___
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:1864](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L1864)
+[src/clients.scailo_pb.ts:2207](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L2207)
 
 ___
 
@@ -540,4 +541,4 @@ ___
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:1868](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L1868)
+[src/clients.scailo_pb.ts:2211](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L2211)

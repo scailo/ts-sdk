@@ -2,7 +2,8 @@
 
 # Class: SalesOrderItemsSearchRequest
 
-Describes the request payload to retrieve approved or unapproved items.
+Request payload structure used to search and filter Sales Order Item records.
+Supports pagination controls, tenancy isolation, status grouping, and text-based matching.
 
 **`Generated`**
 
@@ -86,119 +87,245 @@ Message\&lt;SalesOrderItemsSearchRequest\&gt;.constructor
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3714](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3714)
+[src/sales_orders.scailo_pb.ts:5065](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5065)
 
 ## Properties
 
 ### approvedByUserId
 
-• **approvedByUserId**: `bigint` = `protoInt64.zero`
+• `Optional` **approvedByUserId**: `bigint`
 
-The ID of the approver
+**`Optional`**
+
+**`Description`**
+
+Filter by the specific user ID who approved the records.
+
+**`Example`**
+
+```ts
+501
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 approved_by_user_id = 12;
+from field: optional uint64 approved_by_user_id = 12;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3635](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3635)
+[src/sales_orders.scailo_pb.ts:4887](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L4887)
 
 ___
 
 ### approvedOnEnd
 
-• **approvedOnEnd**: `bigint` = `protoInt64.zero`
+• `Optional` **approvedOnEnd**: `bigint`
 
-The end range of approved timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records approved ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 approved_on_end = 11;
+from field: optional uint64 approved_on_end = 11;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3628](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3628)
+[src/sales_orders.scailo_pb.ts:4871](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L4871)
 
 ___
 
 ### approvedOnStart
 
-• **approvedOnStart**: `bigint` = `protoInt64.zero`
+• `Optional` **approvedOnStart**: `bigint`
 
-The start range of approved timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records approved ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 approved_on_start = 10;
+from field: optional uint64 approved_on_start = 10;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3621](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3621)
+[src/sales_orders.scailo_pb.ts:4855](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L4855)
 
 ___
 
 ### approverRoleId
 
-• **approverRoleId**: `bigint` = `protoInt64.zero`
+• `Optional` **approverRoleId**: `bigint`
 
-The role ID of the approver
+**`Optional`**
+
+**`Description`**
+
+Filter by the role ID of the approver.
+
+**`Example`**
+
+```ts
+5
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 approver_role_id = 13;
+from field: optional uint64 approver_role_id = 13;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3642](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3642)
+[src/sales_orders.scailo_pb.ts:4903](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L4903)
 
 ___
 
 ### bundledWithId
 
-• **bundledWithId**: `bigint` = `protoInt64.zero`
+• `Optional` **bundledWithId**: `bigint`
 
-Stores the ID of the sales order item with which this item is bundled with
+**`Optional`**
+
+**`Description`**
+
+Filter by the internal identifier of the primary sales order line item that this item is bundled with.
+
+**`Example`**
+
+```ts
+1025
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 bundled_with_id = 21;
+from field: optional uint64 bundled_with_id = 21;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3656](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3656)
+[src/sales_orders.scailo_pb.ts:4935](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L4935)
 
 ___
 
 ### clientFamilyCode
 
-• **clientFamilyCode**: `string` = `""`
+• `Optional` **clientFamilyCode**: `string`
 
-Stores the family code as given by the client
+**`Optional`**
+
+**`Description`**
+
+Fuzzy match for the client's specific alphanumeric part number, SKU, or family code.
+
+**`Example`**
+
+```ts
+"CLI-SKU-992"
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
-from field: string client_family_code = 26;
+from field: optional string client_family_code = 26;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3677](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3677)
+[src/sales_orders.scailo_pb.ts:4983](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L4983)
 
 ___
 
 ### clientUomId
 
-• **clientUomId**: `bigint` = `protoInt64.zero`
+• `Optional` **clientUomId**: `bigint`
 
-The ID of the client's unit of material
+**`Optional`**
+
+**`Description`**
+
+Filter line items requesting a specific client Unit of Measure (UOM).
+
+**`Example`**
+
+```ts
+12
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 client_uom_id = 23;
+from field: optional uint64 client_uom_id = 23;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3670](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3670)
+[src/sales_orders.scailo_pb.ts:4967](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L4967)
 
 ___
 
@@ -232,61 +359,115 @@ from field: int64 count = 2;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3553](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3553)
+[src/sales_orders.scailo_pb.ts:4775](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L4775)
 
 ___
 
 ### deliveryDateEnd
 
-• **deliveryDateEnd**: `string` = `""`
+• `Optional` **deliveryDateEnd**: `string`
 
-The end delivery date of the item in the sales order
+**`Optional`**
+
+**`Description`**
+
+Filter line items scheduled for delivery ON or BEFORE this specific date.
+
+**`Example`**
+
+```ts
+"2023-11-30"
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+String following the standard date format (e.g., YYYY-MM-DD).
 
 **`Generated`**
 
-from field: string delivery_date_end = 30;
+from field: optional string delivery_date_end = 30;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3705](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3705)
+[src/sales_orders.scailo_pb.ts:5047](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5047)
 
 ___
 
 ### deliveryDateExact
 
-• **deliveryDateExact**: `string` = `""`
+• `Optional` **deliveryDateExact**: `string`
 
-The exact delivery date of the item in the sales order
+**`Optional`**
+
+**`Description`**
+
+Filter line items scheduled for exact delivery on this specific date.
+
+**`Example`**
+
+```ts
+"2023-11-15"
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+String following the standard date format (e.g., YYYY-MM-DD).
 
 **`Generated`**
 
-from field: string delivery_date_exact = 28;
+from field: optional string delivery_date_exact = 28;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3691](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3691)
+[src/sales_orders.scailo_pb.ts:5015](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5015)
 
 ___
 
 ### deliveryDateStart
 
-• **deliveryDateStart**: `string` = `""`
+• `Optional` **deliveryDateStart**: `string`
 
-The start delivery date of the item in the sales order
+**`Optional`**
+
+**`Description`**
+
+Filter line items scheduled for delivery ON or AFTER this specific date.
+
+**`Example`**
+
+```ts
+"2023-11-01"
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+String following the standard date format (e.g., YYYY-MM-DD).
 
 **`Generated`**
 
-from field: string delivery_date_start = 29;
+from field: optional string delivery_date_start = 29;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3698](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3698)
+[src/sales_orders.scailo_pb.ts:5031](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5031)
 
 ___
 
 ### entityUuid
 
-• **entityUuid**: `string` = `""`
+• `Optional` **entityUuid**: `string`
 
 **`Optional`**
 
@@ -310,33 +491,51 @@ If provided, must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
-from field: string entity_uuid = 6;
+from field: optional string entity_uuid = 6;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3607](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3607)
+[src/sales_orders.scailo_pb.ts:4829](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L4829)
 
 ___
 
 ### familyId
 
-• **familyId**: `bigint` = `protoInt64.zero`
+• `Optional` **familyId**: `bigint`
 
-The ID of the family
+**`Optional`**
+
+**`Description`**
+
+Filter line items belonging to a specific family.
+
+**`Example`**
+
+```ts
+505
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 family_id = 22;
+from field: optional uint64 family_id = 22;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3663](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3663)
+[src/sales_orders.scailo_pb.ts:4951](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L4951)
 
 ___
 
 ### isActive
 
-• **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
+• `Optional` **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md)
 
 **`Optional`**
 
@@ -352,17 +551,17 @@ ANY
 
 **`Generated`**
 
-from field: Scailo.BOOL_FILTER is_active = 1;
+from field: optional Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3537](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3537)
+[src/sales_orders.scailo_pb.ts:4759](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L4759)
 
 ___
 
 ### offset
 
-• **offset**: `bigint` = `protoInt64.zero`
+• `Optional` **offset**: `bigint`
 
 **`Optional`**
 
@@ -386,49 +585,83 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 offset = 3;
+from field: optional uint64 offset = 3;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3569](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3569)
+[src/sales_orders.scailo_pb.ts:4791](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L4791)
 
 ___
 
 ### salesOrderId
 
-• **salesOrderId**: `bigint` = `protoInt64.zero`
+• `Optional` **salesOrderId**: `bigint`
 
-The ID of the sales order
+**`Optional`**
+
+**`Description`**
+
+Filter line items belonging to a specific parent sales order.
+
+**`Example`**
+
+```ts
+1024
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 sales_order_id = 20;
+from field: optional uint64 sales_order_id = 20;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3649](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3649)
+[src/sales_orders.scailo_pb.ts:4919](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L4919)
 
 ___
 
 ### searchKey
 
-• **searchKey**: `string` = `""`
+• `Optional` **searchKey**: `string`
 
-Describes the key with which the search operation needs to be performed
+**`Optional`**
+
+**`Description`**
+
+The search string to match against reference IDs.
+
+**`Example`**
+
+```ts
+"Medical 2023"
+```
+
+**`Regex`**
+
+.*
+
+@format: May contain any UTF-8 characters.
 
 **`Generated`**
 
-from field: string search_key = 40;
+from field: optional string search_key = 40;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3712](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3712)
+[src/sales_orders.scailo_pb.ts:5063](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5063)
 
 ___
 
 ### sortKey
 
-• **sortKey**: [`SALES_ORDER_ITEM_SORT_KEY`](../enums/SALES_ORDER_ITEM_SORT_KEY.md) = `SALES_ORDER_ITEM_SORT_KEY.SALES_ORDER_ITEM_SORT_KEY_ID_UNSPECIFIED`
+• `Optional` **sortKey**: [`SALES_ORDER_ITEM_SORT_KEY`](../enums/SALES_ORDER_ITEM_SORT_KEY.md)
 
 **`Optional`**
 
@@ -438,17 +671,17 @@ The field used for sorting.
 
 **`Generated`**
 
-from field: Scailo.SALES_ORDER_ITEM_SORT_KEY sort_key = 5;
+from field: optional Scailo.SALES_ORDER_ITEM_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3591](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3591)
+[src/sales_orders.scailo_pb.ts:4813](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L4813)
 
 ___
 
 ### sortOrder
 
-• **sortOrder**: [`SORT_ORDER`](../enums/SORT_ORDER.md) = `SORT_ORDER.ASCENDING_UNSPECIFIED`
+• `Optional` **sortOrder**: [`SORT_ORDER`](../enums/SORT_ORDER.md)
 
 **`Optional`**
 
@@ -464,43 +697,65 @@ DESCENDING
 
 **`Generated`**
 
-from field: Scailo.SORT_ORDER sort_order = 4;
+from field: optional Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3581](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3581)
+[src/sales_orders.scailo_pb.ts:4803](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L4803)
 
 ___
 
 ### status
 
-• **status**: [`SALES_ORDER_ITEM_STATUS`](../enums/SALES_ORDER_ITEM_STATUS.md) = `SALES_ORDER_ITEM_STATUS.SALES_ORDER_ITEM_STATUS_ANY_UNSPECIFIED`
+• `Optional` **status**: [`SALES_ORDER_ITEM_STATUS`](../enums/SALES_ORDER_ITEM_STATUS.md)
 
-The status of the items
+**`Optional`**
+
+**`Description`**
+
+The field used for sorting.
 
 **`Generated`**
 
-from field: Scailo.SALES_ORDER_ITEM_STATUS status = 7;
+from field: optional Scailo.SALES_ORDER_ITEM_STATUS status = 7;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3614](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3614)
+[src/sales_orders.scailo_pb.ts:4839](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L4839)
 
 ___
 
 ### taxGroupId
 
-• **taxGroupId**: `bigint` = `protoInt64.zero`
+• `Optional` **taxGroupId**: `bigint`
 
-The ID of the tax group
+**`Optional`**
+
+**`Description`**
+
+Filter line items mapped to a specific tax group.
+
+**`Example`**
+
+```ts
+4
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 tax_group_id = 27;
+from field: optional uint64 tax_group_id = 27;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3684](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3684)
+[src/sales_orders.scailo_pb.ts:4999](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L4999)
 
 ___
 
@@ -510,7 +765,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3721](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3721)
+[src/sales_orders.scailo_pb.ts:5072](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5072)
 
 ___
 
@@ -520,7 +775,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3719](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3719)
+[src/sales_orders.scailo_pb.ts:5070](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5070)
 
 ___
 
@@ -530,7 +785,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3720](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3720)
+[src/sales_orders.scailo_pb.ts:5071](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5071)
 
 ## Methods
 
@@ -818,7 +1073,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3757](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3757)
+[src/sales_orders.scailo_pb.ts:5108](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5108)
 
 ___
 
@@ -839,7 +1094,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3745](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3745)
+[src/sales_orders.scailo_pb.ts:5096](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5096)
 
 ___
 
@@ -860,7 +1115,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3749](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3749)
+[src/sales_orders.scailo_pb.ts:5100](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5100)
 
 ___
 
@@ -881,4 +1136,4 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3753](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3753)
+[src/sales_orders.scailo_pb.ts:5104](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5104)

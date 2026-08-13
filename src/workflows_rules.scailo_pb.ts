@@ -559,6 +559,41 @@ export enum WORKFLOW_RULE_SERVICE_NAME {
    * @generated from enum value: WORKFLOW_RULE_SERVICE_NAME_WORK_ORDERS = 2100;
    */
   WORKFLOW_RULE_SERVICE_NAME_WORK_ORDERS = 2100,
+
+  /**
+   * Apply the rule for questionnaire templates service
+   *
+   * @generated from enum value: WORKFLOW_RULE_SERVICE_NAME_QUESTIONNAIRE_TEMPLATES = 2200;
+   */
+  WORKFLOW_RULE_SERVICE_NAME_QUESTIONNAIRE_TEMPLATES = 2200,
+
+  /**
+   * Apply the rule for questionnaire option groups service
+   *
+   * @generated from enum value: WORKFLOW_RULE_SERVICE_NAME_QUESTIONNAIRE_OPTION_GROUPS = 2210;
+   */
+  WORKFLOW_RULE_SERVICE_NAME_QUESTIONNAIRE_OPTION_GROUPS = 2210,
+
+  /**
+   * Apply the rule for questionnaire sections service
+   *
+   * @generated from enum value: WORKFLOW_RULE_SERVICE_NAME_QUESTIONNAIRE_SECTIONS = 2220;
+   */
+  WORKFLOW_RULE_SERVICE_NAME_QUESTIONNAIRE_SECTIONS = 2220,
+
+  /**
+   * Apply the rule for questionnaire questions service
+   *
+   * @generated from enum value: WORKFLOW_RULE_SERVICE_NAME_QUESTIONNAIRE_QUESTIONS = 2230;
+   */
+  WORKFLOW_RULE_SERVICE_NAME_QUESTIONNAIRE_QUESTIONS = 2230,
+
+  /**
+   * Apply the rule for questionnaire submissions service
+   *
+   * @generated from enum value: WORKFLOW_RULE_SERVICE_NAME_QUESTIONNAIRE_SUBMISSIONS = 2240;
+   */
+  WORKFLOW_RULE_SERVICE_NAME_QUESTIONNAIRE_SUBMISSIONS = 2240,
 }
 // Retrieve enum metadata with: proto3.getEnumType(WORKFLOW_RULE_SERVICE_NAME)
 proto3.util.setEnumType(WORKFLOW_RULE_SERVICE_NAME, "Scailo.WORKFLOW_RULE_SERVICE_NAME", [
@@ -640,6 +675,11 @@ proto3.util.setEnumType(WORKFLOW_RULE_SERVICE_NAME, "Scailo.WORKFLOW_RULE_SERVIC
   { no: 2010, name: "WORKFLOW_RULE_SERVICE_NAME_VENDORS" },
   { no: 2020, name: "WORKFLOW_RULE_SERVICE_NAME_VISITATIONS" },
   { no: 2100, name: "WORKFLOW_RULE_SERVICE_NAME_WORK_ORDERS" },
+  { no: 2200, name: "WORKFLOW_RULE_SERVICE_NAME_QUESTIONNAIRE_TEMPLATES" },
+  { no: 2210, name: "WORKFLOW_RULE_SERVICE_NAME_QUESTIONNAIRE_OPTION_GROUPS" },
+  { no: 2220, name: "WORKFLOW_RULE_SERVICE_NAME_QUESTIONNAIRE_SECTIONS" },
+  { no: 2230, name: "WORKFLOW_RULE_SERVICE_NAME_QUESTIONNAIRE_QUESTIONS" },
+  { no: 2240, name: "WORKFLOW_RULE_SERVICE_NAME_QUESTIONNAIRE_SUBMISSIONS" },
 ]);
 
 /**
@@ -819,7 +859,16 @@ export class WorkflowsRulesServiceCreateRequest extends Message<WorkflowsRulesSe
   entityUuid = "";
 
   /**
-   * Stores any comment that the user might add during this operation
+   *
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
    *
    * @generated from field: string user_comment = 2;
    */
@@ -943,14 +992,32 @@ export class WorkflowsRulesServiceCreateRequest extends Message<WorkflowsRulesSe
  */
 export class WorkflowsRulesServiceUpdateRequest extends Message<WorkflowsRulesServiceUpdateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
+   *
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
    *
    * @generated from field: string user_comment = 1;
    */
   userComment = "";
 
   /**
-   * The ID of the record that needs to be updated
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target record that needs to be updated.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 id = 2;
    */

@@ -1,6 +1,7 @@
 import { VendorStream, VendorStreamInternalSubscriber, VendorStreamInternalSubscribersList, VendorStreamMessage, VendorStreamMessageReceiptsList, VendorStreamMessagesList, VendorStreamMessagesSearchRequest, VendorStreamsList, VendorStreamsServiceCountReq, VendorStreamsServiceCreateRequest, VendorStreamsServiceFilterReq, VendorStreamsServiceImportInternalSubscribersRequest, VendorStreamsServiceInternalSubscriberCreateRequest, VendorStreamsServiceMessageCreateRequest, VendorStreamsServicePaginatedMessagesResponse, VendorStreamsServicePaginationReq, VendorStreamsServicePaginationResponse, VendorStreamsServiceSearchAllReq, VendorStreamsServiceUpdateRequest, VendorStreamsServiceVendorSubscriberCreateRequest, VendorStreamVendorSubscriber, VendorStreamVendorSubscribersList } from "./vendor_streams.scailo_pb.js";
 import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithUserComment, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
+import { VaultFolderAttachRequest } from "./vault_folders.scailo_pb.js";
 /**
  *
  * Describes the common methods applicable on each vendor stream
@@ -88,6 +89,26 @@ export declare const VendorStreamsService: {
             readonly name: "CommentAdd";
             readonly I: typeof IdentifierUUIDWithUserComment;
             readonly O: typeof IdentifierUUID;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Attaches a specified folder directly to a record without requiring a full revision workflow.
+         *
+         * This is a convenience API designed to bypass the traditional multi-step modification lifecycle
+         * (e.g., creating a revision, updating data, submitting for verification, and awaiting approval).
+         * It allows for the immediate, single-step association of a vault folder.
+         *
+         * **Side Effects & Lifecycle:**
+         * * The overall status of the record remains unchanged.
+         * * The record's modification timestamp is automatically updated to the current time.
+         * * An entry is appended to the record's audit log tracking this attachment.
+         *
+         * @generated from rpc Scailo.VendorStreamsService.AttachVaultFolder
+         */
+        readonly attachVaultFolder: {
+            readonly name: "AttachVaultFolder";
+            readonly I: typeof VaultFolderAttachRequest;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**

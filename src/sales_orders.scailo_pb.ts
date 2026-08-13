@@ -10,125 +10,125 @@ import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, 
 
 /**
  *
- * Describes the available sort keys
+ * Enumeration of fields available for sorting sales order search results.
  *
  * @generated from enum Scailo.SALES_ORDER_SORT_KEY
  */
 export enum SALES_ORDER_SORT_KEY {
   /**
-   * Fetch ordered results by id
+   * @description Default sort behavior (by internal ID).
    *
    * @generated from enum value: SALES_ORDER_SORT_KEY_ID_UNSPECIFIED = 0;
    */
   SALES_ORDER_SORT_KEY_ID_UNSPECIFIED = 0,
 
   /**
-   * Fetch ordered results by the creation timestamp
+   * @description Sort by the timestamp the record was initially created.
    *
    * @generated from enum value: SALES_ORDER_SORT_KEY_CREATED_AT = 1;
    */
   SALES_ORDER_SORT_KEY_CREATED_AT = 1,
 
   /**
-   * Fetch ordered results by the modified timestamp
+   * @description Sort by the timestamp the record was last modified.
    *
    * @generated from enum value: SALES_ORDER_SORT_KEY_MODIFIED_AT = 2;
    */
   SALES_ORDER_SORT_KEY_MODIFIED_AT = 2,
 
   /**
-   * Fetch ordered results by the approved on timestamp
+   * @description Sort by the official approval timestamp.
    *
    * @generated from enum value: SALES_ORDER_SORT_KEY_APPROVED_ON = 3;
    */
   SALES_ORDER_SORT_KEY_APPROVED_ON = 3,
 
   /**
-   * Fetch ordered results by the approved by field
+   * @description Sort by the system ID of the approving user.
    *
    * @generated from enum value: SALES_ORDER_SORT_KEY_APPROVED_BY = 4;
    */
   SALES_ORDER_SORT_KEY_APPROVED_BY = 4,
 
   /**
-   * Fetch ordered results by the approver's role ID
+   * @description Sort by the security role ID used by the approver.
    *
    * @generated from enum value: SALES_ORDER_SORT_KEY_APPROVER_ROLE_ID = 5;
    */
   SALES_ORDER_SORT_KEY_APPROVER_ROLE_ID = 5,
 
   /**
-   * Fetch ordered results by the approver's completed on timestamp
+   * @description Sort by the timestamp of record completion.
    *
    * @generated from enum value: SALES_ORDER_SORT_KEY_COMPLETED_ON = 6;
    */
   SALES_ORDER_SORT_KEY_COMPLETED_ON = 6,
 
   /**
-   * Fetch ordered results by the reference ID
+   * @description Sort alphabetically by the user-provided reference ID.
    *
    * @generated from enum value: SALES_ORDER_SORT_KEY_REFERENCE_ID = 10;
    */
   SALES_ORDER_SORT_KEY_REFERENCE_ID = 10,
 
   /**
-   * Fetch ordered results by the final ref number
+   * @description Sort alphabetically by the system-generated reference number.
    *
    * @generated from enum value: SALES_ORDER_SORT_KEY_FINAL_REF_NUMBER = 11;
    */
   SALES_ORDER_SORT_KEY_FINAL_REF_NUMBER = 11,
 
   /**
-   * Fetch ordered results by the consignee client ID
+   * @description Sort by the internal ID of the consignee client.
    *
    * @generated from enum value: SALES_ORDER_SORT_KEY_CONSIGNEE_CLIENT_ID = 12;
    */
   SALES_ORDER_SORT_KEY_CONSIGNEE_CLIENT_ID = 12,
 
   /**
-   * Fetch ordered results by the buyer client ID
+   * @description Sort by the internal ID of the buyer client.
    *
    * @generated from enum value: SALES_ORDER_SORT_KEY_BUYER_CLIENT_ID = 13;
    */
   SALES_ORDER_SORT_KEY_BUYER_CLIENT_ID = 13,
 
   /**
-   * Fetch ordered results by the location ID
+   * @description Sort by the internal ID of the originating fulfillment location.
    *
    * @generated from enum value: SALES_ORDER_SORT_KEY_LOCATION_ID = 14;
    */
   SALES_ORDER_SORT_KEY_LOCATION_ID = 14,
 
   /**
-   * Fetch ordered results by the currency ID
+   * @description Sort by the internal ID of the assigned currency.
    *
    * @generated from enum value: SALES_ORDER_SORT_KEY_CURRENCY_ID = 15;
    */
   SALES_ORDER_SORT_KEY_CURRENCY_ID = 15,
 
   /**
-   * Fetch ordered results by the project ID
+   * @description Sort by the internal ID of the associated project.
    *
    * @generated from enum value: SALES_ORDER_SORT_KEY_PROJECT_ID = 16;
    */
   SALES_ORDER_SORT_KEY_PROJECT_ID = 16,
 
   /**
-   * Fetch ordered results by the advance payment
+   * @description Sort by the monetary amount paid in advance prior to fulfillment.
    *
    * @generated from enum value: SALES_ORDER_SORT_KEY_PAYMENT_ADVANCE = 17;
    */
   SALES_ORDER_SORT_KEY_PAYMENT_ADVANCE = 17,
 
   /**
-   * Fetch ordered results by the amendment count
+   * @description Sort by the total number of times the sales order has been amended.
    *
    * @generated from enum value: SALES_ORDER_SORT_KEY_AMENDMENT_COUNT = 18;
    */
   SALES_ORDER_SORT_KEY_AMENDMENT_COUNT = 18,
 
   /**
-   * Fetch ordered results by the total value
+   * @description Sort by the calculated grand total value of the sales order.
    *
    * @generated from enum value: SALES_ORDER_SORT_KEY_TOTAL_VALUE = 30;
    */
@@ -157,20 +157,20 @@ proto3.util.setEnumType(SALES_ORDER_SORT_KEY, "Scailo.SALES_ORDER_SORT_KEY", [
 
 /**
  *
- * Describes the sales order reference context
+ * Enumeration of the operational contexts in which a referenced document is applied to a Sales Order.
  *
  * @generated from enum Scailo.SALES_ORDER_REFERENCE_CONTEXT
  */
 export enum SALES_ORDER_REFERENCE_CONTEXT {
   /**
-   * Denotes that context be disregarded. This is used only within search APIs
+   * @description Default behavior, ignoring the context filter. Utilized primarily within search and listing APIs.
    *
    * @generated from enum value: SALES_ORDER_REFERENCE_CONTEXT_ANY_UNSPECIFIED = 0;
    */
   SALES_ORDER_REFERENCE_CONTEXT_ANY_UNSPECIFIED = 0,
 
   /**
-   * Denotes billing context
+   * @description Denotes that the referenced document is used specifically to dictate billing or invoicing constraints.
    *
    * @generated from enum value: SALES_ORDER_REFERENCE_CONTEXT_BILLING = 1;
    */
@@ -184,34 +184,34 @@ proto3.util.setEnumType(SALES_ORDER_REFERENCE_CONTEXT, "Scailo.SALES_ORDER_REFER
 
 /**
  *
- * Describes the possible options for ref_from field for a sales order reference
+ * Enumeration of the supported source record types that can be linked to a Sales Order.
  *
  * @generated from enum Scailo.SALES_ORDER_REFERENCE_REF_FROM
  */
 export enum SALES_ORDER_REFERENCE_REF_FROM {
   /**
-   * Denotes that the ref from be disregarded. This is used only within search APIs
+   * @description Default behavior, ignoring the source record type. Utilized primarily within search and listing APIs.
    *
    * @generated from enum value: SALES_ORDER_REFERENCE_REF_FROM_ANY_UNSPECIFIED = 0;
    */
   SALES_ORDER_REFERENCE_REF_FROM_ANY_UNSPECIFIED = 0,
 
   /**
-   * Denotes inward job
+   * @description Denotes that the reference originates from an Inward Job.
    *
    * @generated from enum value: SALES_ORDER_REFERENCE_REF_FROM_INWARD_JOB = 1;
    */
   SALES_ORDER_REFERENCE_REF_FROM_INWARD_JOB = 1,
 
   /**
-   * Denotes sales enquiry
+   * @description Denotes that the reference originates from a Sales Enquiry.
    *
    * @generated from enum value: SALES_ORDER_REFERENCE_REF_FROM_SALES_ENQUIRY = 2;
    */
   SALES_ORDER_REFERENCE_REF_FROM_SALES_ENQUIRY = 2,
 
   /**
-   * Denotes sales quotation
+   * @description Denotes that the reference originates from an approved Sales Quotation.
    *
    * @generated from enum value: SALES_ORDER_REFERENCE_REF_FROM_SALES_QUOTATION = 3;
    */
@@ -227,111 +227,111 @@ proto3.util.setEnumType(SALES_ORDER_REFERENCE_REF_FROM, "Scailo.SALES_ORDER_REFE
 
 /**
  *
- * Describes the available sort keys
+ * Enumeration of fields available for sorting sales order item search results.
  *
  * @generated from enum Scailo.SALES_ORDER_ITEM_SORT_KEY
  */
 export enum SALES_ORDER_ITEM_SORT_KEY {
   /**
-   * Fetch ordered results by id
+   * @description Default sort behavior (by internal item sequence ID).
    *
    * @generated from enum value: SALES_ORDER_ITEM_SORT_KEY_ID_UNSPECIFIED = 0;
    */
   SALES_ORDER_ITEM_SORT_KEY_ID_UNSPECIFIED = 0,
 
   /**
-   * Fetch ordered results by the creation timestamp
+   * @description Sort by the timestamp the item record was initially created.
    *
    * @generated from enum value: SALES_ORDER_ITEM_SORT_KEY_CREATED_AT = 1;
    */
   SALES_ORDER_ITEM_SORT_KEY_CREATED_AT = 1,
 
   /**
-   * Fetch ordered results by the modified timestamp
+   * @description Sort by the timestamp the item record was last modified.
    *
    * @generated from enum value: SALES_ORDER_ITEM_SORT_KEY_MODIFIED_AT = 2;
    */
   SALES_ORDER_ITEM_SORT_KEY_MODIFIED_AT = 2,
 
   /**
-   * Fetch ordered results by the approved on timestamp
+   * @description Sort by the official approval timestamp of the item.
    *
    * @generated from enum value: SALES_ORDER_ITEM_SORT_KEY_APPROVED_ON = 3;
    */
   SALES_ORDER_ITEM_SORT_KEY_APPROVED_ON = 3,
 
   /**
-   * Fetch ordered results by the approved by field
+   * @description Sort by the system ID of the approving user.
    *
    * @generated from enum value: SALES_ORDER_ITEM_SORT_KEY_APPROVED_BY = 4;
    */
   SALES_ORDER_ITEM_SORT_KEY_APPROVED_BY = 4,
 
   /**
-   * Fetch ordered results by the approver's role ID
+   * @description Sort by the security role ID used by the approver.
    *
    * @generated from enum value: SALES_ORDER_ITEM_SORT_KEY_APPROVER_ROLE_ID = 5;
    */
   SALES_ORDER_ITEM_SORT_KEY_APPROVER_ROLE_ID = 5,
 
   /**
-   * Fetch ordered results by the family ID
+   * @description Sort by the internal ID of the family.
    *
    * @generated from enum value: SALES_ORDER_ITEM_SORT_KEY_FAMILY_ID = 10;
    */
   SALES_ORDER_ITEM_SORT_KEY_FAMILY_ID = 10,
 
   /**
-   * Fetch ordered results by the internal quantity
+   * @description Sort by the ordered quantity evaluated in the internal unit of measure.
    *
    * @generated from enum value: SALES_ORDER_ITEM_SORT_KEY_INTERNAL_QUANTITY = 11;
    */
   SALES_ORDER_ITEM_SORT_KEY_INTERNAL_QUANTITY = 11,
 
   /**
-   * Fetch ordered results by the client unit of material ID
+   * @description Sort by the internal ID of the client's requested unit of measure.
    *
    * @generated from enum value: SALES_ORDER_ITEM_SORT_KEY_CLIENT_UOM_ID = 12;
    */
   SALES_ORDER_ITEM_SORT_KEY_CLIENT_UOM_ID = 12,
 
   /**
-   * Fetch ordered results by the client quantity
+   * @description Sort by the ordered quantity evaluated in the client's unit of measure.
    *
    * @generated from enum value: SALES_ORDER_ITEM_SORT_KEY_CLIENT_QUANTITY = 13;
    */
   SALES_ORDER_ITEM_SORT_KEY_CLIENT_QUANTITY = 13,
 
   /**
-   * Fetch ordered results by the client family code
+   * @description Sort alphabetically by the client's specific family code or SKU.
    *
    * @generated from enum value: SALES_ORDER_ITEM_SORT_KEY_CLIENT_FAMILY_CODE = 14;
    */
   SALES_ORDER_ITEM_SORT_KEY_CLIENT_FAMILY_CODE = 14,
 
   /**
-   * Fetch ordered results by the unit price
+   * @description Sort by the agreed-upon base unit price.
    *
    * @generated from enum value: SALES_ORDER_ITEM_SORT_KEY_UNIT_PRICE = 15;
    */
   SALES_ORDER_ITEM_SORT_KEY_UNIT_PRICE = 15,
 
   /**
-   * Fetch ordered results by the tax group ID
+   * @description Sort by the internal ID of the assigned tax group.
    *
    * @generated from enum value: SALES_ORDER_ITEM_SORT_KEY_TAX_GROUP_ID = 16;
    */
   SALES_ORDER_ITEM_SORT_KEY_TAX_GROUP_ID = 16,
 
   /**
-   * Fetch ordered results by the discount
+   * @description Sort by the percentage discount applied to the item.
    *
    * @generated from enum value: SALES_ORDER_ITEM_SORT_KEY_DISCOUNT = 17;
    */
   SALES_ORDER_ITEM_SORT_KEY_DISCOUNT = 17,
 
   /**
-   * Fetch ordered results by the delivery date
+   * @description Sort chronologically by the target delivery date for the item.
    *
    * @generated from enum value: SALES_ORDER_ITEM_SORT_KEY_DELIVERY_DATE = 18;
    */
@@ -358,27 +358,27 @@ proto3.util.setEnumType(SALES_ORDER_ITEM_SORT_KEY, "Scailo.SALES_ORDER_ITEM_SORT
 
 /**
  *
- * Describes the applicable statuses of sales order items
+ * Enum defining the applicable lifecycle and verification statuses for sales order items.
  *
  * @generated from enum Scailo.SALES_ORDER_ITEM_STATUS
  */
 export enum SALES_ORDER_ITEM_STATUS {
   /**
-   * Denotes that status be disregarded. This is used only within search APIs
+   * @description Denotes that the status filter should be disregarded. Used exclusively within search APIs to bypass status restrictions.
    *
    * @generated from enum value: SALES_ORDER_ITEM_STATUS_ANY_UNSPECIFIED = 0;
    */
   SALES_ORDER_ITEM_STATUS_ANY_UNSPECIFIED = 0,
 
   /**
-   * Denotes that the sales order items must have been approved
+   * @description Denotes that the sales order item association has passed verification and is actively approved.
    *
    * @generated from enum value: SALES_ORDER_ITEM_STATUS_APPROVED = 1;
    */
   SALES_ORDER_ITEM_STATUS_APPROVED = 1,
 
   /**
-   * Denotes that the sales order items must be waiting for approval
+   * @description Denotes that the sales order item association is pending review and waiting for administrative approval.
    *
    * @generated from enum value: SALES_ORDER_ITEM_STATUS_UNAPPROVED = 2;
    */
@@ -393,7 +393,14 @@ proto3.util.setEnumType(SALES_ORDER_ITEM_STATUS, "Scailo.SALES_ORDER_ITEM_STATUS
 
 /**
  *
- * Describes the parameters necessary to create a record
+ * Request message for defining and creating a new Sales Order within the system.
+ * This record acts as the foundational transactional document for outbound sales,
+ * encapsulating buyer and consignee relationships, billing and shipping parameters,
+ * financial adjustments (such as discounts, round-offs, and advance payments),
+ * and project associations.
+ *
+ * **Note:** This payload is typically utilized by Sales Representatives or Order Management
+ * systems to initiate the fulfillment lifecycle before it is approved and dispatched.
  *
  * @generated from message Scailo.SalesOrdersServiceCreateRequest
  */
@@ -410,16 +417,25 @@ export class SalesOrdersServiceCreateRequest extends Message<SalesOrdersServiceC
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 1;
+   * @generated from field: optional string entity_uuid = 1;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 2;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 2;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
    *
@@ -433,9 +449,9 @@ export class SalesOrdersServiceCreateRequest extends Message<SalesOrdersServiceC
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 vault_folder_id = 9;
+   * @generated from field: optional uint64 vault_folder_id = 9;
    */
-  vaultFolderId = protoInt64.zero;
+  vaultFolderId?: bigint;
 
   /**
    *
@@ -454,77 +470,174 @@ export class SalesOrdersServiceCreateRequest extends Message<SalesOrdersServiceC
   referenceId = "";
 
   /**
-   * The ID of the consignee (client)
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the consignee client (the entity physically receiving the goods or services).
+   *
+   * @example 1050
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 consignee_client_id = 12;
    */
   consigneeClientId = protoInt64.zero;
 
   /**
-   * The ID of the buyer (client)
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the buyer client (the entity financially responsible for the order).
+   *
+   * @example 1051
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 buyer_client_id = 13;
    */
   buyerClientId = protoInt64.zero;
 
   /**
-   * The ID of the location
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the originating location (e.g., specific warehouse, plant, or office) responsible for fulfilling this order.
+   *
+   * @example 42
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 location_id = 14;
    */
   locationId = protoInt64.zero;
 
   /**
-   * The associated ID of the currency
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the currency used for all financial calculations, billing, and pricing within this order.
+   *
+   * @example 3
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 currency_id = 15;
    */
   currencyId = protoInt64.zero;
 
   /**
-   * The optional associated ID of the project
    *
-   * @generated from field: uint64 project_id = 16;
+   * @optional
+   *
+   * @description The unique internal identifier of an associated project, used to track sales revenue and fulfillment against specific long-term initiatives.
+   *
+   * @example 88
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 project_id = 16;
    */
-  projectId = protoInt64.zero;
+  projectId?: bigint;
 
   /**
-   * Any miscellaneous cost
    *
-   * @generated from field: uint64 miscellaneous_cost = 17;
+   * @optional
+   *
+   * @description Any additional miscellaneous costs (e.g., handling fees, freight charges) applied to the order, represented in the base currency subunit (e.g., cents).
+   *
+   * @example 1500
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 miscellaneous_cost = 17;
    */
-  miscellaneousCost = protoInt64.zero;
+  miscellaneousCost?: bigint;
 
   /**
-   * The optional discount amount
    *
-   * @generated from field: uint64 overall_discount = 18;
+   * @optional
+   *
+   * @description A flat discount amount applied across the entire order total, represented in the base currency subunit (e.g., cents).
+   *
+   * @example 500
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 overall_discount = 18;
    */
-  overallDiscount = protoInt64.zero;
+  overallDiscount?: bigint;
 
   /**
-   * The applicable round off amount (optional, and can be positive or negative)
    *
-   * @generated from field: int64 round_off = 19;
+   * @optional
+   *
+   * @description The applicable rounding adjustment amount to align the final invoice total. Can be positive or negative, represented in the base currency subunit.
+   *
+   * @example -15
+   *
+   * @regex ^-?[0-9]+$
+   *
+   * @format Signed 64-bit integer.
+   *
+   * @generated from field: optional int64 round_off = 19;
    */
-  roundOff = protoInt64.zero;
+  roundOff?: bigint;
 
   /**
-   * The amount paid in advance
    *
-   * @generated from field: uint64 payment_advance = 20;
+   * @optional
+   *
+   * @description The monetary amount paid in advance by the buyer prior to fulfillment, represented in the base currency subunit (e.g., cents).
+   *
+   * @example 10000
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 payment_advance = 20;
    */
-  paymentAdvance = protoInt64.zero;
+  paymentAdvance?: bigint;
 
   /**
-   * The payment cycle in days
    *
-   * @generated from field: uint64 payment_cycle_in_days = 21;
+   * @optional
+   *
+   * @description The agreed-upon payment term or credit cycle duration, measured in days from the invoice date.
+   *
+   * @example 30
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 payment_cycle_in_days = 21;
    */
-  paymentCycleInDays = protoInt64.zero;
+  paymentCycleInDays?: bigint;
 
   /**
-   * The list of dynamic forms
+   *
+   * @optional
+   *
+   * @description A collection of dynamic form fields for organization-specific data.
+   *
+   * @example []
+   *
+   * @format An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
    *
    * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
    */
@@ -538,20 +651,20 @@ export class SalesOrdersServiceCreateRequest extends Message<SalesOrdersServiceC
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.SalesOrdersServiceCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
     { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 12, name: "consignee_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 13, name: "buyer_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 14, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 15, name: "currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 16, name: "project_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 17, name: "miscellaneous_cost", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 18, name: "overall_discount", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 19, name: "round_off", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 20, name: "payment_advance", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 21, name: "payment_cycle_in_days", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 16, name: "project_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 17, name: "miscellaneous_cost", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 18, name: "overall_discount", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 19, name: "round_off", kind: "scalar", T: 3 /* ScalarType.INT64 */, opt: true },
+    { no: 20, name: "payment_advance", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 21, name: "payment_cycle_in_days", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
     { no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
 
@@ -574,20 +687,44 @@ export class SalesOrdersServiceCreateRequest extends Message<SalesOrdersServiceC
 
 /**
  *
- * Describes the parameters necessary to update a record
+ * Request message for updating an existing Sales Order record.
+ * Only applicable for records in `DRAFT` or `REVISION` states.
+ * This message allows for modifying the references, consignee & buyer, currency, project linkage, costs & discounts, payment terms, and other custom form fields
+ * of an established Sales Order.
+ *
+ * **Note:** Only fields provided in the request will typically be updated.
+ * The unique system ID is required to locate the target record.
  *
  * @generated from message Scailo.SalesOrdersServiceUpdateRequest
  */
 export class SalesOrdersServiceUpdateRequest extends Message<SalesOrdersServiceUpdateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * The ID of the record that needs to be updated
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target record that needs to be updated.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 id = 2;
    */
@@ -601,9 +738,9 @@ export class SalesOrdersServiceUpdateRequest extends Message<SalesOrdersServiceU
    *
    * @example true
    *
-   * @generated from field: bool notify_users = 3;
+   * @generated from field: optional bool notify_users = 3;
    */
-  notifyUsers = false;
+  notifyUsers?: boolean;
 
   /**
    *
@@ -617,13 +754,13 @@ export class SalesOrdersServiceUpdateRequest extends Message<SalesOrdersServiceU
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 vault_folder_id = 9;
+   * @generated from field: optional uint64 vault_folder_id = 9;
    */
-  vaultFolderId = protoInt64.zero;
+  vaultFolderId?: bigint;
 
   /**
    *
-   * @mandatory
+   * @optional
    *
    * @description Updated alphanumeric reference ID. Must contain at least 1 character.
    *
@@ -633,75 +770,163 @@ export class SalesOrdersServiceUpdateRequest extends Message<SalesOrdersServiceU
    *
    * @format Alphanumeric characters and spaces only. No special symbols or punctuation allowed.
    *
-   * @generated from field: string reference_id = 10;
+   * @generated from field: optional string reference_id = 10;
    */
-  referenceId = "";
+  referenceId?: string;
 
   /**
-   * The ID of the consignee (client)
    *
-   * @generated from field: uint64 consignee_client_id = 12;
-   */
-  consigneeClientId = protoInt64.zero;
-
-  /**
-   * The ID of the buyer (client)
+   * @optional
    *
-   * @generated from field: uint64 buyer_client_id = 13;
-   */
-  buyerClientId = protoInt64.zero;
-
-  /**
-   * The associated ID of the currency
+   * @description The unique internal identifier of the consignee client (the entity physically receiving the goods or services).
    *
-   * @generated from field: uint64 currency_id = 15;
-   */
-  currencyId = protoInt64.zero;
-
-  /**
-   * The optional associated ID of the project
+   * @example 1050
    *
-   * @generated from field: uint64 project_id = 16;
-   */
-  projectId = protoInt64.zero;
-
-  /**
-   * Any miscellaneous cost
+   * @regex ^[1-9][0-9]*$
    *
-   * @generated from field: uint64 miscellaneous_cost = 17;
-   */
-  miscellaneousCost = protoInt64.zero;
-
-  /**
-   * The optional discount amount
+   * @format Unsigned 64-bit integer greater than 0.
    *
-   * @generated from field: uint64 overall_discount = 18;
+   * @generated from field: optional uint64 consignee_client_id = 12;
    */
-  overallDiscount = protoInt64.zero;
+  consigneeClientId?: bigint;
 
   /**
-   * The applicable round off amount (optional, and can be positive or negative)
    *
-   * @generated from field: int64 round_off = 19;
-   */
-  roundOff = protoInt64.zero;
-
-  /**
-   * The amount paid in advance
+   * @optional
    *
-   * @generated from field: uint64 payment_advance = 20;
-   */
-  paymentAdvance = protoInt64.zero;
-
-  /**
-   * The payment cycle in days
+   * @description The unique internal identifier of the buyer client (the entity financially responsible for the order).
    *
-   * @generated from field: uint64 payment_cycle_in_days = 21;
+   * @example 1051
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: optional uint64 buyer_client_id = 13;
    */
-  paymentCycleInDays = protoInt64.zero;
+  buyerClientId?: bigint;
 
   /**
-   * The list of dynamic forms
+   *
+   * @optional
+   *
+   * @description The unique internal identifier of the currency used for all financial calculations, billing, and pricing within this order.
+   *
+   * @example 3
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: optional uint64 currency_id = 15;
+   */
+  currencyId?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description The unique internal identifier of an associated project, used to track sales revenue and fulfillment against specific long-term initiatives.
+   *
+   * @example 88
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 project_id = 16;
+   */
+  projectId?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Any additional miscellaneous costs (e.g., handling fees, freight charges) applied to the order, represented in the base currency subunit (e.g., cents).
+   *
+   * @example 1500
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 miscellaneous_cost = 17;
+   */
+  miscellaneousCost?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description A flat discount amount applied across the entire order total, represented in the base currency subunit (e.g., cents).
+   *
+   * @example 500
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 overall_discount = 18;
+   */
+  overallDiscount?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description The applicable rounding adjustment amount to align the final invoice total. Can be positive or negative, represented in the base currency subunit.
+   *
+   * @example -15
+   *
+   * @regex ^-?[0-9]+$
+   *
+   * @format Signed 64-bit integer.
+   *
+   * @generated from field: optional int64 round_off = 19;
+   */
+  roundOff?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description The monetary amount paid in advance by the buyer prior to fulfillment, represented in the base currency subunit (e.g., cents).
+   *
+   * @example 10000
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 payment_advance = 20;
+   */
+  paymentAdvance?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description The agreed-upon payment term or credit cycle duration, measured in days from the invoice date.
+   *
+   * @example 30
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 payment_cycle_in_days = 21;
+   */
+  paymentCycleInDays?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description A collection of dynamic form fields for organization-specific data.
+   *
+   * @example []
+   *
+   * @format An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
    *
    * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
    */
@@ -715,20 +940,20 @@ export class SalesOrdersServiceUpdateRequest extends Message<SalesOrdersServiceU
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.SalesOrdersServiceUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 2, name: "id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
-    { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 12, name: "consignee_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 13, name: "buyer_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 15, name: "currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 16, name: "project_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 17, name: "miscellaneous_cost", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 18, name: "overall_discount", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 19, name: "round_off", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 20, name: "payment_advance", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 21, name: "payment_cycle_in_days", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 12, name: "consignee_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 13, name: "buyer_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 15, name: "currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 16, name: "project_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 17, name: "miscellaneous_cost", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 18, name: "overall_discount", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 19, name: "round_off", kind: "scalar", T: 3 /* ScalarType.INT64 */, opt: true },
+    { no: 20, name: "payment_advance", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 21, name: "payment_cycle_in_days", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
     { no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
 
@@ -751,20 +976,45 @@ export class SalesOrdersServiceUpdateRequest extends Message<SalesOrdersServiceU
 
 /**
  *
- * Describes the parameters necessary to perform an autofill request
+ * Request message for triggering an autofill operation on an existing Sales Order.
+ * This operation automatically populates the sales order with relevant line items based
+ * on previously attached constraints and order references (e.g., linked Sales Quotations
+ * or Inward Jobs).
+ *
+ * **Note:** The typical workflow requires the parent sales order to be created and
+ * its reference links established first. Once invoked, this payload signals the system
+ * to pull the corresponding line items from those references to automatically build out the order.
  *
  * @generated from message Scailo.SalesOrdersServiceAutofillRequest
  */
 export class SalesOrdersServiceAutofillRequest extends Message<SalesOrdersServiceAutofillRequest> {
   /**
-   * Stores any comment that the user might add during this operation
+   *
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
    *
    * @generated from field: string user_comment = 1;
    */
   userComment = "";
 
   /**
-   * The UUID of the record that needs to be updated
+   *
+   * @mandatory
+   *
+   * @description The globally unique identifier (UUID) of the target sales order that needs to be autofilled.
+   *
+   * @example "550e8400-e29b-41d4-a716-446655440000"
+   *
+   * @regex ^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+   *
+   * @format Must be a valid v4 UUID in canonical hyphenated form.
    *
    * @generated from field: string uuid = 2;
    */
@@ -801,34 +1051,57 @@ export class SalesOrdersServiceAutofillRequest extends Message<SalesOrdersServic
 
 /**
  *
- * Stores the UUID references of the record
+ * Represents the external-facing, unique identifiers (UUIDs) of a Sales Order's core dependencies.
+ * By exposing UUIDs instead of internal sequential integer IDs, this message allows
+ * external clients and frontend applications to securely reference underlying entities
+ * (such as clients, locations, and currencies) without risking data enumeration or leaking system architecture.
  *
  * @generated from message Scailo.SalesOrderAncillaryParameters
  */
 export class SalesOrderAncillaryParameters extends Message<SalesOrderAncillaryParameters> {
   /**
-   * The UUID of the consignee client (the UUID of the associated consignee_client_id)
+   *
+   * @description The globally unique identifier (UUID) of the consignee client, correlating to the internal `consignee_client_id`.
+   *
+   * @example "550e8400-e29b-41d4-a716-446655440000"
+   *
+   * @format Valid v4 UUID in canonical hyphenated form.
    *
    * @generated from field: string consignee_client_uuid = 212;
    */
   consigneeClientUuid = "";
 
   /**
-   * The UUID of the buyer client (the UUID of the associated buyer_client_id)
+   *
+   * @description The globally unique identifier (UUID) of the buyer client, correlating to the internal `buyer_client_id`.
+   *
+   * @example "661f9511-f39c-42d5-b827-557766551111"
+   *
+   * @format Valid v4 UUID in canonical hyphenated form.
    *
    * @generated from field: string buyer_client_uuid = 213;
    */
   buyerClientUuid = "";
 
   /**
-   * The UUID of the location (the UUID of the associated location_uuid)
+   *
+   * @description The globally unique identifier (UUID) of the fulfillment location, correlating to the internal `location_id`.
+   *
+   * @example "772a0622-a40d-53e6-c938-668877662222"
+   *
+   * @format Valid v4 UUID in canonical hyphenated form.
    *
    * @generated from field: string location_uuid = 214;
    */
   locationUuid = "";
 
   /**
-   * The UUID of the currency (the UUID of the associated currency)
+   *
+   * @description The globally unique identifier (UUID) of the associated currency, correlating to the internal `currency_id`.
+   *
+   * @example "883b1733-b51e-64f7-d049-779988773333"
+   *
+   * @format Valid v4 UUID in canonical hyphenated form.
    *
    * @generated from field: string currency_uuid = 215;
    */
@@ -867,7 +1140,14 @@ export class SalesOrderAncillaryParameters extends Message<SalesOrderAncillaryPa
 
 /**
  *
- * Describes the parameters that are part of a standard response
+ * Represents a complete Sales Order entity within the system.
+ * This message encapsulates the finalized state of an outbound sales transaction,
+ * including its identity metadata, financial aggregates, fulfillment constraints,
+ * approval lifecycle, audit history, and the complete collection of associated line items.
+ *
+ * **Note:** This payload is typically returned in read operations (e.g., View, Search)
+ * and provides the frontend or external clients with the entire context needed to render,
+ * invoice, or fulfill the order.
  *
  * @generated from message Scailo.SalesOrder
  */
@@ -955,98 +1235,142 @@ export class SalesOrder extends Message<SalesOrder> {
   finalRefNumber = "";
 
   /**
-   * The ID of the consignee (client)
+   *
+   * @description The unique internal identifier of the consignee client (the entity physically receiving the goods or services).
+   *
+   * @example 1050
    *
    * @generated from field: uint64 consignee_client_id = 12;
    */
   consigneeClientId = protoInt64.zero;
 
   /**
-   * The ID of the buyer (client)
+   *
+   * @description The unique internal identifier of the buyer client (the entity financially responsible for the order).
+   *
+   * @example 1051
    *
    * @generated from field: uint64 buyer_client_id = 13;
    */
   buyerClientId = protoInt64.zero;
 
   /**
-   * The ID of the location
+   *
+   * @description The unique internal identifier of the originating location (e.g., specific warehouse, plant, or office) responsible for fulfilling this order.
+   *
+   * @example 42
    *
    * @generated from field: uint64 location_id = 14;
    */
   locationId = protoInt64.zero;
 
   /**
-   * The associated ID of the currency
+   *
+   * @description The unique internal identifier of the currency used for all financial calculations, billing, and pricing within this order.
+   *
+   * @example 3
    *
    * @generated from field: uint64 currency_id = 15;
    */
   currencyId = protoInt64.zero;
 
   /**
-   * The optional associated ID of the project
+   *
+   * @description The unique internal identifier of an associated project, used to track sales revenue and fulfillment against specific long-term initiatives.
+   *
+   * @example 88
    *
    * @generated from field: uint64 project_id = 16;
    */
   projectId = protoInt64.zero;
 
   /**
-   * Any miscellaneous cost
+   *
+   * @description Any additional miscellaneous costs (e.g., handling fees, freight charges) applied to the order, represented in the base currency subunit (e.g., cents).
+   *
+   * @example 1500
    *
    * @generated from field: uint64 miscellaneous_cost = 17;
    */
   miscellaneousCost = protoInt64.zero;
 
   /**
-   * The optional discount amount
+   *
+   * @description A flat discount amount applied across the entire order total, represented in the base currency subunit (e.g., cents).
+   *
+   * @example 500
    *
    * @generated from field: uint64 overall_discount = 18;
    */
   overallDiscount = protoInt64.zero;
 
   /**
-   * The applicable round off amount (optional, and can be positive or negative)
+   *
+   * @description The applicable rounding adjustment amount to align the final invoice total. Can be positive or negative, represented in the base currency subunit.
+   *
+   * @example -15
    *
    * @generated from field: int64 round_off = 19;
    */
   roundOff = protoInt64.zero;
 
   /**
-   * The amount paid in advance
+   *
+   * @description The monetary amount paid in advance by the buyer prior to fulfillment, represented in the base currency subunit (e.g., cents).
+   *
+   * @example 10000
    *
    * @generated from field: uint64 payment_advance = 20;
    */
   paymentAdvance = protoInt64.zero;
 
   /**
-   * The payment cycle in days
+   *
+   * @description The agreed-upon payment term or credit cycle duration, measured in days from the invoice date.
+   *
+   * @example 30
    *
    * @generated from field: uint64 payment_cycle_in_days = 21;
    */
   paymentCycleInDays = protoInt64.zero;
 
   /**
-   * The number of times that the sales order has been amended
+   *
+   * @description The number of times that this record has been amended after approval.
+   *
+   * @example 5
    *
    * @generated from field: uint64 amendment_count = 22;
    */
   amendmentCount = protoInt64.zero;
 
   /**
-   * Stores the total value of the sales order (as a double, which requires no adjustments)
+   *
+   * @description The calculated grand total value of the sales order, including all items, discounts, costs, and round-offs. Represented as a standard decimal value.
+   *
+   * @example 15250.75
+   *
+   * @format Double-precision floating-point number.
    *
    * @generated from field: double total_value = 30;
    */
   totalValue = 0;
 
   /**
-   * The list of associated sales order items
+   *
+   * @description The complete, aggregated list of individual line items, products, or services that constitute this sales order.
+   *
+   * @example []
+   *
+   * @format Repeated array of SalesOrderItem message blocks.
    *
    * @generated from field: repeated Scailo.SalesOrderItem list = 40;
    */
   list: SalesOrderItem[] = [];
 
   /**
-   * The list of dynamic forms
+   *
+   * @description Collection of organization-specific dynamic data.
    *
    * @generated from field: repeated Scailo.FormFieldDatum form_data = 50;
    */
@@ -1104,101 +1428,221 @@ export class SalesOrder extends Message<SalesOrder> {
 
 /**
  *
- * Describes the parameters required to add an item to a sales order
+ * Request message for appending a new individual line item to an existing Sales Order.
+ * This payload defines the specific family, quantities mapped between internal
+ * and client-specific units of measure, commercial terms (price, tax, discount),
+ * and delivery expectations for the item.
  *
  * @generated from message Scailo.SalesOrdersServiceItemCreateRequest
  */
 export class SalesOrdersServiceItemCreateRequest extends Message<SalesOrdersServiceItemCreateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * Stores the sales order ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the parent sales order to which this item will be attached.
+   *
+   * @example 1024
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 sales_order_id = 10;
    */
   salesOrderId = protoInt64.zero;
 
   /**
-   * Stores the family ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the family or catalog item being ordered.
+   *
+   * @example 505
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 family_id = 12;
    */
   familyId = protoInt64.zero;
 
   /**
-   * The quantity (in cents) being ordered in internal unit of material
+   *
+   * @mandatory
+   *
+   * @description The ordered quantity represented in the system's internal base unit of measure. Stored in subunits (cents) to maintain fractional precision.
+   *
+   * @example 10000
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 internal_quantity = 13;
    */
   internalQuantity = protoInt64.zero;
 
   /**
-   * Stores the ID of the client's unit of material
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the Unit of Measure (UOM) requested by the client for this item.
+   *
+   * @example 12
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 client_uom_id = 14;
    */
   clientUomId = protoInt64.zero;
 
   /**
-   * Stores the quantity (in cents) being ordered in client's unit of material
+   *
+   * @mandatory
+   *
+   * @description The ordered quantity represented in the client's specific unit of measure. Stored in subunits (cents) to maintain fractional precision.
+   *
+   * @example 5000
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 client_quantity = 15;
    */
   clientQuantity = protoInt64.zero;
 
   /**
-   * Stores the family code as given by the client
    *
-   * @generated from field: string client_family_code = 16;
+   * @optional
+   *
+   * @description The client's specific alphanumeric part number, SKU, or family code used for their internal referencing.
+   *
+   * @example "CLI-SKU-992"
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string client_family_code = 16;
    */
-  clientFamilyCode = "";
+  clientFamilyCode?: string;
 
   /**
-   * The unit price of the item
+   *
+   * @mandatory
+   *
+   * @description The agreed-upon price per unit for this item, represented in the base currency subunit (e.g., cents).
+   *
+   * @example 2500
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 unit_price = 17;
    */
   unitPrice = protoInt64.zero;
 
   /**
-   * The ID of the associated tax group
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the tax group or tax bracket applicable to this specific line item.
+   *
+   * @example 4
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 tax_group_id = 18;
    */
   taxGroupId = protoInt64.zero;
 
   /**
-   * The applicable discount percentage (in cents)
+   *
+   * @mandatory
+   *
+   * @description The discount percentage applied to this specific item, represented in subunits (e.g., 1500 for 15.00%).
+   *
+   * @example 1500
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 discount = 19;
    */
   discount = protoInt64.zero;
 
   /**
-   * The delivery date of the item
+   *
+   * @mandatory
+   *
+   * @description The specific target delivery date for this line item, which may differ from the overall order's delivery schedule.
+   *
+   * @example "2023-11-15"
+   *
+   * @regex .+
+   *
+   * @format Must be a non-empty string. Expected to follow the standard date format designated by the client (e.g., YYYY-MM-DD).
    *
    * @generated from field: string delivery_date = 20;
    */
   deliveryDate = "";
 
   /**
-   * Optional specifications
    *
-   * @generated from field: string specifications = 21;
+   * @optional
+   *
+   * @description Additional custom textual requirements, manufacturing notes, or specifications for fulfilling this item.
+   *
+   * @example "Requires double-reinforced packaging for international transit."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string specifications = 21;
    */
-  specifications = "";
+  specifications?: string;
 
   /**
-   * Stores if the item can be invoiced
    *
-   * @generated from field: bool is_invoiceable = 22;
+   * @optional
+   *
+   * @description A boolean flag indicating whether this specific line item is eligible to be processed for invoicing.
+   *
+   * @example true
+   *
+   * @regex ^(?:true|false)$
+   *
+   * @format Boolean true or false.
+   *
+   * @generated from field: optional bool is_invoiceable = 22;
    */
-  isInvoiceable = false;
+  isInvoiceable?: boolean;
 
   constructor(data?: PartialMessage<SalesOrdersServiceItemCreateRequest>) {
     super();
@@ -1208,19 +1652,19 @@ export class SalesOrdersServiceItemCreateRequest extends Message<SalesOrdersServ
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.SalesOrdersServiceItemCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 10, name: "sales_order_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 12, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 13, name: "internal_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 14, name: "client_uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 15, name: "client_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 16, name: "client_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 16, name: "client_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 17, name: "unit_price", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 18, name: "tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 19, name: "discount", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "delivery_date", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 21, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "is_invoiceable", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 21, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 22, name: "is_invoiceable", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesOrdersServiceItemCreateRequest {
@@ -1242,87 +1686,188 @@ export class SalesOrdersServiceItemCreateRequest extends Message<SalesOrdersServ
 
 /**
  *
- * Describes the parameters required to add an individual item as part of multiple item addition to a sales order
+ * Represents a single line item payload within a bulk creation request.
+ * Contains the exact same transactional parameters as a standard item creation request,
+ * omitting the parent order ID which is declared once at the batch level.
  *
  * @generated from message Scailo.SalesOrdersServiceMultipleItemsSingleton
  */
 export class SalesOrdersServiceMultipleItemsSingleton extends Message<SalesOrdersServiceMultipleItemsSingleton> {
   /**
-   * Stores the family ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the family or catalog item being ordered.
+   *
+   * @example 505
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 family_id = 12;
    */
   familyId = protoInt64.zero;
 
   /**
-   * The quantity (in cents) being ordered in internal unit of material
+   *
+   * @mandatory
+   *
+   * @description The ordered quantity represented in the system's internal base unit of measure. Stored in subunits (cents) to maintain fractional precision.
+   *
+   * @example 10000
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 internal_quantity = 13;
    */
   internalQuantity = protoInt64.zero;
 
   /**
-   * Stores the ID of the client's unit of material
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the Unit of Measure (UOM) requested by the client for this item.
+   *
+   * @example 12
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 client_uom_id = 14;
    */
   clientUomId = protoInt64.zero;
 
   /**
-   * Stores the quantity (in cents) being ordered in client's unit of material
+   *
+   * @mandatory
+   *
+   * @description The ordered quantity represented in the client's specific unit of measure. Stored in subunits (cents) to maintain fractional precision.
+   *
+   * @example 5000
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 client_quantity = 15;
    */
   clientQuantity = protoInt64.zero;
 
   /**
-   * Stores the family code as given by the client
    *
-   * @generated from field: string client_family_code = 16;
+   * @optional
+   *
+   * @description The client's specific alphanumeric part number, SKU, or family code used for their internal referencing.
+   *
+   * @example "CLI-SKU-992"
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string client_family_code = 16;
    */
-  clientFamilyCode = "";
+  clientFamilyCode?: string;
 
   /**
-   * The unit price of the item
+   *
+   * @mandatory
+   *
+   * @description The agreed-upon price per unit for this item, represented in the base currency subunit (e.g., cents).
+   *
+   * @example 2500
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 unit_price = 17;
    */
   unitPrice = protoInt64.zero;
 
   /**
-   * The ID of the associated tax group
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the tax group or tax bracket applicable to this specific line item.
+   *
+   * @example 4
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 tax_group_id = 18;
    */
   taxGroupId = protoInt64.zero;
 
   /**
-   * The applicable discount percentage (in cents)
+   *
+   * @mandatory
+   *
+   * @description The discount percentage applied to this specific item, represented in subunits (e.g., 1500 for 15.00%).
+   *
+   * @example 1500
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 discount = 19;
    */
   discount = protoInt64.zero;
 
   /**
-   * The delivery date of the item
+   *
+   * @mandatory
+   *
+   * @description The specific target delivery date for this line item, which may differ from the overall order's delivery schedule.
+   *
+   * @example "2023-11-15"
+   *
+   * @regex .+
+   *
+   * @format Must be a non-empty string. Expected to follow the standard date format designated by the client (e.g., YYYY-MM-DD).
    *
    * @generated from field: string delivery_date = 20;
    */
   deliveryDate = "";
 
   /**
-   * Optional specifications
    *
-   * @generated from field: string specifications = 21;
+   * @optional
+   *
+   * @description Additional custom textual requirements, manufacturing notes, or specifications for fulfilling this item.
+   *
+   * @example "Requires double-reinforced packaging for international transit."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string specifications = 21;
    */
-  specifications = "";
+  specifications?: string;
 
   /**
-   * Stores if the item can be invoiced
    *
-   * @generated from field: bool is_invoiceable = 22;
+   * @optional
+   *
+   * @description A boolean flag indicating whether this specific line item is eligible to be processed for invoicing.
+   *
+   * @example true
+   *
+   * @regex ^(?:true|false)$
+   *
+   * @format Boolean true or false.
+   *
+   * @generated from field: optional bool is_invoiceable = 22;
    */
-  isInvoiceable = false;
+  isInvoiceable?: boolean;
 
   constructor(data?: PartialMessage<SalesOrdersServiceMultipleItemsSingleton>) {
     super();
@@ -1336,13 +1881,13 @@ export class SalesOrdersServiceMultipleItemsSingleton extends Message<SalesOrder
     { no: 13, name: "internal_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 14, name: "client_uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 15, name: "client_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 16, name: "client_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 16, name: "client_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 17, name: "unit_price", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 18, name: "tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 19, name: "discount", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "delivery_date", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 21, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "is_invoiceable", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 21, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 22, name: "is_invoiceable", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesOrdersServiceMultipleItemsSingleton {
@@ -1364,27 +1909,54 @@ export class SalesOrdersServiceMultipleItemsSingleton extends Message<SalesOrder
 
 /**
  *
- * Describes the parameters required to add multiple items to a sales order
+ * Request message for appending multiple line items to a Sales Order in a single batch transaction.
+ * Optimized for scenarios like order imports or autofill operations where dozens of items
+ * are attached simultaneously to a parent record.
  *
  * @generated from message Scailo.SalesOrdersServiceMultipleItemsCreateRequest
  */
 export class SalesOrdersServiceMultipleItemsCreateRequest extends Message<SalesOrdersServiceMultipleItemsCreateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * Stores the sales order ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the parent sales order to which this batch of items will be attached.
+   *
+   * @example 1024
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 sales_order_id = 10;
    */
   salesOrderId = protoInt64.zero;
 
   /**
-   * List of items
+   *
+   * @mandatory
+   *
+   * @description An array containing the individual line item payloads to be appended to the order.
+   *
+   * @example []
+   *
+   * @format Repeated array of SalesOrdersServiceMultipleItemsSingleton message blocks.
    *
    * @generated from field: repeated Scailo.SalesOrdersServiceMultipleItemsSingleton list = 11;
    */
@@ -1398,7 +1970,7 @@ export class SalesOrdersServiceMultipleItemsCreateRequest extends Message<SalesO
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.SalesOrdersServiceMultipleItemsCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 10, name: "sales_order_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 11, name: "list", kind: "message", T: SalesOrdersServiceMultipleItemsSingleton, repeated: true },
   ]);
@@ -1422,94 +1994,204 @@ export class SalesOrdersServiceMultipleItemsCreateRequest extends Message<SalesO
 
 /**
  *
- * Describes the parameters required to update an item in a sales order
+ * Request message for modifying the core transactional parameters of an existing Sales Order line item.
+ * Supports updating quantities, commercial terms, delivery dates, and specifications,
+ * typically utilized during order negotiation or amendment phases.
  *
  * @generated from message Scailo.SalesOrdersServiceItemUpdateRequest
  */
 export class SalesOrdersServiceItemUpdateRequest extends Message<SalesOrdersServiceItemUpdateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * The ID of the record
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target record that needs to be updated.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 id = 2;
    */
   id = protoInt64.zero;
 
   /**
-   * The quantity (in cents) being ordered in internal unit of material
+   *
+   * @mandatory
+   *
+   * @description The updated ordered quantity represented in the system's internal base unit of measure. Stored in subunits (cents).
+   *
+   * @example 10000
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 internal_quantity = 13;
    */
   internalQuantity = protoInt64.zero;
 
   /**
-   * Stores the ID of the client's unit of material
+   *
+   * @mandatory
+   *
+   * @description The updated unique internal identifier of the Unit of Measure (UOM) requested by the client.
+   *
+   * @example 12
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 client_uom_id = 14;
    */
   clientUomId = protoInt64.zero;
 
   /**
-   * Stores the quantity (in cents) being ordered in client's unit of material
+   *
+   * @mandatory
+   *
+   * @description The updated ordered quantity represented in the client's specific unit of measure. Stored in subunits (cents).
+   *
+   * @example 5000
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 client_quantity = 15;
    */
   clientQuantity = protoInt64.zero;
 
   /**
-   * Stores the family code as given by the client
    *
-   * @generated from field: string client_family_code = 16;
+   * @optional
+   *
+   * @description The updated client's specific alphanumeric part number, SKU, or family code.
+   *
+   * @example "CLI-SKU-992"
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string client_family_code = 16;
    */
-  clientFamilyCode = "";
+  clientFamilyCode?: string;
 
   /**
-   * The unit price of the item
+   *
+   * @mandatory
+   *
+   * @description The updated price per unit for this item, represented in the base currency subunit (e.g., cents).
+   *
+   * @example 2500
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 unit_price = 17;
    */
   unitPrice = protoInt64.zero;
 
   /**
-   * The ID of the associated tax group
+   *
+   * @mandatory
+   *
+   * @description The updated unique internal identifier of the tax group or tax bracket applicable to this item.
+   *
+   * @example 4
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 tax_group_id = 18;
    */
   taxGroupId = protoInt64.zero;
 
   /**
-   * The applicable discount percentage (in cents)
+   *
+   * @mandatory
+   *
+   * @description The updated discount percentage applied to this specific item, represented in subunits (e.g., 1500 for 15.00%).
+   *
+   * @example 1500
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 discount = 19;
    */
   discount = protoInt64.zero;
 
   /**
-   * The delivery date of the item
+   *
+   * @mandatory
+   *
+   * @description The updated specific target delivery date for this line item.
+   *
+   * @example "2023-11-15"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
    *
    * @generated from field: string delivery_date = 20;
    */
   deliveryDate = "";
 
   /**
-   * Optional specifications
    *
-   * @generated from field: string specifications = 21;
+   * @optional
+   *
+   * @description Updated custom textual requirements, manufacturing notes, or specifications for fulfilling this item.
+   *
+   * @example "Requires double-reinforced packaging for international transit."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string specifications = 21;
    */
-  specifications = "";
+  specifications?: string;
 
   /**
-   * Stores if the item can be invoiced
    *
-   * @generated from field: bool is_invoiceable = 22;
+   * @optional
+   *
+   * @description A boolean flag indicating whether this specific line item is eligible to be processed for invoicing.
+   *
+   * @example true
+   *
+   * @regex ^(?:true|false)$
+   *
+   * @format Boolean true or false.
+   *
+   * @generated from field: optional bool is_invoiceable = 22;
    */
-  isInvoiceable = false;
+  isInvoiceable?: boolean;
 
   constructor(data?: PartialMessage<SalesOrdersServiceItemUpdateRequest>) {
     super();
@@ -1519,18 +2201,18 @@ export class SalesOrdersServiceItemUpdateRequest extends Message<SalesOrdersServ
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.SalesOrdersServiceItemUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 2, name: "id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 13, name: "internal_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 14, name: "client_uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 15, name: "client_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 16, name: "client_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 16, name: "client_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 17, name: "unit_price", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 18, name: "tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 19, name: "discount", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "delivery_date", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 21, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "is_invoiceable", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 21, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 22, name: "is_invoiceable", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesOrdersServiceItemUpdateRequest {
@@ -1551,57 +2233,126 @@ export class SalesOrdersServiceItemUpdateRequest extends Message<SalesOrdersServ
 }
 
 /**
+ *
+ * Request message for executing targeted updates strictly focused on the commercial terms
+ * of an existing Sales Order line item.
+ * Enables adjustment of pricing, taxes, discounts, delivery dates, and specifications
+ * without modifying quantities or underlying unit structures.
+ *
  * @generated from message Scailo.SalesOrdersServiceItemTermsUpdateRequest
  */
 export class SalesOrdersServiceItemTermsUpdateRequest extends Message<SalesOrdersServiceItemTermsUpdateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * The UUID of the record
+   *
+   * @mandatory
+   *
+   * @description The globally unique identifier (UUID) of the target record that needs to be updated.
+   *
+   * @example "550e8400-e29b-41d4-a716-446655440000"
+   *
+   * @regex ^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+   *
+   * @format Must be a valid v4 UUID in canonical hyphenated form.
    *
    * @generated from field: string uuid = 2;
    */
   uuid = "";
 
   /**
-   * The unit price of the item
+   *
+   * @mandatory
+   *
+   * @description The updated price per unit for this item, represented in the base currency subunit (e.g., cents).
+   *
+   * @example 2500
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 unit_price = 17;
    */
   unitPrice = protoInt64.zero;
 
   /**
-   * The ID of the associated tax group
+   *
+   * @mandatory
+   *
+   * @description The updated unique internal identifier of the tax group or tax bracket applicable to this item.
+   *
+   * @example 4
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 tax_group_id = 18;
    */
   taxGroupId = protoInt64.zero;
 
   /**
-   * The applicable discount percentage (in cents)
+   *
+   * @mandatory
+   *
+   * @description The updated discount percentage applied to this specific item, represented in subunits (e.g., 1500 for 15.00%).
+   *
+   * @example 1500
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 discount = 19;
    */
   discount = protoInt64.zero;
 
   /**
-   * The delivery date of the item
+   *
+   * @mandatory
+   *
+   * @description The updated specific target delivery date for this line item.
+   *
+   * @example "2023-11-15"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
    *
    * @generated from field: string delivery_date = 20;
    */
   deliveryDate = "";
 
   /**
-   * The specifications that should be updated
    *
-   * @generated from field: string specifications = 21;
+   * @optional
+   *
+   * @description Updated custom textual requirements, manufacturing notes, or specifications for fulfilling this item.
+   *
+   * @example "Requires double-reinforced packaging for international transit."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string specifications = 21;
    */
-  specifications = "";
+  specifications?: string;
 
   constructor(data?: PartialMessage<SalesOrdersServiceItemTermsUpdateRequest>) {
     super();
@@ -1611,13 +2362,13 @@ export class SalesOrdersServiceItemTermsUpdateRequest extends Message<SalesOrder
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.SalesOrdersServiceItemTermsUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 2, name: "uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 17, name: "unit_price", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 18, name: "tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 19, name: "discount", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 20, name: "delivery_date", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 21, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesOrdersServiceItemTermsUpdateRequest {
@@ -1639,27 +2390,57 @@ export class SalesOrdersServiceItemTermsUpdateRequest extends Message<SalesOrder
 
 /**
  *
- * Describes the parameters required to update the specifications of an item in a sales order
+ * Request message for isolating updates strictly to the textual specifications or notes
+ * of a Sales Order line item.
+ * Designed for scenarios where operational instructions change without impacting any
+ * commercial terms, pricing, or quantities.
  *
  * @generated from message Scailo.SalesOrdersServiceItemSpecificationsUpdateRequest
  */
 export class SalesOrdersServiceItemSpecificationsUpdateRequest extends Message<SalesOrdersServiceItemSpecificationsUpdateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * The UUID of the record
+   *
+   * @mandatory
+   *
+   * @description The globally unique identifier (UUID) of the target record that needs to be updated.
+   *
+   * @example "550e8400-e29b-41d4-a716-446655440000"
+   *
+   * @regex ^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+   *
+   * @format Must be a valid v4 UUID in canonical hyphenated form.
    *
    * @generated from field: string uuid = 2;
    */
   uuid = "";
 
   /**
-   * The specifications that should be updated
+   *
+   * @mandatory
+   *
+   * @description The completely overwritten textual requirements, manufacturing notes, or specifications for fulfilling this item.
+   *
+   * @example "Expedite handling required. Use pallet configuration A."
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
    *
    * @generated from field: string specifications = 21;
    */
@@ -1673,7 +2454,7 @@ export class SalesOrdersServiceItemSpecificationsUpdateRequest extends Message<S
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.SalesOrdersServiceItemSpecificationsUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 2, name: "uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 21, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
@@ -1697,7 +2478,13 @@ export class SalesOrdersServiceItemSpecificationsUpdateRequest extends Message<S
 
 /**
  *
- * Describes the parameters that constitute an item associated to a sales order
+ * Represents a complete, finalized Sales Order Item entity within the system.
+ * This message encapsulates the comprehensive state of a single ordered product or service,
+ * including its relationship to the parent order, mapped quantities across internal and client units,
+ * commercial terms (pricing, taxes, discounts), delivery schedules, and derived financial calculations.
+ *
+ * **Note:** This payload is utilized in read operations to provide clients and downstream systems
+ * (like billing or fulfillment) with the exact, immutable state of an individual line item.
  *
  * @generated from message Scailo.SalesOrderItem
  */
@@ -1730,112 +2517,161 @@ export class SalesOrderItem extends Message<SalesOrderItem> {
 
   /**
    *
-   * @description The approval state of the record
+   * @description A boolean flag indicating whether this specific record requires further administrative approval.
+   *
+   * @example false
+   *
+   * @format Boolean true or false.
    *
    * @generated from field: bool need_approval = 4;
    */
   needApproval = false;
 
   /**
-   * Stores any comment that the user might have added during an operation
+   *
+   * @description Audit log comment or justification captured during the last modification or transactional operation.
+   *
+   * @example "This is a comment for audit purposes."
    *
    * @generated from field: string user_comment = 5;
    */
   userComment = "";
 
   /**
-   * Stores the sales order ID
+   *
+   * @description The unique internal identifier of the parent sales order to which this line item belongs.
+   *
+   * @example 1024
    *
    * @generated from field: uint64 sales_order_id = 10;
    */
   salesOrderId = protoInt64.zero;
 
   /**
-   * Stores the ID of the sales orderder item with which this item is bundled with
+   *
+   * @description The unique internal sequence identifier of another sales order line item that this item is bundled or packaged with.
+   *
+   * @example 1025
    *
    * @generated from field: uint64 bundled_with_id = 11;
    */
   bundledWithId = protoInt64.zero;
 
   /**
-   * Stores the family ID
+   *
+   * @description The unique internal identifier of the family or catalog item being ordered.
+   *
+   * @example 505
    *
    * @generated from field: uint64 family_id = 12;
    */
   familyId = protoInt64.zero;
 
   /**
-   * The quantity (in cents) being ordered in internal unit of material
+   *
+   * @description The ordered quantity represented in the system's internal base unit of measure. Stored in subunits (cents).
+   *
+   * @example 10000
    *
    * @generated from field: uint64 internal_quantity = 13;
    */
   internalQuantity = protoInt64.zero;
 
   /**
-   * Stores the ID of the client's unit of material
+   *
+   * @description The unique internal identifier of the Unit of Measure (UOM) requested by the client for this item.
+   *
+   * @example 12
    *
    * @generated from field: uint64 client_uom_id = 14;
    */
   clientUomId = protoInt64.zero;
 
   /**
-   * Stores the quantity (in cents) being ordered in client's unit of material
+   *
+   * @description The ordered quantity represented in the client's specific unit of measure. Stored in subunits (cents).
+   *
+   * @example 5000
    *
    * @generated from field: uint64 client_quantity = 15;
    */
   clientQuantity = protoInt64.zero;
 
   /**
-   * Stores the family code as given by the client
+   *
+   * @description The client's specific alphanumeric part number, SKU, or family code used for their internal referencing.
+   *
+   * @example "CLI-SKU-992"
    *
    * @generated from field: string client_family_code = 16;
    */
   clientFamilyCode = "";
 
   /**
-   * The unit price of the item
+   *
+   * @description The agreed-upon price per unit for this item before discounts, represented in the base currency subunit (e.g., cents).
+   *
+   * @example 2500
    *
    * @generated from field: uint64 unit_price = 17;
    */
   unitPrice = protoInt64.zero;
 
   /**
-   * The ID of the associated tax group
+   *
+   * @description The unique internal identifier of the tax group or tax bracket applicable to this specific line item.
+   *
+   * @example 4
    *
    * @generated from field: uint64 tax_group_id = 18;
    */
   taxGroupId = protoInt64.zero;
 
   /**
-   * The applicable discount percentage (in cents)
+   *
+   * @description The discount percentage applied to this specific item, represented in subunits (e.g., 1500 for 15.00%).
+   *
+   * @example 1500
    *
    * @generated from field: uint64 discount = 19;
    */
   discount = protoInt64.zero;
 
   /**
-   * The delivery date of the item
+   *
+   * @description The specific target delivery date for this line item.
+   *
+   * @example "2023-11-15"
    *
    * @generated from field: string delivery_date = 20;
    */
   deliveryDate = "";
 
   /**
-   * Optional specifications
+   *
+   * @description Additional custom textual requirements, manufacturing notes, or specifications for fulfilling this item.
+   *
+   * @example "Requires double-reinforced packaging for international transit."
    *
    * @generated from field: string specifications = 21;
    */
   specifications = "";
 
   /**
-   * Stores if the item can be invoiced
+   *
+   * @description A boolean flag indicating whether this specific line item is eligible to be processed for invoicing.
+   *
+   * @example true
    *
    * @generated from field: bool is_invoiceable = 22;
    */
   isInvoiceable = false;
 
   /**
-   * Stores the unit price after factoring in the discount
+   *
+   * @description The system-calculated net price per unit after the applied discount has been subtracted from the base unit price. Represented in the base currency subunit (e.g., cents).
+   *
+   * @example 2125
    *
    * @generated from field: uint64 discounted_unit_price = 30;
    */
@@ -1889,13 +2725,13 @@ export class SalesOrderItem extends Message<SalesOrderItem> {
 
 /**
  *
- * Describes the message consisting of the list of sales orders
+ * Container message for a collection of Sales Order records.
  *
  * @generated from message Scailo.SalesOrdersList
  */
 export class SalesOrdersList extends Message<SalesOrdersList> {
   /**
-   * List of records
+   * @description An array of Sales Order records.
    *
    * @generated from field: repeated Scailo.SalesOrder list = 1;
    */
@@ -1931,13 +2767,13 @@ export class SalesOrdersList extends Message<SalesOrdersList> {
 
 /**
  *
- * Describes the message consisting of the list of sales order items
+ * Container message for a collection of Sales Order Item records.
  *
  * @generated from message Scailo.SalesOrderItemsList
  */
 export class SalesOrderItemsList extends Message<SalesOrderItemsList> {
   /**
-   * List of records
+   * @description An array of Sales Order Item records.
    *
    * @generated from field: repeated Scailo.SalesOrderItem list = 1;
    */
@@ -1973,20 +2809,39 @@ export class SalesOrderItemsList extends Message<SalesOrderItemsList> {
 
 /**
  *
- * Describes the parameters that are required to retrieve the history of the record
+ * Represents the request payload containing the parameter constraints required to
+ * retrieve the historical audit trail and lifecycle changes of a specific sales order item record.
  *
  * @generated from message Scailo.SalesOrderItemHistoryRequest
  */
 export class SalesOrderItemHistoryRequest extends Message<SalesOrderItemHistoryRequest> {
   /**
-   * Stores the sales order ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target sales order associated with the historical record.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer greater than zero.
    *
    * @generated from field: uint64 sales_order_id = 10;
    */
   salesOrderId = protoInt64.zero;
 
   /**
-   * Stores the family ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target family associated with the historical record.
+   *
+   * @example 582
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer greater than zero.
    *
    * @generated from field: uint64 family_id = 11;
    */
@@ -2023,31 +2878,61 @@ export class SalesOrderItemHistoryRequest extends Message<SalesOrderItemHistoryR
 
 /**
  *
- * Describes the parameters that are required to retrieve the info of a prospective sales order item
+ * Request message for retrieving preliminary contextual information about a prospective line item.
+ * This payload is typically utilized by frontend interfaces to dynamically fetch default pricing,
+ * historical terms, or tax configurations for a specific family prior to officially
+ * adding it to a Sales Order. This ensures accurate data pre-filling during the order creation workflow.
  *
  * @generated from message Scailo.SalesOrderItemProspectiveInfoRequest
  */
 export class SalesOrderItemProspectiveInfoRequest extends Message<SalesOrderItemProspectiveInfoRequest> {
   /**
-   * Stores the sales order ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the parent sales order that is currently being evaluated or constructed.
+   *
+   * @example 1024
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 sales_order_id = 10;
    */
   salesOrderId = protoInt64.zero;
 
   /**
-   * Stores the family ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the family or catalog item being evaluated for addition to the order.
+   *
+   * @example 505
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 family_id = 11;
    */
   familyId = protoInt64.zero;
 
   /**
-   * Stores the ID of the client's unit of material (if 0, the value is ignored while retrieving records)
    *
-   * @generated from field: uint64 client_uom_id = 13;
+   * @optional
+   *
+   * @description The unique internal identifier of the specific Unit of Measure (UOM) requested by the client. If set to `0`, this filter is ignored, and standard product default parameters are returned instead.
+   *
+   * @example 12
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 client_uom_id = 13;
    */
-  clientUomId = protoInt64.zero;
+  clientUomId?: bigint;
 
   constructor(data?: PartialMessage<SalesOrderItemProspectiveInfoRequest>) {
     super();
@@ -2059,7 +2944,7 @@ export class SalesOrderItemProspectiveInfoRequest extends Message<SalesOrderItem
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
     { no: 10, name: "sales_order_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 11, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 13, name: "client_uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 13, name: "client_uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesOrderItemProspectiveInfoRequest {
@@ -2081,7 +2966,7 @@ export class SalesOrderItemProspectiveInfoRequest extends Message<SalesOrderItem
 
 /**
  *
- * Describes a pagination request to retrieve records
+ * Pagination request for retrieving slices of Sales Order records.
  *
  * @generated from message Scailo.SalesOrdersServicePaginationReq
  */
@@ -2094,9 +2979,9 @@ export class SalesOrdersServicePaginationReq extends Message<SalesOrdersServiceP
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -2126,9 +3011,9 @@ export class SalesOrdersServicePaginationReq extends Message<SalesOrdersServiceP
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -2138,9 +3023,9 @@ export class SalesOrdersServicePaginationReq extends Message<SalesOrdersServiceP
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -2148,16 +3033,21 @@ export class SalesOrdersServicePaginationReq extends Message<SalesOrdersServiceP
    *
    * @description The specific field key to sort the results by.
    *
-   * @generated from field: Scailo.SALES_ORDER_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.SALES_ORDER_SORT_KEY sort_key = 5;
    */
-  sortKey = SALES_ORDER_SORT_KEY.SALES_ORDER_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: SALES_ORDER_SORT_KEY;
 
   /**
-   * The status of this sales order
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
+   * @optional
+   *
+   * @description Filter results by a specific lifecycle status.
+   *
+   * @example STANDING
+   *
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   constructor(data?: PartialMessage<SalesOrdersServicePaginationReq>) {
     super();
@@ -2167,12 +3057,12 @@ export class SalesOrdersServicePaginationReq extends Message<SalesOrdersServiceP
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.SalesOrdersServicePaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(SALES_ORDER_SORT_KEY) },
-    { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(SALES_ORDER_SORT_KEY), opt: true },
+    { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesOrdersServicePaginationReq {
@@ -2194,7 +3084,7 @@ export class SalesOrdersServicePaginationReq extends Message<SalesOrdersServiceP
 
 /**
  *
- * Describes the response to a pagination request
+ * Response message for paginated queries, including total counts for UI elements.
  *
  * @generated from message Scailo.SalesOrdersServicePaginationResponse
  */
@@ -2270,7 +3160,12 @@ export class SalesOrdersServicePaginationResponse extends Message<SalesOrdersSer
 
 /**
  *
- * Describes the base request payload of a filter search
+ * Advanced filter request for searching and paginating sales orders using multiple logical criteria.
+ * This message encapsulates pagination controls, sorting keys, lifecycle status filters,
+ * timestamp ranges, and entity references.
+ *
+ * **Note:** This is the primary message layout used by the frontend and external API clients
+ * to build robust data-table queries, reporting views, and targeted record lookups.
  *
  * @generated from message Scailo.SalesOrdersServiceFilterReq
  */
@@ -2283,9 +3178,9 @@ export class SalesOrdersServiceFilterReq extends Message<SalesOrdersServiceFilte
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -2315,9 +3210,9 @@ export class SalesOrdersServiceFilterReq extends Message<SalesOrdersServiceFilte
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -2327,9 +3222,9 @@ export class SalesOrdersServiceFilterReq extends Message<SalesOrdersServiceFilte
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -2337,9 +3232,9 @@ export class SalesOrdersServiceFilterReq extends Message<SalesOrdersServiceFilte
    *
    * @description The field used for sorting.
    *
-   * @generated from field: Scailo.SALES_ORDER_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.SALES_ORDER_SORT_KEY sort_key = 5;
    */
-  sortKey = SALES_ORDER_SORT_KEY.SALES_ORDER_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: SALES_ORDER_SORT_KEY;
 
   /**
    *
@@ -2353,9 +3248,9 @@ export class SalesOrdersServiceFilterReq extends Message<SalesOrdersServiceFilte
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_start = 101;
+   * @generated from field: optional uint64 creation_timestamp_start = 101;
    */
-  creationTimestampStart = protoInt64.zero;
+  creationTimestampStart?: bigint;
 
   /**
    *
@@ -2369,9 +3264,9 @@ export class SalesOrdersServiceFilterReq extends Message<SalesOrdersServiceFilte
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_end = 102;
+   * @generated from field: optional uint64 creation_timestamp_end = 102;
    */
-  creationTimestampEnd = protoInt64.zero;
+  creationTimestampEnd?: bigint;
 
   /**
    *
@@ -2385,9 +3280,9 @@ export class SalesOrdersServiceFilterReq extends Message<SalesOrdersServiceFilte
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_start = 103;
+   * @generated from field: optional uint64 modification_timestamp_start = 103;
    */
-  modificationTimestampStart = protoInt64.zero;
+  modificationTimestampStart?: bigint;
 
   /**
    *
@@ -2401,9 +3296,9 @@ export class SalesOrdersServiceFilterReq extends Message<SalesOrdersServiceFilte
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_end = 104;
+   * @generated from field: optional uint64 modification_timestamp_end = 104;
    */
-  modificationTimestampEnd = protoInt64.zero;
+  modificationTimestampEnd?: bigint;
 
   /**
    *
@@ -2417,9 +3312,9 @@ export class SalesOrdersServiceFilterReq extends Message<SalesOrdersServiceFilte
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 8;
+   * @generated from field: optional string entity_uuid = 8;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
    *
@@ -2429,9 +3324,9 @@ export class SalesOrdersServiceFilterReq extends Message<SalesOrdersServiceFilte
    *
    * @example STANDING
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   /**
    *
@@ -2445,9 +3340,9 @@ export class SalesOrdersServiceFilterReq extends Message<SalesOrdersServiceFilte
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_start = 11;
+   * @generated from field: optional uint64 approved_on_start = 11;
    */
-  approvedOnStart = protoInt64.zero;
+  approvedOnStart?: bigint;
 
   /**
    *
@@ -2461,9 +3356,9 @@ export class SalesOrdersServiceFilterReq extends Message<SalesOrdersServiceFilte
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_end = 12;
+   * @generated from field: optional uint64 approved_on_end = 12;
    */
-  approvedOnEnd = protoInt64.zero;
+  approvedOnEnd?: bigint;
 
   /**
    *
@@ -2477,9 +3372,9 @@ export class SalesOrdersServiceFilterReq extends Message<SalesOrdersServiceFilte
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_by_user_id = 13;
+   * @generated from field: optional uint64 approved_by_user_id = 13;
    */
-  approvedByUserId = protoInt64.zero;
+  approvedByUserId?: bigint;
 
   /**
    *
@@ -2493,9 +3388,9 @@ export class SalesOrdersServiceFilterReq extends Message<SalesOrdersServiceFilte
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approver_role_id = 14;
+   * @generated from field: optional uint64 approver_role_id = 14;
    */
-  approverRoleId = protoInt64.zero;
+  approverRoleId?: bigint;
 
   /**
    *
@@ -2509,9 +3404,9 @@ export class SalesOrdersServiceFilterReq extends Message<SalesOrdersServiceFilte
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 completed_on_start = 15;
+   * @generated from field: optional uint64 completed_on_start = 15;
    */
-  completedOnStart = protoInt64.zero;
+  completedOnStart?: bigint;
 
   /**
    *
@@ -2525,9 +3420,9 @@ export class SalesOrdersServiceFilterReq extends Message<SalesOrdersServiceFilte
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 completed_on_end = 16;
+   * @generated from field: optional uint64 completed_on_end = 16;
    */
-  completedOnEnd = protoInt64.zero;
+  completedOnEnd?: bigint;
 
   /**
    *
@@ -2541,9 +3436,9 @@ export class SalesOrdersServiceFilterReq extends Message<SalesOrdersServiceFilte
    *
    * @format: Alphanumeric characters and spaces only. Can be left empty.
    *
-   * @generated from field: string reference_id = 20;
+   * @generated from field: optional string reference_id = 20;
    */
-  referenceId = "";
+  referenceId?: string;
 
   /**
    *
@@ -2557,86 +3452,185 @@ export class SalesOrdersServiceFilterReq extends Message<SalesOrdersServiceFilte
    *
    * @format: Alphanumeric characters and spaces only. Can be left empty.
    *
-   * @generated from field: string final_ref_number = 21;
+   * @generated from field: optional string final_ref_number = 21;
    */
-  finalRefNumber = "";
+  finalRefNumber?: string;
 
   /**
-   * The associated consignee client ID
    *
-   * @generated from field: uint64 consignee_client_id = 22;
+   * @optional
+   *
+   * @description The unique internal identifier of the consignee client (the entity physically receiving the goods or services).
+   *
+   * @example 1050
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: optional uint64 consignee_client_id = 22;
    */
-  consigneeClientId = protoInt64.zero;
+  consigneeClientId?: bigint;
 
   /**
-   * The associated buyer client ID
    *
-   * @generated from field: uint64 buyer_client_id = 23;
+   * @optional
+   *
+   * @description The unique internal identifier of the buyer client (the entity financially responsible for the order).
+   *
+   * @example 1051
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: optional uint64 buyer_client_id = 23;
    */
-  buyerClientId = protoInt64.zero;
+  buyerClientId?: bigint;
 
   /**
-   * The ID of the associated location
    *
-   * @generated from field: uint64 location_id = 24;
+   * @optional
+   *
+   * @description The unique internal identifier of the originating location (e.g., specific warehouse, plant, or office) responsible for fulfilling this order.
+   *
+   * @example 42
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: optional uint64 location_id = 24;
    */
-  locationId = protoInt64.zero;
+  locationId?: bigint;
 
   /**
-   * The ID of the associated currency
    *
-   * @generated from field: uint64 currency_id = 25;
+   * @optional
+   *
+   * @description The unique internal identifier of the currency used for all financial calculations, billing, and pricing within this order.
+   *
+   * @example 3
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: optional uint64 currency_id = 25;
    */
-  currencyId = protoInt64.zero;
+  currencyId?: bigint;
 
   /**
-   * The ID of the associated project
    *
-   * @generated from field: uint64 project_id = 26;
+   * @optional
+   *
+   * @description The unique internal identifier of an associated project, used to track sales revenue and fulfillment against specific long-term initiatives.
+   *
+   * @example 88
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 project_id = 26;
    */
-  projectId = protoInt64.zero;
+  projectId?: bigint;
 
   /**
-   * The ID of the family
    *
-   * @generated from field: uint64 family_id = 40;
+   * @optional
+   *
+   * @description Filter sales orders that contain at least one line item belonging to this specific family ID.
+   *
+   * @example 505
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 family_id = 40;
    */
-  familyId = protoInt64.zero;
+  familyId?: bigint;
 
   /**
-   * The exact delivery date of the item in the sales order
    *
-   * @generated from field: string delivery_date_exact = 41;
+   * @optional
+   *
+   * @description Filter sales orders containing line items scheduled for exact delivery on this specific date.
+   *
+   * @example "2023-11-15"
+   *
+   * @regex .*
+   *
+   * @format String following the standard date format (e.g., YYYY-MM-DD).
+   *
+   * @generated from field: optional string delivery_date_exact = 41;
    */
-  deliveryDateExact = "";
+  deliveryDateExact?: string;
 
   /**
-   * The start delivery date of the item in the sales order
    *
-   * @generated from field: string delivery_date_start = 42;
+   * @optional
+   *
+   * @description Filter sales orders containing line items scheduled for delivery ON or AFTER this specific date.
+   *
+   * @example "2023-11-01"
+   *
+   * @regex .*
+   *
+   * @format String following the standard date format (e.g., YYYY-MM-DD).
+   *
+   * @generated from field: optional string delivery_date_start = 42;
    */
-  deliveryDateStart = "";
+  deliveryDateStart?: string;
 
   /**
-   * The end delivery date of the item in the sales order
    *
-   * @generated from field: string delivery_date_end = 43;
+   * @optional
+   *
+   * @description Filter sales orders containing line items scheduled for delivery ON or BEFORE this specific date.
+   *
+   * @example "2023-11-30"
+   *
+   * @regex .*
+   *
+   * @format String following the standard date format (e.g., YYYY-MM-DD).
+   *
+   * @generated from field: optional string delivery_date_end = 43;
    */
-  deliveryDateEnd = "";
+  deliveryDateEnd?: string;
 
   /**
-   * Stores the minimum value of the sales order (ignored if 0)
    *
-   * @generated from field: uint64 total_value_min = 50;
+   * @optional
+   *
+   * @description Filter sales orders where the grand total value is greater than or equal to this amount. Evaluated in the base currency subunit (e.g., cents). Ignored if set to 0.
+   *
+   * @example 500000
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 total_value_min = 50;
    */
-  totalValueMin = protoInt64.zero;
+  totalValueMin?: bigint;
 
   /**
-   * Stores the maximum value of the sales order (ignored if 0)
    *
-   * @generated from field: uint64 total_value_max = 51;
+   * @optional
+   *
+   * @description Filter sales orders where the grand total value is less than or equal to this amount. Evaluated in the base currency subunit (e.g., cents). Ignored if set to 0.
+   *
+   * @example 1500000
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 total_value_max = 51;
    */
-  totalValueMax = protoInt64.zero;
+  totalValueMax?: bigint;
 
   /**
    *
@@ -2657,9 +3651,9 @@ export class SalesOrdersServiceFilterReq extends Message<SalesOrdersServiceFilte
    *
    * @example true
    *
-   * @generated from field: bool include_form_data = 501;
+   * @generated from field: optional bool include_form_data = 501;
    */
-  includeFormData = false;
+  includeFormData?: boolean;
 
   constructor(data?: PartialMessage<SalesOrdersServiceFilterReq>) {
     super();
@@ -2669,38 +3663,38 @@ export class SalesOrdersServiceFilterReq extends Message<SalesOrdersServiceFilte
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.SalesOrdersServiceFilterReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(SALES_ORDER_SORT_KEY) },
-    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
-    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 15, name: "completed_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "consignee_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 23, name: "buyer_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 24, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 25, name: "currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 26, name: "project_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 40, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 41, name: "delivery_date_exact", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 42, name: "delivery_date_start", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 43, name: "delivery_date_end", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 50, name: "total_value_min", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 51, name: "total_value_max", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(SALES_ORDER_SORT_KEY), opt: true },
+    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
+    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 15, name: "completed_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 22, name: "consignee_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 23, name: "buyer_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 24, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 25, name: "currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 26, name: "project_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 40, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 41, name: "delivery_date_exact", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 42, name: "delivery_date_start", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 43, name: "delivery_date_end", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 50, name: "total_value_min", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 51, name: "total_value_max", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
     { no: 500, name: "form_data", kind: "message", T: FormFieldDatumFilterRequest, repeated: true },
-    { no: 501, name: "include_form_data", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 501, name: "include_form_data", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesOrdersServiceFilterReq {
@@ -2722,7 +3716,13 @@ export class SalesOrdersServiceFilterReq extends Message<SalesOrdersServiceFilte
 
 /**
  *
- * Describes the base request payload of a count search
+ * Target filter request for counting sales order records matching specific logical criteria.
+ * This message encapsulates lifecycle status filters, timestamp ranges, workflow markers,
+ * and entity references to determine the total size of a targeted dataset.
+ *
+ * **Note:** This is the primary message layout used by backend calculation engines, reporting
+ * services, and frontend pagination headers to evaluate total record matches dynamically
+ * before or alongside retrieving paginated results.
  *
  * @generated from message Scailo.SalesOrdersServiceCountReq
  */
@@ -2735,9 +3735,9 @@ export class SalesOrdersServiceCountReq extends Message<SalesOrdersServiceCountR
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -2751,9 +3751,9 @@ export class SalesOrdersServiceCountReq extends Message<SalesOrdersServiceCountR
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_start = 101;
+   * @generated from field: optional uint64 creation_timestamp_start = 101;
    */
-  creationTimestampStart = protoInt64.zero;
+  creationTimestampStart?: bigint;
 
   /**
    *
@@ -2767,9 +3767,9 @@ export class SalesOrdersServiceCountReq extends Message<SalesOrdersServiceCountR
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_end = 102;
+   * @generated from field: optional uint64 creation_timestamp_end = 102;
    */
-  creationTimestampEnd = protoInt64.zero;
+  creationTimestampEnd?: bigint;
 
   /**
    *
@@ -2783,9 +3783,9 @@ export class SalesOrdersServiceCountReq extends Message<SalesOrdersServiceCountR
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_start = 103;
+   * @generated from field: optional uint64 modification_timestamp_start = 103;
    */
-  modificationTimestampStart = protoInt64.zero;
+  modificationTimestampStart?: bigint;
 
   /**
    *
@@ -2799,9 +3799,9 @@ export class SalesOrdersServiceCountReq extends Message<SalesOrdersServiceCountR
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_end = 104;
+   * @generated from field: optional uint64 modification_timestamp_end = 104;
    */
-  modificationTimestampEnd = protoInt64.zero;
+  modificationTimestampEnd?: bigint;
 
   /**
    *
@@ -2815,9 +3815,9 @@ export class SalesOrdersServiceCountReq extends Message<SalesOrdersServiceCountR
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 8;
+   * @generated from field: optional string entity_uuid = 8;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
    *
@@ -2827,9 +3827,9 @@ export class SalesOrdersServiceCountReq extends Message<SalesOrdersServiceCountR
    *
    * @example STANDING
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   /**
    *
@@ -2843,9 +3843,9 @@ export class SalesOrdersServiceCountReq extends Message<SalesOrdersServiceCountR
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_start = 11;
+   * @generated from field: optional uint64 approved_on_start = 11;
    */
-  approvedOnStart = protoInt64.zero;
+  approvedOnStart?: bigint;
 
   /**
    *
@@ -2859,9 +3859,9 @@ export class SalesOrdersServiceCountReq extends Message<SalesOrdersServiceCountR
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_end = 12;
+   * @generated from field: optional uint64 approved_on_end = 12;
    */
-  approvedOnEnd = protoInt64.zero;
+  approvedOnEnd?: bigint;
 
   /**
    *
@@ -2875,9 +3875,9 @@ export class SalesOrdersServiceCountReq extends Message<SalesOrdersServiceCountR
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_by_user_id = 13;
+   * @generated from field: optional uint64 approved_by_user_id = 13;
    */
-  approvedByUserId = protoInt64.zero;
+  approvedByUserId?: bigint;
 
   /**
    *
@@ -2891,9 +3891,9 @@ export class SalesOrdersServiceCountReq extends Message<SalesOrdersServiceCountR
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approver_role_id = 14;
+   * @generated from field: optional uint64 approver_role_id = 14;
    */
-  approverRoleId = protoInt64.zero;
+  approverRoleId?: bigint;
 
   /**
    *
@@ -2907,9 +3907,9 @@ export class SalesOrdersServiceCountReq extends Message<SalesOrdersServiceCountR
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 completed_on_start = 15;
+   * @generated from field: optional uint64 completed_on_start = 15;
    */
-  completedOnStart = protoInt64.zero;
+  completedOnStart?: bigint;
 
   /**
    *
@@ -2923,9 +3923,9 @@ export class SalesOrdersServiceCountReq extends Message<SalesOrdersServiceCountR
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 completed_on_end = 16;
+   * @generated from field: optional uint64 completed_on_end = 16;
    */
-  completedOnEnd = protoInt64.zero;
+  completedOnEnd?: bigint;
 
   /**
    *
@@ -2939,9 +3939,9 @@ export class SalesOrdersServiceCountReq extends Message<SalesOrdersServiceCountR
    *
    * @format: Alphanumeric characters and spaces only. Can be left empty.
    *
-   * @generated from field: string reference_id = 20;
+   * @generated from field: optional string reference_id = 20;
    */
-  referenceId = "";
+  referenceId?: string;
 
   /**
    *
@@ -2955,89 +3955,191 @@ export class SalesOrdersServiceCountReq extends Message<SalesOrdersServiceCountR
    *
    * @format: Alphanumeric characters and spaces only. Can be left empty.
    *
-   * @generated from field: string final_ref_number = 21;
+   * @generated from field: optional string final_ref_number = 21;
    */
-  finalRefNumber = "";
+  finalRefNumber?: string;
 
   /**
-   * The associated consignee client ID
    *
-   * @generated from field: uint64 consignee_client_id = 22;
-   */
-  consigneeClientId = protoInt64.zero;
-
-  /**
-   * The associated buyer client ID
+   * @optional
    *
-   * @generated from field: uint64 buyer_client_id = 23;
-   */
-  buyerClientId = protoInt64.zero;
-
-  /**
-   * The ID of the associated location
+   * @description The unique internal identifier of the consignee client (the entity physically receiving the goods or services).
    *
-   * @generated from field: uint64 location_id = 24;
-   */
-  locationId = protoInt64.zero;
-
-  /**
-   * The ID of the associated currency
+   * @example 1050
    *
-   * @generated from field: uint64 currency_id = 25;
-   */
-  currencyId = protoInt64.zero;
-
-  /**
-   * The ID of the associated project
+   * @regex ^[1-9][0-9]*$
    *
-   * @generated from field: uint64 project_id = 26;
-   */
-  projectId = protoInt64.zero;
-
-  /**
-   * The ID of the family
+   * @format Unsigned 64-bit integer greater than 0.
    *
-   * @generated from field: uint64 family_id = 40;
+   * @generated from field: optional uint64 consignee_client_id = 22;
    */
-  familyId = protoInt64.zero;
+  consigneeClientId?: bigint;
 
   /**
-   * The exact delivery date of the item in the sales order
    *
-   * @generated from field: string delivery_date_exact = 41;
-   */
-  deliveryDateExact = "";
-
-  /**
-   * The start delivery date of the item in the sales order
+   * @optional
    *
-   * @generated from field: string delivery_date_start = 42;
-   */
-  deliveryDateStart = "";
-
-  /**
-   * The end delivery date of the item in the sales order
+   * @description The unique internal identifier of the buyer client (the entity financially responsible for the order).
    *
-   * @generated from field: string delivery_date_end = 43;
-   */
-  deliveryDateEnd = "";
-
-  /**
-   * Stores the minimum value of the sales order (ignored if 0)
+   * @example 1051
    *
-   * @generated from field: uint64 total_value_min = 50;
-   */
-  totalValueMin = protoInt64.zero;
-
-  /**
-   * Stores the maximum value of the sales order (ignored if 0)
+   * @regex ^[1-9][0-9]*$
    *
-   * @generated from field: uint64 total_value_max = 51;
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: optional uint64 buyer_client_id = 23;
    */
-  totalValueMax = protoInt64.zero;
+  buyerClientId?: bigint;
 
   /**
-   * The list of form data filters
+   *
+   * @optional
+   *
+   * @description The unique internal identifier of the originating location (e.g., specific warehouse, plant, or office) responsible for fulfilling this order.
+   *
+   * @example 42
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: optional uint64 location_id = 24;
+   */
+  locationId?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description The unique internal identifier of the currency used for all financial calculations, billing, and pricing within this order.
+   *
+   * @example 3
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: optional uint64 currency_id = 25;
+   */
+  currencyId?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description The unique internal identifier of an associated project, used to track sales revenue and fulfillment against specific long-term initiatives.
+   *
+   * @example 88
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 project_id = 26;
+   */
+  projectId?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Count sales orders that contain at least one line item belonging to this specific family ID.
+   *
+   * @example 505
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 family_id = 40;
+   */
+  familyId?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Count sales orders containing line items scheduled for exact delivery on this specific date.
+   *
+   * @example "2023-11-15"
+   *
+   * @regex .*
+   *
+   * @format String following the standard date format (e.g., YYYY-MM-DD).
+   *
+   * @generated from field: optional string delivery_date_exact = 41;
+   */
+  deliveryDateExact?: string;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Count sales orders containing line items scheduled for delivery ON or AFTER this specific date.
+   *
+   * @example "2023-11-01"
+   *
+   * @regex .*
+   *
+   * @format String following the standard date format (e.g., YYYY-MM-DD).
+   *
+   * @generated from field: optional string delivery_date_start = 42;
+   */
+  deliveryDateStart?: string;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Count sales orders containing line items scheduled for delivery ON or BEFORE this specific date.
+   *
+   * @example "2023-11-30"
+   *
+   * @regex .*
+   *
+   * @format String following the standard date format (e.g., YYYY-MM-DD).
+   *
+   * @generated from field: optional string delivery_date_end = 43;
+   */
+  deliveryDateEnd?: string;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Count sales orders where the grand total value is greater than or equal to this amount. Evaluated in the base currency subunit (e.g., cents). Ignored if set to 0.
+   *
+   * @example 500000
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 total_value_min = 50;
+   */
+  totalValueMin?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Count sales orders where the grand total value is less than or equal to this amount. Evaluated in the base currency subunit (e.g., cents). Ignored if set to 0.
+   *
+   * @example 1500000
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 total_value_max = 51;
+   */
+  totalValueMax?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Count based on dynamic form field values.
    *
    * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
    */
@@ -3051,32 +4153,32 @@ export class SalesOrdersServiceCountReq extends Message<SalesOrdersServiceCountR
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.SalesOrdersServiceCountReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
-    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
-    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 15, name: "completed_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "consignee_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 23, name: "buyer_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 24, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 25, name: "currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 26, name: "project_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 40, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 41, name: "delivery_date_exact", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 42, name: "delivery_date_start", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 43, name: "delivery_date_end", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 50, name: "total_value_min", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 51, name: "total_value_max", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
+    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
+    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 15, name: "completed_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 22, name: "consignee_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 23, name: "buyer_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 24, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 25, name: "currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 26, name: "project_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 40, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 41, name: "delivery_date_exact", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 42, name: "delivery_date_start", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 43, name: "delivery_date_end", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 50, name: "total_value_min", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 51, name: "total_value_max", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
     { no: 500, name: "form_data", kind: "message", T: FormFieldDatumFilterRequest, repeated: true },
   ]);
 
@@ -3099,7 +4201,13 @@ export class SalesOrdersServiceCountReq extends Message<SalesOrdersServiceCountR
 
 /**
  *
- * Describes the request payload for performing a generic search operation on records
+ * Broad-spectrum search and lookup request for locating and paginating sales orders via text matching.
+ * This message encapsulates full-text query parameters, pagination controls, sorting keys,
+ * lifecycle status constraints, and other core references.
+ *
+ * **Note:** This is the primary message layout used for global search bars, fast-filtering dashboard
+ * inputs, and omni-box search utilities where users need to match loose textual terms against
+ * records while retaining structural pagination.
  *
  * @generated from message Scailo.SalesOrdersServiceSearchAllReq
  */
@@ -3112,9 +4220,9 @@ export class SalesOrdersServiceSearchAllReq extends Message<SalesOrdersServiceSe
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -3144,9 +4252,9 @@ export class SalesOrdersServiceSearchAllReq extends Message<SalesOrdersServiceSe
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -3156,9 +4264,9 @@ export class SalesOrdersServiceSearchAllReq extends Message<SalesOrdersServiceSe
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -3166,9 +4274,9 @@ export class SalesOrdersServiceSearchAllReq extends Message<SalesOrdersServiceSe
    *
    * @description The field used for sorting.
    *
-   * @generated from field: Scailo.SALES_ORDER_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.SALES_ORDER_SORT_KEY sort_key = 5;
    */
-  sortKey = SALES_ORDER_SORT_KEY.SALES_ORDER_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: SALES_ORDER_SORT_KEY;
 
   /**
    *
@@ -3182,9 +4290,9 @@ export class SalesOrdersServiceSearchAllReq extends Message<SalesOrdersServiceSe
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 6;
+   * @generated from field: optional string entity_uuid = 6;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
    *
@@ -3194,13 +4302,13 @@ export class SalesOrdersServiceSearchAllReq extends Message<SalesOrdersServiceSe
    *
    * @example STANDING
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   /**
    *
-   * @mandatory
+   * @optional
    *
    * @description The search string to match against reference IDs.
    *
@@ -3210,44 +4318,89 @@ export class SalesOrdersServiceSearchAllReq extends Message<SalesOrdersServiceSe
    *
    * @format: May contain any UTF-8 characters.
    *
-   * @generated from field: string search_key = 11;
+   * @generated from field: optional string search_key = 11;
    */
-  searchKey = "";
+  searchKey?: string;
 
   /**
-   * The associated consignee client ID
    *
-   * @generated from field: uint64 consignee_client_id = 22;
+   * @optional
+   *
+   * @description The unique internal identifier of the consignee client (the entity physically receiving the goods or services).
+   *
+   * @example 1050
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: optional uint64 consignee_client_id = 22;
    */
-  consigneeClientId = protoInt64.zero;
+  consigneeClientId?: bigint;
 
   /**
-   * The associated buyer client ID
    *
-   * @generated from field: uint64 buyer_client_id = 23;
+   * @optional
+   *
+   * @description The unique internal identifier of the buyer client (the entity financially responsible for the order).
+   *
+   * @example 1051
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: optional uint64 buyer_client_id = 23;
    */
-  buyerClientId = protoInt64.zero;
+  buyerClientId?: bigint;
 
   /**
-   * The ID of the associated location
    *
-   * @generated from field: uint64 location_id = 24;
+   * @optional
+   *
+   * @description The unique internal identifier of the originating location (e.g., specific warehouse, plant, or office) responsible for fulfilling this order.
+   *
+   * @example 42
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: optional uint64 location_id = 24;
    */
-  locationId = protoInt64.zero;
+  locationId?: bigint;
 
   /**
-   * The ID of the associated currency
    *
-   * @generated from field: uint64 currency_id = 25;
+   * @optional
+   *
+   * @description The unique internal identifier of the currency used for all financial calculations, billing, and pricing within this order.
+   *
+   * @example 3
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: optional uint64 currency_id = 25;
    */
-  currencyId = protoInt64.zero;
+  currencyId?: bigint;
 
   /**
-   * The ID of the associated project
    *
-   * @generated from field: uint64 project_id = 26;
+   * @optional
+   *
+   * @description The unique internal identifier of an associated project, used to track sales revenue and fulfillment against specific long-term initiatives.
+   *
+   * @example 88
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 project_id = 26;
    */
-  projectId = protoInt64.zero;
+  projectId?: bigint;
 
   constructor(data?: PartialMessage<SalesOrdersServiceSearchAllReq>) {
     super();
@@ -3257,19 +4410,19 @@ export class SalesOrdersServiceSearchAllReq extends Message<SalesOrdersServiceSe
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.SalesOrdersServiceSearchAllReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(SALES_ORDER_SORT_KEY) },
-    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
-    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "consignee_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 23, name: "buyer_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 24, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 25, name: "currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 26, name: "project_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(SALES_ORDER_SORT_KEY), opt: true },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
+    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 22, name: "consignee_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 23, name: "buyer_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 24, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 25, name: "currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 26, name: "project_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesOrdersServiceSearchAllReq {
@@ -3291,41 +4444,88 @@ export class SalesOrdersServiceSearchAllReq extends Message<SalesOrdersServiceSe
 
 /**
  *
- * Describes the parameters necessary to create a sales order reference
+ * Request message for creating and linking an external or internal document reference to a Sales Order.
+ * These references (e.g., tying a Sales Quotation to a Sales Order) serve as the operational constraints
+ * that drive downstream automation, such as Autofill operations that pull line items directly from the referenced document.
  *
  * @generated from message Scailo.SalesOrdersServiceReferenceCreateRequest
  */
 export class SalesOrdersServiceReferenceCreateRequest extends Message<SalesOrdersServiceReferenceCreateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * Stores the sales order ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the parent sales order to which this reference is being attached.
+   *
+   * @example 1024
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 sales_order_id = 10;
    */
   salesOrderId = protoInt64.zero;
 
   /**
-   * The reference context, could be billing or buying
+   *
+   * @mandatory
+   *
+   * @description The operational context in which this reference is being applied (e.g., Billing).
+   *
+   * @example "SALES_ORDER_REFERENCE_CONTEXT_BILLING"
+   *
+   * @regex ^[A-Z_]+$
+   *
+   * @format Valid SALES_ORDER_REFERENCE_CONTEXT enum value. Cannot be unspecified (0).
    *
    * @generated from field: Scailo.SALES_ORDER_REFERENCE_CONTEXT context = 11;
    */
   context = SALES_ORDER_REFERENCE_CONTEXT.SALES_ORDER_REFERENCE_CONTEXT_ANY_UNSPECIFIED;
 
   /**
-   * The associated ref from
+   *
+   * @mandatory
+   *
+   * @description The specific module or record type from which this reference originates.
+   *
+   * @example "SALES_ORDER_REFERENCE_REF_FROM_SALES_QUOTATION"
+   *
+   * @regex ^[A-Z_]+$
+   *
+   * @format Valid SALES_ORDER_REFERENCE_REF_FROM enum value. Cannot be unspecified (0).
    *
    * @generated from field: Scailo.SALES_ORDER_REFERENCE_REF_FROM ref_from = 12;
    */
   refFrom = SALES_ORDER_REFERENCE_REF_FROM.SALES_ORDER_REFERENCE_REF_FROM_ANY_UNSPECIFIED;
 
   /**
-   * The ID of the associated reference
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the specific referenced document (e.g., the ID of the actual Sales Quotation).
+   *
+   * @example 450
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 ref_id = 13;
    */
@@ -3339,7 +4539,7 @@ export class SalesOrdersServiceReferenceCreateRequest extends Message<SalesOrder
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.SalesOrdersServiceReferenceCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 10, name: "sales_order_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 11, name: "context", kind: "enum", T: proto3.getEnumType(SALES_ORDER_REFERENCE_CONTEXT) },
     { no: 12, name: "ref_from", kind: "enum", T: proto3.getEnumType(SALES_ORDER_REFERENCE_REF_FROM) },
@@ -3365,7 +4565,9 @@ export class SalesOrdersServiceReferenceCreateRequest extends Message<SalesOrder
 
 /**
  *
- * Describes the parameters that constitute a sales order reference
+ * Represents the finalized state of a constraint or reference linked to a Sales Order.
+ * This entity securely binds source documents (like Enquiries or Quotations) to the parent order,
+ * maintaining an explicit audit trail of exactly where the order's requirements or line items originated.
  *
  * @generated from message Scailo.SalesOrderReference
  */
@@ -3398,42 +4600,61 @@ export class SalesOrderReference extends Message<SalesOrderReference> {
 
   /**
    *
-   * @description The approval state of the record
+   * @description A boolean flag indicating whether this specific record requires further administrative approval.
+   *
+   * @example false
+   *
+   * @format Boolean true or false.
    *
    * @generated from field: bool need_approval = 4;
    */
   needApproval = false;
 
   /**
-   * Stores any comment that the user might have added during an operation
+   *
+   * @description Audit log comment or justification captured during the last modification or transactional operation.
+   *
+   * @example "This is a comment for audit purposes."
    *
    * @generated from field: string user_comment = 5;
    */
   userComment = "";
 
   /**
-   * Stores the sales order ID
+   *
+   * @description The unique internal identifier of the parent sales order to which this reference is being attached.
+   *
+   * @example 1024
    *
    * @generated from field: uint64 sales_order_id = 10;
    */
   salesOrderId = protoInt64.zero;
 
   /**
-   * The reference context, could be billing or buying
+   *
+   * @description The operational context in which this reference is being applied (e.g., Billing).
+   *
+   * @example "SALES_ORDER_REFERENCE_CONTEXT_BILLING"
    *
    * @generated from field: Scailo.SALES_ORDER_REFERENCE_CONTEXT context = 11;
    */
   context = SALES_ORDER_REFERENCE_CONTEXT.SALES_ORDER_REFERENCE_CONTEXT_ANY_UNSPECIFIED;
 
   /**
-   * The associated ref from
+   *
+   * @description The specific module or record type from which this reference originates.
+   *
+   * @example "SALES_ORDER_REFERENCE_REF_FROM_SALES_QUOTATION"
    *
    * @generated from field: Scailo.SALES_ORDER_REFERENCE_REF_FROM ref_from = 12;
    */
   refFrom = SALES_ORDER_REFERENCE_REF_FROM.SALES_ORDER_REFERENCE_REF_FROM_ANY_UNSPECIFIED;
 
   /**
-   * The ID of the associated reference
+   *
+   * @description The unique internal identifier of the specific referenced document (e.g., the ID of the actual Sales Quotation).
+   *
+   * @example 450
    *
    * @generated from field: uint64 ref_id = 13;
    */
@@ -3477,13 +4698,13 @@ export class SalesOrderReference extends Message<SalesOrderReference> {
 
 /**
  *
- * Describes the message consisting of the list of sales order references
+ * Container message for a collection of Sales Order Reference records.
  *
  * @generated from message Scailo.SalesOrderReferencesList
  */
 export class SalesOrderReferencesList extends Message<SalesOrderReferencesList> {
   /**
-   * List of records
+   * @description An array of Sales Order Reference records.
    *
    * @generated from field: repeated Scailo.SalesOrderReference list = 1;
    */
@@ -3519,7 +4740,8 @@ export class SalesOrderReferencesList extends Message<SalesOrderReferencesList> 
 
 /**
  *
- * Describes the request payload to retrieve approved or unapproved items.
+ * Request payload structure used to search and filter Sales Order Item records.
+ * Supports pagination controls, tenancy isolation, status grouping, and text-based matching.
  *
  * @generated from message Scailo.SalesOrderItemsSearchRequest
  */
@@ -3532,9 +4754,9 @@ export class SalesOrderItemsSearchRequest extends Message<SalesOrderItemsSearchR
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -3564,9 +4786,9 @@ export class SalesOrderItemsSearchRequest extends Message<SalesOrderItemsSearchR
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -3576,9 +4798,9 @@ export class SalesOrderItemsSearchRequest extends Message<SalesOrderItemsSearchR
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -3586,9 +4808,9 @@ export class SalesOrderItemsSearchRequest extends Message<SalesOrderItemsSearchR
    *
    * @description The field used for sorting.
    *
-   * @generated from field: Scailo.SALES_ORDER_ITEM_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.SALES_ORDER_ITEM_SORT_KEY sort_key = 5;
    */
-  sortKey = SALES_ORDER_ITEM_SORT_KEY.SALES_ORDER_ITEM_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: SALES_ORDER_ITEM_SORT_KEY;
 
   /**
    *
@@ -3602,114 +4824,243 @@ export class SalesOrderItemsSearchRequest extends Message<SalesOrderItemsSearchR
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 6;
+   * @generated from field: optional string entity_uuid = 6;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
-   * The status of the items
    *
-   * @generated from field: Scailo.SALES_ORDER_ITEM_STATUS status = 7;
+   * @optional
+   *
+   * @description The field used for sorting.
+   *
+   * @generated from field: optional Scailo.SALES_ORDER_ITEM_STATUS status = 7;
    */
-  status = SALES_ORDER_ITEM_STATUS.SALES_ORDER_ITEM_STATUS_ANY_UNSPECIFIED;
+  status?: SALES_ORDER_ITEM_STATUS;
 
   /**
-   * The start range of approved timestamp
    *
-   * @generated from field: uint64 approved_on_start = 10;
+   * @optional
+   *
+   * @description Filter records approved ON or AFTER this UNIX timestamp.
+   *
+   * @example 1672531200
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 approved_on_start = 10;
    */
-  approvedOnStart = protoInt64.zero;
+  approvedOnStart?: bigint;
 
   /**
-   * The end range of approved timestamp
    *
-   * @generated from field: uint64 approved_on_end = 11;
+   * @optional
+   *
+   * @description Filter records approved ON or BEFORE this UNIX timestamp.
+   *
+   * @example 1704067199
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 approved_on_end = 11;
    */
-  approvedOnEnd = protoInt64.zero;
+  approvedOnEnd?: bigint;
 
   /**
-   * The ID of the approver
    *
-   * @generated from field: uint64 approved_by_user_id = 12;
+   * @optional
+   *
+   * @description Filter by the specific user ID who approved the records.
+   *
+   * @example 501
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 approved_by_user_id = 12;
    */
-  approvedByUserId = protoInt64.zero;
+  approvedByUserId?: bigint;
 
   /**
-   * The role ID of the approver
    *
-   * @generated from field: uint64 approver_role_id = 13;
+   * @optional
+   *
+   * @description Filter by the role ID of the approver.
+   *
+   * @example 5
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 approver_role_id = 13;
    */
-  approverRoleId = protoInt64.zero;
+  approverRoleId?: bigint;
 
   /**
-   * The ID of the sales order
    *
-   * @generated from field: uint64 sales_order_id = 20;
+   * @optional
+   *
+   * @description Filter line items belonging to a specific parent sales order.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 sales_order_id = 20;
    */
-  salesOrderId = protoInt64.zero;
+  salesOrderId?: bigint;
 
   /**
-   * Stores the ID of the sales order item with which this item is bundled with
    *
-   * @generated from field: uint64 bundled_with_id = 21;
+   * @optional
+   *
+   * @description Filter by the internal identifier of the primary sales order line item that this item is bundled with.
+   *
+   * @example 1025
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 bundled_with_id = 21;
    */
-  bundledWithId = protoInt64.zero;
+  bundledWithId?: bigint;
 
   /**
-   * The ID of the family
    *
-   * @generated from field: uint64 family_id = 22;
+   * @optional
+   *
+   * @description Filter line items belonging to a specific family.
+   *
+   * @example 505
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 family_id = 22;
    */
-  familyId = protoInt64.zero;
+  familyId?: bigint;
 
   /**
-   * The ID of the client's unit of material
    *
-   * @generated from field: uint64 client_uom_id = 23;
+   * @optional
+   *
+   * @description Filter line items requesting a specific client Unit of Measure (UOM).
+   *
+   * @example 12
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 client_uom_id = 23;
    */
-  clientUomId = protoInt64.zero;
+  clientUomId?: bigint;
 
   /**
-   * Stores the family code as given by the client
    *
-   * @generated from field: string client_family_code = 26;
+   * @optional
+   *
+   * @description Fuzzy match for the client's specific alphanumeric part number, SKU, or family code.
+   *
+   * @example "CLI-SKU-992"
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string client_family_code = 26;
    */
-  clientFamilyCode = "";
+  clientFamilyCode?: string;
 
   /**
-   * The ID of the tax group
    *
-   * @generated from field: uint64 tax_group_id = 27;
+   * @optional
+   *
+   * @description Filter line items mapped to a specific tax group.
+   *
+   * @example 4
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 tax_group_id = 27;
    */
-  taxGroupId = protoInt64.zero;
+  taxGroupId?: bigint;
 
   /**
-   * The exact delivery date of the item in the sales order
    *
-   * @generated from field: string delivery_date_exact = 28;
+   * @optional
+   *
+   * @description Filter line items scheduled for exact delivery on this specific date.
+   *
+   * @example "2023-11-15"
+   *
+   * @regex .*
+   *
+   * @format String following the standard date format (e.g., YYYY-MM-DD).
+   *
+   * @generated from field: optional string delivery_date_exact = 28;
    */
-  deliveryDateExact = "";
+  deliveryDateExact?: string;
 
   /**
-   * The start delivery date of the item in the sales order
    *
-   * @generated from field: string delivery_date_start = 29;
+   * @optional
+   *
+   * @description Filter line items scheduled for delivery ON or AFTER this specific date.
+   *
+   * @example "2023-11-01"
+   *
+   * @regex .*
+   *
+   * @format String following the standard date format (e.g., YYYY-MM-DD).
+   *
+   * @generated from field: optional string delivery_date_start = 29;
    */
-  deliveryDateStart = "";
+  deliveryDateStart?: string;
 
   /**
-   * The end delivery date of the item in the sales order
    *
-   * @generated from field: string delivery_date_end = 30;
+   * @optional
+   *
+   * @description Filter line items scheduled for delivery ON or BEFORE this specific date.
+   *
+   * @example "2023-11-30"
+   *
+   * @regex .*
+   *
+   * @format String following the standard date format (e.g., YYYY-MM-DD).
+   *
+   * @generated from field: optional string delivery_date_end = 30;
    */
-  deliveryDateEnd = "";
+  deliveryDateEnd?: string;
 
   /**
-   * Describes the key with which the search operation needs to be performed
    *
-   * @generated from field: string search_key = 40;
+   * @optional
+   *
+   * @description The search string to match against reference IDs.
+   *
+   * @example "Medical 2023"
+   *
+   * @regex .*
+   *
+   * @format: May contain any UTF-8 characters.
+   *
+   * @generated from field: optional string search_key = 40;
    */
-  searchKey = "";
+  searchKey?: string;
 
   constructor(data?: PartialMessage<SalesOrderItemsSearchRequest>) {
     super();
@@ -3719,27 +5070,27 @@ export class SalesOrderItemsSearchRequest extends Message<SalesOrderItemsSearchR
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.SalesOrderItemsSearchRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(SALES_ORDER_ITEM_SORT_KEY) },
-    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 7, name: "status", kind: "enum", T: proto3.getEnumType(SALES_ORDER_ITEM_STATUS) },
-    { no: 10, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 11, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 12, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 13, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 20, name: "sales_order_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 21, name: "bundled_with_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 22, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 23, name: "client_uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 26, name: "client_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 27, name: "tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 28, name: "delivery_date_exact", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 29, name: "delivery_date_start", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 30, name: "delivery_date_end", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 40, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(SALES_ORDER_ITEM_SORT_KEY), opt: true },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 7, name: "status", kind: "enum", T: proto3.getEnumType(SALES_ORDER_ITEM_STATUS), opt: true },
+    { no: 10, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 11, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 12, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 13, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 20, name: "sales_order_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 21, name: "bundled_with_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 22, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 23, name: "client_uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 26, name: "client_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 27, name: "tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 28, name: "delivery_date_exact", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 29, name: "delivery_date_start", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 30, name: "delivery_date_end", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 40, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesOrderItemsSearchRequest {
@@ -3761,7 +5112,8 @@ export class SalesOrderItemsSearchRequest extends Message<SalesOrderItemsSearchR
 
 /**
  *
- * Describes the response to a pagination items request
+ * Paginated response packet containing a subset of Sales Order Item records.
+ * Includes complete operational state parameters for rendering frontend data grids and tables.
  *
  * @generated from message Scailo.SalesOrdersServicePaginatedItemsResponse
  */
@@ -3837,27 +5189,56 @@ export class SalesOrdersServicePaginatedItemsResponse extends Message<SalesOrder
 
 /**
  *
- * Describes the parameters necessary to create a sales order contact
+ * Request message for assigning a specific contact person (associate) to a Sales Order.
+ * This operation creates a linkage between the order and a designated individual belonging
+ * to the customer, explicitly identifying who is in charge of or accountable for the sales order from the client's side.
  *
  * @generated from message Scailo.SalesOrdersServiceContactCreateRequest
  */
 export class SalesOrdersServiceContactCreateRequest extends Message<SalesOrdersServiceContactCreateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * Stores the sales order ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the parent sales order to which this contact is being assigned.
+   *
+   * @example 1024
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 sales_order_id = 10;
    */
   salesOrderId = protoInt64.zero;
 
   /**
-   * Stores the associate ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the associate being assigned to the order.
+   *
+   * @example 55
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 associate_id = 11;
    */
@@ -3871,7 +5252,7 @@ export class SalesOrdersServiceContactCreateRequest extends Message<SalesOrdersS
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.SalesOrdersServiceContactCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 10, name: "sales_order_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 11, name: "associate_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
@@ -3895,7 +5276,10 @@ export class SalesOrdersServiceContactCreateRequest extends Message<SalesOrdersS
 
 /**
  *
- * Describes the parameters that constitute a sales order contact
+ * Represents the finalized state of a Sales Order Contact mapping.
+ * This entity securely binds a designated associate (the client's point of contact)
+ * to the parent order, tracking accountability, approval workflows, and providing
+ * both internal IDs and unpredictable UUIDs for secure downstream referencing.
  *
  * @generated from message Scailo.SalesOrderContact
  */
@@ -3928,35 +5312,53 @@ export class SalesOrderContact extends Message<SalesOrderContact> {
 
   /**
    *
-   * @description The approval state of the record
+   * @description A boolean flag indicating whether this specific record requires further administrative approval.
+   *
+   * @example false
+   *
+   * @format Boolean true or false.
    *
    * @generated from field: bool need_approval = 4;
    */
   needApproval = false;
 
   /**
-   * Stores any comment that the user might have added during an operation
+   *
+   * @description Audit log comment or justification captured during the last modification or transactional operation.
+   *
+   * @example "Assigned primary warehouse manager as the main contact."
    *
    * @generated from field: string user_comment = 5;
    */
   userComment = "";
 
   /**
-   * Stores the sales order ID
+   *
+   * @description The unique internal identifier of the parent sales order to which this contact belongs.
+   *
+   * @example 1024
    *
    * @generated from field: uint64 sales_order_id = 10;
    */
   salesOrderId = protoInt64.zero;
 
   /**
-   * Stores the associate ID
+   *
+   * @description The unique internal identifier of the associate acting as the point of contact.
+   *
+   * @example 55
    *
    * @generated from field: uint64 associate_id = 11;
    */
   associateId = protoInt64.zero;
 
   /**
-   * Stores the UUID of the associate
+   *
+   * @description The globally unique identifier (UUID) of the associate, used for secure external referencing without exposing sequential internal IDs.
+   *
+   * @example "661f9511-f39c-42d5-b827-557766551111"
+   *
+   * @format Valid v4 UUID in canonical hyphenated form.
    *
    * @generated from field: string associate_uuid = 211;
    */
@@ -3999,13 +5401,18 @@ export class SalesOrderContact extends Message<SalesOrderContact> {
 
 /**
  *
- * Describes the message consisting of the list of sales order contacts
+ * Represents a consolidated collection of designated contacts mapped to a Sales Order.
  *
  * @generated from message Scailo.SalesOrderContactsList
  */
 export class SalesOrderContactsList extends Message<SalesOrderContactsList> {
   /**
-   * List of records
+   *
+   * @description An array containing the individual associate contact records linked to the order.
+   *
+   * @example []
+   *
+   * @format Repeated array of SalesOrderContact message blocks.
    *
    * @generated from field: repeated Scailo.SalesOrderContact list = 1;
    */
@@ -4041,27 +5448,57 @@ export class SalesOrderContactsList extends Message<SalesOrderContactsList> {
 
 /**
  *
- * Describes the parameters that are part of a sales order's inventory statistics payload
+ * Represents aggregated, order-level inventory fulfillment statistics.
+ * This analytics payload is designed for high-level dashboards, providing a quick summary
+ * of the total ordered quantities versus what has physically left the warehouse (dispatched)
+ * and what has been sent back (returned).
  *
  * @generated from message Scailo.SalesOrderInventoryStatistics
  */
 export class SalesOrderInventoryStatistics extends Message<SalesOrderInventoryStatistics> {
   /**
-   * Stores the cumulative quantity of the ordered inventory
+   *
+   * @mandatory
+   *
+   * @description The cumulative quantity of inventory ordered across all line items, typically represented in the system's base unit.
+   *
+   * @example 15000
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 ordered = 1;
    */
   ordered = protoInt64.zero;
 
   /**
-   * Stores the cumulative quantity of the dispatched inventory
+   *
+   * @mandatory
+   *
+   * @description The cumulative quantity of inventory that has been successfully dispatched or shipped against this order.
+   *
+   * @example 10000
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 dispatched = 2;
    */
   dispatched = protoInt64.zero;
 
   /**
-   * Stores the cumulative quantity of the returned inventory
+   *
+   * @mandatory
+   *
+   * @description The cumulative quantity of inventory that has been returned by the client against this order.
+   *
+   * @example 500
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 returned = 3;
    */
@@ -4099,27 +5536,57 @@ export class SalesOrderInventoryStatistics extends Message<SalesOrderInventorySt
 
 /**
  *
- * Describes the parameters that are part of a sales order's billing statistics payload
+ * Represents aggregated, order-level financial and billing statistics.
+ * This analytics payload tracks the commercial progression of the order, comparing the
+ * total ordered quantities against what has been officially invoiced and what has been
+ * credited (refunded or adjusted) back to the client.
  *
  * @generated from message Scailo.SalesOrderBillingStatistics
  */
 export class SalesOrderBillingStatistics extends Message<SalesOrderBillingStatistics> {
   /**
-   * Stores the cumulative quantity of the ordered inventory
+   *
+   * @mandatory
+   *
+   * @description The cumulative quantity of inventory ordered across all line items, typically represented in the system's base unit.
+   *
+   * @example 15000
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 ordered = 1;
    */
   ordered = protoInt64.zero;
 
   /**
-   * Stores the cumulative quantity of the invoiced inventory
+   *
+   * @mandatory
+   *
+   * @description The cumulative quantity of inventory that has been successfully billed or invoiced to the client.
+   *
+   * @example 10000
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 invoiced = 2;
    */
   invoiced = protoInt64.zero;
 
   /**
-   * Stores the cumulative quantity of the credited inventory
+   *
+   * @mandatory
+   *
+   * @description The cumulative quantity of inventory that has been credited back to the client via credit notes.
+   *
+   * @example 500
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 credited = 3;
    */
@@ -4157,90 +5624,205 @@ export class SalesOrderBillingStatistics extends Message<SalesOrderBillingStatis
 
 /**
  *
- * Describes the parameters that are part of a sales order's inventory match
+ * Represents a highly granular reconciliation record mapping lifecycle quantities aggregated at the family level.
+ * This payload acts as the primary diagnostic tool for identifying operational discrepancies by tracking
+ * the exact flow of a specific item from order creation through dispatch, invoicing, returns, and credits.
+ *
+ * **Critical Context:** The values within this message are cumulative. If a single ordered family is fulfilled
+ * via multiple staggered shipments, invoices, or returns, this record aggregates those downstream transactions
+ * into a single unified total, evaluating the quantities in both the internal primary unit and the client's
+ * requested unit of measure (secondary unit).
  *
  * @generated from message Scailo.SalesOrderInventoryMatch
  */
 export class SalesOrderInventoryMatch extends Message<SalesOrderInventoryMatch> {
   /**
-   * Stores the family ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the family serving as the aggregation grouping key.
+   *
+   * @example 505
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 family_id = 1;
    */
   familyId = protoInt64.zero;
 
   /**
-   * Stores the client unit of material ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the specific Unit of Measure (UOM) requested by the client (which acts as the secondary tracking unit).
+   *
+   * @example 12
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 client_uom_id = 2;
    */
   clientUomId = protoInt64.zero;
 
   /**
-   * Stores the ordered quantity in primary unit of material
+   *
+   * @mandatory
+   *
+   * @description The cumulative ordered quantity for this family, evaluated in the system's internal primary unit of measure (in subunits).
+   *
+   * @example 5000
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 ordered_primary = 10;
    */
   orderedPrimary = protoInt64.zero;
 
   /**
-   * Stores the ordered quantity in secondary unit of material
+   *
+   * @mandatory
+   *
+   * @description The cumulative ordered quantity for this family, evaluated in the client's specifically requested unit of measure (secondary unit). Stored in subunits.
+   *
+   * @example 500
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 ordered_secondary = 20;
    */
   orderedSecondary = protoInt64.zero;
 
   /**
-   * Stores the dispatched quantity in primary unit of material
+   *
+   * @mandatory
+   *
+   * @description The cumulative dispatched (shipped) quantity aggregated across all fulfillment operations for this family, evaluated in the system's internal primary unit of measure.
+   *
+   * @example 4500
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 dispatched_primary = 11;
    */
   dispatchedPrimary = protoInt64.zero;
 
   /**
-   * Stores the dispatched quantity in secondary unit of material
+   *
+   * @mandatory
+   *
+   * @description The cumulative dispatched (shipped) quantity aggregated across all fulfillment operations for this family, evaluated in the client's requested unit of measure (secondary unit).
+   *
+   * @example 450
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 dispatched_secondary = 21;
    */
   dispatchedSecondary = protoInt64.zero;
 
   /**
-   * Stores the invoiced quantity in primary unit of material
+   *
+   * @mandatory
+   *
+   * @description The cumulative invoiced (billed) quantity aggregated across all generated invoices for this family, evaluated in the system's internal primary unit of measure.
+   *
+   * @example 4500
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 invoiced_primary = 12;
    */
   invoicedPrimary = protoInt64.zero;
 
   /**
-   * Stores the invoiced quantity in secondary unit of material
+   *
+   * @mandatory
+   *
+   * @description The cumulative invoiced (billed) quantity aggregated across all generated invoices for this family, evaluated in the client's requested unit of measure (secondary unit).
+   *
+   * @example 450
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 invoiced_secondary = 22;
    */
   invoicedSecondary = protoInt64.zero;
 
   /**
-   * Stores the returned quantity in primary unit of material
+   *
+   * @mandatory
+   *
+   * @description The cumulative returned (received back) quantity aggregated across all return operations for this family, evaluated in the system's internal primary unit of measure.
+   *
+   * @example 500
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 returned_primary = 13;
    */
   returnedPrimary = protoInt64.zero;
 
   /**
-   * Stores the returned quantity in secondary unit of material
+   *
+   * @mandatory
+   *
+   * @description The cumulative returned (received back) quantity aggregated across all return operations for this family, evaluated in the client's requested unit of measure (secondary unit).
+   *
+   * @example 50
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 returned_secondary = 23;
    */
   returnedSecondary = protoInt64.zero;
 
   /**
-   * Stores the credited quantity in primary unit of material
+   *
+   * @mandatory
+   *
+   * @description The cumulative credited (refunded) quantity aggregated across all credit notes for this family, evaluated in the system's internal primary unit of measure.
+   *
+   * @example 500
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 credited_primary = 14;
    */
   creditedPrimary = protoInt64.zero;
 
   /**
-   * Stores the credited quantity in secondary unit of material
+   *
+   * @mandatory
+   *
+   * @description The cumulative credited (refunded) quantity aggregated across all credit notes for this family, evaluated in the client's requested unit of measure (secondary unit).
+   *
+   * @example 50
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 credited_secondary = 24;
    */
@@ -4287,13 +5869,18 @@ export class SalesOrderInventoryMatch extends Message<SalesOrderInventoryMatch> 
 
 /**
  *
- * Describes the list of inventory match families
+ * Represents a consolidated collection of detailed inventory reconciliation matches for a Sales Order.
  *
  * @generated from message Scailo.SalesOrderInventoryMatchList
  */
 export class SalesOrderInventoryMatchList extends Message<SalesOrderInventoryMatchList> {
   /**
-   * List of records
+   *
+   * @description An array containing the individual family-level inventory match records for the order.
+   *
+   * @example []
+   *
+   * @format Repeated array of SalesOrderInventoryMatch message blocks.
    *
    * @generated from field: repeated Scailo.SalesOrderInventoryMatch list = 1;
    */
@@ -4329,83 +5916,188 @@ export class SalesOrderInventoryMatchList extends Message<SalesOrderInventoryMat
 
 /**
  *
- * Describes the parameters that are part of a sales order's price match
+ * Represents a highly granular financial reconciliation record mapping revenue aggregated at the family level.
+ * This payload compares expected cumulative revenue (from the sales order) against realized cumulative revenue
+ * (from one or more sales invoices) and cumulative adjustments (from credit notes).
+ *
+ * **Critical Context:** The values within this message are cumulative totals. It groups all downstream financial
+ * transactions associated with a specific family ID, ensuring airtight accounting across both the internal primary
+ * unit of measure and the client's requested unit (secondary unit) regardless of how many individual invoices were generated.
  *
  * @generated from message Scailo.SalesOrderPriceMatch
  */
 export class SalesOrderPriceMatch extends Message<SalesOrderPriceMatch> {
   /**
-   * Stores the family ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the family serving as the aggregation grouping key.
+   *
+   * @example 505
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 family_id = 1;
    */
   familyId = protoInt64.zero;
 
   /**
-   * Stores the client unit of material ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the specific Unit of Measure (UOM) requested by the client (which acts as the secondary tracking unit).
+   *
+   * @example 12
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 client_uom_id = 2;
    */
   clientUomId = protoInt64.zero;
 
   /**
-   * Stores the ordered quantity in primary unit of material
+   *
+   * @mandatory
+   *
+   * @description The cumulative ordered quantity for this family, evaluated in the system's internal primary unit of measure (in subunits).
+   *
+   * @example 5000
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 ordered_primary = 10;
    */
   orderedPrimary = protoInt64.zero;
 
   /**
-   * Stores the ordered quantity in secondary unit of material
+   *
+   * @mandatory
+   *
+   * @description The cumulative ordered quantity for this family, evaluated in the client's specifically requested unit of measure (secondary unit). Stored in subunits.
+   *
+   * @example 500
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 ordered_secondary = 20;
    */
   orderedSecondary = protoInt64.zero;
 
   /**
-   * Stores the total ordered value (at the family level) in primary unit of material
+   *
+   * @mandatory
+   *
+   * @description The cumulative expected monetary value for the entire ordered quantity of this family, represented in the base currency subunit (e.g., cents).
+   *
+   * @example 250000
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 ordered_total_value = 30;
    */
   orderedTotalValue = protoInt64.zero;
 
   /**
-   * Stores the invoiced quantity in primary unit of material
+   *
+   * @mandatory
+   *
+   * @description The cumulative invoiced (billed) quantity aggregated across all generated invoices for this family, evaluated in the system's internal primary unit of measure.
+   *
+   * @example 4500
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 invoiced_primary = 12;
    */
   invoicedPrimary = protoInt64.zero;
 
   /**
-   * Stores the invoiced quantity in secondary unit of material
+   *
+   * @mandatory
+   *
+   * @description The cumulative invoiced (billed) quantity aggregated across all generated invoices for this family, evaluated in the client's requested unit of measure (secondary unit).
+   *
+   * @example 450
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 invoiced_secondary = 22;
    */
   invoicedSecondary = protoInt64.zero;
 
   /**
-   * Stores the total invoiced value (at the family level) in primary unit of material
+   *
+   * @mandatory
+   *
+   * @description The cumulative actual billed monetary value for this family, aggregated across all downstream sales invoices. Represented in the base currency subunit.
+   *
+   * @example 225000
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 invoiced_total_value = 32;
    */
   invoicedTotalValue = protoInt64.zero;
 
   /**
-   * Stores the credited quantity in primary unit of material
+   *
+   * @mandatory
+   *
+   * @description The cumulative credited (refunded) quantity aggregated across all credit notes for this family, evaluated in the system's internal primary unit of measure.
+   *
+   * @example 500
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 credited_primary = 14;
    */
   creditedPrimary = protoInt64.zero;
 
   /**
-   * Stores the credited quantity in secondary unit of material
+   *
+   * @mandatory
+   *
+   * @description The cumulative credited (refunded) quantity aggregated across all credit notes for this family, evaluated in the client's requested unit of measure (secondary unit).
+   *
+   * @example 50
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 credited_secondary = 24;
    */
   creditedSecondary = protoInt64.zero;
 
   /**
-   * Stores the total credit note value (at the family level) in primary unit of material
+   *
+   * @mandatory
+   *
+   * @description The cumulative refunded monetary value for this family, aggregated across all associated credit notes. Represented in the base currency subunit.
+   *
+   * @example 25000
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 credited_total_value = 34;
    */
@@ -4451,13 +6143,18 @@ export class SalesOrderPriceMatch extends Message<SalesOrderPriceMatch> {
 
 /**
  *
- * Describes the list of inventory match families
+ * Represents a consolidated collection of detailed financial price matches for a Sales Order.
  *
  * @generated from message Scailo.SalesOrderPriceMatchList
  */
 export class SalesOrderPriceMatchList extends Message<SalesOrderPriceMatchList> {
   /**
-   * List of records
+   *
+   * @description An array containing the individual family-level price match records for the order.
+   *
+   * @example []
+   *
+   * @format Repeated array of SalesOrderPriceMatch message blocks.
    *
    * @generated from field: repeated Scailo.SalesOrderPriceMatch list = 1;
    */

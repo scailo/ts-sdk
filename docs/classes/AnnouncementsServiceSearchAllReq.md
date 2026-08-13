@@ -2,7 +2,13 @@
 
 # Class: AnnouncementsServiceSearchAllReq
 
-Describes the request payload for performing a generic search operation on records
+Broad-spectrum search and lookup request for locating and paginating announcements via text matching.
+This message encapsulates full-text query parameters, pagination controls, sorting keys,
+lifecycle status constraints, and other core references.
+
+**Note:** This is the primary message layout used for global search bars, fast-filtering dashboard
+inputs, and omni-box search utilities where users need to match loose textual terms against
+records while retaining structural pagination.
 
 **`Generated`**
 
@@ -73,7 +79,7 @@ Message\&lt;AnnouncementsServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:1460](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L1460)
+[src/announcements.scailo_pb.ts:1712](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L1712)
 
 ## Properties
 
@@ -107,13 +113,13 @@ from field: int64 count = 2;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:1376](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L1376)
+[src/announcements.scailo_pb.ts:1628](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L1628)
 
 ___
 
 ### entityUuid
 
-• **entityUuid**: `string` = `""`
+• `Optional` **entityUuid**: `string`
 
 **`Optional`**
 
@@ -137,17 +143,17 @@ If provided, must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
-from field: string entity_uuid = 6;
+from field: optional string entity_uuid = 6;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:1430](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L1430)
+[src/announcements.scailo_pb.ts:1682](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L1682)
 
 ___
 
 ### isActive
 
-• **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
+• `Optional` **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md)
 
 **`Optional`**
 
@@ -163,17 +169,17 @@ ANY
 
 **`Generated`**
 
-from field: Scailo.BOOL_FILTER is_active = 1;
+from field: optional Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:1360](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L1360)
+[src/announcements.scailo_pb.ts:1612](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L1612)
 
 ___
 
 ### offset
 
-• **offset**: `bigint` = `protoInt64.zero`
+• `Optional` **offset**: `bigint`
 
 **`Optional`**
 
@@ -197,19 +203,19 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 offset = 3;
+from field: optional uint64 offset = 3;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:1392](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L1392)
+[src/announcements.scailo_pb.ts:1644](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L1644)
 
 ___
 
 ### searchKey
 
-• **searchKey**: `string` = `""`
+• `Optional` **searchKey**: `string`
 
-**`Mandatory`**
+**`Optional`**
 
 **`Description`**
 
@@ -229,17 +235,17 @@ The search string to match against reference IDs.
 
 **`Generated`**
 
-from field: string search_key = 11;
+from field: optional string search_key = 11;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:1458](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L1458)
+[src/announcements.scailo_pb.ts:1710](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L1710)
 
 ___
 
 ### sortKey
 
-• **sortKey**: [`ANNOUNCEMENT_SORT_KEY`](../enums/ANNOUNCEMENT_SORT_KEY.md) = `ANNOUNCEMENT_SORT_KEY.ANNOUNCEMENT_SORT_KEY_ID_UNSPECIFIED`
+• `Optional` **sortKey**: [`ANNOUNCEMENT_SORT_KEY`](../enums/ANNOUNCEMENT_SORT_KEY.md)
 
 **`Optional`**
 
@@ -249,17 +255,17 @@ The field used for sorting.
 
 **`Generated`**
 
-from field: Scailo.ANNOUNCEMENT_SORT_KEY sort_key = 5;
+from field: optional Scailo.ANNOUNCEMENT_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:1414](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L1414)
+[src/announcements.scailo_pb.ts:1666](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L1666)
 
 ___
 
 ### sortOrder
 
-• **sortOrder**: [`SORT_ORDER`](../enums/SORT_ORDER.md) = `SORT_ORDER.ASCENDING_UNSPECIFIED`
+• `Optional` **sortOrder**: [`SORT_ORDER`](../enums/SORT_ORDER.md)
 
 **`Optional`**
 
@@ -275,17 +281,17 @@ DESCENDING
 
 **`Generated`**
 
-from field: Scailo.SORT_ORDER sort_order = 4;
+from field: optional Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:1404](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L1404)
+[src/announcements.scailo_pb.ts:1656](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L1656)
 
 ___
 
 ### status
 
-• **status**: [`STANDARD_LIFECYCLE_STATUS`](../enums/STANDARD_LIFECYCLE_STATUS.md) = `STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED`
+• `Optional` **status**: [`STANDARD_LIFECYCLE_STATUS`](../enums/STANDARD_LIFECYCLE_STATUS.md)
 
 **`Optional`**
 
@@ -301,11 +307,11 @@ STANDING
 
 **`Generated`**
 
-from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:1442](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L1442)
+[src/announcements.scailo_pb.ts:1694](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L1694)
 
 ___
 
@@ -315,7 +321,7 @@ ___
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:1467](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L1467)
+[src/announcements.scailo_pb.ts:1719](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L1719)
 
 ___
 
@@ -325,7 +331,7 @@ ___
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:1465](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L1465)
+[src/announcements.scailo_pb.ts:1717](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L1717)
 
 ___
 
@@ -335,7 +341,7 @@ ___
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:1466](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L1466)
+[src/announcements.scailo_pb.ts:1718](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L1718)
 
 ## Methods
 
@@ -623,7 +629,7 @@ ___
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:1490](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L1490)
+[src/announcements.scailo_pb.ts:1742](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L1742)
 
 ___
 
@@ -644,7 +650,7 @@ ___
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:1478](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L1478)
+[src/announcements.scailo_pb.ts:1730](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L1730)
 
 ___
 
@@ -665,7 +671,7 @@ ___
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:1482](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L1482)
+[src/announcements.scailo_pb.ts:1734](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L1734)
 
 ___
 
@@ -686,4 +692,4 @@ ___
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:1486](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/announcements.scailo_pb.ts#L1486)
+[src/announcements.scailo_pb.ts:1738](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/announcements.scailo_pb.ts#L1738)

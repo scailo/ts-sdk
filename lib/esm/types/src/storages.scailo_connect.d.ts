@@ -3,7 +3,9 @@ import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, Ident
 import { MethodKind } from "@bufbuild/protobuf";
 /**
  *
- * Describes the common methods applicable on each storage
+ * The StoragesService manages the full lifecycle of storages.
+ * It provides standard CRUD operations alongside a robust state machine for
+ * verification, manager approval, and completion.
  *
  * @generated from service Scailo.StoragesService
  */
@@ -11,7 +13,18 @@ export declare const StoragesService: {
     readonly typeName: "Scailo.StoragesService";
     readonly methods: {
         /**
-         * Create and send for verification
+         * Creates a new record and immediately moves it to the verification workflow.
+         *
+         * This method validates all required fields.
+         * The record is created with a `STANDARD_LIFECYCLE_STATUS.PREVERIFY` status.
+         *
+         * **Side Effects:**
+         * - Generates a unique system UUID.
+         * - Records an audit log for the "Create" action.
+         * - May trigger automated verification workflows.
+         *
+         * **Errors:**
+         * - `INVALID_ARGUMENT`: If validation rules fail.
          *
          * @generated from rpc Scailo.StoragesService.Create
          */
@@ -257,7 +270,12 @@ export declare const StoragesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View by storage's code (logs aren't returned)
+         * Retrieves a single record via the assigned internal code. In case duplicates are found, this method retrieves the latest record.
+         *
+         * **Note:** High-volume compliance data, audit records, and system logs are excluded from the response payload.
+         *
+         * **Errors:**
+         * - `NOT_FOUND`: If the provided internal code does not exist.
          *
          * @generated from rpc Scailo.StoragesService.ViewByCode
          */
@@ -301,7 +319,9 @@ export declare const StoragesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View storage's QR Code as image
+         * Generates and retrieves the visual QR Code asset mapped to a specific storage location.
+         *
+         * Returns a raw or base64-encoded image payload suitable for immediate frontend rendering, physical asset tag printing, or warehouse labeling.
          *
          * @generated from rpc Scailo.StoragesService.ViewQRImage
          */
@@ -312,7 +332,10 @@ export declare const StoragesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View storage's QR Code as string
+         * Retrieves the underlying raw alphanumeric text string embedded inside the storage unit's QR Code.
+         *
+         * This is a specialized read-only operation intended for hardware scanners, localized application decoding,
+         * deep-linking logic, or validation pipelines that require verification of the encoded URI/token before rendering.
          *
          * @generated from rpc Scailo.StoragesService.ViewQRString
          */

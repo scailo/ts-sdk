@@ -2,7 +2,9 @@
 
 # Enumeration: GOODS\_DISPATCH\_REF\_FROM
 
-Stores all the possible references from which a goods dispatch can be added
+Enumeration of the supported source record types from which a Goods Dispatch can be generated.
+This determines the operational linkage between the physical logistics/fulfillment process
+and the original commercial contract.
 
 **`Generated`**
 
@@ -21,7 +23,9 @@ from enum Scailo.GOODS_DISPATCH_REF_FROM
 
 • **GOODS\_DISPATCH\_REF\_FROM\_ANY\_UNSPECIFIED** = ``0``
 
-Used only in filters
+**`Description`**
+
+Default behavior, ignoring the source record type. Utilized primarily within search and filtering APIs to return dispatches regardless of their origin.
 
 **`Generated`**
 
@@ -29,7 +33,7 @@ from enum value: GOODS_DISPATCH_REF_FROM_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L23)
+[src/goods_dispatches.scailo_pb.ts:25](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L25)
 
 ___
 
@@ -37,7 +41,9 @@ ___
 
 • **GOODS\_DISPATCH\_REF\_FROM\_SALES\_ORDER** = ``1``
 
-Denotes that the goods dispatch originated from a sales order
+**`Description`**
+
+Denotes that the goods dispatch was generated directly against an approved, legally binding Sales Order.
 
 **`Generated`**
 
@@ -45,4 +51,4 @@ from enum value: GOODS_DISPATCH_REF_FROM_SALES_ORDER = 1;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L30)
+[src/goods_dispatches.scailo_pb.ts:32](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L32)

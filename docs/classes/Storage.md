@@ -2,7 +2,7 @@
 
 # Class: Storage
 
-Describes the parameters that are part of a standard response
+Represents a full Storage within the system.
 
 **`Generated`**
 
@@ -76,7 +76,7 @@ Message\&lt;Storage\&gt;.constructor
 
 #### Defined in
 
-[src/storages.scailo_pb.ts:353](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/storages.scailo_pb.ts#L353)
+[src/storages.scailo_pb.ts:488](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/storages.scailo_pb.ts#L488)
 
 ## Properties
 
@@ -84,7 +84,9 @@ Message\&lt;Storage\&gt;.constructor
 
 • `Optional` **approvalMetadata**: [`ApprovalMetadata`](ApprovalMetadata.md)
 
-Storages the approval metadata
+**`Description`**
+
+Detailed approval workflow state (Approver ID, Role, and Timestamps).
 
 **`Generated`**
 
@@ -92,7 +94,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-[src/storages.scailo_pb.ts:295](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/storages.scailo_pb.ts#L295)
+[src/storages.scailo_pb.ts:410](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/storages.scailo_pb.ts#L410)
 
 ___
 
@@ -100,7 +102,15 @@ ___
 
 • **code**: `string` = `""`
 
-The unique code by which the storage is classified
+**`Description`**
+
+The unique code or internal alphanumeric token used to classify the storage unit for inventory tracking.
+
+**`Example`**
+
+```ts
+"STRG-CS-A01"
+```
 
 **`Generated`**
 
@@ -108,7 +118,7 @@ from field: string code = 11;
 
 #### Defined in
 
-[src/storages.scailo_pb.ts:323](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/storages.scailo_pb.ts#L323)
+[src/storages.scailo_pb.ts:446](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/storages.scailo_pb.ts#L446)
 
 ___
 
@@ -116,7 +126,15 @@ ___
 
 • **description**: `string` = `""`
 
-The description of the storage
+**`Description`**
+
+Contextual details concerning environmental constraints, structural capacities, or unique access instructions for this storage unit.
+
+**`Example`**
+
+```ts
+"Maintained at temperature thresholds between 2-4°C. Holds standard pharmaceutical pallets."
+```
 
 **`Generated`**
 
@@ -124,7 +142,7 @@ from field: string description = 15;
 
 #### Defined in
 
-[src/storages.scailo_pb.ts:351](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/storages.scailo_pb.ts#L351)
+[src/storages.scailo_pb.ts:486](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/storages.scailo_pb.ts#L486)
 
 ___
 
@@ -148,7 +166,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-[src/storages.scailo_pb.ts:281](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/storages.scailo_pb.ts#L281)
+[src/storages.scailo_pb.ts:394](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/storages.scailo_pb.ts#L394)
 
 ___
 
@@ -156,7 +174,15 @@ ___
 
 • **isLeaf**: `boolean` = `false`
 
-Stores if this is a leaf storage or a non-leaf storage
+**`Description`**
+
+Flag determining whether this storage node is a terminal 'leaf' allocation (e.g., a specific shelf/bin holding stock) or a 'non-leaf' grouping structure (e.g., a whole aisle).
+
+**`Example`**
+
+```ts
+true
+```
 
 **`Generated`**
 
@@ -164,7 +190,7 @@ from field: bool is_leaf = 14;
 
 #### Defined in
 
-[src/storages.scailo_pb.ts:344](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/storages.scailo_pb.ts#L344)
+[src/storages.scailo_pb.ts:476](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/storages.scailo_pb.ts#L476)
 
 ___
 
@@ -172,7 +198,9 @@ ___
 
 • **logs**: [`LogbookLogConciseSLC`](LogbookLogConciseSLC.md)[] = `[]`
 
-Storages the logs of every operation performed on this storage
+**`Description`**
+
+Comprehensive audit trail of every operation performed on this record.
 
 **`Generated`**
 
@@ -180,7 +208,7 @@ from field: repeated Scailo.LogbookLogConciseSLC logs = 5;
 
 #### Defined in
 
-[src/storages.scailo_pb.ts:309](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/storages.scailo_pb.ts#L309)
+[src/storages.scailo_pb.ts:426](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/storages.scailo_pb.ts#L426)
 
 ___
 
@@ -188,7 +216,9 @@ ___
 
 • `Optional` **metadata**: [`EmployeeMetadata`](EmployeeMetadata.md)
 
-Storages the metadata of this storage
+**`Description`**
+
+Standard employee and record metadata including timestamps.
 
 **`Generated`**
 
@@ -196,7 +226,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-[src/storages.scailo_pb.ts:288](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/storages.scailo_pb.ts#L288)
+[src/storages.scailo_pb.ts:402](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/storages.scailo_pb.ts#L402)
 
 ___
 
@@ -204,7 +234,15 @@ ___
 
 • **name**: `string` = `""`
 
-The name of the storage
+**`Description`**
+
+The official or friendly descriptive name of the storage zone or unit.
+
+**`Example`**
+
+```ts
+"Cold Storage Vault Alpha"
+```
 
 **`Generated`**
 
@@ -212,7 +250,7 @@ from field: string name = 10;
 
 #### Defined in
 
-[src/storages.scailo_pb.ts:316](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/storages.scailo_pb.ts#L316)
+[src/storages.scailo_pb.ts:436](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/storages.scailo_pb.ts#L436)
 
 ___
 
@@ -220,7 +258,15 @@ ___
 
 • **parentStorageId**: `bigint` = `protoInt64.zero`
 
-The ID of the associated non-leaf parent storage (0, if the first storage that is being created is a leaf storage)
+**`Description`**
+
+The unique internal identifier of the parent non-leaf storage unit. Defaults to 0 if this is the root node or top-level layer within the storage area.
+
+**`Example`**
+
+```ts
+1024
+```
 
 **`Generated`**
 
@@ -228,7 +274,7 @@ from field: uint64 parent_storage_id = 13;
 
 #### Defined in
 
-[src/storages.scailo_pb.ts:337](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/storages.scailo_pb.ts#L337)
+[src/storages.scailo_pb.ts:466](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/storages.scailo_pb.ts#L466)
 
 ___
 
@@ -236,7 +282,9 @@ ___
 
 • **status**: [`STANDARD_LIFECYCLE_STATUS`](../enums/STANDARD_LIFECYCLE_STATUS.md) = `STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED`
 
-The status of this storage
+**`Description`**
+
+The current lifecycle status (e.g., DRAFT, VERIFIED, STANDING).
 
 **`Generated`**
 
@@ -244,7 +292,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 4;
 
 #### Defined in
 
-[src/storages.scailo_pb.ts:302](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/storages.scailo_pb.ts#L302)
+[src/storages.scailo_pb.ts:418](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/storages.scailo_pb.ts#L418)
 
 ___
 
@@ -252,7 +300,15 @@ ___
 
 • **storeId**: `bigint` = `protoInt64.zero`
 
-The ID of the associated store
+**`Description`**
+
+The unique internal identifier of the overarching parent store facility housing this storage unit.
+
+**`Example`**
+
+```ts
+4501
+```
 
 **`Generated`**
 
@@ -260,7 +316,7 @@ from field: uint64 store_id = 12;
 
 #### Defined in
 
-[src/storages.scailo_pb.ts:330](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/storages.scailo_pb.ts#L330)
+[src/storages.scailo_pb.ts:456](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/storages.scailo_pb.ts#L456)
 
 ___
 
@@ -270,7 +326,7 @@ ___
 
 #### Defined in
 
-[src/storages.scailo_pb.ts:360](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/storages.scailo_pb.ts#L360)
+[src/storages.scailo_pb.ts:495](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/storages.scailo_pb.ts#L495)
 
 ___
 
@@ -280,7 +336,7 @@ ___
 
 #### Defined in
 
-[src/storages.scailo_pb.ts:358](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/storages.scailo_pb.ts#L358)
+[src/storages.scailo_pb.ts:493](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/storages.scailo_pb.ts#L493)
 
 ___
 
@@ -290,7 +346,7 @@ ___
 
 #### Defined in
 
-[src/storages.scailo_pb.ts:359](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/storages.scailo_pb.ts#L359)
+[src/storages.scailo_pb.ts:494](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/storages.scailo_pb.ts#L494)
 
 ## Methods
 
@@ -578,7 +634,7 @@ ___
 
 #### Defined in
 
-[src/storages.scailo_pb.ts:386](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/storages.scailo_pb.ts#L386)
+[src/storages.scailo_pb.ts:521](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/storages.scailo_pb.ts#L521)
 
 ___
 
@@ -599,7 +655,7 @@ ___
 
 #### Defined in
 
-[src/storages.scailo_pb.ts:374](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/storages.scailo_pb.ts#L374)
+[src/storages.scailo_pb.ts:509](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/storages.scailo_pb.ts#L509)
 
 ___
 
@@ -620,7 +676,7 @@ ___
 
 #### Defined in
 
-[src/storages.scailo_pb.ts:378](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/storages.scailo_pb.ts#L378)
+[src/storages.scailo_pb.ts:513](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/storages.scailo_pb.ts#L513)
 
 ___
 
@@ -641,4 +697,4 @@ ___
 
 #### Defined in
 
-[src/storages.scailo_pb.ts:382](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/storages.scailo_pb.ts#L382)
+[src/storages.scailo_pb.ts:517](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/storages.scailo_pb.ts#L517)

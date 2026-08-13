@@ -31,7 +31,7 @@ from enum value: INVENTORY_INTERACTION_CATEGORY_ADJUSTED = 3;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:1046](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/base.scailo_pb.ts#L1046)
+[src/base.scailo_pb.ts:1086](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/base.scailo_pb.ts#L1086)
 
 ___
 
@@ -47,7 +47,7 @@ from enum value: INVENTORY_INTERACTION_CATEGORY_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:1025](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/base.scailo_pb.ts#L1025)
+[src/base.scailo_pb.ts:1065](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/base.scailo_pb.ts#L1065)
 
 ___
 
@@ -63,7 +63,7 @@ from enum value: INVENTORY_INTERACTION_CATEGORY_ISSUED = 1;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:1032](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/base.scailo_pb.ts#L1032)
+[src/base.scailo_pb.ts:1072](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/base.scailo_pb.ts#L1072)
 
 ___
 
@@ -79,4 +79,4 @@ from enum value: INVENTORY_INTERACTION_CATEGORY_RETURNED = 2;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:1039](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/base.scailo_pb.ts#L1039)
+[src/base.scailo_pb.ts:1079](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/base.scailo_pb.ts#L1079)

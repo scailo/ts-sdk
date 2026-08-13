@@ -10,20 +10,21 @@ import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, 
 
 /**
  *
- * Stores all the possible references from which a sales invoice can be added
+ * Enumeration of the supported source record types from which a Sales Invoice can be generated.
+ * This determines the operational linkage and financial inheritance of the billing document.
  *
  * @generated from enum Scailo.SALES_INVOICE_REF_FROM
  */
 export enum SALES_INVOICE_REF_FROM {
   /**
-   * Used only in filters
+   * @description Default behavior, ignoring the source record type. Utilized primarily within search and listing APIs.
    *
    * @generated from enum value: SALES_INVOICE_REF_FROM_ANY_UNSPECIFIED = 0;
    */
   SALES_INVOICE_REF_FROM_ANY_UNSPECIFIED = 0,
 
   /**
-   * Denotes that the sales invoice originated from a sales order
+   * @description Denotes that the sales invoice was generated directly from a fulfilled or approved Sales Order.
    *
    * @generated from enum value: SALES_INVOICE_REF_FROM_SALES_ORDER = 1;
    */
@@ -37,83 +38,83 @@ proto3.util.setEnumType(SALES_INVOICE_REF_FROM, "Scailo.SALES_INVOICE_REF_FROM",
 
 /**
  *
- * Describes the available sort keys
+ * Enumeration of fields available for sorting sales invoice search results.
  *
  * @generated from enum Scailo.SALES_INVOICE_SORT_KEY
  */
 export enum SALES_INVOICE_SORT_KEY {
   /**
-   * Fetch ordered results by id
+   * @description Default sort behavior (by internal ID).
    *
    * @generated from enum value: SALES_INVOICE_SORT_KEY_ID_UNSPECIFIED = 0;
    */
   SALES_INVOICE_SORT_KEY_ID_UNSPECIFIED = 0,
 
   /**
-   * Fetch ordered results by the creation timestamp
+   * @description Sort by the timestamp the record was initially created.
    *
    * @generated from enum value: SALES_INVOICE_SORT_KEY_CREATED_AT = 1;
    */
   SALES_INVOICE_SORT_KEY_CREATED_AT = 1,
 
   /**
-   * Fetch ordered results by the modified timestamp
+   * @description Sort by the timestamp the record was last modified.
    *
    * @generated from enum value: SALES_INVOICE_SORT_KEY_MODIFIED_AT = 2;
    */
   SALES_INVOICE_SORT_KEY_MODIFIED_AT = 2,
 
   /**
-   * Fetch ordered results by the approved on timestamp
+   * @description Sort by the official approval timestamp.
    *
    * @generated from enum value: SALES_INVOICE_SORT_KEY_APPROVED_ON = 3;
    */
   SALES_INVOICE_SORT_KEY_APPROVED_ON = 3,
 
   /**
-   * Fetch ordered results by the approved by field
+   * @description Sort by the system ID of the approving user.
    *
    * @generated from enum value: SALES_INVOICE_SORT_KEY_APPROVED_BY = 4;
    */
   SALES_INVOICE_SORT_KEY_APPROVED_BY = 4,
 
   /**
-   * Fetch ordered results by the approver's role ID
+   * @description Sort by the security role ID used by the approver.
    *
    * @generated from enum value: SALES_INVOICE_SORT_KEY_APPROVER_ROLE_ID = 5;
    */
   SALES_INVOICE_SORT_KEY_APPROVER_ROLE_ID = 5,
 
   /**
-   * Fetch ordered results by the approver's completed on timestamp
+   * @description Sort by the timestamp of record completion.
    *
    * @generated from enum value: SALES_INVOICE_SORT_KEY_COMPLETED_ON = 6;
    */
   SALES_INVOICE_SORT_KEY_COMPLETED_ON = 6,
 
   /**
-   * Fetch ordered results by the reference ID
+   * @description Sort alphabetically by the user-provided reference ID.
    *
    * @generated from enum value: SALES_INVOICE_SORT_KEY_REFERENCE_ID = 10;
    */
   SALES_INVOICE_SORT_KEY_REFERENCE_ID = 10,
 
   /**
-   * Fetch ordered results by the final ref number
+   * @description Sort alphabetically by the system-generated reference number.
    *
    * @generated from enum value: SALES_INVOICE_SORT_KEY_FINAL_REF_NUMBER = 11;
    */
   SALES_INVOICE_SORT_KEY_FINAL_REF_NUMBER = 11,
 
   /**
-   * Fetch ordered results by the amendment count
+   * @description Sort by the total number of times the sales invoice has been amended.
    *
    * @generated from enum value: SALES_INVOICE_SORT_KEY_AMENDMENT_COUNT = 18;
    */
   SALES_INVOICE_SORT_KEY_AMENDMENT_COUNT = 18,
 
   /**
-   * Fetch ordered results by the total value
+   * @description Sort by the calculated grand total value of the sales invoice.
    *
    * @generated from enum value: SALES_INVOICE_SORT_KEY_TOTAL_VALUE = 30;
    */
@@ -136,97 +137,97 @@ proto3.util.setEnumType(SALES_INVOICE_SORT_KEY, "Scailo.SALES_INVOICE_SORT_KEY",
 
 /**
  *
- * Describes the available sort keys
+ * Enumeration of fields available for sorting sales invoice item search results.
  *
  * @generated from enum Scailo.SALES_INVOICE_ITEM_SORT_KEY
  */
 export enum SALES_INVOICE_ITEM_SORT_KEY {
   /**
-   * Fetch invoiced results by id
+   * @description Default sort behavior (by internal item sequence ID).
    *
    * @generated from enum value: SALES_INVOICE_ITEM_SORT_KEY_ID_UNSPECIFIED = 0;
    */
   SALES_INVOICE_ITEM_SORT_KEY_ID_UNSPECIFIED = 0,
 
   /**
-   * Fetch invoiced results by the creation timestamp
+   * @description Sort by the timestamp the item record was initially created.
    *
    * @generated from enum value: SALES_INVOICE_ITEM_SORT_KEY_CREATED_AT = 1;
    */
   SALES_INVOICE_ITEM_SORT_KEY_CREATED_AT = 1,
 
   /**
-   * Fetch invoiced results by the modified timestamp
+   * @description Sort by the timestamp the item record was last modified.
    *
    * @generated from enum value: SALES_INVOICE_ITEM_SORT_KEY_MODIFIED_AT = 2;
    */
   SALES_INVOICE_ITEM_SORT_KEY_MODIFIED_AT = 2,
 
   /**
-   * Fetch invoiced results by the approved on timestamp
+   * @description Sort by the official approval timestamp of the item.
    *
    * @generated from enum value: SALES_INVOICE_ITEM_SORT_KEY_APPROVED_ON = 3;
    */
   SALES_INVOICE_ITEM_SORT_KEY_APPROVED_ON = 3,
 
   /**
-   * Fetch invoiced results by the approved by field
+   * @description Sort by the system ID of the approving user.
    *
    * @generated from enum value: SALES_INVOICE_ITEM_SORT_KEY_APPROVED_BY = 4;
    */
   SALES_INVOICE_ITEM_SORT_KEY_APPROVED_BY = 4,
 
   /**
-   * Fetch invoiced results by the approver's role ID
+   * @description Sort by the security role ID used by the approver.
    *
    * @generated from enum value: SALES_INVOICE_ITEM_SORT_KEY_APPROVER_ROLE_ID = 5;
    */
   SALES_INVOICE_ITEM_SORT_KEY_APPROVER_ROLE_ID = 5,
 
   /**
-   * Fetch invoiced results by the family ID
+   * @description Sort by the internal ID of the family.
    *
    * @generated from enum value: SALES_INVOICE_ITEM_SORT_KEY_FAMILY_ID = 10;
    */
   SALES_INVOICE_ITEM_SORT_KEY_FAMILY_ID = 10,
 
   /**
-   * Fetch invoiced results by the internal quantity
+   * @description Sort by the invoiced quantity evaluated in the internal unit of measure.
    *
    * @generated from enum value: SALES_INVOICE_ITEM_SORT_KEY_INTERNAL_QUANTITY = 11;
    */
   SALES_INVOICE_ITEM_SORT_KEY_INTERNAL_QUANTITY = 11,
 
   /**
-   * Fetch invoiced results by the client unit of material ID
+   * @description Sort by the internal ID of the client's requested unit of measure.
    *
    * @generated from enum value: SALES_INVOICE_ITEM_SORT_KEY_CLIENT_UOM_ID = 12;
    */
   SALES_INVOICE_ITEM_SORT_KEY_CLIENT_UOM_ID = 12,
 
   /**
-   * Fetch invoiced results by the client quantity
+   * @description Sort by the invoiced quantity evaluated in the client's unit of measure.
    *
    * @generated from enum value: SALES_INVOICE_ITEM_SORT_KEY_CLIENT_QUANTITY = 13;
    */
   SALES_INVOICE_ITEM_SORT_KEY_CLIENT_QUANTITY = 13,
 
   /**
-   * Fetch invoiced results by the client family code
+   * @description Sort alphabetically by the client's specific family code or SKU.
    *
    * @generated from enum value: SALES_INVOICE_ITEM_SORT_KEY_CLIENT_FAMILY_CODE = 14;
    */
   SALES_INVOICE_ITEM_SORT_KEY_CLIENT_FAMILY_CODE = 14,
 
   /**
-   * Fetch invoiced results by the unit price
+   * @description Sort by the invoiced base unit price.
    *
    * @generated from enum value: SALES_INVOICE_ITEM_SORT_KEY_UNIT_PRICE = 15;
    */
   SALES_INVOICE_ITEM_SORT_KEY_UNIT_PRICE = 15,
 
   /**
-   * Fetch invoiced results by the tax group ID
+   * @description Sort by the internal ID of the assigned tax group.
    *
    * @generated from enum value: SALES_INVOICE_ITEM_SORT_KEY_TAX_GROUP_ID = 16;
    */
@@ -251,27 +252,27 @@ proto3.util.setEnumType(SALES_INVOICE_ITEM_SORT_KEY, "Scailo.SALES_INVOICE_ITEM_
 
 /**
  *
- * Describes the applicable statuses of sales invoice items
+ * Enum defining the applicable lifecycle and verification statuses for sales invoice items.
  *
  * @generated from enum Scailo.SALES_INVOICE_ITEM_STATUS
  */
 export enum SALES_INVOICE_ITEM_STATUS {
   /**
-   * Denotes that status be disregarded. This is used only within search APIs
+   * @description Denotes that the status filter should be disregarded. Used exclusively within search APIs to bypass status restrictions.
    *
    * @generated from enum value: SALES_INVOICE_ITEM_STATUS_ANY_UNSPECIFIED = 0;
    */
   SALES_INVOICE_ITEM_STATUS_ANY_UNSPECIFIED = 0,
 
   /**
-   * Denotes that the sales invoice items must have been approved
+   * @description Denotes that the sales invoice item association has passed verification and is actively approved.
    *
    * @generated from enum value: SALES_INVOICE_ITEM_STATUS_APPROVED = 1;
    */
   SALES_INVOICE_ITEM_STATUS_APPROVED = 1,
 
   /**
-   * Denotes that the sales invoice items must be waiting for approval
+   * @description Denotes that the sales invoice item association is pending review and waiting for administrative approval.
    *
    * @generated from enum value: SALES_INVOICE_ITEM_STATUS_UNAPPROVED = 2;
    */
@@ -286,7 +287,11 @@ proto3.util.setEnumType(SALES_INVOICE_ITEM_STATUS, "Scailo.SALES_INVOICE_ITEM_ST
 
 /**
  *
- * Describes the parameters necessary to create a record
+ * Request message for defining and creating a new Sales Invoice within the system.
+ * This record serves as the formal billing document issued to a buyer, encapsulating
+ * the financial demands for goods or services rendered based on a source operational record
+ * (like a Sales Order). It establishes the currency, payment destination (bank account),
+ * and overarching financial adjustments applied at the invoice level.
  *
  * @generated from message Scailo.SalesInvoicesServiceCreateRequest
  */
@@ -303,16 +308,25 @@ export class SalesInvoicesServiceCreateRequest extends Message<SalesInvoicesServ
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 1;
+   * @generated from field: optional string entity_uuid = 1;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 2;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 2;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
    *
@@ -326,9 +340,9 @@ export class SalesInvoicesServiceCreateRequest extends Message<SalesInvoicesServ
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 vault_folder_id = 9;
+   * @generated from field: optional uint64 vault_folder_id = 9;
    */
-  vaultFolderId = protoInt64.zero;
+  vaultFolderId?: bigint;
 
   /**
    *
@@ -347,70 +361,158 @@ export class SalesInvoicesServiceCreateRequest extends Message<SalesInvoicesServ
   referenceId = "";
 
   /**
-   * The associated reference
+   *
+   * @mandatory
+   *
+   * @description The specific module or record type from which this invoice originates (e.g., Sales Order).
+   *
+   * @example "SALES_INVOICE_REF_FROM_SALES_ORDER"
+   *
+   * @regex ^[A-Z_]+$
+   *
+   * @format Valid SALES_INVOICE_REF_FROM enum value. Cannot be unspecified (0).
    *
    * @generated from field: Scailo.SALES_INVOICE_REF_FROM ref_from = 12;
    */
   refFrom = SALES_INVOICE_REF_FROM.SALES_INVOICE_REF_FROM_ANY_UNSPECIFIED;
 
   /**
-   * The associated ID of the reference
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the specific referenced source document (e.g., the ID of the actual Sales Order being billed).
+   *
+   * @example 1024
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 ref_id = 13;
    */
   refId = protoInt64.zero;
 
   /**
-   * The associated ID of the currency
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the currency used for all financial calculations and billing within this invoice.
+   *
+   * @example 3
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 currency_id = 14;
    */
   currencyId = protoInt64.zero;
 
   /**
-   * The associated ID of the bank account
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the organization's bank account designated to receive the payment for this invoice.
+   *
+   * @example 15
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 bank_account_id = 15;
    */
   bankAccountId = protoInt64.zero;
 
   /**
-   * Any miscellaneous cost
    *
-   * @generated from field: uint64 miscellaneous_cost = 16;
+   * @optional
+   *
+   * @description Any additional miscellaneous costs (e.g., late fees, freight charges) applied to the invoice, represented in the base currency subunit (e.g., cents).
+   *
+   * @example 1500
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 miscellaneous_cost = 16;
    */
-  miscellaneousCost = protoInt64.zero;
+  miscellaneousCost?: bigint;
 
   /**
-   * The optional discount amount
    *
-   * @generated from field: uint64 overall_discount = 17;
+   * @optional
+   *
+   * @description A flat discount amount applied across the entire invoice total, represented in the base currency subunit (e.g., cents).
+   *
+   * @example 500
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 overall_discount = 17;
    */
-  overallDiscount = protoInt64.zero;
+  overallDiscount?: bigint;
 
   /**
-   * The applicable round off amount (optional, and can be positive or negative)
    *
-   * @generated from field: int64 round_off = 18;
+   * @optional
+   *
+   * @description The applicable rounding adjustment amount to align the final invoice total. Can be positive or negative, represented in the base currency subunit.
+   *
+   * @example -15
+   *
+   * @regex ^-?[0-9]+$
+   *
+   * @format Signed 64-bit integer.
+   *
+   * @generated from field: optional int64 round_off = 18;
    */
-  roundOff = protoInt64.zero;
+  roundOff?: bigint;
 
   /**
-   * The excess tax group
    *
-   * @generated from field: uint64 cumulative_excess_tax_group_id = 19;
+   * @optional
+   *
+   * @description The unique internal identifier of an excess tax group applied at the cumulative/invoice level (e.g., for specialized regional surcharges or cumulative tax brackets).
+   *
+   * @example 6
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 cumulative_excess_tax_group_id = 19;
    */
-  cumulativeExcessTaxGroupId = protoInt64.zero;
+  cumulativeExcessTaxGroupId?: bigint;
 
   /**
-   * The excess tax amount
    *
-   * @generated from field: uint64 cumulative_excess_tax_amount = 20;
+   * @optional
+   *
+   * @description The monetary amount of the cumulative excess tax applied to the invoice, represented in the base currency subunit.
+   *
+   * @example 1250
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 cumulative_excess_tax_amount = 20;
    */
-  cumulativeExcessTaxAmount = protoInt64.zero;
+  cumulativeExcessTaxAmount?: bigint;
 
   /**
-   * The list of dynamic forms
+   *
+   * @optional
+   *
+   * @description A collection of dynamic form fields for organization-specific data.
+   *
+   * @example []
+   *
+   * @format An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
    *
    * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
    */
@@ -424,19 +526,19 @@ export class SalesInvoicesServiceCreateRequest extends Message<SalesInvoicesServ
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.SalesInvoicesServiceCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
     { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 12, name: "ref_from", kind: "enum", T: proto3.getEnumType(SALES_INVOICE_REF_FROM) },
     { no: 13, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 14, name: "currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 15, name: "bank_account_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 16, name: "miscellaneous_cost", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 17, name: "overall_discount", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 18, name: "round_off", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 19, name: "cumulative_excess_tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 20, name: "cumulative_excess_tax_amount", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 16, name: "miscellaneous_cost", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 17, name: "overall_discount", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 18, name: "round_off", kind: "scalar", T: 3 /* ScalarType.INT64 */, opt: true },
+    { no: 19, name: "cumulative_excess_tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 20, name: "cumulative_excess_tax_amount", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
     { no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
 
@@ -459,20 +561,44 @@ export class SalesInvoicesServiceCreateRequest extends Message<SalesInvoicesServ
 
 /**
  *
- * Describes the parameters necessary to update a record
+ * Request message for updating an existing Sales Invoice record.
+ * Only applicable for records in `DRAFT` or `REVISION` states.
+ * This message allows for modifying the references, consignee & buyer, currency, project linkage, costs & discounts, payment terms, and other custom form fields
+ * of an established Sales Invoice.
+ *
+ * **Note:** Only fields provided in the request will typically be updated.
+ * The unique system ID is required to locate the target record.
  *
  * @generated from message Scailo.SalesInvoicesServiceUpdateRequest
  */
 export class SalesInvoicesServiceUpdateRequest extends Message<SalesInvoicesServiceUpdateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * The ID of the record that needs to be updated
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target record that needs to be updated.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 id = 2;
    */
@@ -486,9 +612,9 @@ export class SalesInvoicesServiceUpdateRequest extends Message<SalesInvoicesServ
    *
    * @example true
    *
-   * @generated from field: bool notify_users = 3;
+   * @generated from field: optional bool notify_users = 3;
    */
-  notifyUsers = false;
+  notifyUsers?: boolean;
 
   /**
    *
@@ -502,77 +628,147 @@ export class SalesInvoicesServiceUpdateRequest extends Message<SalesInvoicesServ
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 vault_folder_id = 9;
+   * @generated from field: optional uint64 vault_folder_id = 9;
    */
-  vaultFolderId = protoInt64.zero;
+  vaultFolderId?: bigint;
 
   /**
    *
-   * @mandatory
+   * @optional
    *
-   * @description Updated alphanumeric reference ID. Must contain at least 1 character.
+   * @description A unique external reference ID for the record. Must be alphanumeric (spaces allowed). Used for cross-referencing with external systems.
    *
-   * @example "ABS-2023-001-REV"
+   * @example "ABS-2023-001"
    *
    * @regex "[0-9A-Za-z ]+$"
    *
    * @format Alphanumeric characters and spaces only. No special symbols or punctuation allowed.
    *
-   * @generated from field: string reference_id = 10;
+   * @generated from field: optional string reference_id = 10;
    */
-  referenceId = "";
+  referenceId?: string;
 
   /**
-   * The associated ID of the currency
    *
-   * @generated from field: uint64 currency_id = 14;
-   */
-  currencyId = protoInt64.zero;
-
-  /**
-   * The associated ID of the bank account
+   * @optional
    *
-   * @generated from field: uint64 bank_account_id = 15;
-   */
-  bankAccountId = protoInt64.zero;
-
-  /**
-   * Any miscellaneous cost
+   * @description The unique internal identifier of the currency used for all financial calculations and billing within this invoice.
    *
-   * @generated from field: uint64 miscellaneous_cost = 16;
-   */
-  miscellaneousCost = protoInt64.zero;
-
-  /**
-   * The optional discount amount
+   * @example 3
    *
-   * @generated from field: uint64 overall_discount = 17;
-   */
-  overallDiscount = protoInt64.zero;
-
-  /**
-   * The applicable round off amount (optional, and can be positive or negative)
+   * @regex ^[1-9][0-9]*$
    *
-   * @generated from field: int64 round_off = 18;
-   */
-  roundOff = protoInt64.zero;
-
-  /**
-   * The excess tax group
+   * @format Unsigned 64-bit integer greater than 0.
    *
-   * @generated from field: uint64 cumulative_excess_tax_group_id = 19;
+   * @generated from field: optional uint64 currency_id = 14;
    */
-  cumulativeExcessTaxGroupId = protoInt64.zero;
+  currencyId?: bigint;
 
   /**
-   * The excess tax amount
    *
-   * @generated from field: uint64 cumulative_excess_tax_amount = 20;
+   * @optional
+   *
+   * @description The unique internal identifier of the organization's bank account designated to receive the payment for this invoice.
+   *
+   * @example 15
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: optional uint64 bank_account_id = 15;
    */
-  cumulativeExcessTaxAmount = protoInt64.zero;
+  bankAccountId?: bigint;
 
   /**
-   * The list of dynamic forms
+   *
+   * @optional
+   *
+   * @description Any additional miscellaneous costs (e.g., late fees, freight charges) applied to the invoice, represented in the base currency subunit (e.g., cents).
+   *
+   * @example 1500
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 miscellaneous_cost = 16;
+   */
+  miscellaneousCost?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description A flat discount amount applied across the entire invoice total, represented in the base currency subunit (e.g., cents).
+   *
+   * @example 500
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 overall_discount = 17;
+   */
+  overallDiscount?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description The applicable rounding adjustment amount to align the final invoice total. Can be positive or negative, represented in the base currency subunit.
+   *
+   * @example -15
+   *
+   * @regex ^-?[0-9]+$
+   *
+   * @format Signed 64-bit integer.
+   *
+   * @generated from field: optional int64 round_off = 18;
+   */
+  roundOff?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description The unique internal identifier of an excess tax group applied at the cumulative/invoice level (e.g., for specialized regional surcharges or cumulative tax brackets).
+   *
+   * @example 6
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 cumulative_excess_tax_group_id = 19;
+   */
+  cumulativeExcessTaxGroupId?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description The monetary amount of the cumulative excess tax applied to the invoice, represented in the base currency subunit.
+   *
+   * @example 1250
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 cumulative_excess_tax_amount = 20;
+   */
+  cumulativeExcessTaxAmount?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description A collection of dynamic form fields for organization-specific data.
+   *
+   * @example []
+   *
+   * @format An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
    *
    * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
    */
@@ -586,18 +782,18 @@ export class SalesInvoicesServiceUpdateRequest extends Message<SalesInvoicesServ
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.SalesInvoicesServiceUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 2, name: "id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
-    { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 14, name: "currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 15, name: "bank_account_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 16, name: "miscellaneous_cost", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 17, name: "overall_discount", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 18, name: "round_off", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 19, name: "cumulative_excess_tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 20, name: "cumulative_excess_tax_amount", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 14, name: "currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 15, name: "bank_account_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 16, name: "miscellaneous_cost", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 17, name: "overall_discount", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 18, name: "round_off", kind: "scalar", T: 3 /* ScalarType.INT64 */, opt: true },
+    { no: 19, name: "cumulative_excess_tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 20, name: "cumulative_excess_tax_amount", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
     { no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
 
@@ -620,31 +816,63 @@ export class SalesInvoicesServiceUpdateRequest extends Message<SalesInvoicesServ
 
 /**
  *
- * Describes the parameters necessary to perform an autofill request
+ * Request message for triggering an autofill operation on an existing Sales Invoice.
+ * This operation automatically populates the invoice with relevant line items (and optionally services)
+ * by pulling them directly from the associated source document (e.g., the parent Sales Order).
+ *
+ * **Note:** The invoice must already be created and explicitly linked to a source reference
+ * before this operation can be invoked.
  *
  * @generated from message Scailo.SalesInvoicesServiceAutofillRequest
  */
 export class SalesInvoicesServiceAutofillRequest extends Message<SalesInvoicesServiceAutofillRequest> {
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * The UUID of the record that needs to be updated
+   *
+   * @mandatory
+   *
+   * @description The globally unique identifier (UUID) of the target sales invoice that needs to be autofilled.
+   *
+   * @example "550e8400-e29b-41d4-a716-446655440000"
+   *
+   * @regex ^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+   *
+   * @format Must be a valid v4 UUID in canonical hyphenated form.
    *
    * @generated from field: string uuid = 2;
    */
   uuid = "";
 
   /**
-   * Stores if services should also be autofilled
    *
-   * @generated from field: bool include_services = 10;
+   * @optional
+   *
+   * @description A boolean flag indicating whether service-type line items should also be pulled from the source document during the autofill operation (in addition to standard physical inventory goods).
+   *
+   * @example true
+   *
+   * @regex ^(?:true|false)$
+   *
+   * @format Boolean true or false.
+   *
+   * @generated from field: optional bool include_services = 10;
    */
-  includeServices = false;
+  includeServices?: boolean;
 
   constructor(data?: PartialMessage<SalesInvoicesServiceAutofillRequest>) {
     super();
@@ -654,9 +882,9 @@ export class SalesInvoicesServiceAutofillRequest extends Message<SalesInvoicesSe
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.SalesInvoicesServiceAutofillRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 2, name: "uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "include_services", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 10, name: "include_services", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesInvoicesServiceAutofillRequest {
@@ -678,20 +906,40 @@ export class SalesInvoicesServiceAutofillRequest extends Message<SalesInvoicesSe
 
 /**
  *
- * Stores the UUID references of the record
+ * Represents a read-only container for universally unique identifiers (UUIDs) of related external entities.
+ * This message securely exposes the downstream linkages (like the source order or currency) to external
+ * clients or frontend interfaces without revealing internal sequential IDs.
  *
  * @generated from message Scailo.SalesInvoiceAncillaryParameters
  */
 export class SalesInvoiceAncillaryParameters extends Message<SalesInvoiceAncillaryParameters> {
   /**
-   * The UUID of the ref_id (the UUID of the associated ref_id)
+   *
+   * @mandatory
+   *
+   * @description The globally unique identifier (UUID) of the associated source document (e.g., the parent Sales Order).
+   *
+   * @example "661f9511-f39c-42d5-b827-557766551111"
+   *
+   * @regex ^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+   *
+   * @format Valid v4 UUID in canonical hyphenated form.
    *
    * @generated from field: string ref_uuid = 213;
    */
   refUuid = "";
 
   /**
-   * The UUID of the currency (the UUID of the associated currency)
+   *
+   * @mandatory
+   *
+   * @description The globally unique identifier (UUID) of the currency used for financial calculations within this invoice.
+   *
+   * @example "772a8422-e18b-42d4-a815-446655442222"
+   *
+   * @regex ^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+   *
+   * @format Valid v4 UUID in canonical hyphenated form.
    *
    * @generated from field: string currency_uuid = 214;
    */
@@ -728,7 +976,15 @@ export class SalesInvoiceAncillaryParameters extends Message<SalesInvoiceAncilla
 
 /**
  *
- * Describes the parameters that are part of a standard response
+ * Represents a complete, finalized Sales Invoice entity within the system.
+ * This message encapsulates the comprehensive state of a formal billing document issued to a buyer,
+ * including its identity metadata, strict linkage to the originating operational record (e.g., Sales Order),
+ * designated payment destination (bank account), financial aggregates (taxes, discounts, and round-offs),
+ * approval lifecycle, audit history, and the complete collection of billed line items.
+ *
+ * **Note:** This payload is typically utilized in read operations (e.g., View, Search)
+ * and provides frontend clients, financial dashboards, and external accounting systems with the
+ * entire context needed to render, process, collect payment, and reconcile the invoice.
  *
  * @generated from message Scailo.SalesInvoice
  */
@@ -816,91 +1072,132 @@ export class SalesInvoice extends Message<SalesInvoice> {
   finalRefNumber = "";
 
   /**
-   * The associated reference
+   *
+   * @description The specific module or record type from which this invoice originates (e.g., Sales Order).
+   *
+   * @example "SALES_INVOICE_REF_FROM_SALES_ORDER"
    *
    * @generated from field: Scailo.SALES_INVOICE_REF_FROM ref_from = 12;
    */
   refFrom = SALES_INVOICE_REF_FROM.SALES_INVOICE_REF_FROM_ANY_UNSPECIFIED;
 
   /**
-   * The associated ID of the reference
+   *
+   * @description The unique internal identifier of the specific referenced source document (e.g., the ID of the actual Sales Order being billed).
+   *
+   * @example 1024
    *
    * @generated from field: uint64 ref_id = 13;
    */
   refId = protoInt64.zero;
 
   /**
-   * The associated ID of the currency
+   *
+   * @description The unique internal identifier of the currency used for all financial calculations and billing within this invoice.
+   *
+   * @example 3
    *
    * @generated from field: uint64 currency_id = 14;
    */
   currencyId = protoInt64.zero;
 
   /**
-   * The associated ID of the bank account
+   *
+   * @description The unique internal identifier of the organization's bank account designated to receive the payment for this invoice.
+   *
+   * @example 15
    *
    * @generated from field: uint64 bank_account_id = 15;
    */
   bankAccountId = protoInt64.zero;
 
   /**
-   * Any miscellaneous cost
+   *
+   * @description Any additional miscellaneous costs (e.g., late fees, freight charges) applied to the invoice, represented in the base currency subunit (e.g., cents).
+   *
+   * @example 1500
    *
    * @generated from field: uint64 miscellaneous_cost = 16;
    */
   miscellaneousCost = protoInt64.zero;
 
   /**
-   * The optional discount amount
+   *
+   * @description A flat discount amount applied across the entire invoice total, represented in the base currency subunit (e.g., cents).
+   *
+   * @example 500
    *
    * @generated from field: uint64 overall_discount = 17;
    */
   overallDiscount = protoInt64.zero;
 
   /**
-   * The applicable round off amount (optional, and can be positive or negative)
+   *
+   * @description The applicable rounding adjustment amount to align the final invoice total. Can be positive or negative, represented in the base currency subunit.
+   *
+   * @example -15
    *
    * @generated from field: int64 round_off = 18;
    */
   roundOff = protoInt64.zero;
 
   /**
-   * The excess tax group
+   *
+   * @description The unique internal identifier of an excess tax group applied at the cumulative/invoice level (e.g., for specialized regional surcharges or cumulative tax brackets).
+   *
+   * @example 6
    *
    * @generated from field: uint64 cumulative_excess_tax_group_id = 19;
    */
   cumulativeExcessTaxGroupId = protoInt64.zero;
 
   /**
-   * The excess tax amount
+   *
+   * @description The monetary amount of the cumulative excess tax applied to the invoice, represented in the base currency subunit.
+   *
+   * @example 1250
    *
    * @generated from field: uint64 cumulative_excess_tax_amount = 20;
    */
   cumulativeExcessTaxAmount = protoInt64.zero;
 
   /**
-   * Stores the total value of the sales invoice (as a double, which requires no adjustments)
+   *
+   * @description The calculated grand total value of the sales invoice, including all items, discounts, costs, and round-offs. Represented as a standard decimal value.
+   *
+   * @example 15250.75
+   *
+   * @format Double-precision floating-point number.
    *
    * @generated from field: double total_value = 21;
    */
   totalValue = 0;
 
   /**
-   * The number of times that the sales invoice has been amended
+   *
+   * @description The number of times that this record has been amended after approval.
+   *
+   * @example 5
    *
    * @generated from field: uint64 amendment_count = 22;
    */
   amendmentCount = protoInt64.zero;
 
   /**
-   * The list of associated sales invoice items
+   *
+   * @description The complete, aggregated list of individual line items, products, or services that constitute this sales invoice.
+   *
+   * @example []
+   *
+   * @format Repeated array of SalesOrderItem message blocks.
    *
    * @generated from field: repeated Scailo.SalesInvoiceItem list = 30;
    */
   list: SalesInvoiceItem[] = [];
 
   /**
-   * The list of dynamic forms
+   *
+   * @description Collection of organization-specific dynamic data.
    *
    * @generated from field: repeated Scailo.FormFieldDatum form_data = 40;
    */
@@ -957,87 +1254,189 @@ export class SalesInvoice extends Message<SalesInvoice> {
 
 /**
  *
- * Describes the parameters required to add an item to a sales invoice
+ * Request message for appending a billable line item to an existing Sales Invoice.
+ * This payload defines the specific family, quantities mapped between internal
+ * and client-specific units of measure, and the final commercial terms (price, tax, round-offs)
+ * for which the buyer is being formally billed.
  *
  * @generated from message Scailo.SalesInvoicesServiceItemCreateRequest
  */
 export class SalesInvoicesServiceItemCreateRequest extends Message<SalesInvoicesServiceItemCreateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * Stores the sales invoice ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the parent sales invoice to which this item will be attached.
+   *
+   * @example 1024
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 sales_invoice_id = 10;
    */
   salesInvoiceId = protoInt64.zero;
 
   /**
-   * Stores the family ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the family or catalog item being invoiced.
+   *
+   * @example 505
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 family_id = 11;
    */
   familyId = protoInt64.zero;
 
   /**
-   * The quantity (in cents) being supplied in internal unit of material
+   *
+   * @mandatory
+   *
+   * @description The invoiced quantity represented in the system's internal base unit of measure. Stored in subunits (cents) to maintain fractional precision.
+   *
+   * @example 10000
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 internal_quantity = 12;
    */
   internalQuantity = protoInt64.zero;
 
   /**
-   * Stores the ID of the client's unit of material
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the Unit of Measure (UOM) requested by the client for this item.
+   *
+   * @example 12
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 client_uom_id = 13;
    */
   clientUomId = protoInt64.zero;
 
   /**
-   * Stores the quantity (in cents) being admitted in client's unit of material
+   *
+   * @mandatory
+   *
+   * @description The invoiced quantity represented in the client's specific unit of measure. Stored in subunits (cents) to maintain fractional precision.
+   *
+   * @example 5000
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 client_quantity = 14;
    */
   clientQuantity = protoInt64.zero;
 
   /**
-   * The family code as represented by the client
    *
-   * @generated from field: string client_family_code = 15;
+   * @optional
+   *
+   * @description The client's specific alphanumeric part number, SKU, or family code used for their internal referencing.
+   *
+   * @example "CLI-SKU-992"
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string client_family_code = 15;
    */
-  clientFamilyCode = "";
+  clientFamilyCode?: string;
 
   /**
-   * The unit price of the item (as supplied to the client)
+   *
+   * @mandatory
+   *
+   * @description The invoiced price per unit for this item, represented in the base currency subunit (e.g., cents).
+   *
+   * @example 2500
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 unit_price = 16;
    */
   unitPrice = protoInt64.zero;
 
   /**
-   * The ID of the associated tax group
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the tax group or tax bracket applicable to this specific line item.
+   *
+   * @example 4
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 tax_group_id = 17;
    */
   taxGroupId = protoInt64.zero;
 
   /**
-   * The applicable round off amount (optional, and can be positive or negative)
    *
-   * @generated from field: int64 round_off = 18;
+   * @optional
+   *
+   * @description The applicable rounding adjustment amount for this specific item's financial total. Can be positive or negative, represented in the base currency subunit.
+   *
+   * @example -15
+   *
+   * @regex ^-?[0-9]+$
+   *
+   * @format Signed 64-bit integer.
+   *
+   * @generated from field: optional int64 round_off = 18;
    */
-  roundOff = protoInt64.zero;
+  roundOff?: bigint;
 
   /**
-   * Optional specifications
    *
-   * @generated from field: string specifications = 19;
+   * @optional
+   *
+   * @description Additional custom textual requirements, notes, or specifications associated with this billed item.
+   *
+   * @example "Billed per expedited shipping agreement."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string specifications = 19;
    */
-  specifications = "";
+  specifications?: string;
 
   constructor(data?: PartialMessage<SalesInvoicesServiceItemCreateRequest>) {
     super();
@@ -1047,17 +1446,17 @@ export class SalesInvoicesServiceItemCreateRequest extends Message<SalesInvoices
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.SalesInvoicesServiceItemCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 10, name: "sales_invoice_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 11, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 12, name: "internal_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 13, name: "client_uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 14, name: "client_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 15, name: "client_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 15, name: "client_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 16, name: "unit_price", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 17, name: "tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 18, name: "round_off", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 19, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 18, name: "round_off", kind: "scalar", T: 3 /* ScalarType.INT64 */, opt: true },
+    { no: 19, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesInvoicesServiceItemCreateRequest {
@@ -1079,73 +1478,156 @@ export class SalesInvoicesServiceItemCreateRequest extends Message<SalesInvoices
 
 /**
  *
- * Describes the parameters required to add an individual item as part of multiple item addition to a sales invoice
+ * Represents a single line item payload within a bulk creation request.
+ * Contains the exact same transactional parameters as a standard item creation request,
+ * omitting the parent invoice ID which is declared once at the batch level.
  *
  * @generated from message Scailo.SalesInvoicesServiceMultipleItemsSingleton
  */
 export class SalesInvoicesServiceMultipleItemsSingleton extends Message<SalesInvoicesServiceMultipleItemsSingleton> {
   /**
-   * Stores the family ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the family or catalog item being invoiced.
+   *
+   * @example 505
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 family_id = 11;
    */
   familyId = protoInt64.zero;
 
   /**
-   * The quantity (in cents) being supplied in internal unit of material
+   *
+   * @mandatory
+   *
+   * @description The invoiced quantity represented in the system's internal base unit of measure. Stored in subunits (cents) to maintain fractional precision.
+   *
+   * @example 10000
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 internal_quantity = 12;
    */
   internalQuantity = protoInt64.zero;
 
   /**
-   * Stores the ID of the client's unit of material
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the Unit of Measure (UOM) requested by the client for this item.
+   *
+   * @example 12
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 client_uom_id = 13;
    */
   clientUomId = protoInt64.zero;
 
   /**
-   * Stores the quantity (in cents) being admitted in client's unit of material
+   *
+   * @mandatory
+   *
+   * @description The invoiced quantity represented in the client's specific unit of measure. Stored in subunits (cents) to maintain fractional precision.
+   *
+   * @example 5000
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 client_quantity = 14;
    */
   clientQuantity = protoInt64.zero;
 
   /**
-   * The family code as represented by the client
    *
-   * @generated from field: string client_family_code = 15;
+   * @optional
+   *
+   * @description The client's specific alphanumeric part number, SKU, or family code used for their internal referencing.
+   *
+   * @example "CLI-SKU-992"
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string client_family_code = 15;
    */
-  clientFamilyCode = "";
+  clientFamilyCode?: string;
 
   /**
-   * The unit price of the item (as supplied to the client)
+   *
+   * @mandatory
+   *
+   * @description The invoiced price per unit for this item, represented in the base currency subunit (e.g., cents).
+   *
+   * @example 2500
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 unit_price = 16;
    */
   unitPrice = protoInt64.zero;
 
   /**
-   * The ID of the associated tax group
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the tax group or tax bracket applicable to this specific line item.
+   *
+   * @example 4
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 tax_group_id = 17;
    */
   taxGroupId = protoInt64.zero;
 
   /**
-   * The applicable round off amount (optional, and can be positive or negative)
    *
-   * @generated from field: int64 round_off = 18;
+   * @optional
+   *
+   * @description The applicable rounding adjustment amount for this specific item's financial total. Can be positive or negative, represented in the base currency subunit.
+   *
+   * @example -15
+   *
+   * @regex ^-?[0-9]+$
+   *
+   * @format Signed 64-bit integer.
+   *
+   * @generated from field: optional int64 round_off = 18;
    */
-  roundOff = protoInt64.zero;
+  roundOff?: bigint;
 
   /**
-   * Optional specifications
    *
-   * @generated from field: string specifications = 19;
+   * @optional
+   *
+   * @description Additional custom textual requirements, notes, or specifications associated with this billed item.
+   *
+   * @example "Billed per expedited shipping agreement."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string specifications = 19;
    */
-  specifications = "";
+  specifications?: string;
 
   constructor(data?: PartialMessage<SalesInvoicesServiceMultipleItemsSingleton>) {
     super();
@@ -1159,11 +1641,11 @@ export class SalesInvoicesServiceMultipleItemsSingleton extends Message<SalesInv
     { no: 12, name: "internal_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 13, name: "client_uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 14, name: "client_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 15, name: "client_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 15, name: "client_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 16, name: "unit_price", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 17, name: "tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 18, name: "round_off", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 19, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 18, name: "round_off", kind: "scalar", T: 3 /* ScalarType.INT64 */, opt: true },
+    { no: 19, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesInvoicesServiceMultipleItemsSingleton {
@@ -1185,27 +1667,54 @@ export class SalesInvoicesServiceMultipleItemsSingleton extends Message<SalesInv
 
 /**
  *
- * Describes the parameters required to add multiple items to a sales invoice
+ * Request message for appending multiple line items to a Sales Invoice in a single batch transaction.
+ * Optimized for scenarios like invoice imports or autofill operations where dozens of items
+ * are attached simultaneously to a parent record.
  *
  * @generated from message Scailo.SalesInvoicesServiceMultipleItemsCreateRequest
  */
 export class SalesInvoicesServiceMultipleItemsCreateRequest extends Message<SalesInvoicesServiceMultipleItemsCreateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * Stores the sales invoice ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the parent sales invoice to which this batch of items will be attached.
+   *
+   * @example 1024
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 sales_invoice_id = 10;
    */
   salesInvoiceId = protoInt64.zero;
 
   /**
-   * List of items
+   *
+   * @mandatory
+   *
+   * @description An array containing the individual line item payloads to be appended to the invoice.
+   *
+   * @example []
+   *
+   * @format Repeated array of SalesInvoicesServiceMultipleItemsSingleton message blocks.
    *
    * @generated from field: repeated Scailo.SalesInvoicesServiceMultipleItemsSingleton list = 11;
    */
@@ -1219,7 +1728,7 @@ export class SalesInvoicesServiceMultipleItemsCreateRequest extends Message<Sale
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.SalesInvoicesServiceMultipleItemsCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 10, name: "sales_invoice_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 11, name: "list", kind: "message", T: SalesInvoicesServiceMultipleItemsSingleton, repeated: true },
   ]);
@@ -1243,80 +1752,176 @@ export class SalesInvoicesServiceMultipleItemsCreateRequest extends Message<Sale
 
 /**
  *
- * Describes the parameters required to update an item in a sales invoice
+ * Request message for modifying the core transactional parameters of an existing billable line item within a Sales Invoice.
+ * This payload supports updating billed quantities (across both internal and client-specific units of measure),
+ * commercial terms (unit price, tax group, round-offs), and custom specifications.
+ *
+ * **Note:** These modifications are typically utilized during the draft or revision phases
+ * of the billing lifecycle, ensuring the invoice accurately reflects the final financial obligations
+ * before being officially approved and issued to the buyer.
  *
  * @generated from message Scailo.SalesInvoicesServiceItemUpdateRequest
  */
 export class SalesInvoicesServiceItemUpdateRequest extends Message<SalesInvoicesServiceItemUpdateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * The ID of the record
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target record that needs to be updated.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 id = 2;
    */
   id = protoInt64.zero;
 
   /**
-   * The quantity (in cents) being supplied in internal unit of material
+   *
+   * @mandatory
+   *
+   * @description The updated invoiced quantity represented in the system's internal base unit of measure. Stored in subunits (cents) to maintain fractional precision.
+   *
+   * @example 10000
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 internal_quantity = 12;
    */
   internalQuantity = protoInt64.zero;
 
   /**
-   * Stores the ID of the client's unit of material
+   *
+   * @mandatory
+   *
+   * @description The updated unique internal identifier of the Unit of Measure (UOM) requested by the client for this item.
+   *
+   * @example 12
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 client_uom_id = 13;
    */
   clientUomId = protoInt64.zero;
 
   /**
-   * Stores the quantity (in cents) being admitted in client's unit of material
+   *
+   * @mandatory
+   *
+   * @description The updated invoiced quantity represented in the client's specific unit of measure. Stored in subunits (cents) to maintain fractional precision.
+   *
+   * @example 5000
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 client_quantity = 14;
    */
   clientQuantity = protoInt64.zero;
 
   /**
-   * The family code as represented by the client
    *
-   * @generated from field: string client_family_code = 15;
+   * @optional
+   *
+   * @description The updated client's specific alphanumeric part number, SKU, or family code used for their internal referencing.
+   *
+   * @example "CLI-SKU-992"
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string client_family_code = 15;
    */
-  clientFamilyCode = "";
+  clientFamilyCode?: string;
 
   /**
-   * The unit price of the item (as supplied to the client)
+   *
+   * @mandatory
+   *
+   * @description The updated invoiced price per unit for this item, represented in the base currency subunit (e.g., cents).
+   *
+   * @example 2500
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 unit_price = 16;
    */
   unitPrice = protoInt64.zero;
 
   /**
-   * The ID of the associated tax group
+   *
+   * @mandatory
+   *
+   * @description The updated unique internal identifier of the tax group or tax bracket applicable to this specific line item.
+   *
+   * @example 4
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 tax_group_id = 17;
    */
   taxGroupId = protoInt64.zero;
 
   /**
-   * The applicable round off amount (optional, and can be positive or negative)
    *
-   * @generated from field: int64 round_off = 18;
+   * @optional
+   *
+   * @description The updated applicable rounding adjustment amount for this specific item's financial total. Can be positive or negative, represented in the base currency subunit.
+   *
+   * @example -15
+   *
+   * @regex ^-?[0-9]+$
+   *
+   * @format Signed 64-bit integer.
+   *
+   * @generated from field: optional int64 round_off = 18;
    */
-  roundOff = protoInt64.zero;
+  roundOff?: bigint;
 
   /**
-   * Optional specifications
    *
-   * @generated from field: string specifications = 19;
+   * @optional
+   *
+   * @description Updated additional custom textual requirements, notes, or specifications associated with this billed item.
+   *
+   * @example "Billed per expedited shipping agreement."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string specifications = 19;
    */
-  specifications = "";
+  specifications?: string;
 
   constructor(data?: PartialMessage<SalesInvoicesServiceItemUpdateRequest>) {
     super();
@@ -1326,16 +1931,16 @@ export class SalesInvoicesServiceItemUpdateRequest extends Message<SalesInvoices
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.SalesInvoicesServiceItemUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 2, name: "id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 12, name: "internal_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 13, name: "client_uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 14, name: "client_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 15, name: "client_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 15, name: "client_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 16, name: "unit_price", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 17, name: "tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 18, name: "round_off", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 19, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 18, name: "round_off", kind: "scalar", T: 3 /* ScalarType.INT64 */, opt: true },
+    { no: 19, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesInvoicesServiceItemUpdateRequest {
@@ -1357,27 +1962,57 @@ export class SalesInvoicesServiceItemUpdateRequest extends Message<SalesInvoices
 
 /**
  *
- * Describes the parameters required to update the specifications of an item in a sales invoice
+ * Request message for isolating updates strictly to the textual specifications or notes
+ * of a Sales Invoice line item.
+ * Designed for scenarios where operational instructions change without impacting any
+ * commercial terms, pricing, or quantities.
  *
  * @generated from message Scailo.SalesInvoicesServiceItemSpecificationsUpdateRequest
  */
 export class SalesInvoicesServiceItemSpecificationsUpdateRequest extends Message<SalesInvoicesServiceItemSpecificationsUpdateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * The UUID of the record
+   *
+   * @mandatory
+   *
+   * @description The globally unique identifier (UUID) of the target record that needs to be updated.
+   *
+   * @example "550e8400-e29b-41d4-a716-446655440000"
+   *
+   * @regex ^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+   *
+   * @format Must be a valid v4 UUID in canonical hyphenated form.
    *
    * @generated from field: string uuid = 2;
    */
   uuid = "";
 
   /**
-   * The specifications that should be updated
+   *
+   * @mandatory
+   *
+   * @description The completely overwritten textual requirements, manufacturing notes, or specifications for fulfilling this item.
+   *
+   * @example "Expedite handling required. Use pallet configuration A."
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
    *
    * @generated from field: string specifications = 21;
    */
@@ -1391,7 +2026,7 @@ export class SalesInvoicesServiceItemSpecificationsUpdateRequest extends Message
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.SalesInvoicesServiceItemSpecificationsUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 2, name: "uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 21, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ },
   ]);
@@ -1415,7 +2050,13 @@ export class SalesInvoicesServiceItemSpecificationsUpdateRequest extends Message
 
 /**
  *
- * Describes the parameters that constitute an item associated to a sales invoice
+ * Represents a complete, finalized Sales Invoice Item entity within the system.
+ * This message encapsulates the comprehensive state of a single product or service being formally billed to a buyer,
+ * including its relationship to the parent invoice, mapped quantities across internal and client units,
+ * commercial terms (pricing, taxes, round-offs), and custom billing specifications.
+ *
+ * **Note:** This payload is utilized in read operations to provide frontend clients, downstream financial systems,
+ * and accounting workflows with the exact, immutable state of an individual billed line item.
  *
  * @generated from message Scailo.SalesInvoiceItem
  */
@@ -1448,84 +2089,121 @@ export class SalesInvoiceItem extends Message<SalesInvoiceItem> {
 
   /**
    *
-   * @description The approval state of the record
+   * @description A boolean flag indicating whether this specific record requires further administrative approval.
+   *
+   * @example false
+   *
+   * @format Boolean true or false.
    *
    * @generated from field: bool need_approval = 4;
    */
   needApproval = false;
 
   /**
-   * Stores any comment that the user might have added during an operation
+   *
+   * @description Audit log comment or justification captured during the last modification or transactional operation.
+   *
+   * @example "This is a comment for audit purposes."
    *
    * @generated from field: string user_comment = 5;
    */
   userComment = "";
 
   /**
-   * Stores the sales invoice ID
+   *
+   * @description The unique internal identifier of the parent sales invoice to which this billed line item belongs.
+   *
+   * @example 1024
    *
    * @generated from field: uint64 sales_invoice_id = 10;
    */
   salesInvoiceId = protoInt64.zero;
 
   /**
-   * Stores the family ID
+   *
+   * @description The unique internal identifier of the family or catalog item being formally billed.
+   *
+   * @example 505
    *
    * @generated from field: uint64 family_id = 11;
    */
   familyId = protoInt64.zero;
 
   /**
-   * The quantity (in cents) being supplied in internal unit of material
+   *
+   * @description The invoiced quantity supplied, represented in the system's internal base unit of measure. Stored in subunits (cents).
+   *
+   * @example 10000
    *
    * @generated from field: uint64 internal_quantity = 12;
    */
   internalQuantity = protoInt64.zero;
 
   /**
-   * Stores the ID of the client's unit of material
+   *
+   * @description The unique internal identifier of the Unit of Measure (UOM) requested by the client for this item.
+   *
+   * @example 12
    *
    * @generated from field: uint64 client_uom_id = 13;
    */
   clientUomId = protoInt64.zero;
 
   /**
-   * Stores the quantity (in cents) being admitted in client's unit of material
+   *
+   * @description The invoiced quantity admitted and billed, represented in the client's specific unit of measure. Stored in subunits (cents).
+   *
+   * @example 5000
    *
    * @generated from field: uint64 client_quantity = 14;
    */
   clientQuantity = protoInt64.zero;
 
   /**
-   * The family code as represented by the client
+   *
+   * @description The client's specific alphanumeric part number, SKU, or family code used for their internal referencing on the invoice.
+   *
+   * @example "CLI-SKU-992"
    *
    * @generated from field: string client_family_code = 15;
    */
   clientFamilyCode = "";
 
   /**
-   * The unit price of the item (as supplied to the client)
+   *
+   * @description The agreed-upon billed price per unit for this item, represented in the base currency subunit (e.g., cents).
+   *
+   * @example 2500
    *
    * @generated from field: uint64 unit_price = 16;
    */
   unitPrice = protoInt64.zero;
 
   /**
-   * The ID of the associated tax group
+   *
+   * @description The unique internal identifier of the tax group or tax bracket applicable to this specific billed line item.
+   *
+   * @example 4
    *
    * @generated from field: uint64 tax_group_id = 17;
    */
   taxGroupId = protoInt64.zero;
 
   /**
-   * The applicable round off amount (optional, and can be positive or negative)
+   *
+   * @description The applicable rounding adjustment amount for this specific billed item's financial total. Can be positive or negative, represented in the base currency subunit.
+   *
+   * @example -15
    *
    * @generated from field: int64 round_off = 18;
    */
   roundOff = protoInt64.zero;
 
   /**
-   * Optional specifications
+   *
+   * @description Additional custom textual requirements, notes, or specifications associated with this billed item.
+   *
+   * @example "Billed per expedited shipping agreement."
    *
    * @generated from field: string specifications = 19;
    */
@@ -1575,13 +2253,13 @@ export class SalesInvoiceItem extends Message<SalesInvoiceItem> {
 
 /**
  *
- * Describes the message consisting of the list of sales invoices
+ * Container message for a collection of Sales Invoice records.
  *
  * @generated from message Scailo.SalesInvoicesList
  */
 export class SalesInvoicesList extends Message<SalesInvoicesList> {
   /**
-   * List of records
+   * @description An array of Sales Invoice records.
    *
    * @generated from field: repeated Scailo.SalesInvoice list = 1;
    */
@@ -1617,13 +2295,13 @@ export class SalesInvoicesList extends Message<SalesInvoicesList> {
 
 /**
  *
- * Describes the message consisting of the list of sales invoice items
+ * Container message for a collection of Sales Invoice Item records.
  *
  * @generated from message Scailo.SalesInvoiceItemsList
  */
 export class SalesInvoiceItemsList extends Message<SalesInvoiceItemsList> {
   /**
-   * List of records
+   * @description An array of Sales Invoice Item records.
    *
    * @generated from field: repeated Scailo.SalesInvoiceItem list = 1;
    */
@@ -1659,20 +2337,39 @@ export class SalesInvoiceItemsList extends Message<SalesInvoiceItemsList> {
 
 /**
  *
- * Describes the parameters that are required to retrieve the history of the record
+ * Represents the request payload containing the parameter constraints required to
+ * retrieve the historical audit trail and lifecycle changes of a specific sales invoice item record.
  *
  * @generated from message Scailo.SalesInvoiceItemHistoryRequest
  */
 export class SalesInvoiceItemHistoryRequest extends Message<SalesInvoiceItemHistoryRequest> {
   /**
-   * Stores the sales invoice ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target sales invoice associated with the historical record.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer greater than zero.
    *
    * @generated from field: uint64 sales_invoice_id = 10;
    */
   salesInvoiceId = protoInt64.zero;
 
   /**
-   * Stores the family ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target family associated with the historical record.
+   *
+   * @example 582
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer greater than zero.
    *
    * @generated from field: uint64 family_id = 11;
    */
@@ -1709,20 +2406,41 @@ export class SalesInvoiceItemHistoryRequest extends Message<SalesInvoiceItemHist
 
 /**
  *
- * Describes the parameters that are required to retrieve the info of a prospective sales invoice item
+ * Request message for retrieving preliminary contextual information about a prospective line item.
+ * This payload is typically utilized by frontend interfaces to dynamically fetch default pricing,
+ * historical terms, or tax configurations for a specific family prior to officially
+ * adding it to a Sales Invoice. This ensures accurate data pre-filling during the invoice creation workflow.
  *
  * @generated from message Scailo.SalesInvoiceItemProspectiveInfoRequest
  */
 export class SalesInvoiceItemProspectiveInfoRequest extends Message<SalesInvoiceItemProspectiveInfoRequest> {
   /**
-   * Stores the sales invoice ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the parent sales invoice that is currently being evaluated or constructed.
+   *
+   * @example 1024
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 sales_invoice_id = 10;
    */
   salesInvoiceId = protoInt64.zero;
 
   /**
-   * Stores the family ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the family or catalog item being evaluated for addition to the invoice.
+   *
+   * @example 505
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 family_id = 11;
    */
@@ -1759,27 +2477,58 @@ export class SalesInvoiceItemProspectiveInfoRequest extends Message<SalesInvoice
 
 /**
  *
- * Describes the request payload to retrieve the quantity that has already been added for the specific ref_from, ref_id and family_id
+ * Represents the request payload utilized to retrieve the cumulative quantity of a specific family
+ * that has already been billed (invoiced) against a given source document.
+ *
+ * **Note:** This query is a critical reconciliation tool used during the billing lifecycle to evaluate
+ * historical fulfillment and prevent over-billing against the original constraints of a Sales Order.
  *
  * @generated from message Scailo.SalesInvoicesServiceAlreadyAddedQuantityForSourceRequest
  */
 export class SalesInvoicesServiceAlreadyAddedQuantityForSourceRequest extends Message<SalesInvoicesServiceAlreadyAddedQuantityForSourceRequest> {
   /**
-   * The associated reference
+   *
+   * @mandatory
+   *
+   * @description The specific module or record type from which the invoice originates and against which the billed quantity is being checked (e.g., Sales Order).
+   *
+   * @example "SALES_INVOICE_REF_FROM_SALES_ORDER"
+   *
+   * @regex ^[A-Z_]+$
+   *
+   * @format Valid SALES_INVOICE_REF_FROM enum value.
    *
    * @generated from field: Scailo.SALES_INVOICE_REF_FROM ref_from = 1;
    */
   refFrom = SALES_INVOICE_REF_FROM.SALES_INVOICE_REF_FROM_ANY_UNSPECIFIED;
 
   /**
-   * The associated ID of the reference
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the specific referenced source document (e.g., the ID of the actual Sales Order being evaluated).
+   *
+   * @example 1024
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 ref_id = 2;
    */
   refId = protoInt64.zero;
 
   /**
-   * The associated family ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the family or catalog item being queried to determine its cumulative billed quantity.
+   *
+   * @example 505
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 family_id = 3;
    */
@@ -1817,7 +2566,7 @@ export class SalesInvoicesServiceAlreadyAddedQuantityForSourceRequest extends Me
 
 /**
  *
- * Describes a pagination request to retrieve records
+ * Pagination request for retrieving slices of Sales Invoice records.
  *
  * @generated from message Scailo.SalesInvoicesServicePaginationReq
  */
@@ -1830,9 +2579,9 @@ export class SalesInvoicesServicePaginationReq extends Message<SalesInvoicesServ
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -1862,9 +2611,9 @@ export class SalesInvoicesServicePaginationReq extends Message<SalesInvoicesServ
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -1874,9 +2623,9 @@ export class SalesInvoicesServicePaginationReq extends Message<SalesInvoicesServ
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -1884,16 +2633,21 @@ export class SalesInvoicesServicePaginationReq extends Message<SalesInvoicesServ
    *
    * @description The specific field key to sort the results by.
    *
-   * @generated from field: Scailo.SALES_INVOICE_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.SALES_INVOICE_SORT_KEY sort_key = 5;
    */
-  sortKey = SALES_INVOICE_SORT_KEY.SALES_INVOICE_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: SALES_INVOICE_SORT_KEY;
 
   /**
-   * The status of this sales invoice
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
+   * @optional
+   *
+   * @description Filter results by a specific lifecycle status.
+   *
+   * @example STANDING
+   *
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   constructor(data?: PartialMessage<SalesInvoicesServicePaginationReq>) {
     super();
@@ -1903,12 +2657,12 @@ export class SalesInvoicesServicePaginationReq extends Message<SalesInvoicesServ
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.SalesInvoicesServicePaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(SALES_INVOICE_SORT_KEY) },
-    { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(SALES_INVOICE_SORT_KEY), opt: true },
+    { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesInvoicesServicePaginationReq {
@@ -1930,7 +2684,7 @@ export class SalesInvoicesServicePaginationReq extends Message<SalesInvoicesServ
 
 /**
  *
- * Describes the response to a pagination request
+ * Response message for paginated queries, including total counts for UI elements.
  *
  * @generated from message Scailo.SalesInvoicesServicePaginationResponse
  */
@@ -2006,7 +2760,12 @@ export class SalesInvoicesServicePaginationResponse extends Message<SalesInvoice
 
 /**
  *
- * Describes the base request payload of a filter search
+ * Advanced filter request for searching and paginating sales invoices using multiple logical criteria.
+ * This message encapsulates pagination controls, sorting keys, lifecycle status filters,
+ * timestamp ranges, and entity references.
+ *
+ * **Note:** This is the primary message layout used by the frontend and external API clients
+ * to build robust data-table queries, reporting views, and targeted record lookups.
  *
  * @generated from message Scailo.SalesInvoicesServiceFilterReq
  */
@@ -2019,9 +2778,9 @@ export class SalesInvoicesServiceFilterReq extends Message<SalesInvoicesServiceF
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -2051,9 +2810,9 @@ export class SalesInvoicesServiceFilterReq extends Message<SalesInvoicesServiceF
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -2063,9 +2822,9 @@ export class SalesInvoicesServiceFilterReq extends Message<SalesInvoicesServiceF
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -2073,9 +2832,9 @@ export class SalesInvoicesServiceFilterReq extends Message<SalesInvoicesServiceF
    *
    * @description The field used for sorting.
    *
-   * @generated from field: Scailo.SALES_INVOICE_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.SALES_INVOICE_SORT_KEY sort_key = 5;
    */
-  sortKey = SALES_INVOICE_SORT_KEY.SALES_INVOICE_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: SALES_INVOICE_SORT_KEY;
 
   /**
    *
@@ -2089,9 +2848,9 @@ export class SalesInvoicesServiceFilterReq extends Message<SalesInvoicesServiceF
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_start = 101;
+   * @generated from field: optional uint64 creation_timestamp_start = 101;
    */
-  creationTimestampStart = protoInt64.zero;
+  creationTimestampStart?: bigint;
 
   /**
    *
@@ -2105,9 +2864,9 @@ export class SalesInvoicesServiceFilterReq extends Message<SalesInvoicesServiceF
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_end = 102;
+   * @generated from field: optional uint64 creation_timestamp_end = 102;
    */
-  creationTimestampEnd = protoInt64.zero;
+  creationTimestampEnd?: bigint;
 
   /**
    *
@@ -2121,9 +2880,9 @@ export class SalesInvoicesServiceFilterReq extends Message<SalesInvoicesServiceF
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_start = 103;
+   * @generated from field: optional uint64 modification_timestamp_start = 103;
    */
-  modificationTimestampStart = protoInt64.zero;
+  modificationTimestampStart?: bigint;
 
   /**
    *
@@ -2137,9 +2896,9 @@ export class SalesInvoicesServiceFilterReq extends Message<SalesInvoicesServiceF
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_end = 104;
+   * @generated from field: optional uint64 modification_timestamp_end = 104;
    */
-  modificationTimestampEnd = protoInt64.zero;
+  modificationTimestampEnd?: bigint;
 
   /**
    *
@@ -2153,9 +2912,9 @@ export class SalesInvoicesServiceFilterReq extends Message<SalesInvoicesServiceF
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 8;
+   * @generated from field: optional string entity_uuid = 8;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
    *
@@ -2165,9 +2924,9 @@ export class SalesInvoicesServiceFilterReq extends Message<SalesInvoicesServiceF
    *
    * @example STANDING
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   /**
    *
@@ -2181,9 +2940,9 @@ export class SalesInvoicesServiceFilterReq extends Message<SalesInvoicesServiceF
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_start = 11;
+   * @generated from field: optional uint64 approved_on_start = 11;
    */
-  approvedOnStart = protoInt64.zero;
+  approvedOnStart?: bigint;
 
   /**
    *
@@ -2197,9 +2956,9 @@ export class SalesInvoicesServiceFilterReq extends Message<SalesInvoicesServiceF
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_end = 12;
+   * @generated from field: optional uint64 approved_on_end = 12;
    */
-  approvedOnEnd = protoInt64.zero;
+  approvedOnEnd?: bigint;
 
   /**
    *
@@ -2213,9 +2972,9 @@ export class SalesInvoicesServiceFilterReq extends Message<SalesInvoicesServiceF
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_by_user_id = 13;
+   * @generated from field: optional uint64 approved_by_user_id = 13;
    */
-  approvedByUserId = protoInt64.zero;
+  approvedByUserId?: bigint;
 
   /**
    *
@@ -2229,9 +2988,9 @@ export class SalesInvoicesServiceFilterReq extends Message<SalesInvoicesServiceF
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approver_role_id = 14;
+   * @generated from field: optional uint64 approver_role_id = 14;
    */
-  approverRoleId = protoInt64.zero;
+  approverRoleId?: bigint;
 
   /**
    *
@@ -2245,9 +3004,9 @@ export class SalesInvoicesServiceFilterReq extends Message<SalesInvoicesServiceF
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 completed_on_start = 15;
+   * @generated from field: optional uint64 completed_on_start = 15;
    */
-  completedOnStart = protoInt64.zero;
+  completedOnStart?: bigint;
 
   /**
    *
@@ -2261,9 +3020,9 @@ export class SalesInvoicesServiceFilterReq extends Message<SalesInvoicesServiceF
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 completed_on_end = 16;
+   * @generated from field: optional uint64 completed_on_end = 16;
    */
-  completedOnEnd = protoInt64.zero;
+  completedOnEnd?: bigint;
 
   /**
    *
@@ -2277,9 +3036,9 @@ export class SalesInvoicesServiceFilterReq extends Message<SalesInvoicesServiceF
    *
    * @format: Alphanumeric characters and spaces only. Can be left empty.
    *
-   * @generated from field: string reference_id = 20;
+   * @generated from field: optional string reference_id = 20;
    */
-  referenceId = "";
+  referenceId?: string;
 
   /**
    *
@@ -2293,80 +3052,169 @@ export class SalesInvoicesServiceFilterReq extends Message<SalesInvoicesServiceF
    *
    * @format: Alphanumeric characters and spaces only. Can be left empty.
    *
-   * @generated from field: string final_ref_number = 21;
+   * @generated from field: optional string final_ref_number = 21;
    */
-  finalRefNumber = "";
+  finalRefNumber?: string;
 
   /**
-   * The associated reference
    *
-   * @generated from field: Scailo.SALES_INVOICE_REF_FROM ref_from = 22;
+   * @optional
+   *
+   * @description The specific module or record type from which this invoice originates (e.g., Sales Order).
+   *
+   * @example "SALES_INVOICE_REF_FROM_SALES_ORDER"
+   *
+   * @regex ^[A-Z_]+$
+   *
+   * @format Valid SALES_INVOICE_REF_FROM enum value. Cannot be unspecified (0).
+   *
+   * @generated from field: optional Scailo.SALES_INVOICE_REF_FROM ref_from = 22;
    */
-  refFrom = SALES_INVOICE_REF_FROM.SALES_INVOICE_REF_FROM_ANY_UNSPECIFIED;
+  refFrom?: SALES_INVOICE_REF_FROM;
 
   /**
-   * The associated ID of the reference
    *
-   * @generated from field: uint64 ref_id = 23;
+   * @optional
+   *
+   * @description The unique internal identifier of the specific referenced source document (e.g., the ID of the actual Sales Order being billed).
+   *
+   * @example 1024
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: optional uint64 ref_id = 23;
    */
-  refId = protoInt64.zero;
+  refId?: bigint;
 
   /**
-   * The ID of the associated currency
    *
-   * @generated from field: uint64 currency_id = 24;
+   * @optional
+   *
+   * @description The unique internal identifier of the currency used for all financial calculations and billing within this invoice.
+   *
+   * @example 3
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: optional uint64 currency_id = 24;
    */
-  currencyId = protoInt64.zero;
+  currencyId?: bigint;
 
   /**
-   * The associated ID of the bank account
    *
-   * @generated from field: uint64 bank_account_id = 25;
+   * @optional
+   *
+   * @description The unique internal identifier of the organization's bank account designated to receive the payment for this invoice.
+   *
+   * @example 15
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: optional uint64 bank_account_id = 25;
    */
-  bankAccountId = protoInt64.zero;
+  bankAccountId?: bigint;
 
   /**
-   * The ID of the family
    *
-   * @generated from field: uint64 family_id = 40;
+   * @optional
+   *
+   * @description Filter sales invoices that contain at least one line item belonging to this specific family ID.
+   *
+   * @example 505
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 family_id = 40;
    */
-  familyId = protoInt64.zero;
+  familyId?: bigint;
 
   /**
-   * Sales Order related filters
-   * The associated consignee client ID of the linked sales order
    *
-   * @generated from field: uint64 consignee_client_id = 50;
+   * @optional
+   *
+   * @description Filter sales invoices by the unique internal identifier of the consignee client associated with the linked source document (e.g., Sales Order).
+   *
+   * @example 1050
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 consignee_client_id = 50;
    */
-  consigneeClientId = protoInt64.zero;
+  consigneeClientId?: bigint;
 
   /**
-   * The associated buyer client ID of the linked sales order
    *
-   * @generated from field: uint64 buyer_client_id = 51;
+   * @optional
+   *
+   * @description Filter sales invoices by the unique internal identifier of the buyer client (the entity financially responsible) associated with the linked source document (e.g., Sales Order).
+   *
+   * @example 1051
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 buyer_client_id = 51;
    */
-  buyerClientId = protoInt64.zero;
+  buyerClientId?: bigint;
 
   /**
-   * The ID of the associated project of the linked sales order
    *
-   * @generated from field: uint64 project_id = 52;
+   * @optional
+   *
+   * @description Filter sales invoices by the unique internal identifier of the project associated with the linked source document (e.g., Sales Order).
+   *
+   * @example 88
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 project_id = 52;
    */
-  projectId = protoInt64.zero;
+  projectId?: bigint;
 
   /**
-   * Stores the minimum value of the sales invoice (ignored if 0)
    *
-   * @generated from field: uint64 total_value_min = 70;
+   * @optional
+   *
+   * @description Filter sales invoices where the grand total value is greater than or equal to this amount. Evaluated in the base currency subunit (e.g., cents). Ignored if set to 0.
+   *
+   * @example 500000
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 total_value_min = 70;
    */
-  totalValueMin = protoInt64.zero;
+  totalValueMin?: bigint;
 
   /**
-   * Stores the maximum value of the sales invoice (ignored if 0)
    *
-   * @generated from field: uint64 total_value_max = 71;
+   * @optional
+   *
+   * @description Filter sales invoices where the grand total value is less than or equal to this amount. Evaluated in the base currency subunit (e.g., cents). Ignored if set to 0.
+   *
+   * @example 1500000
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 total_value_max = 71;
    */
-  totalValueMax = protoInt64.zero;
+  totalValueMax?: bigint;
 
   /**
    *
@@ -2387,9 +3235,9 @@ export class SalesInvoicesServiceFilterReq extends Message<SalesInvoicesServiceF
    *
    * @example true
    *
-   * @generated from field: bool include_form_data = 501;
+   * @generated from field: optional bool include_form_data = 501;
    */
-  includeFormData = false;
+  includeFormData?: boolean;
 
   constructor(data?: PartialMessage<SalesInvoicesServiceFilterReq>) {
     super();
@@ -2399,37 +3247,37 @@ export class SalesInvoicesServiceFilterReq extends Message<SalesInvoicesServiceF
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.SalesInvoicesServiceFilterReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(SALES_INVOICE_SORT_KEY) },
-    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
-    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 15, name: "completed_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(SALES_INVOICE_REF_FROM) },
-    { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 24, name: "currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 25, name: "bank_account_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 40, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 50, name: "consignee_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 51, name: "buyer_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 52, name: "project_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 70, name: "total_value_min", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 71, name: "total_value_max", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(SALES_INVOICE_SORT_KEY), opt: true },
+    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
+    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 15, name: "completed_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(SALES_INVOICE_REF_FROM), opt: true },
+    { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 24, name: "currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 25, name: "bank_account_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 40, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 50, name: "consignee_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 51, name: "buyer_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 52, name: "project_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 70, name: "total_value_min", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 71, name: "total_value_max", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
     { no: 500, name: "form_data", kind: "message", T: FormFieldDatumFilterRequest, repeated: true },
-    { no: 501, name: "include_form_data", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 501, name: "include_form_data", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesInvoicesServiceFilterReq {
@@ -2451,7 +3299,13 @@ export class SalesInvoicesServiceFilterReq extends Message<SalesInvoicesServiceF
 
 /**
  *
- * Describes the base request payload of a count search
+ * Target filter request for counting sales invoice records matching specific logical criteria.
+ * This message encapsulates lifecycle status filters, timestamp ranges, workflow markers,
+ * and entity references to determine the total size of a targeted dataset.
+ *
+ * **Note:** This is the primary message layout used by backend calculation engines, reporting
+ * services, and frontend pagination headers to evaluate total record matches dynamically
+ * before or alongside retrieving paginated results.
  *
  * @generated from message Scailo.SalesInvoicesServiceCountReq
  */
@@ -2464,9 +3318,9 @@ export class SalesInvoicesServiceCountReq extends Message<SalesInvoicesServiceCo
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -2480,9 +3334,9 @@ export class SalesInvoicesServiceCountReq extends Message<SalesInvoicesServiceCo
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_start = 101;
+   * @generated from field: optional uint64 creation_timestamp_start = 101;
    */
-  creationTimestampStart = protoInt64.zero;
+  creationTimestampStart?: bigint;
 
   /**
    *
@@ -2496,9 +3350,9 @@ export class SalesInvoicesServiceCountReq extends Message<SalesInvoicesServiceCo
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_end = 102;
+   * @generated from field: optional uint64 creation_timestamp_end = 102;
    */
-  creationTimestampEnd = protoInt64.zero;
+  creationTimestampEnd?: bigint;
 
   /**
    *
@@ -2512,9 +3366,9 @@ export class SalesInvoicesServiceCountReq extends Message<SalesInvoicesServiceCo
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_start = 103;
+   * @generated from field: optional uint64 modification_timestamp_start = 103;
    */
-  modificationTimestampStart = protoInt64.zero;
+  modificationTimestampStart?: bigint;
 
   /**
    *
@@ -2528,9 +3382,9 @@ export class SalesInvoicesServiceCountReq extends Message<SalesInvoicesServiceCo
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_end = 104;
+   * @generated from field: optional uint64 modification_timestamp_end = 104;
    */
-  modificationTimestampEnd = protoInt64.zero;
+  modificationTimestampEnd?: bigint;
 
   /**
    *
@@ -2544,9 +3398,9 @@ export class SalesInvoicesServiceCountReq extends Message<SalesInvoicesServiceCo
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 8;
+   * @generated from field: optional string entity_uuid = 8;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
    *
@@ -2556,9 +3410,9 @@ export class SalesInvoicesServiceCountReq extends Message<SalesInvoicesServiceCo
    *
    * @example STANDING
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   /**
    *
@@ -2572,9 +3426,9 @@ export class SalesInvoicesServiceCountReq extends Message<SalesInvoicesServiceCo
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_start = 11;
+   * @generated from field: optional uint64 approved_on_start = 11;
    */
-  approvedOnStart = protoInt64.zero;
+  approvedOnStart?: bigint;
 
   /**
    *
@@ -2588,9 +3442,9 @@ export class SalesInvoicesServiceCountReq extends Message<SalesInvoicesServiceCo
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_end = 12;
+   * @generated from field: optional uint64 approved_on_end = 12;
    */
-  approvedOnEnd = protoInt64.zero;
+  approvedOnEnd?: bigint;
 
   /**
    *
@@ -2604,9 +3458,9 @@ export class SalesInvoicesServiceCountReq extends Message<SalesInvoicesServiceCo
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_by_user_id = 13;
+   * @generated from field: optional uint64 approved_by_user_id = 13;
    */
-  approvedByUserId = protoInt64.zero;
+  approvedByUserId?: bigint;
 
   /**
    *
@@ -2620,9 +3474,9 @@ export class SalesInvoicesServiceCountReq extends Message<SalesInvoicesServiceCo
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approver_role_id = 14;
+   * @generated from field: optional uint64 approver_role_id = 14;
    */
-  approverRoleId = protoInt64.zero;
+  approverRoleId?: bigint;
 
   /**
    *
@@ -2636,9 +3490,9 @@ export class SalesInvoicesServiceCountReq extends Message<SalesInvoicesServiceCo
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 completed_on_start = 15;
+   * @generated from field: optional uint64 completed_on_start = 15;
    */
-  completedOnStart = protoInt64.zero;
+  completedOnStart?: bigint;
 
   /**
    *
@@ -2652,9 +3506,9 @@ export class SalesInvoicesServiceCountReq extends Message<SalesInvoicesServiceCo
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 completed_on_end = 16;
+   * @generated from field: optional uint64 completed_on_end = 16;
    */
-  completedOnEnd = protoInt64.zero;
+  completedOnEnd?: bigint;
 
   /**
    *
@@ -2668,9 +3522,9 @@ export class SalesInvoicesServiceCountReq extends Message<SalesInvoicesServiceCo
    *
    * @format: Alphanumeric characters and spaces only. Can be left empty.
    *
-   * @generated from field: string reference_id = 20;
+   * @generated from field: optional string reference_id = 20;
    */
-  referenceId = "";
+  referenceId?: string;
 
   /**
    *
@@ -2684,83 +3538,175 @@ export class SalesInvoicesServiceCountReq extends Message<SalesInvoicesServiceCo
    *
    * @format: Alphanumeric characters and spaces only. Can be left empty.
    *
-   * @generated from field: string final_ref_number = 21;
+   * @generated from field: optional string final_ref_number = 21;
    */
-  finalRefNumber = "";
+  finalRefNumber?: string;
 
   /**
-   * The associated reference
    *
-   * @generated from field: Scailo.SALES_INVOICE_REF_FROM ref_from = 22;
-   */
-  refFrom = SALES_INVOICE_REF_FROM.SALES_INVOICE_REF_FROM_ANY_UNSPECIFIED;
-
-  /**
-   * The associated ID of the reference
+   * @optional
    *
-   * @generated from field: uint64 ref_id = 23;
-   */
-  refId = protoInt64.zero;
-
-  /**
-   * The ID of the associated currency
+   * @description The specific module or record type from which this invoice originates (e.g., Sales Order).
    *
-   * @generated from field: uint64 currency_id = 24;
-   */
-  currencyId = protoInt64.zero;
-
-  /**
-   * The associated ID of the bank account
+   * @example "SALES_INVOICE_REF_FROM_SALES_ORDER"
    *
-   * @generated from field: uint64 bank_account_id = 25;
-   */
-  bankAccountId = protoInt64.zero;
-
-  /**
-   * The ID of the family
+   * @regex ^[A-Z_]+$
    *
-   * @generated from field: uint64 family_id = 40;
-   */
-  familyId = protoInt64.zero;
-
-  /**
-   * Sales Order related filters
-   * The associated consignee client ID of the linked sales order
+   * @format Valid SALES_INVOICE_REF_FROM enum value. Cannot be unspecified (0).
    *
-   * @generated from field: uint64 consignee_client_id = 50;
+   * @generated from field: optional Scailo.SALES_INVOICE_REF_FROM ref_from = 22;
    */
-  consigneeClientId = protoInt64.zero;
+  refFrom?: SALES_INVOICE_REF_FROM;
 
   /**
-   * The associated buyer client ID of the linked sales order
    *
-   * @generated from field: uint64 buyer_client_id = 51;
-   */
-  buyerClientId = protoInt64.zero;
-
-  /**
-   * The ID of the associated project of the linked sales order
+   * @optional
    *
-   * @generated from field: uint64 project_id = 52;
-   */
-  projectId = protoInt64.zero;
-
-  /**
-   * Stores the minimum value of the sales invoice (ignored if 0)
+   * @description The unique internal identifier of the specific referenced source document (e.g., the ID of the actual Sales Order being billed).
    *
-   * @generated from field: uint64 total_value_min = 70;
-   */
-  totalValueMin = protoInt64.zero;
-
-  /**
-   * Stores the maximum value of the sales invoice (ignored if 0)
+   * @example 1024
    *
-   * @generated from field: uint64 total_value_max = 71;
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: optional uint64 ref_id = 23;
    */
-  totalValueMax = protoInt64.zero;
+  refId?: bigint;
 
   /**
-   * The list of form data filters
+   *
+   * @optional
+   *
+   * @description The unique internal identifier of the currency used for all financial calculations and billing within this invoice.
+   *
+   * @example 3
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: optional uint64 currency_id = 24;
+   */
+  currencyId?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description The unique internal identifier of the organization's bank account designated to receive the payment for this invoice.
+   *
+   * @example 15
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: optional uint64 bank_account_id = 25;
+   */
+  bankAccountId?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Filter sales invoices that contain at least one line item belonging to this specific family ID.
+   *
+   * @example 505
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 family_id = 40;
+   */
+  familyId?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Filter sales invoices by the unique internal identifier of the consignee client associated with the linked source document (e.g., Sales Order).
+   *
+   * @example 1050
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 consignee_client_id = 50;
+   */
+  consigneeClientId?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Filter sales invoices by the unique internal identifier of the buyer client (the entity financially responsible) associated with the linked source document (e.g., Sales Order).
+   *
+   * @example 1051
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 buyer_client_id = 51;
+   */
+  buyerClientId?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Filter sales invoices by the unique internal identifier of the project associated with the linked source document (e.g., Sales Order).
+   *
+   * @example 88
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 project_id = 52;
+   */
+  projectId?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Filter sales invoices where the grand total value is greater than or equal to this amount. Evaluated in the base currency subunit (e.g., cents). Ignored if set to 0.
+   *
+   * @example 500000
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 total_value_min = 70;
+   */
+  totalValueMin?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Filter sales invoices where the grand total value is less than or equal to this amount. Evaluated in the base currency subunit (e.g., cents). Ignored if set to 0.
+   *
+   * @example 1500000
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 total_value_max = 71;
+   */
+  totalValueMax?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Count based on dynamic form field values.
    *
    * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
    */
@@ -2774,31 +3720,31 @@ export class SalesInvoicesServiceCountReq extends Message<SalesInvoicesServiceCo
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.SalesInvoicesServiceCountReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
-    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
-    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 15, name: "completed_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(SALES_INVOICE_REF_FROM) },
-    { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 24, name: "currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 25, name: "bank_account_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 40, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 50, name: "consignee_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 51, name: "buyer_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 52, name: "project_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 70, name: "total_value_min", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 71, name: "total_value_max", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
+    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
+    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 15, name: "completed_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(SALES_INVOICE_REF_FROM), opt: true },
+    { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 24, name: "currency_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 25, name: "bank_account_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 40, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 50, name: "consignee_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 51, name: "buyer_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 52, name: "project_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 70, name: "total_value_min", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 71, name: "total_value_max", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
     { no: 500, name: "form_data", kind: "message", T: FormFieldDatumFilterRequest, repeated: true },
   ]);
 
@@ -2821,7 +3767,13 @@ export class SalesInvoicesServiceCountReq extends Message<SalesInvoicesServiceCo
 
 /**
  *
- * Describes the request payload for performing a generic search operation on records
+ * Broad-spectrum search and lookup request for locating and paginating sales invoices via text matching.
+ * This message encapsulates full-text query parameters, pagination controls, sorting keys,
+ * lifecycle status constraints, and other core references.
+ *
+ * **Note:** This is the primary message layout used for global search bars, fast-filtering dashboard
+ * inputs, and omni-box search utilities where users need to match loose textual terms against
+ * records while retaining structural pagination.
  *
  * @generated from message Scailo.SalesInvoicesServiceSearchAllReq
  */
@@ -2834,9 +3786,9 @@ export class SalesInvoicesServiceSearchAllReq extends Message<SalesInvoicesServi
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -2866,9 +3818,9 @@ export class SalesInvoicesServiceSearchAllReq extends Message<SalesInvoicesServi
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -2878,9 +3830,9 @@ export class SalesInvoicesServiceSearchAllReq extends Message<SalesInvoicesServi
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -2888,9 +3840,9 @@ export class SalesInvoicesServiceSearchAllReq extends Message<SalesInvoicesServi
    *
    * @description The field used for sorting.
    *
-   * @generated from field: Scailo.SALES_INVOICE_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.SALES_INVOICE_SORT_KEY sort_key = 5;
    */
-  sortKey = SALES_INVOICE_SORT_KEY.SALES_INVOICE_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: SALES_INVOICE_SORT_KEY;
 
   /**
    *
@@ -2904,9 +3856,9 @@ export class SalesInvoicesServiceSearchAllReq extends Message<SalesInvoicesServi
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 6;
+   * @generated from field: optional string entity_uuid = 6;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
    *
@@ -2916,9 +3868,9 @@ export class SalesInvoicesServiceSearchAllReq extends Message<SalesInvoicesServi
    *
    * @example STANDING
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   /**
    *
@@ -2932,38 +3884,73 @@ export class SalesInvoicesServiceSearchAllReq extends Message<SalesInvoicesServi
    *
    * @format: May contain any UTF-8 characters.
    *
-   * @generated from field: string search_key = 11;
+   * @generated from field: optional string search_key = 11;
    */
-  searchKey = "";
+  searchKey?: string;
 
   /**
-   * The associated reference
    *
-   * @generated from field: Scailo.SALES_INVOICE_REF_FROM ref_from = 22;
+   * @optional
+   *
+   * @description The specific module or record type from which this invoice originates (e.g., Sales Order).
+   *
+   * @example "SALES_INVOICE_REF_FROM_SALES_ORDER"
+   *
+   * @regex ^[A-Z_]+$
+   *
+   * @format Valid SALES_INVOICE_REF_FROM enum value. Cannot be unspecified (0).
+   *
+   * @generated from field: optional Scailo.SALES_INVOICE_REF_FROM ref_from = 22;
    */
-  refFrom = SALES_INVOICE_REF_FROM.SALES_INVOICE_REF_FROM_ANY_UNSPECIFIED;
+  refFrom?: SALES_INVOICE_REF_FROM;
 
   /**
-   * The associated ID of the reference
    *
-   * @generated from field: uint64 ref_id = 23;
+   * @optional
+   *
+   * @description The unique internal identifier of the specific referenced source document (e.g., the ID of the actual Sales Order being billed).
+   *
+   * @example 1024
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: optional uint64 ref_id = 23;
    */
-  refId = protoInt64.zero;
+  refId?: bigint;
 
   /**
-   * Sales Order related filters
-   * The associated consignee client ID of the linked sales order
    *
-   * @generated from field: uint64 consignee_client_id = 50;
+   * @optional
+   *
+   * @description Filter sales invoices by the unique internal identifier of the consignee client associated with the linked source document (e.g., Sales Order).
+   *
+   * @example 1050
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 consignee_client_id = 50;
    */
-  consigneeClientId = protoInt64.zero;
+  consigneeClientId?: bigint;
 
   /**
-   * The associated buyer client ID of the linked sales order
    *
-   * @generated from field: uint64 buyer_client_id = 51;
+   * @optional
+   *
+   * @description Filter sales invoices by the unique internal identifier of the buyer client (the entity financially responsible) associated with the linked source document (e.g., Sales Order).
+   *
+   * @example 1051
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 buyer_client_id = 51;
    */
-  buyerClientId = protoInt64.zero;
+  buyerClientId?: bigint;
 
   constructor(data?: PartialMessage<SalesInvoicesServiceSearchAllReq>) {
     super();
@@ -2973,18 +3960,18 @@ export class SalesInvoicesServiceSearchAllReq extends Message<SalesInvoicesServi
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.SalesInvoicesServiceSearchAllReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(SALES_INVOICE_SORT_KEY) },
-    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
-    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(SALES_INVOICE_REF_FROM) },
-    { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 50, name: "consignee_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 51, name: "buyer_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(SALES_INVOICE_SORT_KEY), opt: true },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
+    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(SALES_INVOICE_REF_FROM), opt: true },
+    { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 50, name: "consignee_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 51, name: "buyer_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesInvoicesServiceSearchAllReq {
@@ -3006,27 +3993,59 @@ export class SalesInvoicesServiceSearchAllReq extends Message<SalesInvoicesServi
 
 /**
  *
- * Describes the parameters necessary to create a sales invoice reference
+ * Request message for creating and linking a Goods Dispatch reference to a Sales Invoice.
+ * This operation establishes a verifiable, structural relationship between the financial billing document (Invoice)
+ * and the physical fulfillment document (Goods Dispatch) that lists the physical goods dispatched from a warehouse or store.
+ *
+ * **Note:** Attaching this reference ensures strict traceability, proving that physical inventory has left
+ * the facility to justify the financial charges being levied against the buyer.
  *
  * @generated from message Scailo.SalesInvoicesServiceReferenceCreateRequest
  */
 export class SalesInvoicesServiceReferenceCreateRequest extends Message<SalesInvoicesServiceReferenceCreateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * Stores the sales invoice ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the parent sales invoice to which this goods dispatch reference is being attached.
+   *
+   * @example 1024
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 sales_invoice_id = 10;
    */
   salesInvoiceId = protoInt64.zero;
 
   /**
-   * Stores the goods dispatch ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the corresponding Goods Dispatch document, verifying the physical fulfillment of goods associated with this invoice.
+   *
+   * @example 450
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 goods_dispatch_id = 11;
    */
@@ -3040,7 +4059,7 @@ export class SalesInvoicesServiceReferenceCreateRequest extends Message<SalesInv
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.SalesInvoicesServiceReferenceCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 10, name: "sales_invoice_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 11, name: "goods_dispatch_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
@@ -3064,7 +4083,9 @@ export class SalesInvoicesServiceReferenceCreateRequest extends Message<SalesInv
 
 /**
  *
- * Describes the parameters that constitute a sales invoice reference
+ * Represents the finalized state of a reference mapping between a Sales Invoice and a Goods Dispatch.
+ * This entity securely binds the physical outbound fulfillment record to the billing document,
+ * maintaining an explicit audit trail that supports accounting reconciliation and resolves proof-of-delivery disputes.
  *
  * @generated from message Scailo.SalesInvoiceReference
  */
@@ -3097,28 +4118,47 @@ export class SalesInvoiceReference extends Message<SalesInvoiceReference> {
 
   /**
    *
-   * @description The approval state of the record
+   * @description A boolean flag indicating whether this specific record requires further administrative approval.
+   *
+   * @example false
+   *
+   * @format Boolean true or false.
    *
    * @generated from field: bool need_approval = 4;
    */
   needApproval = false;
 
   /**
-   * Stores any comment that the user might have added during an operation
+   *
+   * @description Audit log comment or justification captured during the last modification or transactional operation.
+   *
+   * @example "Attached dispatch #450 as proof of physical fulfillment."
    *
    * @generated from field: string user_comment = 5;
    */
   userComment = "";
 
   /**
-   * Stores the sales invoice ID
+   *
+   * @description The unique internal identifier of the parent sales invoice to which this reference belongs.
+   *
+   * @example 1024
    *
    * @generated from field: uint64 sales_invoice_id = 10;
    */
   salesInvoiceId = protoInt64.zero;
 
   /**
-   * Stores the goods dispatch ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the mapped Goods Dispatch document that proves physical fulfillment.
+   *
+   * @example 450
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 goods_dispatch_id = 11;
    */
@@ -3160,13 +4200,13 @@ export class SalesInvoiceReference extends Message<SalesInvoiceReference> {
 
 /**
  *
- * Describes the message consisting of the list of sales invoice references
+ * Container message for a collection of Sales Invoice Reference records.
  *
  * @generated from message Scailo.SalesInvoiceReferencesList
  */
 export class SalesInvoiceReferencesList extends Message<SalesInvoiceReferencesList> {
   /**
-   * List of records
+   * @description An array of Sales Invoice Reference records.
    *
    * @generated from field: repeated Scailo.SalesInvoiceReference list = 1;
    */
@@ -3202,7 +4242,8 @@ export class SalesInvoiceReferencesList extends Message<SalesInvoiceReferencesLi
 
 /**
  *
- * Describes the request payload to retrieve approved or unapproved items.
+ * Request payload structure used to search and filter Sales Invoice Item records.
+ * Supports pagination controls, tenancy isolation, status grouping, and text-based matching.
  *
  * @generated from message Scailo.SalesInvoiceItemsSearchRequest
  */
@@ -3215,9 +4256,9 @@ export class SalesInvoiceItemsSearchRequest extends Message<SalesInvoiceItemsSea
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -3247,9 +4288,9 @@ export class SalesInvoiceItemsSearchRequest extends Message<SalesInvoiceItemsSea
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -3259,9 +4300,9 @@ export class SalesInvoiceItemsSearchRequest extends Message<SalesInvoiceItemsSea
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -3269,9 +4310,9 @@ export class SalesInvoiceItemsSearchRequest extends Message<SalesInvoiceItemsSea
    *
    * @description The field used for sorting.
    *
-   * @generated from field: Scailo.SALES_INVOICE_ITEM_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.SALES_INVOICE_ITEM_SORT_KEY sort_key = 5;
    */
-  sortKey = SALES_INVOICE_ITEM_SORT_KEY.SALES_INVOICE_ITEM_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: SALES_INVOICE_ITEM_SORT_KEY;
 
   /**
    *
@@ -3285,86 +4326,179 @@ export class SalesInvoiceItemsSearchRequest extends Message<SalesInvoiceItemsSea
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 6;
+   * @generated from field: optional string entity_uuid = 6;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
-   * The status of the items
    *
-   * @generated from field: Scailo.SALES_INVOICE_ITEM_STATUS status = 7;
+   * @optional
+   *
+   * @description The field used for sorting.
+   *
+   * @generated from field: optional Scailo.SALES_INVOICE_ITEM_STATUS status = 7;
    */
-  status = SALES_INVOICE_ITEM_STATUS.SALES_INVOICE_ITEM_STATUS_ANY_UNSPECIFIED;
+  status?: SALES_INVOICE_ITEM_STATUS;
 
   /**
-   * The start range of approved timestamp
    *
-   * @generated from field: uint64 approved_on_start = 10;
+   * @optional
+   *
+   * @description Filter records approved ON or AFTER this UNIX timestamp.
+   *
+   * @example 1672531200
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 approved_on_start = 10;
    */
-  approvedOnStart = protoInt64.zero;
+  approvedOnStart?: bigint;
 
   /**
-   * The end range of approved timestamp
    *
-   * @generated from field: uint64 approved_on_end = 11;
+   * @optional
+   *
+   * @description Filter records approved ON or BEFORE this UNIX timestamp.
+   *
+   * @example 1704067199
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 approved_on_end = 11;
    */
-  approvedOnEnd = protoInt64.zero;
+  approvedOnEnd?: bigint;
 
   /**
-   * The ID of the approver
    *
-   * @generated from field: uint64 approved_by_user_id = 12;
+   * @optional
+   *
+   * @description Filter by the specific user ID who approved the records.
+   *
+   * @example 501
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 approved_by_user_id = 12;
    */
-  approvedByUserId = protoInt64.zero;
+  approvedByUserId?: bigint;
 
   /**
-   * The role ID of the approver
    *
-   * @generated from field: uint64 approver_role_id = 13;
+   * @optional
+   *
+   * @description Filter by the role ID of the approver.
+   *
+   * @example 5
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 approver_role_id = 13;
    */
-  approverRoleId = protoInt64.zero;
+  approverRoleId?: bigint;
 
   /**
-   * The ID of the sales invoice
    *
-   * @generated from field: uint64 sales_invoice_id = 20;
+   * @optional
+   *
+   * @description Filter line items belonging to a specific parent sales invoice.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 sales_invoice_id = 20;
    */
-  salesInvoiceId = protoInt64.zero;
+  salesInvoiceId?: bigint;
 
   /**
-   * The ID of the family
    *
-   * @generated from field: uint64 family_id = 21;
+   * @optional
+   *
+   * @description Filter line items belonging to a specific family.
+   *
+   * @example 505
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 family_id = 21;
    */
-  familyId = protoInt64.zero;
+  familyId?: bigint;
 
   /**
-   * The ID of the client's unit of material
    *
-   * @generated from field: uint64 client_uom_id = 23;
+   * @optional
+   *
+   * @description Filter line items requesting a specific client Unit of Measure (UOM).
+   *
+   * @example 12
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 client_uom_id = 23;
    */
-  clientUomId = protoInt64.zero;
+  clientUomId?: bigint;
 
   /**
-   * Stores the family code as given by the client
    *
-   * @generated from field: string client_family_code = 25;
+   * @optional
+   *
+   * @description Fuzzy match for the client's specific alphanumeric part number, SKU, or family code.
+   *
+   * @example "CLI-SKU-992"
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string client_family_code = 25;
    */
-  clientFamilyCode = "";
+  clientFamilyCode?: string;
 
   /**
-   * The ID of the tax group
    *
-   * @generated from field: uint64 tax_group_id = 27;
+   * @optional
+   *
+   * @description Filter line items mapped to a specific tax group.
+   *
+   * @example 4
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 tax_group_id = 27;
    */
-  taxGroupId = protoInt64.zero;
+  taxGroupId?: bigint;
 
   /**
-   * Describes the key with which the search operation needs to be performed
    *
-   * @generated from field: string search_key = 40;
+   * @optional
+   *
+   * @description The search string to match against reference IDs.
+   *
+   * @example "Medical 2023"
+   *
+   * @regex .*
+   *
+   * @format: May contain any UTF-8 characters.
+   *
+   * @generated from field: optional string search_key = 40;
    */
-  searchKey = "";
+  searchKey?: string;
 
   constructor(data?: PartialMessage<SalesInvoiceItemsSearchRequest>) {
     super();
@@ -3374,23 +4508,23 @@ export class SalesInvoiceItemsSearchRequest extends Message<SalesInvoiceItemsSea
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.SalesInvoiceItemsSearchRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(SALES_INVOICE_ITEM_SORT_KEY) },
-    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 7, name: "status", kind: "enum", T: proto3.getEnumType(SALES_INVOICE_ITEM_STATUS) },
-    { no: 10, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 11, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 12, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 13, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 20, name: "sales_invoice_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 21, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 23, name: "client_uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 25, name: "client_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 27, name: "tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 40, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(SALES_INVOICE_ITEM_SORT_KEY), opt: true },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 7, name: "status", kind: "enum", T: proto3.getEnumType(SALES_INVOICE_ITEM_STATUS), opt: true },
+    { no: 10, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 11, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 12, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 13, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 20, name: "sales_invoice_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 21, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 23, name: "client_uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 25, name: "client_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 27, name: "tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 40, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): SalesInvoiceItemsSearchRequest {
@@ -3412,7 +4546,8 @@ export class SalesInvoiceItemsSearchRequest extends Message<SalesInvoiceItemsSea
 
 /**
  *
- * Describes the response to a pagination items request
+ * Paginated response packet containing a subset of Sales Invoice Item records.
+ * Includes complete operational state parameters for rendering frontend data grids and tables.
  *
  * @generated from message Scailo.SalesInvoicesServicePaginatedItemsResponse
  */
@@ -3488,27 +4623,53 @@ export class SalesInvoicesServicePaginatedItemsResponse extends Message<SalesInv
 
 /**
  *
- * Describes the dispatched statistics of the sales invoice
+ * Represents the reconciliation metrics for a specific family within a Sales Invoice.
+ * This message tracks the variance between the financial obligation (what the buyer is being billed for)
+ * and the physical fulfillment (what has actually been shipped via linked Goods Dispatches).
+ *
+ * **Note:** This statistical comparison is crucial for identifying partial shipments, backorders,
+ * or potential billing discrepancies before finalizing an invoice.
  *
  * @generated from message Scailo.SalesInvoiceDispatchedStatistics
  */
 export class SalesInvoiceDispatchedStatistics extends Message<SalesInvoiceDispatchedStatistics> {
   /**
-   * Stores the ID of the family
+   *
+   * @description The unique internal identifier of the specific family or catalog item being analyzed.
+   *
+   * @example 505
    *
    * @generated from field: uint64 family_id = 1;
    */
   familyId = protoInt64.zero;
 
   /**
-   * Stores the invoiced quantity
+   *
+   * @mandatory
+   *
+   * @description The total quantity of this family that has been formally billed on the invoice. Represented in the system's internal base unit of measure (stored in subunits/cents).
+   *
+   * @example 10000
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 invoiced_quantity = 2;
    */
   invoicedQuantity = protoInt64.zero;
 
   /**
-   * Stores the dispatched quantity
+   *
+   * @mandatory
+   *
+   * @description The cumulative physical quantity of this family that has been successfully shipped or issued from the warehouse (aggregated across all linked Goods Dispatches). Represented in the system's internal base unit of measure (stored in subunits/cents).
+   *
+   * @example 10000
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 dispatched_quantity = 3;
    */
@@ -3546,12 +4707,19 @@ export class SalesInvoiceDispatchedStatistics extends Message<SalesInvoiceDispat
 
 /**
  *
- * Describes the list of dispatched statistics of the sales invoice
+ * Represents the complete collection of reconciliation metrics for a Sales Invoice.
+ * This container provides a holistic, item-by-item comparison of billed quantities versus
+ * physically dispatched quantities across the entire invoice payload.
  *
  * @generated from message Scailo.SalesInvoiceDispatchedStatisticsList
  */
 export class SalesInvoiceDispatchedStatisticsList extends Message<SalesInvoiceDispatchedStatisticsList> {
   /**
+   *
+   * @description The aggregated list of fulfillment versus billing metrics, grouped by individual families.
+   *
+   * @format Repeated array of SalesInvoiceDispatchedStatistics message blocks. Can be empty if no items or dispatches exist.
+   *
    * @generated from field: repeated Scailo.SalesInvoiceDispatchedStatistics list = 1;
    */
   list: SalesInvoiceDispatchedStatistics[] = [];

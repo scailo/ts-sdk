@@ -70,7 +70,7 @@ Message\&lt;GeneralStreamInternalSubscriber\&gt;.constructor
 
 #### Defined in
 
-[src/general_streams.scailo_pb.ts:2048](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/general_streams.scailo_pb.ts#L2048)
+[src/general_streams.scailo_pb.ts:2084](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/general_streams.scailo_pb.ts#L2084)
 
 ## Properties
 
@@ -94,7 +94,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-[src/general_streams.scailo_pb.ts:2018](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/general_streams.scailo_pb.ts#L2018)
+[src/general_streams.scailo_pb.ts:2054](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/general_streams.scailo_pb.ts#L2054)
 
 ___
 
@@ -110,7 +110,7 @@ from field: uint64 general_stream_id = 10;
 
 #### Defined in
 
-[src/general_streams.scailo_pb.ts:2039](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/general_streams.scailo_pb.ts#L2039)
+[src/general_streams.scailo_pb.ts:2075](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/general_streams.scailo_pb.ts#L2075)
 
 ___
 
@@ -126,7 +126,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-[src/general_streams.scailo_pb.ts:2025](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/general_streams.scailo_pb.ts#L2025)
+[src/general_streams.scailo_pb.ts:2061](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/general_streams.scailo_pb.ts#L2061)
 
 ___
 
@@ -142,7 +142,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-[src/general_streams.scailo_pb.ts:2032](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/general_streams.scailo_pb.ts#L2032)
+[src/general_streams.scailo_pb.ts:2068](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/general_streams.scailo_pb.ts#L2068)
 
 ___
 
@@ -158,7 +158,7 @@ from field: uint64 user_id = 11;
 
 #### Defined in
 
-[src/general_streams.scailo_pb.ts:2046](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/general_streams.scailo_pb.ts#L2046)
+[src/general_streams.scailo_pb.ts:2082](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/general_streams.scailo_pb.ts#L2082)
 
 ___
 
@@ -168,7 +168,7 @@ ___
 
 #### Defined in
 
-[src/general_streams.scailo_pb.ts:2055](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/general_streams.scailo_pb.ts#L2055)
+[src/general_streams.scailo_pb.ts:2091](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/general_streams.scailo_pb.ts#L2091)
 
 ___
 
@@ -178,7 +178,7 @@ ___
 
 #### Defined in
 
-[src/general_streams.scailo_pb.ts:2053](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/general_streams.scailo_pb.ts#L2053)
+[src/general_streams.scailo_pb.ts:2089](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/general_streams.scailo_pb.ts#L2089)
 
 ___
 
@@ -188,7 +188,7 @@ ___
 
 #### Defined in
 
-[src/general_streams.scailo_pb.ts:2054](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/general_streams.scailo_pb.ts#L2054)
+[src/general_streams.scailo_pb.ts:2090](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/general_streams.scailo_pb.ts#L2090)
 
 ## Methods
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-[src/general_streams.scailo_pb.ts:2075](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/general_streams.scailo_pb.ts#L2075)
+[src/general_streams.scailo_pb.ts:2111](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/general_streams.scailo_pb.ts#L2111)
 
 ___
 
@@ -497,7 +497,7 @@ ___
 
 #### Defined in
 
-[src/general_streams.scailo_pb.ts:2063](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/general_streams.scailo_pb.ts#L2063)
+[src/general_streams.scailo_pb.ts:2099](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/general_streams.scailo_pb.ts#L2099)
 
 ___
 
@@ -518,7 +518,7 @@ ___
 
 #### Defined in
 
-[src/general_streams.scailo_pb.ts:2067](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/general_streams.scailo_pb.ts#L2067)
+[src/general_streams.scailo_pb.ts:2103](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/general_streams.scailo_pb.ts#L2103)
 
 ___
 
@@ -539,4 +539,4 @@ ___
 
 #### Defined in
 
-[src/general_streams.scailo_pb.ts:2071](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/general_streams.scailo_pb.ts#L2071)
+[src/general_streams.scailo_pb.ts:2107](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/general_streams.scailo_pb.ts#L2107)

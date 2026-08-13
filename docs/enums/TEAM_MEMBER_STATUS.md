@@ -2,7 +2,7 @@
 
 # Enumeration: TEAM\_MEMBER\_STATUS
 
-Describes the applicable statuses of team members
+Enum defining the applicable lifecycle and verification statuses for team members.
 
 **`Generated`**
 
@@ -22,7 +22,9 @@ from enum Scailo.TEAM_MEMBER_STATUS
 
 • **TEAM\_MEMBER\_STATUS\_ANY\_UNSPECIFIED** = ``0``
 
-Denotes that status be disregarded. This is used only within search APIs
+**`Description`**
+
+Denotes that the status filter should be disregarded. Used exclusively within search APIs to bypass status restrictions.
 
 **`Generated`**
 
@@ -30,7 +32,7 @@ from enum value: TEAM_MEMBER_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:188](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/teams.scailo_pb.ts#L188)
+[src/teams.scailo_pb.ts:188](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/teams.scailo_pb.ts#L188)
 
 ___
 
@@ -38,7 +40,9 @@ ___
 
 • **TEAM\_MEMBER\_STATUS\_APPROVED** = ``1``
 
-Denotes that the team members must have been approved
+**`Description`**
+
+Denotes that the team member association has passed verification and is actively approved.
 
 **`Generated`**
 
@@ -46,7 +50,7 @@ from enum value: TEAM_MEMBER_STATUS_APPROVED = 1;
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:195](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/teams.scailo_pb.ts#L195)
+[src/teams.scailo_pb.ts:195](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/teams.scailo_pb.ts#L195)
 
 ___
 
@@ -54,7 +58,9 @@ ___
 
 • **TEAM\_MEMBER\_STATUS\_UNAPPROVED** = ``2``
 
-Denotes that the team members must be waiting for approval
+**`Description`**
+
+Denotes that the team member association is pending review and waiting for administrative approval.
 
 **`Generated`**
 
@@ -62,4 +68,4 @@ from enum value: TEAM_MEMBER_STATUS_UNAPPROVED = 2;
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:202](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/teams.scailo_pb.ts#L202)
+[src/teams.scailo_pb.ts:202](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/teams.scailo_pb.ts#L202)

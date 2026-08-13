@@ -2,7 +2,12 @@
 
 # Class: BankAccountsServiceCreateRequest
 
-Describes the parameters necessary to create a record
+Request message for creating a new bank account record.
+This record tracks corporate banking details, identifiers, and custom form
+data tied to specific target business entities for financial tracking.
+
+**Note:** This is the primary entry point for Finance teams, Treasury, and Admins
+to provision corporate bank accounts into the system for compliance and auditing.
 
 **`Generated`**
 
@@ -70,7 +75,7 @@ Message\&lt;BankAccountsServiceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:137](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/bank_accounts.scailo_pb.ts#L137)
+[src/bank_accounts.scailo_pb.ts:176](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/bank_accounts.scailo_pb.ts#L176)
 
 ## Properties
 
@@ -78,7 +83,25 @@ Message\&lt;BankAccountsServiceCreateRequest\&gt;.constructor
 
 • **code**: `string` = `""`
 
-The unique code by which the bank account is classified
+**`Mandatory`**
+
+**`Description`**
+
+The unique code or internal classification token by which the bank account is registered.
+
+**`Example`**
+
+```ts
+"ACC-OPS-01"
+```
+
+**`Regex`**
+
+.+
+
+**`Format`**
+
+Must be a non-empty string.
 
 **`Generated`**
 
@@ -86,13 +109,13 @@ from field: string code = 11;
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:128](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/bank_accounts.scailo_pb.ts#L128)
+[src/bank_accounts.scailo_pb.ts:160](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/bank_accounts.scailo_pb.ts#L160)
 
 ___
 
 ### entityUuid
 
-• **entityUuid**: `string` = `""`
+• `Optional` **entityUuid**: `string`
 
 **`Optional`**
 
@@ -116,11 +139,11 @@ If provided, must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
-from field: string entity_uuid = 1;
+from field: optional string entity_uuid = 1;
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:107](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/bank_accounts.scailo_pb.ts#L107)
+[src/bank_accounts.scailo_pb.ts:112](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/bank_accounts.scailo_pb.ts#L112)
 
 ___
 
@@ -128,7 +151,21 @@ ___
 
 • **formData**: [`FormFieldDatumCreateRequest`](FormFieldDatumCreateRequest.md)[] = `[]`
 
-The list of dynamic forms
+**`Optional`**
+
+**`Description`**
+
+A collection of dynamic form fields for organization-specific data.
+
+**`Example`**
+
+```ts
+[]
+```
+
+**`Format`**
+
+An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
 
 **`Generated`**
 
@@ -136,7 +173,7 @@ from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:135](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/bank_accounts.scailo_pb.ts#L135)
+[src/bank_accounts.scailo_pb.ts:174](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/bank_accounts.scailo_pb.ts#L174)
 
 ___
 
@@ -144,7 +181,25 @@ ___
 
 • **name**: `string` = `""`
 
-The name of the bank account
+**`Mandatory`**
+
+**`Description`**
+
+The official or friendly name of the corporate bank account.
+
+**`Example`**
+
+```ts
+"Main Operational Account"
+```
+
+**`Regex`**
+
+.+
+
+**`Format`**
+
+Must be a non-empty string.
 
 **`Generated`**
 
@@ -152,23 +207,41 @@ from field: string name = 10;
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:121](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/bank_accounts.scailo_pb.ts#L121)
+[src/bank_accounts.scailo_pb.ts:144](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/bank_accounts.scailo_pb.ts#L144)
 
 ___
 
 ### userComment
 
-• **userComment**: `string` = `""`
+• `Optional` **userComment**: `string`
 
-Stores any comment that the user might add during this operation
+**`Optional`**
+
+**`Description`**
+
+Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+
+**`Example`**
+
+```ts
+"This is a comment for audit purposes."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
-from field: string user_comment = 2;
+from field: optional string user_comment = 2;
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:114](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/bank_accounts.scailo_pb.ts#L114)
+[src/bank_accounts.scailo_pb.ts:128](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/bank_accounts.scailo_pb.ts#L128)
 
 ___
 
@@ -178,7 +251,7 @@ ___
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:144](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/bank_accounts.scailo_pb.ts#L144)
+[src/bank_accounts.scailo_pb.ts:183](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/bank_accounts.scailo_pb.ts#L183)
 
 ___
 
@@ -188,7 +261,7 @@ ___
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:142](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/bank_accounts.scailo_pb.ts#L142)
+[src/bank_accounts.scailo_pb.ts:181](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/bank_accounts.scailo_pb.ts#L181)
 
 ___
 
@@ -198,7 +271,7 @@ ___
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:143](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/bank_accounts.scailo_pb.ts#L143)
+[src/bank_accounts.scailo_pb.ts:182](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/bank_accounts.scailo_pb.ts#L182)
 
 ## Methods
 
@@ -486,7 +559,7 @@ ___
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:164](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/bank_accounts.scailo_pb.ts#L164)
+[src/bank_accounts.scailo_pb.ts:203](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/bank_accounts.scailo_pb.ts#L203)
 
 ___
 
@@ -507,7 +580,7 @@ ___
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:152](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/bank_accounts.scailo_pb.ts#L152)
+[src/bank_accounts.scailo_pb.ts:191](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/bank_accounts.scailo_pb.ts#L191)
 
 ___
 
@@ -528,7 +601,7 @@ ___
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:156](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/bank_accounts.scailo_pb.ts#L156)
+[src/bank_accounts.scailo_pb.ts:195](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/bank_accounts.scailo_pb.ts#L195)
 
 ___
 
@@ -549,4 +622,4 @@ ___
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:160](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/bank_accounts.scailo_pb.ts#L160)
+[src/bank_accounts.scailo_pb.ts:199](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/bank_accounts.scailo_pb.ts#L199)

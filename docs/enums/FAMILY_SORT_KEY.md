@@ -2,7 +2,7 @@
 
 # Enumeration: FAMILY\_SORT\_KEY
 
-Describes the available sort keys
+Enumeration of fields available for sorting vendor search results.
 
 **`Generated`**
 
@@ -30,7 +30,9 @@ from enum Scailo.FAMILY_SORT_KEY
 
 • **FAMILY\_SORT\_KEY\_AMENDMENT\_COUNT** = ``15``
 
-Fetch ordered results by the amendment count
+**`Description`**
+
+Sort by the user-provided amendment count.
 
 **`Generated`**
 
@@ -38,7 +40,7 @@ from enum value: FAMILY_SORT_KEY_AMENDMENT_COUNT = 15;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:235](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L235)
+[src/families.scailo_pb.ts:238](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L238)
 
 ___
 
@@ -46,7 +48,9 @@ ___
 
 • **FAMILY\_SORT\_KEY\_APPROVED\_BY** = ``4``
 
-Fetch ordered results by the approved by field
+**`Description`**
+
+Sort by the system ID of the approving user.
 
 **`Generated`**
 
@@ -54,7 +58,7 @@ from enum value: FAMILY_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:193](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L193)
+[src/families.scailo_pb.ts:196](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L196)
 
 ___
 
@@ -62,7 +66,9 @@ ___
 
 • **FAMILY\_SORT\_KEY\_APPROVED\_ON** = ``3``
 
-Fetch ordered results by the approved on timestamp
+**`Description`**
+
+Sort by the official approval timestamp.
 
 **`Generated`**
 
@@ -70,7 +76,7 @@ from enum value: FAMILY_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:186](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L186)
+[src/families.scailo_pb.ts:189](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L189)
 
 ___
 
@@ -78,7 +84,9 @@ ___
 
 • **FAMILY\_SORT\_KEY\_APPROVER\_ROLE\_ID** = ``5``
 
-Fetch ordered results by the approver's role ID
+**`Description`**
+
+Sort by the security role ID used by the approver.
 
 **`Generated`**
 
@@ -86,7 +94,7 @@ from enum value: FAMILY_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:200](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L200)
+[src/families.scailo_pb.ts:203](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L203)
 
 ___
 
@@ -94,7 +102,9 @@ ___
 
 • **FAMILY\_SORT\_KEY\_CODE** = ``12``
 
-Fetch ordered results by the code
+**`Description`**
+
+Sort alphabetically by the user-provided code.
 
 **`Generated`**
 
@@ -102,7 +112,7 @@ from enum value: FAMILY_SORT_KEY_CODE = 12;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:214](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L214)
+[src/families.scailo_pb.ts:217](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L217)
 
 ___
 
@@ -110,7 +120,9 @@ ___
 
 • **FAMILY\_SORT\_KEY\_CREATED\_AT** = ``1``
 
-Fetch ordered results by the creation timestamp
+**`Description`**
+
+Sort by the timestamp the record was initially created.
 
 **`Generated`**
 
@@ -118,7 +130,7 @@ from enum value: FAMILY_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:172](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L172)
+[src/families.scailo_pb.ts:175](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L175)
 
 ___
 
@@ -126,7 +138,9 @@ ___
 
 • **FAMILY\_SORT\_KEY\_ID\_UNSPECIFIED** = ``0``
 
-Fetch ordered results by id
+**`Description`**
+
+Default sort behavior (by internal ID).
 
 **`Generated`**
 
@@ -134,7 +148,7 @@ from enum value: FAMILY_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:165](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L165)
+[src/families.scailo_pb.ts:168](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L168)
 
 ___
 
@@ -142,7 +156,9 @@ ___
 
 • **FAMILY\_SORT\_KEY\_MODIFIED\_AT** = ``2``
 
-Fetch ordered results by the modified timestamp
+**`Description`**
+
+Sort by the timestamp the record was last modified.
 
 **`Generated`**
 
@@ -150,7 +166,7 @@ from enum value: FAMILY_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:179](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L179)
+[src/families.scailo_pb.ts:182](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L182)
 
 ___
 
@@ -158,7 +174,9 @@ ___
 
 • **FAMILY\_SORT\_KEY\_NAME** = ``10``
 
-Fetch ordered results by the name
+**`Description`**
+
+Sort alphabetically by the user-provided name.
 
 **`Generated`**
 
@@ -166,7 +184,7 @@ from enum value: FAMILY_SORT_KEY_NAME = 10;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:207](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L207)
+[src/families.scailo_pb.ts:210](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L210)
 
 ___
 
@@ -174,7 +192,9 @@ ___
 
 • **FAMILY\_SORT\_KEY\_PRICE** = ``14``
 
-Fetch ordered results by the price
+**`Description`**
+
+Sort by the user-provided price.
 
 **`Generated`**
 
@@ -182,7 +202,7 @@ from enum value: FAMILY_SORT_KEY_PRICE = 14;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:228](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L228)
+[src/families.scailo_pb.ts:231](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L231)
 
 ___
 
@@ -190,7 +210,9 @@ ___
 
 • **FAMILY\_SORT\_KEY\_UNIT\_QUANTITY** = ``13``
 
-Fetch ordered results by the unit quantity
+**`Description`**
+
+Sort by the user-provided unit quantity.
 
 **`Generated`**
 
@@ -198,4 +220,4 @@ from enum value: FAMILY_SORT_KEY_UNIT_QUANTITY = 13;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:221](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L221)
+[src/families.scailo_pb.ts:224](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L224)

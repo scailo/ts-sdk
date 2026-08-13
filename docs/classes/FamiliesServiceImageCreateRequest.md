@@ -2,7 +2,8 @@
 
 # Class: FamiliesServiceImageCreateRequest
 
-Describes the parameters necessary to create a family image
+Request message for attaching an image or visual asset to a specific family.
+This binds a previously uploaded document vault file to the family for use in catalogs or technical references.
 
 **`Generated`**
 
@@ -70,7 +71,7 @@ Message\&lt;FamiliesServiceImageCreateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/families.scailo_pb.ts:3133](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L3133)
+[src/families.scailo_pb.ts:4179](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L4179)
 
 ## Properties
 
@@ -78,7 +79,25 @@ Message\&lt;FamiliesServiceImageCreateRequest\&gt;.constructor
 
 • **familyId**: `bigint` = `protoInt64.zero`
 
-Stores the family ID
+**`Mandatory`**
+
+**`Description`**
+
+The unique internal identifier of the target family.
+
+**`Example`**
+
+```ts
+582
+```
+
+**`Regex`**
+
+^[1-9][0-9]*$
+
+**`Format`**
+
+Unsigned 64-bit integer greater than 0.
 
 **`Generated`**
 
@@ -86,7 +105,7 @@ from field: uint64 family_id = 10;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:3110](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L3110)
+[src/families.scailo_pb.ts:4129](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L4129)
 
 ___
 
@@ -94,7 +113,25 @@ ___
 
 • **isPublic**: `boolean` = `false`
 
-Denotes if the image is public
+**`Mandatory`**
+
+**`Description`**
+
+A boolean flag indicating whether the image is publicly accessible (e.g., on external catalogs) or restricted to internal users.
+
+**`Example`**
+
+```ts
+true
+```
+
+**`Regex`**
+
+^(?:true|false)$
+
+**`Format`**
+
+Boolean true or false.
 
 **`Generated`**
 
@@ -102,7 +139,7 @@ from field: bool is_public = 12;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:3124](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L3124)
+[src/families.scailo_pb.ts:4161](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L4161)
 
 ___
 
@@ -110,7 +147,25 @@ ___
 
 • **sequenceNumber**: `bigint` = `protoInt64.zero`
 
-Stores the sequence number
+**`Mandatory`**
+
+**`Description`**
+
+The ordering or display sequence of the image relative to other images in the family gallery.
+
+**`Example`**
+
+```ts
+1
+```
+
+**`Regex`**
+
+^[1-9][0-9]*$
+
+**`Format`**
+
+Unsigned 64-bit integer greater than 0.
 
 **`Generated`**
 
@@ -118,23 +173,41 @@ from field: uint64 sequence_number = 13;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:3131](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L3131)
+[src/families.scailo_pb.ts:4177](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L4177)
 
 ___
 
 ### userComment
 
-• **userComment**: `string` = `""`
+• `Optional` **userComment**: `string`
 
-Stores any comment that the user might add during this operation
+**`Optional`**
+
+**`Description`**
+
+Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+
+**`Example`**
+
+```ts
+"This is a comment for audit purposes."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
-from field: string user_comment = 1;
+from field: optional string user_comment = 1;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:3103](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L3103)
+[src/families.scailo_pb.ts:4113](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L4113)
 
 ___
 
@@ -142,7 +215,25 @@ ___
 
 • **vaultFileId**: `bigint` = `protoInt64.zero`
 
-Stores the vault file ID
+**`Mandatory`**
+
+**`Description`**
+
+The unique internal identifier of the uploaded image file within Vault.
+
+**`Example`**
+
+```ts
+15234
+```
+
+**`Regex`**
+
+^[1-9][0-9]*$
+
+**`Format`**
+
+Unsigned 64-bit integer greater than 0.
 
 **`Generated`**
 
@@ -150,7 +241,7 @@ from field: uint64 vault_file_id = 11;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:3117](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L3117)
+[src/families.scailo_pb.ts:4145](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L4145)
 
 ___
 
@@ -160,7 +251,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:3140](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L3140)
+[src/families.scailo_pb.ts:4186](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L4186)
 
 ___
 
@@ -170,7 +261,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:3138](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L3138)
+[src/families.scailo_pb.ts:4184](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L4184)
 
 ___
 
@@ -180,7 +271,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:3139](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L3139)
+[src/families.scailo_pb.ts:4185](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L4185)
 
 ## Methods
 
@@ -468,7 +559,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:3160](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L3160)
+[src/families.scailo_pb.ts:4206](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L4206)
 
 ___
 
@@ -489,7 +580,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:3148](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L3148)
+[src/families.scailo_pb.ts:4194](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L4194)
 
 ___
 
@@ -510,7 +601,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:3152](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L3152)
+[src/families.scailo_pb.ts:4198](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L4198)
 
 ___
 
@@ -531,4 +622,4 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:3156](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L3156)
+[src/families.scailo_pb.ts:4202](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L4202)

@@ -4,8 +4,9 @@
 // @ts-nocheck
 
 import { Meeting, MeetingActionable, MeetingActionableHistoryRequest, MeetingActionablesList, MeetingActionablesSearchRequest, MeetingAssociate, MeetingAssociatesList, MeetingEmployee, MeetingEmployeesList, MeetingsList, MeetingsServiceActionableCreateRequest, MeetingsServiceActionableUpdateRequest, MeetingsServiceAssociateCreateRequest, MeetingsServiceCountReq, MeetingsServiceCreateRequest, MeetingsServiceEmployeeCreateRequest, MeetingsServiceFilterReq, MeetingsServiceImportEmployeesRequest, MeetingsServicePaginatedActionablesResponse, MeetingsServicePaginationReq, MeetingsServicePaginationResponse, MeetingsServiceSearchAllReq, MeetingsServiceSetRSVPRequest, MeetingsServiceUpdateRequest } from "./meetings.scailo_pb.js";
-import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest } from "./base.scailo_pb.js";
+import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
+import { VaultFolderAttachRequest } from "./vault_folders.scailo_pb.js";
 
 /**
  *
@@ -90,13 +91,37 @@ export const MeetingsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Send Email
+     * Triggers an automated email notification related to the record.
+     *
+     * **Side Effects:**
+     * - Dispatches a structured email to the designated recipients based on the provided attributes.
+     * - Appends an entry to the system communication logs for auditing purposes.
      *
      * @generated from rpc Scailo.MeetingsService.SendEmail
      */
     sendEmail: {
       name: "SendEmail",
       I: IdentifierWithEmailAttributes,
+      O: IdentifierResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Attaches a specified folder directly to a record without requiring a full revision workflow.
+     *
+     * This is a convenience API designed to bypass the traditional multi-step modification lifecycle
+     * (e.g., creating a revision, updating data, submitting for verification, and awaiting approval).
+     * It allows for the immediate, single-step association of a vault folder.
+     *
+     * **Side Effects & Lifecycle:**
+     * * The overall status of the record remains unchanged.
+     * * The record's modification timestamp is automatically updated to the current time.
+     * * An entry is appended to the record's audit log tracking this attachment.
+     *
+     * @generated from rpc Scailo.MeetingsService.AttachVaultFolder
+     */
+    attachVaultFolder: {
+      name: "AttachVaultFolder",
+      I: VaultFolderAttachRequest,
       O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
@@ -472,6 +497,33 @@ export const MeetingsService = {
       name: "Count",
       I: MeetingsServiceCountReq,
       O: CountResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * CSV operations
+     * Download the CSV file that consists of the list of records according to the given filter request. The same file could also be used as a template for uploading records
+     *
+     * @generated from rpc Scailo.MeetingsService.DownloadAsCSV
+     */
+    downloadAsCSV: {
+      name: "DownloadAsCSV",
+      I: MeetingsServiceFilterReq,
+      O: StandardFile,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Bulk imports records from a provided CSV file.
+     * Behavior:
+     * - Atomicity: This is an "all-or-nothing" operation; if any part of the
+     *   import fails, no changes are committed.
+     * Returns a list of UUIDs for all successfully processed or existing records.
+     *
+     * @generated from rpc Scailo.MeetingsService.ImportFromCSV
+     */
+    importFromCSV: {
+      name: "ImportFromCSV",
+      I: StandardFile,
+      O: IdentifierUUIDsList,
       kind: MethodKind.Unary,
     },
   }

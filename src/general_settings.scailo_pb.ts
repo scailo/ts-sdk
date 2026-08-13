@@ -208,7 +208,8 @@ export class GeneralSettings extends Message<GeneralSettings> {
   licensedTo = "";
 
   /**
-   * The list of dynamic forms
+   *
+   * @description Collection of organization-specific dynamic data.
    *
    * @generated from field: repeated Scailo.FormFieldDatum form_data = 200;
    */
@@ -468,7 +469,14 @@ export class GeneralSettingsServiceCreateRequest extends Message<GeneralSettings
   logo = "";
 
   /**
-   * The list of dynamic forms
+   *
+   * @optional
+   *
+   * @description A collection of dynamic form fields for organization-specific data.
+   *
+   * @example []
+   *
+   * @format An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
    *
    * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 200;
    */

@@ -2,7 +2,7 @@
 
 # Class: SalesEnquiryContactsList
 
-Describes the message consisting of the list of sales enquiry contacts
+Represents a consolidated collection of designated contacts mapped to a Sales Enquiry.
 
 **`Generated`**
 
@@ -66,7 +66,7 @@ Message\&lt;SalesEnquiryContactsList\&gt;.constructor
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:3011](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L3011)
+[src/sales_enquiries.scailo_pb.ts:3784](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L3784)
 
 ## Properties
 
@@ -74,7 +74,19 @@ Message\&lt;SalesEnquiryContactsList\&gt;.constructor
 
 • **list**: [`SalesEnquiryContact`](SalesEnquiryContact.md)[] = `[]`
 
-List of records
+**`Description`**
+
+An array containing the individual associate contact records linked to the enquiry.
+
+**`Example`**
+
+```ts
+[]
+```
+
+**`Format`**
+
+Repeated array of SalesEnquiryContact message blocks.
 
 **`Generated`**
 
@@ -82,7 +94,7 @@ from field: repeated Scailo.SalesEnquiryContact list = 1;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:3009](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L3009)
+[src/sales_enquiries.scailo_pb.ts:3782](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L3782)
 
 ___
 
@@ -92,7 +104,7 @@ ___
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:3018](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L3018)
+[src/sales_enquiries.scailo_pb.ts:3791](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L3791)
 
 ___
 
@@ -102,7 +114,7 @@ ___
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:3016](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L3016)
+[src/sales_enquiries.scailo_pb.ts:3789](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L3789)
 
 ___
 
@@ -112,7 +124,7 @@ ___
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:3017](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L3017)
+[src/sales_enquiries.scailo_pb.ts:3790](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L3790)
 
 ## Methods
 
@@ -400,7 +412,7 @@ ___
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:3034](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L3034)
+[src/sales_enquiries.scailo_pb.ts:3807](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L3807)
 
 ___
 
@@ -421,7 +433,7 @@ ___
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:3022](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L3022)
+[src/sales_enquiries.scailo_pb.ts:3795](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L3795)
 
 ___
 
@@ -442,7 +454,7 @@ ___
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:3026](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L3026)
+[src/sales_enquiries.scailo_pb.ts:3799](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L3799)
 
 ___
 
@@ -463,4 +475,4 @@ ___
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:3030](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L3030)
+[src/sales_enquiries.scailo_pb.ts:3803](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L3803)

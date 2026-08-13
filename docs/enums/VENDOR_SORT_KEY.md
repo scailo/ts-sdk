@@ -2,7 +2,7 @@
 
 # Enumeration: VENDOR\_SORT\_KEY
 
-Describes the available sort keys
+Enumeration of fields available for sorting vendor search results.
 
 **`Generated`**
 
@@ -29,7 +29,9 @@ from enum Scailo.VENDOR_SORT_KEY
 
 • **VENDOR\_SORT\_KEY\_APPROVED\_BY** = ``4``
 
-Fetch ordered results by the approved by field
+**`Description`**
+
+Sort by the system ID of the approving user.
 
 **`Generated`**
 
@@ -37,7 +39,7 @@ from enum value: VENDOR_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:86](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L86)
+[src/vendors.scailo_pb.ts:86](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L86)
 
 ___
 
@@ -45,7 +47,9 @@ ___
 
 • **VENDOR\_SORT\_KEY\_APPROVED\_ON** = ``3``
 
-Fetch ordered results by the approved on timestamp
+**`Description`**
+
+Sort by the official approval timestamp.
 
 **`Generated`**
 
@@ -53,7 +57,7 @@ from enum value: VENDOR_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:79](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L79)
+[src/vendors.scailo_pb.ts:79](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L79)
 
 ___
 
@@ -61,7 +65,9 @@ ___
 
 • **VENDOR\_SORT\_KEY\_APPROVER\_ROLE\_ID** = ``5``
 
-Fetch ordered results by the approver's role ID
+**`Description`**
+
+Sort by the security role ID used by the approver.
 
 **`Generated`**
 
@@ -69,7 +75,7 @@ from enum value: VENDOR_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:93](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L93)
+[src/vendors.scailo_pb.ts:93](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L93)
 
 ___
 
@@ -77,7 +83,9 @@ ___
 
 • **VENDOR\_SORT\_KEY\_CODE** = ``11``
 
-Fetch ordered results by the code
+**`Description`**
+
+Sort alphabetically by the user-provided code.
 
 **`Generated`**
 
@@ -85,7 +93,7 @@ from enum value: VENDOR_SORT_KEY_CODE = 11;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:107](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L107)
+[src/vendors.scailo_pb.ts:107](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L107)
 
 ___
 
@@ -93,7 +101,9 @@ ___
 
 • **VENDOR\_SORT\_KEY\_CREATED\_AT** = ``1``
 
-Fetch ordered results by the creation timestamp
+**`Description`**
+
+Sort by the timestamp the record was initially created.
 
 **`Generated`**
 
@@ -101,7 +111,7 @@ from enum value: VENDOR_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:65](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L65)
+[src/vendors.scailo_pb.ts:65](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L65)
 
 ___
 
@@ -109,7 +119,9 @@ ___
 
 • **VENDOR\_SORT\_KEY\_EMAIL** = ``12``
 
-Fetch ordered results by the email address
+**`Description`**
+
+Sort alphabetically by the user-provided email.
 
 **`Generated`**
 
@@ -117,7 +129,7 @@ from enum value: VENDOR_SORT_KEY_EMAIL = 12;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:114](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L114)
+[src/vendors.scailo_pb.ts:114](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L114)
 
 ___
 
@@ -125,7 +137,9 @@ ___
 
 • **VENDOR\_SORT\_KEY\_ID\_UNSPECIFIED** = ``0``
 
-Fetch ordered results by id
+**`Description`**
+
+Default sort behavior (by internal ID).
 
 **`Generated`**
 
@@ -133,7 +147,7 @@ from enum value: VENDOR_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:58](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L58)
+[src/vendors.scailo_pb.ts:58](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L58)
 
 ___
 
@@ -141,7 +155,9 @@ ___
 
 • **VENDOR\_SORT\_KEY\_MODIFIED\_AT** = ``2``
 
-Fetch ordered results by the modified timestamp
+**`Description`**
+
+Sort by the timestamp the record was last modified.
 
 **`Generated`**
 
@@ -149,7 +165,7 @@ from enum value: VENDOR_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:72](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L72)
+[src/vendors.scailo_pb.ts:72](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L72)
 
 ___
 
@@ -157,7 +173,9 @@ ___
 
 • **VENDOR\_SORT\_KEY\_NAME** = ``10``
 
-Fetch ordered results by the name
+**`Description`**
+
+Sort alphabetically by the user-provided name.
 
 **`Generated`**
 
@@ -165,7 +183,7 @@ from enum value: VENDOR_SORT_KEY_NAME = 10;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:100](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L100)
+[src/vendors.scailo_pb.ts:100](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L100)
 
 ___
 
@@ -173,7 +191,9 @@ ___
 
 • **VENDOR\_SORT\_KEY\_PHONE** = ``13``
 
-Fetch ordered results by the phone number
+**`Description`**
+
+Sort alphabetically by the user-provided phone number.
 
 **`Generated`**
 
@@ -181,4 +201,4 @@ from enum value: VENDOR_SORT_KEY_PHONE = 13;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:121](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L121)
+[src/vendors.scailo_pb.ts:121](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L121)

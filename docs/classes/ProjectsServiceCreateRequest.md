@@ -2,7 +2,12 @@
 
 # Class: ProjectsServiceCreateRequest
 
-Describes the parameters necessary to create a record
+Request message for creating a new project record.
+This message encapsulates all the foundational metadata, client associations,
+compliance details, and external system cross-references required to initialize a project.
+
+**Note:** This serves as the primary entry point for project provisioning, ensuring
+that required external mapping, auditing comments, and structural configurations are set.
 
 **`Generated`**
 
@@ -72,23 +77,41 @@ Message\&lt;ProjectsServiceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/projects.scailo_pb.ts:177](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/projects.scailo_pb.ts#L177)
+[src/projects.scailo_pb.ts:216](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/projects.scailo_pb.ts#L216)
 
 ## Properties
 
 ### clientId
 
-• **clientId**: `bigint` = `protoInt64.zero`
+• `Optional` **clientId**: `bigint`
 
-The optional ID of the associated client
+**`Optional`**
+
+**`Description`**
+
+The unique identifier of the associated client.
+
+**`Example`**
+
+```ts
+455
+```
+
+**`Regex`**
+
+^[0-9]*$
+
+**`Format`**
+
+Non-negative 64-bit integer.
 
 **`Generated`**
 
-from field: uint64 client_id = 12;
+from field: optional uint64 client_id = 12;
 
 #### Defined in
 
-[src/projects.scailo_pb.ts:161](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/projects.scailo_pb.ts#L161)
+[src/projects.scailo_pb.ts:184](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/projects.scailo_pb.ts#L184)
 
 ___
 
@@ -96,7 +119,25 @@ ___
 
 • **description**: `string` = `""`
 
-The description of the project
+**`Mandatory`**
+
+**`Description`**
+
+The core detailed description or summary of the project.
+
+**`Example`**
+
+```ts
+"This is an exploratory project for Customer A."
+```
+
+**`Regex`**
+
+^[0-9A-Za-z ]+$
+
+**`Format`**
+
+Alphanumeric characters and spaces only. Must not be empty.
 
 **`Generated`**
 
@@ -104,13 +145,13 @@ from field: string description = 13;
 
 #### Defined in
 
-[src/projects.scailo_pb.ts:168](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/projects.scailo_pb.ts#L168)
+[src/projects.scailo_pb.ts:200](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/projects.scailo_pb.ts#L200)
 
 ___
 
 ### entityUuid
 
-• **entityUuid**: `string` = `""`
+• `Optional` **entityUuid**: `string`
 
 **`Optional`**
 
@@ -134,11 +175,11 @@ If provided, must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
-from field: string entity_uuid = 1;
+from field: optional string entity_uuid = 1;
 
 #### Defined in
 
-[src/projects.scailo_pb.ts:115](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/projects.scailo_pb.ts#L115)
+[src/projects.scailo_pb.ts:120](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/projects.scailo_pb.ts#L120)
 
 ___
 
@@ -146,7 +187,21 @@ ___
 
 • **formData**: [`FormFieldDatumCreateRequest`](FormFieldDatumCreateRequest.md)[] = `[]`
 
-The list of dynamic forms
+**`Optional`**
+
+**`Description`**
+
+A collection of dynamic form fields for organization-specific data.
+
+**`Example`**
+
+```ts
+[]
+```
+
+**`Format`**
+
+An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
 
 **`Generated`**
 
@@ -154,7 +209,7 @@ from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
 
 #### Defined in
 
-[src/projects.scailo_pb.ts:175](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/projects.scailo_pb.ts#L175)
+[src/projects.scailo_pb.ts:214](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/projects.scailo_pb.ts#L214)
 
 ___
 
@@ -188,29 +243,47 @@ from field: string reference_id = 10;
 
 #### Defined in
 
-[src/projects.scailo_pb.ts:154](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/projects.scailo_pb.ts#L154)
+[src/projects.scailo_pb.ts:168](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/projects.scailo_pb.ts#L168)
 
 ___
 
 ### userComment
 
-• **userComment**: `string` = `""`
+• `Optional` **userComment**: `string`
 
-Stores any comment that the user might add during this operation
+**`Optional`**
+
+**`Description`**
+
+Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+
+**`Example`**
+
+```ts
+"This is a comment for audit purposes."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
-from field: string user_comment = 2;
+from field: optional string user_comment = 2;
 
 #### Defined in
 
-[src/projects.scailo_pb.ts:122](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/projects.scailo_pb.ts#L122)
+[src/projects.scailo_pb.ts:136](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/projects.scailo_pb.ts#L136)
 
 ___
 
 ### vaultFolderId
 
-• **vaultFolderId**: `bigint` = `protoInt64.zero`
+• `Optional` **vaultFolderId**: `bigint`
 
 **`Optional`**
 
@@ -234,11 +307,11 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 vault_folder_id = 9;
+from field: optional uint64 vault_folder_id = 9;
 
 #### Defined in
 
-[src/projects.scailo_pb.ts:138](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/projects.scailo_pb.ts#L138)
+[src/projects.scailo_pb.ts:152](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/projects.scailo_pb.ts#L152)
 
 ___
 
@@ -248,7 +321,7 @@ ___
 
 #### Defined in
 
-[src/projects.scailo_pb.ts:184](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/projects.scailo_pb.ts#L184)
+[src/projects.scailo_pb.ts:223](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/projects.scailo_pb.ts#L223)
 
 ___
 
@@ -258,7 +331,7 @@ ___
 
 #### Defined in
 
-[src/projects.scailo_pb.ts:182](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/projects.scailo_pb.ts#L182)
+[src/projects.scailo_pb.ts:221](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/projects.scailo_pb.ts#L221)
 
 ___
 
@@ -268,7 +341,7 @@ ___
 
 #### Defined in
 
-[src/projects.scailo_pb.ts:183](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/projects.scailo_pb.ts#L183)
+[src/projects.scailo_pb.ts:222](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/projects.scailo_pb.ts#L222)
 
 ## Methods
 
@@ -556,7 +629,7 @@ ___
 
 #### Defined in
 
-[src/projects.scailo_pb.ts:206](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/projects.scailo_pb.ts#L206)
+[src/projects.scailo_pb.ts:245](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/projects.scailo_pb.ts#L245)
 
 ___
 
@@ -577,7 +650,7 @@ ___
 
 #### Defined in
 
-[src/projects.scailo_pb.ts:194](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/projects.scailo_pb.ts#L194)
+[src/projects.scailo_pb.ts:233](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/projects.scailo_pb.ts#L233)
 
 ___
 
@@ -598,7 +671,7 @@ ___
 
 #### Defined in
 
-[src/projects.scailo_pb.ts:198](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/projects.scailo_pb.ts#L198)
+[src/projects.scailo_pb.ts:237](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/projects.scailo_pb.ts#L237)
 
 ___
 
@@ -619,4 +692,4 @@ ___
 
 #### Defined in
 
-[src/projects.scailo_pb.ts:202](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/projects.scailo_pb.ts#L202)
+[src/projects.scailo_pb.ts:241](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/projects.scailo_pb.ts#L241)

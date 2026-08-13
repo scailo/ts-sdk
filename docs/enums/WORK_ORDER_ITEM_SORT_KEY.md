@@ -36,7 +36,7 @@ from enum value: WORK_ORDER_ITEM_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-[src/work_orders.scailo_pb.ts:177](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/work_orders.scailo_pb.ts#L177)
+[src/work_orders.scailo_pb.ts:177](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/work_orders.scailo_pb.ts#L177)
 
 ___
 
@@ -52,7 +52,7 @@ from enum value: WORK_ORDER_ITEM_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-[src/work_orders.scailo_pb.ts:170](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/work_orders.scailo_pb.ts#L170)
+[src/work_orders.scailo_pb.ts:170](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/work_orders.scailo_pb.ts#L170)
 
 ___
 
@@ -68,7 +68,7 @@ from enum value: WORK_ORDER_ITEM_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-[src/work_orders.scailo_pb.ts:184](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/work_orders.scailo_pb.ts#L184)
+[src/work_orders.scailo_pb.ts:184](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/work_orders.scailo_pb.ts#L184)
 
 ___
 
@@ -84,7 +84,7 @@ from enum value: WORK_ORDER_ITEM_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-[src/work_orders.scailo_pb.ts:156](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/work_orders.scailo_pb.ts#L156)
+[src/work_orders.scailo_pb.ts:156](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/work_orders.scailo_pb.ts#L156)
 
 ___
 
@@ -100,7 +100,7 @@ from enum value: WORK_ORDER_ITEM_SORT_KEY_DELIVERY_DATE = 12;
 
 #### Defined in
 
-[src/work_orders.scailo_pb.ts:205](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/work_orders.scailo_pb.ts#L205)
+[src/work_orders.scailo_pb.ts:205](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/work_orders.scailo_pb.ts#L205)
 
 ___
 
@@ -116,7 +116,7 @@ from enum value: WORK_ORDER_ITEM_SORT_KEY_FAMILY_ID = 10;
 
 #### Defined in
 
-[src/work_orders.scailo_pb.ts:191](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/work_orders.scailo_pb.ts#L191)
+[src/work_orders.scailo_pb.ts:191](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/work_orders.scailo_pb.ts#L191)
 
 ___
 
@@ -132,7 +132,7 @@ from enum value: WORK_ORDER_ITEM_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/work_orders.scailo_pb.ts:149](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/work_orders.scailo_pb.ts#L149)
+[src/work_orders.scailo_pb.ts:149](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/work_orders.scailo_pb.ts#L149)
 
 ___
 
@@ -148,7 +148,7 @@ from enum value: WORK_ORDER_ITEM_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-[src/work_orders.scailo_pb.ts:163](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/work_orders.scailo_pb.ts#L163)
+[src/work_orders.scailo_pb.ts:163](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/work_orders.scailo_pb.ts#L163)
 
 ___
 
@@ -164,4 +164,4 @@ from enum value: WORK_ORDER_ITEM_SORT_KEY_QUANTITY = 11;
 
 #### Defined in
 
-[src/work_orders.scailo_pb.ts:198](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/work_orders.scailo_pb.ts#L198)
+[src/work_orders.scailo_pb.ts:198](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/work_orders.scailo_pb.ts#L198)

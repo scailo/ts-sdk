@@ -69,7 +69,7 @@ Message\&lt;OutwardJobsServiceMultipleOutwardItemsSingleton\&gt;.constructor
 
 #### Defined in
 
-[src/outward_jobs.scailo_pb.ts:3005](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/outward_jobs.scailo_pb.ts#L3005)
+[src/outward_jobs.scailo_pb.ts:3099](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/outward_jobs.scailo_pb.ts#L3099)
 
 ## Properties
 
@@ -85,7 +85,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-[src/outward_jobs.scailo_pb.ts:2982](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/outward_jobs.scailo_pb.ts#L2982)
+[src/outward_jobs.scailo_pb.ts:3076](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/outward_jobs.scailo_pb.ts#L3076)
 
 ___
 
@@ -101,7 +101,7 @@ from field: uint64 internal_quantity = 13;
 
 #### Defined in
 
-[src/outward_jobs.scailo_pb.ts:2996](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/outward_jobs.scailo_pb.ts#L2996)
+[src/outward_jobs.scailo_pb.ts:3090](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/outward_jobs.scailo_pb.ts#L3090)
 
 ___
 
@@ -117,7 +117,7 @@ from field: string item_hash = 12;
 
 #### Defined in
 
-[src/outward_jobs.scailo_pb.ts:2989](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/outward_jobs.scailo_pb.ts#L2989)
+[src/outward_jobs.scailo_pb.ts:3083](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/outward_jobs.scailo_pb.ts#L3083)
 
 ___
 
@@ -133,7 +133,7 @@ from field: string specifications = 14;
 
 #### Defined in
 
-[src/outward_jobs.scailo_pb.ts:3003](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/outward_jobs.scailo_pb.ts#L3003)
+[src/outward_jobs.scailo_pb.ts:3097](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/outward_jobs.scailo_pb.ts#L3097)
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-[src/outward_jobs.scailo_pb.ts:3012](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/outward_jobs.scailo_pb.ts#L3012)
+[src/outward_jobs.scailo_pb.ts:3106](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/outward_jobs.scailo_pb.ts#L3106)
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-[src/outward_jobs.scailo_pb.ts:3010](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/outward_jobs.scailo_pb.ts#L3010)
+[src/outward_jobs.scailo_pb.ts:3104](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/outward_jobs.scailo_pb.ts#L3104)
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-[src/outward_jobs.scailo_pb.ts:3011](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/outward_jobs.scailo_pb.ts#L3011)
+[src/outward_jobs.scailo_pb.ts:3105](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/outward_jobs.scailo_pb.ts#L3105)
 
 ## Methods
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-[src/outward_jobs.scailo_pb.ts:3031](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/outward_jobs.scailo_pb.ts#L3031)
+[src/outward_jobs.scailo_pb.ts:3125](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/outward_jobs.scailo_pb.ts#L3125)
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 #### Defined in
 
-[src/outward_jobs.scailo_pb.ts:3019](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/outward_jobs.scailo_pb.ts#L3019)
+[src/outward_jobs.scailo_pb.ts:3113](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/outward_jobs.scailo_pb.ts#L3113)
 
 ___
 
@@ -493,7 +493,7 @@ ___
 
 #### Defined in
 
-[src/outward_jobs.scailo_pb.ts:3023](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/outward_jobs.scailo_pb.ts#L3023)
+[src/outward_jobs.scailo_pb.ts:3117](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/outward_jobs.scailo_pb.ts#L3117)
 
 ___
 
@@ -514,4 +514,4 @@ ___
 
 #### Defined in
 
-[src/outward_jobs.scailo_pb.ts:3027](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/outward_jobs.scailo_pb.ts#L3027)
+[src/outward_jobs.scailo_pb.ts:3121](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/outward_jobs.scailo_pb.ts#L3121)

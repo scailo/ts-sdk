@@ -6,6 +6,7 @@
 import { Goal, GoalItem, GoalItemHistoryRequest, GoalItemsSearchRequest, GoalsItemsList, GoalsList, GoalsServiceCountReq, GoalsServiceCreateRequest, GoalsServiceFilterReq, GoalsServiceItemCreateRequest, GoalsServiceItemUpdateRequest, GoalsServicePaginatedItemsResponse, GoalsServicePaginationReq, GoalsServicePaginationResponse, GoalsServiceSearchAllReq, GoalsServiceUpdateRequest } from "./goals.scailo_pb.js";
 import { ActiveStatus, CloneRequest, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
+import { VaultFolderAttachRequest } from "./vault_folders.scailo_pb.js";
 
 /**
  *
@@ -223,7 +224,13 @@ export const GoalsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Reopen
+     * Reopens a finalized or closed record for further modifications.
+     *
+     * **Status Transition:** -> `REVISION`
+     *
+     * **Side Effects:**
+     * - Unlocks the record to allow edits.
+     * - Logs the required user comment into the audit trail for compliance tracking.
      *
      * @generated from rpc Scailo.GoalsService.Reopen
      */
@@ -245,7 +252,32 @@ export const GoalsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Clone goal from an existing goal (denoted by the identifier)
+     * Attaches a specified folder directly to a record without requiring a full revision workflow.
+     *
+     * This is a convenience API designed to bypass the traditional multi-step modification lifecycle
+     * (e.g., creating a revision, updating data, submitting for verification, and awaiting approval).
+     * It allows for the immediate, single-step association of a vault folder.
+     *
+     * **Side Effects & Lifecycle:**
+     * * The overall status of the record remains unchanged.
+     * * The record's modification timestamp is automatically updated to the current time.
+     * * An entry is appended to the record's audit log tracking this attachment.
+     *
+     * @generated from rpc Scailo.GoalsService.AttachVaultFolder
+     */
+    attachVaultFolder: {
+      name: "AttachVaultFolder",
+      I: VaultFolderAttachRequest,
+      O: IdentifierResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Initiates the creation of a new record by duplicating the structural properties of an existing record.
+     *
+     * **Side Effects:**
+     * - Provisions a new record populated with the metadata and configurations of the source record.
+     * - Does not clone operational transactions or historical logs of the source.
+     * - Appends an audit trail entry tracking the cloning operation and justification.
      *
      * @generated from rpc Scailo.GoalsService.Clone
      */
@@ -444,7 +476,12 @@ export const GoalsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View by Reference ID (returns the latest record in case of duplicates)
+     * Retrieves a single record based on its user-defined, external reference ID.
+     *
+     * This read-only operation is utilized for targeted lookups using human-readable identifiers (e.g., "REF-2023-001") rather than internal system IDs or unpredictable UUIDs.
+     * Because external reference IDs might occasionally be duplicated across a tenant's dataset (due to legacy data imports, external CRM syncing overlaps, or manual entry overrides),
+     * this query guarantees a deterministic response. In the event of a collision, it automatically resolves the conflict by returning only the most recently created or modified record
+     * that matches the requested reference string.
      *
      * @generated from rpc Scailo.GoalsService.ViewByReferenceID
      */

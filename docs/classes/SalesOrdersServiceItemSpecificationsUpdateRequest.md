@@ -2,7 +2,10 @@
 
 # Class: SalesOrdersServiceItemSpecificationsUpdateRequest
 
-Describes the parameters required to update the specifications of an item in a sales order
+Request message for isolating updates strictly to the textual specifications or notes
+of a Sales Order line item.
+Designed for scenarios where operational instructions change without impacting any
+commercial terms, pricing, or quantities.
 
 **`Generated`**
 
@@ -68,7 +71,7 @@ Message\&lt;SalesOrdersServiceItemSpecificationsUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:1668](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L1668)
+[src/sales_orders.scailo_pb.ts:2449](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L2449)
 
 ## Properties
 
@@ -76,7 +79,25 @@ Message\&lt;SalesOrdersServiceItemSpecificationsUpdateRequest\&gt;.constructor
 
 • **specifications**: `string` = `""`
 
-The specifications that should be updated
+**`Mandatory`**
+
+**`Description`**
+
+The completely overwritten textual requirements, manufacturing notes, or specifications for fulfilling this item.
+
+**`Example`**
+
+```ts
+"Expedite handling required. Use pallet configuration A."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+Must be a non-empty string.
 
 **`Generated`**
 
@@ -84,23 +105,41 @@ from field: string specifications = 21;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:1666](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L1666)
+[src/sales_orders.scailo_pb.ts:2447](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L2447)
 
 ___
 
 ### userComment
 
-• **userComment**: `string` = `""`
+• `Optional` **userComment**: `string`
 
-Stores any comment that the user might add during this operation
+**`Optional`**
+
+**`Description`**
+
+Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+
+**`Example`**
+
+```ts
+"This is a comment for audit purposes."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
-from field: string user_comment = 1;
+from field: optional string user_comment = 1;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:1652](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L1652)
+[src/sales_orders.scailo_pb.ts:2415](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L2415)
 
 ___
 
@@ -108,7 +147,25 @@ ___
 
 • **uuid**: `string` = `""`
 
-The UUID of the record
+**`Mandatory`**
+
+**`Description`**
+
+The globally unique identifier (UUID) of the target record that needs to be updated.
+
+**`Example`**
+
+```ts
+"550e8400-e29b-41d4-a716-446655440000"
+```
+
+**`Regex`**
+
+^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+
+**`Format`**
+
+Must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
@@ -116,7 +173,7 @@ from field: string uuid = 2;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:1659](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L1659)
+[src/sales_orders.scailo_pb.ts:2431](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L2431)
 
 ___
 
@@ -126,7 +183,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:1675](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L1675)
+[src/sales_orders.scailo_pb.ts:2456](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L2456)
 
 ___
 
@@ -136,7 +193,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:1673](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L1673)
+[src/sales_orders.scailo_pb.ts:2454](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L2454)
 
 ___
 
@@ -146,7 +203,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:1674](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L1674)
+[src/sales_orders.scailo_pb.ts:2455](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L2455)
 
 ## Methods
 
@@ -434,7 +491,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:1693](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L1693)
+[src/sales_orders.scailo_pb.ts:2474](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L2474)
 
 ___
 
@@ -455,7 +512,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:1681](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L1681)
+[src/sales_orders.scailo_pb.ts:2462](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L2462)
 
 ___
 
@@ -476,7 +533,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:1685](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L1685)
+[src/sales_orders.scailo_pb.ts:2466](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L2466)
 
 ___
 
@@ -497,4 +554,4 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:1689](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L1689)
+[src/sales_orders.scailo_pb.ts:2470](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L2470)

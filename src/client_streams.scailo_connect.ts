@@ -6,6 +6,7 @@
 import { ClientStream, ClientStreamClientSubscriber, ClientStreamClientSubscribersList, ClientStreamInternalSubscriber, ClientStreamInternalSubscribersList, ClientStreamMessage, ClientStreamMessageReceiptsList, ClientStreamMessagesList, ClientStreamMessagesSearchRequest, ClientStreamsList, ClientStreamsServiceClientSubscriberCreateRequest, ClientStreamsServiceCountReq, ClientStreamsServiceCreateRequest, ClientStreamsServiceFilterReq, ClientStreamsServiceImportInternalSubscribersRequest, ClientStreamsServiceInternalSubscriberCreateRequest, ClientStreamsServiceMessageCreateRequest, ClientStreamsServicePaginatedMessagesResponse, ClientStreamsServicePaginationReq, ClientStreamsServicePaginationResponse, ClientStreamsServiceSearchAllReq, ClientStreamsServiceUpdateRequest } from "./client_streams.scailo_pb.js";
 import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithUserComment, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
+import { VaultFolderAttachRequest } from "./vault_folders.scailo_pb.js";
 
 /**
  *
@@ -94,6 +95,26 @@ export const ClientStreamsService = {
       name: "CommentAdd",
       I: IdentifierUUIDWithUserComment,
       O: IdentifierUUID,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Attaches a specified folder directly to a record without requiring a full revision workflow.
+     *
+     * This is a convenience API designed to bypass the traditional multi-step modification lifecycle
+     * (e.g., creating a revision, updating data, submitting for verification, and awaiting approval).
+     * It allows for the immediate, single-step association of a vault folder.
+     *
+     * **Side Effects & Lifecycle:**
+     * * The overall status of the record remains unchanged.
+     * * The record's modification timestamp is automatically updated to the current time.
+     * * An entry is appended to the record's audit log tracking this attachment.
+     *
+     * @generated from rpc Scailo.ClientStreamsService.AttachVaultFolder
+     */
+    attachVaultFolder: {
+      name: "AttachVaultFolder",
+      I: VaultFolderAttachRequest,
+      O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
     /**

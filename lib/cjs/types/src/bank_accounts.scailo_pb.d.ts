@@ -4,55 +4,55 @@ import { FormFieldDatum, FormFieldDatumCreateRequest, FormFieldDatumFilterReques
 import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base.scailo_pb.js";
 /**
  *
- * Describes the available sort keys
+ * Enumeration of fields available for sorting bank account search results.
  *
  * @generated from enum Scailo.BANK_ACCOUNT_SORT_KEY
  */
 export declare enum BANK_ACCOUNT_SORT_KEY {
     /**
-     * Fetch ordered results by id
+     * @description Default sort behavior (by internal ID).
      *
      * @generated from enum value: BANK_ACCOUNT_SORT_KEY_ID_UNSPECIFIED = 0;
      */
     BANK_ACCOUNT_SORT_KEY_ID_UNSPECIFIED = 0,
     /**
-     * Fetch ordered results by the creation timestamp
+     * @description Sort by the timestamp the record was initially created.
      *
      * @generated from enum value: BANK_ACCOUNT_SORT_KEY_CREATED_AT = 1;
      */
     BANK_ACCOUNT_SORT_KEY_CREATED_AT = 1,
     /**
-     * Fetch ordered results by the modified timestamp
+     * @description Sort by the timestamp the record was last modified.
      *
      * @generated from enum value: BANK_ACCOUNT_SORT_KEY_MODIFIED_AT = 2;
      */
     BANK_ACCOUNT_SORT_KEY_MODIFIED_AT = 2,
     /**
-     * Fetch ordered results by the approved on timestamp
+     * @description Sort by the official approval timestamp.
      *
      * @generated from enum value: BANK_ACCOUNT_SORT_KEY_APPROVED_ON = 3;
      */
     BANK_ACCOUNT_SORT_KEY_APPROVED_ON = 3,
     /**
-     * Fetch ordered results by the approved by field
+     * @description Sort by the system ID of the approving user.
      *
      * @generated from enum value: BANK_ACCOUNT_SORT_KEY_APPROVED_BY = 4;
      */
     BANK_ACCOUNT_SORT_KEY_APPROVED_BY = 4,
     /**
-     * Fetch ordered results by the approver's role ID
+     * @description Sort by the security role ID used by the approver.
      *
      * @generated from enum value: BANK_ACCOUNT_SORT_KEY_APPROVER_ROLE_ID = 5;
      */
     BANK_ACCOUNT_SORT_KEY_APPROVER_ROLE_ID = 5,
     /**
-     * Fetch ordered results by the name
+     * @description Sort alphabetically by the user-provided name.
      *
      * @generated from enum value: BANK_ACCOUNT_SORT_KEY_NAME = 10;
      */
     BANK_ACCOUNT_SORT_KEY_NAME = 10,
     /**
-     * Fetch ordered results by the code
+     * @description Sort alphabetically by the user-provided code.
      *
      * @generated from enum value: BANK_ACCOUNT_SORT_KEY_CODE = 11;
      */
@@ -60,7 +60,12 @@ export declare enum BANK_ACCOUNT_SORT_KEY {
 }
 /**
  *
- * Describes the parameters necessary to create a record
+ * Request message for creating a new bank account record.
+ * This record tracks corporate banking details, identifiers, and custom form
+ * data tied to specific target business entities for financial tracking.
+ *
+ * **Note:** This is the primary entry point for Finance teams, Treasury, and Admins
+ * to provision corporate bank accounts into the system for compliance and auditing.
  *
  * @generated from message Scailo.BankAccountsServiceCreateRequest
  */
@@ -77,29 +82,63 @@ export declare class BankAccountsServiceCreateRequest extends Message<BankAccoun
      *
      * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
      *
-     * @generated from field: string entity_uuid = 1;
+     * @generated from field: optional string entity_uuid = 1;
      */
-    entityUuid: string;
+    entityUuid?: string;
     /**
-     * Stores any comment that the user might add during this operation
      *
-     * @generated from field: string user_comment = 2;
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
+     *
+     * @generated from field: optional string user_comment = 2;
      */
-    userComment: string;
+    userComment?: string;
     /**
-     * The name of the bank account
+     *
+     * @mandatory
+     *
+     * @description The official or friendly name of the corporate bank account.
+     *
+     * @example "Main Operational Account"
+     *
+     * @regex .+
+     *
+     * @format Must be a non-empty string.
      *
      * @generated from field: string name = 10;
      */
     name: string;
     /**
-     * The unique code by which the bank account is classified
+     *
+     * @mandatory
+     *
+     * @description The unique code or internal classification token by which the bank account is registered.
+     *
+     * @example "ACC-OPS-01"
+     *
+     * @regex .+
+     *
+     * @format Must be a non-empty string.
      *
      * @generated from field: string code = 11;
      */
     code: string;
     /**
-     * The list of dynamic forms
+     *
+     * @optional
+     *
+     * @description A collection of dynamic form fields for organization-specific data.
+     *
+     * @example []
+     *
+     * @format An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
      *
      * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
      */
@@ -115,19 +154,43 @@ export declare class BankAccountsServiceCreateRequest extends Message<BankAccoun
 }
 /**
  *
- * Describes the parameters necessary to update a record
+ * Request message for updating an existing BankAccount record.
+ * Only applicable for records in `DRAFT` or `REVISION` states.
+ * This message allows for modifying the name, code and other custom form fields
+ * of an established BankAccount.
+ *
+ * **Note:** Only fields provided in the request will typically be updated.
+ * The unique system ID is required to locate the target record.
  *
  * @generated from message Scailo.BankAccountsServiceUpdateRequest
  */
 export declare class BankAccountsServiceUpdateRequest extends Message<BankAccountsServiceUpdateRequest> {
     /**
-     * Stores any comment that the user might add during this operation
      *
-     * @generated from field: string user_comment = 1;
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
+     *
+     * @generated from field: optional string user_comment = 1;
      */
-    userComment: string;
+    userComment?: string;
     /**
-     * The ID of the record that needs to be updated
+     *
+     * @mandatory
+     *
+     * @description The unique internal identifier of the target record that needs to be updated.
+     *
+     * @example 1024
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 id = 2;
      */
@@ -140,23 +203,48 @@ export declare class BankAccountsServiceUpdateRequest extends Message<BankAccoun
      *
      * @example true
      *
-     * @generated from field: bool notify_users = 3;
+     * @generated from field: optional bool notify_users = 3;
      */
-    notifyUsers: boolean;
+    notifyUsers?: boolean;
     /**
-     * The name of the bank account
      *
-     * @generated from field: string name = 10;
-     */
-    name: string;
-    /**
-     * The unique code by which the bank account is classified
+     * @optional
      *
-     * @generated from field: string code = 11;
+     * @description The official or friendly name of the corporate bank account.
+     *
+     * @example "Main Operational Account"
+     *
+     * @regex .*
+     *
+     * @format Must be a non-empty string.
+     *
+     * @generated from field: optional string name = 10;
      */
-    code: string;
+    name?: string;
     /**
-     * The list of dynamic forms
+     *
+     * @optional
+     *
+     * @description The unique code or internal classification token by which the bank account is registered.
+     *
+     * @example "ACC-OPS-01"
+     *
+     * @regex .*
+     *
+     * @format Must be a non-empty string.
+     *
+     * @generated from field: optional string code = 11;
+     */
+    code?: string;
+    /**
+     *
+     * @optional
+     *
+     * @description A collection of dynamic form fields for organization-specific data.
+     *
+     * @example []
+     *
+     * @format An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
      *
      * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
      */
@@ -172,7 +260,7 @@ export declare class BankAccountsServiceUpdateRequest extends Message<BankAccoun
 }
 /**
  *
- * Describes the parameters that are part of a standard response
+ * Represents a full Bank Account within the system.
  *
  * @generated from message Scailo.BankAccount
  */
@@ -215,19 +303,26 @@ export declare class BankAccount extends Message<BankAccount> {
      */
     logs: LogbookLogConciseSLC[];
     /**
-     * The name of the bank account
+     *
+     * @description The official or friendly name of the corporate bank account.
+     *
+     * @example "Main Operational Account"
      *
      * @generated from field: string name = 10;
      */
     name: string;
     /**
-     * The unique code by which the bank account is classified
+     *
+     * @description The unique code or internal classification token by which the bank account is registered.
+     *
+     * @example "ACC-OPS-01"
      *
      * @generated from field: string code = 11;
      */
     code: string;
     /**
-     * The list of dynamic forms
+     *
+     * @description Collection of organization-specific dynamic data.
      *
      * @generated from field: repeated Scailo.FormFieldDatum form_data = 30;
      */
@@ -243,13 +338,13 @@ export declare class BankAccount extends Message<BankAccount> {
 }
 /**
  *
- * Describes the message consisting of the list of records
+ * Container message for a collection of Bank Account records.
  *
  * @generated from message Scailo.BankAccountsList
  */
 export declare class BankAccountsList extends Message<BankAccountsList> {
     /**
-     * List of records
+     * @description An array of Bank Account records.
      *
      * @generated from field: repeated Scailo.BankAccount list = 1;
      */
@@ -265,7 +360,7 @@ export declare class BankAccountsList extends Message<BankAccountsList> {
 }
 /**
  *
- * Describes a pagination request to retrieve records
+ * Pagination request for retrieving slices of Bank Account records.
  *
  * @generated from message Scailo.BankAccountsServicePaginationReq
  */
@@ -278,9 +373,9 @@ export declare class BankAccountsServicePaginationReq extends Message<BankAccoun
      *
      * @example ANY
      *
-     * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+     * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
      */
-    isActive: BOOL_FILTER;
+    isActive?: BOOL_FILTER;
     /**
      *
      * @mandatory
@@ -308,9 +403,9 @@ export declare class BankAccountsServicePaginationReq extends Message<BankAccoun
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 offset = 3;
+     * @generated from field: optional uint64 offset = 3;
      */
-    offset: bigint;
+    offset?: bigint;
     /**
      *
      * @optional
@@ -319,24 +414,29 @@ export declare class BankAccountsServicePaginationReq extends Message<BankAccoun
      *
      * @example DESCENDING
      *
-     * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+     * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
      */
-    sortOrder: SORT_ORDER;
+    sortOrder?: SORT_ORDER;
     /**
      *
      * @optional
      *
      * @description The specific field key to sort the results by.
      *
-     * @generated from field: Scailo.BANK_ACCOUNT_SORT_KEY sort_key = 5;
+     * @generated from field: optional Scailo.BANK_ACCOUNT_SORT_KEY sort_key = 5;
      */
-    sortKey: BANK_ACCOUNT_SORT_KEY;
+    sortKey?: BANK_ACCOUNT_SORT_KEY;
     /**
-     * The status of this bank account
      *
-     * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
+     * @optional
+     *
+     * @description Filter results by a specific lifecycle status.
+     *
+     * @example STANDING
+     *
+     * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
      */
-    status: STANDARD_LIFECYCLE_STATUS;
+    status?: STANDARD_LIFECYCLE_STATUS;
     constructor(data?: PartialMessage<BankAccountsServicePaginationReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.BankAccountsServicePaginationReq";
@@ -348,7 +448,7 @@ export declare class BankAccountsServicePaginationReq extends Message<BankAccoun
 }
 /**
  *
- * Describes the response to a pagination request
+ * Response message for paginated queries, including total counts for UI elements.
  *
  * @generated from message Scailo.BankAccountsServicePaginationResponse
  */
@@ -398,7 +498,12 @@ export declare class BankAccountsServicePaginationResponse extends Message<BankA
 }
 /**
  *
- * Describes the base request payload of a filter search
+ * Advanced filter request for searching and paginating bank accounts using multiple logical criteria.
+ * This message encapsulates pagination controls, sorting keys, lifecycle status filters,
+ * timestamp ranges, and entity references.
+ *
+ * **Note:** This is the primary message layout used by the frontend and external API clients
+ * to build robust data-table queries, reporting views, and targeted record lookups.
  *
  * @generated from message Scailo.BankAccountsServiceFilterReq
  */
@@ -411,9 +516,9 @@ export declare class BankAccountsServiceFilterReq extends Message<BankAccountsSe
      *
      * @example ANY
      *
-     * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+     * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
      */
-    isActive: BOOL_FILTER;
+    isActive?: BOOL_FILTER;
     /**
      *
      * @mandatory
@@ -441,9 +546,9 @@ export declare class BankAccountsServiceFilterReq extends Message<BankAccountsSe
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 offset = 3;
+     * @generated from field: optional uint64 offset = 3;
      */
-    offset: bigint;
+    offset?: bigint;
     /**
      *
      * @optional
@@ -452,18 +557,18 @@ export declare class BankAccountsServiceFilterReq extends Message<BankAccountsSe
      *
      * @example DESCENDING
      *
-     * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+     * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
      */
-    sortOrder: SORT_ORDER;
+    sortOrder?: SORT_ORDER;
     /**
      *
      * @optional
      *
      * @description The field used for sorting.
      *
-     * @generated from field: Scailo.BANK_ACCOUNT_SORT_KEY sort_key = 5;
+     * @generated from field: optional Scailo.BANK_ACCOUNT_SORT_KEY sort_key = 5;
      */
-    sortKey: BANK_ACCOUNT_SORT_KEY;
+    sortKey?: BANK_ACCOUNT_SORT_KEY;
     /**
      *
      * @optional
@@ -476,9 +581,9 @@ export declare class BankAccountsServiceFilterReq extends Message<BankAccountsSe
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 creation_timestamp_start = 101;
+     * @generated from field: optional uint64 creation_timestamp_start = 101;
      */
-    creationTimestampStart: bigint;
+    creationTimestampStart?: bigint;
     /**
      *
      * @optional
@@ -491,9 +596,9 @@ export declare class BankAccountsServiceFilterReq extends Message<BankAccountsSe
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 creation_timestamp_end = 102;
+     * @generated from field: optional uint64 creation_timestamp_end = 102;
      */
-    creationTimestampEnd: bigint;
+    creationTimestampEnd?: bigint;
     /**
      *
      * @optional
@@ -506,9 +611,9 @@ export declare class BankAccountsServiceFilterReq extends Message<BankAccountsSe
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 modification_timestamp_start = 103;
+     * @generated from field: optional uint64 modification_timestamp_start = 103;
      */
-    modificationTimestampStart: bigint;
+    modificationTimestampStart?: bigint;
     /**
      *
      * @optional
@@ -521,9 +626,9 @@ export declare class BankAccountsServiceFilterReq extends Message<BankAccountsSe
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 modification_timestamp_end = 104;
+     * @generated from field: optional uint64 modification_timestamp_end = 104;
      */
-    modificationTimestampEnd: bigint;
+    modificationTimestampEnd?: bigint;
     /**
      *
      * @optional
@@ -536,9 +641,9 @@ export declare class BankAccountsServiceFilterReq extends Message<BankAccountsSe
      *
      * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
      *
-     * @generated from field: string entity_uuid = 8;
+     * @generated from field: optional string entity_uuid = 8;
      */
-    entityUuid: string;
+    entityUuid?: string;
     /**
      *
      * @optional
@@ -547,9 +652,9 @@ export declare class BankAccountsServiceFilterReq extends Message<BankAccountsSe
      *
      * @example STANDING
      *
-     * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+     * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
      */
-    status: STANDARD_LIFECYCLE_STATUS;
+    status?: STANDARD_LIFECYCLE_STATUS;
     /**
      *
      * @optional
@@ -562,9 +667,9 @@ export declare class BankAccountsServiceFilterReq extends Message<BankAccountsSe
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approved_on_start = 11;
+     * @generated from field: optional uint64 approved_on_start = 11;
      */
-    approvedOnStart: bigint;
+    approvedOnStart?: bigint;
     /**
      *
      * @optional
@@ -577,9 +682,9 @@ export declare class BankAccountsServiceFilterReq extends Message<BankAccountsSe
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approved_on_end = 12;
+     * @generated from field: optional uint64 approved_on_end = 12;
      */
-    approvedOnEnd: bigint;
+    approvedOnEnd?: bigint;
     /**
      *
      * @optional
@@ -592,9 +697,9 @@ export declare class BankAccountsServiceFilterReq extends Message<BankAccountsSe
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approved_by_user_id = 13;
+     * @generated from field: optional uint64 approved_by_user_id = 13;
      */
-    approvedByUserId: bigint;
+    approvedByUserId?: bigint;
     /**
      *
      * @optional
@@ -607,21 +712,39 @@ export declare class BankAccountsServiceFilterReq extends Message<BankAccountsSe
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approver_role_id = 14;
+     * @generated from field: optional uint64 approver_role_id = 14;
      */
-    approverRoleId: bigint;
+    approverRoleId?: bigint;
     /**
-     * The name of the bank account
      *
-     * @generated from field: string name = 20;
+     * @optional
+     *
+     * @description The official or friendly name of the corporate bank account.
+     *
+     * @example "Main Operational Account"
+     *
+     * @regex .*
+     *
+     * @format Must be a non-empty string.
+     *
+     * @generated from field: optional string name = 20;
      */
-    name: string;
+    name?: string;
     /**
-     * The unique code by which the bank account is classified
      *
-     * @generated from field: string code = 21;
+     * @optional
+     *
+     * @description The unique code or internal classification token by which the bank account is registered.
+     *
+     * @example "ACC-OPS-01"
+     *
+     * @regex .*
+     *
+     * @format Must be a non-empty string.
+     *
+     * @generated from field: optional string code = 21;
      */
-    code: string;
+    code?: string;
     /**
      *
      * @optional
@@ -640,9 +763,9 @@ export declare class BankAccountsServiceFilterReq extends Message<BankAccountsSe
      *
      * @example true
      *
-     * @generated from field: bool include_form_data = 501;
+     * @generated from field: optional bool include_form_data = 501;
      */
-    includeFormData: boolean;
+    includeFormData?: boolean;
     constructor(data?: PartialMessage<BankAccountsServiceFilterReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.BankAccountsServiceFilterReq";
@@ -654,7 +777,13 @@ export declare class BankAccountsServiceFilterReq extends Message<BankAccountsSe
 }
 /**
  *
- * Describes the base request payload of a count search
+ * Target filter request for counting bank account records matching specific logical criteria.
+ * This message encapsulates lifecycle status filters, timestamp ranges, workflow markers,
+ * and entity references to determine the total size of a targeted dataset.
+ *
+ * **Note:** This is the primary message layout used by backend calculation engines, reporting
+ * services, and frontend pagination headers to evaluate total record matches dynamically
+ * before or alongside retrieving paginated results.
  *
  * @generated from message Scailo.BankAccountsServiceCountReq
  */
@@ -667,9 +796,9 @@ export declare class BankAccountsServiceCountReq extends Message<BankAccountsSer
      *
      * @example ANY
      *
-     * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+     * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
      */
-    isActive: BOOL_FILTER;
+    isActive?: BOOL_FILTER;
     /**
      *
      * @optional
@@ -682,9 +811,9 @@ export declare class BankAccountsServiceCountReq extends Message<BankAccountsSer
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 creation_timestamp_start = 101;
+     * @generated from field: optional uint64 creation_timestamp_start = 101;
      */
-    creationTimestampStart: bigint;
+    creationTimestampStart?: bigint;
     /**
      *
      * @optional
@@ -697,9 +826,9 @@ export declare class BankAccountsServiceCountReq extends Message<BankAccountsSer
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 creation_timestamp_end = 102;
+     * @generated from field: optional uint64 creation_timestamp_end = 102;
      */
-    creationTimestampEnd: bigint;
+    creationTimestampEnd?: bigint;
     /**
      *
      * @optional
@@ -712,9 +841,9 @@ export declare class BankAccountsServiceCountReq extends Message<BankAccountsSer
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 modification_timestamp_start = 103;
+     * @generated from field: optional uint64 modification_timestamp_start = 103;
      */
-    modificationTimestampStart: bigint;
+    modificationTimestampStart?: bigint;
     /**
      *
      * @optional
@@ -727,9 +856,9 @@ export declare class BankAccountsServiceCountReq extends Message<BankAccountsSer
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 modification_timestamp_end = 104;
+     * @generated from field: optional uint64 modification_timestamp_end = 104;
      */
-    modificationTimestampEnd: bigint;
+    modificationTimestampEnd?: bigint;
     /**
      *
      * @optional
@@ -742,9 +871,9 @@ export declare class BankAccountsServiceCountReq extends Message<BankAccountsSer
      *
      * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
      *
-     * @generated from field: string entity_uuid = 8;
+     * @generated from field: optional string entity_uuid = 8;
      */
-    entityUuid: string;
+    entityUuid?: string;
     /**
      *
      * @optional
@@ -753,9 +882,9 @@ export declare class BankAccountsServiceCountReq extends Message<BankAccountsSer
      *
      * @example STANDING
      *
-     * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+     * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
      */
-    status: STANDARD_LIFECYCLE_STATUS;
+    status?: STANDARD_LIFECYCLE_STATUS;
     /**
      *
      * @optional
@@ -768,9 +897,9 @@ export declare class BankAccountsServiceCountReq extends Message<BankAccountsSer
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approved_on_start = 11;
+     * @generated from field: optional uint64 approved_on_start = 11;
      */
-    approvedOnStart: bigint;
+    approvedOnStart?: bigint;
     /**
      *
      * @optional
@@ -783,9 +912,9 @@ export declare class BankAccountsServiceCountReq extends Message<BankAccountsSer
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approved_on_end = 12;
+     * @generated from field: optional uint64 approved_on_end = 12;
      */
-    approvedOnEnd: bigint;
+    approvedOnEnd?: bigint;
     /**
      *
      * @optional
@@ -798,9 +927,9 @@ export declare class BankAccountsServiceCountReq extends Message<BankAccountsSer
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approved_by_user_id = 13;
+     * @generated from field: optional uint64 approved_by_user_id = 13;
      */
-    approvedByUserId: bigint;
+    approvedByUserId?: bigint;
     /**
      *
      * @optional
@@ -813,23 +942,44 @@ export declare class BankAccountsServiceCountReq extends Message<BankAccountsSer
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approver_role_id = 14;
+     * @generated from field: optional uint64 approver_role_id = 14;
      */
-    approverRoleId: bigint;
+    approverRoleId?: bigint;
     /**
-     * The name of the bank account
      *
-     * @generated from field: string name = 20;
-     */
-    name: string;
-    /**
-     * The unique code by which the bank account is classified
+     * @optional
      *
-     * @generated from field: string code = 21;
+     * @description The official or friendly name of the corporate bank account.
+     *
+     * @example "Main Operational Account"
+     *
+     * @regex .*
+     *
+     * @format Must be a non-empty string.
+     *
+     * @generated from field: optional string name = 20;
      */
-    code: string;
+    name?: string;
     /**
-     * The list of form data filters
+     *
+     * @optional
+     *
+     * @description The unique code or internal classification token by which the bank account is registered.
+     *
+     * @example "ACC-OPS-01"
+     *
+     * @regex .*
+     *
+     * @format Must be a non-empty string.
+     *
+     * @generated from field: optional string code = 21;
+     */
+    code?: string;
+    /**
+     *
+     * @optional
+     *
+     * @description Count based on dynamic form field values.
      *
      * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
      */
@@ -845,7 +995,13 @@ export declare class BankAccountsServiceCountReq extends Message<BankAccountsSer
 }
 /**
  *
- * Describes the request payload for performing a generic search operation on records
+ * Broad-spectrum search and lookup request for locating and paginating bank accounts via text matching.
+ * This message encapsulates full-text query parameters, pagination controls, sorting keys,
+ * lifecycle status constraints, and other core references.
+ *
+ * **Note:** This is the primary message layout used for global search bars, fast-filtering dashboard
+ * inputs, and omni-box search utilities where users need to match loose textual terms against
+ * records while retaining structural pagination.
  *
  * @generated from message Scailo.BankAccountsServiceSearchAllReq
  */
@@ -858,9 +1014,9 @@ export declare class BankAccountsServiceSearchAllReq extends Message<BankAccount
      *
      * @example ANY
      *
-     * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+     * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
      */
-    isActive: BOOL_FILTER;
+    isActive?: BOOL_FILTER;
     /**
      *
      * @mandatory
@@ -888,9 +1044,9 @@ export declare class BankAccountsServiceSearchAllReq extends Message<BankAccount
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 offset = 3;
+     * @generated from field: optional uint64 offset = 3;
      */
-    offset: bigint;
+    offset?: bigint;
     /**
      *
      * @optional
@@ -899,18 +1055,18 @@ export declare class BankAccountsServiceSearchAllReq extends Message<BankAccount
      *
      * @example DESCENDING
      *
-     * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+     * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
      */
-    sortOrder: SORT_ORDER;
+    sortOrder?: SORT_ORDER;
     /**
      *
      * @optional
      *
      * @description The field used for sorting.
      *
-     * @generated from field: Scailo.BANK_ACCOUNT_SORT_KEY sort_key = 5;
+     * @generated from field: optional Scailo.BANK_ACCOUNT_SORT_KEY sort_key = 5;
      */
-    sortKey: BANK_ACCOUNT_SORT_KEY;
+    sortKey?: BANK_ACCOUNT_SORT_KEY;
     /**
      *
      * @optional
@@ -923,9 +1079,9 @@ export declare class BankAccountsServiceSearchAllReq extends Message<BankAccount
      *
      * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
      *
-     * @generated from field: string entity_uuid = 6;
+     * @generated from field: optional string entity_uuid = 6;
      */
-    entityUuid: string;
+    entityUuid?: string;
     /**
      *
      * @optional
@@ -934,9 +1090,9 @@ export declare class BankAccountsServiceSearchAllReq extends Message<BankAccount
      *
      * @example STANDING
      *
-     * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+     * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
      */
-    status: STANDARD_LIFECYCLE_STATUS;
+    status?: STANDARD_LIFECYCLE_STATUS;
     /**
      *
      * @mandatory
@@ -949,9 +1105,9 @@ export declare class BankAccountsServiceSearchAllReq extends Message<BankAccount
      *
      * @format: May contain any UTF-8 characters.
      *
-     * @generated from field: string search_key = 11;
+     * @generated from field: optional string search_key = 11;
      */
-    searchKey: string;
+    searchKey?: string;
     constructor(data?: PartialMessage<BankAccountsServiceSearchAllReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.BankAccountsServiceSearchAllReq";

@@ -2,7 +2,7 @@
 
 # Enumeration: PROFORMA\_INVOICE\_ITEM\_STATUS
 
-Describes the applicable statuses of proforma invoice items
+Enum defining the applicable lifecycle and verification statuses for proforma invoice items.
 
 **`Generated`**
 
@@ -22,7 +22,9 @@ from enum Scailo.PROFORMA_INVOICE_ITEM_STATUS
 
 • **PROFORMA\_INVOICE\_ITEM\_STATUS\_ANY\_UNSPECIFIED** = ``0``
 
-Denotes that status be disregarded. This is used only within search APIs
+**`Description`**
+
+Denotes that the status filter should be disregarded. Used exclusively within search APIs to bypass status restrictions.
 
 **`Generated`**
 
@@ -30,7 +32,7 @@ from enum value: PROFORMA_INVOICE_ITEM_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:299](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L299)
+[src/proforma_invoices.scailo_pb.ts:302](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L302)
 
 ___
 
@@ -38,7 +40,9 @@ ___
 
 • **PROFORMA\_INVOICE\_ITEM\_STATUS\_APPROVED** = ``1``
 
-Denotes that the proforma invoice items must have been approved
+**`Description`**
+
+Denotes that the proforma invoice item association has passed verification and is actively approved.
 
 **`Generated`**
 
@@ -46,7 +50,7 @@ from enum value: PROFORMA_INVOICE_ITEM_STATUS_APPROVED = 1;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:306](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L306)
+[src/proforma_invoices.scailo_pb.ts:309](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L309)
 
 ___
 
@@ -54,7 +58,9 @@ ___
 
 • **PROFORMA\_INVOICE\_ITEM\_STATUS\_UNAPPROVED** = ``2``
 
-Denotes that the proforma invoice items must be waiting for approval
+**`Description`**
+
+Denotes that the proforma invoice item association is pending review and waiting for administrative approval.
 
 **`Generated`**
 
@@ -62,4 +68,4 @@ from enum value: PROFORMA_INVOICE_ITEM_STATUS_UNAPPROVED = 2;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:313](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L313)
+[src/proforma_invoices.scailo_pb.ts:316](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L316)

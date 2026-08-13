@@ -10,20 +10,22 @@ import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, 
 
 /**
  *
- * Stores all the possible references from which a goods dispatch can be added
+ * Enumeration of the supported source record types from which a Goods Dispatch can be generated.
+ * This determines the operational linkage between the physical logistics/fulfillment process
+ * and the original commercial contract.
  *
  * @generated from enum Scailo.GOODS_DISPATCH_REF_FROM
  */
 export enum GOODS_DISPATCH_REF_FROM {
   /**
-   * Used only in filters
+   * @description Default behavior, ignoring the source record type. Utilized primarily within search and filtering APIs to return dispatches regardless of their origin.
    *
    * @generated from enum value: GOODS_DISPATCH_REF_FROM_ANY_UNSPECIFIED = 0;
    */
   GOODS_DISPATCH_REF_FROM_ANY_UNSPECIFIED = 0,
 
   /**
-   * Denotes that the goods dispatch originated from a sales order
+   * @description Denotes that the goods dispatch was generated directly against an approved, legally binding Sales Order.
    *
    * @generated from enum value: GOODS_DISPATCH_REF_FROM_SALES_ORDER = 1;
    */
@@ -37,83 +39,83 @@ proto3.util.setEnumType(GOODS_DISPATCH_REF_FROM, "Scailo.GOODS_DISPATCH_REF_FROM
 
 /**
  *
- * Describes the available sort keys
+ * Enumeration of fields available for sorting goods dispatch item search results.
  *
  * @generated from enum Scailo.GOODS_DISPATCH_ITEM_SORT_KEY
  */
 export enum GOODS_DISPATCH_ITEM_SORT_KEY {
   /**
-   * Fetch ordered results by id
+   * @description Default sort behavior (by internal item sequence ID).
    *
    * @generated from enum value: GOODS_DISPATCH_ITEM_SORT_KEY_ID_UNSPECIFIED = 0;
    */
   GOODS_DISPATCH_ITEM_SORT_KEY_ID_UNSPECIFIED = 0,
 
   /**
-   * Fetch ordered results by the creation timestamp
+   * @description Sort by the timestamp the item record was initially created.
    *
    * @generated from enum value: GOODS_DISPATCH_ITEM_SORT_KEY_CREATED_AT = 1;
    */
   GOODS_DISPATCH_ITEM_SORT_KEY_CREATED_AT = 1,
 
   /**
-   * Fetch ordered results by the modified timestamp
+   * @description Sort by the timestamp the item record was last modified.
    *
    * @generated from enum value: GOODS_DISPATCH_ITEM_SORT_KEY_MODIFIED_AT = 2;
    */
   GOODS_DISPATCH_ITEM_SORT_KEY_MODIFIED_AT = 2,
 
   /**
-   * Fetch ordered results by the approved on timestamp
+   * @description Sort by the official approval timestamp of the item.
    *
    * @generated from enum value: GOODS_DISPATCH_ITEM_SORT_KEY_APPROVED_ON = 3;
    */
   GOODS_DISPATCH_ITEM_SORT_KEY_APPROVED_ON = 3,
 
   /**
-   * Fetch ordered results by the approved by field
+   * @description Sort by the system ID of the approving user.
    *
    * @generated from enum value: GOODS_DISPATCH_ITEM_SORT_KEY_APPROVED_BY = 4;
    */
   GOODS_DISPATCH_ITEM_SORT_KEY_APPROVED_BY = 4,
 
   /**
-   * Fetch ordered results by the approver's role ID
+   * @description Sort by the security role ID used by the approver.
    *
    * @generated from enum value: GOODS_DISPATCH_ITEM_SORT_KEY_APPROVER_ROLE_ID = 5;
    */
   GOODS_DISPATCH_ITEM_SORT_KEY_APPROVER_ROLE_ID = 5,
 
   /**
-   * Fetch ordered results by the family ID
+   * @description Sort by the internal ID of the family.
    *
    * @generated from enum value: GOODS_DISPATCH_ITEM_SORT_KEY_FAMILY_ID = 10;
    */
   GOODS_DISPATCH_ITEM_SORT_KEY_FAMILY_ID = 10,
 
   /**
-   * Fetch ordered results by the internal quantity
+   * @description Sort by the dispatched quantity evaluated in the internal unit of measure.
    *
    * @generated from enum value: GOODS_DISPATCH_ITEM_SORT_KEY_INTERNAL_QUANTITY = 11;
    */
   GOODS_DISPATCH_ITEM_SORT_KEY_INTERNAL_QUANTITY = 11,
 
   /**
-   * Fetch ordered results by the client unit of material ID
+   * @description Sort by the internal ID of the client's requested unit of measure.
    *
    * @generated from enum value: GOODS_DISPATCH_ITEM_SORT_KEY_CLIENT_UOM_ID = 12;
    */
   GOODS_DISPATCH_ITEM_SORT_KEY_CLIENT_UOM_ID = 12,
 
   /**
-   * Fetch ordered results by the client quantity
+   * @description Sort by the dispatched quantity evaluated in the client's unit of measure.
    *
    * @generated from enum value: GOODS_DISPATCH_ITEM_SORT_KEY_CLIENT_QUANTITY = 13;
    */
   GOODS_DISPATCH_ITEM_SORT_KEY_CLIENT_QUANTITY = 13,
 
   /**
-   * Fetch ordered results by the client family code
+   * @description Sort alphabetically by the client's specific family code or SKU.
    *
    * @generated from enum value: GOODS_DISPATCH_ITEM_SORT_KEY_CLIENT_FAMILY_CODE = 14;
    */
@@ -136,27 +138,27 @@ proto3.util.setEnumType(GOODS_DISPATCH_ITEM_SORT_KEY, "Scailo.GOODS_DISPATCH_ITE
 
 /**
  *
- * Describes the applicable statuses of goods dispatch items
+ * Enum defining the applicable lifecycle and verification statuses for goods dispatch items.
  *
  * @generated from enum Scailo.GOODS_DISPATCH_ITEM_STATUS
  */
 export enum GOODS_DISPATCH_ITEM_STATUS {
   /**
-   * Denotes that status be disregarded. This is used only within search APIs
+   * @description Denotes that the status filter should be disregarded. Used exclusively within search APIs to bypass status restrictions.
    *
    * @generated from enum value: GOODS_DISPATCH_ITEM_STATUS_ANY_UNSPECIFIED = 0;
    */
   GOODS_DISPATCH_ITEM_STATUS_ANY_UNSPECIFIED = 0,
 
   /**
-   * Denotes that the goods dispatch items must have been approved
+   * @description Denotes that the goods dispatch item association has passed verification and is actively approved.
    *
    * @generated from enum value: GOODS_DISPATCH_ITEM_STATUS_APPROVED = 1;
    */
   GOODS_DISPATCH_ITEM_STATUS_APPROVED = 1,
 
   /**
-   * Denotes that the goods dispatch items must be waiting for approval
+   * @description Denotes that the goods dispatch item association is pending review and waiting for administrative approval.
    *
    * @generated from enum value: GOODS_DISPATCH_ITEM_STATUS_UNAPPROVED = 2;
    */
@@ -171,69 +173,69 @@ proto3.util.setEnumType(GOODS_DISPATCH_ITEM_STATUS, "Scailo.GOODS_DISPATCH_ITEM_
 
 /**
  *
- * Describes the available sort keys
+ * Enumeration of fields available for sorting goods dispatch search results.
  *
  * @generated from enum Scailo.GOODS_DISPATCH_SORT_KEY
  */
 export enum GOODS_DISPATCH_SORT_KEY {
   /**
-   * Fetch ordered results by id
+   * @description Default sort behavior (by internal ID).
    *
    * @generated from enum value: GOODS_DISPATCH_SORT_KEY_ID_UNSPECIFIED = 0;
    */
   GOODS_DISPATCH_SORT_KEY_ID_UNSPECIFIED = 0,
 
   /**
-   * Fetch ordered results by the creation timestamp
+   * @description Sort by the timestamp the record was initially created.
    *
    * @generated from enum value: GOODS_DISPATCH_SORT_KEY_CREATED_AT = 1;
    */
   GOODS_DISPATCH_SORT_KEY_CREATED_AT = 1,
 
   /**
-   * Fetch ordered results by the modified timestamp
+   * @description Sort by the timestamp the record was last modified.
    *
    * @generated from enum value: GOODS_DISPATCH_SORT_KEY_MODIFIED_AT = 2;
    */
   GOODS_DISPATCH_SORT_KEY_MODIFIED_AT = 2,
 
   /**
-   * Fetch ordered results by the approved on timestamp
+   * @description Sort by the official approval timestamp.
    *
    * @generated from enum value: GOODS_DISPATCH_SORT_KEY_APPROVED_ON = 3;
    */
   GOODS_DISPATCH_SORT_KEY_APPROVED_ON = 3,
 
   /**
-   * Fetch ordered results by the approved by field
+   * @description Sort by the system ID of the approving user.
    *
    * @generated from enum value: GOODS_DISPATCH_SORT_KEY_APPROVED_BY = 4;
    */
   GOODS_DISPATCH_SORT_KEY_APPROVED_BY = 4,
 
   /**
-   * Fetch ordered results by the approver's role ID
+   * @description Sort by the security role ID used by the approver.
    *
    * @generated from enum value: GOODS_DISPATCH_SORT_KEY_APPROVER_ROLE_ID = 5;
    */
   GOODS_DISPATCH_SORT_KEY_APPROVER_ROLE_ID = 5,
 
   /**
-   * Fetch ordered results by the approver's completed on timestamp
+   * @description Sort by the timestamp of record completion.
    *
    * @generated from enum value: GOODS_DISPATCH_SORT_KEY_COMPLETED_ON = 6;
    */
   GOODS_DISPATCH_SORT_KEY_COMPLETED_ON = 6,
 
   /**
-   * Fetch ordered results by the reference ID
+   * @description Sort alphabetically by the user-provided reference ID.
    *
    * @generated from enum value: GOODS_DISPATCH_SORT_KEY_REFERENCE_ID = 10;
    */
   GOODS_DISPATCH_SORT_KEY_REFERENCE_ID = 10,
 
   /**
-   * Fetch ordered results by the final ref number
+   * @description Sort alphabetically by the system-generated reference number.
    *
    * @generated from enum value: GOODS_DISPATCH_SORT_KEY_FINAL_REF_NUMBER = 11;
    */
@@ -254,27 +256,30 @@ proto3.util.setEnumType(GOODS_DISPATCH_SORT_KEY, "Scailo.GOODS_DISPATCH_SORT_KEY
 
 /**
  *
- * Describes the available billing statuses
+ * Enumeration of the supported financial conversion statuses for a Goods Dispatch.
+ * This tracks the cross-departmental lifecycle progression of a physical fulfillment operation,
+ * identifying whether the specific quantities that left the warehouse have been formally
+ * realized and converted into a final, legally binding Sales Invoice by the finance team.
  *
  * @generated from enum Scailo.GOODS_DISPATCH_BILLING_STATUS
  */
 export enum GOODS_DISPATCH_BILLING_STATUS {
   /**
-   * Any billing status
+   * @description Default behavior, ignoring the billing status criteria. Utilized primarily within search and filtering payloads to return all logistical records regardless of their financial conversion state.
    *
    * @generated from enum value: GOODS_DISPATCH_BILLING_STATUS_ANY_UNSPECIFIED = 0;
    */
   GOODS_DISPATCH_BILLING_STATUS_ANY_UNSPECIFIED = 0,
 
   /**
-   * Goods dispatch is billed
+   * @description Indicates that the goods dispatch has been formally billed. A finalized, legally binding Sales Invoice has been successfully generated to request payment for these exact physically shipped quantities.
    *
    * @generated from enum value: GOODS_DISPATCH_BILLING_STATUS_BILLED = 1;
    */
   GOODS_DISPATCH_BILLING_STATUS_BILLED = 1,
 
   /**
-   * Goods dispatch is unbilled
+   * @description Indicates that the goods dispatch remains unbilled. The physical fulfillment has been recorded, but a formal Sales Invoice has not yet been generated, meaning the revenue for this shipment is pending.
    *
    * @generated from enum value: GOODS_DISPATCH_BILLING_STATUS_UNBILLED = 2;
    */
@@ -289,7 +294,11 @@ proto3.util.setEnumType(GOODS_DISPATCH_BILLING_STATUS, "Scailo.GOODS_DISPATCH_BI
 
 /**
  *
- * Describes the parameters necessary to create a record
+ * Request message for defining and initiating a new Goods Dispatch record within the system.
+ * This record represents the physical fulfillment, packing, and outbound shipping of products
+ * to a buyer. It is heavily constrained by its parent source document (e.g., a Sales Order),
+ * ensuring that the warehouse or fulfillment center only dispatches quantities that have been formally
+ * negotiated and approved.
  *
  * @generated from message Scailo.GoodsDispatchesServiceCreateRequest
  */
@@ -306,16 +315,25 @@ export class GoodsDispatchesServiceCreateRequest extends Message<GoodsDispatches
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 1;
+   * @generated from field: optional string entity_uuid = 1;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 2;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 2;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
    *
@@ -329,9 +347,9 @@ export class GoodsDispatchesServiceCreateRequest extends Message<GoodsDispatches
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 vault_folder_id = 9;
+   * @generated from field: optional uint64 vault_folder_id = 9;
    */
-  vaultFolderId = protoInt64.zero;
+  vaultFolderId?: bigint;
 
   /**
    *
@@ -350,28 +368,62 @@ export class GoodsDispatchesServiceCreateRequest extends Message<GoodsDispatches
   referenceId = "";
 
   /**
-   * The associated reference
+   *
+   * @mandatory
+   *
+   * @description The specific module or record type from which this physical fulfillment operation originates (e.g., Sales Order).
+   *
+   * @example "GOODS_DISPATCH_REF_FROM_SALES_ORDER"
+   *
+   * @regex ^[A-Z_]+$
+   *
+   * @format Valid GOODS_DISPATCH_REF_FROM enum value. Cannot be unspecified (0).
    *
    * @generated from field: Scailo.GOODS_DISPATCH_REF_FROM ref_from = 12;
    */
   refFrom = GOODS_DISPATCH_REF_FROM.GOODS_DISPATCH_REF_FROM_ANY_UNSPECIFIED;
 
   /**
-   * The associated ID of the reference
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the specific referenced source document (e.g., the ID of the actual Sales Order dictating this fulfillment).
+   *
+   * @example 1024
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 ref_id = 13;
    */
   refId = protoInt64.zero;
 
   /**
-   * The location ID of where the record is created
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the physical location, warehouse, or fulfillment center from which these goods are being picked, packed, and dispatched.
+   *
+   * @example 42
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 location_id = 15;
    */
   locationId = protoInt64.zero;
 
   /**
-   * The list of dynamic forms
+   *
+   * @optional
+   *
+   * @description A collection of dynamic form fields for organization-specific data.
+   *
+   * @example []
+   *
+   * @format An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
    *
    * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
    */
@@ -385,9 +437,9 @@ export class GoodsDispatchesServiceCreateRequest extends Message<GoodsDispatches
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.GoodsDispatchesServiceCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
     { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 12, name: "ref_from", kind: "enum", T: proto3.getEnumType(GOODS_DISPATCH_REF_FROM) },
     { no: 13, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
@@ -414,20 +466,44 @@ export class GoodsDispatchesServiceCreateRequest extends Message<GoodsDispatches
 
 /**
  *
- * Describes the parameters necessary to update a record
+ * Request message for modifying the core metadata and logistical parameters of an existing Goods Dispatch record.
+ * This payload supports updating external reference IDs (e.g., carrier tracking numbers), document storage locations
+ * (e.g., for packing slips or bills of lading), and dynamic organizational attributes.
+ *
+ * **Note:** These modifications are typically restricted to the preliminary or drafting phases of the fulfillment
+ * lifecycle. Once the dispatch is verified and physically shipped (reaching a finalized state), core logistical
+ * details become immutable to ensure an accurate audit trail for downstream billing (Sales Invoices) and inventory deduction.
  *
  * @generated from message Scailo.GoodsDispatchesServiceUpdateRequest
  */
 export class GoodsDispatchesServiceUpdateRequest extends Message<GoodsDispatchesServiceUpdateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * The ID of the record that needs to be updated
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target record that needs to be updated.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 id = 2;
    */
@@ -441,9 +517,9 @@ export class GoodsDispatchesServiceUpdateRequest extends Message<GoodsDispatches
    *
    * @example true
    *
-   * @generated from field: bool notify_users = 3;
+   * @generated from field: optional bool notify_users = 3;
    */
-  notifyUsers = false;
+  notifyUsers?: boolean;
 
   /**
    *
@@ -457,9 +533,9 @@ export class GoodsDispatchesServiceUpdateRequest extends Message<GoodsDispatches
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 vault_folder_id = 9;
+   * @generated from field: optional uint64 vault_folder_id = 9;
    */
-  vaultFolderId = protoInt64.zero;
+  vaultFolderId?: bigint;
 
   /**
    *
@@ -473,12 +549,19 @@ export class GoodsDispatchesServiceUpdateRequest extends Message<GoodsDispatches
    *
    * @format Alphanumeric characters and spaces only. No special symbols or punctuation allowed.
    *
-   * @generated from field: string reference_id = 10;
+   * @generated from field: optional string reference_id = 10;
    */
-  referenceId = "";
+  referenceId?: string;
 
   /**
-   * The list of dynamic forms
+   *
+   * @optional
+   *
+   * @description A collection of dynamic form fields for organization-specific data.
+   *
+   * @example []
+   *
+   * @format An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
    *
    * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
    */
@@ -492,11 +575,11 @@ export class GoodsDispatchesServiceUpdateRequest extends Message<GoodsDispatches
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.GoodsDispatchesServiceUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 2, name: "id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
-    { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
 
@@ -519,31 +602,62 @@ export class GoodsDispatchesServiceUpdateRequest extends Message<GoodsDispatches
 
 /**
  *
- * Describes the parameters necessary to perform an autofill request
+ * Request message to automatically populate a Goods Dispatch with pending line items from its source document.
+ * This operational "autofill" mechanism accelerates the warehouse fulfillment process by querying the linked
+ * parent record (e.g., an approved Sales Order) and automatically generating preliminary dispatch items for all
+ * remaining unfulfilled quantities. This drastically reduces manual data entry errors and ensures strict
+ * logistical alignment with the original commercial contract.
  *
  * @generated from message Scailo.GoodsDispatchesServiceAutofillRequest
  */
 export class GoodsDispatchesServiceAutofillRequest extends Message<GoodsDispatchesServiceAutofillRequest> {
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * The UUID of the record that needs to be updated
+   *
+   * @mandatory
+   *
+   * @description The globally unique identifier (UUID) of the target Goods Dispatch document that needs to be autofilled.
+   *
+   * @example "550e8400-e29b-41d4-a716-446655440000"
+   *
+   * @regex ^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+   *
+   * @format Must be a valid v4 UUID in canonical hyphenated form.
    *
    * @generated from field: string uuid = 2;
    */
   uuid = "";
 
   /**
-   * Stores if the inventory needs to be split into unit quantities
    *
-   * @generated from field: bool split_into_unit_quantity = 10;
+   * @optional
+   *
+   * @description A boolean flag indicating whether the auto-populated inventory should be split into individual line items of unit quantity (quantity = 1). This is highly valuable for serialized inventory operations where warehouse staff must scan, track, or assign serial numbers to individual items (e.g., electronics, high-value goods) during packing.
+   *
+   * @example true
+   *
+   * @regex ^(?:true|false)$
+   *
+   * @format Boolean true or false.
+   *
+   * @generated from field: optional bool split_into_unit_quantity = 10;
    */
-  splitIntoUnitQuantity = false;
+  splitIntoUnitQuantity?: boolean;
 
   constructor(data?: PartialMessage<GoodsDispatchesServiceAutofillRequest>) {
     super();
@@ -553,9 +667,9 @@ export class GoodsDispatchesServiceAutofillRequest extends Message<GoodsDispatch
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.GoodsDispatchesServiceAutofillRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 2, name: "uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "split_into_unit_quantity", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 10, name: "split_into_unit_quantity", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsDispatchesServiceAutofillRequest {
@@ -577,20 +691,40 @@ export class GoodsDispatchesServiceAutofillRequest extends Message<GoodsDispatch
 
 /**
  *
- * Stores the UUID references of the record
+ * Represents a read-only container for universally unique identifiers (UUIDs) of related external entities.
+ * This message securely exposes the downstream linkages (like the source order or location) to external
+ * clients or frontend interfaces without revealing internal sequential IDs.
  *
  * @generated from message Scailo.GoodsDispatchAncillaryParameters
  */
 export class GoodsDispatchAncillaryParameters extends Message<GoodsDispatchAncillaryParameters> {
   /**
-   * The UUID of the ref_id (the UUID of the associated ref_id)
+   *
+   * @mandatory
+   *
+   * @description The globally unique identifier (UUID) of the associated source document (e.g., the parent Sales Order).
+   *
+   * @example "661f9511-f39c-42d5-b827-557766551111"
+   *
+   * @regex ^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+   *
+   * @format Valid v4 UUID in canonical hyphenated form.
    *
    * @generated from field: string ref_uuid = 213;
    */
   refUuid = "";
 
   /**
-   * The UUID of the location (the UUID of the associated location_id)
+   *
+   * @mandatory
+   *
+   * @description The globally unique identifier (UUID) of the physical physical fulfillment center, warehouse, or location from which the goods are being dispatched.
+   *
+   * @example "88b1b220-e29b-41d4-a716-446655440999"
+   *
+   * @regex ^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+   *
+   * @format Valid v4 UUID in canonical hyphenated form.
    *
    * @generated from field: string location_uuid = 215;
    */
@@ -627,7 +761,15 @@ export class GoodsDispatchAncillaryParameters extends Message<GoodsDispatchAncil
 
 /**
  *
- * Describes the parameters that are part of a standard response
+ * Represents a complete, formalized Goods Dispatch entity within the system.
+ * This message encapsulates the comprehensive state of a physical fulfillment operation.
+ * It acts as the definitive logistical record that tracks the picking, packing, and outbound shipping
+ * of products to a buyer.
+ *
+ * **Note:** This payload is typically utilized in read operations (e.g., View, Search)
+ * and provides frontend clients, warehouse management systems (WMS), and downstream billing APIs
+ * with the entire context needed to generate packing slips, deduct physical inventory,
+ * and subsequently generate a finalized Sales Invoice for the dispatched quantities.
  *
  * @generated from message Scailo.GoodsDispatch
  */
@@ -715,35 +857,50 @@ export class GoodsDispatch extends Message<GoodsDispatch> {
   finalRefNumber = "";
 
   /**
-   * The associated reference
+   *
+   * @description The specific module or record type from which this physical fulfillment operation originates (e.g., Sales Order).
+   *
+   * @example "GOODS_DISPATCH_REF_FROM_SALES_ORDER"
    *
    * @generated from field: Scailo.GOODS_DISPATCH_REF_FROM ref_from = 12;
    */
   refFrom = GOODS_DISPATCH_REF_FROM.GOODS_DISPATCH_REF_FROM_ANY_UNSPECIFIED;
 
   /**
-   * The associated ID of the reference
+   *
+   * @description The unique internal identifier of the specific referenced source document (e.g., the ID of the actual Sales Order dictating this fulfillment).
+   *
+   * @example 1024
    *
    * @generated from field: uint64 ref_id = 13;
    */
   refId = protoInt64.zero;
 
   /**
-   * The location ID of where the record is created
+   *
+   * @description The unique internal identifier of the physical location, warehouse, or fulfillment center from which these goods are being picked, packed, and dispatched.
+   *
+   * @example 42
    *
    * @generated from field: uint64 location_id = 15;
    */
   locationId = protoInt64.zero;
 
   /**
-   * The list of associated goods dispatch items
+   *
+   * @description The complete, aggregated list of individual line items that constitute this goods dispatch.
+   *
+   * @example []
+   *
+   * @format Repeated array of GoodsDispatchItem message blocks.
    *
    * @generated from field: repeated Scailo.GoodsDispatchItem list = 20;
    */
   list: GoodsDispatchItem[] = [];
 
   /**
-   * The list of dynamic forms
+   *
+   * @description Collection of organization-specific dynamic data.
    *
    * @generated from field: repeated Scailo.FormFieldDatum form_data = 30;
    */
@@ -792,66 +949,141 @@ export class GoodsDispatch extends Message<GoodsDispatch> {
 
 /**
  *
- * Describes the parameters required to add an item to a goods dispatch
+ * Request message for appending a physical line item to an existing Goods Dispatch document.
+ * This payload defines the exact product, the specific inventory instance being picked (via its hash),
+ * and the actual quantities being packed and shipped. It acts as the bridge between internal warehouse
+ * metrics and the client's expected units of measure, ensuring strict traceability of goods leaving the facility.
  *
  * @generated from message Scailo.GoodsDispatchesServiceItemCreateRequest
  */
 export class GoodsDispatchesServiceItemCreateRequest extends Message<GoodsDispatchesServiceItemCreateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * Stores the goods dispatch ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the parent goods dispatch document to which this logistical line item will be attached.
+   *
+   * @example 1024
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 goods_dispatch_id = 10;
    */
   goodsDispatchId = protoInt64.zero;
 
   /**
-   * Stores the family ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the family or catalog item being physically picked and dispatched.
+   *
+   * @example 505
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 family_id = 11;
    */
   familyId = protoInt64.zero;
 
   /**
-   * Stores the item hash to be dispatched
+   *
+   * @mandatory
+   *
+   * @description The cryptographic hash representing the exact inventory instance, batch, or serial pool being dispatched. This guarantees strict traceability of physical goods leaving the facility.
+   *
+   * @example "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a7b8c9d0e1f2a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a7b8c9d0e1f2"
+   *
+   * @regex ^.{128}$
+   *
+   * @format Exact 128-character string.
    *
    * @generated from field: string item_hash = 12;
    */
   itemHash = "";
 
   /**
-   * The quantity (in cents) being dispatched in internal unit of material
+   *
+   * @mandatory
+   *
+   * @description The physical quantity being dispatched, represented in the system's internal base unit of measure. Stored in subunits to maintain fractional precision.
+   *
+   * @example 10000
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 internal_quantity = 13;
    */
   internalQuantity = protoInt64.zero;
 
   /**
-   * Stores the ID of the client's unit of material
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the Unit of Measure (UOM) requested by the client for this dispatched item.
+   *
+   * @example 12
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 client_uom_id = 14;
    */
   clientUomId = protoInt64.zero;
 
   /**
-   * Stores the quantity (in cents) being dispatched in client's unit of material
+   *
+   * @mandatory
+   *
+   * @description The physical quantity being dispatched, represented in the client's specific unit of measure. Stored in subunits to maintain fractional precision.
+   *
+   * @example 5000
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 client_quantity = 15;
    */
   clientQuantity = protoInt64.zero;
 
   /**
-   * Stores the family code as defined by the client
    *
-   * @generated from field: string client_family_code = 16;
+   * @optional
+   *
+   * @description The client's specific alphanumeric part number, SKU, or family code used for their internal receiving and logistics referencing.
+   *
+   * @example "CLI-SKU-992"
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string client_family_code = 16;
    */
-  clientFamilyCode = "";
+  clientFamilyCode?: string;
 
   constructor(data?: PartialMessage<GoodsDispatchesServiceItemCreateRequest>) {
     super();
@@ -861,14 +1093,14 @@ export class GoodsDispatchesServiceItemCreateRequest extends Message<GoodsDispat
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.GoodsDispatchesServiceItemCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 10, name: "goods_dispatch_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 11, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 12, name: "item_hash", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 13, name: "internal_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 14, name: "client_uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 15, name: "client_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 16, name: "client_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 16, name: "client_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsDispatchesServiceItemCreateRequest {
@@ -890,52 +1122,108 @@ export class GoodsDispatchesServiceItemCreateRequest extends Message<GoodsDispat
 
 /**
  *
- * Describes the parameters required to add an individual item as part of multiple item addition to a goods dispatch
+ * Represents a single line item payload within a bulk creation request.
+ * Contains the exact same transactional parameters as a standard item creation request,
+ * omitting the parent goods dispatch ID which is declared once at the batch level.
  *
  * @generated from message Scailo.GoodsDispatchesServiceMultipleItemsSingleton
  */
 export class GoodsDispatchesServiceMultipleItemsSingleton extends Message<GoodsDispatchesServiceMultipleItemsSingleton> {
   /**
-   * Stores the family ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the family or catalog item being physically picked and dispatched.
+   *
+   * @example 505
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 family_id = 11;
    */
   familyId = protoInt64.zero;
 
   /**
-   * Stores the item hash to be dispatched
+   *
+   * @mandatory
+   *
+   * @description The cryptographic hash representing the exact inventory instance, batch, or serial pool being dispatched. This guarantees strict traceability of physical goods leaving the facility.
+   *
+   * @example "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a7b8c9d0e1f2a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a7b8c9d0e1f2"
+   *
+   * @regex ^.{128}$
+   *
+   * @format Exact 128-character string.
    *
    * @generated from field: string item_hash = 12;
    */
   itemHash = "";
 
   /**
-   * The quantity (in cents) being dispatched in internal unit of material
+   *
+   * @mandatory
+   *
+   * @description The physical quantity being dispatched, represented in the system's internal base unit of measure. Stored in subunits to maintain fractional precision.
+   *
+   * @example 10000
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 internal_quantity = 13;
    */
   internalQuantity = protoInt64.zero;
 
   /**
-   * Stores the ID of the client's unit of material
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the Unit of Measure (UOM) requested by the client for this dispatched item.
+   *
+   * @example 12
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 client_uom_id = 14;
    */
   clientUomId = protoInt64.zero;
 
   /**
-   * Stores the quantity (in cents) being dispatched in client's unit of material
+   *
+   * @mandatory
+   *
+   * @description The physical quantity being dispatched, represented in the client's specific unit of measure. Stored in subunits to maintain fractional precision.
+   *
+   * @example 5000
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 client_quantity = 15;
    */
   clientQuantity = protoInt64.zero;
 
   /**
-   * Stores the family code as defined by the client
    *
-   * @generated from field: string client_family_code = 16;
+   * @optional
+   *
+   * @description The client's specific alphanumeric part number, SKU, or family code used for their internal receiving and logistics referencing.
+   *
+   * @example "CLI-SKU-992"
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string client_family_code = 16;
    */
-  clientFamilyCode = "";
+  clientFamilyCode?: string;
 
   constructor(data?: PartialMessage<GoodsDispatchesServiceMultipleItemsSingleton>) {
     super();
@@ -950,7 +1238,7 @@ export class GoodsDispatchesServiceMultipleItemsSingleton extends Message<GoodsD
     { no: 13, name: "internal_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 14, name: "client_uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 15, name: "client_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 16, name: "client_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 16, name: "client_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsDispatchesServiceMultipleItemsSingleton {
@@ -972,27 +1260,54 @@ export class GoodsDispatchesServiceMultipleItemsSingleton extends Message<GoodsD
 
 /**
  *
- * Describes the parameters required to add multiple items to a goods dispatch
+ * Request message for appending multiple line items to a Goods Dispatch in a single batch transaction.
+ * Optimized for scenarios like imports or autofill operations where dozens of items
+ * are attached simultaneously to a parent record.
  *
  * @generated from message Scailo.GoodsDispatchesServiceMultipleItemsCreateRequest
  */
 export class GoodsDispatchesServiceMultipleItemsCreateRequest extends Message<GoodsDispatchesServiceMultipleItemsCreateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * Stores the goods dispatch ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the parent goods dispatch to which this batch of items will be attached.
+   *
+   * @example 1024
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 goods_dispatch_id = 10;
    */
   goodsDispatchId = protoInt64.zero;
 
   /**
-   * List of items
+   *
+   * @mandatory
+   *
+   * @description An array containing the individual line item payloads to be appended to the invoice.
+   *
+   * @example []
+   *
+   * @format Repeated array of GoodsDispatchesServiceMultipleItemsSingleton message blocks.
    *
    * @generated from field: repeated Scailo.GoodsDispatchesServiceMultipleItemsSingleton list = 11;
    */
@@ -1006,7 +1321,7 @@ export class GoodsDispatchesServiceMultipleItemsCreateRequest extends Message<Go
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.GoodsDispatchesServiceMultipleItemsCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 10, name: "goods_dispatch_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 11, name: "list", kind: "message", T: GoodsDispatchesServiceMultipleItemsSingleton, repeated: true },
   ]);
@@ -1030,59 +1345,125 @@ export class GoodsDispatchesServiceMultipleItemsCreateRequest extends Message<Go
 
 /**
  *
- * Describes the parameters required to update an item in a goods dispatch
+ * Request message for modifying the logistical parameters of an existing line item within a Goods Dispatch.
+ * This payload is utilized during the warehouse packing or drafting phase to correct picked quantities,
+ * swap the specific inventory instance being shipped (via the item hash), or adjust the client-specific
+ * unit mappings before the physical shipment is locked and finalized.
  *
  * @generated from message Scailo.GoodsDispatchesServiceItemUpdateRequest
  */
 export class GoodsDispatchesServiceItemUpdateRequest extends Message<GoodsDispatchesServiceItemUpdateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * The ID of the record
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target record that needs to be updated.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 id = 2;
    */
   id = protoInt64.zero;
 
   /**
-   * Stores the item hash to be dispatched
+   *
+   * @mandatory
+   *
+   * @description The updated cryptographic hash representing the exact inventory instance, batch, or serial pool being dispatched. This guarantees strict traceability of physical goods leaving the facility.
+   *
+   * @example "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a7b8c9d0e1f2a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a7b8c9d0e1f2"
+   *
+   * @regex ^.{128}$
+   *
+   * @format Exact 128-character string.
    *
    * @generated from field: string item_hash = 12;
    */
   itemHash = "";
 
   /**
-   * The quantity (in cents) being dispatched in internal unit of material
+   *
+   * @mandatory
+   *
+   * @description The updated physical quantity being dispatched, represented in the system's internal base unit of measure. Stored in subunits to maintain fractional precision.
+   *
+   * @example 10000
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 internal_quantity = 13;
    */
   internalQuantity = protoInt64.zero;
 
   /**
-   * Stores the ID of the client's unit of material
+   *
+   * @mandatory
+   *
+   * @description The updated unique internal identifier of the Unit of Measure (UOM) requested by the client for this dispatched item.
+   *
+   * @example 12
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 client_uom_id = 14;
    */
   clientUomId = protoInt64.zero;
 
   /**
-   * Stores the quantity (in cents) being dispatched in client's unit of material
+   *
+   * @mandatory
+   *
+   * @description The updated physical quantity being dispatched, represented in the client's specific unit of measure. Stored in subunits to maintain fractional precision.
+   *
+   * @example 5000
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 client_quantity = 15;
    */
   clientQuantity = protoInt64.zero;
 
   /**
-   * Stores the family code as defined by the client
    *
-   * @generated from field: string client_family_code = 16;
+   * @optional
+   *
+   * @description The client's specific alphanumeric part number, SKU, or family code used for their internal receiving and logistics referencing.
+   *
+   * @example "CLI-SKU-992"
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string client_family_code = 16;
    */
-  clientFamilyCode = "";
+  clientFamilyCode?: string;
 
   constructor(data?: PartialMessage<GoodsDispatchesServiceItemUpdateRequest>) {
     super();
@@ -1092,13 +1473,13 @@ export class GoodsDispatchesServiceItemUpdateRequest extends Message<GoodsDispat
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.GoodsDispatchesServiceItemUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 2, name: "id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 12, name: "item_hash", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 13, name: "internal_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 14, name: "client_uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 15, name: "client_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 16, name: "client_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 16, name: "client_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsDispatchesServiceItemUpdateRequest {
@@ -1120,7 +1501,14 @@ export class GoodsDispatchesServiceItemUpdateRequest extends Message<GoodsDispat
 
 /**
  *
- * Describes the parameters that constitute an item associated to a goods dispatch
+ * Represents a complete Goods Dispatch Item entity within the system.
+ * This message encapsulates the comprehensive state of a single physical family line being fulfilled
+ * and shipped to a buyer. It includes the exact inventory traceability (via the item hash), mapped
+ * logistical quantities across both internal and client units of measure, and associated approval metadata.
+ *
+ * **Note:** This payload is utilized in read operations to provide downstream systems (like billing or Warehouse Management System)
+ * with the exact logistical state of an individual dispatched item for physical inventory deduction and
+ * accurate invoice generation.
  *
  * @generated from message Scailo.GoodsDispatchItem
  */
@@ -1153,63 +1541,91 @@ export class GoodsDispatchItem extends Message<GoodsDispatchItem> {
 
   /**
    *
-   * @description The approval state of the record
+   * @description A boolean flag indicating whether this specific record requires further administrative approval.
+   *
+   * @example false
+   *
+   * @format Boolean true or false.
    *
    * @generated from field: bool need_approval = 4;
    */
   needApproval = false;
 
   /**
-   * Stores any comment that the user might have added during an operation
+   *
+   * @description Audit log comment or justification captured during the last modification or transactional operation.
+   *
+   * @example "This is a comment for audit purposes."
    *
    * @generated from field: string user_comment = 5;
    */
   userComment = "";
 
   /**
-   * Stores the goods dispatch ID
+   *
+   * @description The unique internal identifier of the parent goods dispatch document to which this logistical line item will be attached.
+   *
+   * @example 1024
    *
    * @generated from field: uint64 goods_dispatch_id = 10;
    */
   goodsDispatchId = protoInt64.zero;
 
   /**
-   * Stores the family ID
+   *
+   * @description The unique internal identifier of the family or catalog item being physically picked and dispatched.
+   *
+   * @example 505
    *
    * @generated from field: uint64 family_id = 11;
    */
   familyId = protoInt64.zero;
 
   /**
-   * Stores the item hash to be dispatched
+   *
+   * @description The cryptographic hash representing the exact inventory instance, batch, or serial pool being dispatched. This guarantees strict traceability of physical goods leaving the facility.
+   *
+   * @example "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a7b8c9d0e1f2a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a7b8c9d0e1f2"
    *
    * @generated from field: string item_hash = 12;
    */
   itemHash = "";
 
   /**
-   * The quantity (in cents) being dispatched in internal unit of material
+   *
+   * @description The physical quantity being dispatched, represented in the system's internal base unit of measure. Stored in subunits to maintain fractional precision.
+   *
+   * @example 10000
    *
    * @generated from field: uint64 internal_quantity = 13;
    */
   internalQuantity = protoInt64.zero;
 
   /**
-   * Stores the ID of the client's unit of material
+   *
+   * @description The unique internal identifier of the Unit of Measure (UOM) requested by the client for this dispatched item.
+   *
+   * @example 12
    *
    * @generated from field: uint64 client_uom_id = 14;
    */
   clientUomId = protoInt64.zero;
 
   /**
-   * Stores the quantity (in cents) being dispatched in client's unit of material
+   *
+   * @description The physical quantity being dispatched, represented in the client's specific unit of measure. Stored in subunits to maintain fractional precision.
+   *
+   * @example 5000
    *
    * @generated from field: uint64 client_quantity = 15;
    */
   clientQuantity = protoInt64.zero;
 
   /**
-   * Stores the family code as defined by the client
+   *
+   * @description The client's specific alphanumeric part number, SKU, or family code used for their internal receiving and logistics referencing.
+   *
+   * @example "CLI-SKU-992"
    *
    * @generated from field: string client_family_code = 16;
    */
@@ -1256,13 +1672,13 @@ export class GoodsDispatchItem extends Message<GoodsDispatchItem> {
 
 /**
  *
- * Describes the message consisting of the list of goods dispatches
+ * Container message for a collection of Goods Dispatch records.
  *
  * @generated from message Scailo.GoodsDispatchesList
  */
 export class GoodsDispatchesList extends Message<GoodsDispatchesList> {
   /**
-   * List of records
+   * @description An array of Goods Dispatch records.
    *
    * @generated from field: repeated Scailo.GoodsDispatch list = 1;
    */
@@ -1298,13 +1714,13 @@ export class GoodsDispatchesList extends Message<GoodsDispatchesList> {
 
 /**
  *
- * Describes the message consisting of the list of goods dispatch items
+ * Container message for a collection of Goods Dispatch Item records.
  *
  * @generated from message Scailo.GoodsDispatchesItemsList
  */
 export class GoodsDispatchesItemsList extends Message<GoodsDispatchesItemsList> {
   /**
-   * List of records
+   * @description An array of Goods Dispatch Item records.
    *
    * @generated from field: repeated Scailo.GoodsDispatchItem list = 1;
    */
@@ -1340,20 +1756,39 @@ export class GoodsDispatchesItemsList extends Message<GoodsDispatchesItemsList> 
 
 /**
  *
- * Describes the parameters that are required to retrieve the history of the record
+ * Represents the request payload containing the parameter constraints required to
+ * retrieve the historical audit trail and lifecycle changes of a specific goods dispatch item record.
  *
  * @generated from message Scailo.GoodsDispatchItemHistoryRequest
  */
 export class GoodsDispatchItemHistoryRequest extends Message<GoodsDispatchItemHistoryRequest> {
   /**
-   * Stores the goods dispatch ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target goods dispatch associated with the historical record.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer greater than zero.
    *
    * @generated from field: uint64 goods_dispatch_id = 10;
    */
   goodsDispatchId = protoInt64.zero;
 
   /**
-   * Stores the family ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target family associated with the historical record.
+   *
+   * @example 582
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer greater than zero.
    *
    * @generated from field: uint64 family_id = 11;
    */
@@ -1390,20 +1825,45 @@ export class GoodsDispatchItemHistoryRequest extends Message<GoodsDispatchItemHi
 
 /**
  *
- * Describes the parameters that are required to retrieve the info of a prospective goods dispatch item
+ * Represents the request payload utilized to fetch the default, auto-populated configuration for a potential
+ * physical line item before it is formally added to a Goods Dispatch document.
+ *
+ * **Note:** This is a critical templating operation utilized by frontend interfaces and warehouse management
+ * systems (WMS) during the packing phase. By evaluating the provided dispatch ID and family, the system
+ * cross-references the originating source document (e.g., an approved Sales Order) to automatically determine
+ * the remaining unfulfilled quantities and client-specific logistical mappings. This drastically minimizes manual
+ * data entry errors on the warehouse floor and strictly prevents over-shipping.
  *
  * @generated from message Scailo.GoodsDispatchItemProspectiveInfoRequest
  */
 export class GoodsDispatchItemProspectiveInfoRequest extends Message<GoodsDispatchItemProspectiveInfoRequest> {
   /**
-   * Stores the goods dispatch ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the parent goods dispatch that is currently being evaluated or constructed.
+   *
+   * @example 1024
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 goods_dispatch_id = 10;
    */
   goodsDispatchId = protoInt64.zero;
 
   /**
-   * Stores the family ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the family or catalog item being evaluated for addition to the goods dispatch.
+   *
+   * @example 505
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 family_id = 11;
    */
@@ -1440,7 +1900,8 @@ export class GoodsDispatchItemProspectiveInfoRequest extends Message<GoodsDispat
 
 /**
  *
- * Describes the request payload to retrieve approved or unapproved items.
+ * Request payload structure used to search and filter Goods Dispatch Item records.
+ * Supports pagination controls, tenancy isolation, status grouping, and text-based matching.
  *
  * @generated from message Scailo.GoodsDispatchItemsSearchRequest
  */
@@ -1453,9 +1914,9 @@ export class GoodsDispatchItemsSearchRequest extends Message<GoodsDispatchItemsS
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -1485,9 +1946,9 @@ export class GoodsDispatchItemsSearchRequest extends Message<GoodsDispatchItemsS
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -1497,9 +1958,9 @@ export class GoodsDispatchItemsSearchRequest extends Message<GoodsDispatchItemsS
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -1507,9 +1968,9 @@ export class GoodsDispatchItemsSearchRequest extends Message<GoodsDispatchItemsS
    *
    * @description The field used for sorting.
    *
-   * @generated from field: Scailo.GOODS_DISPATCH_ITEM_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.GOODS_DISPATCH_ITEM_SORT_KEY sort_key = 5;
    */
-  sortKey = GOODS_DISPATCH_ITEM_SORT_KEY.GOODS_DISPATCH_ITEM_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: GOODS_DISPATCH_ITEM_SORT_KEY;
 
   /**
    *
@@ -1523,86 +1984,179 @@ export class GoodsDispatchItemsSearchRequest extends Message<GoodsDispatchItemsS
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 6;
+   * @generated from field: optional string entity_uuid = 6;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
-   * The status of the items
    *
-   * @generated from field: Scailo.GOODS_DISPATCH_ITEM_STATUS status = 7;
+   * @optional
+   *
+   * @description The field used for sorting.
+   *
+   * @generated from field: optional Scailo.GOODS_DISPATCH_ITEM_STATUS status = 7;
    */
-  status = GOODS_DISPATCH_ITEM_STATUS.GOODS_DISPATCH_ITEM_STATUS_ANY_UNSPECIFIED;
+  status?: GOODS_DISPATCH_ITEM_STATUS;
 
   /**
-   * The start range of approved timestamp
    *
-   * @generated from field: uint64 approved_on_start = 10;
+   * @optional
+   *
+   * @description Filter records approved ON or AFTER this UNIX timestamp.
+   *
+   * @example 1672531200
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 approved_on_start = 10;
    */
-  approvedOnStart = protoInt64.zero;
+  approvedOnStart?: bigint;
 
   /**
-   * The end range of approved timestamp
    *
-   * @generated from field: uint64 approved_on_end = 11;
+   * @optional
+   *
+   * @description Filter records approved ON or BEFORE this UNIX timestamp.
+   *
+   * @example 1704067199
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 approved_on_end = 11;
    */
-  approvedOnEnd = protoInt64.zero;
+  approvedOnEnd?: bigint;
 
   /**
-   * The ID of the approver
    *
-   * @generated from field: uint64 approved_by_user_id = 12;
+   * @optional
+   *
+   * @description Filter by the specific user ID who approved the records.
+   *
+   * @example 501
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 approved_by_user_id = 12;
    */
-  approvedByUserId = protoInt64.zero;
+  approvedByUserId?: bigint;
 
   /**
-   * The role ID of the approver
    *
-   * @generated from field: uint64 approver_role_id = 13;
+   * @optional
+   *
+   * @description Filter by the role ID of the approver.
+   *
+   * @example 5
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 approver_role_id = 13;
    */
-  approverRoleId = protoInt64.zero;
+  approverRoleId?: bigint;
 
   /**
-   * The ID of the goods dispatch
    *
-   * @generated from field: uint64 goods_dispatch_id = 20;
+   * @optional
+   *
+   * @description Filter line items belonging to a specific parent goods dispatch.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 goods_dispatch_id = 20;
    */
-  goodsDispatchId = protoInt64.zero;
+  goodsDispatchId?: bigint;
 
   /**
-   * The ID of the family
    *
-   * @generated from field: uint64 family_id = 22;
+   * @optional
+   *
+   * @description Filter line items belonging to a specific family.
+   *
+   * @example 505
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 family_id = 22;
    */
-  familyId = protoInt64.zero;
+  familyId?: bigint;
 
   /**
-   * Stores the item hash to be dispatched
    *
-   * @generated from field: string item_hash = 23;
+   * @optional
+   *
+   * @description Filter line items by the cryptographic hash representing the exact inventory instance, batch, or serial pool being dispatched.
+   *
+   * @example "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a7b8c9d0e1f2a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a7b8c9d0e1f2"
+   *
+   * @regex ^.{128}$
+   *
+   * @format Exact 128-character string.
+   *
+   * @generated from field: optional string item_hash = 23;
    */
-  itemHash = "";
+  itemHash?: string;
 
   /**
-   * The ID of the client's unit of material
    *
-   * @generated from field: uint64 client_uom_id = 24;
+   * @optional
+   *
+   * @description Filter line items requesting a specific client Unit of Measure (UOM).
+   *
+   * @example 12
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 client_uom_id = 24;
    */
-  clientUomId = protoInt64.zero;
+  clientUomId?: bigint;
 
   /**
-   * Stores the family code as given by the client
    *
-   * @generated from field: string client_family_code = 26;
+   * @optional
+   *
+   * @description Fuzzy match for the client's specific alphanumeric part number, SKU, or family code.
+   *
+   * @example "CLI-SKU-992"
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string client_family_code = 26;
    */
-  clientFamilyCode = "";
+  clientFamilyCode?: string;
 
   /**
-   * Describes the key with which the search operation needs to be performed
    *
-   * @generated from field: string search_key = 40;
+   * @optional
+   *
+   * @description The search string to match against reference IDs.
+   *
+   * @example "Medical 2023"
+   *
+   * @regex .*
+   *
+   * @format: May contain any UTF-8 characters.
+   *
+   * @generated from field: optional string search_key = 40;
    */
-  searchKey = "";
+  searchKey?: string;
 
   constructor(data?: PartialMessage<GoodsDispatchItemsSearchRequest>) {
     super();
@@ -1612,23 +2166,23 @@ export class GoodsDispatchItemsSearchRequest extends Message<GoodsDispatchItemsS
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.GoodsDispatchItemsSearchRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(GOODS_DISPATCH_ITEM_SORT_KEY) },
-    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 7, name: "status", kind: "enum", T: proto3.getEnumType(GOODS_DISPATCH_ITEM_STATUS) },
-    { no: 10, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 11, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 12, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 13, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 20, name: "goods_dispatch_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 22, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 23, name: "item_hash", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 24, name: "client_uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 26, name: "client_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 40, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(GOODS_DISPATCH_ITEM_SORT_KEY), opt: true },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 7, name: "status", kind: "enum", T: proto3.getEnumType(GOODS_DISPATCH_ITEM_STATUS), opt: true },
+    { no: 10, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 11, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 12, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 13, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 20, name: "goods_dispatch_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 22, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 23, name: "item_hash", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 24, name: "client_uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 26, name: "client_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 40, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsDispatchItemsSearchRequest {
@@ -1650,7 +2204,8 @@ export class GoodsDispatchItemsSearchRequest extends Message<GoodsDispatchItemsS
 
 /**
  *
- * Describes the response to a pagination items request
+ * Paginated response packet containing a subset of Goods Dispatch Item records.
+ * Includes complete operational state parameters for rendering frontend data grids and tables.
  *
  * @generated from message Scailo.GoodsDispatchesServicePaginatedItemsResponse
  */
@@ -1726,27 +2281,60 @@ export class GoodsDispatchesServicePaginatedItemsResponse extends Message<GoodsD
 
 /**
  *
- * Describes the request payload to retrieve the quantity that has already been added for the specific ref_from, ref_id and family_id
+ * Represents the request payload utilized to retrieve the cumulative physical quantity of a specific family
+ * that has already been dispatched against a given source document.
+ *
+ * **Note:** This query acts as a critical logistical safeguard during the warehouse packing phase. By evaluating
+ * historical fulfillment records, it prevents frontend clients, Warehouse Management Systems (WMS), and automated
+ * scanners from accidentally packing or shipping more items than were originally constrained and approved in the
+ * parent document (e.g., a Sales Order).
  *
  * @generated from message Scailo.GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest
  */
 export class GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest extends Message<GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest> {
   /**
-   * The associated reference
+   *
+   * @mandatory
+   *
+   * @description The specific module or record type from which the logistical fulfillment originates and against which the shipped quantity is being checked (e.g., Sales Order).
+   *
+   * @example "GOODS_DISPATCH_REF_FROM_SALES_ORDER"
+   *
+   * @regex ^[A-Z_]+$
+   *
+   * @format Valid GOODS_DISPATCH_REF_FROM enum value. Cannot be unspecified (0).
    *
    * @generated from field: Scailo.GOODS_DISPATCH_REF_FROM ref_from = 1;
    */
   refFrom = GOODS_DISPATCH_REF_FROM.GOODS_DISPATCH_REF_FROM_ANY_UNSPECIFIED;
 
   /**
-   * The associated ID of the reference
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the specific referenced source document (e.g., the ID of the actual Sales Order being evaluated).
+   *
+   * @example 1024
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 ref_id = 2;
    */
   refId = protoInt64.zero;
 
   /**
-   * The associated family ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the family or catalog item being queried to determine its cumulative dispatched quantity.
+   *
+   * @example 505
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 family_id = 3;
    */
@@ -1784,7 +2372,7 @@ export class GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest extends 
 
 /**
  *
- * Describes a pagination request to retrieve records
+ * Pagination request for retrieving slices of Goods Dispatch records.
  *
  * @generated from message Scailo.GoodsDispatchesServicePaginationReq
  */
@@ -1797,9 +2385,9 @@ export class GoodsDispatchesServicePaginationReq extends Message<GoodsDispatches
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -1829,9 +2417,9 @@ export class GoodsDispatchesServicePaginationReq extends Message<GoodsDispatches
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -1841,9 +2429,9 @@ export class GoodsDispatchesServicePaginationReq extends Message<GoodsDispatches
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -1851,16 +2439,21 @@ export class GoodsDispatchesServicePaginationReq extends Message<GoodsDispatches
    *
    * @description The specific field key to sort the results by.
    *
-   * @generated from field: Scailo.GOODS_DISPATCH_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.GOODS_DISPATCH_SORT_KEY sort_key = 5;
    */
-  sortKey = GOODS_DISPATCH_SORT_KEY.GOODS_DISPATCH_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: GOODS_DISPATCH_SORT_KEY;
 
   /**
-   * The status of this goods dispatch
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
+   * @optional
+   *
+   * @description Filter results by a specific lifecycle status.
+   *
+   * @example STANDING
+   *
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   constructor(data?: PartialMessage<GoodsDispatchesServicePaginationReq>) {
     super();
@@ -1870,12 +2463,12 @@ export class GoodsDispatchesServicePaginationReq extends Message<GoodsDispatches
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.GoodsDispatchesServicePaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(GOODS_DISPATCH_SORT_KEY) },
-    { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(GOODS_DISPATCH_SORT_KEY), opt: true },
+    { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsDispatchesServicePaginationReq {
@@ -1897,7 +2490,7 @@ export class GoodsDispatchesServicePaginationReq extends Message<GoodsDispatches
 
 /**
  *
- * Describes the response to a pagination request
+ * Response message for paginated queries, including total counts for UI elements.
  *
  * @generated from message Scailo.GoodsDispatchesServicePaginationResponse
  */
@@ -1973,7 +2566,12 @@ export class GoodsDispatchesServicePaginationResponse extends Message<GoodsDispa
 
 /**
  *
- * Describes the base request payload of a filter search
+ * Advanced filter request for searching and paginating goods dispatches using multiple logical criteria.
+ * This message encapsulates pagination controls, sorting keys, lifecycle status filters,
+ * timestamp ranges, and entity references.
+ *
+ * **Note:** This is the primary message layout used by the frontend and external API clients
+ * to build robust data-table queries, reporting views, and targeted record lookups.
  *
  * @generated from message Scailo.GoodsDispatchesServiceFilterReq
  */
@@ -1986,9 +2584,9 @@ export class GoodsDispatchesServiceFilterReq extends Message<GoodsDispatchesServ
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -2018,9 +2616,9 @@ export class GoodsDispatchesServiceFilterReq extends Message<GoodsDispatchesServ
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -2030,9 +2628,9 @@ export class GoodsDispatchesServiceFilterReq extends Message<GoodsDispatchesServ
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -2040,9 +2638,9 @@ export class GoodsDispatchesServiceFilterReq extends Message<GoodsDispatchesServ
    *
    * @description The field used for sorting.
    *
-   * @generated from field: Scailo.GOODS_DISPATCH_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.GOODS_DISPATCH_SORT_KEY sort_key = 5;
    */
-  sortKey = GOODS_DISPATCH_SORT_KEY.GOODS_DISPATCH_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: GOODS_DISPATCH_SORT_KEY;
 
   /**
    *
@@ -2056,9 +2654,9 @@ export class GoodsDispatchesServiceFilterReq extends Message<GoodsDispatchesServ
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_start = 101;
+   * @generated from field: optional uint64 creation_timestamp_start = 101;
    */
-  creationTimestampStart = protoInt64.zero;
+  creationTimestampStart?: bigint;
 
   /**
    *
@@ -2072,9 +2670,9 @@ export class GoodsDispatchesServiceFilterReq extends Message<GoodsDispatchesServ
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_end = 102;
+   * @generated from field: optional uint64 creation_timestamp_end = 102;
    */
-  creationTimestampEnd = protoInt64.zero;
+  creationTimestampEnd?: bigint;
 
   /**
    *
@@ -2088,9 +2686,9 @@ export class GoodsDispatchesServiceFilterReq extends Message<GoodsDispatchesServ
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_start = 103;
+   * @generated from field: optional uint64 modification_timestamp_start = 103;
    */
-  modificationTimestampStart = protoInt64.zero;
+  modificationTimestampStart?: bigint;
 
   /**
    *
@@ -2104,9 +2702,9 @@ export class GoodsDispatchesServiceFilterReq extends Message<GoodsDispatchesServ
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_end = 104;
+   * @generated from field: optional uint64 modification_timestamp_end = 104;
    */
-  modificationTimestampEnd = protoInt64.zero;
+  modificationTimestampEnd?: bigint;
 
   /**
    *
@@ -2120,9 +2718,9 @@ export class GoodsDispatchesServiceFilterReq extends Message<GoodsDispatchesServ
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 8;
+   * @generated from field: optional string entity_uuid = 8;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
    *
@@ -2132,9 +2730,9 @@ export class GoodsDispatchesServiceFilterReq extends Message<GoodsDispatchesServ
    *
    * @example STANDING
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   /**
    *
@@ -2148,9 +2746,9 @@ export class GoodsDispatchesServiceFilterReq extends Message<GoodsDispatchesServ
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_start = 11;
+   * @generated from field: optional uint64 approved_on_start = 11;
    */
-  approvedOnStart = protoInt64.zero;
+  approvedOnStart?: bigint;
 
   /**
    *
@@ -2164,9 +2762,9 @@ export class GoodsDispatchesServiceFilterReq extends Message<GoodsDispatchesServ
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_end = 12;
+   * @generated from field: optional uint64 approved_on_end = 12;
    */
-  approvedOnEnd = protoInt64.zero;
+  approvedOnEnd?: bigint;
 
   /**
    *
@@ -2180,9 +2778,9 @@ export class GoodsDispatchesServiceFilterReq extends Message<GoodsDispatchesServ
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_by_user_id = 13;
+   * @generated from field: optional uint64 approved_by_user_id = 13;
    */
-  approvedByUserId = protoInt64.zero;
+  approvedByUserId?: bigint;
 
   /**
    *
@@ -2196,9 +2794,9 @@ export class GoodsDispatchesServiceFilterReq extends Message<GoodsDispatchesServ
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approver_role_id = 14;
+   * @generated from field: optional uint64 approver_role_id = 14;
    */
-  approverRoleId = protoInt64.zero;
+  approverRoleId?: bigint;
 
   /**
    *
@@ -2212,9 +2810,9 @@ export class GoodsDispatchesServiceFilterReq extends Message<GoodsDispatchesServ
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 completed_on_start = 15;
+   * @generated from field: optional uint64 completed_on_start = 15;
    */
-  completedOnStart = protoInt64.zero;
+  completedOnStart?: bigint;
 
   /**
    *
@@ -2228,9 +2826,9 @@ export class GoodsDispatchesServiceFilterReq extends Message<GoodsDispatchesServ
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 completed_on_end = 16;
+   * @generated from field: optional uint64 completed_on_end = 16;
    */
-  completedOnEnd = protoInt64.zero;
+  completedOnEnd?: bigint;
 
   /**
    *
@@ -2244,9 +2842,9 @@ export class GoodsDispatchesServiceFilterReq extends Message<GoodsDispatchesServ
    *
    * @format: Alphanumeric characters and spaces only. Can be left empty.
    *
-   * @generated from field: string reference_id = 20;
+   * @generated from field: optional string reference_id = 20;
    */
-  referenceId = "";
+  referenceId?: string;
 
   /**
    *
@@ -2260,66 +2858,137 @@ export class GoodsDispatchesServiceFilterReq extends Message<GoodsDispatchesServ
    *
    * @format: Alphanumeric characters and spaces only. Can be left empty.
    *
-   * @generated from field: string final_ref_number = 21;
+   * @generated from field: optional string final_ref_number = 21;
    */
-  finalRefNumber = "";
+  finalRefNumber?: string;
 
   /**
-   * The associated reference
    *
-   * @generated from field: Scailo.GOODS_DISPATCH_REF_FROM ref_from = 22;
+   * @optional
+   *
+   * @description Filter goods dispatches based on the specific module or record type from which the logistical fulfillment originated (e.g., Sales Order).
+   *
+   * @example GOODS_DISPATCH_REF_FROM_SALES_ORDER
+   *
+   * @regex ^[A-Z_]+$
+   *
+   * @format Valid GOODS_DISPATCH_REF_FROM enum value.
+   *
+   * @generated from field: optional Scailo.GOODS_DISPATCH_REF_FROM ref_from = 22;
    */
-  refFrom = GOODS_DISPATCH_REF_FROM.GOODS_DISPATCH_REF_FROM_ANY_UNSPECIFIED;
+  refFrom?: GOODS_DISPATCH_REF_FROM;
 
   /**
-   * The associated ID of the reference
    *
-   * @generated from field: uint64 ref_id = 23;
+   * @optional
+   *
+   * @description The unique internal identifier of the specific referenced source document (e.g., the ID of the actual Sales Order being evaluated).
+   *
+   * @example 1024
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: optional uint64 ref_id = 23;
    */
-  refId = protoInt64.zero;
+  refId?: bigint;
 
   /**
-   * The location ID of where the record is created
    *
-   * @generated from field: uint64 location_id = 25;
+   * @optional
+   *
+   * @description The unique internal identifier of the physical location, warehouse, or fulfillment center from which these goods are being picked, packed, and dispatched.
+   *
+   * @example 42
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: optional uint64 location_id = 25;
    */
-  locationId = protoInt64.zero;
+  locationId?: bigint;
 
   /**
-   * The ID of the family
    *
-   * @generated from field: uint64 family_id = 30;
+   * @optional
+   *
+   * @description Filter goods dispatches that contain at least one line item belonging to this specific family ID.
+   *
+   * @example 505
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 family_id = 30;
    */
-  familyId = protoInt64.zero;
+  familyId?: bigint;
 
   /**
-   * The status of the goods dispatch bill
    *
-   * @generated from field: Scailo.GOODS_DISPATCH_BILLING_STATUS billing_status = 40;
+   * @optional
+   *
+   * @description Filter goods dispatches based on their financial conversion lifecycle state—specifically, whether the physical shipment remains unbilled or has been successfully converted into a finalized Sales Invoice.
+   *
+   * @example GOODS_DISPATCH_BILLING_STATUS_UNBILLED
+   *
+   * @regex ^[A-Z_]+$
+   *
+   * @format Valid GOODS_DISPATCH_BILLING_STATUS enum value.
+   *
+   * @generated from field: optional Scailo.GOODS_DISPATCH_BILLING_STATUS billing_status = 40;
    */
-  billingStatus = GOODS_DISPATCH_BILLING_STATUS.GOODS_DISPATCH_BILLING_STATUS_ANY_UNSPECIFIED;
+  billingStatus?: GOODS_DISPATCH_BILLING_STATUS;
 
   /**
-   * Sales Order related filters
-   * The associated consignee client ID of the linked sales order
    *
-   * @generated from field: uint64 consignee_client_id = 50;
+   * @optional
+   *
+   * @description Filter goods dispatches by the unique internal identifier of the consignee client associated with the linked source document (e.g., Sales Order).
+   *
+   * @example 1050
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 consignee_client_id = 50;
    */
-  consigneeClientId = protoInt64.zero;
+  consigneeClientId?: bigint;
 
   /**
-   * The associated buyer client ID of the linked sales order
    *
-   * @generated from field: uint64 buyer_client_id = 51;
+   * @optional
+   *
+   * @description Filter goods dispatches by the unique internal identifier of the buyer client (the entity financially responsible) associated with the linked source document (e.g., Sales Order).
+   *
+   * @example 1051
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 buyer_client_id = 51;
    */
-  buyerClientId = protoInt64.zero;
+  buyerClientId?: bigint;
 
   /**
-   * The ID of the associated project of the linked sales order
    *
-   * @generated from field: uint64 project_id = 52;
+   * @optional
+   *
+   * @description Filter goods dispatches by the unique internal identifier of the project associated with the linked source document (e.g., Sales Order).
+   *
+   * @example 88
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 project_id = 52;
    */
-  projectId = protoInt64.zero;
+  projectId?: bigint;
 
   /**
    *
@@ -2340,9 +3009,9 @@ export class GoodsDispatchesServiceFilterReq extends Message<GoodsDispatchesServ
    *
    * @example true
    *
-   * @generated from field: bool include_form_data = 501;
+   * @generated from field: optional bool include_form_data = 501;
    */
-  includeFormData = false;
+  includeFormData?: boolean;
 
   constructor(data?: PartialMessage<GoodsDispatchesServiceFilterReq>) {
     super();
@@ -2352,35 +3021,35 @@ export class GoodsDispatchesServiceFilterReq extends Message<GoodsDispatchesServ
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.GoodsDispatchesServiceFilterReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(GOODS_DISPATCH_SORT_KEY) },
-    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
-    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 15, name: "completed_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(GOODS_DISPATCH_REF_FROM) },
-    { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 25, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 30, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 40, name: "billing_status", kind: "enum", T: proto3.getEnumType(GOODS_DISPATCH_BILLING_STATUS) },
-    { no: 50, name: "consignee_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 51, name: "buyer_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 52, name: "project_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(GOODS_DISPATCH_SORT_KEY), opt: true },
+    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
+    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 15, name: "completed_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(GOODS_DISPATCH_REF_FROM), opt: true },
+    { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 25, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 30, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 40, name: "billing_status", kind: "enum", T: proto3.getEnumType(GOODS_DISPATCH_BILLING_STATUS), opt: true },
+    { no: 50, name: "consignee_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 51, name: "buyer_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 52, name: "project_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
     { no: 500, name: "form_data", kind: "message", T: FormFieldDatumFilterRequest, repeated: true },
-    { no: 501, name: "include_form_data", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 501, name: "include_form_data", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsDispatchesServiceFilterReq {
@@ -2402,7 +3071,13 @@ export class GoodsDispatchesServiceFilterReq extends Message<GoodsDispatchesServ
 
 /**
  *
- * Describes the base request payload of a count search
+ * Target filter request for counting goods dispatch records matching specific logical criteria.
+ * This message encapsulates lifecycle status filters, timestamp ranges, workflow markers,
+ * and entity references to determine the total size of a targeted dataset.
+ *
+ * **Note:** This is the primary message layout used by backend calculation engines, reporting
+ * services, and frontend pagination headers to evaluate total record matches dynamically
+ * before or alongside retrieving paginated results.
  *
  * @generated from message Scailo.GoodsDispatchesServiceCountReq
  */
@@ -2415,9 +3090,9 @@ export class GoodsDispatchesServiceCountReq extends Message<GoodsDispatchesServi
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -2431,9 +3106,9 @@ export class GoodsDispatchesServiceCountReq extends Message<GoodsDispatchesServi
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_start = 101;
+   * @generated from field: optional uint64 creation_timestamp_start = 101;
    */
-  creationTimestampStart = protoInt64.zero;
+  creationTimestampStart?: bigint;
 
   /**
    *
@@ -2447,9 +3122,9 @@ export class GoodsDispatchesServiceCountReq extends Message<GoodsDispatchesServi
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_end = 102;
+   * @generated from field: optional uint64 creation_timestamp_end = 102;
    */
-  creationTimestampEnd = protoInt64.zero;
+  creationTimestampEnd?: bigint;
 
   /**
    *
@@ -2463,9 +3138,9 @@ export class GoodsDispatchesServiceCountReq extends Message<GoodsDispatchesServi
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_start = 103;
+   * @generated from field: optional uint64 modification_timestamp_start = 103;
    */
-  modificationTimestampStart = protoInt64.zero;
+  modificationTimestampStart?: bigint;
 
   /**
    *
@@ -2479,9 +3154,9 @@ export class GoodsDispatchesServiceCountReq extends Message<GoodsDispatchesServi
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_end = 104;
+   * @generated from field: optional uint64 modification_timestamp_end = 104;
    */
-  modificationTimestampEnd = protoInt64.zero;
+  modificationTimestampEnd?: bigint;
 
   /**
    *
@@ -2495,9 +3170,9 @@ export class GoodsDispatchesServiceCountReq extends Message<GoodsDispatchesServi
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 8;
+   * @generated from field: optional string entity_uuid = 8;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
    *
@@ -2507,9 +3182,9 @@ export class GoodsDispatchesServiceCountReq extends Message<GoodsDispatchesServi
    *
    * @example STANDING
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   /**
    *
@@ -2523,9 +3198,9 @@ export class GoodsDispatchesServiceCountReq extends Message<GoodsDispatchesServi
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_start = 11;
+   * @generated from field: optional uint64 approved_on_start = 11;
    */
-  approvedOnStart = protoInt64.zero;
+  approvedOnStart?: bigint;
 
   /**
    *
@@ -2539,9 +3214,9 @@ export class GoodsDispatchesServiceCountReq extends Message<GoodsDispatchesServi
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_end = 12;
+   * @generated from field: optional uint64 approved_on_end = 12;
    */
-  approvedOnEnd = protoInt64.zero;
+  approvedOnEnd?: bigint;
 
   /**
    *
@@ -2555,9 +3230,9 @@ export class GoodsDispatchesServiceCountReq extends Message<GoodsDispatchesServi
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_by_user_id = 13;
+   * @generated from field: optional uint64 approved_by_user_id = 13;
    */
-  approvedByUserId = protoInt64.zero;
+  approvedByUserId?: bigint;
 
   /**
    *
@@ -2571,9 +3246,9 @@ export class GoodsDispatchesServiceCountReq extends Message<GoodsDispatchesServi
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approver_role_id = 14;
+   * @generated from field: optional uint64 approver_role_id = 14;
    */
-  approverRoleId = protoInt64.zero;
+  approverRoleId?: bigint;
 
   /**
    *
@@ -2587,9 +3262,9 @@ export class GoodsDispatchesServiceCountReq extends Message<GoodsDispatchesServi
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 completed_on_start = 15;
+   * @generated from field: optional uint64 completed_on_start = 15;
    */
-  completedOnStart = protoInt64.zero;
+  completedOnStart?: bigint;
 
   /**
    *
@@ -2603,9 +3278,9 @@ export class GoodsDispatchesServiceCountReq extends Message<GoodsDispatchesServi
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 completed_on_end = 16;
+   * @generated from field: optional uint64 completed_on_end = 16;
    */
-  completedOnEnd = protoInt64.zero;
+  completedOnEnd?: bigint;
 
   /**
    *
@@ -2619,9 +3294,9 @@ export class GoodsDispatchesServiceCountReq extends Message<GoodsDispatchesServi
    *
    * @format: Alphanumeric characters and spaces only. Can be left empty.
    *
-   * @generated from field: string reference_id = 20;
+   * @generated from field: optional string reference_id = 20;
    */
-  referenceId = "";
+  referenceId?: string;
 
   /**
    *
@@ -2635,69 +3310,143 @@ export class GoodsDispatchesServiceCountReq extends Message<GoodsDispatchesServi
    *
    * @format: Alphanumeric characters and spaces only. Can be left empty.
    *
-   * @generated from field: string final_ref_number = 21;
+   * @generated from field: optional string final_ref_number = 21;
    */
-  finalRefNumber = "";
+  finalRefNumber?: string;
 
   /**
-   * The associated reference
    *
-   * @generated from field: Scailo.GOODS_DISPATCH_REF_FROM ref_from = 22;
-   */
-  refFrom = GOODS_DISPATCH_REF_FROM.GOODS_DISPATCH_REF_FROM_ANY_UNSPECIFIED;
-
-  /**
-   * The associated ID of the reference
+   * @optional
    *
-   * @generated from field: uint64 ref_id = 23;
-   */
-  refId = protoInt64.zero;
-
-  /**
-   * The location ID of where the record is created
+   * @description Filter goods dispatches based on the specific module or record type from which the logistical fulfillment originated (e.g., Sales Order).
    *
-   * @generated from field: uint64 location_id = 25;
-   */
-  locationId = protoInt64.zero;
-
-  /**
-   * The ID of the family
+   * @example GOODS_DISPATCH_REF_FROM_SALES_ORDER
    *
-   * @generated from field: uint64 family_id = 30;
-   */
-  familyId = protoInt64.zero;
-
-  /**
-   * The status of the goods dispatch bill
+   * @regex ^[A-Z_]+$
    *
-   * @generated from field: Scailo.GOODS_DISPATCH_BILLING_STATUS billing_status = 40;
-   */
-  billingStatus = GOODS_DISPATCH_BILLING_STATUS.GOODS_DISPATCH_BILLING_STATUS_ANY_UNSPECIFIED;
-
-  /**
-   * Sales Order related filters
-   * The associated consignee client ID of the linked sales order
+   * @format Valid GOODS_DISPATCH_REF_FROM enum value.
    *
-   * @generated from field: uint64 consignee_client_id = 50;
+   * @generated from field: optional Scailo.GOODS_DISPATCH_REF_FROM ref_from = 22;
    */
-  consigneeClientId = protoInt64.zero;
+  refFrom?: GOODS_DISPATCH_REF_FROM;
 
   /**
-   * The associated buyer client ID of the linked sales order
    *
-   * @generated from field: uint64 buyer_client_id = 51;
-   */
-  buyerClientId = protoInt64.zero;
-
-  /**
-   * The ID of the associated project of the linked sales order
+   * @optional
    *
-   * @generated from field: uint64 project_id = 52;
+   * @description The unique internal identifier of the specific referenced source document (e.g., the ID of the actual Sales Order being evaluated).
+   *
+   * @example 1024
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: optional uint64 ref_id = 23;
    */
-  projectId = protoInt64.zero;
+  refId?: bigint;
 
   /**
-   * The list of form data filters
+   *
+   * @optional
+   *
+   * @description The unique internal identifier of the physical location, warehouse, or fulfillment center from which these goods are being picked, packed, and dispatched.
+   *
+   * @example 42
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: optional uint64 location_id = 25;
+   */
+  locationId?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Filter goods dispatches that contain at least one line item belonging to this specific family ID.
+   *
+   * @example 505
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 family_id = 30;
+   */
+  familyId?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Filter goods dispatches based on their financial conversion lifecycle state—specifically, whether the physical shipment remains unbilled or has been successfully converted into a finalized Sales Invoice.
+   *
+   * @example GOODS_DISPATCH_BILLING_STATUS_UNBILLED
+   *
+   * @regex ^[A-Z_]+$
+   *
+   * @format Valid GOODS_DISPATCH_BILLING_STATUS enum value.
+   *
+   * @generated from field: optional Scailo.GOODS_DISPATCH_BILLING_STATUS billing_status = 40;
+   */
+  billingStatus?: GOODS_DISPATCH_BILLING_STATUS;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Filter goods dispatches by the unique internal identifier of the consignee client associated with the linked source document (e.g., Sales Order).
+   *
+   * @example 1050
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 consignee_client_id = 50;
+   */
+  consigneeClientId?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Filter goods dispatches by the unique internal identifier of the buyer client (the entity financially responsible) associated with the linked source document (e.g., Sales Order).
+   *
+   * @example 1051
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 buyer_client_id = 51;
+   */
+  buyerClientId?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Filter goods dispatches by the unique internal identifier of the project associated with the linked source document (e.g., Sales Order).
+   *
+   * @example 88
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 project_id = 52;
+   */
+  projectId?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Count based on dynamic form field values.
    *
    * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
    */
@@ -2711,29 +3460,29 @@ export class GoodsDispatchesServiceCountReq extends Message<GoodsDispatchesServi
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.GoodsDispatchesServiceCountReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
-    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
-    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 15, name: "completed_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(GOODS_DISPATCH_REF_FROM) },
-    { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 25, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 30, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 40, name: "billing_status", kind: "enum", T: proto3.getEnumType(GOODS_DISPATCH_BILLING_STATUS) },
-    { no: 50, name: "consignee_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 51, name: "buyer_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 52, name: "project_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
+    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
+    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 15, name: "completed_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(GOODS_DISPATCH_REF_FROM), opt: true },
+    { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 25, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 30, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 40, name: "billing_status", kind: "enum", T: proto3.getEnumType(GOODS_DISPATCH_BILLING_STATUS), opt: true },
+    { no: 50, name: "consignee_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 51, name: "buyer_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 52, name: "project_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
     { no: 500, name: "form_data", kind: "message", T: FormFieldDatumFilterRequest, repeated: true },
   ]);
 
@@ -2756,7 +3505,13 @@ export class GoodsDispatchesServiceCountReq extends Message<GoodsDispatchesServi
 
 /**
  *
- * Describes the request payload for performing a generic search operation on records
+ * Broad-spectrum search and lookup request for locating and paginating goods dispatches via text matching.
+ * This message encapsulates full-text query parameters, pagination controls, sorting keys,
+ * lifecycle status constraints, and other core references.
+ *
+ * **Note:** This is the primary message layout used for global search bars, fast-filtering dashboard
+ * inputs, and omni-box search utilities where users need to match loose textual terms against
+ * records while retaining structural pagination.
  *
  * @generated from message Scailo.GoodsDispatchesServiceSearchAllReq
  */
@@ -2769,9 +3524,9 @@ export class GoodsDispatchesServiceSearchAllReq extends Message<GoodsDispatchesS
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -2801,9 +3556,9 @@ export class GoodsDispatchesServiceSearchAllReq extends Message<GoodsDispatchesS
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -2813,9 +3568,9 @@ export class GoodsDispatchesServiceSearchAllReq extends Message<GoodsDispatchesS
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -2823,9 +3578,9 @@ export class GoodsDispatchesServiceSearchAllReq extends Message<GoodsDispatchesS
    *
    * @description The field used for sorting.
    *
-   * @generated from field: Scailo.GOODS_DISPATCH_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.GOODS_DISPATCH_SORT_KEY sort_key = 5;
    */
-  sortKey = GOODS_DISPATCH_SORT_KEY.GOODS_DISPATCH_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: GOODS_DISPATCH_SORT_KEY;
 
   /**
    *
@@ -2839,9 +3594,9 @@ export class GoodsDispatchesServiceSearchAllReq extends Message<GoodsDispatchesS
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 6;
+   * @generated from field: optional string entity_uuid = 6;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
    *
@@ -2851,9 +3606,9 @@ export class GoodsDispatchesServiceSearchAllReq extends Message<GoodsDispatchesS
    *
    * @example STANDING
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   /**
    *
@@ -2867,45 +3622,89 @@ export class GoodsDispatchesServiceSearchAllReq extends Message<GoodsDispatchesS
    *
    * @format: May contain any UTF-8 characters.
    *
-   * @generated from field: string search_key = 11;
+   * @generated from field: optional string search_key = 11;
    */
-  searchKey = "";
+  searchKey?: string;
 
   /**
-   * The associated reference
    *
-   * @generated from field: Scailo.GOODS_DISPATCH_REF_FROM ref_from = 22;
+   * @optional
+   *
+   * @description Filter goods dispatches based on the specific module or record type from which the logistical fulfillment originated (e.g., Sales Order).
+   *
+   * @example GOODS_DISPATCH_REF_FROM_SALES_ORDER
+   *
+   * @regex ^[A-Z_]+$
+   *
+   * @format Valid GOODS_DISPATCH_REF_FROM enum value.
+   *
+   * @generated from field: optional Scailo.GOODS_DISPATCH_REF_FROM ref_from = 22;
    */
-  refFrom = GOODS_DISPATCH_REF_FROM.GOODS_DISPATCH_REF_FROM_ANY_UNSPECIFIED;
+  refFrom?: GOODS_DISPATCH_REF_FROM;
 
   /**
-   * The associated ID of the reference
    *
-   * @generated from field: uint64 ref_id = 23;
+   * @optional
+   *
+   * @description The unique internal identifier of the specific referenced source document (e.g., the ID of the actual Sales Order being evaluated).
+   *
+   * @example 1024
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: optional uint64 ref_id = 23;
    */
-  refId = protoInt64.zero;
+  refId?: bigint;
 
   /**
-   * The status of the goods dispatch bill
    *
-   * @generated from field: Scailo.GOODS_DISPATCH_BILLING_STATUS billing_status = 40;
+   * @optional
+   *
+   * @description Filter goods dispatches based on their financial conversion lifecycle state—specifically, whether the physical shipment remains unbilled or has been successfully converted into a finalized Sales Invoice.
+   *
+   * @example GOODS_DISPATCH_BILLING_STATUS_UNBILLED
+   *
+   * @regex ^[A-Z_]+$
+   *
+   * @format Valid GOODS_DISPATCH_BILLING_STATUS enum value.
+   *
+   * @generated from field: optional Scailo.GOODS_DISPATCH_BILLING_STATUS billing_status = 40;
    */
-  billingStatus = GOODS_DISPATCH_BILLING_STATUS.GOODS_DISPATCH_BILLING_STATUS_ANY_UNSPECIFIED;
+  billingStatus?: GOODS_DISPATCH_BILLING_STATUS;
 
   /**
-   * Sales Order related filters
-   * The associated consignee client ID of the linked sales order
    *
-   * @generated from field: uint64 consignee_client_id = 50;
+   * @optional
+   *
+   * @description Filter goods dispatches by the unique internal identifier of the consignee client associated with the linked source document (e.g., Sales Order).
+   *
+   * @example 1050
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 consignee_client_id = 50;
    */
-  consigneeClientId = protoInt64.zero;
+  consigneeClientId?: bigint;
 
   /**
-   * The associated buyer client ID of the linked sales order
    *
-   * @generated from field: uint64 buyer_client_id = 51;
+   * @optional
+   *
+   * @description Filter goods dispatches by the unique internal identifier of the buyer client (the entity financially responsible) associated with the linked source document (e.g., Sales Order).
+   *
+   * @example 1051
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 buyer_client_id = 51;
    */
-  buyerClientId = protoInt64.zero;
+  buyerClientId?: bigint;
 
   constructor(data?: PartialMessage<GoodsDispatchesServiceSearchAllReq>) {
     super();
@@ -2915,19 +3714,19 @@ export class GoodsDispatchesServiceSearchAllReq extends Message<GoodsDispatchesS
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.GoodsDispatchesServiceSearchAllReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(GOODS_DISPATCH_SORT_KEY) },
-    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
-    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(GOODS_DISPATCH_REF_FROM) },
-    { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 40, name: "billing_status", kind: "enum", T: proto3.getEnumType(GOODS_DISPATCH_BILLING_STATUS) },
-    { no: 50, name: "consignee_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 51, name: "buyer_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(GOODS_DISPATCH_SORT_KEY), opt: true },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
+    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 22, name: "ref_from", kind: "enum", T: proto3.getEnumType(GOODS_DISPATCH_REF_FROM), opt: true },
+    { no: 23, name: "ref_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 40, name: "billing_status", kind: "enum", T: proto3.getEnumType(GOODS_DISPATCH_BILLING_STATUS), opt: true },
+    { no: 50, name: "consignee_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 51, name: "buyer_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsDispatchesServiceSearchAllReq {

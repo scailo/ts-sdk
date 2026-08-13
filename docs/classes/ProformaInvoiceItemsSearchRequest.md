@@ -2,7 +2,8 @@
 
 # Class: ProformaInvoiceItemsSearchRequest
 
-Describes the request payload to retrieve approved or unapproved items.
+Request payload structure used to search and filter Proforma Invoice Item records.
+Supports pagination controls, tenancy isolation, status grouping, and text-based matching.
 
 **`Generated`**
 
@@ -82,103 +83,211 @@ Message\&lt;ProformaInvoiceItemsSearchRequest\&gt;.constructor
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:3232](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L3232)
+[src/proforma_invoices.scailo_pb.ts:4349](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L4349)
 
 ## Properties
 
 ### approvedByUserId
 
-• **approvedByUserId**: `bigint` = `protoInt64.zero`
+• `Optional` **approvedByUserId**: `bigint`
 
-The ID of the approver
+**`Optional`**
+
+**`Description`**
+
+Filter by the specific user ID who approved the records.
+
+**`Example`**
+
+```ts
+501
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 approved_by_user_id = 12;
+from field: optional uint64 approved_by_user_id = 12;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:3181](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L3181)
+[src/proforma_invoices.scailo_pb.ts:4235](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L4235)
 
 ___
 
 ### approvedOnEnd
 
-• **approvedOnEnd**: `bigint` = `protoInt64.zero`
+• `Optional` **approvedOnEnd**: `bigint`
 
-The end range of approved timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records approved ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 approved_on_end = 11;
+from field: optional uint64 approved_on_end = 11;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:3174](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L3174)
+[src/proforma_invoices.scailo_pb.ts:4219](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L4219)
 
 ___
 
 ### approvedOnStart
 
-• **approvedOnStart**: `bigint` = `protoInt64.zero`
+• `Optional` **approvedOnStart**: `bigint`
 
-The start range of approved timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records approved ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 approved_on_start = 10;
+from field: optional uint64 approved_on_start = 10;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:3167](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L3167)
+[src/proforma_invoices.scailo_pb.ts:4203](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L4203)
 
 ___
 
 ### approverRoleId
 
-• **approverRoleId**: `bigint` = `protoInt64.zero`
+• `Optional` **approverRoleId**: `bigint`
 
-The role ID of the approver
+**`Optional`**
+
+**`Description`**
+
+Filter by the role ID of the approver.
+
+**`Example`**
+
+```ts
+5
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 approver_role_id = 13;
+from field: optional uint64 approver_role_id = 13;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:3188](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L3188)
+[src/proforma_invoices.scailo_pb.ts:4251](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L4251)
 
 ___
 
 ### clientFamilyCode
 
-• **clientFamilyCode**: `string` = `""`
+• `Optional` **clientFamilyCode**: `string`
 
-Stores the family code as given by the client
+**`Optional`**
+
+**`Description`**
+
+Fuzzy match for the client's specific alphanumeric part number, SKU, or family code.
+
+**`Example`**
+
+```ts
+"CLI-SKU-992"
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
-from field: string client_family_code = 25;
+from field: optional string client_family_code = 25;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:3216](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L3216)
+[src/proforma_invoices.scailo_pb.ts:4315](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L4315)
 
 ___
 
 ### clientUomId
 
-• **clientUomId**: `bigint` = `protoInt64.zero`
+• `Optional` **clientUomId**: `bigint`
 
-The ID of the client's unit of material
+**`Optional`**
+
+**`Description`**
+
+Filter line items requesting a specific client Unit of Measure (UOM).
+
+**`Example`**
+
+```ts
+12
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 client_uom_id = 23;
+from field: optional uint64 client_uom_id = 23;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:3209](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L3209)
+[src/proforma_invoices.scailo_pb.ts:4299](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L4299)
 
 ___
 
@@ -212,13 +321,13 @@ from field: int64 count = 2;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:3099](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L3099)
+[src/proforma_invoices.scailo_pb.ts:4123](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L4123)
 
 ___
 
 ### entityUuid
 
-• **entityUuid**: `string` = `""`
+• `Optional` **entityUuid**: `string`
 
 **`Optional`**
 
@@ -242,33 +351,51 @@ If provided, must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
-from field: string entity_uuid = 6;
+from field: optional string entity_uuid = 6;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:3153](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L3153)
+[src/proforma_invoices.scailo_pb.ts:4177](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L4177)
 
 ___
 
 ### familyId
 
-• **familyId**: `bigint` = `protoInt64.zero`
+• `Optional` **familyId**: `bigint`
 
-The ID of the family
+**`Optional`**
+
+**`Description`**
+
+Filter line items belonging to a specific family.
+
+**`Example`**
+
+```ts
+505
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 family_id = 21;
+from field: optional uint64 family_id = 21;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:3202](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L3202)
+[src/proforma_invoices.scailo_pb.ts:4283](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L4283)
 
 ___
 
 ### isActive
 
-• **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
+• `Optional` **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md)
 
 **`Optional`**
 
@@ -284,17 +411,17 @@ ANY
 
 **`Generated`**
 
-from field: Scailo.BOOL_FILTER is_active = 1;
+from field: optional Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:3083](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L3083)
+[src/proforma_invoices.scailo_pb.ts:4107](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L4107)
 
 ___
 
 ### offset
 
-• **offset**: `bigint` = `protoInt64.zero`
+• `Optional` **offset**: `bigint`
 
 **`Optional`**
 
@@ -318,49 +445,83 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 offset = 3;
+from field: optional uint64 offset = 3;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:3115](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L3115)
+[src/proforma_invoices.scailo_pb.ts:4139](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L4139)
 
 ___
 
 ### proformaInvoiceId
 
-• **proformaInvoiceId**: `bigint` = `protoInt64.zero`
+• `Optional` **proformaInvoiceId**: `bigint`
 
-The ID of the proforma invoice
+**`Optional`**
+
+**`Description`**
+
+Filter line items belonging to a specific parent proforma invoice.
+
+**`Example`**
+
+```ts
+1024
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 proforma_invoice_id = 20;
+from field: optional uint64 proforma_invoice_id = 20;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:3195](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L3195)
+[src/proforma_invoices.scailo_pb.ts:4267](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L4267)
 
 ___
 
 ### searchKey
 
-• **searchKey**: `string` = `""`
+• `Optional` **searchKey**: `string`
 
-Describes the key with which the search operation needs to be performed
+**`Optional`**
+
+**`Description`**
+
+The search string to match against reference IDs.
+
+**`Example`**
+
+```ts
+"Medical 2023"
+```
+
+**`Regex`**
+
+.*
+
+@format: May contain any UTF-8 characters.
 
 **`Generated`**
 
-from field: string search_key = 40;
+from field: optional string search_key = 40;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:3230](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L3230)
+[src/proforma_invoices.scailo_pb.ts:4347](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L4347)
 
 ___
 
 ### sortKey
 
-• **sortKey**: [`PROFORMA_INVOICE_ITEM_SORT_KEY`](../enums/PROFORMA_INVOICE_ITEM_SORT_KEY.md) = `PROFORMA_INVOICE_ITEM_SORT_KEY.PROFORMA_INVOICE_ITEM_SORT_KEY_ID_UNSPECIFIED`
+• `Optional` **sortKey**: [`PROFORMA_INVOICE_ITEM_SORT_KEY`](../enums/PROFORMA_INVOICE_ITEM_SORT_KEY.md)
 
 **`Optional`**
 
@@ -370,17 +531,17 @@ The field used for sorting.
 
 **`Generated`**
 
-from field: Scailo.PROFORMA_INVOICE_ITEM_SORT_KEY sort_key = 5;
+from field: optional Scailo.PROFORMA_INVOICE_ITEM_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:3137](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L3137)
+[src/proforma_invoices.scailo_pb.ts:4161](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L4161)
 
 ___
 
 ### sortOrder
 
-• **sortOrder**: [`SORT_ORDER`](../enums/SORT_ORDER.md) = `SORT_ORDER.ASCENDING_UNSPECIFIED`
+• `Optional` **sortOrder**: [`SORT_ORDER`](../enums/SORT_ORDER.md)
 
 **`Optional`**
 
@@ -396,43 +557,65 @@ DESCENDING
 
 **`Generated`**
 
-from field: Scailo.SORT_ORDER sort_order = 4;
+from field: optional Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:3127](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L3127)
+[src/proforma_invoices.scailo_pb.ts:4151](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L4151)
 
 ___
 
 ### status
 
-• **status**: [`PROFORMA_INVOICE_ITEM_STATUS`](../enums/PROFORMA_INVOICE_ITEM_STATUS.md) = `PROFORMA_INVOICE_ITEM_STATUS.PROFORMA_INVOICE_ITEM_STATUS_ANY_UNSPECIFIED`
+• `Optional` **status**: [`PROFORMA_INVOICE_ITEM_STATUS`](../enums/PROFORMA_INVOICE_ITEM_STATUS.md)
 
-The status of the items
+**`Optional`**
+
+**`Description`**
+
+The field used for sorting.
 
 **`Generated`**
 
-from field: Scailo.PROFORMA_INVOICE_ITEM_STATUS status = 7;
+from field: optional Scailo.PROFORMA_INVOICE_ITEM_STATUS status = 7;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:3160](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L3160)
+[src/proforma_invoices.scailo_pb.ts:4187](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L4187)
 
 ___
 
 ### taxGroupId
 
-• **taxGroupId**: `bigint` = `protoInt64.zero`
+• `Optional` **taxGroupId**: `bigint`
 
-The ID of the tax group
+**`Optional`**
+
+**`Description`**
+
+Filter line items mapped to a specific tax group.
+
+**`Example`**
+
+```ts
+4
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 tax_group_id = 27;
+from field: optional uint64 tax_group_id = 27;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:3223](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L3223)
+[src/proforma_invoices.scailo_pb.ts:4331](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L4331)
 
 ___
 
@@ -442,7 +625,7 @@ ___
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:3239](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L3239)
+[src/proforma_invoices.scailo_pb.ts:4356](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L4356)
 
 ___
 
@@ -452,7 +635,7 @@ ___
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:3237](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L3237)
+[src/proforma_invoices.scailo_pb.ts:4354](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L4354)
 
 ___
 
@@ -462,7 +645,7 @@ ___
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:3238](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L3238)
+[src/proforma_invoices.scailo_pb.ts:4355](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L4355)
 
 ## Methods
 
@@ -750,7 +933,7 @@ ___
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:3271](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L3271)
+[src/proforma_invoices.scailo_pb.ts:4388](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L4388)
 
 ___
 
@@ -771,7 +954,7 @@ ___
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:3259](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L3259)
+[src/proforma_invoices.scailo_pb.ts:4376](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L4376)
 
 ___
 
@@ -792,7 +975,7 @@ ___
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:3263](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L3263)
+[src/proforma_invoices.scailo_pb.ts:4380](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L4380)
 
 ___
 
@@ -813,4 +996,4 @@ ___
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:3267](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L3267)
+[src/proforma_invoices.scailo_pb.ts:4384](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L4384)

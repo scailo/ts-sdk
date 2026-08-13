@@ -232,14 +232,28 @@ export class TaxGroupsServiceUpdateRequest extends Message<TaxGroupsServiceUpdat
   userComment = "";
 
   /**
-   * The ID of the record that needs to be updated
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target record that needs to be updated.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 id = 2;
    */
   id = protoInt64.zero;
 
   /**
-   * Optional boolean value that denotes if a notification needs to be sent to users about the update to the record. This is useful when a subsequent operation needs to be performed immediately (such as send to verification after updating the revision)
+   *
+   * @optional
+   *
+   * @description Flag to trigger system notifications to relevant users upon update. Set to true if subsequent workflows (like verification) depend on this change.
+   *
+   * @example true
    *
    * @generated from field: bool notify_users = 3;
    */
@@ -1363,7 +1377,16 @@ export class TaxGroupsServiceSearchAllReq extends Message<TaxGroupsServiceSearch
  */
 export class TaxGroupsServiceItemCreateRequest extends Message<TaxGroupsServiceItemCreateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
+   *
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
    *
    * @generated from field: string user_comment = 1;
    */
@@ -1429,7 +1452,16 @@ export class TaxGroupsServiceItemCreateRequest extends Message<TaxGroupsServiceI
  */
 export class TaxGroupsServiceItemUpdateRequest extends Message<TaxGroupsServiceItemUpdateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
+   *
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
    *
    * @generated from field: string user_comment = 1;
    */
@@ -1514,7 +1546,11 @@ export class TaxGroupItem extends Message<TaxGroupItem> {
 
   /**
    *
-   * @description The approval state of the record
+   * @description A boolean flag indicating whether this specific record requires further administrative approval.
+   *
+   * @example false
+   *
+   * @format Boolean true or false.
    *
    * @generated from field: bool need_approval = 4;
    */

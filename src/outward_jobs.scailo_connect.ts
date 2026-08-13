@@ -6,6 +6,7 @@
 import { OutwardJob, OutwardJobAncillaryParameters, OutwardJobContact, OutwardJobContactsList, OutwardJobInwardInventoryMatchList, OutwardJobInwardItem, OutwardJobInwardItemHistoryRequest, OutwardJobInwardItemProspectiveInfoRequest, OutwardJobInwardItemsSearchRequest, OutwardJobOutwardInventoryMatchList, OutwardJobOutwardItem, OutwardJobOutwardItemHistoryRequest, OutwardJobOutwardItemProspectiveInfoRequest, OutwardJobOutwardItemsSearchRequest, OutwardJobsInwardItemsList, OutwardJobsList, OutwardJobsOutwardItemsList, OutwardJobsServiceAutofillRequest, OutwardJobsServiceContactCreateRequest, OutwardJobsServiceCountReq, OutwardJobsServiceCreateRequest, OutwardJobsServiceFilterReq, OutwardJobsServiceInwardItemCreateRequest, OutwardJobsServiceInwardItemUpdateRequest, OutwardJobsServiceMultipleInwardItemsCreateRequest, OutwardJobsServiceMultipleOutwardItemsCreateRequest, OutwardJobsServiceOutwardItemCreateRequest, OutwardJobsServiceOutwardItemUpdateRequest, OutwardJobsServicePaginatedInwardItemsResponse, OutwardJobsServicePaginatedOutwardItemsResponse, OutwardJobsServicePaginationReq, OutwardJobsServicePaginationResponse, OutwardJobsServiceSearchAllReq, OutwardJobsServiceUpdateRequest } from "./outward_jobs.scailo_pb.js";
 import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, RepeatWithDeliveryDate, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
+import { VaultFolderAttachRequest } from "./vault_folders.scailo_pb.js";
 import { MagicLink, MagicLinksServiceCreateRequestForSpecificResource } from "./magic_links.scailo_pb.js";
 import { FamiliesList, FilterFamiliesReqForIdentifier } from "./families.scailo_pb.js";
 
@@ -212,7 +213,13 @@ export const OutwardJobsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Repeat
+     * Duplicates an existing operational record (e.g., an order, schedule, or requisition) to create a new, distinct entity with a specified delivery date.
+     *
+     * **Side Effects:**
+     * - Provisions a completely new record that inherits the core attributes, line items, and configurations of the source record identified by the UUID.
+     * - Overrides the original delivery schedule with the newly provided `delivery_date` and assigns the newly provided external `reference_id`.
+     * - Appends an audit trail entry linking the new record to its original source, tracking the duplication event and justification comment.
+     * - Returns the internal identifier and UUID of the newly generated record.
      *
      * @generated from rpc Scailo.OutwardJobsService.Repeat
      */
@@ -223,7 +230,13 @@ export const OutwardJobsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Reopen
+     * Reopens a finalized or closed record for further modifications.
+     *
+     * **Status Transition:** -> `REVISION`
+     *
+     * **Side Effects:**
+     * - Unlocks the record to allow edits.
+     * - Logs the required user comment into the audit trail for compliance tracking.
      *
      * @generated from rpc Scailo.OutwardJobsService.Reopen
      */
@@ -245,7 +258,11 @@ export const OutwardJobsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Send Email
+     * Triggers an automated email notification related to the record.
+     *
+     * **Side Effects:**
+     * - Dispatches a structured email to the designated recipients based on the provided attributes.
+     * - Appends an entry to the system communication logs for auditing purposes.
      *
      * @generated from rpc Scailo.OutwardJobsService.SendEmail
      */
@@ -256,7 +273,32 @@ export const OutwardJobsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Autofill the outward job
+     * Attaches a specified folder directly to a record without requiring a full revision workflow.
+     *
+     * This is a convenience API designed to bypass the traditional multi-step modification lifecycle
+     * (e.g., creating a revision, updating data, submitting for verification, and awaiting approval).
+     * It allows for the immediate, single-step association of a vault folder.
+     *
+     * **Side Effects & Lifecycle:**
+     * * The overall status of the record remains unchanged.
+     * * The record's modification timestamp is automatically updated to the current time.
+     * * An entry is appended to the record's audit log tracking this attachment.
+     *
+     * @generated from rpc Scailo.OutwardJobsService.AttachVaultFolder
+     */
+    attachVaultFolder: {
+      name: "AttachVaultFolder",
+      I: VaultFolderAttachRequest,
+      O: IdentifierResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Automatically populates a record with line items and configurations derived from its linked references.
+     *
+     * **Side Effects:**
+     * - Queries the target record (identified by its UUID) for any attached operational constraints or references.
+     * - Dynamically generates and attaches the corresponding line items to the record based on the sourced data, minimizing manual data entry.
+     * - Appends an audit trail entry tracking the execution of the autofill operation and the provided justification comment.
      *
      * @generated from rpc Scailo.OutwardJobsService.Autofill
      */
@@ -280,7 +322,10 @@ export const OutwardJobsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Checks if the Outward Job can be marked as completed (is true when all the inward items have been ordered and all the outward items have been dispatched)
+     * Evaluates whether the specified record has satisfied all prerequisite business rules required to transition into a completed lifecycle state.
+     *
+     * This is a non-mutating, read-only query that performs comprehensive server-side validation against the record's current operational constraints. Depending on the specific domain context, the underlying checks may verify that all dependent workflows are resolved, associated child records (such as line items or sub-tasks) have reached their terminal states, and no mandatory actions remain pending.
+     * Client applications typically utilize this endpoint to dynamically determine whether the "Complete" action should be enabled or exposed in the user interface.
      *
      * @generated from rpc Scailo.OutwardJobsService.IsCompletable
      */
@@ -896,7 +941,14 @@ export const OutwardJobsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Checks if the record is downloadable (checks if the custom download function has been implemented)
+     * Evaluates the download eligibility of a specific record using its universally unique identifier (UUID).
+     *
+     * This endpoint serves as a lightweight precursor to the actual file retrieval process. It verifies
+     * whether the target record supports file extraction by checking if a custom download function has
+     * been implemented for the underlying asset. By utilizing this check, client applications can
+     * preemptively determine file availability and dynamically adjust user interface elements
+     * (e.g., enabling or disabling a download button) without initiating a full, potentially heavy
+     * download request.
      *
      * @generated from rpc Scailo.OutwardJobsService.IsDownloadable
      */
@@ -907,7 +959,13 @@ export const OutwardJobsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Download outward job with the given IdentifierUUID (can be used to allow public downloads)
+     * Retrieves the underlying file or document payload associated with a specific entity
+     * using its universally unique identifier (UUID).
+     *
+     * This endpoint is designed for versatile resource retrieval and is commonly utilized
+     * to facilitate direct, secure, or public-facing downloads. By relying on an obscure
+     * UUID rather than predictable internal sequential IDs, it ensures that external
+     * download links remain unguessable and safe for broad distribution.
      *
      * @generated from rpc Scailo.OutwardJobsService.DownloadByUUID
      */

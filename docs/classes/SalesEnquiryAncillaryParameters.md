@@ -2,7 +2,10 @@
 
 # Class: SalesEnquiryAncillaryParameters
 
-Stores the UUID references of the record
+Represents the external-facing, unique identifiers (UUIDs) of a Sales Enquiry's core dependencies.
+By exposing UUIDs instead of internal sequential integer IDs, this message allows
+external clients and frontend applications to securely reference underlying entities
+(such as clients, locations, and currencies) without risking data enumeration or leaking system architecture.
 
 **`Generated`**
 
@@ -68,7 +71,7 @@ Message\&lt;SalesEnquiryAncillaryParameters\&gt;.constructor
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:622](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L622)
+[src/sales_enquiries.scailo_pb.ts:796](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L796)
 
 ## Properties
 
@@ -76,7 +79,19 @@ Message\&lt;SalesEnquiryAncillaryParameters\&gt;.constructor
 
 • **buyerClientUuid**: `string` = `""`
 
-The UUID of the buyer client (the UUID of the associated buyer_client_id)
+**`Description`**
+
+The globally unique identifier (UUID) of the buyer client, correlating to the internal `buyer_client_id`.
+
+**`Example`**
+
+```ts
+"661f9511-f39c-42d5-b827-557766551111"
+```
+
+**`Format`**
+
+Valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
@@ -84,7 +99,7 @@ from field: string buyer_client_uuid = 213;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:613](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L613)
+[src/sales_enquiries.scailo_pb.ts:782](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L782)
 
 ___
 
@@ -92,7 +107,19 @@ ___
 
 • **consigneeClientUuid**: `string` = `""`
 
-The UUID of the consignee client (the UUID of the associated consignee_client_id)
+**`Description`**
+
+The globally unique identifier (UUID) of the consignee client, correlating to the internal `consignee_client_id`.
+
+**`Example`**
+
+```ts
+"550e8400-e29b-41d4-a716-446655440000"
+```
+
+**`Format`**
+
+Valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
@@ -100,7 +127,7 @@ from field: string consignee_client_uuid = 212;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:606](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L606)
+[src/sales_enquiries.scailo_pb.ts:770](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L770)
 
 ___
 
@@ -108,7 +135,19 @@ ___
 
 • **currencyUuid**: `string` = `""`
 
-The UUID of the currency (the UUID of the associated currency)
+**`Description`**
+
+The globally unique identifier (UUID) of the associated currency, correlating to the internal `currency_id`.
+
+**`Example`**
+
+```ts
+"883b1733-b51e-64f7-d049-779988773333"
+```
+
+**`Format`**
+
+Valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
@@ -116,7 +155,7 @@ from field: string currency_uuid = 215;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:620](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L620)
+[src/sales_enquiries.scailo_pb.ts:794](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L794)
 
 ___
 
@@ -126,7 +165,7 @@ ___
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:629](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L629)
+[src/sales_enquiries.scailo_pb.ts:803](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L803)
 
 ___
 
@@ -136,7 +175,7 @@ ___
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:627](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L627)
+[src/sales_enquiries.scailo_pb.ts:801](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L801)
 
 ___
 
@@ -146,7 +185,7 @@ ___
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:628](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L628)
+[src/sales_enquiries.scailo_pb.ts:802](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L802)
 
 ## Methods
 
@@ -434,7 +473,7 @@ ___
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:647](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L647)
+[src/sales_enquiries.scailo_pb.ts:821](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L821)
 
 ___
 
@@ -455,7 +494,7 @@ ___
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:635](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L635)
+[src/sales_enquiries.scailo_pb.ts:809](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L809)
 
 ___
 
@@ -476,7 +515,7 @@ ___
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:639](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L639)
+[src/sales_enquiries.scailo_pb.ts:813](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L813)
 
 ___
 
@@ -497,4 +536,4 @@ ___
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:643](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L643)
+[src/sales_enquiries.scailo_pb.ts:817](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L817)

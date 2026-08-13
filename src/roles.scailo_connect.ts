@@ -9,7 +9,9 @@ import { MethodKind } from "@bufbuild/protobuf";
 
 /**
  *
- * Describes the common methods applicable on each role
+ * The RolesService manages the full lifecycle of roles.
+ * It provides standard CRUD operations alongside a robust state machine for
+ * verification, manager approval, and completion.
  *
  * @generated from service Scailo.RolesService
  */
@@ -17,7 +19,18 @@ export const RolesService = {
   typeName: "Scailo.RolesService",
   methods: {
     /**
-     * Create and send for verification
+     * Creates a new record and immediately moves it to the verification workflow.
+     *
+     * This method validates all required fields.
+     * The record is created with a `STANDARD_LIFECYCLE_STATUS.PREVERIFY` status.
+     *
+     * **Side Effects:**
+     * - Generates a unique system UUID.
+     * - Records an audit log for the "Create" action.
+     * - May trigger automated verification workflows.
+     *
+     * **Errors:**
+     * - `INVALID_ARGUMENT`: If validation rules fail.
      *
      * @generated from rpc Scailo.RolesService.Create
      */
@@ -223,7 +236,13 @@ export const RolesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Reopen
+     * Reopens a finalized or closed record for further modifications.
+     *
+     * **Status Transition:** -> `REVISION`
+     *
+     * **Side Effects:**
+     * - Unlocks the record to allow edits.
+     * - Logs the required user comment into the audit trail for compliance tracking.
      *
      * @generated from rpc Scailo.RolesService.Reopen
      */
@@ -248,7 +267,14 @@ export const RolesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Clone role from an existing role (denoted by the identifier)
+     * Clones an existing security role and its associated permission sets to establish a new role profile.
+     *
+     * This operation is optimized for administrative templating, allowing rapid provisioning of similar
+     * role matrices without manual reconfiguration of individual menu rules.
+     *
+     * **Side Effects:**
+     * - Deep-copies all associated `RoleAccess` states, menu UIDs, and interaction privileges from the source record.
+     * - Places the newly cloned role into an initial configuration state (e.g., `DRAFT` or `PREVERIFY` depending on system defaults).
      *
      * @generated from rpc Scailo.RolesService.Clone
      */
@@ -347,7 +373,10 @@ export const RolesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View self role (the role of the logged in user). Returns the role on the basis of the logged in environment as well.
+     * Retrieves the security role configuration of the currently authenticated actor.
+     *
+     * This is a specialized read-only lookup that dynamically evaluates the user's active session
+     * context, current environment settings, and tenant isolation parameters to determine their exact operational clearance.
      *
      * @generated from rpc Scailo.RolesService.ViewSelf
      */

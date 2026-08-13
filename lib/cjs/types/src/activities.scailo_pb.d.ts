@@ -288,7 +288,16 @@ export declare class ActivitiesServiceCreateRequest extends Message<ActivitiesSe
      */
     entityUuid: string;
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 2;
      */
@@ -364,13 +373,31 @@ export declare class ActivitiesServiceCreateRequest extends Message<ActivitiesSe
  */
 export declare class ActivitiesServiceUpdateRequest extends Message<ActivitiesServiceUpdateRequest> {
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 1;
      */
     userComment: string;
     /**
-     * The ID of the record that needs to be updated
+     *
+     * @mandatory
+     *
+     * @description The unique internal identifier of the target record that needs to be updated.
+     *
+     * @example 1024
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 id = 2;
      */
@@ -1359,7 +1386,16 @@ export declare class ActivitiesServiceSearchAllReq extends Message<ActivitiesSer
  */
 export declare class ActivitiesServiceActionCreateRequest extends Message<ActivitiesServiceActionCreateRequest> {
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 1;
      */
@@ -1417,7 +1453,16 @@ export declare class ActivitiesServiceActionCreateRequest extends Message<Activi
  */
 export declare class ActivitiesServiceActionUpdateRequest extends Message<ActivitiesServiceActionUpdateRequest> {
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 1;
      */
@@ -1798,7 +1843,16 @@ export declare class ActivitiesServicePaginatedActionsResponse extends Message<A
  */
 export declare class ActivitiesServiceActionWithTimerCreateRequest extends Message<ActivitiesServiceActionWithTimerCreateRequest> {
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 1;
      */
@@ -1880,7 +1934,16 @@ export declare class ActivitiesServiceActionWithTimerCreateRequest extends Messa
  */
 export declare class ActivitiesServiceActivityTagAssociationCreateRequest extends Message<ActivitiesServiceActivityTagAssociationCreateRequest> {
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 1;
      */
@@ -1985,7 +2048,16 @@ export declare class ActivityTagAssociationsList extends Message<ActivityTagAsso
  */
 export declare class ActivitiesServiceOwnerCreateRequest extends Message<ActivitiesServiceOwnerCreateRequest> {
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 1;
      */
@@ -2090,7 +2162,16 @@ export declare class ActivityOwnersList extends Message<ActivityOwnersList> {
  */
 export declare class ActivitiesServiceImportOwnersRequest extends Message<ActivitiesServiceImportOwnersRequest> {
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 1;
      */
@@ -2130,7 +2211,16 @@ export declare class ActivitiesServiceImportOwnersRequest extends Message<Activi
  */
 export declare class ActivitiesServiceSupervisorCreateRequest extends Message<ActivitiesServiceSupervisorCreateRequest> {
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 1;
      */
@@ -2235,7 +2325,16 @@ export declare class ActivitySupervisorsList extends Message<ActivitySupervisors
  */
 export declare class ActivitiesServiceTimerCreateRequest extends Message<ActivitiesServiceTimerCreateRequest> {
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 1;
      */
@@ -2299,7 +2398,16 @@ export declare class ActivitiesServiceTimerCreateRequest extends Message<Activit
  */
 export declare class ActivitiesServiceTimerEndRequest extends Message<ActivitiesServiceTimerEndRequest> {
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 1;
      */

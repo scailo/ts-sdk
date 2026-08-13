@@ -6,6 +6,7 @@
 import { SalesQuotation, SalesQuotationContact, SalesQuotationContactsList, SalesQuotationItem, SalesQuotationItemHistoryRequest, SalesQuotationItemProspectiveInfoRequest, SalesQuotationItemsList, SalesQuotationItemsSearchRequest, SalesQuotationReference, SalesQuotationReferencesList, SalesQuotationsList, SalesQuotationsServiceAutofillRequest, SalesQuotationsServiceContactCreateRequest, SalesQuotationsServiceCountReq, SalesQuotationsServiceCreateRequest, SalesQuotationsServiceFilterReq, SalesQuotationsServiceItemCreateRequest, SalesQuotationsServiceItemSpecificationsUpdateRequest, SalesQuotationsServiceItemUpdateRequest, SalesQuotationsServiceMultipleItemsCreateRequest, SalesQuotationsServicePaginatedItemsResponse, SalesQuotationsServicePaginationReq, SalesQuotationsServicePaginationResponse, SalesQuotationsServiceReferenceCreateRequest, SalesQuotationsServiceSearchAllReq, SalesQuotationsServiceUpdateRequest } from "./sales_quotations.scailo_pb.js";
 import { ActiveStatus, AmendmentLogsList, BooleanResponse, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, PriceResponse, ReorderItemsRequest, RepeatWithDeliveryDate, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
+import { VaultFolderAttachRequest } from "./vault_folders.scailo_pb.js";
 import { MagicLink, MagicLinksServiceCreateRequestForSpecificResource } from "./magic_links.scailo_pb.js";
 import { FamiliesList, FilterFamiliesReqForIdentifier } from "./families.scailo_pb.js";
 
@@ -19,7 +20,19 @@ export const SalesQuotationsService = {
   typeName: "Scailo.SalesQuotationsService",
   methods: {
     /**
-     * Create and send for verification
+     * Creates a new record and immediately moves it to the verification workflow.
+     *
+     * This method validates all required fields.
+     * The record is created with a `STANDARD_LIFECYCLE_STATUS.PREVERIFY` status.
+     *
+     * **Side Effects:**
+     * - Generates a unique system UUID.
+     * - Records an audit log for the "Create" action.
+     * - May trigger automated verification workflows.
+     *
+     * **Errors:**
+     * - `INVALID_ARGUMENT`: If validation rules fail (e.g., negative quantity, invalid timestamps).
+     * - `ALREADY_EXISTS`: If the `reference_id` is already taken.
      *
      * @generated from rpc Scailo.SalesQuotationsService.Create
      */
@@ -196,7 +209,7 @@ export const SalesQuotationsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Marks the record as finalized and fully processed.
+     * Marks the record as finalized and fully processed (e.g., converted to an order).
      *
      * **Status Transition:** -> `COMPLETED`
      *
@@ -212,7 +225,13 @@ export const SalesQuotationsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Repeat
+     * Duplicates an existing operational record (e.g., a quotation) to create a new, distinct entity with a specified proposed validity or delivery date.
+     *
+     * **Side Effects:**
+     * - Provisions a completely new record that inherits the core attributes, line items, and configurations of the source record identified by the UUID.
+     * - Overrides the original delivery schedule with the newly provided `delivery_date` and assigns the newly provided external `reference_id`.
+     * - Appends an audit trail entry linking the new record to its original source, tracking the duplication event and justification comment.
+     * - Returns the internal identifier and UUID of the newly generated record.
      *
      * @generated from rpc Scailo.SalesQuotationsService.Repeat
      */
@@ -223,7 +242,13 @@ export const SalesQuotationsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Reopen
+     * Reopens a finalized or closed record for further modifications.
+     *
+     * **Status Transition:** -> `REVISION`
+     *
+     * **Side Effects:**
+     * - Unlocks the record to allow edits.
+     * - Logs the required user comment into the audit trail for compliance tracking.
      *
      * @generated from rpc Scailo.SalesQuotationsService.Reopen
      */
@@ -245,7 +270,11 @@ export const SalesQuotationsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Send Email
+     * Triggers an automated email notification related to the record.
+     *
+     * **Side Effects:**
+     * - Dispatches a structured email to the designated recipients based on the provided attributes.
+     * - Appends an entry to the system communication logs for auditing purposes.
      *
      * @generated from rpc Scailo.SalesQuotationsService.SendEmail
      */
@@ -256,7 +285,32 @@ export const SalesQuotationsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Autofill the sales quotation
+     * Attaches a specified folder directly to a record without requiring a full revision workflow.
+     *
+     * This is a convenience API designed to bypass the traditional multi-step modification lifecycle
+     * (e.g., creating a revision, updating data, submitting for verification, and awaiting approval).
+     * It allows for the immediate, single-step association of a vault folder.
+     *
+     * **Side Effects & Lifecycle:**
+     * * The overall status of the record remains unchanged.
+     * * The record's modification timestamp is automatically updated to the current time.
+     * * An entry is appended to the record's audit log tracking this attachment.
+     *
+     * @generated from rpc Scailo.SalesQuotationsService.AttachVaultFolder
+     */
+    attachVaultFolder: {
+      name: "AttachVaultFolder",
+      I: VaultFolderAttachRequest,
+      O: IdentifierResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Automatically populates a record with line items and configurations derived from its linked references.
+     *
+     * **Side Effects:**
+     * - Queries the target record (identified by its UUID) for any attached operational constraints or references (such as linked Sales Enquiries).
+     * - Dynamically generates and attaches the corresponding line items to the record based on the sourced data, minimizing manual data entry.
+     * - Appends an audit trail entry tracking the execution of the autofill operation and the provided justification comment.
      *
      * @generated from rpc Scailo.SalesQuotationsService.Autofill
      */
@@ -267,7 +321,16 @@ export const SalesQuotationsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Amend the sales quotation and send for revision
+     * Initiates a formal amendment process for a specific record, transitioning it into a structured revision workflow.
+     *
+     * This API is utilized when substantive modifications are required for an already finalized or approved record.
+     * Rather than mutating the active data directly, it explicitly triggers a compliance-driven revision cycle,
+     * ensuring that all proposed changes are tracked and undergo standard review and authorization procedures.
+     *
+     * **Side Effects & Lifecycle:**
+     * * The record's internal amendment count property is strictly incremented by 1.
+     * * The record is placed into a pending revision state, typically preserving the availability of the currently approved version until the amendment is finalized.
+     * * The optional user comment is permanently appended to the record's audit log as the formal justification for initiating the change.
      *
      * @generated from rpc Scailo.SalesQuotationsService.Amend
      */
@@ -291,7 +354,13 @@ export const SalesQuotationsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Add multiple items to a sales quotation
+     * Appends multiple line items to an existing Sales Quotation in a single batch transaction.
+     *
+     * **Side Effects:**
+     * - Dynamically calculates proposed base pricing, discounts, and taxes for each item in the batch.
+     * - Attaches the newly created line items to the parent sales quotation.
+     * - May place the items into a pending approval state depending on system configuration.
+     * - Appends a unified audit trail entry tracking the batch creation event.
      *
      * @generated from rpc Scailo.SalesQuotationsService.AddMultipleSalesQuotationItems
      */
@@ -302,7 +371,12 @@ export const SalesQuotationsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Add an item to a sales quotation
+     * Appends a single line item to an existing Sales Quotation.
+     *
+     * **Side Effects:**
+     * - Validates product family eligibility and calculates proposed financial totals for the requested quantities.
+     * - Attaches the new line item to the parent quotation.
+     * - Appends an audit trail entry tracking the creation and user justification.
      *
      * @generated from rpc Scailo.SalesQuotationsService.AddSalesQuotationItem
      */
@@ -313,7 +387,13 @@ export const SalesQuotationsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Modify an item in a sales quotation
+     * Modifies the core transactional parameters (including quoted quantities and client units) of an existing line item.
+     *
+     * **Side Effects:**
+     * - Overwrites the previous quantities, terms, and specifications of the item.
+     * - Triggers a recalculation of the parent sales quotation's grand total.
+     * - May reset the item's approval status, requiring re-authorization.
+     * - Appends an audit trail entry tracking the modifications.
      *
      * @generated from rpc Scailo.SalesQuotationsService.ModifySalesQuotationItem
      */
@@ -324,7 +404,11 @@ export const SalesQuotationsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Update specifications of an item in a sales quotation
+     * Isolates updates strictly to the textual specifications or manufacturing notes of a line item.
+     *
+     * **Side Effects:**
+     * - Modifies operational instructions without impacting any commercial terms, pricing, or quantities.
+     * - Appends an audit trail entry tracking the specification change.
      *
      * @generated from rpc Scailo.SalesQuotationsService.UpdateSalesQuotationItemSpecifications
      */
@@ -335,7 +419,11 @@ export const SalesQuotationsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Approve an item in a sales quotation
+     * Approves a pending line item, finalizing its active status within the sales quotation.
+     *
+     * **Side Effects:**
+     * - Activates the line item, making it eligible to be included in the finalized quotation document.
+     * - Appends the required approval metadata, timestamp, and audit comment to the record's history.
      *
      * @generated from rpc Scailo.SalesQuotationsService.ApproveSalesQuotationItem
      */
@@ -346,7 +434,11 @@ export const SalesQuotationsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Delete an item in a sales quotation
+     * Permanently removes or deactivates a line item from the sales quotation.
+     *
+     * **Side Effects:**
+     * - Revokes the item from the quotation, subtracting its value from the proposed grand total.
+     * - Logs the deletion justification comment into the system compliance log.
      *
      * @generated from rpc Scailo.SalesQuotationsService.DeleteSalesQuotationItem
      */
@@ -357,7 +449,11 @@ export const SalesQuotationsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Reorder items in a sales quotation
+     * Reorders the numerical sequence of line items within the sales quotation.
+     *
+     * **Side Effects:**
+     * - Mutates the display sequence (`sort_order`) of the specified items in bulk.
+     * - Directly affects how the items are visually arranged in UI tables and on printed PDF documents.
      *
      * @generated from rpc Scailo.SalesQuotationsService.ReorderSalesQuotationItems
      */
@@ -368,7 +464,9 @@ export const SalesQuotationsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View Sales Quotation Item by ID
+     * Retrieves the complete, finalized details of a specific line item by its internal sequence ID.
+     *
+     * This is a read-only operation that fetches full metadata, approval histories, and calculated financial values.
      *
      * @generated from rpc Scailo.SalesQuotationsService.ViewSalesQuotationItemByID
      */
@@ -379,7 +477,9 @@ export const SalesQuotationsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View Sales Quotation Item's price after factoring in the discount
+     * Calculates and returns the prospective net proposed price of a line item after factoring in the requested discounts and tax groups.
+     *
+     * This read-only query is typically utilized by frontend interfaces to dynamically display "live" price previews to users as they adjust discount fields, prior to officially saving the item.
      *
      * @generated from rpc Scailo.SalesQuotationsService.ViewSalesQuotationItemPrice
      */
@@ -390,7 +490,9 @@ export const SalesQuotationsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View approved sales quotation items for given sales quotation ID
+     * Lists all active, fully approved line items mapped to a specific sales quotation ID.
+     *
+     * This read-only query is optimized for rendering the finalized quotation summary on frontend interfaces and printed quotation documents.
      *
      * @generated from rpc Scailo.SalesQuotationsService.ViewApprovedSalesQuotationItems
      */
@@ -401,7 +503,9 @@ export const SalesQuotationsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View unapproved sales quotation items for given sales quotation ID
+     * Lists pending or unapproved line items mapped to a specific sales quotation ID.
+     *
+     * This read-only query is utilized primarily by administrative dashboards to quickly identify quotation lines awaiting financial or operational authorization.
      *
      * @generated from rpc Scailo.SalesQuotationsService.ViewUnapprovedSalesQuotationItems
      */
@@ -412,7 +516,9 @@ export const SalesQuotationsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View the history of the sales quotation item
+     * Retrieves the historical audit trail and lifecycle changes of a specific line item.
+     *
+     * This read-only operation aggregates the chronological evolution of the item, tracking term adjustments, specification updates, and state changes.
      *
      * @generated from rpc Scailo.SalesQuotationsService.ViewSalesQuotationItemHistory
      */
@@ -423,7 +529,9 @@ export const SalesQuotationsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View approved sales quotation items for given sales quotation ID with pagination
+     * Lists active, approved line items using robust pagination controls.
+     *
+     * This read-only query is optimized for rendering extremely large quotations in frontend data tables, supporting explicit windowing parameters.
      *
      * @generated from rpc Scailo.SalesQuotationsService.ViewPaginatedApprovedSalesQuotationItems
      */
@@ -434,7 +542,9 @@ export const SalesQuotationsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View unapproved sales quotation items for given sales quotation ID with pagination
+     * Lists pending or unapproved line items using robust pagination controls.
+     *
+     * This read-only query is optimized for administrative review dashboards handling high volumes of unapproved items.
      *
      * @generated from rpc Scailo.SalesQuotationsService.ViewPaginatedUnapprovedSalesQuotationItems
      */
@@ -445,7 +555,9 @@ export const SalesQuotationsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Search through sales quotation items with pagination
+     * Searches through all line items using advanced filters, status flags, fuzzy text matching, and pagination.
+     *
+     * This read-only query is the primary entry point for complex lookups across massive quotation catalogs.
      *
      * @generated from rpc Scailo.SalesQuotationsService.SearchItemsWithPagination
      */
@@ -456,8 +568,9 @@ export const SalesQuotationsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * CSV operations
-     * Download the CSV file with the associated line items. The same file could then be used to upload line items.
+     * Exports the current list of line items for a specific sales quotation into a downloadable CSV file.
+     *
+     * This read-only operation is used by administrators to audit large quotations offline, or as a baseline to modify items locally before executing a bulk upload.
      *
      * @generated from rpc Scailo.SalesQuotationsService.DownloadItemsAsCSV
      */
@@ -468,7 +581,9 @@ export const SalesQuotationsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Download the CSV template that could be used to upload items
+     * Generates and downloads a blank, structurally compliant CSV template.
+     *
+     * This read-only operation provides clients with the exact column headers required to successfully perform a bulk line-item upload.
      *
      * @generated from rpc Scailo.SalesQuotationsService.DownloadItemsTemplateAsCSV
      */
@@ -479,7 +594,12 @@ export const SalesQuotationsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Upload items using a CSV file. This is an idempotent operation. All the existing items are deleted before adding the items from the file.
+     * Processes a bulk ingestion of line items for a specific sales quotation via a CSV file upload.
+     *
+     * **Side Effects:**
+     * - **CRITICAL:** This is an idempotent, destructive operation. It automatically deletes all existing line items currently mapped to the sales quotation before applying the new items from the CSV.
+     * - Wipes the current active list and replaces it entirely with the parsed file contents.
+     * - Triggers recalculations of quotation totals and appends creation audit logs for the newly imported items.
      *
      * @generated from rpc Scailo.SalesQuotationsService.UploadSalesQuotationItems
      */
@@ -490,7 +610,11 @@ export const SalesQuotationsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Add a contact
+     * Assigns a designated client associate (contact person) to the sales quotation.
+     *
+     * **Side Effects:**
+     * - Creates a linkage identifying the specific individual in charge of or accountable for the quotation on the client's side.
+     * - Appends an audit trail entry tracking the assignment.
      *
      * @generated from rpc Scailo.SalesQuotationsService.AddSalesQuotationContact
      */
@@ -501,7 +625,11 @@ export const SalesQuotationsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Approve a contact
+     * Approves a pending client contact assignment, finalizing their visibility on the quotation.
+     *
+     * **Side Effects:**
+     * - Activates the contact linkage, allowing the associate's details to appear on formal documents.
+     * - Appends an approval audit trail entry.
      *
      * @generated from rpc Scailo.SalesQuotationsService.ApproveSalesQuotationContact
      */
@@ -512,7 +640,11 @@ export const SalesQuotationsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Delete a contact
+     * Removes a designated client associate from the sales quotation.
+     *
+     * **Side Effects:**
+     * - Severs the linkage between the quotation and the individual.
+     * - Appends a deletion justification to the audit log.
      *
      * @generated from rpc Scailo.SalesQuotationsService.DeleteSalesQuotationContact
      */
@@ -523,7 +655,9 @@ export const SalesQuotationsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View a contact for the given ID
+     * Retrieves the complete details of a specific contact mapping by its internal ID.
+     *
+     * This read-only query fetches the associate linkage data and workflow state.
      *
      * @generated from rpc Scailo.SalesQuotationsService.ViewSalesQuotationContactByID
      */
@@ -534,7 +668,9 @@ export const SalesQuotationsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View all contacts for given sales quotation UUID
+     * Lists all designated client associates (contacts) assigned to a specific sales quotation by its UUID.
+     *
+     * This read-only query is utilized to populate the "Points of Contact" section in frontend quotation views.
      *
      * @generated from rpc Scailo.SalesQuotationsService.ViewSalesQuotationContacts
      */
@@ -545,7 +681,11 @@ export const SalesQuotationsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Add a reference
+     * Links an external or internal source document (e.g., Sales Enquiry) to the sales quotation as an operational constraint.
+     *
+     * **Side Effects:**
+     * - Establishes a strict data relationship that can drive downstream automation (like Autofill operations).
+     * - Appends an audit trail entry tracking the reference linkage.
      *
      * @generated from rpc Scailo.SalesQuotationsService.AddSalesQuotationReference
      */
@@ -556,7 +696,11 @@ export const SalesQuotationsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Approve a reference
+     * Approves a pending reference linkage, formalizing its constraint on the quotation.
+     *
+     * **Side Effects:**
+     * - Activates the reference, making it eligible for use in automated workflows (e.g., pulling line items directly from the approved source document).
+     * - Appends an approval audit trail entry.
      *
      * @generated from rpc Scailo.SalesQuotationsService.ApproveSalesQuotationReference
      */
@@ -567,7 +711,11 @@ export const SalesQuotationsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Delete a reference
+     * Removes a previously linked source document reference from the sales quotation.
+     *
+     * **Side Effects:**
+     * - Severs the constraint linkage, meaning the quotation is no longer bound by the source document.
+     * - Appends a deletion justification to the audit log.
      *
      * @generated from rpc Scailo.SalesQuotationsService.DeleteSalesQuotationReference
      */
@@ -578,7 +726,9 @@ export const SalesQuotationsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View a reference for the given ID
+     * Retrieves the complete details of a specific constraint reference mapping by its internal ID.
+     *
+     * This read-only query fetches the context, document type, and underlying source document ID.
      *
      * @generated from rpc Scailo.SalesQuotationsService.ViewSalesQuotationReferenceByID
      */
@@ -589,7 +739,9 @@ export const SalesQuotationsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View all references for given sales quotation ID
+     * Lists all source document references and constraints attached to a specific sales quotation.
+     *
+     * This read-only query is utilized by frontend interfaces to display linked documents.
      *
      * @generated from rpc Scailo.SalesQuotationsService.ViewSalesQuotationReferences
      */
@@ -600,7 +752,7 @@ export const SalesQuotationsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Retrieves a single record by its internal numeric ID. This operation is optimized for high-performance internal system logic and backend-to-backend communication
+     * Retrieves a single record by its internal numeric ID. This operation is optimized for high-performance internal system logic and backend-to-backend communication.
      *
      * @generated from rpc Scailo.SalesQuotationsService.ViewByID
      */
@@ -622,7 +774,12 @@ export const SalesQuotationsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View by Reference ID (returns the latest record in case of duplicates)
+     * Retrieves a single record based on its user-defined, external reference ID.
+     *
+     * This read-only operation is utilized for targeted lookups using human-readable identifiers (e.g., "REF-2023-001") rather than internal system IDs or unpredictable UUIDs.
+     * Because external reference IDs might occasionally be duplicated across a tenant's dataset (due to legacy data imports, external CRM syncing overlaps, or manual entry overrides),
+     * this query guarantees a deterministic response. In the event of a collision, it automatically resolves the conflict by returning only the most recently created or modified record
+     * that matches the requested reference string.
      *
      * @generated from rpc Scailo.SalesQuotationsService.ViewByReferenceID
      */
@@ -633,7 +790,7 @@ export const SalesQuotationsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Retrieves a record by ID excluding high-volume fields like logs for performance. This operation is optimized for high-performance internal system logic and backend-to-backend communication
+     * Retrieves a record by ID excluding high-volume fields like logs for performance. This operation is optimized for high-performance internal system logic and backend-to-backend communication.
      *
      * @generated from rpc Scailo.SalesQuotationsService.ViewEssentialByID
      */
@@ -699,7 +856,15 @@ export const SalesQuotationsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View all the amendments made
+     * Retrieves the comprehensive, chronological history of formal amendments applied to a specific record.
+     *
+     * This read-only query exposes the complete audit trail of revision workflows that the entity has undergone.
+     * It is explicitly designed to support compliance checks, historical tracking, and administrative reviews by
+     * detailing exactly how and when a record evolved over its lifecycle.
+     *
+     * **Side Effects & Lifecycle:**
+     * * This is a strictly read-only operation; the underlying record and its current lifecycle state remain entirely unchanged.
+     * * Aggregates and returns a sequential log of amendment events, which typically include revision counts, initiation timestamps, and the justification comments provided when the amendments were triggered.
      *
      * @generated from rpc Scailo.SalesQuotationsService.ViewAmendments
      */
@@ -710,7 +875,9 @@ export const SalesQuotationsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View prospective families for the given sales quotation
+     * Retrieves a broad list of families that are eligible to be added to the specified sales quotation.
+     *
+     * This read-only query is used to populate dropdowns or catalog views when a user begins the process of adding new line items to a quotation.
      *
      * @generated from rpc Scailo.SalesQuotationsService.ViewProspectiveFamilies
      */
@@ -721,7 +888,9 @@ export const SalesQuotationsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Filter prospective families for the record represented by the given UUID identifier
+     * Executes an advanced, filtered search against the families eligible to be added to a sales quotation.
+     *
+     * This read-only query allows users to narrow down large product catalogs based on specific metadata or categories before selecting an item.
      *
      * @generated from rpc Scailo.SalesQuotationsService.FilterProspectiveFamilies
      */
@@ -732,7 +901,9 @@ export const SalesQuotationsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View prospective sales quotation item info for the given family ID and sales quotation ID
+     * Generates a fully populated, default line item creation payload for a specific product family.
+     *
+     * This read-only query acts as a "template builder." It fetches the default pricing, historical client units of measure, and default tax groups for the family, returning a pre-filled `SalesQuotationsServiceItemCreateRequest` payload. Frontend clients use this to instantly auto-fill the "Add Item" form.
      *
      * @generated from rpc Scailo.SalesQuotationsService.ViewProspectiveSalesQuotationItem
      */
@@ -743,8 +914,9 @@ export const SalesQuotationsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Other view operations
-     * View all sales orders IDs that are associated with the given sales quotation ID
+     * Retrieves a list of internal identifiers for all Sales Orders that were generated from or linked to a specific Sales Quotation.
+     *
+     * This read-only query is typically utilized by frontend interfaces to display the conversion history of a proposal. It allows users to quickly track how a quotation materialized into active fulfillment records and facilitates seamless navigation between the pre-sales and order management modules.
      *
      * @generated from rpc Scailo.SalesQuotationsService.ViewAssociatedSalesOrdersIDs
      */
@@ -755,7 +927,14 @@ export const SalesQuotationsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Checks if the record is downloadable (checks if the custom download function has been implemented)
+     * Evaluates the download eligibility of a specific record using its universally unique identifier (UUID).
+     *
+     * This endpoint serves as a lightweight precursor to the actual file retrieval process. It verifies
+     * whether the target record supports file extraction by checking if a custom download function has
+     * been implemented for the underlying asset. By utilizing this check, client applications can
+     * preemptively determine file availability and dynamically adjust user interface elements
+     * (e.g., enabling or disabling a download button) without initiating a full, potentially heavy
+     * download request.
      *
      * @generated from rpc Scailo.SalesQuotationsService.IsDownloadable
      */
@@ -766,7 +945,13 @@ export const SalesQuotationsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Download sales quotation with the given IdentifierUUID (can be used to allow public downloads)
+     * Retrieves the underlying file or document payload associated with a specific entity
+     * using its universally unique identifier (UUID).
+     *
+     * This endpoint is designed for versatile resource retrieval and is commonly utilized
+     * to facilitate direct, secure, or public-facing downloads. By relying on an obscure
+     * UUID rather than predictable internal sequential IDs, it ensures that external
+     * download links remain unguessable and safe for broad distribution.
      *
      * @generated from rpc Scailo.SalesQuotationsService.DownloadByUUID
      */
@@ -822,7 +1007,7 @@ export const SalesQuotationsService = {
     },
     /**
      * CSV operations
-     * Download the CSV file that consists of the list of records according to the given filter request. The same file could also be used as a template for uploading records
+     * Download the CSV file that consists of the list of records according to the given filter request. The same file could also be used as a template for uploading records.
      *
      * @generated from rpc Scailo.SalesQuotationsService.DownloadAsCSV
      */

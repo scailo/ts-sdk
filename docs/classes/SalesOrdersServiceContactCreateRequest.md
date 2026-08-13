@@ -2,7 +2,9 @@
 
 # Class: SalesOrdersServiceContactCreateRequest
 
-Describes the parameters necessary to create a sales order contact
+Request message for assigning a specific contact person (associate) to a Sales Order.
+This operation creates a linkage between the order and a designated individual belonging
+to the customer, explicitly identifying who is in charge of or accountable for the sales order from the client's side.
 
 **`Generated`**
 
@@ -68,7 +70,7 @@ Message\&lt;SalesOrdersServiceContactCreateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3866](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3866)
+[src/sales_orders.scailo_pb.ts:5247](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5247)
 
 ## Properties
 
@@ -76,7 +78,25 @@ Message\&lt;SalesOrdersServiceContactCreateRequest\&gt;.constructor
 
 • **associateId**: `bigint` = `protoInt64.zero`
 
-Stores the associate ID
+**`Mandatory`**
+
+**`Description`**
+
+The unique internal identifier of the associate being assigned to the order.
+
+**`Example`**
+
+```ts
+55
+```
+
+**`Regex`**
+
+^[1-9][0-9]*$
+
+**`Format`**
+
+Unsigned 64-bit integer greater than 0.
 
 **`Generated`**
 
@@ -84,7 +104,7 @@ from field: uint64 associate_id = 11;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3864](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3864)
+[src/sales_orders.scailo_pb.ts:5245](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5245)
 
 ___
 
@@ -92,7 +112,25 @@ ___
 
 • **salesOrderId**: `bigint` = `protoInt64.zero`
 
-Stores the sales order ID
+**`Mandatory`**
+
+**`Description`**
+
+The unique internal identifier of the parent sales order to which this contact is being assigned.
+
+**`Example`**
+
+```ts
+1024
+```
+
+**`Regex`**
+
+^[1-9][0-9]*$
+
+**`Format`**
+
+Unsigned 64-bit integer greater than 0.
 
 **`Generated`**
 
@@ -100,23 +138,41 @@ from field: uint64 sales_order_id = 10;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3857](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3857)
+[src/sales_orders.scailo_pb.ts:5229](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5229)
 
 ___
 
 ### userComment
 
-• **userComment**: `string` = `""`
+• `Optional` **userComment**: `string`
 
-Stores any comment that the user might add during this operation
+**`Optional`**
+
+**`Description`**
+
+Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+
+**`Example`**
+
+```ts
+"This is a comment for audit purposes."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
-from field: string user_comment = 1;
+from field: optional string user_comment = 1;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3850](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3850)
+[src/sales_orders.scailo_pb.ts:5213](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5213)
 
 ___
 
@@ -126,7 +182,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3873](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3873)
+[src/sales_orders.scailo_pb.ts:5254](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5254)
 
 ___
 
@@ -136,7 +192,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3871](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3871)
+[src/sales_orders.scailo_pb.ts:5252](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5252)
 
 ___
 
@@ -146,7 +202,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3872](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3872)
+[src/sales_orders.scailo_pb.ts:5253](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5253)
 
 ## Methods
 
@@ -434,7 +490,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3891](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3891)
+[src/sales_orders.scailo_pb.ts:5272](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5272)
 
 ___
 
@@ -455,7 +511,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3879](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3879)
+[src/sales_orders.scailo_pb.ts:5260](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5260)
 
 ___
 
@@ -476,7 +532,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3883](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3883)
+[src/sales_orders.scailo_pb.ts:5264](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5264)
 
 ___
 
@@ -497,4 +553,4 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3887](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3887)
+[src/sales_orders.scailo_pb.ts:5268](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5268)

@@ -77,7 +77,7 @@ Message\&lt;SalesReceiptsServiceUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/sales_receipts.scailo_pb.ts:423](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_receipts.scailo_pb.ts#L423)
+[src/sales_receipts.scailo_pb.ts:450](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_receipts.scailo_pb.ts#L450)
 
 ## Properties
 
@@ -93,7 +93,7 @@ from field: uint64 amount_base = 18;
 
 #### Defined in
 
-[src/sales_receipts.scailo_pb.ts:400](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_receipts.scailo_pb.ts#L400)
+[src/sales_receipts.scailo_pb.ts:427](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_receipts.scailo_pb.ts#L427)
 
 ___
 
@@ -109,7 +109,7 @@ from field: uint64 amount_net = 19;
 
 #### Defined in
 
-[src/sales_receipts.scailo_pb.ts:407](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_receipts.scailo_pb.ts#L407)
+[src/sales_receipts.scailo_pb.ts:434](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_receipts.scailo_pb.ts#L434)
 
 ___
 
@@ -125,7 +125,7 @@ from field: uint64 bank_account_id = 15;
 
 #### Defined in
 
-[src/sales_receipts.scailo_pb.ts:379](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_receipts.scailo_pb.ts#L379)
+[src/sales_receipts.scailo_pb.ts:406](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_receipts.scailo_pb.ts#L406)
 
 ___
 
@@ -141,7 +141,7 @@ from field: uint64 currency_id = 16;
 
 #### Defined in
 
-[src/sales_receipts.scailo_pb.ts:386](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_receipts.scailo_pb.ts#L386)
+[src/sales_receipts.scailo_pb.ts:413](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_receipts.scailo_pb.ts#L413)
 
 ___
 
@@ -157,7 +157,7 @@ from field: string description = 21;
 
 #### Defined in
 
-[src/sales_receipts.scailo_pb.ts:421](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_receipts.scailo_pb.ts#L421)
+[src/sales_receipts.scailo_pb.ts:448](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_receipts.scailo_pb.ts#L448)
 
 ___
 
@@ -165,7 +165,25 @@ ___
 
 • **id**: `bigint` = `protoInt64.zero`
 
-The ID of the record that needs to be updated
+**`Mandatory`**
+
+**`Description`**
+
+The unique internal identifier of the target record that needs to be updated.
+
+**`Example`**
+
+```ts
+1024
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -173,7 +191,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-[src/sales_receipts.scailo_pb.ts:328](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_receipts.scailo_pb.ts#L328)
+[src/sales_receipts.scailo_pb.ts:355](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_receipts.scailo_pb.ts#L355)
 
 ___
 
@@ -199,7 +217,7 @@ from field: bool notify_users = 3;
 
 #### Defined in
 
-[src/sales_receipts.scailo_pb.ts:340](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_receipts.scailo_pb.ts#L340)
+[src/sales_receipts.scailo_pb.ts:367](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_receipts.scailo_pb.ts#L367)
 
 ___
 
@@ -215,7 +233,7 @@ from field: uint64 payment_timestamp = 20;
 
 #### Defined in
 
-[src/sales_receipts.scailo_pb.ts:414](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_receipts.scailo_pb.ts#L414)
+[src/sales_receipts.scailo_pb.ts:441](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_receipts.scailo_pb.ts#L441)
 
 ___
 
@@ -249,7 +267,7 @@ from field: string reference_id = 10;
 
 #### Defined in
 
-[src/sales_receipts.scailo_pb.ts:372](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_receipts.scailo_pb.ts#L372)
+[src/sales_receipts.scailo_pb.ts:399](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_receipts.scailo_pb.ts#L399)
 
 ___
 
@@ -265,7 +283,7 @@ from field: Scailo.TRANSACTION_TYPE transaction_type = 17;
 
 #### Defined in
 
-[src/sales_receipts.scailo_pb.ts:393](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_receipts.scailo_pb.ts#L393)
+[src/sales_receipts.scailo_pb.ts:420](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_receipts.scailo_pb.ts#L420)
 
 ___
 
@@ -273,7 +291,25 @@ ___
 
 • **userComment**: `string` = `""`
 
-Stores any comment that the user might add during this operation
+**`Optional`**
+
+**`Description`**
+
+Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+
+**`Example`**
+
+```ts
+"This is a comment for audit purposes."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
@@ -281,7 +317,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-[src/sales_receipts.scailo_pb.ts:321](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_receipts.scailo_pb.ts#L321)
+[src/sales_receipts.scailo_pb.ts:339](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_receipts.scailo_pb.ts#L339)
 
 ___
 
@@ -315,7 +351,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-[src/sales_receipts.scailo_pb.ts:356](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_receipts.scailo_pb.ts#L356)
+[src/sales_receipts.scailo_pb.ts:383](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_receipts.scailo_pb.ts#L383)
 
 ___
 
@@ -325,7 +361,7 @@ ___
 
 #### Defined in
 
-[src/sales_receipts.scailo_pb.ts:430](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_receipts.scailo_pb.ts#L430)
+[src/sales_receipts.scailo_pb.ts:457](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_receipts.scailo_pb.ts#L457)
 
 ___
 
@@ -335,7 +371,7 @@ ___
 
 #### Defined in
 
-[src/sales_receipts.scailo_pb.ts:428](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_receipts.scailo_pb.ts#L428)
+[src/sales_receipts.scailo_pb.ts:455](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_receipts.scailo_pb.ts#L455)
 
 ___
 
@@ -345,7 +381,7 @@ ___
 
 #### Defined in
 
-[src/sales_receipts.scailo_pb.ts:429](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_receipts.scailo_pb.ts#L429)
+[src/sales_receipts.scailo_pb.ts:456](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_receipts.scailo_pb.ts#L456)
 
 ## Methods
 
@@ -633,7 +669,7 @@ ___
 
 #### Defined in
 
-[src/sales_receipts.scailo_pb.ts:457](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_receipts.scailo_pb.ts#L457)
+[src/sales_receipts.scailo_pb.ts:484](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_receipts.scailo_pb.ts#L484)
 
 ___
 
@@ -654,7 +690,7 @@ ___
 
 #### Defined in
 
-[src/sales_receipts.scailo_pb.ts:445](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_receipts.scailo_pb.ts#L445)
+[src/sales_receipts.scailo_pb.ts:472](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_receipts.scailo_pb.ts#L472)
 
 ___
 
@@ -675,7 +711,7 @@ ___
 
 #### Defined in
 
-[src/sales_receipts.scailo_pb.ts:449](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_receipts.scailo_pb.ts#L449)
+[src/sales_receipts.scailo_pb.ts:476](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_receipts.scailo_pb.ts#L476)
 
 ___
 
@@ -696,4 +732,4 @@ ___
 
 #### Defined in
 
-[src/sales_receipts.scailo_pb.ts:453](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_receipts.scailo_pb.ts#L453)
+[src/sales_receipts.scailo_pb.ts:480](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_receipts.scailo_pb.ts#L480)

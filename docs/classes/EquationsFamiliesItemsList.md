@@ -66,7 +66,7 @@ Message\&lt;EquationsFamiliesItemsList\&gt;.constructor
 
 #### Defined in
 
-[src/equations_families.scailo_pb.ts:882](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/equations_families.scailo_pb.ts#L882)
+[src/equations_families.scailo_pb.ts:931](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/equations_families.scailo_pb.ts#L931)
 
 ## Properties
 
@@ -82,7 +82,7 @@ from field: repeated Scailo.EquationFamilyItem list = 1;
 
 #### Defined in
 
-[src/equations_families.scailo_pb.ts:880](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/equations_families.scailo_pb.ts#L880)
+[src/equations_families.scailo_pb.ts:929](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/equations_families.scailo_pb.ts#L929)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[src/equations_families.scailo_pb.ts:889](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/equations_families.scailo_pb.ts#L889)
+[src/equations_families.scailo_pb.ts:938](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/equations_families.scailo_pb.ts#L938)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[src/equations_families.scailo_pb.ts:887](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/equations_families.scailo_pb.ts#L887)
+[src/equations_families.scailo_pb.ts:936](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/equations_families.scailo_pb.ts#L936)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-[src/equations_families.scailo_pb.ts:888](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/equations_families.scailo_pb.ts#L888)
+[src/equations_families.scailo_pb.ts:937](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/equations_families.scailo_pb.ts#L937)
 
 ## Methods
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-[src/equations_families.scailo_pb.ts:905](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/equations_families.scailo_pb.ts#L905)
+[src/equations_families.scailo_pb.ts:954](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/equations_families.scailo_pb.ts#L954)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-[src/equations_families.scailo_pb.ts:893](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/equations_families.scailo_pb.ts#L893)
+[src/equations_families.scailo_pb.ts:942](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/equations_families.scailo_pb.ts#L942)
 
 ___
 
@@ -442,7 +442,7 @@ ___
 
 #### Defined in
 
-[src/equations_families.scailo_pb.ts:897](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/equations_families.scailo_pb.ts#L897)
+[src/equations_families.scailo_pb.ts:946](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/equations_families.scailo_pb.ts#L946)
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-[src/equations_families.scailo_pb.ts:901](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/equations_families.scailo_pb.ts#L901)
+[src/equations_families.scailo_pb.ts:950](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/equations_families.scailo_pb.ts#L950)

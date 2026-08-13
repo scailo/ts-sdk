@@ -7,6 +7,7 @@ import { VaultFile, VaultFileAddChunkRequest, VaultFileInitiateFileRequest, Vaul
 import { MethodKind } from "@bufbuild/protobuf";
 import { BooleanResponse, CountResponse, Empty, Identifier, IdentifierResponse, IdentifierUUID, IdentifierZeroable, StandardFile } from "./base.scailo_pb.js";
 import { EnclaveDomain, EnclaveDomainAddRequest, EnclaveDomainsFilterReq, EnclaveDomainsList, EnclaveDomainSuffixResp, EnclaveEnvironmentVariable, EnclaveEnvironmentVariableAddRequest, EnclaveEnvironmentVariablesList, EnclaveEnvironmentVariableUpdateRequest, EnclaveFrame, EnclaveFrameAddRequest, EnclaveFrameSetup, EnclaveFrameSetupList, EnclaveFrameUpdateRequest, EnclaveIngress, EnclaveIngressCountReq, EnclaveIngressesList, EnclaveIngressFilterReq, GiXAppRun, GiXAppRunCountReq, GiXAppRunFilterReq, GiXAppRunsList, VaultAccessLogsList, VaultDuplicateCheckReq, VaultPermission, VaultPermissionAddRequest, VaultPermissionModifyRequest, VaultSearchReq, VaultSearchResponsesList, VerifyEnclaveIngressRequest, VerifyEnclaveIngressResponse } from "./vault_commons.scailo_pb.js";
+import { MagicLink, MagicLinksServiceCreateRequestForSpecificResource } from "./magic_links.scailo_pb.js";
 import { VaultFolder, VaultFolderAddRequest, VaultFolderDownload, VaultFolderMoveFolderRequest, VaultFolderRenameFolderRequest, VaultFoldersList } from "./vault_folders.scailo_pb.js";
 import { GiXRelayReqWithBody, GiXRelayReqWithoutBody, GiXRelayResponse, VaultResourcesList } from "./vault.scailo_pb.js";
 import { RolesList } from "./roles.scailo_pb.js";
@@ -264,6 +265,19 @@ export const VaultService = {
       name: "ViewFileAccessLogs",
       I: IdentifierUUID,
       O: VaultAccessLogsList,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Generates a magic link for temporary, authenticated access to the resource.
+     *
+     * This enables non-system users (or users without active sessions) to view specific details.
+     *
+     * @generated from rpc Scailo.VaultService.CreateMagicLinkForFile
+     */
+    createMagicLinkForFile: {
+      name: "CreateMagicLinkForFile",
+      I: MagicLinksServiceCreateRequestForSpecificResource,
+      O: MagicLink,
       kind: MethodKind.Unary,
     },
     /**

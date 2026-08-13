@@ -2,7 +2,13 @@
 
 # Class: SalesEnquiriesServiceUpdateRequest
 
-Describes the parameters necessary to update a record
+Request message for updating an existing Sales Enquiry record.
+Only applicable for records in `DRAFT` or `REVISION` states.
+This message allows for modifying the references, consignee & buyer, currency, costs & discounts, and other custom form fields
+of an established Sales Enquiry.
+
+**Note:** Only fields provided in the request will typically be updated.
+The unique system ID is required to locate the target record.
 
 **`Generated`**
 
@@ -31,7 +37,6 @@ from message Scailo.SalesEnquiriesServiceUpdateRequest
 - [miscellaneousCost](SalesEnquiriesServiceUpdateRequest.md#miscellaneouscost)
 - [notifyUsers](SalesEnquiriesServiceUpdateRequest.md#notifyusers)
 - [overallDiscount](SalesEnquiriesServiceUpdateRequest.md#overalldiscount)
-- [priority](SalesEnquiriesServiceUpdateRequest.md#priority)
 - [referenceId](SalesEnquiriesServiceUpdateRequest.md#referenceid)
 - [roundOff](SalesEnquiriesServiceUpdateRequest.md#roundoff)
 - [userComment](SalesEnquiriesServiceUpdateRequest.md#usercomment)
@@ -79,71 +84,143 @@ Message\&lt;SalesEnquiriesServiceUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:553](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L553)
+[src/sales_enquiries.scailo_pb.ts:710](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L710)
 
 ## Properties
 
 ### buyerClientId
 
-• **buyerClientId**: `bigint` = `protoInt64.zero`
+• `Optional` **buyerClientId**: `bigint`
 
-The ID of the buyer
+**`Optional`**
+
+**`Description`**
+
+The unique internal identifier of the prospective buyer client (the entity that would be financially responsible for the requested order).
+
+**`Example`**
+
+```ts
+1051
+```
+
+**`Regex`**
+
+^[1-9][0-9]*$
+
+**`Format`**
+
+Unsigned 64-bit integer greater than 0.
 
 **`Generated`**
 
-from field: uint64 buyer_client_id = 13;
+from field: optional uint64 buyer_client_id = 13;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:502](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L502)
+[src/sales_enquiries.scailo_pb.ts:614](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L614)
 
 ___
 
 ### consigneeClientId
 
-• **consigneeClientId**: `bigint` = `protoInt64.zero`
+• `Optional` **consigneeClientId**: `bigint`
 
-The ID of the consignee
+**`Optional`**
+
+**`Description`**
+
+The unique internal identifier of the prospective consignee client (the entity inquiring about receiving the goods or services).
+
+**`Example`**
+
+```ts
+1050
+```
+
+**`Regex`**
+
+^[1-9][0-9]*$
+
+**`Format`**
+
+Unsigned 64-bit integer greater than 0.
 
 **`Generated`**
 
-from field: uint64 consignee_client_id = 12;
+from field: optional uint64 consignee_client_id = 12;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:495](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L495)
+[src/sales_enquiries.scailo_pb.ts:598](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L598)
 
 ___
 
 ### currencyId
 
-• **currencyId**: `bigint` = `protoInt64.zero`
+• `Optional` **currencyId**: `bigint`
 
-The ID of the currency
+**`Optional`**
+
+**`Description`**
+
+The unique internal identifier of the currency associated with the enquiry, used to frame any prospective financial discussions or quotes.
+
+**`Example`**
+
+```ts
+3
+```
+
+**`Regex`**
+
+^[1-9][0-9]*$
+
+**`Format`**
+
+Unsigned 64-bit integer greater than 0.
 
 **`Generated`**
 
-from field: uint64 currency_id = 15;
+from field: optional uint64 currency_id = 15;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:516](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L516)
+[src/sales_enquiries.scailo_pb.ts:630](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L630)
 
 ___
 
 ### description
 
-• **description**: `string` = `""`
+• `Optional` **description**: `string`
 
-The description of the sales enquiry
+**`Optional`**
+
+**`Description`**
+
+A textual summary detailing the specific products, services, or information the lead is requesting.
+
+**`Example`**
+
+```ts
+"Looking for bulk pricing on industrial copper wiring"
+```
+
+**`Regex`**
+
+^[0-9A-Za-z ]*$
+
+**`Format`**
+
+Alphanumeric characters and spaces only. Can be left empty.
 
 **`Generated`**
 
-from field: string description = 16;
+from field: optional string description = 16;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:523](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L523)
+[src/sales_enquiries.scailo_pb.ts:646](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L646)
 
 ___
 
@@ -151,7 +228,21 @@ ___
 
 • **formData**: [`FormFieldDatumCreateRequest`](FormFieldDatumCreateRequest.md)[] = `[]`
 
-The list of dynamic forms
+**`Optional`**
+
+**`Description`**
+
+A collection of dynamic form fields for organization-specific data.
+
+**`Example`**
+
+```ts
+[]
+```
+
+**`Format`**
+
+An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
 
 **`Generated`**
 
@@ -159,7 +250,7 @@ from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:551](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L551)
+[src/sales_enquiries.scailo_pb.ts:708](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L708)
 
 ___
 
@@ -167,7 +258,25 @@ ___
 
 • **id**: `bigint` = `protoInt64.zero`
 
-The ID of the record that needs to be updated
+**`Mandatory`**
+
+**`Description`**
+
+The unique internal identifier of the target record that needs to be updated.
+
+**`Example`**
+
+```ts
+1024
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -175,29 +284,47 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:444](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L444)
+[src/sales_enquiries.scailo_pb.ts:538](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L538)
 
 ___
 
 ### miscellaneousCost
 
-• **miscellaneousCost**: `bigint` = `protoInt64.zero`
+• `Optional` **miscellaneousCost**: `bigint`
 
-The miscellaneous cost (in cents)
+**`Optional`**
+
+**`Description`**
+
+Any additional miscellaneous costs (e.g., estimated handling or freight charges) tentatively associated with the enquiry, represented in the base currency subunit (e.g., cents).
+
+**`Example`**
+
+```ts
+1500
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 miscellaneous_cost = 17;
+from field: optional uint64 miscellaneous_cost = 17;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:530](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L530)
+[src/sales_enquiries.scailo_pb.ts:662](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L662)
 
 ___
 
 ### notifyUsers
 
-• **notifyUsers**: `boolean` = `false`
+• `Optional` **notifyUsers**: `boolean`
 
 **`Optional`**
 
@@ -213,51 +340,53 @@ true
 
 **`Generated`**
 
-from field: bool notify_users = 3;
+from field: optional bool notify_users = 3;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:456](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L456)
+[src/sales_enquiries.scailo_pb.ts:550](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L550)
 
 ___
 
 ### overallDiscount
 
-• **overallDiscount**: `bigint` = `protoInt64.zero`
+• `Optional` **overallDiscount**: `bigint`
 
-The overall discount (in cents)
+**`Optional`**
+
+**`Description`**
+
+A flat target discount amount associated with the enquiry, represented in the base currency subunit (e.g., cents).
+
+**`Example`**
+
+```ts
+500
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 overall_discount = 18;
+from field: optional uint64 overall_discount = 18;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:537](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L537)
-
-___
-
-### priority
-
-• **priority**: `string` = `""`
-
-The priority of the sales enquiry. Possible values are "low", "medium", "high".
-
-**`Generated`**
-
-from field: string priority = 14;
-
-#### Defined in
-
-[src/sales_enquiries.scailo_pb.ts:509](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L509)
+[src/sales_enquiries.scailo_pb.ts:678](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L678)
 
 ___
 
 ### referenceId
 
-• **referenceId**: `string` = `""`
+• `Optional` **referenceId**: `string`
 
-**`Mandatory`**
+**`Optional`**
 
 **`Description`**
 
@@ -279,49 +408,85 @@ Alphanumeric characters and spaces only. No special symbols or punctuation allow
 
 **`Generated`**
 
-from field: string reference_id = 10;
+from field: optional string reference_id = 10;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:488](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L488)
+[src/sales_enquiries.scailo_pb.ts:582](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L582)
 
 ___
 
 ### roundOff
 
-• **roundOff**: `bigint` = `protoInt64.zero`
+• `Optional` **roundOff**: `bigint`
 
-The round off amount (in cents) (both positive and negative values are allowed)
+**`Optional`**
+
+**`Description`**
+
+The applicable rounding adjustment amount for prospective financial totals. Can be positive or negative, represented in the base currency subunit.
+
+**`Example`**
+
+```ts
+-15
+```
+
+**`Regex`**
+
+^-?[0-9]+$
+
+**`Format`**
+
+Signed 64-bit integer.
 
 **`Generated`**
 
-from field: int64 round_off = 19;
+from field: optional int64 round_off = 19;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:544](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L544)
+[src/sales_enquiries.scailo_pb.ts:694](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L694)
 
 ___
 
 ### userComment
 
-• **userComment**: `string` = `""`
+• `Optional` **userComment**: `string`
 
-Stores any comment that the user might add during this operation
+**`Optional`**
+
+**`Description`**
+
+Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+
+**`Example`**
+
+```ts
+"This is a comment for audit purposes."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
-from field: string user_comment = 1;
+from field: optional string user_comment = 1;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:437](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L437)
+[src/sales_enquiries.scailo_pb.ts:522](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L522)
 
 ___
 
 ### vaultFolderId
 
-• **vaultFolderId**: `bigint` = `protoInt64.zero`
+• `Optional` **vaultFolderId**: `bigint`
 
 **`Optional`**
 
@@ -345,11 +510,11 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 vault_folder_id = 9;
+from field: optional uint64 vault_folder_id = 9;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:472](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L472)
+[src/sales_enquiries.scailo_pb.ts:566](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L566)
 
 ___
 
@@ -359,7 +524,7 @@ ___
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:560](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L560)
+[src/sales_enquiries.scailo_pb.ts:717](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L717)
 
 ___
 
@@ -369,7 +534,7 @@ ___
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:558](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L558)
+[src/sales_enquiries.scailo_pb.ts:715](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L715)
 
 ___
 
@@ -379,7 +544,7 @@ ___
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:559](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L559)
+[src/sales_enquiries.scailo_pb.ts:716](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L716)
 
 ## Methods
 
@@ -667,7 +832,7 @@ ___
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:589](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L589)
+[src/sales_enquiries.scailo_pb.ts:745](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L745)
 
 ___
 
@@ -688,7 +853,7 @@ ___
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:577](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L577)
+[src/sales_enquiries.scailo_pb.ts:733](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L733)
 
 ___
 
@@ -709,7 +874,7 @@ ___
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:581](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L581)
+[src/sales_enquiries.scailo_pb.ts:737](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L737)
 
 ___
 
@@ -730,4 +895,4 @@ ___
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:585](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L585)
+[src/sales_enquiries.scailo_pb.ts:741](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L741)

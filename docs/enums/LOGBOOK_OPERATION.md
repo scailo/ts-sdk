@@ -31,7 +31,7 @@ from enum value: ARCHIVE = 2;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:747](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/base.scailo_pb.ts#L747)
+[src/base.scailo_pb.ts:787](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/base.scailo_pb.ts#L787)
 
 ___
 
@@ -47,7 +47,7 @@ from enum value: CREATE_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:733](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/base.scailo_pb.ts#L733)
+[src/base.scailo_pb.ts:773](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/base.scailo_pb.ts#L773)
 
 ___
 
@@ -63,7 +63,7 @@ from enum value: RESTORE = 3;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:754](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/base.scailo_pb.ts#L754)
+[src/base.scailo_pb.ts:794](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/base.scailo_pb.ts#L794)
 
 ___
 
@@ -79,4 +79,4 @@ from enum value: UPDATE = 1;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:740](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/base.scailo_pb.ts#L740)
+[src/base.scailo_pb.ts:780](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/base.scailo_pb.ts#L780)

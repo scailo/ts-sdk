@@ -2,7 +2,7 @@
 
 # Class: Location
 
-Describes the parameters that are part of a standard response
+Represents a full Location within the system.
 
 **`Generated`**
 
@@ -77,7 +77,7 @@ Message\&lt;Location\&gt;.constructor
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:415](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L415)
+[src/locations.scailo_pb.ts:560](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/locations.scailo_pb.ts#L560)
 
 ## Properties
 
@@ -95,7 +95,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:348](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L348)
+[src/locations.scailo_pb.ts:474](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/locations.scailo_pb.ts#L474)
 
 ___
 
@@ -103,7 +103,15 @@ ___
 
 • **code**: `string` = `""`
 
-The unique code by which the location is classified
+**`Description`**
+
+The unique code or internal alphanumeric token used to classify the location for shipping, logistics, or tagging.
+
+**`Example`**
+
+```ts
+"LOC-HQ-BLDGB"
+```
 
 **`Generated`**
 
@@ -111,7 +119,7 @@ from field: string code = 11;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:378](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L378)
+[src/locations.scailo_pb.ts:510](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/locations.scailo_pb.ts#L510)
 
 ___
 
@@ -119,7 +127,15 @@ ___
 
 • **email**: `string` = `""`
 
-The primary email of the location
+**`Description`**
+
+The primary communication or support email address linked specifically to this location.
+
+**`Example`**
+
+```ts
+"facilities.loc1@acme.com"
+```
 
 **`Generated`**
 
@@ -127,7 +143,7 @@ from field: string email = 12;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:385](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L385)
+[src/locations.scailo_pb.ts:520](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/locations.scailo_pb.ts#L520)
 
 ___
 
@@ -151,7 +167,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:332](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L332)
+[src/locations.scailo_pb.ts:458](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/locations.scailo_pb.ts#L458)
 
 ___
 
@@ -159,7 +175,9 @@ ___
 
 • **formData**: [`FormFieldDatum`](FormFieldDatum.md)[] = `[]`
 
-The list of dynamic forms
+**`Description`**
+
+Collection of organization-specific dynamic data.
 
 **`Generated`**
 
@@ -167,7 +185,7 @@ from field: repeated Scailo.FormFieldDatum form_data = 30;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:413](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L413)
+[src/locations.scailo_pb.ts:558](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/locations.scailo_pb.ts#L558)
 
 ___
 
@@ -175,7 +193,15 @@ ___
 
 • **isLeaf**: `boolean` = `false`
 
-Stores if this is a leaf location or a non-leaf location
+**`Description`**
+
+Flag determining whether this location is a terminal 'leaf' node (e.g., a specific office room) or a 'non-leaf' grouping node (e.g., an entire region or campus).
+
+**`Example`**
+
+```ts
+true
+```
 
 **`Generated`**
 
@@ -183,7 +209,7 @@ from field: bool is_leaf = 15;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:406](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L406)
+[src/locations.scailo_pb.ts:550](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/locations.scailo_pb.ts#L550)
 
 ___
 
@@ -201,7 +227,7 @@ from field: repeated Scailo.LogbookLogConciseSLC logs = 5;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:364](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L364)
+[src/locations.scailo_pb.ts:490](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/locations.scailo_pb.ts#L490)
 
 ___
 
@@ -219,7 +245,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:340](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L340)
+[src/locations.scailo_pb.ts:466](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/locations.scailo_pb.ts#L466)
 
 ___
 
@@ -227,7 +253,15 @@ ___
 
 • **name**: `string` = `""`
 
-The name of the location
+**`Description`**
+
+The official or friendly descriptive name of the location.
+
+**`Example`**
+
+```ts
+"Headquarters - Building B"
+```
 
 **`Generated`**
 
@@ -235,7 +269,7 @@ from field: string name = 10;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:371](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L371)
+[src/locations.scailo_pb.ts:500](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/locations.scailo_pb.ts#L500)
 
 ___
 
@@ -243,7 +277,15 @@ ___
 
 • **parentLocationId**: `bigint` = `protoInt64.zero`
 
-The ID of the associated non-leaf parent location (0, if the first location that is being created is a leaf location)
+**`Description`**
+
+The unique internal identifier of the parent non-leaf location. Defaults to 0 if this is the root or top-level node in the geographic hierarchy.
+
+**`Example`**
+
+```ts
+1024
+```
 
 **`Generated`**
 
@@ -251,7 +293,7 @@ from field: uint64 parent_location_id = 14;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:399](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L399)
+[src/locations.scailo_pb.ts:540](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/locations.scailo_pb.ts#L540)
 
 ___
 
@@ -259,7 +301,15 @@ ___
 
 • **phone**: `string` = `""`
 
-The primary contact number of the location
+**`Description`**
+
+The primary contact or front desk telephone number for the location, typically including country and area codes.
+
+**`Example`**
+
+```ts
+"+1-512-555-0144"
+```
 
 **`Generated`**
 
@@ -267,7 +317,7 @@ from field: string phone = 13;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:392](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L392)
+[src/locations.scailo_pb.ts:530](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/locations.scailo_pb.ts#L530)
 
 ___
 
@@ -285,7 +335,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 4;
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:356](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L356)
+[src/locations.scailo_pb.ts:482](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/locations.scailo_pb.ts#L482)
 
 ___
 
@@ -295,7 +345,7 @@ ___
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:422](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L422)
+[src/locations.scailo_pb.ts:567](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/locations.scailo_pb.ts#L567)
 
 ___
 
@@ -305,7 +355,7 @@ ___
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:420](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L420)
+[src/locations.scailo_pb.ts:565](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/locations.scailo_pb.ts#L565)
 
 ___
 
@@ -315,7 +365,7 @@ ___
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:421](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L421)
+[src/locations.scailo_pb.ts:566](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/locations.scailo_pb.ts#L566)
 
 ## Methods
 
@@ -603,7 +653,7 @@ ___
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:449](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L449)
+[src/locations.scailo_pb.ts:594](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/locations.scailo_pb.ts#L594)
 
 ___
 
@@ -624,7 +674,7 @@ ___
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:437](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L437)
+[src/locations.scailo_pb.ts:582](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/locations.scailo_pb.ts#L582)
 
 ___
 
@@ -645,7 +695,7 @@ ___
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:441](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L441)
+[src/locations.scailo_pb.ts:586](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/locations.scailo_pb.ts#L586)
 
 ___
 
@@ -666,4 +716,4 @@ ___
 
 #### Defined in
 
-[src/locations.scailo_pb.ts:445](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/locations.scailo_pb.ts#L445)
+[src/locations.scailo_pb.ts:590](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/locations.scailo_pb.ts#L590)

@@ -2,7 +2,8 @@
 
 # Class: VendorItemHistoryRequest
 
-Describes the parameters that are required to retrieve the history of the record
+Represents the request payload containing the parameter constraints required to
+retrieve the historical audit trail and lifecycle changes of a specific vendor item record.
 
 **`Generated`**
 
@@ -68,7 +69,7 @@ Message\&lt;VendorItemHistoryRequest\&gt;.constructor
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:1278](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L1278)
+[src/vendors.scailo_pb.ts:1737](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L1737)
 
 ## Properties
 
@@ -76,7 +77,25 @@ Message\&lt;VendorItemHistoryRequest\&gt;.constructor
 
 • **familyId**: `bigint` = `protoInt64.zero`
 
-Stores the family ID
+**`Mandatory`**
+
+**`Description`**
+
+The unique internal identifier of the target family associated with the historical record.
+
+**`Example`**
+
+```ts
+582
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer greater than zero.
 
 **`Generated`**
 
@@ -84,7 +103,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:1269](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L1269)
+[src/vendors.scailo_pb.ts:1719](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L1719)
 
 ___
 
@@ -92,7 +111,25 @@ ___
 
 • **uomId**: `bigint` = `protoInt64.zero`
 
-Stores the ID of the vendor's unit of material
+**`Mandatory`**
+
+**`Description`**
+
+The unique internal identifier of the target unit of material (UOM) associated with the historical record.
+
+**`Example`**
+
+```ts
+12
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer greater than zero.
 
 **`Generated`**
 
@@ -100,7 +137,7 @@ from field: uint64 uom_id = 13;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:1276](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L1276)
+[src/vendors.scailo_pb.ts:1735](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L1735)
 
 ___
 
@@ -108,7 +145,25 @@ ___
 
 • **vendorId**: `bigint` = `protoInt64.zero`
 
-Stores the vendor ID
+**`Mandatory`**
+
+**`Description`**
+
+The unique internal identifier of the target vendor associated with the historical record.
+
+**`Example`**
+
+```ts
+1024
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer greater than zero.
 
 **`Generated`**
 
@@ -116,7 +171,7 @@ from field: uint64 vendor_id = 10;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:1262](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L1262)
+[src/vendors.scailo_pb.ts:1703](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L1703)
 
 ___
 
@@ -126,7 +181,7 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:1285](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L1285)
+[src/vendors.scailo_pb.ts:1744](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L1744)
 
 ___
 
@@ -136,7 +191,7 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:1283](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L1283)
+[src/vendors.scailo_pb.ts:1742](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L1742)
 
 ___
 
@@ -146,7 +201,7 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:1284](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L1284)
+[src/vendors.scailo_pb.ts:1743](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L1743)
 
 ## Methods
 
@@ -434,7 +489,7 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:1303](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L1303)
+[src/vendors.scailo_pb.ts:1762](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L1762)
 
 ___
 
@@ -455,7 +510,7 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:1291](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L1291)
+[src/vendors.scailo_pb.ts:1750](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L1750)
 
 ___
 
@@ -476,7 +531,7 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:1295](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L1295)
+[src/vendors.scailo_pb.ts:1754](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L1754)
 
 ___
 
@@ -497,4 +552,4 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:1299](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L1299)
+[src/vendors.scailo_pb.ts:1758](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L1758)

@@ -1,9 +1,12 @@
 import { FamiliesList, FamiliesServiceCountReq, FamiliesServiceCreateRequest, FamiliesServiceFilterReq, FamiliesServiceImageCreateRequest, FamiliesServiceImageUpdateRequest, FamiliesServiceLabelCreateRequest, FamiliesServicePaginationReq, FamiliesServicePaginationResponse, FamiliesServiceQCGroupCreateRequest, FamiliesServiceSearchAllReq, FamiliesServiceStorageCreateRequest, FamiliesServiceUnitConversionCreateRequest, FamiliesServiceUnitConversionPresenceRequest, FamiliesServiceUpdateIdentityRequest, FamiliesServiceUpdateMinStockToMaintainRequest, FamiliesServiceUpdatePriceRequest, FamiliesServiceUpdateRequest, Family, FamilyImage, FamilyImagesList, FamilyLabel, FamilyLabelsList, FamilyQCGroup, FamilyQCGroupsList, FamilyStorage, FamilyStoragesList, FamilyTypesList, FamilyUnitConversion, FamilyUnitConversionsList } from "./families.scailo_pb.js";
 import { ActiveStatus, AmendmentLogsList, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, IdentifierWithUserComment, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
+import { VaultFolderAttachRequest } from "./vault_folders.scailo_pb.js";
 /**
  *
- * Describes the common methods applicable on each family
+ * The FamiliesService manages the full lifecycle of family records.
+ * It provides standard CRUD operations alongside a robust state machine for
+ * verification, manager approval, and completion.
  *
  * @generated from service Scailo.FamiliesService
  */
@@ -11,7 +14,18 @@ export declare const FamiliesService: {
     readonly typeName: "Scailo.FamiliesService";
     readonly methods: {
         /**
-         * Create and send for verification
+         * Creates a new record and immediately moves it to the verification workflow.
+         *
+         * This method validates all required fields.
+         * The record is created with a `STANDARD_LIFECYCLE_STATUS.PREVERIFY` status.
+         *
+         * **Side Effects:**
+         * - Generates a unique system UUID.
+         * - Records an audit log for the "Create" action.
+         * - May trigger automated verification workflows.
+         *
+         * **Errors:**
+         * - `INVALID_ARGUMENT`: If validation rules fail.
          *
          * @generated from rpc Scailo.FamiliesService.Create
          */
@@ -224,7 +238,36 @@ export declare const FamiliesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Amend the family and send for revision
+         * Attaches a specified folder directly to a record without requiring a full revision workflow.
+         *
+         * This is a convenience API designed to bypass the traditional multi-step modification lifecycle
+         * (e.g., creating a revision, updating data, submitting for verification, and awaiting approval).
+         * It allows for the immediate, single-step association of a vault folder.
+         *
+         * **Side Effects & Lifecycle:**
+         * * The overall status of the record remains unchanged.
+         * * The record's modification timestamp is automatically updated to the current time.
+         * * An entry is appended to the record's audit log tracking this attachment.
+         *
+         * @generated from rpc Scailo.FamiliesService.AttachVaultFolder
+         */
+        readonly attachVaultFolder: {
+            readonly name: "AttachVaultFolder";
+            readonly I: typeof VaultFolderAttachRequest;
+            readonly O: typeof IdentifierResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Initiates a formal amendment process for a specific record, transitioning it into a structured revision workflow.
+         *
+         * This API is utilized when substantive modifications are required for an already finalized or approved record.
+         * Rather than mutating the active data directly, it explicitly triggers a compliance-driven revision cycle,
+         * ensuring that all proposed changes are tracked and undergo standard review and authorization procedures.
+         *
+         * **Side Effects & Lifecycle:**
+         * * The record's internal amendment count property is strictly incremented by 1.
+         * * The record is placed into a pending revision state, typically preserving the availability of the currently approved version until the amendment is finalized.
+         * * The optional user comment is permanently appended to the record's audit log as the formal justification for initiating the change.
          *
          * @generated from rpc Scailo.FamiliesService.Amend
          */
@@ -235,7 +278,11 @@ export declare const FamiliesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Updates the price of the family with the given UUID
+         * Updates the standard base unit price of an existing family identified by its UUID.
+         *
+         * **Side Effects:**
+         * - Mutates the active unit price configuration for the family.
+         * - Appends an audit trail entry tracking the price change and the justification comment.
          *
          * @generated from rpc Scailo.FamiliesService.UpdatePrice
          */
@@ -246,7 +293,11 @@ export declare const FamiliesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Updates the price of all the families mentioned in the file
+         * Processes a batch ingestion to update unit prices across multiple families via a CSV file.
+         *
+         * **Side Effects:**
+         * - Parses the uploaded document and applies the respective price updates in bulk.
+         * - Validates the payload structure and triggers audit trail logging for each successfully modified record.
          *
          * @generated from rpc Scailo.FamiliesService.UploadPrices
          */
@@ -257,7 +308,12 @@ export declare const FamiliesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Updates the minimim stock to maintain for the family with the given UUID
+         * Updates the minimum inventory threshold (safety stock) required for a family identified by its UUID.
+         *
+         * **Side Effects:**
+         * - Mutates the active minimum stock configuration.
+         * - May influence downstream automated restock alerts or procurement triggers based on the new threshold.
+         * - Appends an audit trail entry tracking the threshold change.
          *
          * @generated from rpc Scailo.FamiliesService.UpdateMinStockToMaintain
          */
@@ -268,7 +324,11 @@ export declare const FamiliesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Updates the minimum stock to maintain for all the families mentioned in the file
+         * Processes a batch ingestion to update safety stock thresholds across multiple families via a CSV file.
+         *
+         * **Side Effects:**
+         * - Parses the uploaded document and applies the respective threshold updates in bulk.
+         * - Validates the payload and triggers audit trail logging for each successfully modified record.
          *
          * @generated from rpc Scailo.FamiliesService.UploadMinStockToMaintain
          */
@@ -279,36 +339,11 @@ export declare const FamiliesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * CSV operations
-         * Download the CSV file that consists of the list of families according to the given filter request. The same file could also be used as a template for uploading families
+         * Associates a specific storage location with a family.
          *
-         * @generated from rpc Scailo.FamiliesService.DownloadAsCSV
-         */
-        readonly downloadAsCSV: {
-            readonly name: "DownloadAsCSV";
-            readonly I: typeof FamiliesServiceFilterReq;
-            readonly O: typeof StandardFile;
-            readonly kind: MethodKind.Unary;
-        };
-        /**
-         * Bulk imports records from a provided CSV file.
-         * Behavior:
-         * - Deduplication: Skips entries where the `code` already exists in the system.
-         * - Atomicity: This is an "all-or-nothing" operation; if any part of the
-         *   import fails, no changes are committed.
-         * - Idempotency: Multiple calls with the same CSV result in the same state.
-         * Returns a list of UUIDs for all successfully processed or existing records.
-         *
-         * @generated from rpc Scailo.FamiliesService.ImportFromCSV
-         */
-        readonly importFromCSV: {
-            readonly name: "ImportFromCSV";
-            readonly I: typeof StandardFile;
-            readonly O: typeof IdentifierUUIDsList;
-            readonly kind: MethodKind.Unary;
-        };
-        /**
-         * Add a storage
+         * **Side Effects:**
+         * - Creates a structural mapping dictating where items of this family are authorized to be stored.
+         * - Depending on system configurations, may place this mapping into a pending approval state.
          *
          * @generated from rpc Scailo.FamiliesService.AddStorage
          */
@@ -319,7 +354,11 @@ export declare const FamiliesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Approve a storage
+         * Approves a pending storage location mapping, finalizing its availability for inventory placement.
+         *
+         * **Side Effects:**
+         * - Activates the storage mapping for downstream warehousing and put-away workflows.
+         * - Appends the required approval metadata and audit comment to the record history.
          *
          * @generated from rpc Scailo.FamiliesService.ApproveStorage
          */
@@ -330,7 +369,11 @@ export declare const FamiliesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Delete a storage
+         * Permanently removes or deactivates a storage location association from a family profile.
+         *
+         * **Side Effects:**
+         * - Revokes authorization to utilize this specific storage node for this family.
+         * - Logs the deletion justification comment into the system compliance log.
          *
          * @generated from rpc Scailo.FamiliesService.DeleteStorage
          */
@@ -341,7 +384,9 @@ export declare const FamiliesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View a storage for the given ID
+         * Retrieves the granular details of a specific family storage association by its internal sequence ID.
+         *
+         * This is a read-only operation that fetches the complete mapping metadata and approval history.
          *
          * @generated from rpc Scailo.FamiliesService.ViewStorageByID
          */
@@ -352,7 +397,9 @@ export declare const FamiliesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View all storages for given family ID
+         * Lists all authorized and pending storage locations mapped to a specific family.
+         *
+         * This read-only query is optimized for warehousing operations to determine valid put-away or picking destinations.
          *
          * @generated from rpc Scailo.FamiliesService.ViewStorages
          */
@@ -363,7 +410,11 @@ export declare const FamiliesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Add a label
+         * Associates a categorization label or taxonomy tag with a family.
+         *
+         * **Side Effects:**
+         * - Creates a structural mapping used for reporting and filtering.
+         * - May place this mapping into a pending approval state based on configuration.
          *
          * @generated from rpc Scailo.FamiliesService.AddLabel
          */
@@ -374,7 +425,11 @@ export declare const FamiliesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Approve a label
+         * Approves a pending label mapping, finalizing its application to the family.
+         *
+         * **Side Effects:**
+         * - Activates the label association for downstream search and filtering workflows.
+         * - Appends the required approval metadata and audit comment.
          *
          * @generated from rpc Scailo.FamiliesService.ApproveLabel
          */
@@ -385,7 +440,11 @@ export declare const FamiliesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Delete a label
+         * Permanently removes a categorization label association from a family profile.
+         *
+         * **Side Effects:**
+         * - Revokes the taxonomy tag from the family.
+         * - Logs the deletion justification comment into the compliance log.
          *
          * @generated from rpc Scailo.FamiliesService.DeleteLabel
          */
@@ -396,7 +455,9 @@ export declare const FamiliesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View a label for the given ID
+         * Retrieves the granular details of a specific family label association by its internal sequence ID.
+         *
+         * This is a read-only operation that fetches the mapping metadata and approval history.
          *
          * @generated from rpc Scailo.FamiliesService.ViewLabelByID
          */
@@ -407,7 +468,9 @@ export declare const FamiliesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View all labels for given family ID
+         * Lists all categorization labels mapped to a specific family.
+         *
+         * This read-only query aggregates the active tags utilized for reporting and display purposes for a single family.
          *
          * @generated from rpc Scailo.FamiliesService.ViewLabels
          */
@@ -418,7 +481,9 @@ export declare const FamiliesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View all labels for given family IDs
+         * Lists all categorization labels mapped across an array of specified families.
+         *
+         * This read-only bulk query is optimized for data grids and broad catalog views, fetching taxonomy tags for multiple families simultaneously to reduce round-trips.
          *
          * @generated from rpc Scailo.FamiliesService.ViewLabelsForFamilyIDs
          */
@@ -429,7 +494,11 @@ export declare const FamiliesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Add a unit conversion
+         * Associates a mathematical unit conversion rule (base UOM to alternate UOM) with a family.
+         *
+         * **Side Effects:**
+         * - Validates the structural integrity of the multiplication/division factors.
+         * - May place the conversion rule into a pending approval state to ensure procurement accuracy.
          *
          * @generated from rpc Scailo.FamiliesService.AddUnitConversion
          */
@@ -440,7 +509,11 @@ export declare const FamiliesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Approve a unit conversion
+         * Approves a pending unit conversion rule, finalizing its availability for procurement and inventory math.
+         *
+         * **Side Effects:**
+         * - Activates the conversion rule for downstream ordering and multi-unit transactional workflows.
+         * - Appends the required approval metadata and audit comment.
          *
          * @generated from rpc Scailo.FamiliesService.ApproveUnitConversion
          */
@@ -451,7 +524,11 @@ export declare const FamiliesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Delete a unit conversion
+         * Permanently removes a unit conversion rule from a family profile.
+         *
+         * **Side Effects:**
+         * - Revokes the ability to conduct transactions in the specified alternate unit.
+         * - Logs the deletion justification comment into the compliance log.
          *
          * @generated from rpc Scailo.FamiliesService.DeleteUnitConversion
          */
@@ -462,7 +539,9 @@ export declare const FamiliesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View a unit conversion for the given ID
+         * Retrieves the granular details of a specific unit conversion rule by its internal sequence ID.
+         *
+         * This read-only operation fetches the complete mathematical factors and approval state of the rule.
          *
          * @generated from rpc Scailo.FamiliesService.ViewUnitConversionByID
          */
@@ -473,7 +552,9 @@ export declare const FamiliesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View all unit conversions for given family ID
+         * Lists all defined unit conversion rules mapped to a specific family.
+         *
+         * This read-only query aggregates all alternative units in which this family can be transacted.
          *
          * @generated from rpc Scailo.FamiliesService.ViewUnitConversions
          */
@@ -484,7 +565,9 @@ export declare const FamiliesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View the unit conversion for the given family ID and the given uom ID
+         * Retrieves a specific unit conversion rule mapping between a given family and a target alternate UOM.
+         *
+         * This read-only operation is designed for defensive checking by client applications prior to permitting an order in an alternative unit.
          *
          * @generated from rpc Scailo.FamiliesService.ViewUnitConversionFor
          */
@@ -495,7 +578,11 @@ export declare const FamiliesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Add a qc group
+         * Associates a Quality Control (QC) compliance group with a family.
+         *
+         * **Side Effects:**
+         * - Dictates the specific inspection and compliance workflows required for items within this family.
+         * - May place this association into a pending approval state.
          *
          * @generated from rpc Scailo.FamiliesService.AddQCGroup
          */
@@ -506,7 +593,11 @@ export declare const FamiliesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Approve a qc group
+         * Approves a pending QC group association, finalizing its enforcement on the family.
+         *
+         * **Side Effects:**
+         * - Activates the QC requirement for downstream intake, production, or fulfillment workflows.
+         * - Appends the required approval metadata and audit comment.
          *
          * @generated from rpc Scailo.FamiliesService.ApproveQCGroup
          */
@@ -517,7 +608,11 @@ export declare const FamiliesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Delete a qc group
+         * Permanently removes a QC group association from a family profile.
+         *
+         * **Side Effects:**
+         * - Revokes the specified inspection workflow requirement from this family.
+         * - Logs the deletion justification comment into the compliance log.
          *
          * @generated from rpc Scailo.FamiliesService.DeleteQCGroup
          */
@@ -528,7 +623,9 @@ export declare const FamiliesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View a qc group for the given ID
+         * Retrieves the granular details of a specific family QC group association by its internal sequence ID.
+         *
+         * This read-only operation fetches the complete mapping metadata and approval history.
          *
          * @generated from rpc Scailo.FamiliesService.ViewQCGroupByID
          */
@@ -539,7 +636,9 @@ export declare const FamiliesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View all qc groups for given family ID
+         * Lists all Quality Control groups mapped to a specific family.
+         *
+         * This read-only query aggregates the suite of compliance inspections mandated for this family.
          *
          * @generated from rpc Scailo.FamiliesService.ViewQCGroups
          */
@@ -550,7 +649,12 @@ export declare const FamiliesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Add a image
+         * Attaches an uploaded visual asset (vault file) to a family.
+         *
+         * **Side Effects:**
+         * - Binds a document vault file to the family.
+         * - Defines the image's display sequence and visibility scope (internal vs. public).
+         * - May place the image association into a pending approval state.
          *
          * @generated from rpc Scailo.FamiliesService.AddImage
          */
@@ -561,7 +665,11 @@ export declare const FamiliesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Modify an image
+         * Updates the display sequence or public visibility flag of an existing family image attachment.
+         *
+         * **Side Effects:**
+         * - Modifies the presentation metadata without replacing the underlying vault file.
+         * - Appends an audit trail entry tracking the metadata shift.
          *
          * @generated from rpc Scailo.FamiliesService.UpdateImage
          */
@@ -572,7 +680,11 @@ export declare const FamiliesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Approve a image
+         * Approves a pending image attachment, finalizing its visibility.
+         *
+         * **Side Effects:**
+         * - Activates the visual asset for display in catalogs and technical reference views.
+         * - Appends the required approval metadata and audit comment.
          *
          * @generated from rpc Scailo.FamiliesService.ApproveImage
          */
@@ -583,7 +695,11 @@ export declare const FamiliesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Delete a image
+         * Permanently removes a visual asset attachment from a family profile.
+         *
+         * **Side Effects:**
+         * - Revokes catalog visibility for the image and breaks the linkage to the vault file.
+         * - Logs the deletion justification comment into the compliance log.
          *
          * @generated from rpc Scailo.FamiliesService.DeleteImage
          */
@@ -594,7 +710,9 @@ export declare const FamiliesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View a image for the given ID
+         * Retrieves the granular details and metadata of a specific image attachment by its internal sequence ID.
+         *
+         * This read-only operation fetches the vault file reference, visibility flags, and approval state.
          *
          * @generated from rpc Scailo.FamiliesService.ViewImageByID
          */
@@ -605,7 +723,9 @@ export declare const FamiliesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View all images for given family ID
+         * Lists all images (both internal and public) attached to a specific family.
+         *
+         * This read-only query is optimized for internal administrative dashboards and catalog management workflows.
          *
          * @generated from rpc Scailo.FamiliesService.ViewImages
          */
@@ -616,7 +736,9 @@ export declare const FamiliesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View public images for given family ID
+         * Lists only the publicly flagged images attached to a specific family.
+         *
+         * This read-only query is optimized for external, customer-facing storefronts and public catalogs, guaranteeing internal assets remain hidden.
          *
          * @generated from rpc Scailo.FamiliesService.ViewPublicImages
          */
@@ -649,7 +771,7 @@ export declare const FamiliesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View only essential components of the family (without logs)
+         * Retrieves a record by ID excluding high-volume fields like logs for performance. This operation is optimized for high-performance internal system logic and backend-to-backend communication
          *
          * @generated from rpc Scailo.FamiliesService.ViewEssentialByID
          */
@@ -660,7 +782,7 @@ export declare const FamiliesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View only essential components of the family (without logs) that matches the given code
+         * Retrieves a record by its unique code excluding high-volume fields like logs.
          *
          * @generated from rpc Scailo.FamiliesService.ViewEssentialByCode
          */
@@ -671,7 +793,7 @@ export declare const FamiliesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View only essential components of the family (without logs) that matches the given UUID
+         * Retrieves a record by UUID excluding high-volume fields like logs. This is intended for public-facing interfaces, since record identifiers aren't sequential and thus cannot be predicted.
          *
          * @generated from rpc Scailo.FamiliesService.ViewEssentialByUUID
          */
@@ -682,7 +804,7 @@ export declare const FamiliesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View all families with the given IDs
+         * Retrieves a list of records matching the provided array of internal IDs.
          *
          * @generated from rpc Scailo.FamiliesService.ViewFromIDs
          */
@@ -726,7 +848,9 @@ export declare const FamiliesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View all families with required quantity greater than 0 from the given family types
+         * Retrieves all family records across specified family types that currently have an operational deficit (required quantity > 0).
+         *
+         * This read-only query is utilized heavily by procurement and manufacturing dashboards to identify and track pending demand, material shortages, and active requisitions.
          *
          * @generated from rpc Scailo.FamiliesService.ViewAllRequirable
          */
@@ -737,7 +861,15 @@ export declare const FamiliesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View all the amendments made
+         * Retrieves the comprehensive, chronological history of formal amendments applied to a specific record.
+         *
+         * This read-only query exposes the complete audit trail of revision workflows that the entity has undergone.
+         * It is explicitly designed to support compliance checks, historical tracking, and administrative reviews by
+         * detailing exactly how and when a record evolved over its lifecycle.
+         *
+         * **Side Effects & Lifecycle:**
+         * * This is a strictly read-only operation; the underlying record and its current lifecycle state remain entirely unchanged.
+         * * Aggregates and returns a sequential log of amendment events, which typically include revision counts, initiation timestamps, and the justification comments provided when the amendments were triggered.
          *
          * @generated from rpc Scailo.FamiliesService.ViewAmendments
          */
@@ -873,6 +1005,35 @@ export declare const FamiliesService: {
             readonly name: "Count";
             readonly I: typeof FamiliesServiceCountReq;
             readonly O: typeof CountResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * CSV operations
+         * Download the CSV file that consists of the list of families according to the given filter request. The same file could also be used as a template for uploading families
+         *
+         * @generated from rpc Scailo.FamiliesService.DownloadAsCSV
+         */
+        readonly downloadAsCSV: {
+            readonly name: "DownloadAsCSV";
+            readonly I: typeof FamiliesServiceFilterReq;
+            readonly O: typeof StandardFile;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Bulk imports records from a provided CSV file.
+         * Behavior:
+         * - Deduplication: Skips entries where the `code` already exists in the system.
+         * - Atomicity: This is an "all-or-nothing" operation; if any part of the
+         *   import fails, no changes are committed.
+         * - Idempotency: Multiple calls with the same CSV result in the same state.
+         * Returns a list of UUIDs for all successfully processed or existing records.
+         *
+         * @generated from rpc Scailo.FamiliesService.ImportFromCSV
+         */
+        readonly importFromCSV: {
+            readonly name: "ImportFromCSV";
+            readonly I: typeof StandardFile;
+            readonly O: typeof IdentifierUUIDsList;
             readonly kind: MethodKind.Unary;
         };
     };

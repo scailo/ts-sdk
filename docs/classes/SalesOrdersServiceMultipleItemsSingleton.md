@@ -2,7 +2,9 @@
 
 # Class: SalesOrdersServiceMultipleItemsSingleton
 
-Describes the parameters required to add an individual item as part of multiple item addition to a sales order
+Represents a single line item payload within a bulk creation request.
+Contains the exact same transactional parameters as a standard item creation request,
+omitting the parent order ID which is declared once at the batch level.
 
 **`Generated`**
 
@@ -76,23 +78,41 @@ Message\&lt;SalesOrdersServiceMultipleItemsSingleton\&gt;.constructor
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:1327](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L1327)
+[src/sales_orders.scailo_pb.ts:1872](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L1872)
 
 ## Properties
 
 ### clientFamilyCode
 
-• **clientFamilyCode**: `string` = `""`
+• `Optional` **clientFamilyCode**: `string`
 
-Stores the family code as given by the client
+**`Optional`**
+
+**`Description`**
+
+The client's specific alphanumeric part number, SKU, or family code used for their internal referencing.
+
+**`Example`**
+
+```ts
+"CLI-SKU-992"
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
-from field: string client_family_code = 16;
+from field: optional string client_family_code = 16;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:1283](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L1283)
+[src/sales_orders.scailo_pb.ts:1774](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L1774)
 
 ___
 
@@ -100,7 +120,25 @@ ___
 
 • **clientQuantity**: `bigint` = `protoInt64.zero`
 
-Stores the quantity (in cents) being ordered in client's unit of material
+**`Mandatory`**
+
+**`Description`**
+
+The ordered quantity represented in the client's specific unit of measure. Stored in subunits (cents) to maintain fractional precision.
+
+**`Example`**
+
+```ts
+5000
+```
+
+**`Regex`**
+
+^[1-9][0-9]*$
+
+**`Format`**
+
+Unsigned 64-bit integer greater than 0.
 
 **`Generated`**
 
@@ -108,7 +146,7 @@ from field: uint64 client_quantity = 15;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:1276](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L1276)
+[src/sales_orders.scailo_pb.ts:1758](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L1758)
 
 ___
 
@@ -116,7 +154,25 @@ ___
 
 • **clientUomId**: `bigint` = `protoInt64.zero`
 
-Stores the ID of the client's unit of material
+**`Mandatory`**
+
+**`Description`**
+
+The unique internal identifier of the Unit of Measure (UOM) requested by the client for this item.
+
+**`Example`**
+
+```ts
+12
+```
+
+**`Regex`**
+
+^[1-9][0-9]*$
+
+**`Format`**
+
+Unsigned 64-bit integer greater than 0.
 
 **`Generated`**
 
@@ -124,7 +180,7 @@ from field: uint64 client_uom_id = 14;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:1269](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L1269)
+[src/sales_orders.scailo_pb.ts:1742](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L1742)
 
 ___
 
@@ -132,7 +188,25 @@ ___
 
 • **deliveryDate**: `string` = `""`
 
-The delivery date of the item
+**`Mandatory`**
+
+**`Description`**
+
+The specific target delivery date for this line item, which may differ from the overall order's delivery schedule.
+
+**`Example`**
+
+```ts
+"2023-11-15"
+```
+
+**`Regex`**
+
+.+
+
+**`Format`**
+
+Must be a non-empty string. Expected to follow the standard date format designated by the client (e.g., YYYY-MM-DD).
 
 **`Generated`**
 
@@ -140,7 +214,7 @@ from field: string delivery_date = 20;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:1311](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L1311)
+[src/sales_orders.scailo_pb.ts:1838](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L1838)
 
 ___
 
@@ -148,7 +222,25 @@ ___
 
 • **discount**: `bigint` = `protoInt64.zero`
 
-The applicable discount percentage (in cents)
+**`Mandatory`**
+
+**`Description`**
+
+The discount percentage applied to this specific item, represented in subunits (e.g., 1500 for 15.00%).
+
+**`Example`**
+
+```ts
+1500
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -156,7 +248,7 @@ from field: uint64 discount = 19;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:1304](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L1304)
+[src/sales_orders.scailo_pb.ts:1822](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L1822)
 
 ___
 
@@ -164,7 +256,25 @@ ___
 
 • **familyId**: `bigint` = `protoInt64.zero`
 
-Stores the family ID
+**`Mandatory`**
+
+**`Description`**
+
+The unique internal identifier of the family or catalog item being ordered.
+
+**`Example`**
+
+```ts
+505
+```
+
+**`Regex`**
+
+^[1-9][0-9]*$
+
+**`Format`**
+
+Unsigned 64-bit integer greater than 0.
 
 **`Generated`**
 
@@ -172,7 +282,7 @@ from field: uint64 family_id = 12;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:1255](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L1255)
+[src/sales_orders.scailo_pb.ts:1710](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L1710)
 
 ___
 
@@ -180,7 +290,25 @@ ___
 
 • **internalQuantity**: `bigint` = `protoInt64.zero`
 
-The quantity (in cents) being ordered in internal unit of material
+**`Mandatory`**
+
+**`Description`**
+
+The ordered quantity represented in the system's internal base unit of measure. Stored in subunits (cents) to maintain fractional precision.
+
+**`Example`**
+
+```ts
+10000
+```
+
+**`Regex`**
+
+^[1-9][0-9]*$
+
+**`Format`**
+
+Unsigned 64-bit integer greater than 0.
 
 **`Generated`**
 
@@ -188,39 +316,75 @@ from field: uint64 internal_quantity = 13;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:1262](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L1262)
+[src/sales_orders.scailo_pb.ts:1726](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L1726)
 
 ___
 
 ### isInvoiceable
 
-• **isInvoiceable**: `boolean` = `false`
+• `Optional` **isInvoiceable**: `boolean`
 
-Stores if the item can be invoiced
+**`Optional`**
+
+**`Description`**
+
+A boolean flag indicating whether this specific line item is eligible to be processed for invoicing.
+
+**`Example`**
+
+```ts
+true
+```
+
+**`Regex`**
+
+^(?:true|false)$
+
+**`Format`**
+
+Boolean true or false.
 
 **`Generated`**
 
-from field: bool is_invoiceable = 22;
+from field: optional bool is_invoiceable = 22;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:1325](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L1325)
+[src/sales_orders.scailo_pb.ts:1870](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L1870)
 
 ___
 
 ### specifications
 
-• **specifications**: `string` = `""`
+• `Optional` **specifications**: `string`
 
-Optional specifications
+**`Optional`**
+
+**`Description`**
+
+Additional custom textual requirements, manufacturing notes, or specifications for fulfilling this item.
+
+**`Example`**
+
+```ts
+"Requires double-reinforced packaging for international transit."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
-from field: string specifications = 21;
+from field: optional string specifications = 21;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:1318](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L1318)
+[src/sales_orders.scailo_pb.ts:1854](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L1854)
 
 ___
 
@@ -228,7 +392,25 @@ ___
 
 • **taxGroupId**: `bigint` = `protoInt64.zero`
 
-The ID of the associated tax group
+**`Mandatory`**
+
+**`Description`**
+
+The unique internal identifier of the tax group or tax bracket applicable to this specific line item.
+
+**`Example`**
+
+```ts
+4
+```
+
+**`Regex`**
+
+^[1-9][0-9]*$
+
+**`Format`**
+
+Unsigned 64-bit integer greater than 0.
 
 **`Generated`**
 
@@ -236,7 +418,7 @@ from field: uint64 tax_group_id = 18;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:1297](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L1297)
+[src/sales_orders.scailo_pb.ts:1806](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L1806)
 
 ___
 
@@ -244,7 +426,25 @@ ___
 
 • **unitPrice**: `bigint` = `protoInt64.zero`
 
-The unit price of the item
+**`Mandatory`**
+
+**`Description`**
+
+The agreed-upon price per unit for this item, represented in the base currency subunit (e.g., cents).
+
+**`Example`**
+
+```ts
+2500
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -252,7 +452,7 @@ from field: uint64 unit_price = 17;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:1290](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L1290)
+[src/sales_orders.scailo_pb.ts:1790](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L1790)
 
 ___
 
@@ -262,7 +462,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:1334](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L1334)
+[src/sales_orders.scailo_pb.ts:1879](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L1879)
 
 ___
 
@@ -272,7 +472,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:1332](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L1332)
+[src/sales_orders.scailo_pb.ts:1877](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L1877)
 
 ___
 
@@ -282,7 +482,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:1333](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L1333)
+[src/sales_orders.scailo_pb.ts:1878](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L1878)
 
 ## Methods
 
@@ -570,7 +770,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:1360](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L1360)
+[src/sales_orders.scailo_pb.ts:1905](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L1905)
 
 ___
 
@@ -591,7 +791,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:1348](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L1348)
+[src/sales_orders.scailo_pb.ts:1893](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L1893)
 
 ___
 
@@ -612,7 +812,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:1352](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L1352)
+[src/sales_orders.scailo_pb.ts:1897](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L1897)
 
 ___
 
@@ -633,4 +833,4 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:1356](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L1356)
+[src/sales_orders.scailo_pb.ts:1901](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L1901)

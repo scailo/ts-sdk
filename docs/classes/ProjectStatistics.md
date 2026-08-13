@@ -2,7 +2,9 @@
 
 # Class: ProjectStatistics
 
-Describes the parameters that are part of a project's statistics payload
+Represents a snapshot of performance and progress metrics for a project.
+This message aggregates key performance indicators (KPIs) to provide a
+high-level overview of project health, effort, and completion status.
 
 **`Generated`**
 
@@ -68,7 +70,7 @@ Message\&lt;ProjectStatistics\&gt;.constructor
 
 #### Defined in
 
-[src/projects.scailo_pb.ts:551](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/projects.scailo_pb.ts#L551)
+[src/projects.scailo_pb.ts:657](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/projects.scailo_pb.ts#L657)
 
 ## Properties
 
@@ -76,7 +78,15 @@ Message\&lt;ProjectStatistics\&gt;.constructor
 
 • **totalCompletionPercentage**: `bigint` = `protoInt64.zero`
 
-Stores the cumulative completion percentage of the project
+**`Description`**
+
+The cumulative progress of the project expressed as a percentage. Can have a range between 0 and 10000. A fully completed project would have a value of 10000.
+
+**`Example`**
+
+```ts
+10000
+```
 
 **`Generated`**
 
@@ -84,7 +94,7 @@ from field: uint64 total_completion_percentage = 2;
 
 #### Defined in
 
-[src/projects.scailo_pb.ts:542](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/projects.scailo_pb.ts#L542)
+[src/projects.scailo_pb.ts:645](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/projects.scailo_pb.ts#L645)
 
 ___
 
@@ -92,7 +102,15 @@ ___
 
 • **totalDuration**: `bigint` = `protoInt64.zero`
 
-Stores the total amount of time spent on the project
+**`Description`**
+
+The total accumulated time spent on the project in seconds.
+
+**`Example`**
+
+```ts
+86400
+```
 
 **`Generated`**
 
@@ -100,7 +118,7 @@ from field: uint64 total_duration = 1;
 
 #### Defined in
 
-[src/projects.scailo_pb.ts:535](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/projects.scailo_pb.ts#L535)
+[src/projects.scailo_pb.ts:635](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/projects.scailo_pb.ts#L635)
 
 ___
 
@@ -108,7 +126,15 @@ ___
 
 • **totalPoints**: `bigint` = `protoInt64.zero`
 
-Stores the total number of points
+**`Description`**
+
+The total number of points earned or assigned to the project. This is used to track effort or value delivery in agile-style workflows.
+
+**`Example`**
+
+```ts
+10000
+```
 
 **`Generated`**
 
@@ -116,7 +142,7 @@ from field: uint64 total_points = 3;
 
 #### Defined in
 
-[src/projects.scailo_pb.ts:549](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/projects.scailo_pb.ts#L549)
+[src/projects.scailo_pb.ts:655](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/projects.scailo_pb.ts#L655)
 
 ___
 
@@ -126,7 +152,7 @@ ___
 
 #### Defined in
 
-[src/projects.scailo_pb.ts:558](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/projects.scailo_pb.ts#L558)
+[src/projects.scailo_pb.ts:664](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/projects.scailo_pb.ts#L664)
 
 ___
 
@@ -136,7 +162,7 @@ ___
 
 #### Defined in
 
-[src/projects.scailo_pb.ts:556](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/projects.scailo_pb.ts#L556)
+[src/projects.scailo_pb.ts:662](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/projects.scailo_pb.ts#L662)
 
 ___
 
@@ -146,7 +172,7 @@ ___
 
 #### Defined in
 
-[src/projects.scailo_pb.ts:557](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/projects.scailo_pb.ts#L557)
+[src/projects.scailo_pb.ts:663](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/projects.scailo_pb.ts#L663)
 
 ## Methods
 
@@ -434,7 +460,7 @@ ___
 
 #### Defined in
 
-[src/projects.scailo_pb.ts:576](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/projects.scailo_pb.ts#L576)
+[src/projects.scailo_pb.ts:682](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/projects.scailo_pb.ts#L682)
 
 ___
 
@@ -455,7 +481,7 @@ ___
 
 #### Defined in
 
-[src/projects.scailo_pb.ts:564](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/projects.scailo_pb.ts#L564)
+[src/projects.scailo_pb.ts:670](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/projects.scailo_pb.ts#L670)
 
 ___
 
@@ -476,7 +502,7 @@ ___
 
 #### Defined in
 
-[src/projects.scailo_pb.ts:568](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/projects.scailo_pb.ts#L568)
+[src/projects.scailo_pb.ts:674](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/projects.scailo_pb.ts#L674)
 
 ___
 
@@ -497,4 +523,4 @@ ___
 
 #### Defined in
 
-[src/projects.scailo_pb.ts:572](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/projects.scailo_pb.ts#L572)
+[src/projects.scailo_pb.ts:678](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/projects.scailo_pb.ts#L678)

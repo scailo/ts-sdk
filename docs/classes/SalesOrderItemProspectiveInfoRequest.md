@@ -2,7 +2,10 @@
 
 # Class: SalesOrderItemProspectiveInfoRequest
 
-Describes the parameters that are required to retrieve the info of a prospective sales order item
+Request message for retrieving preliminary contextual information about a prospective line item.
+This payload is typically utilized by frontend interfaces to dynamically fetch default pricing,
+historical terms, or tax configurations for a specific family prior to officially
+adding it to a Sales Order. This ensures accurate data pre-filling during the order creation workflow.
 
 **`Generated`**
 
@@ -68,23 +71,41 @@ Message\&lt;SalesOrderItemProspectiveInfoRequest\&gt;.constructor
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:2052](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L2052)
+[src/sales_orders.scailo_pb.ts:2937](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L2937)
 
 ## Properties
 
 ### clientUomId
 
-• **clientUomId**: `bigint` = `protoInt64.zero`
+• `Optional` **clientUomId**: `bigint`
 
-Stores the ID of the client's unit of material (if 0, the value is ignored while retrieving records)
+**`Optional`**
+
+**`Description`**
+
+The unique internal identifier of the specific Unit of Measure (UOM) requested by the client. If set to `0`, this filter is ignored, and standard product default parameters are returned instead.
+
+**`Example`**
+
+```ts
+12
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 client_uom_id = 13;
+from field: optional uint64 client_uom_id = 13;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:2050](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L2050)
+[src/sales_orders.scailo_pb.ts:2935](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L2935)
 
 ___
 
@@ -92,7 +113,25 @@ ___
 
 • **familyId**: `bigint` = `protoInt64.zero`
 
-Stores the family ID
+**`Mandatory`**
+
+**`Description`**
+
+The unique internal identifier of the family or catalog item being evaluated for addition to the order.
+
+**`Example`**
+
+```ts
+505
+```
+
+**`Regex`**
+
+^[1-9][0-9]*$
+
+**`Format`**
+
+Unsigned 64-bit integer greater than 0.
 
 **`Generated`**
 
@@ -100,7 +139,7 @@ from field: uint64 family_id = 11;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:2043](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L2043)
+[src/sales_orders.scailo_pb.ts:2919](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L2919)
 
 ___
 
@@ -108,7 +147,25 @@ ___
 
 • **salesOrderId**: `bigint` = `protoInt64.zero`
 
-Stores the sales order ID
+**`Mandatory`**
+
+**`Description`**
+
+The unique internal identifier of the parent sales order that is currently being evaluated or constructed.
+
+**`Example`**
+
+```ts
+1024
+```
+
+**`Regex`**
+
+^[1-9][0-9]*$
+
+**`Format`**
+
+Unsigned 64-bit integer greater than 0.
 
 **`Generated`**
 
@@ -116,7 +173,7 @@ from field: uint64 sales_order_id = 10;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:2036](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L2036)
+[src/sales_orders.scailo_pb.ts:2903](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L2903)
 
 ___
 
@@ -126,7 +183,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:2059](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L2059)
+[src/sales_orders.scailo_pb.ts:2944](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L2944)
 
 ___
 
@@ -136,7 +193,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:2057](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L2057)
+[src/sales_orders.scailo_pb.ts:2942](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L2942)
 
 ___
 
@@ -146,7 +203,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:2058](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L2058)
+[src/sales_orders.scailo_pb.ts:2943](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L2943)
 
 ## Methods
 
@@ -434,7 +491,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:2077](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L2077)
+[src/sales_orders.scailo_pb.ts:2962](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L2962)
 
 ___
 
@@ -455,7 +512,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:2065](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L2065)
+[src/sales_orders.scailo_pb.ts:2950](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L2950)
 
 ___
 
@@ -476,7 +533,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:2069](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L2069)
+[src/sales_orders.scailo_pb.ts:2954](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L2954)
 
 ___
 
@@ -497,4 +554,4 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:2073](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L2073)
+[src/sales_orders.scailo_pb.ts:2958](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L2958)

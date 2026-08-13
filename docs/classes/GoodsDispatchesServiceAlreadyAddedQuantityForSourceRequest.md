@@ -2,7 +2,13 @@
 
 # Class: GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest
 
-Describes the request payload to retrieve the quantity that has already been added for the specific ref_from, ref_id and family_id
+Represents the request payload utilized to retrieve the cumulative physical quantity of a specific family
+that has already been dispatched against a given source document.
+
+**Note:** This query acts as a critical logistical safeguard during the warehouse packing phase. By evaluating
+historical fulfillment records, it prevents frontend clients, Warehouse Management Systems (WMS), and automated
+scanners from accidentally packing or shipping more items than were originally constrained and approved in the
+parent document (e.g., a Sales Order).
 
 **`Generated`**
 
@@ -68,7 +74,7 @@ Message\&lt;GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest\&gt;.cons
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:1755](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L1755)
+[src/goods_dispatches.scailo_pb.ts:2343](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L2343)
 
 ## Properties
 
@@ -76,7 +82,25 @@ Message\&lt;GoodsDispatchesServiceAlreadyAddedQuantityForSourceRequest\&gt;.cons
 
 • **familyId**: `bigint` = `protoInt64.zero`
 
-The associated family ID
+**`Mandatory`**
+
+**`Description`**
+
+The unique internal identifier of the family or catalog item being queried to determine its cumulative dispatched quantity.
+
+**`Example`**
+
+```ts
+505
+```
+
+**`Regex`**
+
+^[1-9][0-9]*$
+
+**`Format`**
+
+Unsigned 64-bit integer greater than 0.
 
 **`Generated`**
 
@@ -84,7 +108,7 @@ from field: uint64 family_id = 3;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:1753](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L1753)
+[src/goods_dispatches.scailo_pb.ts:2341](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L2341)
 
 ___
 
@@ -92,7 +116,25 @@ ___
 
 • **refFrom**: [`GOODS_DISPATCH_REF_FROM`](../enums/GOODS_DISPATCH_REF_FROM.md) = `GOODS_DISPATCH_REF_FROM.GOODS_DISPATCH_REF_FROM_ANY_UNSPECIFIED`
 
-The associated reference
+**`Mandatory`**
+
+**`Description`**
+
+The specific module or record type from which the logistical fulfillment originates and against which the shipped quantity is being checked (e.g., Sales Order).
+
+**`Example`**
+
+```ts
+"GOODS_DISPATCH_REF_FROM_SALES_ORDER"
+```
+
+**`Regex`**
+
+^[A-Z_]+$
+
+**`Format`**
+
+Valid GOODS_DISPATCH_REF_FROM enum value. Cannot be unspecified (0).
 
 **`Generated`**
 
@@ -100,7 +142,7 @@ from field: Scailo.GOODS_DISPATCH_REF_FROM ref_from = 1;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:1739](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L1739)
+[src/goods_dispatches.scailo_pb.ts:2309](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L2309)
 
 ___
 
@@ -108,7 +150,25 @@ ___
 
 • **refId**: `bigint` = `protoInt64.zero`
 
-The associated ID of the reference
+**`Mandatory`**
+
+**`Description`**
+
+The unique internal identifier of the specific referenced source document (e.g., the ID of the actual Sales Order being evaluated).
+
+**`Example`**
+
+```ts
+1024
+```
+
+**`Regex`**
+
+^[1-9][0-9]*$
+
+**`Format`**
+
+Unsigned 64-bit integer greater than 0.
 
 **`Generated`**
 
@@ -116,7 +176,7 @@ from field: uint64 ref_id = 2;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:1746](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L1746)
+[src/goods_dispatches.scailo_pb.ts:2325](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L2325)
 
 ___
 
@@ -126,7 +186,7 @@ ___
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:1762](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L1762)
+[src/goods_dispatches.scailo_pb.ts:2350](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L2350)
 
 ___
 
@@ -136,7 +196,7 @@ ___
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:1760](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L1760)
+[src/goods_dispatches.scailo_pb.ts:2348](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L2348)
 
 ___
 
@@ -146,7 +206,7 @@ ___
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:1761](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L1761)
+[src/goods_dispatches.scailo_pb.ts:2349](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L2349)
 
 ## Methods
 
@@ -434,7 +494,7 @@ ___
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:1780](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L1780)
+[src/goods_dispatches.scailo_pb.ts:2368](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L2368)
 
 ___
 
@@ -455,7 +515,7 @@ ___
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:1768](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L1768)
+[src/goods_dispatches.scailo_pb.ts:2356](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L2356)
 
 ___
 
@@ -476,7 +536,7 @@ ___
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:1772](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L1772)
+[src/goods_dispatches.scailo_pb.ts:2360](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L2360)
 
 ___
 
@@ -497,4 +557,4 @@ ___
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:1776](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L1776)
+[src/goods_dispatches.scailo_pb.ts:2364](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L2364)

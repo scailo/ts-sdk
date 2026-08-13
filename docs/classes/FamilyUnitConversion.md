@@ -2,7 +2,7 @@
 
 # Class: FamilyUnitConversion
 
-Describes the parameters that constitute a family unit conversion
+Represents a mathematical conversion rule mapped to a specific family, facilitating transactions in multiple units of material.
 
 **`Generated`**
 
@@ -74,7 +74,7 @@ Message\&lt;FamilyUnitConversion\&gt;.constructor
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2817](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2817)
+[src/families.scailo_pb.ts:3770](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3770)
 
 ## Properties
 
@@ -92,7 +92,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2772](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2772)
+[src/families.scailo_pb.ts:3706](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3706)
 
 ___
 
@@ -100,7 +100,15 @@ ___
 
 • **divisor**: `bigint` = `protoInt64.zero`
 
-Stores the divisor
+**`Description`**
+
+The mathematical division factor for the conversion.
+
+**`Example`**
+
+```ts
+1
+```
 
 **`Generated`**
 
@@ -108,7 +116,7 @@ from field: uint64 divisor = 13;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2815](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2815)
+[src/families.scailo_pb.ts:3768](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3768)
 
 ___
 
@@ -132,7 +140,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2756](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2756)
+[src/families.scailo_pb.ts:3690](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3690)
 
 ___
 
@@ -140,7 +148,15 @@ ___
 
 • **factor**: `bigint` = `protoInt64.zero`
 
-Stores the factor
+**`Description`**
+
+The mathematical multiplication factor for the conversion.
+
+**`Example`**
+
+```ts
+10
+```
 
 **`Generated`**
 
@@ -148,7 +164,7 @@ from field: uint64 factor = 12;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2808](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2808)
+[src/families.scailo_pb.ts:3758](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3758)
 
 ___
 
@@ -156,7 +172,15 @@ ___
 
 • **familyId**: `bigint` = `protoInt64.zero`
 
-Stores the family ID
+**`Description`**
+
+The unique internal identifier of the associated family.
+
+**`Example`**
+
+```ts
+582
+```
 
 **`Generated`**
 
@@ -164,7 +188,7 @@ from field: uint64 family_id = 10;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2794](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2794)
+[src/families.scailo_pb.ts:3738](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3738)
 
 ___
 
@@ -182,7 +206,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2764](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2764)
+[src/families.scailo_pb.ts:3698](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3698)
 
 ___
 
@@ -192,7 +216,17 @@ ___
 
 **`Description`**
 
-The approval state of the record
+A boolean flag indicating whether this specific record requires further administrative approval.
+
+**`Example`**
+
+```ts
+false
+```
+
+**`Format`**
+
+Boolean true or false.
 
 **`Generated`**
 
@@ -200,7 +234,7 @@ from field: bool need_approval = 4;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2780](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2780)
+[src/families.scailo_pb.ts:3718](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3718)
 
 ___
 
@@ -208,7 +242,15 @@ ___
 
 • **uomId**: `bigint` = `protoInt64.zero`
 
-Stores the unit of material ID
+**`Description`**
+
+The unique internal identifier of the alternate unit of material (UOM).
+
+**`Example`**
+
+```ts
+12
+```
 
 **`Generated`**
 
@@ -216,7 +258,7 @@ from field: uint64 uom_id = 11;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2801](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2801)
+[src/families.scailo_pb.ts:3748](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3748)
 
 ___
 
@@ -224,7 +266,15 @@ ___
 
 • **userComment**: `string` = `""`
 
-Stores any comment that the user might have added during an operation
+**`Description`**
+
+Audit log comment or justification captured during the last modification or transactional operation.
+
+**`Example`**
+
+```ts
+"This is a comment for audit purposes."
+```
 
 **`Generated`**
 
@@ -232,7 +282,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2787](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2787)
+[src/families.scailo_pb.ts:3728](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3728)
 
 ___
 
@@ -242,7 +292,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2824](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2824)
+[src/families.scailo_pb.ts:3777](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3777)
 
 ___
 
@@ -252,7 +302,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2822](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2822)
+[src/families.scailo_pb.ts:3775](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3775)
 
 ___
 
@@ -262,7 +312,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2823](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2823)
+[src/families.scailo_pb.ts:3776](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3776)
 
 ## Methods
 
@@ -550,7 +600,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2848](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2848)
+[src/families.scailo_pb.ts:3801](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3801)
 
 ___
 
@@ -571,7 +621,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2836](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2836)
+[src/families.scailo_pb.ts:3789](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3789)
 
 ___
 
@@ -592,7 +642,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2840](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2840)
+[src/families.scailo_pb.ts:3793](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3793)
 
 ___
 
@@ -613,4 +663,4 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2844](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2844)
+[src/families.scailo_pb.ts:3797](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3797)

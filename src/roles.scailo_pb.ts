@@ -9,69 +9,69 @@ import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, 
 
 /**
  *
- * Describes the available sort keys
+ * Enumeration of fields available for sorting role search results.
  *
  * @generated from enum Scailo.ROLE_SORT_KEY
  */
 export enum ROLE_SORT_KEY {
   /**
-   * Fetch ordered results by id
+   * @description Default sort behavior (by internal ID).
    *
    * @generated from enum value: ROLE_SORT_KEY_ID_UNSPECIFIED = 0;
    */
   ROLE_SORT_KEY_ID_UNSPECIFIED = 0,
 
   /**
-   * Fetch ordered results by the creation timestamp
+   * @description Sort by the timestamp the record was initially created.
    *
    * @generated from enum value: ROLE_SORT_KEY_CREATED_AT = 1;
    */
   ROLE_SORT_KEY_CREATED_AT = 1,
 
   /**
-   * Fetch ordered results by the modified timestamp
+   * @description Sort by the timestamp the record was last modified.
    *
    * @generated from enum value: ROLE_SORT_KEY_MODIFIED_AT = 2;
    */
   ROLE_SORT_KEY_MODIFIED_AT = 2,
 
   /**
-   * Fetch ordered results by the approved on timestamp
+   * @description Sort by the official approval timestamp.
    *
    * @generated from enum value: ROLE_SORT_KEY_APPROVED_ON = 3;
    */
   ROLE_SORT_KEY_APPROVED_ON = 3,
 
   /**
-   * Fetch ordered results by the approved by field
+   * @description Sort by the system ID of the approving user.
    *
    * @generated from enum value: ROLE_SORT_KEY_APPROVED_BY = 4;
    */
   ROLE_SORT_KEY_APPROVED_BY = 4,
 
   /**
-   * Fetch ordered results by the approver's role ID
+   * @description Sort by the security role ID used by the approver.
    *
    * @generated from enum value: ROLE_SORT_KEY_APPROVER_ROLE_ID = 5;
    */
   ROLE_SORT_KEY_APPROVER_ROLE_ID = 5,
 
   /**
-   * Fetch ordered results by the approver's completed on timestamp
+   * @description Sort by the timestamp of record completion.
    *
    * @generated from enum value: ROLE_SORT_KEY_COMPLETED_ON = 6;
    */
   ROLE_SORT_KEY_COMPLETED_ON = 6,
 
   /**
-   * Fetch ordered results by the name
+   * @description Sort alphabetically by the user-provided name.
    *
    * @generated from enum value: ROLE_SORT_KEY_NAME = 10;
    */
   ROLE_SORT_KEY_NAME = 10,
 
   /**
-   * Fetch ordered results by the code
+   * @description Sort alphabetically by the user-provided code.
    *
    * @generated from enum value: ROLE_SORT_KEY_CODE = 11;
    */
@@ -92,7 +92,12 @@ proto3.util.setEnumType(ROLE_SORT_KEY, "Scailo.ROLE_SORT_KEY", [
 
 /**
  *
- * Describes the parameters necessary to create a record
+ * Request message for creating and defining a new security Role.
+ * This record maps RBAC structures, descriptive identifiers, specialized system access flags
+ * (Vault storage restrictions and network gateway protocols), and granular menu privilege definitions.
+ *
+ * **Note:** This is the primary entry point for Information Security, HR, and Admins to
+ * construct permission tiers, enforce least-privilege principles, and provision access profiles.
  *
  * @generated from message Scailo.RolesServiceCreateRequest
  */
@@ -109,68 +114,139 @@ export class RolesServiceCreateRequest extends Message<RolesServiceCreateRequest
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 1;
+   * @generated from field: optional string entity_uuid = 1;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 2;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 2;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * The name of the role
+   *
+   * @mandatory
+   *
+   * @description The official, displayable name of the security role.
+   *
+   * @example "Senior Document Auditor"
+   *
+   * @regex .+
+   *
+   * @format Must be a non-empty string.
    *
    * @generated from field: string name = 10;
    */
   name = "";
 
   /**
-   * The code of the role
+   *
+   * @mandatory
+   *
+   * @description The unique code or system-level alphanumeric token used to evaluate permissions programmatically within backend middleware.
+   *
+   * @example "ROLE_SR_DOC_AUDITOR"
+   *
+   * @regex .+
+   *
+   * @format Must be a non-empty string.
    *
    * @generated from field: string code = 11;
    */
   code = "";
 
   /**
-   * The description of the role
    *
-   * @generated from field: string description = 12;
+   * @optional
+   *
+   * @description Clarifying scope of responsibilities, clearance level, or business context associated with this security profile.
+   *
+   * @example "Grants full read access to client contracts and verification documents while enforcing strict root storage write blocks."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string description = 12;
    */
-  description = "";
+  description?: string;
 
   /**
-   * Stores if this role has access to Vault
    *
-   * @generated from field: bool vault_access = 13;
+   * @optional
+   *
+   * @description Flag determining whether accounts possessing this role are permitted to access the secure Vault file system.
+   *
+   * @example true
+   *
+   * @format Boolean value (`true` or `false`). Defaults to false if unassigned.
+   *
+   * @generated from field: optional bool vault_access = 13;
    */
-  vaultAccess = false;
+  vaultAccess?: boolean;
 
   /**
-   * Stores if the role has access to perform operations on the root folder in Vault
    *
-   * @generated from field: bool vault_root_folder_interactions = 14;
+   * @optional
+   *
+   * @description Flag determining whether this role is authorized to perform structural operations (such as writes, modifications, or deletions) within the primary root folder of the Vault file system.
+   *
+   * @example false
+   *
+   * @format Boolean value (`true` or `false`). Defaults to false if unassigned.
+   *
+   * @generated from field: optional bool vault_root_folder_interactions = 14;
    */
-  vaultRootFolderInteractions = false;
+  vaultRootFolderInteractions?: boolean;
 
   /**
-   * Stores if the role has access via HTTP (or within local network)
    *
-   * @generated from field: bool http_access = 15;
+   * @optional
+   *
+   * @description Flag determining whether the role can execute incoming operations over unencrypted HTTP endpoints or within a designated local perimeter network.
+   *
+   * @example false
+   *
+   * @format Boolean value (`true` or `false`). Defaults to false if unassigned.
+   *
+   * @generated from field: optional bool http_access = 15;
    */
-  httpAccess = false;
+  httpAccess?: boolean;
 
   /**
-   * Stores if the role has access via HTTPS (or through a public FQDN)
    *
-   * @generated from field: bool https_access = 16;
+   * @optional
+   *
+   * @description Flag determining whether the role can execute operations over encrypted HTTPS gateways or through public-facing fully qualified domain names (FQDNs).
+   *
+   * @example true
+   *
+   * @format Boolean value (`true` or `false`). Defaults to false if unassigned.
+   *
+   * @generated from field: optional bool https_access = 16;
    */
-  httpsAccess = false;
+  httpsAccess?: boolean;
 
   /**
-   * The list of accessible menu UIDs
+   *
+   * @optional
+   *
+   * @description A collection mapping explicit menu, routing, or function view identifiers to the role's structural access tree.
+   *
+   * @example []
+   *
+   * @format An array/list of RolesServiceAccessCreateAndUpdateRequest structural entries. Can be empty if no initial menu maps are assigned.
    *
    * @generated from field: repeated Scailo.RolesServiceAccessCreateAndUpdateRequest access_list = 20;
    */
@@ -184,15 +260,15 @@ export class RolesServiceCreateRequest extends Message<RolesServiceCreateRequest
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.RolesServiceCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 12, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 13, name: "vault_access", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
-    { no: 14, name: "vault_root_folder_interactions", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
-    { no: 15, name: "http_access", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
-    { no: 16, name: "https_access", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 12, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 13, name: "vault_access", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
+    { no: 14, name: "vault_root_folder_interactions", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
+    { no: 15, name: "http_access", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
+    { no: 16, name: "https_access", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
     { no: 20, name: "access_list", kind: "message", T: RolesServiceAccessCreateAndUpdateRequest, repeated: true },
   ]);
 
@@ -215,20 +291,44 @@ export class RolesServiceCreateRequest extends Message<RolesServiceCreateRequest
 
 /**
  *
- * Describes the parameters necessary to update a record
+ * Request message for updating an existing Role record.
+ * Only applicable for records in `DRAFT` or `REVISION` states.
+ * This message allows for modifying the name, code, description, vault access, vault root folder interactions, http access, and https access
+ * of an established Role.
+ *
+ * **Note:** Only fields provided in the request will typically be updated.
+ * The unique system ID is required to locate the target record.
  *
  * @generated from message Scailo.RolesServiceUpdateRequest
  */
 export class RolesServiceUpdateRequest extends Message<RolesServiceUpdateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * The ID of the record that needs to be updated
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target record that needs to be updated.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 id = 2;
    */
@@ -242,61 +342,123 @@ export class RolesServiceUpdateRequest extends Message<RolesServiceUpdateRequest
    *
    * @example true
    *
-   * @generated from field: bool notify_users = 3;
+   * @generated from field: optional bool notify_users = 3;
    */
-  notifyUsers = false;
+  notifyUsers?: boolean;
 
   /**
-   * The name of the role
    *
-   * @generated from field: string name = 10;
-   */
-  name = "";
-
-  /**
-   * The code of the role
+   * @optional
    *
-   * @generated from field: string code = 11;
-   */
-  code = "";
-
-  /**
-   * The description of the role
+   * @description The official, displayable name of the security role.
    *
-   * @generated from field: string description = 12;
-   */
-  description = "";
-
-  /**
-   * Stores if this role has access to Vault
+   * @example "Senior Document Auditor"
    *
-   * @generated from field: bool vault_access = 13;
-   */
-  vaultAccess = false;
-
-  /**
-   * Stores if the role has access to perform operations on the root folder in Vault
+   * @regex .*
    *
-   * @generated from field: bool vault_root_folder_interactions = 14;
-   */
-  vaultRootFolderInteractions = false;
-
-  /**
-   * Stores if the role has access via HTTP (or within local network)
+   * @format Must be a non-empty string.
    *
-   * @generated from field: bool http_access = 15;
+   * @generated from field: optional string name = 10;
    */
-  httpAccess = false;
+  name?: string;
 
   /**
-   * Stores if the role has access via HTTPS (or through a public FQDN)
    *
-   * @generated from field: bool https_access = 16;
+   * @optional
+   *
+   * @description The unique code or system-level alphanumeric token used to evaluate permissions programmatically within backend middleware.
+   *
+   * @example "ROLE_SR_DOC_AUDITOR"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string code = 11;
    */
-  httpsAccess = false;
+  code?: string;
 
   /**
-   * The list of accessible menu UIDs
+   *
+   * @optional
+   *
+   * @description Clarifying scope of responsibilities, clearance level, or business context associated with this security profile.
+   *
+   * @example "Grants full read access to client contracts and verification documents while enforcing strict root storage write blocks."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string description = 12;
+   */
+  description?: string;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Flag determining whether accounts possessing this role are permitted to access the secure Vault file system.
+   *
+   * @example true
+   *
+   * @format Boolean value (`true` or `false`). Defaults to false if unassigned.
+   *
+   * @generated from field: optional bool vault_access = 13;
+   */
+  vaultAccess?: boolean;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Flag determining whether this role is authorized to perform structural operations (such as writes, modifications, or deletions) within the primary root folder of the Vault file system.
+   *
+   * @example false
+   *
+   * @format Boolean value (`true` or `false`). Defaults to false if unassigned.
+   *
+   * @generated from field: optional bool vault_root_folder_interactions = 14;
+   */
+  vaultRootFolderInteractions?: boolean;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Flag determining whether the role can execute incoming operations over unencrypted HTTP endpoints or within a designated local perimeter network.
+   *
+   * @example false
+   *
+   * @format Boolean value (`true` or `false`). Defaults to false if unassigned.
+   *
+   * @generated from field: optional bool http_access = 15;
+   */
+  httpAccess?: boolean;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Flag determining whether the role can execute operations over encrypted HTTPS gateways or through public-facing fully qualified domain names (FQDNs).
+   *
+   * @example true
+   *
+   * @format Boolean value (`true` or `false`). Defaults to false if unassigned.
+   *
+   * @generated from field: optional bool https_access = 16;
+   */
+  httpsAccess?: boolean;
+
+  /**
+   *
+   * @optional
+   *
+   * @description A collection mapping explicit menu, routing, or function view identifiers to the role's structural access tree.
+   *
+   * @example []
+   *
+   * @format An array/list of RolesServiceAccessCreateAndUpdateRequest structural entries. Can be empty if no initial menu maps are assigned.
    *
    * @generated from field: repeated Scailo.RolesServiceAccessCreateAndUpdateRequest access_list = 20;
    */
@@ -310,16 +472,16 @@ export class RolesServiceUpdateRequest extends Message<RolesServiceUpdateRequest
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.RolesServiceUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 2, name: "id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
-    { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 11, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 12, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 13, name: "vault_access", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
-    { no: 14, name: "vault_root_folder_interactions", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
-    { no: 15, name: "http_access", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
-    { no: 16, name: "https_access", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
+    { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 11, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 12, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 13, name: "vault_access", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
+    { no: 14, name: "vault_root_folder_interactions", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
+    { no: 15, name: "http_access", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
+    { no: 16, name: "https_access", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
     { no: 20, name: "access_list", kind: "message", T: RolesServiceAccessCreateAndUpdateRequest, repeated: true },
   ]);
 
@@ -342,7 +504,7 @@ export class RolesServiceUpdateRequest extends Message<RolesServiceUpdateRequest
 
 /**
  *
- * Describes the parameters that are part of a standard response
+ * Represents a full Role within the system.
  *
  * @generated from message Scailo.Role
  */
@@ -400,56 +562,80 @@ export class Role extends Message<Role> {
   completedOn = protoInt64.zero;
 
   /**
-   * The name of the role
+   *
+   * @description The official, displayable name of the security role.
+   *
+   * @example "Senior Document Auditor"
    *
    * @generated from field: string name = 10;
    */
   name = "";
 
   /**
-   * The code of the role
+   *
+   * @description The unique code or system-level alphanumeric token used to evaluate permissions programmatically within backend middleware.
+   *
+   * @example "ROLE_SR_DOC_AUDITOR"
    *
    * @generated from field: string code = 11;
    */
   code = "";
 
   /**
-   * The description of the role
+   *
+   * @description Clarifying scope of responsibilities, clearance level, or business context associated with this security profile.
+   *
+   * @example "Grants full read access to client contracts and verification documents while enforcing strict root storage write blocks."
    *
    * @generated from field: string description = 12;
    */
   description = "";
 
   /**
-   * Stores if this role has access to Vault
+   *
+   * @description Flag determining whether accounts possessing this role are permitted to access the secure Vault file system.
+   *
+   * @example true
    *
    * @generated from field: bool vault_access = 13;
    */
   vaultAccess = false;
 
   /**
-   * Stores if the role has access to perform operations on the root folder in Vault
+   *
+   * @description Flag determining whether this role is authorized to perform structural operations (such as writes, modifications, or deletions) within the primary root folder of the Vault file system.
+   *
+   * @example false
    *
    * @generated from field: bool vault_root_folder_interactions = 14;
    */
   vaultRootFolderInteractions = false;
 
   /**
-   * Stores if the role has access via HTTP (or within local network)
+   *
+   * @description Flag determining whether the role can execute incoming operations over unencrypted HTTP endpoints or within a designated local perimeter network.
+   *
+   * @example false
    *
    * @generated from field: bool http_access = 15;
    */
   httpAccess = false;
 
   /**
-   * Stores if the role has access via HTTPS (or through a public FQDN)
+   *
+   * @description Flag determining whether the role can execute operations over encrypted HTTPS gateways or through public-facing fully qualified domain names (FQDNs).
+   *
+   * @example true
    *
    * @generated from field: bool https_access = 16;
    */
   httpsAccess = false;
 
   /**
-   * The list of associated role accesses
+   *
+   * @description A collection mapping explicit menu, routing, or function view identifiers to the role's structural access tree.
+   *
+   * @example []
    *
    * @generated from field: repeated Scailo.RoleAccess access_list = 20;
    */
@@ -498,20 +684,37 @@ export class Role extends Message<Role> {
 
 /**
  *
- * Describes the necessary data structure during creation/updation of a role access
+ * Input structure used during the creation or modification of individual role access privileges.
+ * This maps explicit system modules or UI components directly to a lease-privilege accessibility state.
  *
  * @generated from message Scailo.RolesServiceAccessCreateAndUpdateRequest
  */
 export class RolesServiceAccessCreateAndUpdateRequest extends Message<RolesServiceAccessCreateAndUpdateRequest> {
   /**
-   * The menu UID (or internal code)
+   *
+   * @mandatory
+   *
+   * @description The globally unique alphanumeric identifier or standard internal code assigned to a system menu or routing module.
+   *
+   * @example "MENU_COMPLIANCE_AUDIT"
+   *
+   * @regex ^[0-9A-Za-z_-]+$
+   *
+   * @format Alphanumeric characters, hyphens, and underscores only. Spaces are strictly prohibited.
    *
    * @generated from field: string menu_uid = 11;
    */
   menuUid = "";
 
   /**
-   * Denotes if the menu is accessible
+   *
+   * @mandatory
+   *
+   * @description Flag determining whether accounts assigned to the parent role are granted access to interact with this menu module.
+   *
+   * @example true
+   *
+   * @format Boolean value (`true` or `false`).
    *
    * @generated from field: bool is_accessible = 12;
    */
@@ -548,27 +751,37 @@ export class RolesServiceAccessCreateAndUpdateRequest extends Message<RolesServi
 
 /**
  *
- * Describes the parameters for a role definition
+ * Explanatory metadata container describing a system access point or application view component.
+ * This structure aggregates human-readable attributes to render authorization trees inside administrative dashboards.
  *
  * @generated from message Scailo.RolesServiceAccessDefinition
  */
 export class RolesServiceAccessDefinition extends Message<RolesServiceAccessDefinition> {
   /**
-   * The menu UID (or internal code)
+   *
+   * @description The unique system-level alphanumeric token or internal code representing the application component.
+   *
+   * @example "MENU_FINANCE_LEDGER"
    *
    * @generated from field: string menu_uid = 11;
    */
   menuUid = "";
 
   /**
-   * The name of the menu
+   *
+   * @description The human-readable or display-friendly name of the module or layout segment as seen on UI components.
+   *
+   * @example "General Ledger Settings"
    *
    * @generated from field: string menu_name = 12;
    */
   menuName = "";
 
   /**
-   * The description of the menu
+   *
+   * @description Functional description summarizing the feature set, workflows, and operations tied to this interface component.
+   *
+   * @example "Provides controls to add, verify, and hierarchy-map internal corporate ledger accounts."
    *
    * @generated from field: string menu_description = 13;
    */
@@ -606,7 +819,9 @@ export class RolesServiceAccessDefinition extends Message<RolesServiceAccessDefi
 
 /**
  *
- * Describes the data structure of each role access on the platform
+ * Represents the comprehensive operational state of a single Role Access entry within the platform.
+ * This message encapsulates organization tenancy mapping, complete system audit trails, approval state flags,
+ * and the specific security permissions associated with a targeted system feature.
  *
  * @generated from message Scailo.RoleAccess
  */
@@ -639,28 +854,39 @@ export class RoleAccess extends Message<RoleAccess> {
 
   /**
    *
-   * @description The approval state of the record
+   * @description A boolean flag indicating whether this specific record requires further administrative approval.
+   *
+   * @example false
+   *
+   * @format Boolean true or false.
    *
    * @generated from field: bool need_approval = 4;
    */
   needApproval = false;
 
   /**
-   * The associated Role ID
+   *
+   * @description The unique internal sequence identifier of the parent security Role to which this access block is bound.
+   *
+   * @example 1024
    *
    * @generated from field: uint64 role_id = 10;
    */
   roleId = protoInt64.zero;
 
   /**
-   * The menu UID (or internal code)
+   *
+   * @description The unique alphanumeric identifier or code corresponding to the targeted system menu module.
+   *
+   * @example "MENU_COMPLIANCE_AUDIT"
    *
    * @generated from field: string menu_uid = 11;
    */
   menuUid = "";
 
   /**
-   * Denotes if the menu is accessible
+   *
+   * @description Active authorization flag indicating if the related role profile can access this system view.
    *
    * @generated from field: bool is_accessible = 12;
    */
@@ -702,13 +928,13 @@ export class RoleAccess extends Message<RoleAccess> {
 
 /**
  *
- * Describes the message consisting of the list of roles
+ * Container message for a collection of Role records.
  *
  * @generated from message Scailo.RolesList
  */
 export class RolesList extends Message<RolesList> {
   /**
-   * List of records
+   * @description An array of Role records.
    *
    * @generated from field: repeated Scailo.Role list = 1;
    */
@@ -744,7 +970,7 @@ export class RolesList extends Message<RolesList> {
 
 /**
  *
- * Describes a pagination request to retrieve records
+ * Pagination request for retrieving slices of Role records.
  *
  * @generated from message Scailo.RolesServicePaginationReq
  */
@@ -757,9 +983,9 @@ export class RolesServicePaginationReq extends Message<RolesServicePaginationReq
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -789,9 +1015,9 @@ export class RolesServicePaginationReq extends Message<RolesServicePaginationReq
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -801,9 +1027,9 @@ export class RolesServicePaginationReq extends Message<RolesServicePaginationReq
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -811,16 +1037,21 @@ export class RolesServicePaginationReq extends Message<RolesServicePaginationReq
    *
    * @description The specific field key to sort the results by.
    *
-   * @generated from field: Scailo.ROLE_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.ROLE_SORT_KEY sort_key = 5;
    */
-  sortKey = ROLE_SORT_KEY.ROLE_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: ROLE_SORT_KEY;
 
   /**
-   * The status of this role
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
+   * @optional
+   *
+   * @description Filter results by a specific lifecycle status.
+   *
+   * @example STANDING
+   *
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   constructor(data?: PartialMessage<RolesServicePaginationReq>) {
     super();
@@ -830,12 +1061,12 @@ export class RolesServicePaginationReq extends Message<RolesServicePaginationReq
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.RolesServicePaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(ROLE_SORT_KEY) },
-    { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(ROLE_SORT_KEY), opt: true },
+    { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): RolesServicePaginationReq {
@@ -857,7 +1088,7 @@ export class RolesServicePaginationReq extends Message<RolesServicePaginationReq
 
 /**
  *
- * Describes the response to a pagination request
+ * Response message for paginated queries, including total counts for UI elements.
  *
  * @generated from message Scailo.RolesServicePaginationResponse
  */
@@ -933,7 +1164,12 @@ export class RolesServicePaginationResponse extends Message<RolesServicePaginati
 
 /**
  *
- * Describes the base request payload of a filter search
+ * Advanced filter request for searching and paginating roles using multiple logical criteria.
+ * This message encapsulates pagination controls, sorting keys, lifecycle status filters,
+ * timestamp ranges, and entity references.
+ *
+ * **Note:** This is the primary message layout used by the frontend and external API clients
+ * to build robust data-table queries, reporting views, and targeted record lookups.
  *
  * @generated from message Scailo.RolesServiceFilterReq
  */
@@ -946,9 +1182,9 @@ export class RolesServiceFilterReq extends Message<RolesServiceFilterReq> {
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -978,9 +1214,9 @@ export class RolesServiceFilterReq extends Message<RolesServiceFilterReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -990,9 +1226,9 @@ export class RolesServiceFilterReq extends Message<RolesServiceFilterReq> {
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -1000,9 +1236,9 @@ export class RolesServiceFilterReq extends Message<RolesServiceFilterReq> {
    *
    * @description The field used for sorting.
    *
-   * @generated from field: Scailo.ROLE_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.ROLE_SORT_KEY sort_key = 5;
    */
-  sortKey = ROLE_SORT_KEY.ROLE_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: ROLE_SORT_KEY;
 
   /**
    *
@@ -1016,9 +1252,9 @@ export class RolesServiceFilterReq extends Message<RolesServiceFilterReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_start = 101;
+   * @generated from field: optional uint64 creation_timestamp_start = 101;
    */
-  creationTimestampStart = protoInt64.zero;
+  creationTimestampStart?: bigint;
 
   /**
    *
@@ -1032,9 +1268,9 @@ export class RolesServiceFilterReq extends Message<RolesServiceFilterReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_end = 102;
+   * @generated from field: optional uint64 creation_timestamp_end = 102;
    */
-  creationTimestampEnd = protoInt64.zero;
+  creationTimestampEnd?: bigint;
 
   /**
    *
@@ -1048,9 +1284,9 @@ export class RolesServiceFilterReq extends Message<RolesServiceFilterReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_start = 103;
+   * @generated from field: optional uint64 modification_timestamp_start = 103;
    */
-  modificationTimestampStart = protoInt64.zero;
+  modificationTimestampStart?: bigint;
 
   /**
    *
@@ -1064,9 +1300,9 @@ export class RolesServiceFilterReq extends Message<RolesServiceFilterReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_end = 104;
+   * @generated from field: optional uint64 modification_timestamp_end = 104;
    */
-  modificationTimestampEnd = protoInt64.zero;
+  modificationTimestampEnd?: bigint;
 
   /**
    *
@@ -1080,9 +1316,9 @@ export class RolesServiceFilterReq extends Message<RolesServiceFilterReq> {
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 8;
+   * @generated from field: optional string entity_uuid = 8;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
    *
@@ -1092,9 +1328,9 @@ export class RolesServiceFilterReq extends Message<RolesServiceFilterReq> {
    *
    * @example STANDING
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   /**
    *
@@ -1108,9 +1344,9 @@ export class RolesServiceFilterReq extends Message<RolesServiceFilterReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_start = 11;
+   * @generated from field: optional uint64 approved_on_start = 11;
    */
-  approvedOnStart = protoInt64.zero;
+  approvedOnStart?: bigint;
 
   /**
    *
@@ -1124,9 +1360,9 @@ export class RolesServiceFilterReq extends Message<RolesServiceFilterReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_end = 12;
+   * @generated from field: optional uint64 approved_on_end = 12;
    */
-  approvedOnEnd = protoInt64.zero;
+  approvedOnEnd?: bigint;
 
   /**
    *
@@ -1140,9 +1376,9 @@ export class RolesServiceFilterReq extends Message<RolesServiceFilterReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_by_user_id = 13;
+   * @generated from field: optional uint64 approved_by_user_id = 13;
    */
-  approvedByUserId = protoInt64.zero;
+  approvedByUserId?: bigint;
 
   /**
    *
@@ -1156,9 +1392,9 @@ export class RolesServiceFilterReq extends Message<RolesServiceFilterReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approver_role_id = 14;
+   * @generated from field: optional uint64 approver_role_id = 14;
    */
-  approverRoleId = protoInt64.zero;
+  approverRoleId?: bigint;
 
   /**
    *
@@ -1172,9 +1408,9 @@ export class RolesServiceFilterReq extends Message<RolesServiceFilterReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 completed_on_start = 15;
+   * @generated from field: optional uint64 completed_on_start = 15;
    */
-  completedOnStart = protoInt64.zero;
+  completedOnStart?: bigint;
 
   /**
    *
@@ -1188,23 +1424,41 @@ export class RolesServiceFilterReq extends Message<RolesServiceFilterReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 completed_on_end = 16;
+   * @generated from field: optional uint64 completed_on_end = 16;
    */
-  completedOnEnd = protoInt64.zero;
+  completedOnEnd?: bigint;
 
   /**
-   * The name of the role
    *
-   * @generated from field: string name = 20;
+   * @optional
+   *
+   * @description The official, displayable name of the security role.
+   *
+   * @example "Senior Document Auditor"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string name = 20;
    */
-  name = "";
+  name?: string;
 
   /**
-   * The name of the code
    *
-   * @generated from field: string code = 21;
+   * @optional
+   *
+   * @description The unique code or system-level alphanumeric token used to evaluate permissions programmatically within backend middleware.
+   *
+   * @example "ROLE_SR_DOC_AUDITOR"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string code = 21;
    */
-  code = "";
+  code?: string;
 
   constructor(data?: PartialMessage<RolesServiceFilterReq>) {
     super();
@@ -1214,25 +1468,25 @@ export class RolesServiceFilterReq extends Message<RolesServiceFilterReq> {
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.RolesServiceFilterReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(ROLE_SORT_KEY) },
-    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
-    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 15, name: "completed_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(ROLE_SORT_KEY), opt: true },
+    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
+    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 15, name: "completed_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): RolesServiceFilterReq {
@@ -1254,7 +1508,13 @@ export class RolesServiceFilterReq extends Message<RolesServiceFilterReq> {
 
 /**
  *
- * Describes the base request payload of a count search
+ * Target filter request for counting role records matching specific logical criteria.
+ * This message encapsulates lifecycle status filters, timestamp ranges, workflow markers,
+ * and entity references to determine the total size of a targeted dataset.
+ *
+ * **Note:** This is the primary message layout used by backend calculation engines, reporting
+ * services, and frontend pagination headers to evaluate total record matches dynamically
+ * before or alongside retrieving paginated results.
  *
  * @generated from message Scailo.RolesServiceCountReq
  */
@@ -1267,9 +1527,9 @@ export class RolesServiceCountReq extends Message<RolesServiceCountReq> {
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -1283,9 +1543,9 @@ export class RolesServiceCountReq extends Message<RolesServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_start = 101;
+   * @generated from field: optional uint64 creation_timestamp_start = 101;
    */
-  creationTimestampStart = protoInt64.zero;
+  creationTimestampStart?: bigint;
 
   /**
    *
@@ -1299,9 +1559,9 @@ export class RolesServiceCountReq extends Message<RolesServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_end = 102;
+   * @generated from field: optional uint64 creation_timestamp_end = 102;
    */
-  creationTimestampEnd = protoInt64.zero;
+  creationTimestampEnd?: bigint;
 
   /**
    *
@@ -1315,9 +1575,9 @@ export class RolesServiceCountReq extends Message<RolesServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_start = 103;
+   * @generated from field: optional uint64 modification_timestamp_start = 103;
    */
-  modificationTimestampStart = protoInt64.zero;
+  modificationTimestampStart?: bigint;
 
   /**
    *
@@ -1331,9 +1591,9 @@ export class RolesServiceCountReq extends Message<RolesServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_end = 104;
+   * @generated from field: optional uint64 modification_timestamp_end = 104;
    */
-  modificationTimestampEnd = protoInt64.zero;
+  modificationTimestampEnd?: bigint;
 
   /**
    *
@@ -1347,9 +1607,9 @@ export class RolesServiceCountReq extends Message<RolesServiceCountReq> {
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 8;
+   * @generated from field: optional string entity_uuid = 8;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
    *
@@ -1359,9 +1619,9 @@ export class RolesServiceCountReq extends Message<RolesServiceCountReq> {
    *
    * @example STANDING
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   /**
    *
@@ -1375,9 +1635,9 @@ export class RolesServiceCountReq extends Message<RolesServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_start = 11;
+   * @generated from field: optional uint64 approved_on_start = 11;
    */
-  approvedOnStart = protoInt64.zero;
+  approvedOnStart?: bigint;
 
   /**
    *
@@ -1391,9 +1651,9 @@ export class RolesServiceCountReq extends Message<RolesServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_end = 12;
+   * @generated from field: optional uint64 approved_on_end = 12;
    */
-  approvedOnEnd = protoInt64.zero;
+  approvedOnEnd?: bigint;
 
   /**
    *
@@ -1407,9 +1667,9 @@ export class RolesServiceCountReq extends Message<RolesServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_by_user_id = 13;
+   * @generated from field: optional uint64 approved_by_user_id = 13;
    */
-  approvedByUserId = protoInt64.zero;
+  approvedByUserId?: bigint;
 
   /**
    *
@@ -1423,9 +1683,9 @@ export class RolesServiceCountReq extends Message<RolesServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approver_role_id = 14;
+   * @generated from field: optional uint64 approver_role_id = 14;
    */
-  approverRoleId = protoInt64.zero;
+  approverRoleId?: bigint;
 
   /**
    *
@@ -1439,9 +1699,9 @@ export class RolesServiceCountReq extends Message<RolesServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 completed_on_start = 15;
+   * @generated from field: optional uint64 completed_on_start = 15;
    */
-  completedOnStart = protoInt64.zero;
+  completedOnStart?: bigint;
 
   /**
    *
@@ -1455,23 +1715,41 @@ export class RolesServiceCountReq extends Message<RolesServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 completed_on_end = 16;
+   * @generated from field: optional uint64 completed_on_end = 16;
    */
-  completedOnEnd = protoInt64.zero;
+  completedOnEnd?: bigint;
 
   /**
-   * The name of the role
    *
-   * @generated from field: string name = 20;
+   * @optional
+   *
+   * @description The official, displayable name of the security role.
+   *
+   * @example "Senior Document Auditor"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string name = 20;
    */
-  name = "";
+  name?: string;
 
   /**
-   * The name of the code
    *
-   * @generated from field: string code = 21;
+   * @optional
+   *
+   * @description The unique code or system-level alphanumeric token used to evaluate permissions programmatically within backend middleware.
+   *
+   * @example "ROLE_SR_DOC_AUDITOR"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string code = 21;
    */
-  code = "";
+  code?: string;
 
   constructor(data?: PartialMessage<RolesServiceCountReq>) {
     super();
@@ -1481,21 +1759,21 @@ export class RolesServiceCountReq extends Message<RolesServiceCountReq> {
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.RolesServiceCountReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
-    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
-    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 15, name: "completed_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
+    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
+    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 15, name: "completed_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): RolesServiceCountReq {
@@ -1517,7 +1795,13 @@ export class RolesServiceCountReq extends Message<RolesServiceCountReq> {
 
 /**
  *
- * Describes the request payload for performing a generic search operation on records
+ * Broad-spectrum search and lookup request for locating and paginating roles via text matching.
+ * This message encapsulates full-text query parameters, pagination controls, sorting keys,
+ * lifecycle status constraints, and other core references.
+ *
+ * **Note:** This is the primary message layout used for global search bars, fast-filtering dashboard
+ * inputs, and omni-box search utilities where users need to match loose textual terms against
+ * records while retaining structural pagination.
  *
  * @generated from message Scailo.RolesServiceSearchAllReq
  */
@@ -1530,9 +1814,9 @@ export class RolesServiceSearchAllReq extends Message<RolesServiceSearchAllReq> 
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -1562,9 +1846,9 @@ export class RolesServiceSearchAllReq extends Message<RolesServiceSearchAllReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -1574,9 +1858,9 @@ export class RolesServiceSearchAllReq extends Message<RolesServiceSearchAllReq> 
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -1584,9 +1868,9 @@ export class RolesServiceSearchAllReq extends Message<RolesServiceSearchAllReq> 
    *
    * @description The field used for sorting.
    *
-   * @generated from field: Scailo.ROLE_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.ROLE_SORT_KEY sort_key = 5;
    */
-  sortKey = ROLE_SORT_KEY.ROLE_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: ROLE_SORT_KEY;
 
   /**
    *
@@ -1600,9 +1884,9 @@ export class RolesServiceSearchAllReq extends Message<RolesServiceSearchAllReq> 
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 6;
+   * @generated from field: optional string entity_uuid = 6;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
    *
@@ -1612,9 +1896,9 @@ export class RolesServiceSearchAllReq extends Message<RolesServiceSearchAllReq> 
    *
    * @example STANDING
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   /**
    *
@@ -1628,9 +1912,9 @@ export class RolesServiceSearchAllReq extends Message<RolesServiceSearchAllReq> 
    *
    * @format: May contain any UTF-8 characters.
    *
-   * @generated from field: string search_key = 11;
+   * @generated from field: optional string search_key = 11;
    */
-  searchKey = "";
+  searchKey?: string;
 
   constructor(data?: PartialMessage<RolesServiceSearchAllReq>) {
     super();
@@ -1640,14 +1924,14 @@ export class RolesServiceSearchAllReq extends Message<RolesServiceSearchAllReq> 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.RolesServiceSearchAllReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(ROLE_SORT_KEY) },
-    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
-    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(ROLE_SORT_KEY), opt: true },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
+    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): RolesServiceSearchAllReq {

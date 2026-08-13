@@ -2,7 +2,7 @@
 
 # Enumeration: SALES\_ORDER\_SORT\_KEY
 
-Describes the available sort keys
+Enumeration of fields available for sorting sales order search results.
 
 **`Generated`**
 
@@ -36,7 +36,9 @@ from enum Scailo.SALES_ORDER_SORT_KEY
 
 • **SALES\_ORDER\_SORT\_KEY\_AMENDMENT\_COUNT** = ``18``
 
-Fetch ordered results by the amendment count
+**`Description`**
+
+Sort by the total number of times the sales order has been amended.
 
 **`Generated`**
 
@@ -44,7 +46,7 @@ from enum value: SALES_ORDER_SORT_KEY_AMENDMENT_COUNT = 18;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:128](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L128)
+[src/sales_orders.scailo_pb.ts:128](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L128)
 
 ___
 
@@ -52,7 +54,9 @@ ___
 
 • **SALES\_ORDER\_SORT\_KEY\_APPROVED\_BY** = ``4``
 
-Fetch ordered results by the approved by field
+**`Description`**
+
+Sort by the system ID of the approving user.
 
 **`Generated`**
 
@@ -60,7 +64,7 @@ from enum value: SALES_ORDER_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:51](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L51)
+[src/sales_orders.scailo_pb.ts:51](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L51)
 
 ___
 
@@ -68,7 +72,9 @@ ___
 
 • **SALES\_ORDER\_SORT\_KEY\_APPROVED\_ON** = ``3``
 
-Fetch ordered results by the approved on timestamp
+**`Description`**
+
+Sort by the official approval timestamp.
 
 **`Generated`**
 
@@ -76,7 +82,7 @@ from enum value: SALES_ORDER_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:44](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L44)
+[src/sales_orders.scailo_pb.ts:44](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L44)
 
 ___
 
@@ -84,7 +90,9 @@ ___
 
 • **SALES\_ORDER\_SORT\_KEY\_APPROVER\_ROLE\_ID** = ``5``
 
-Fetch ordered results by the approver's role ID
+**`Description`**
+
+Sort by the security role ID used by the approver.
 
 **`Generated`**
 
@@ -92,7 +100,7 @@ from enum value: SALES_ORDER_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:58](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L58)
+[src/sales_orders.scailo_pb.ts:58](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L58)
 
 ___
 
@@ -100,7 +108,9 @@ ___
 
 • **SALES\_ORDER\_SORT\_KEY\_BUYER\_CLIENT\_ID** = ``13``
 
-Fetch ordered results by the buyer client ID
+**`Description`**
+
+Sort by the internal ID of the buyer client.
 
 **`Generated`**
 
@@ -108,7 +118,7 @@ from enum value: SALES_ORDER_SORT_KEY_BUYER_CLIENT_ID = 13;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:93](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L93)
+[src/sales_orders.scailo_pb.ts:93](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L93)
 
 ___
 
@@ -116,7 +126,9 @@ ___
 
 • **SALES\_ORDER\_SORT\_KEY\_COMPLETED\_ON** = ``6``
 
-Fetch ordered results by the approver's completed on timestamp
+**`Description`**
+
+Sort by the timestamp of record completion.
 
 **`Generated`**
 
@@ -124,7 +136,7 @@ from enum value: SALES_ORDER_SORT_KEY_COMPLETED_ON = 6;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:65](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L65)
+[src/sales_orders.scailo_pb.ts:65](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L65)
 
 ___
 
@@ -132,7 +144,9 @@ ___
 
 • **SALES\_ORDER\_SORT\_KEY\_CONSIGNEE\_CLIENT\_ID** = ``12``
 
-Fetch ordered results by the consignee client ID
+**`Description`**
+
+Sort by the internal ID of the consignee client.
 
 **`Generated`**
 
@@ -140,7 +154,7 @@ from enum value: SALES_ORDER_SORT_KEY_CONSIGNEE_CLIENT_ID = 12;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:86](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L86)
+[src/sales_orders.scailo_pb.ts:86](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L86)
 
 ___
 
@@ -148,7 +162,9 @@ ___
 
 • **SALES\_ORDER\_SORT\_KEY\_CREATED\_AT** = ``1``
 
-Fetch ordered results by the creation timestamp
+**`Description`**
+
+Sort by the timestamp the record was initially created.
 
 **`Generated`**
 
@@ -156,7 +172,7 @@ from enum value: SALES_ORDER_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L30)
+[src/sales_orders.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L30)
 
 ___
 
@@ -164,7 +180,9 @@ ___
 
 • **SALES\_ORDER\_SORT\_KEY\_CURRENCY\_ID** = ``15``
 
-Fetch ordered results by the currency ID
+**`Description`**
+
+Sort by the internal ID of the assigned currency.
 
 **`Generated`**
 
@@ -172,7 +190,7 @@ from enum value: SALES_ORDER_SORT_KEY_CURRENCY_ID = 15;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:107](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L107)
+[src/sales_orders.scailo_pb.ts:107](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L107)
 
 ___
 
@@ -180,7 +198,9 @@ ___
 
 • **SALES\_ORDER\_SORT\_KEY\_FINAL\_REF\_NUMBER** = ``11``
 
-Fetch ordered results by the final ref number
+**`Description`**
+
+Sort alphabetically by the system-generated reference number.
 
 **`Generated`**
 
@@ -188,7 +208,7 @@ from enum value: SALES_ORDER_SORT_KEY_FINAL_REF_NUMBER = 11;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:79](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L79)
+[src/sales_orders.scailo_pb.ts:79](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L79)
 
 ___
 
@@ -196,7 +216,9 @@ ___
 
 • **SALES\_ORDER\_SORT\_KEY\_ID\_UNSPECIFIED** = ``0``
 
-Fetch ordered results by id
+**`Description`**
+
+Default sort behavior (by internal ID).
 
 **`Generated`**
 
@@ -204,7 +226,7 @@ from enum value: SALES_ORDER_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L23)
+[src/sales_orders.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L23)
 
 ___
 
@@ -212,7 +234,9 @@ ___
 
 • **SALES\_ORDER\_SORT\_KEY\_LOCATION\_ID** = ``14``
 
-Fetch ordered results by the location ID
+**`Description`**
+
+Sort by the internal ID of the originating fulfillment location.
 
 **`Generated`**
 
@@ -220,7 +244,7 @@ from enum value: SALES_ORDER_SORT_KEY_LOCATION_ID = 14;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:100](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L100)
+[src/sales_orders.scailo_pb.ts:100](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L100)
 
 ___
 
@@ -228,7 +252,9 @@ ___
 
 • **SALES\_ORDER\_SORT\_KEY\_MODIFIED\_AT** = ``2``
 
-Fetch ordered results by the modified timestamp
+**`Description`**
+
+Sort by the timestamp the record was last modified.
 
 **`Generated`**
 
@@ -236,7 +262,7 @@ from enum value: SALES_ORDER_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:37](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L37)
+[src/sales_orders.scailo_pb.ts:37](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L37)
 
 ___
 
@@ -244,7 +270,9 @@ ___
 
 • **SALES\_ORDER\_SORT\_KEY\_PAYMENT\_ADVANCE** = ``17``
 
-Fetch ordered results by the advance payment
+**`Description`**
+
+Sort by the monetary amount paid in advance prior to fulfillment.
 
 **`Generated`**
 
@@ -252,7 +280,7 @@ from enum value: SALES_ORDER_SORT_KEY_PAYMENT_ADVANCE = 17;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:121](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L121)
+[src/sales_orders.scailo_pb.ts:121](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L121)
 
 ___
 
@@ -260,7 +288,9 @@ ___
 
 • **SALES\_ORDER\_SORT\_KEY\_PROJECT\_ID** = ``16``
 
-Fetch ordered results by the project ID
+**`Description`**
+
+Sort by the internal ID of the associated project.
 
 **`Generated`**
 
@@ -268,7 +298,7 @@ from enum value: SALES_ORDER_SORT_KEY_PROJECT_ID = 16;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:114](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L114)
+[src/sales_orders.scailo_pb.ts:114](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L114)
 
 ___
 
@@ -276,7 +306,9 @@ ___
 
 • **SALES\_ORDER\_SORT\_KEY\_REFERENCE\_ID** = ``10``
 
-Fetch ordered results by the reference ID
+**`Description`**
+
+Sort alphabetically by the user-provided reference ID.
 
 **`Generated`**
 
@@ -284,7 +316,7 @@ from enum value: SALES_ORDER_SORT_KEY_REFERENCE_ID = 10;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:72](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L72)
+[src/sales_orders.scailo_pb.ts:72](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L72)
 
 ___
 
@@ -292,7 +324,9 @@ ___
 
 • **SALES\_ORDER\_SORT\_KEY\_TOTAL\_VALUE** = ``30``
 
-Fetch ordered results by the total value
+**`Description`**
+
+Sort by the calculated grand total value of the sales order.
 
 **`Generated`**
 
@@ -300,4 +334,4 @@ from enum value: SALES_ORDER_SORT_KEY_TOTAL_VALUE = 30;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:135](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L135)
+[src/sales_orders.scailo_pb.ts:135](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L135)

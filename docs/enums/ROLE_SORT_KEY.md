@@ -2,7 +2,7 @@
 
 # Enumeration: ROLE\_SORT\_KEY
 
-Describes the available sort keys
+Enumeration of fields available for sorting role search results.
 
 **`Generated`**
 
@@ -28,7 +28,9 @@ from enum Scailo.ROLE_SORT_KEY
 
 • **ROLE\_SORT\_KEY\_APPROVED\_BY** = ``4``
 
-Fetch ordered results by the approved by field
+**`Description`**
+
+Sort by the system ID of the approving user.
 
 **`Generated`**
 
@@ -36,7 +38,7 @@ from enum value: ROLE_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:50](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/roles.scailo_pb.ts#L50)
+[src/roles.scailo_pb.ts:50](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/roles.scailo_pb.ts#L50)
 
 ___
 
@@ -44,7 +46,9 @@ ___
 
 • **ROLE\_SORT\_KEY\_APPROVED\_ON** = ``3``
 
-Fetch ordered results by the approved on timestamp
+**`Description`**
+
+Sort by the official approval timestamp.
 
 **`Generated`**
 
@@ -52,7 +56,7 @@ from enum value: ROLE_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:43](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/roles.scailo_pb.ts#L43)
+[src/roles.scailo_pb.ts:43](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/roles.scailo_pb.ts#L43)
 
 ___
 
@@ -60,7 +64,9 @@ ___
 
 • **ROLE\_SORT\_KEY\_APPROVER\_ROLE\_ID** = ``5``
 
-Fetch ordered results by the approver's role ID
+**`Description`**
+
+Sort by the security role ID used by the approver.
 
 **`Generated`**
 
@@ -68,7 +74,7 @@ from enum value: ROLE_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:57](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/roles.scailo_pb.ts#L57)
+[src/roles.scailo_pb.ts:57](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/roles.scailo_pb.ts#L57)
 
 ___
 
@@ -76,7 +82,9 @@ ___
 
 • **ROLE\_SORT\_KEY\_CODE** = ``11``
 
-Fetch ordered results by the code
+**`Description`**
+
+Sort alphabetically by the user-provided code.
 
 **`Generated`**
 
@@ -84,7 +92,7 @@ from enum value: ROLE_SORT_KEY_CODE = 11;
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:78](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/roles.scailo_pb.ts#L78)
+[src/roles.scailo_pb.ts:78](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/roles.scailo_pb.ts#L78)
 
 ___
 
@@ -92,7 +100,9 @@ ___
 
 • **ROLE\_SORT\_KEY\_COMPLETED\_ON** = ``6``
 
-Fetch ordered results by the approver's completed on timestamp
+**`Description`**
+
+Sort by the timestamp of record completion.
 
 **`Generated`**
 
@@ -100,7 +110,7 @@ from enum value: ROLE_SORT_KEY_COMPLETED_ON = 6;
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:64](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/roles.scailo_pb.ts#L64)
+[src/roles.scailo_pb.ts:64](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/roles.scailo_pb.ts#L64)
 
 ___
 
@@ -108,7 +118,9 @@ ___
 
 • **ROLE\_SORT\_KEY\_CREATED\_AT** = ``1``
 
-Fetch ordered results by the creation timestamp
+**`Description`**
+
+Sort by the timestamp the record was initially created.
 
 **`Generated`**
 
@@ -116,7 +128,7 @@ from enum value: ROLE_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:29](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/roles.scailo_pb.ts#L29)
+[src/roles.scailo_pb.ts:29](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/roles.scailo_pb.ts#L29)
 
 ___
 
@@ -124,7 +136,9 @@ ___
 
 • **ROLE\_SORT\_KEY\_ID\_UNSPECIFIED** = ``0``
 
-Fetch ordered results by id
+**`Description`**
+
+Default sort behavior (by internal ID).
 
 **`Generated`**
 
@@ -132,7 +146,7 @@ from enum value: ROLE_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:22](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/roles.scailo_pb.ts#L22)
+[src/roles.scailo_pb.ts:22](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/roles.scailo_pb.ts#L22)
 
 ___
 
@@ -140,7 +154,9 @@ ___
 
 • **ROLE\_SORT\_KEY\_MODIFIED\_AT** = ``2``
 
-Fetch ordered results by the modified timestamp
+**`Description`**
+
+Sort by the timestamp the record was last modified.
 
 **`Generated`**
 
@@ -148,7 +164,7 @@ from enum value: ROLE_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:36](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/roles.scailo_pb.ts#L36)
+[src/roles.scailo_pb.ts:36](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/roles.scailo_pb.ts#L36)
 
 ___
 
@@ -156,7 +172,9 @@ ___
 
 • **ROLE\_SORT\_KEY\_NAME** = ``10``
 
-Fetch ordered results by the name
+**`Description`**
+
+Sort alphabetically by the user-provided name.
 
 **`Generated`**
 
@@ -164,4 +182,4 @@ from enum value: ROLE_SORT_KEY_NAME = 10;
 
 #### Defined in
 
-[src/roles.scailo_pb.ts:71](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/roles.scailo_pb.ts#L71)
+[src/roles.scailo_pb.ts:71](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/roles.scailo_pb.ts#L71)

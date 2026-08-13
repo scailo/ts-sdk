@@ -9,62 +9,62 @@ import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, 
 
 /**
  *
- * Describes the available sort keys
+ * Enumeration of fields available for sorting currency search results.
  *
  * @generated from enum Scailo.CURRENCY_SORT_KEY
  */
 export enum CURRENCY_SORT_KEY {
   /**
-   * Fetch ordered results by id
+   * @description Default sort behavior (by internal ID).
    *
    * @generated from enum value: CURRENCY_SORT_KEY_ID_UNSPECIFIED = 0;
    */
   CURRENCY_SORT_KEY_ID_UNSPECIFIED = 0,
 
   /**
-   * Fetch ordered results by the creation timestamp
+   * @description Sort by the timestamp the record was initially created.
    *
    * @generated from enum value: CURRENCY_SORT_KEY_CREATED_AT = 1;
    */
   CURRENCY_SORT_KEY_CREATED_AT = 1,
 
   /**
-   * Fetch ordered results by the modified timestamp
+   * @description Sort by the timestamp the record was last modified.
    *
    * @generated from enum value: CURRENCY_SORT_KEY_MODIFIED_AT = 2;
    */
   CURRENCY_SORT_KEY_MODIFIED_AT = 2,
 
   /**
-   * Fetch ordered results by the approved on timestamp
+   * @description Sort by the official approval timestamp.
    *
    * @generated from enum value: CURRENCY_SORT_KEY_APPROVED_ON = 3;
    */
   CURRENCY_SORT_KEY_APPROVED_ON = 3,
 
   /**
-   * Fetch ordered results by the approved by field
+   * @description Sort by the system ID of the approving user.
    *
    * @generated from enum value: CURRENCY_SORT_KEY_APPROVED_BY = 4;
    */
   CURRENCY_SORT_KEY_APPROVED_BY = 4,
 
   /**
-   * Fetch ordered results by the approver's role ID
+   * @description Sort by the security role ID used by the approver.
    *
    * @generated from enum value: CURRENCY_SORT_KEY_APPROVER_ROLE_ID = 5;
    */
   CURRENCY_SORT_KEY_APPROVER_ROLE_ID = 5,
 
   /**
-   * Fetch ordered results by the name
+   * @description Sort alphabetically by the user-provided name.
    *
    * @generated from enum value: CURRENCY_SORT_KEY_NAME = 10;
    */
   CURRENCY_SORT_KEY_NAME = 10,
 
   /**
-   * Fetch ordered results by the symbol
+   * @description Sort alphabetically by the user-provided symbol.
    *
    * @generated from enum value: CURRENCY_SORT_KEY_SYMBOL = 11;
    */
@@ -84,7 +84,12 @@ proto3.util.setEnumType(CURRENCY_SORT_KEY, "Scailo.CURRENCY_SORT_KEY", [
 
 /**
  *
- * Describes the parameters necessary to create a record
+ * Request message for creating and registering a new Currency definition.
+ * This record tracks international or internal currency metadata, localized
+ * sub-unit names (mantissa/exponent), symbols, and tenant isolation parameters.
+ *
+ * **Note:** This is the primary entry point for Treasury, Finance, and Admins
+ * to initialize legal tender configurations or internal credit structures used for financial ledgering.
  *
  * @generated from message Scailo.CurrenciesServiceCreateRequest
  */
@@ -101,51 +106,105 @@ export class CurrenciesServiceCreateRequest extends Message<CurrenciesServiceCre
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 1;
+   * @generated from field: optional string entity_uuid = 1;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
-   * Currencies any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 2;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 2;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * The name of the currency
+   *
+   * @mandatory
+   *
+   * @description The official or canonical name of the currency.
+   *
+   * @example "US Dollar"
+   *
+   * @regex .+
+   *
+   * @format Must be a non-empty string.
    *
    * @generated from field: string name = 10;
    */
   name = "";
 
   /**
-   * The unique symbol by which the currency is classified
+   *
+   * @mandatory
+   *
+   * @description The unique symbol, shorthand token, or ISO code by which the currency is structurally classified.
+   *
+   * @example "USD"
+   *
+   * @regex .+
+   *
+   * @format Must be a non-empty string.
    *
    * @generated from field: string symbol = 11;
    */
   symbol = "";
 
   /**
-   * The name of the mantissa
+   *
+   * @mandatory
+   *
+   * @description The technical term or label for the currency's major or primary unit (often mapping conceptually to the whole integer part/mantissa).
+   *
+   * @example "Dollar"
+   *
+   * @regex .+
+   *
+   * @format Must be a non-empty string.
    *
    * @generated from field: string mantissa_name = 12;
    */
   mantissaName = "";
 
   /**
-   * The name of the exponent
+   *
+   * @mandatory
+   *
+   * @description The technical term or label for the currency's fractional sub-unit (often mapping conceptually to the minor unit/exponent).
+   *
+   * @example "Cent"
+   *
+   * @regex .+
+   *
+   * @format Must be a non-empty string.
    *
    * @generated from field: string exponent_name = 13;
    */
   exponentName = "";
 
   /**
-   * The description of the currency
    *
-   * @generated from field: string description = 14;
+   * @optional
+   *
+   * @description Contextual description or clarifying details outlining the specific use-case or regional scope of this currency record.
+   *
+   * @example "United States legal tender used for domestic operational accounts."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string description = 14;
    */
-  description = "";
+  description?: string;
 
   constructor(data?: PartialMessage<CurrenciesServiceCreateRequest>) {
     super();
@@ -155,13 +214,13 @@ export class CurrenciesServiceCreateRequest extends Message<CurrenciesServiceCre
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.CurrenciesServiceCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "symbol", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 12, name: "mantissa_name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 13, name: "exponent_name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 14, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 14, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): CurrenciesServiceCreateRequest {
@@ -183,66 +242,140 @@ export class CurrenciesServiceCreateRequest extends Message<CurrenciesServiceCre
 
 /**
  *
- * Describes the parameters necessary to update a record
+ * Request message for updating an existing Currency record.
+ * Only applicable for records in `DRAFT` or `REVISION` states.
+ * This message allows for modifying the name, symbol, mantissa name, exponent name, and description
+ * of an established Currency.
+ *
+ * **Note:** Only fields provided in the request will typically be updated.
+ * The unique system ID is required to locate the target record.
  *
  * @generated from message Scailo.CurrenciesServiceUpdateRequest
  */
 export class CurrenciesServiceUpdateRequest extends Message<CurrenciesServiceUpdateRequest> {
   /**
-   * Currencies any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * The ID of the record that needs to be updated
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target record that needs to be updated.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 id = 2;
    */
   id = protoInt64.zero;
 
   /**
-   * Optional boolean value that denotes if a notification needs to be sent to users about the update to the record. This is useful when a subsequent operation needs to be performed immediately (such as send to verification after updating the revision)
    *
-   * @generated from field: bool notify_users = 3;
+   * @optional
+   *
+   * @description Flag to trigger system notifications to relevant users upon update. Set to true if subsequent workflows (like verification) depend on this change.
+   *
+   * @example true
+   *
+   * @generated from field: optional bool notify_users = 3;
    */
-  notifyUsers = false;
+  notifyUsers?: boolean;
 
   /**
-   * The name of the currency
    *
-   * @generated from field: string name = 10;
+   * @optional
+   *
+   * @description The official or canonical name of the currency.
+   *
+   * @example "US Dollar"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string name = 10;
    */
-  name = "";
+  name?: string;
 
   /**
-   * The unique symbol by which the currency is classified
    *
-   * @generated from field: string symbol = 11;
+   * @optional
+   *
+   * @description The unique symbol, shorthand token, or ISO code by which the currency is structurally classified.
+   *
+   * @example "USD"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string symbol = 11;
    */
-  symbol = "";
+  symbol?: string;
 
   /**
-   * The name of the mantissa
    *
-   * @generated from field: string mantissa_name = 12;
+   * @optional
+   *
+   * @description The technical term or label for the currency's major or primary unit (often mapping conceptually to the whole integer part/mantissa).
+   *
+   * @example "Dollar"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string mantissa_name = 12;
    */
-  mantissaName = "";
+  mantissaName?: string;
 
   /**
-   * The name of the exponent
    *
-   * @generated from field: string exponent_name = 13;
+   * @optional
+   *
+   * @description The technical term or label for the currency's fractional sub-unit (often mapping conceptually to the minor unit/exponent).
+   *
+   * @example "Cent"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string exponent_name = 13;
    */
-  exponentName = "";
+  exponentName?: string;
 
   /**
-   * The description of the currency
    *
-   * @generated from field: string description = 14;
+   * @optional
+   *
+   * @description Contextual description or clarifying details outlining the specific use-case or regional scope of this currency record.
+   *
+   * @example "United States legal tender used for domestic operational accounts."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string description = 14;
    */
-  description = "";
+  description?: string;
 
   constructor(data?: PartialMessage<CurrenciesServiceUpdateRequest>) {
     super();
@@ -252,14 +385,14 @@ export class CurrenciesServiceUpdateRequest extends Message<CurrenciesServiceUpd
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.CurrenciesServiceUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 2, name: "id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
-    { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 11, name: "symbol", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 12, name: "mantissa_name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 13, name: "exponent_name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 14, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
+    { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 11, name: "symbol", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 12, name: "mantissa_name", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 13, name: "exponent_name", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 14, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): CurrenciesServiceUpdateRequest {
@@ -281,7 +414,7 @@ export class CurrenciesServiceUpdateRequest extends Message<CurrenciesServiceUpd
 
 /**
  *
- * Describes the parameters that are part of a standard response
+ * Represents a full Currency within the system.
  *
  * @generated from message Scailo.Currency
  */
@@ -297,63 +430,82 @@ export class Currency extends Message<Currency> {
   entityUuid = "";
 
   /**
-   * Currencies the metadata of this currency
+   *
+   * @description Standard employee and record metadata including timestamps.
    *
    * @generated from field: Scailo.EmployeeMetadata metadata = 2;
    */
   metadata?: EmployeeMetadata;
 
   /**
-   * Currencies the approval metadata
+   *
+   * @description Detailed approval workflow state (Approver ID, Role, and Timestamps).
    *
    * @generated from field: Scailo.ApprovalMetadata approval_metadata = 3;
    */
   approvalMetadata?: ApprovalMetadata;
 
   /**
-   * The status of this currency
+   *
+   * @description The current lifecycle status (e.g., DRAFT, VERIFIED, STANDING).
    *
    * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 4;
    */
   status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
 
   /**
-   * Currencies the logs of every operation performed on this currency
+   *
+   * @description Comprehensive audit trail of every operation performed on this record.
    *
    * @generated from field: repeated Scailo.LogbookLogConciseSLC logs = 5;
    */
   logs: LogbookLogConciseSLC[] = [];
 
   /**
-   * The name of the currency
+   *
+   * @description The official or canonical name of the currency.
+   *
+   * @example "US Dollar"
    *
    * @generated from field: string name = 10;
    */
   name = "";
 
   /**
-   * The unique symbol by which the currency is classified
+   *
+   * @description The unique symbol, shorthand token, or ISO code by which the currency is structurally classified.
+   *
+   * @example "USD"
    *
    * @generated from field: string symbol = 11;
    */
   symbol = "";
 
   /**
-   * The name of the mantissa
+   *
+   * @description The technical term or label for the currency's major or primary unit (often mapping conceptually to the whole integer part/mantissa).
+   *
+   * @example "Dollar"
    *
    * @generated from field: string mantissa_name = 12;
    */
   mantissaName = "";
 
   /**
-   * The name of the exponent
+   *
+   * @description The technical term or label for the currency's fractional sub-unit (often mapping conceptually to the minor unit/exponent).
+   *
+   * @example "Cent"
    *
    * @generated from field: string exponent_name = 13;
    */
   exponentName = "";
 
   /**
-   * The description of the currency
+   *
+   * @description Contextual description or clarifying details outlining the specific use-case or regional scope of this currency record.
+   *
+   * @example "United States legal tender used for domestic operational accounts."
    *
    * @generated from field: string description = 14;
    */
@@ -398,13 +550,13 @@ export class Currency extends Message<Currency> {
 
 /**
  *
- * Describes the message consisting of the list of records
+ * Container message for a collection of Currency records.
  *
  * @generated from message Scailo.CurrenciesList
  */
 export class CurrenciesList extends Message<CurrenciesList> {
   /**
-   * List of records
+   * @description An array of Currency records.
    *
    * @generated from field: repeated Scailo.Currency list = 1;
    */
@@ -440,7 +592,7 @@ export class CurrenciesList extends Message<CurrenciesList> {
 
 /**
  *
- * Describes a pagination request to retrieve records
+ * Pagination request for retrieving slices of Currency records.
  *
  * @generated from message Scailo.CurrenciesServicePaginationReq
  */
@@ -453,9 +605,9 @@ export class CurrenciesServicePaginationReq extends Message<CurrenciesServicePag
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -485,9 +637,9 @@ export class CurrenciesServicePaginationReq extends Message<CurrenciesServicePag
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -497,9 +649,9 @@ export class CurrenciesServicePaginationReq extends Message<CurrenciesServicePag
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -507,16 +659,21 @@ export class CurrenciesServicePaginationReq extends Message<CurrenciesServicePag
    *
    * @description The specific field key to sort the results by.
    *
-   * @generated from field: Scailo.CURRENCY_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.CURRENCY_SORT_KEY sort_key = 5;
    */
-  sortKey = CURRENCY_SORT_KEY.CURRENCY_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: CURRENCY_SORT_KEY;
 
   /**
-   * The status of this currency
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
+   * @optional
+   *
+   * @description Filter results by a specific lifecycle status.
+   *
+   * @example STANDING
+   *
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   constructor(data?: PartialMessage<CurrenciesServicePaginationReq>) {
     super();
@@ -526,12 +683,12 @@ export class CurrenciesServicePaginationReq extends Message<CurrenciesServicePag
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.CurrenciesServicePaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(CURRENCY_SORT_KEY) },
-    { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(CURRENCY_SORT_KEY), opt: true },
+    { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): CurrenciesServicePaginationReq {
@@ -553,7 +710,7 @@ export class CurrenciesServicePaginationReq extends Message<CurrenciesServicePag
 
 /**
  *
- * Describes the response to a pagination request
+ * Response message for paginated queries, including total counts for UI elements.
  *
  * @generated from message Scailo.CurrenciesServicePaginationResponse
  */
@@ -629,7 +786,12 @@ export class CurrenciesServicePaginationResponse extends Message<CurrenciesServi
 
 /**
  *
- * Describes the base request payload of a filter search
+ * Advanced filter request for searching and paginating currencies using multiple logical criteria.
+ * This message encapsulates pagination controls, sorting keys, lifecycle status filters,
+ * timestamp ranges, and entity references.
+ *
+ * **Note:** This is the primary message layout used by the frontend and external API clients
+ * to build robust data-table queries, reporting views, and targeted record lookups.
  *
  * @generated from message Scailo.CurrenciesServiceFilterReq
  */
@@ -642,9 +804,9 @@ export class CurrenciesServiceFilterReq extends Message<CurrenciesServiceFilterR
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -674,9 +836,9 @@ export class CurrenciesServiceFilterReq extends Message<CurrenciesServiceFilterR
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -686,9 +848,9 @@ export class CurrenciesServiceFilterReq extends Message<CurrenciesServiceFilterR
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -696,9 +858,9 @@ export class CurrenciesServiceFilterReq extends Message<CurrenciesServiceFilterR
    *
    * @description The field used for sorting.
    *
-   * @generated from field: Scailo.CURRENCY_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.CURRENCY_SORT_KEY sort_key = 5;
    */
-  sortKey = CURRENCY_SORT_KEY.CURRENCY_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: CURRENCY_SORT_KEY;
 
   /**
    *
@@ -712,9 +874,9 @@ export class CurrenciesServiceFilterReq extends Message<CurrenciesServiceFilterR
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_start = 101;
+   * @generated from field: optional uint64 creation_timestamp_start = 101;
    */
-  creationTimestampStart = protoInt64.zero;
+  creationTimestampStart?: bigint;
 
   /**
    *
@@ -728,9 +890,9 @@ export class CurrenciesServiceFilterReq extends Message<CurrenciesServiceFilterR
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_end = 102;
+   * @generated from field: optional uint64 creation_timestamp_end = 102;
    */
-  creationTimestampEnd = protoInt64.zero;
+  creationTimestampEnd?: bigint;
 
   /**
    *
@@ -744,9 +906,9 @@ export class CurrenciesServiceFilterReq extends Message<CurrenciesServiceFilterR
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_start = 103;
+   * @generated from field: optional uint64 modification_timestamp_start = 103;
    */
-  modificationTimestampStart = protoInt64.zero;
+  modificationTimestampStart?: bigint;
 
   /**
    *
@@ -760,9 +922,9 @@ export class CurrenciesServiceFilterReq extends Message<CurrenciesServiceFilterR
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_end = 104;
+   * @generated from field: optional uint64 modification_timestamp_end = 104;
    */
-  modificationTimestampEnd = protoInt64.zero;
+  modificationTimestampEnd?: bigint;
 
   /**
    *
@@ -776,9 +938,9 @@ export class CurrenciesServiceFilterReq extends Message<CurrenciesServiceFilterR
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 8;
+   * @generated from field: optional string entity_uuid = 8;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
    *
@@ -788,9 +950,9 @@ export class CurrenciesServiceFilterReq extends Message<CurrenciesServiceFilterR
    *
    * @example STANDING
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   /**
    *
@@ -804,9 +966,9 @@ export class CurrenciesServiceFilterReq extends Message<CurrenciesServiceFilterR
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_start = 11;
+   * @generated from field: optional uint64 approved_on_start = 11;
    */
-  approvedOnStart = protoInt64.zero;
+  approvedOnStart?: bigint;
 
   /**
    *
@@ -820,9 +982,9 @@ export class CurrenciesServiceFilterReq extends Message<CurrenciesServiceFilterR
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_end = 12;
+   * @generated from field: optional uint64 approved_on_end = 12;
    */
-  approvedOnEnd = protoInt64.zero;
+  approvedOnEnd?: bigint;
 
   /**
    *
@@ -836,9 +998,9 @@ export class CurrenciesServiceFilterReq extends Message<CurrenciesServiceFilterR
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_by_user_id = 13;
+   * @generated from field: optional uint64 approved_by_user_id = 13;
    */
-  approvedByUserId = protoInt64.zero;
+  approvedByUserId?: bigint;
 
   /**
    *
@@ -852,23 +1014,41 @@ export class CurrenciesServiceFilterReq extends Message<CurrenciesServiceFilterR
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approver_role_id = 14;
+   * @generated from field: optional uint64 approver_role_id = 14;
    */
-  approverRoleId = protoInt64.zero;
+  approverRoleId?: bigint;
 
   /**
-   * The name of the currency
    *
-   * @generated from field: string name = 20;
+   * @optional
+   *
+   * @description The official or canonical name of the currency.
+   *
+   * @example "US Dollar"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string name = 20;
    */
-  name = "";
+  name?: string;
 
   /**
-   * The unique symbol by which the currency is classified
    *
-   * @generated from field: string symbol = 21;
+   * @optional
+   *
+   * @description The unique symbol, shorthand token, or ISO code by which the currency is structurally classified.
+   *
+   * @example "USD"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string symbol = 21;
    */
-  symbol = "";
+  symbol?: string;
 
   constructor(data?: PartialMessage<CurrenciesServiceFilterReq>) {
     super();
@@ -878,23 +1058,23 @@ export class CurrenciesServiceFilterReq extends Message<CurrenciesServiceFilterR
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.CurrenciesServiceFilterReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(CURRENCY_SORT_KEY) },
-    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
-    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 21, name: "symbol", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(CURRENCY_SORT_KEY), opt: true },
+    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
+    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 21, name: "symbol", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): CurrenciesServiceFilterReq {
@@ -916,7 +1096,13 @@ export class CurrenciesServiceFilterReq extends Message<CurrenciesServiceFilterR
 
 /**
  *
- * Describes the base request payload of a count search
+ * Target filter request for counting currency records matching specific logical criteria.
+ * This message encapsulates lifecycle status filters, timestamp ranges, workflow markers,
+ * and entity references to determine the total size of a targeted dataset.
+ *
+ * **Note:** This is the primary message layout used by backend calculation engines, reporting
+ * services, and frontend pagination headers to evaluate total record matches dynamically
+ * before or alongside retrieving paginated results.
  *
  * @generated from message Scailo.CurrenciesServiceCountReq
  */
@@ -929,9 +1115,9 @@ export class CurrenciesServiceCountReq extends Message<CurrenciesServiceCountReq
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -945,9 +1131,9 @@ export class CurrenciesServiceCountReq extends Message<CurrenciesServiceCountReq
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_start = 101;
+   * @generated from field: optional uint64 creation_timestamp_start = 101;
    */
-  creationTimestampStart = protoInt64.zero;
+  creationTimestampStart?: bigint;
 
   /**
    *
@@ -961,9 +1147,9 @@ export class CurrenciesServiceCountReq extends Message<CurrenciesServiceCountReq
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_end = 102;
+   * @generated from field: optional uint64 creation_timestamp_end = 102;
    */
-  creationTimestampEnd = protoInt64.zero;
+  creationTimestampEnd?: bigint;
 
   /**
    *
@@ -977,9 +1163,9 @@ export class CurrenciesServiceCountReq extends Message<CurrenciesServiceCountReq
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_start = 103;
+   * @generated from field: optional uint64 modification_timestamp_start = 103;
    */
-  modificationTimestampStart = protoInt64.zero;
+  modificationTimestampStart?: bigint;
 
   /**
    *
@@ -993,9 +1179,9 @@ export class CurrenciesServiceCountReq extends Message<CurrenciesServiceCountReq
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_end = 104;
+   * @generated from field: optional uint64 modification_timestamp_end = 104;
    */
-  modificationTimestampEnd = protoInt64.zero;
+  modificationTimestampEnd?: bigint;
 
   /**
    *
@@ -1009,9 +1195,9 @@ export class CurrenciesServiceCountReq extends Message<CurrenciesServiceCountReq
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 8;
+   * @generated from field: optional string entity_uuid = 8;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
    *
@@ -1021,9 +1207,9 @@ export class CurrenciesServiceCountReq extends Message<CurrenciesServiceCountReq
    *
    * @example STANDING
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   /**
    *
@@ -1037,9 +1223,9 @@ export class CurrenciesServiceCountReq extends Message<CurrenciesServiceCountReq
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_start = 11;
+   * @generated from field: optional uint64 approved_on_start = 11;
    */
-  approvedOnStart = protoInt64.zero;
+  approvedOnStart?: bigint;
 
   /**
    *
@@ -1053,9 +1239,9 @@ export class CurrenciesServiceCountReq extends Message<CurrenciesServiceCountReq
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_end = 12;
+   * @generated from field: optional uint64 approved_on_end = 12;
    */
-  approvedOnEnd = protoInt64.zero;
+  approvedOnEnd?: bigint;
 
   /**
    *
@@ -1069,9 +1255,9 @@ export class CurrenciesServiceCountReq extends Message<CurrenciesServiceCountReq
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_by_user_id = 13;
+   * @generated from field: optional uint64 approved_by_user_id = 13;
    */
-  approvedByUserId = protoInt64.zero;
+  approvedByUserId?: bigint;
 
   /**
    *
@@ -1085,23 +1271,41 @@ export class CurrenciesServiceCountReq extends Message<CurrenciesServiceCountReq
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approver_role_id = 14;
+   * @generated from field: optional uint64 approver_role_id = 14;
    */
-  approverRoleId = protoInt64.zero;
+  approverRoleId?: bigint;
 
   /**
-   * The name of the currency
    *
-   * @generated from field: string name = 20;
+   * @optional
+   *
+   * @description The official or canonical name of the currency.
+   *
+   * @example "US Dollar"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string name = 20;
    */
-  name = "";
+  name?: string;
 
   /**
-   * The unique symbol by which the currency is classified
    *
-   * @generated from field: string symbol = 21;
+   * @optional
+   *
+   * @description The unique symbol, shorthand token, or ISO code by which the currency is structurally classified.
+   *
+   * @example "USD"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string symbol = 21;
    */
-  symbol = "";
+  symbol?: string;
 
   constructor(data?: PartialMessage<CurrenciesServiceCountReq>) {
     super();
@@ -1111,19 +1315,19 @@ export class CurrenciesServiceCountReq extends Message<CurrenciesServiceCountReq
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.CurrenciesServiceCountReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
-    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
-    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 21, name: "symbol", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
+    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
+    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 21, name: "symbol", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): CurrenciesServiceCountReq {
@@ -1145,7 +1349,13 @@ export class CurrenciesServiceCountReq extends Message<CurrenciesServiceCountReq
 
 /**
  *
- * Describes the request payload for performing a generic search operation on records
+ * Broad-spectrum search and lookup request for locating and paginating currencies via text matching.
+ * This message encapsulates full-text query parameters, pagination controls, sorting keys,
+ * lifecycle status constraints, and other core references.
+ *
+ * **Note:** This is the primary message layout used for global search bars, fast-filtering dashboard
+ * inputs, and omni-box search utilities where users need to match loose textual terms against
+ * records while retaining structural pagination.
  *
  * @generated from message Scailo.CurrenciesServiceSearchAllReq
  */
@@ -1158,9 +1368,9 @@ export class CurrenciesServiceSearchAllReq extends Message<CurrenciesServiceSear
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -1190,9 +1400,9 @@ export class CurrenciesServiceSearchAllReq extends Message<CurrenciesServiceSear
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -1202,9 +1412,9 @@ export class CurrenciesServiceSearchAllReq extends Message<CurrenciesServiceSear
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -1212,9 +1422,9 @@ export class CurrenciesServiceSearchAllReq extends Message<CurrenciesServiceSear
    *
    * @description The field used for sorting.
    *
-   * @generated from field: Scailo.CURRENCY_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.CURRENCY_SORT_KEY sort_key = 5;
    */
-  sortKey = CURRENCY_SORT_KEY.CURRENCY_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: CURRENCY_SORT_KEY;
 
   /**
    *
@@ -1228,9 +1438,9 @@ export class CurrenciesServiceSearchAllReq extends Message<CurrenciesServiceSear
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 6;
+   * @generated from field: optional string entity_uuid = 6;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
    *
@@ -1240,13 +1450,13 @@ export class CurrenciesServiceSearchAllReq extends Message<CurrenciesServiceSear
    *
    * @example STANDING
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   /**
    *
-   * @mandatory
+   * @optional
    *
    * @description The search string to match against reference IDs.
    *
@@ -1256,9 +1466,9 @@ export class CurrenciesServiceSearchAllReq extends Message<CurrenciesServiceSear
    *
    * @format: May contain any UTF-8 characters.
    *
-   * @generated from field: string search_key = 11;
+   * @generated from field: optional string search_key = 11;
    */
-  searchKey = "";
+  searchKey?: string;
 
   constructor(data?: PartialMessage<CurrenciesServiceSearchAllReq>) {
     super();
@@ -1268,14 +1478,14 @@ export class CurrenciesServiceSearchAllReq extends Message<CurrenciesServiceSear
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.CurrenciesServiceSearchAllReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(CURRENCY_SORT_KEY) },
-    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
-    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(CURRENCY_SORT_KEY), opt: true },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
+    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): CurrenciesServiceSearchAllReq {

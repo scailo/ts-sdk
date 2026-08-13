@@ -183,7 +183,16 @@ export declare class LabelsServiceCreateRequest extends Message<LabelsServiceCre
      */
     entityUuid: string;
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 2;
      */
@@ -223,7 +232,16 @@ export declare class LabelsServiceCreateRequest extends Message<LabelsServiceCre
  */
 export declare class LabelsServiceUpdateRequest extends Message<LabelsServiceUpdateRequest> {
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 1;
      */

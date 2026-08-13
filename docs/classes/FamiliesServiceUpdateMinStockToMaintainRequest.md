@@ -2,7 +2,8 @@
 
 # Class: FamiliesServiceUpdateMinStockToMaintainRequest
 
-Describes the parameters necessary to update a family's min stock to maintain
+Request message for updating the minimum inventory threshold (safety stock) of an existing family.
+This triggers operational rules within the inventory system to automate restock alerts when physical stock dips below this value.
 
 **`Generated`**
 
@@ -68,7 +69,7 @@ Message\&lt;FamiliesServiceUpdateMinStockToMaintainRequest\&gt;.constructor
 
 #### Defined in
 
-[src/families.scailo_pb.ts:3471](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L3471)
+[src/families.scailo_pb.ts:4631](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L4631)
 
 ## Properties
 
@@ -76,7 +77,25 @@ Message\&lt;FamiliesServiceUpdateMinStockToMaintainRequest\&gt;.constructor
 
 • **minStockToMaintain**: `bigint` = `protoInt64.zero`
 
-Stores the minimum stock to maintain
+**`Mandatory`**
+
+**`Description`**
+
+The updated minimum inventory threshold required to be maintained for items within this family.
+
+**`Example`**
+
+```ts
+1000
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Unsigned 64-bit integer greater than or equal to 0.
 
 **`Generated`**
 
@@ -84,23 +103,41 @@ from field: uint64 min_stock_to_maintain = 27;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:3469](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L3469)
+[src/families.scailo_pb.ts:4629](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L4629)
 
 ___
 
 ### userComment
 
-• **userComment**: `string` = `""`
+• `Optional` **userComment**: `string`
 
-Stores any comment that the user might add during this operation
+**`Optional`**
+
+**`Description`**
+
+Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+
+**`Example`**
+
+```ts
+"This is a comment for audit purposes."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
-from field: string user_comment = 1;
+from field: optional string user_comment = 1;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:3455](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L3455)
+[src/families.scailo_pb.ts:4597](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L4597)
 
 ___
 
@@ -108,7 +145,25 @@ ___
 
 • **uuid**: `string` = `""`
 
-The UUID of the family
+**`Mandatory`**
+
+**`Description`**
+
+The globally unique identifier (UUID) of the target family.
+
+**`Example`**
+
+```ts
+"550e8400-e29b-41d4-a716-446655440000"
+```
+
+**`Regex`**
+
+^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+
+**`Format`**
+
+Valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
@@ -116,7 +171,7 @@ from field: string uuid = 10;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:3462](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L3462)
+[src/families.scailo_pb.ts:4613](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L4613)
 
 ___
 
@@ -126,7 +181,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:3478](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L3478)
+[src/families.scailo_pb.ts:4638](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L4638)
 
 ___
 
@@ -136,7 +191,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:3476](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L3476)
+[src/families.scailo_pb.ts:4636](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L4636)
 
 ___
 
@@ -146,7 +201,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:3477](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L3477)
+[src/families.scailo_pb.ts:4637](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L4637)
 
 ## Methods
 
@@ -434,7 +489,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:3496](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L3496)
+[src/families.scailo_pb.ts:4656](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L4656)
 
 ___
 
@@ -455,7 +510,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:3484](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L3484)
+[src/families.scailo_pb.ts:4644](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L4644)
 
 ___
 
@@ -476,7 +531,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:3488](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L3488)
+[src/families.scailo_pb.ts:4648](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L4648)
 
 ___
 
@@ -497,4 +552,4 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:3492](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L3492)
+[src/families.scailo_pb.ts:4652](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L4652)

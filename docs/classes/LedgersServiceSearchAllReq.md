@@ -2,7 +2,13 @@
 
 # Class: LedgersServiceSearchAllReq
 
-Describes the request payload for performing a generic search operation on records
+Broad-spectrum search and lookup request for locating and paginating ledgers via text matching.
+This message encapsulates full-text query parameters, pagination controls, sorting keys,
+lifecycle status constraints, and other core references.
+
+**Note:** This is the primary message layout used for global search bars, fast-filtering dashboard
+inputs, and omni-box search utilities where users need to match loose textual terms against
+records while retaining structural pagination.
 
 **`Generated`**
 
@@ -75,7 +81,7 @@ Message\&lt;LedgersServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:1285](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/ledgers.scailo_pb.ts#L1285)
+[src/ledgers.scailo_pb.ts:1514](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/ledgers.scailo_pb.ts#L1514)
 
 ## Properties
 
@@ -109,13 +115,13 @@ from field: int64 count = 2;
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:1187](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/ledgers.scailo_pb.ts#L1187)
+[src/ledgers.scailo_pb.ts:1400](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/ledgers.scailo_pb.ts#L1400)
 
 ___
 
 ### entityUuid
 
-• **entityUuid**: `string` = `""`
+• `Optional` **entityUuid**: `string`
 
 **`Optional`**
 
@@ -139,17 +145,17 @@ If provided, must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
-from field: string entity_uuid = 6;
+from field: optional string entity_uuid = 6;
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:1241](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/ledgers.scailo_pb.ts#L1241)
+[src/ledgers.scailo_pb.ts:1454](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/ledgers.scailo_pb.ts#L1454)
 
 ___
 
 ### isActive
 
-• **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
+• `Optional` **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md)
 
 **`Optional`**
 
@@ -165,33 +171,47 @@ ANY
 
 **`Generated`**
 
-from field: Scailo.BOOL_FILTER is_active = 1;
+from field: optional Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:1171](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/ledgers.scailo_pb.ts#L1171)
+[src/ledgers.scailo_pb.ts:1384](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/ledgers.scailo_pb.ts#L1384)
 
 ___
 
 ### isLeaf
 
-• **isLeaf**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
+• `Optional` **isLeaf**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md)
 
-Filter with the given leaf property
+**`Optional`**
+
+**`Description`**
+
+Flag determining whether this ledger node is a terminal 'leaf' node that can directly hold transactional balances, or a 'non-leaf' grouping node.
+
+**`Example`**
+
+```ts
+true
+```
+
+**`Format`**
+
+Boolean value (`true` or `false`).
 
 **`Generated`**
 
-from field: Scailo.BOOL_FILTER is_leaf = 23;
+from field: optional Scailo.BOOL_FILTER is_leaf = 23;
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:1283](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/ledgers.scailo_pb.ts#L1283)
+[src/ledgers.scailo_pb.ts:1512](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/ledgers.scailo_pb.ts#L1512)
 
 ___
 
 ### offset
 
-• **offset**: `bigint` = `protoInt64.zero`
+• `Optional` **offset**: `bigint`
 
 **`Optional`**
 
@@ -215,35 +235,53 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 offset = 3;
+from field: optional uint64 offset = 3;
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:1203](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/ledgers.scailo_pb.ts#L1203)
+[src/ledgers.scailo_pb.ts:1416](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/ledgers.scailo_pb.ts#L1416)
 
 ___
 
 ### parentLedgerId
 
-• **parentLedgerId**: `bigint` = `protoInt64.zero`
+• `Optional` **parentLedgerId**: `bigint`
 
-The ID of the associated non-leaf parent ledger (0, if the first ledger that is being created is a leaf ledger)
+**`Optional`**
+
+**`Description`**
+
+The unique internal identifier of the parent non-leaf ledger. Defaults to 0 if this is the root or top-level node in the ledger hierarchy.
+
+**`Example`**
+
+```ts
+1024
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative 64-bit integer.
 
 **`Generated`**
 
-from field: uint64 parent_ledger_id = 22;
+from field: optional uint64 parent_ledger_id = 22;
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:1276](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/ledgers.scailo_pb.ts#L1276)
+[src/ledgers.scailo_pb.ts:1498](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/ledgers.scailo_pb.ts#L1498)
 
 ___
 
 ### searchKey
 
-• **searchKey**: `string` = `""`
+• `Optional` **searchKey**: `string`
 
-**`Mandatory`**
+**`Optional`**
 
 **`Description`**
 
@@ -263,17 +301,17 @@ The search string to match against reference IDs.
 
 **`Generated`**
 
-from field: string search_key = 11;
+from field: optional string search_key = 11;
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:1269](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/ledgers.scailo_pb.ts#L1269)
+[src/ledgers.scailo_pb.ts:1482](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/ledgers.scailo_pb.ts#L1482)
 
 ___
 
 ### sortKey
 
-• **sortKey**: [`LEDGER_SORT_KEY`](../enums/LEDGER_SORT_KEY.md) = `LEDGER_SORT_KEY.LEDGER_SORT_KEY_ID_UNSPECIFIED`
+• `Optional` **sortKey**: [`LEDGER_SORT_KEY`](../enums/LEDGER_SORT_KEY.md)
 
 **`Optional`**
 
@@ -283,17 +321,17 @@ The field used for sorting.
 
 **`Generated`**
 
-from field: Scailo.LEDGER_SORT_KEY sort_key = 5;
+from field: optional Scailo.LEDGER_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:1225](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/ledgers.scailo_pb.ts#L1225)
+[src/ledgers.scailo_pb.ts:1438](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/ledgers.scailo_pb.ts#L1438)
 
 ___
 
 ### sortOrder
 
-• **sortOrder**: [`SORT_ORDER`](../enums/SORT_ORDER.md) = `SORT_ORDER.ASCENDING_UNSPECIFIED`
+• `Optional` **sortOrder**: [`SORT_ORDER`](../enums/SORT_ORDER.md)
 
 **`Optional`**
 
@@ -309,17 +347,17 @@ DESCENDING
 
 **`Generated`**
 
-from field: Scailo.SORT_ORDER sort_order = 4;
+from field: optional Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:1215](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/ledgers.scailo_pb.ts#L1215)
+[src/ledgers.scailo_pb.ts:1428](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/ledgers.scailo_pb.ts#L1428)
 
 ___
 
 ### status
 
-• **status**: [`STANDARD_LIFECYCLE_STATUS`](../enums/STANDARD_LIFECYCLE_STATUS.md) = `STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED`
+• `Optional` **status**: [`STANDARD_LIFECYCLE_STATUS`](../enums/STANDARD_LIFECYCLE_STATUS.md)
 
 **`Optional`**
 
@@ -335,11 +373,11 @@ STANDING
 
 **`Generated`**
 
-from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:1253](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/ledgers.scailo_pb.ts#L1253)
+[src/ledgers.scailo_pb.ts:1466](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/ledgers.scailo_pb.ts#L1466)
 
 ___
 
@@ -349,7 +387,7 @@ ___
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:1292](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/ledgers.scailo_pb.ts#L1292)
+[src/ledgers.scailo_pb.ts:1521](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/ledgers.scailo_pb.ts#L1521)
 
 ___
 
@@ -359,7 +397,7 @@ ___
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:1290](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/ledgers.scailo_pb.ts#L1290)
+[src/ledgers.scailo_pb.ts:1519](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/ledgers.scailo_pb.ts#L1519)
 
 ___
 
@@ -369,7 +407,7 @@ ___
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:1291](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/ledgers.scailo_pb.ts#L1291)
+[src/ledgers.scailo_pb.ts:1520](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/ledgers.scailo_pb.ts#L1520)
 
 ## Methods
 
@@ -657,7 +695,7 @@ ___
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:1317](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/ledgers.scailo_pb.ts#L1317)
+[src/ledgers.scailo_pb.ts:1546](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/ledgers.scailo_pb.ts#L1546)
 
 ___
 
@@ -678,7 +716,7 @@ ___
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:1305](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/ledgers.scailo_pb.ts#L1305)
+[src/ledgers.scailo_pb.ts:1534](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/ledgers.scailo_pb.ts#L1534)
 
 ___
 
@@ -699,7 +737,7 @@ ___
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:1309](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/ledgers.scailo_pb.ts#L1309)
+[src/ledgers.scailo_pb.ts:1538](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/ledgers.scailo_pb.ts#L1538)
 
 ___
 
@@ -720,4 +758,4 @@ ___
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:1313](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/ledgers.scailo_pb.ts#L1313)
+[src/ledgers.scailo_pb.ts:1542](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/ledgers.scailo_pb.ts#L1542)

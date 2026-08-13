@@ -271,7 +271,16 @@ export declare class QCSamplesServiceCreateRequest extends Message<QCSamplesServ
      */
     entityUuid: string;
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 2;
      */
@@ -341,13 +350,31 @@ export declare class QCSamplesServiceCreateRequest extends Message<QCSamplesServ
  */
 export declare class QCSamplesServiceUpdateRequest extends Message<QCSamplesServiceUpdateRequest> {
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 1;
      */
     userComment: string;
     /**
-     * The ID of the record that needs to be updated
+     *
+     * @mandatory
+     *
+     * @description The unique internal identifier of the target record that needs to be updated.
+     *
+     * @example 1024
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 id = 2;
      */
@@ -1315,7 +1342,16 @@ export declare class QCSamplesServiceSearchAllReq extends Message<QCSamplesServi
  */
 export declare class QCSamplesServiceParameterUpdateRequest extends Message<QCSamplesServiceParameterUpdateRequest> {
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 1;
      */

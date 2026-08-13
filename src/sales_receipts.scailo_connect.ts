@@ -6,6 +6,7 @@
 import { SalesReceipt, SalesReceiptAncillaryParameters, SalesReceiptsList, SalesReceiptsServiceCountReq, SalesReceiptsServiceCreateRequest, SalesReceiptsServiceFilterReq, SalesReceiptsServicePaginationReq, SalesReceiptsServicePaginationResponse, SalesReceiptsServiceSearchAllReq, SalesReceiptsServiceUpdateRequest } from "./sales_receipts.scailo_pb.js";
 import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
+import { VaultFolderAttachRequest } from "./vault_folders.scailo_pb.js";
 import { MagicLink, MagicLinksServiceCreateRequestForSpecificResource } from "./magic_links.scailo_pb.js";
 
 /**
@@ -235,13 +236,37 @@ export const SalesReceiptsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Send Email
+     * Triggers an automated email notification related to the record.
+     *
+     * **Side Effects:**
+     * - Dispatches a structured email to the designated recipients based on the provided attributes.
+     * - Appends an entry to the system communication logs for auditing purposes.
      *
      * @generated from rpc Scailo.SalesReceiptsService.SendEmail
      */
     sendEmail: {
       name: "SendEmail",
       I: IdentifierWithEmailAttributes,
+      O: IdentifierResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Attaches a specified folder directly to a record without requiring a full revision workflow.
+     *
+     * This is a convenience API designed to bypass the traditional multi-step modification lifecycle
+     * (e.g., creating a revision, updating data, submitting for verification, and awaiting approval).
+     * It allows for the immediate, single-step association of a vault folder.
+     *
+     * **Side Effects & Lifecycle:**
+     * * The overall status of the record remains unchanged.
+     * * The record's modification timestamp is automatically updated to the current time.
+     * * An entry is appended to the record's audit log tracking this attachment.
+     *
+     * @generated from rpc Scailo.SalesReceiptsService.AttachVaultFolder
+     */
+    attachVaultFolder: {
+      name: "AttachVaultFolder",
+      I: VaultFolderAttachRequest,
       O: IdentifierResponse,
       kind: MethodKind.Unary,
     },
@@ -358,7 +383,14 @@ export const SalesReceiptsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Checks if the record is downloadable (checks if the custom download function has been implemented)
+     * Evaluates the download eligibility of a specific record using its universally unique identifier (UUID).
+     *
+     * This endpoint serves as a lightweight precursor to the actual file retrieval process. It verifies
+     * whether the target record supports file extraction by checking if a custom download function has
+     * been implemented for the underlying asset. By utilizing this check, client applications can
+     * preemptively determine file availability and dynamically adjust user interface elements
+     * (e.g., enabling or disabling a download button) without initiating a full, potentially heavy
+     * download request.
      *
      * @generated from rpc Scailo.SalesReceiptsService.IsDownloadable
      */
@@ -369,7 +401,13 @@ export const SalesReceiptsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Download sales receipt with the given IdentifierUUID (can be used to allow public downloads)
+     * Retrieves the underlying file or document payload associated with a specific entity
+     * using its universally unique identifier (UUID).
+     *
+     * This endpoint is designed for versatile resource retrieval and is commonly utilized
+     * to facilitate direct, secure, or public-facing downloads. By relying on an obscure
+     * UUID rather than predictable internal sequential IDs, it ensures that external
+     * download links remain unguessable and safe for broad distribution.
      *
      * @generated from rpc Scailo.SalesReceiptsService.DownloadByUUID
      */

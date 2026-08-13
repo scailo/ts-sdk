@@ -2,7 +2,12 @@
 
 # Class: FilterFamiliesReqForIdentifier
 
-Describes the parameters that are required to filter the prospective families for a record represented by the given UUID
+Request message for filtering and retrieving prospective families applicable to a specific transactional record.
+This payload combines a universally unique identifier (UUID) for a target resource (e.g., a Purchase Order, Sales Order, or Production Plan)
+with standard catalog filtering criteria to narrow down eligible families that can be associated with that resource.
+
+**Note:** This is commonly used by frontend interfaces to populate context-aware dropdowns or selection grids,
+ensuring users only see families that are legally or operationally valid for the specified document.
 
 **`Generated`**
 
@@ -67,7 +72,7 @@ Message\&lt;FilterFamiliesReqForIdentifier\&gt;.constructor
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2196](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2196)
+[src/families.scailo_pb.ts:2975](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L2975)
 
 ## Properties
 
@@ -75,7 +80,15 @@ Message\&lt;FilterFamiliesReqForIdentifier\&gt;.constructor
 
 • `Optional` **filter**: [`FamiliesServiceFilterReq`](FamiliesServiceFilterReq.md)
 
-The families filter to apply
+**`Mandatory`**
+
+**`Description`**
+
+The advanced filtering criteria used to narrow down the list of prospective families. Encapsulates pagination, sorting, and attribute-based constraints.
+
+**`Format`**
+
+Nested FamiliesServiceFilterReq message block.
 
 **`Generated`**
 
@@ -83,7 +96,7 @@ from field: Scailo.FamiliesServiceFilterReq filter = 10;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2194](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2194)
+[src/families.scailo_pb.ts:2973](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L2973)
 
 ___
 
@@ -91,7 +104,25 @@ ___
 
 • **uuid**: `string` = `""`
 
-UUID of the resource
+**`Mandatory`**
+
+**`Description`**
+
+The globally unique identifier of the target resource (e.g., Purchase Order, Sales Order) for which prospective families are being evaluated and filtered.
+
+**`Example`**
+
+```ts
+"550e8400-e29b-41d4-a716-446655440000"
+```
+
+**`Regex`**
+
+^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+
+**`Format`**
+
+Must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
@@ -99,7 +130,7 @@ from field: string uuid = 1;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2187](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2187)
+[src/families.scailo_pb.ts:2961](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L2961)
 
 ___
 
@@ -109,7 +140,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2203](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2203)
+[src/families.scailo_pb.ts:2982](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L2982)
 
 ___
 
@@ -119,7 +150,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2201](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2201)
+[src/families.scailo_pb.ts:2980](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L2980)
 
 ___
 
@@ -129,7 +160,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2202](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2202)
+[src/families.scailo_pb.ts:2981](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L2981)
 
 ## Methods
 
@@ -417,7 +448,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2220](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2220)
+[src/families.scailo_pb.ts:2999](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L2999)
 
 ___
 
@@ -438,7 +469,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2208](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2208)
+[src/families.scailo_pb.ts:2987](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L2987)
 
 ___
 
@@ -459,7 +490,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2212](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2212)
+[src/families.scailo_pb.ts:2991](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L2991)
 
 ___
 
@@ -480,4 +511,4 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2216](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2216)
+[src/families.scailo_pb.ts:2995](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L2995)

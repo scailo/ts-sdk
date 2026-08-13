@@ -4,67 +4,67 @@ import { FormFieldDatum, FormFieldDatumCreateRequest, FormFieldDatumFilterReques
 import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base.scailo_pb.js";
 /**
  *
- * Describes the available sort keys
+ * Enumeration of fields available for sorting client search results.
  *
  * @generated from enum Scailo.CLIENT_SORT_KEY
  */
 export declare enum CLIENT_SORT_KEY {
     /**
-     * Fetch ordered results by id
+     * @description Default sort behavior (by internal ID).
      *
      * @generated from enum value: CLIENT_SORT_KEY_ID_UNSPECIFIED = 0;
      */
     CLIENT_SORT_KEY_ID_UNSPECIFIED = 0,
     /**
-     * Fetch ordered results by the creation timestamp
+     * @description Sort by the timestamp the record was initially created.
      *
      * @generated from enum value: CLIENT_SORT_KEY_CREATED_AT = 1;
      */
     CLIENT_SORT_KEY_CREATED_AT = 1,
     /**
-     * Fetch ordered results by the modified timestamp
+     * @description Sort by the timestamp the record was last modified.
      *
      * @generated from enum value: CLIENT_SORT_KEY_MODIFIED_AT = 2;
      */
     CLIENT_SORT_KEY_MODIFIED_AT = 2,
     /**
-     * Fetch ordered results by the approved on timestamp
+     * @description Sort by the official approval timestamp.
      *
      * @generated from enum value: CLIENT_SORT_KEY_APPROVED_ON = 3;
      */
     CLIENT_SORT_KEY_APPROVED_ON = 3,
     /**
-     * Fetch ordered results by the approved by field
+     * @description Sort by the system ID of the approving user.
      *
      * @generated from enum value: CLIENT_SORT_KEY_APPROVED_BY = 4;
      */
     CLIENT_SORT_KEY_APPROVED_BY = 4,
     /**
-     * Fetch ordered results by the approver's role ID
+     * @description Sort by the security role ID used by the approver.
      *
      * @generated from enum value: CLIENT_SORT_KEY_APPROVER_ROLE_ID = 5;
      */
     CLIENT_SORT_KEY_APPROVER_ROLE_ID = 5,
     /**
-     * Fetch ordered results by the name
+     * @description Sort alphabetically by the user-provided name.
      *
      * @generated from enum value: CLIENT_SORT_KEY_NAME = 10;
      */
     CLIENT_SORT_KEY_NAME = 10,
     /**
-     * Fetch ordered results by the code
+     * @description Sort alphabetically by the user-provided code.
      *
      * @generated from enum value: CLIENT_SORT_KEY_CODE = 11;
      */
     CLIENT_SORT_KEY_CODE = 11,
     /**
-     * Fetch ordered results by the email address
+     * @description Sort alphabetically by the user-provided email.
      *
      * @generated from enum value: CLIENT_SORT_KEY_EMAIL = 12;
      */
     CLIENT_SORT_KEY_EMAIL = 12,
     /**
-     * Fetch ordered results by the phone number
+     * @description Sort alphabetically by the user-provided phone number.
      *
      * @generated from enum value: CLIENT_SORT_KEY_PHONE = 13;
      */
@@ -72,25 +72,25 @@ export declare enum CLIENT_SORT_KEY {
 }
 /**
  *
- * Describes the applicable statuses of client users
+ * Enum defining the applicable lifecycle and verification statuses for client users.
  *
  * @generated from enum Scailo.CLIENT_USER_STATUS
  */
 export declare enum CLIENT_USER_STATUS {
     /**
-     * Denotes that status be disregarded. This is used only within search APIs
+     * @description Denotes that the status filter should be disregarded. Used exclusively within search APIs to bypass status restrictions.
      *
      * @generated from enum value: CLIENT_USER_STATUS_ANY_UNSPECIFIED = 0;
      */
     CLIENT_USER_STATUS_ANY_UNSPECIFIED = 0,
     /**
-     * Denotes that the vendor items must have been approved
+     * @description Denotes that the client user association has passed verification and is actively approved.
      *
      * @generated from enum value: CLIENT_USER_STATUS_APPROVED = 1;
      */
     CLIENT_USER_STATUS_APPROVED = 1,
     /**
-     * Denotes that the vendor items must be waiting for approval
+     * @description Denotes that the client user association is pending review and waiting for administrative approval.
      *
      * @generated from enum value: CLIENT_USER_STATUS_UNAPPROVED = 2;
      */
@@ -98,7 +98,12 @@ export declare enum CLIENT_USER_STATUS {
 }
 /**
  *
- * Describes the parameters necessary to create a record
+ * Request message for onboarding and creating a new Client profile.
+ * This record tracks critical client metadata, unique business identifiers,
+ * contact details, and custom fields associated with a target entity.
+ *
+ * **Note:** This is the primary entry point for Sales, Account Management, and Admins
+ * to register new customer profiles or external entities for billing and compliance tracking.
  *
  * @generated from message Scailo.ClientsServiceCreateRequest
  */
@@ -115,15 +120,24 @@ export declare class ClientsServiceCreateRequest extends Message<ClientsServiceC
      *
      * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
      *
-     * @generated from field: string entity_uuid = 1;
+     * @generated from field: optional string entity_uuid = 1;
      */
-    entityUuid: string;
+    entityUuid?: string;
     /**
-     * Stores any comment that the user might add during this operation
      *
-     * @generated from field: string user_comment = 2;
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
+     *
+     * @generated from field: optional string user_comment = 2;
      */
-    userComment: string;
+    userComment?: string;
     /**
      *
      * @optional
@@ -136,35 +150,78 @@ export declare class ClientsServiceCreateRequest extends Message<ClientsServiceC
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 vault_folder_id = 9;
+     * @generated from field: optional uint64 vault_folder_id = 9;
      */
-    vaultFolderId: bigint;
+    vaultFolderId?: bigint;
     /**
-     * The name of the client
+     *
+     * @mandatory
+     *
+     * @description The official or legal name of the client organization or individual.
+     *
+     * @example "Acme Corporation"
+     *
+     * @regex .+
+     *
+     * @format Must be a non-empty string.
      *
      * @generated from field: string name = 10;
      */
     name: string;
     /**
-     * The unique code by which the client is classified
+     *
+     * @mandatory
+     *
+     * @description The unique code or alphanumeric token by which the client is classified or categorized internally.
+     *
+     * @example "CLI-ACME-001"
+     *
+     * @regex .+
+     *
+     * @format Must be a non-empty string.
      *
      * @generated from field: string code = 11;
      */
     code: string;
     /**
-     * The primary email of the client
+     *
+     * @mandatory
+     *
+     * @description The primary communication email address of the client.
+     *
+     * @example "billing@acme.com"
+     *
+     * @regex ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
+     *
+     * @format Must be a valid and structurally sound email address format.
      *
      * @generated from field: string email = 12;
      */
     email: string;
     /**
-     * The primary contact number of the client
+     *
+     * @mandatory
+     *
+     * @description The primary contact phone number of the client, typically including country and area codes.
+     *
+     * @example "+1-555-222-0199"
+     *
+     * @regex .+
+     *
+     * @format Must be a non-empty string string representing a valid phone number format.
      *
      * @generated from field: string phone = 13;
      */
     phone: string;
     /**
-     * The list of dynamic forms
+     *
+     * @optional
+     *
+     * @description A collection of dynamic form fields for organization-specific data.
+     *
+     * @example []
+     *
+     * @format An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
      *
      * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
      */
@@ -180,19 +237,43 @@ export declare class ClientsServiceCreateRequest extends Message<ClientsServiceC
 }
 /**
  *
- * Describes the parameters necessary to update a record
+ * Request message for updating an existing Client record.
+ * Only applicable for records in `DRAFT` or `REVISION` states.
+ * This message allows for modifying the name, code, email, phone and other custom form fields
+ * of an established Client.
+ *
+ * **Note:** Only fields provided in the request will typically be updated.
+ * The unique system ID is required to locate the target record.
  *
  * @generated from message Scailo.ClientsServiceUpdateRequest
  */
 export declare class ClientsServiceUpdateRequest extends Message<ClientsServiceUpdateRequest> {
     /**
-     * Stores any comment that the user might add during this operation
      *
-     * @generated from field: string user_comment = 1;
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
+     *
+     * @generated from field: optional string user_comment = 1;
      */
-    userComment: string;
+    userComment?: string;
     /**
-     * The ID of the record that needs to be updated
+     *
+     * @mandatory
+     *
+     * @description The unique internal identifier of the target record that needs to be updated.
+     *
+     * @example 1024
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 id = 2;
      */
@@ -205,9 +286,9 @@ export declare class ClientsServiceUpdateRequest extends Message<ClientsServiceU
      *
      * @example true
      *
-     * @generated from field: bool notify_users = 3;
+     * @generated from field: optional bool notify_users = 3;
      */
-    notifyUsers: boolean;
+    notifyUsers?: boolean;
     /**
      *
      * @optional
@@ -220,35 +301,78 @@ export declare class ClientsServiceUpdateRequest extends Message<ClientsServiceU
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 vault_folder_id = 9;
+     * @generated from field: optional uint64 vault_folder_id = 9;
      */
-    vaultFolderId: bigint;
+    vaultFolderId?: bigint;
     /**
-     * The name of the client
      *
-     * @generated from field: string name = 10;
-     */
-    name: string;
-    /**
-     * The unique code by which the client is classified
+     * @optional
      *
-     * @generated from field: string code = 11;
-     */
-    code: string;
-    /**
-     * The primary email of the client
+     * @description The official or legal name of the client organization or individual.
      *
-     * @generated from field: string email = 12;
-     */
-    email: string;
-    /**
-     * The primary contact number of the client
+     * @example "Acme Corporation"
      *
-     * @generated from field: string phone = 13;
+     * @regex .*
+     *
+     * @format Must be a non-empty string.
+     *
+     * @generated from field: optional string name = 10;
      */
-    phone: string;
+    name?: string;
     /**
-     * The list of dynamic forms
+     *
+     * @optional
+     *
+     * @description The unique code or alphanumeric token by which the client is classified or categorized internally.
+     *
+     * @example "CLI-ACME-001"
+     *
+     * @regex .*
+     *
+     * @format Must be a non-empty string.
+     *
+     * @generated from field: optional string code = 11;
+     */
+    code?: string;
+    /**
+     *
+     * @optional
+     *
+     * @description The primary communication email address of the client.
+     *
+     * @example "billing@acme.com"
+     *
+     * @regex ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
+     *
+     * @format Must be a valid and structurally sound email address format.
+     *
+     * @generated from field: optional string email = 12;
+     */
+    email?: string;
+    /**
+     *
+     * @optional
+     *
+     * @description The primary contact phone number of the client, typically including country and area codes.
+     *
+     * @example "+1-555-222-0199"
+     *
+     * @regex .*
+     *
+     * @format Must be a non-empty string string representing a valid phone number format.
+     *
+     * @generated from field: optional string phone = 13;
+     */
+    phone?: string;
+    /**
+     *
+     * @optional
+     *
+     * @description A collection of dynamic form fields for organization-specific data.
+     *
+     * @example []
+     *
+     * @format An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
      *
      * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
      */
@@ -264,7 +388,7 @@ export declare class ClientsServiceUpdateRequest extends Message<ClientsServiceU
 }
 /**
  *
- * Describes the parameters that are part of a standard response
+ * Represents a full Client within the system.
  *
  * @generated from message Scailo.Client
  */
@@ -316,31 +440,44 @@ export declare class Client extends Message<Client> {
      */
     vaultFolderId: bigint;
     /**
-     * The name of the client
+     *
+     * @description The official or legal name of the client organization or individual.
+     *
+     * @example "Acme Corporation"
      *
      * @generated from field: string name = 10;
      */
     name: string;
     /**
-     * The unique code by which the client is classified
+     *
+     * @description The unique code or alphanumeric token by which the client is classified or categorized internally.
+     *
+     * @example "CLI-ACME-001"
      *
      * @generated from field: string code = 11;
      */
     code: string;
     /**
-     * The primary email of the client
+     *
+     * @description The primary communication email address of the client.
+     *
+     * @example "billing@acme.com"
      *
      * @generated from field: string email = 12;
      */
     email: string;
     /**
-     * The primary contact number of the client
+     *
+     * @description The primary contact phone number of the client, typically including country and area codes.
+     *
+     * @example "+1-555-222-0199"
      *
      * @generated from field: string phone = 13;
      */
     phone: string;
     /**
-     * The list of dynamic forms
+     *
+     * @description Collection of organization-specific dynamic data.
      *
      * @generated from field: repeated Scailo.FormFieldDatum form_data = 30;
      */
@@ -356,13 +493,13 @@ export declare class Client extends Message<Client> {
 }
 /**
  *
- * Describes the message consisting of the list of records
+ * Container message for a collection of Client records.
  *
  * @generated from message Scailo.ClientsList
  */
 export declare class ClientsList extends Message<ClientsList> {
     /**
-     * List of records
+     * @description An array of Client records.
      *
      * @generated from field: repeated Scailo.Client list = 1;
      */
@@ -378,7 +515,7 @@ export declare class ClientsList extends Message<ClientsList> {
 }
 /**
  *
- * Describes a pagination request to retrieve records
+ * Pagination request for retrieving slices of Client records.
  *
  * @generated from message Scailo.ClientsServicePaginationReq
  */
@@ -391,9 +528,9 @@ export declare class ClientsServicePaginationReq extends Message<ClientsServiceP
      *
      * @example ANY
      *
-     * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+     * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
      */
-    isActive: BOOL_FILTER;
+    isActive?: BOOL_FILTER;
     /**
      *
      * @mandatory
@@ -421,9 +558,9 @@ export declare class ClientsServicePaginationReq extends Message<ClientsServiceP
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 offset = 3;
+     * @generated from field: optional uint64 offset = 3;
      */
-    offset: bigint;
+    offset?: bigint;
     /**
      *
      * @optional
@@ -432,24 +569,29 @@ export declare class ClientsServicePaginationReq extends Message<ClientsServiceP
      *
      * @example DESCENDING
      *
-     * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+     * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
      */
-    sortOrder: SORT_ORDER;
+    sortOrder?: SORT_ORDER;
     /**
      *
      * @optional
      *
      * @description The specific field key to sort the results by.
      *
-     * @generated from field: Scailo.CLIENT_SORT_KEY sort_key = 5;
+     * @generated from field: optional Scailo.CLIENT_SORT_KEY sort_key = 5;
      */
-    sortKey: CLIENT_SORT_KEY;
+    sortKey?: CLIENT_SORT_KEY;
     /**
-     * The status of this client
      *
-     * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
+     * @optional
+     *
+     * @description Filter results by a specific lifecycle status.
+     *
+     * @example STANDING
+     *
+     * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
      */
-    status: STANDARD_LIFECYCLE_STATUS;
+    status?: STANDARD_LIFECYCLE_STATUS;
     constructor(data?: PartialMessage<ClientsServicePaginationReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.ClientsServicePaginationReq";
@@ -461,7 +603,7 @@ export declare class ClientsServicePaginationReq extends Message<ClientsServiceP
 }
 /**
  *
- * Describes the response to a pagination request
+ * Response message for paginated queries, including total counts for UI elements.
  *
  * @generated from message Scailo.ClientsServicePaginationResponse
  */
@@ -511,7 +653,12 @@ export declare class ClientsServicePaginationResponse extends Message<ClientsSer
 }
 /**
  *
- * Describes the base request payload of a filter search
+ * Advanced filter request for searching and paginating clients using multiple logical criteria.
+ * This message encapsulates pagination controls, sorting keys, lifecycle status filters,
+ * timestamp ranges, and entity references.
+ *
+ * **Note:** This is the primary message layout used by the frontend and external API clients
+ * to build robust data-table queries, reporting views, and targeted record lookups.
  *
  * @generated from message Scailo.ClientsServiceFilterReq
  */
@@ -524,9 +671,9 @@ export declare class ClientsServiceFilterReq extends Message<ClientsServiceFilte
      *
      * @example ANY
      *
-     * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+     * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
      */
-    isActive: BOOL_FILTER;
+    isActive?: BOOL_FILTER;
     /**
      *
      * @mandatory
@@ -554,9 +701,9 @@ export declare class ClientsServiceFilterReq extends Message<ClientsServiceFilte
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 offset = 3;
+     * @generated from field: optional uint64 offset = 3;
      */
-    offset: bigint;
+    offset?: bigint;
     /**
      *
      * @optional
@@ -565,18 +712,18 @@ export declare class ClientsServiceFilterReq extends Message<ClientsServiceFilte
      *
      * @example DESCENDING
      *
-     * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+     * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
      */
-    sortOrder: SORT_ORDER;
+    sortOrder?: SORT_ORDER;
     /**
      *
      * @optional
      *
      * @description The field used for sorting.
      *
-     * @generated from field: Scailo.CLIENT_SORT_KEY sort_key = 5;
+     * @generated from field: optional Scailo.CLIENT_SORT_KEY sort_key = 5;
      */
-    sortKey: CLIENT_SORT_KEY;
+    sortKey?: CLIENT_SORT_KEY;
     /**
      *
      * @optional
@@ -589,9 +736,9 @@ export declare class ClientsServiceFilterReq extends Message<ClientsServiceFilte
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 creation_timestamp_start = 101;
+     * @generated from field: optional uint64 creation_timestamp_start = 101;
      */
-    creationTimestampStart: bigint;
+    creationTimestampStart?: bigint;
     /**
      *
      * @optional
@@ -604,9 +751,9 @@ export declare class ClientsServiceFilterReq extends Message<ClientsServiceFilte
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 creation_timestamp_end = 102;
+     * @generated from field: optional uint64 creation_timestamp_end = 102;
      */
-    creationTimestampEnd: bigint;
+    creationTimestampEnd?: bigint;
     /**
      *
      * @optional
@@ -619,9 +766,9 @@ export declare class ClientsServiceFilterReq extends Message<ClientsServiceFilte
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 modification_timestamp_start = 103;
+     * @generated from field: optional uint64 modification_timestamp_start = 103;
      */
-    modificationTimestampStart: bigint;
+    modificationTimestampStart?: bigint;
     /**
      *
      * @optional
@@ -634,9 +781,9 @@ export declare class ClientsServiceFilterReq extends Message<ClientsServiceFilte
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 modification_timestamp_end = 104;
+     * @generated from field: optional uint64 modification_timestamp_end = 104;
      */
-    modificationTimestampEnd: bigint;
+    modificationTimestampEnd?: bigint;
     /**
      *
      * @optional
@@ -649,9 +796,9 @@ export declare class ClientsServiceFilterReq extends Message<ClientsServiceFilte
      *
      * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
      *
-     * @generated from field: string entity_uuid = 8;
+     * @generated from field: optional string entity_uuid = 8;
      */
-    entityUuid: string;
+    entityUuid?: string;
     /**
      *
      * @optional
@@ -660,9 +807,9 @@ export declare class ClientsServiceFilterReq extends Message<ClientsServiceFilte
      *
      * @example STANDING
      *
-     * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+     * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
      */
-    status: STANDARD_LIFECYCLE_STATUS;
+    status?: STANDARD_LIFECYCLE_STATUS;
     /**
      *
      * @optional
@@ -675,9 +822,9 @@ export declare class ClientsServiceFilterReq extends Message<ClientsServiceFilte
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approved_on_start = 11;
+     * @generated from field: optional uint64 approved_on_start = 11;
      */
-    approvedOnStart: bigint;
+    approvedOnStart?: bigint;
     /**
      *
      * @optional
@@ -690,9 +837,9 @@ export declare class ClientsServiceFilterReq extends Message<ClientsServiceFilte
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approved_on_end = 12;
+     * @generated from field: optional uint64 approved_on_end = 12;
      */
-    approvedOnEnd: bigint;
+    approvedOnEnd?: bigint;
     /**
      *
      * @optional
@@ -705,9 +852,9 @@ export declare class ClientsServiceFilterReq extends Message<ClientsServiceFilte
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approved_by_user_id = 13;
+     * @generated from field: optional uint64 approved_by_user_id = 13;
      */
-    approvedByUserId: bigint;
+    approvedByUserId?: bigint;
     /**
      *
      * @optional
@@ -720,33 +867,69 @@ export declare class ClientsServiceFilterReq extends Message<ClientsServiceFilte
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approver_role_id = 14;
+     * @generated from field: optional uint64 approver_role_id = 14;
      */
-    approverRoleId: bigint;
+    approverRoleId?: bigint;
     /**
-     * The name of the client
      *
-     * @generated from field: string name = 20;
+     * @optional
+     *
+     * @description The official or legal name of the client organization or individual.
+     *
+     * @example "Acme Corporation"
+     *
+     * @regex .*
+     *
+     * @format Must be a non-empty string.
+     *
+     * @generated from field: optional string name = 20;
      */
-    name: string;
+    name?: string;
     /**
-     * The unique code by which the client is classified
      *
-     * @generated from field: string code = 21;
+     * @optional
+     *
+     * @description The unique code or alphanumeric token by which the client is classified or categorized internally.
+     *
+     * @example "CLI-ACME-001"
+     *
+     * @regex .*
+     *
+     * @format Must be a non-empty string.
+     *
+     * @generated from field: optional string code = 21;
      */
-    code: string;
+    code?: string;
     /**
-     * The primary email of the client
      *
-     * @generated from field: string email = 22;
+     * @optional
+     *
+     * @description The primary communication email address of the client.
+     *
+     * @example "billing@acme.com"
+     *
+     * @regex ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
+     *
+     * @format Must be a valid and structurally sound email address format.
+     *
+     * @generated from field: optional string email = 22;
      */
-    email: string;
+    email?: string;
     /**
-     * The primary contact number of the client
      *
-     * @generated from field: string phone = 23;
+     * @optional
+     *
+     * @description The primary contact phone number of the client, typically including country and area codes.
+     *
+     * @example "+1-555-222-0199"
+     *
+     * @regex .*
+     *
+     * @format Must be a non-empty string string representing a valid phone number format.
+     *
+     * @generated from field: optional string phone = 23;
      */
-    phone: string;
+    phone?: string;
     /**
      *
      * @optional
@@ -765,9 +948,9 @@ export declare class ClientsServiceFilterReq extends Message<ClientsServiceFilte
      *
      * @example true
      *
-     * @generated from field: bool include_form_data = 501;
+     * @generated from field: optional bool include_form_data = 501;
      */
-    includeFormData: boolean;
+    includeFormData?: boolean;
     constructor(data?: PartialMessage<ClientsServiceFilterReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.ClientsServiceFilterReq";
@@ -779,7 +962,13 @@ export declare class ClientsServiceFilterReq extends Message<ClientsServiceFilte
 }
 /**
  *
- * Describes the base request payload of a count search
+ * Target filter request for counting client records matching specific logical criteria.
+ * This message encapsulates lifecycle status filters, timestamp ranges, workflow markers,
+ * and entity references to determine the total size of a targeted dataset.
+ *
+ * **Note:** This is the primary message layout used by backend calculation engines, reporting
+ * services, and frontend pagination headers to evaluate total record matches dynamically
+ * before or alongside retrieving paginated results.
  *
  * @generated from message Scailo.ClientsServiceCountReq
  */
@@ -792,9 +981,9 @@ export declare class ClientsServiceCountReq extends Message<ClientsServiceCountR
      *
      * @example ANY
      *
-     * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+     * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
      */
-    isActive: BOOL_FILTER;
+    isActive?: BOOL_FILTER;
     /**
      *
      * @optional
@@ -807,9 +996,9 @@ export declare class ClientsServiceCountReq extends Message<ClientsServiceCountR
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 creation_timestamp_start = 101;
+     * @generated from field: optional uint64 creation_timestamp_start = 101;
      */
-    creationTimestampStart: bigint;
+    creationTimestampStart?: bigint;
     /**
      *
      * @optional
@@ -822,9 +1011,9 @@ export declare class ClientsServiceCountReq extends Message<ClientsServiceCountR
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 creation_timestamp_end = 102;
+     * @generated from field: optional uint64 creation_timestamp_end = 102;
      */
-    creationTimestampEnd: bigint;
+    creationTimestampEnd?: bigint;
     /**
      *
      * @optional
@@ -837,9 +1026,9 @@ export declare class ClientsServiceCountReq extends Message<ClientsServiceCountR
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 modification_timestamp_start = 103;
+     * @generated from field: optional uint64 modification_timestamp_start = 103;
      */
-    modificationTimestampStart: bigint;
+    modificationTimestampStart?: bigint;
     /**
      *
      * @optional
@@ -852,9 +1041,9 @@ export declare class ClientsServiceCountReq extends Message<ClientsServiceCountR
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 modification_timestamp_end = 104;
+     * @generated from field: optional uint64 modification_timestamp_end = 104;
      */
-    modificationTimestampEnd: bigint;
+    modificationTimestampEnd?: bigint;
     /**
      *
      * @optional
@@ -867,9 +1056,9 @@ export declare class ClientsServiceCountReq extends Message<ClientsServiceCountR
      *
      * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
      *
-     * @generated from field: string entity_uuid = 8;
+     * @generated from field: optional string entity_uuid = 8;
      */
-    entityUuid: string;
+    entityUuid?: string;
     /**
      *
      * @optional
@@ -878,9 +1067,9 @@ export declare class ClientsServiceCountReq extends Message<ClientsServiceCountR
      *
      * @example STANDING
      *
-     * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+     * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
      */
-    status: STANDARD_LIFECYCLE_STATUS;
+    status?: STANDARD_LIFECYCLE_STATUS;
     /**
      *
      * @optional
@@ -893,9 +1082,9 @@ export declare class ClientsServiceCountReq extends Message<ClientsServiceCountR
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approved_on_start = 11;
+     * @generated from field: optional uint64 approved_on_start = 11;
      */
-    approvedOnStart: bigint;
+    approvedOnStart?: bigint;
     /**
      *
      * @optional
@@ -908,9 +1097,9 @@ export declare class ClientsServiceCountReq extends Message<ClientsServiceCountR
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approved_on_end = 12;
+     * @generated from field: optional uint64 approved_on_end = 12;
      */
-    approvedOnEnd: bigint;
+    approvedOnEnd?: bigint;
     /**
      *
      * @optional
@@ -923,9 +1112,9 @@ export declare class ClientsServiceCountReq extends Message<ClientsServiceCountR
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approved_by_user_id = 13;
+     * @generated from field: optional uint64 approved_by_user_id = 13;
      */
-    approvedByUserId: bigint;
+    approvedByUserId?: bigint;
     /**
      *
      * @optional
@@ -938,35 +1127,74 @@ export declare class ClientsServiceCountReq extends Message<ClientsServiceCountR
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approver_role_id = 14;
+     * @generated from field: optional uint64 approver_role_id = 14;
      */
-    approverRoleId: bigint;
+    approverRoleId?: bigint;
     /**
-     * The name of the client
      *
-     * @generated from field: string name = 20;
-     */
-    name: string;
-    /**
-     * The unique code by which the client is classified
+     * @optional
      *
-     * @generated from field: string code = 21;
-     */
-    code: string;
-    /**
-     * The primary email of the client
+     * @description The official or legal name of the client organization or individual.
      *
-     * @generated from field: string email = 22;
-     */
-    email: string;
-    /**
-     * The primary contact number of the client
+     * @example "Acme Corporation"
      *
-     * @generated from field: string phone = 23;
+     * @regex .*
+     *
+     * @format Must be a non-empty string.
+     *
+     * @generated from field: optional string name = 20;
      */
-    phone: string;
+    name?: string;
     /**
-     * The list of form data filters
+     *
+     * @optional
+     *
+     * @description The unique code or alphanumeric token by which the client is classified or categorized internally.
+     *
+     * @example "CLI-ACME-001"
+     *
+     * @regex .*
+     *
+     * @format Must be a non-empty string.
+     *
+     * @generated from field: optional string code = 21;
+     */
+    code?: string;
+    /**
+     *
+     * @optional
+     *
+     * @description The primary communication email address of the client.
+     *
+     * @example "billing@acme.com"
+     *
+     * @regex ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
+     *
+     * @format Must be a valid and structurally sound email address format.
+     *
+     * @generated from field: optional string email = 22;
+     */
+    email?: string;
+    /**
+     *
+     * @optional
+     *
+     * @description The primary contact phone number of the client, typically including country and area codes.
+     *
+     * @example "+1-555-222-0199"
+     *
+     * @regex .*
+     *
+     * @format Must be a non-empty string string representing a valid phone number format.
+     *
+     * @generated from field: optional string phone = 23;
+     */
+    phone?: string;
+    /**
+     *
+     * @optional
+     *
+     * @description Count based on dynamic form field values.
      *
      * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
      */
@@ -982,7 +1210,13 @@ export declare class ClientsServiceCountReq extends Message<ClientsServiceCountR
 }
 /**
  *
- * Describes the request payload for performing a generic search operation on records
+ * Broad-spectrum search and lookup request for locating and paginating clients via text matching.
+ * This message encapsulates full-text query parameters, pagination controls, sorting keys,
+ * lifecycle status constraints, and other core references.
+ *
+ * **Note:** This is the primary message layout used for global search bars, fast-filtering dashboard
+ * inputs, and omni-box search utilities where users need to match loose textual terms against
+ * records while retaining structural pagination.
  *
  * @generated from message Scailo.ClientsServiceSearchAllReq
  */
@@ -995,9 +1229,9 @@ export declare class ClientsServiceSearchAllReq extends Message<ClientsServiceSe
      *
      * @example ANY
      *
-     * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+     * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
      */
-    isActive: BOOL_FILTER;
+    isActive?: BOOL_FILTER;
     /**
      *
      * @mandatory
@@ -1025,9 +1259,9 @@ export declare class ClientsServiceSearchAllReq extends Message<ClientsServiceSe
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 offset = 3;
+     * @generated from field: optional uint64 offset = 3;
      */
-    offset: bigint;
+    offset?: bigint;
     /**
      *
      * @optional
@@ -1036,18 +1270,18 @@ export declare class ClientsServiceSearchAllReq extends Message<ClientsServiceSe
      *
      * @example DESCENDING
      *
-     * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+     * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
      */
-    sortOrder: SORT_ORDER;
+    sortOrder?: SORT_ORDER;
     /**
      *
      * @optional
      *
      * @description The field used for sorting.
      *
-     * @generated from field: Scailo.CLIENT_SORT_KEY sort_key = 5;
+     * @generated from field: optional Scailo.CLIENT_SORT_KEY sort_key = 5;
      */
-    sortKey: CLIENT_SORT_KEY;
+    sortKey?: CLIENT_SORT_KEY;
     /**
      *
      * @optional
@@ -1060,9 +1294,9 @@ export declare class ClientsServiceSearchAllReq extends Message<ClientsServiceSe
      *
      * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
      *
-     * @generated from field: string entity_uuid = 6;
+     * @generated from field: optional string entity_uuid = 6;
      */
-    entityUuid: string;
+    entityUuid?: string;
     /**
      *
      * @optional
@@ -1071,12 +1305,12 @@ export declare class ClientsServiceSearchAllReq extends Message<ClientsServiceSe
      *
      * @example STANDING
      *
-     * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+     * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
      */
-    status: STANDARD_LIFECYCLE_STATUS;
+    status?: STANDARD_LIFECYCLE_STATUS;
     /**
      *
-     * @mandatory
+     * @optional
      *
      * @description The search string to match against reference IDs.
      *
@@ -1086,9 +1320,9 @@ export declare class ClientsServiceSearchAllReq extends Message<ClientsServiceSe
      *
      * @format: May contain any UTF-8 characters.
      *
-     * @generated from field: string search_key = 11;
+     * @generated from field: optional string search_key = 11;
      */
-    searchKey: string;
+    searchKey?: string;
     constructor(data?: PartialMessage<ClientsServiceSearchAllReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.ClientsServiceSearchAllReq";
@@ -1100,35 +1334,76 @@ export declare class ClientsServiceSearchAllReq extends Message<ClientsServiceSe
 }
 /**
  *
- * Describes the parameters necessary to create a client user
+ * Request message for creating a new client user association.
+ * This message encapsulates the necessary identifiers to link a user (and optionally an associate)
+ * to a client, along with compliance details and audit logs required for record initialization.
+ *
+ * **Note:** This serves as the primary entry point for managing client personnel, ensuring
+ * that the relationship between the client and the user is properly audited and validated.
  *
  * @generated from message Scailo.ClientsServiceUserCreateRequest
  */
 export declare class ClientsServiceUserCreateRequest extends Message<ClientsServiceUserCreateRequest> {
     /**
-     * Stores any comment that the user might add during this operation
      *
-     * @generated from field: string user_comment = 1;
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
+     *
+     * @generated from field: optional string user_comment = 1;
      */
-    userComment: string;
+    userComment?: string;
     /**
-     * Stores the client ID
+     *
+     * @mandatory
+     *
+     * @description The unique internal identifier of the target client to which the user will be associated.
+     *
+     * @example 1024
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer greater than zero.
      *
      * @generated from field: uint64 client_id = 10;
      */
     clientId: bigint;
     /**
-     * Stores the user ID
+     *
+     * @mandatory
+     *
+     * @description The unique internal identifier of the user being assigned to the client.
+     *
+     * @example 5678
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer greater than zero.
      *
      * @generated from field: uint64 user_id = 11;
      */
     userId: bigint;
     /**
-     * Stores an optional associate ID
      *
-     * @generated from field: uint64 associate_id = 12;
+     * @optional
+     *
+     * @description The unique internal identifier of an associated secondary entity or associate party, if applicable.
+     *
+     * @example 9012
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer. Defaults to 0 if unassigned.
+     *
+     * @generated from field: optional uint64 associate_id = 12;
      */
-    associateId: bigint;
+    associateId?: bigint;
     constructor(data?: PartialMessage<ClientsServiceUserCreateRequest>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.ClientsServiceUserCreateRequest";
@@ -1140,7 +1415,10 @@ export declare class ClientsServiceUserCreateRequest extends Message<ClientsServ
 }
 /**
  *
- * Describes the parameters that constitute a client user
+ * Represents a full Client User association within the system.
+ * This message encapsulates the complete state of a client user relationship,
+ * including organization tenancy, core entity identifiers, audit trails, and
+ * granular approval workflow metadata.
  *
  * @generated from message Scailo.ClientUser
  */
@@ -1170,31 +1448,47 @@ export declare class ClientUser extends Message<ClientUser> {
     approvalMetadata?: ApprovalMetadata;
     /**
      *
-     * @description The approval state of the record
+     * @description A boolean flag indicating whether this specific record requires further administrative approval.
+     *
+     * @example false
+     *
+     * @format Boolean true or false.
      *
      * @generated from field: bool need_approval = 4;
      */
     needApproval: boolean;
     /**
-     * Stores any comment that the user might have added during an operation
+     *
+     * @description Audit log comment or justification captured during the last modification or transactional operation.
+     *
+     * @example "Updated user relationship per customer contract renewal."
      *
      * @generated from field: string user_comment = 5;
      */
     userComment: string;
     /**
-     * Stores the client ID
+     *
+     * @description The unique internal identifier of the associated client.
+     *
+     * @example 1024
      *
      * @generated from field: uint64 client_id = 10;
      */
     clientId: bigint;
     /**
-     * Stores the user ID
+     *
+     * @description The unique internal identifier of the associated user.
+     *
+     * @example 5678
      *
      * @generated from field: uint64 user_id = 11;
      */
     userId: bigint;
     /**
-     * Stores an optional associate ID
+     *
+     * @description The unique internal identifier of the optional associated secondary entity or associate party.
+     *
+     * @example 9012
      *
      * @generated from field: uint64 associate_id = 12;
      */
@@ -1210,13 +1504,13 @@ export declare class ClientUser extends Message<ClientUser> {
 }
 /**
  *
- * Describes the message consisting of the list of client users
+ * Container message for a collection of Client User records.
  *
  * @generated from message Scailo.ClientUsersList
  */
 export declare class ClientUsersList extends Message<ClientUsersList> {
     /**
-     * List of records
+     * @description An array of Client User records.
      *
      * @generated from field: repeated Scailo.ClientUser list = 1;
      */
@@ -1232,7 +1526,8 @@ export declare class ClientUsersList extends Message<ClientUsersList> {
 }
 /**
  *
- * Describes the request payload to search client users
+ * Request payload structure used to search and filter Client User records.
+ * Supports pagination controls, tenancy isolation, status grouping, and text-based matching.
  *
  * @generated from message Scailo.ClientUsersSearchRequest
  */
@@ -1245,21 +1540,39 @@ export declare class ClientUsersSearchRequest extends Message<ClientUsersSearchR
      *
      * @example ANY
      *
-     * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+     * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
      */
-    isActive: BOOL_FILTER;
+    isActive?: BOOL_FILTER;
     /**
-     * The number of records that need to be sent in the response. Returns all records if it is set to -1
+     *
+     * @mandatory
+     *
+     * @description Number of records to fetch. **Critical:** Use `-1` to retrieve all records. A value of `0` will return no results. Default is `0`.
+     *
+     * @example 100
+     *
+     * @regex ^(?:-1|0|[1-9][0-9]*)$
+     *
+     * @format Must be -1 or any non-negative integer (>= -1).
      *
      * @generated from field: int64 count = 2;
      */
     count: bigint;
     /**
-     * The number that need to be offset by before fetching the records
      *
-     * @generated from field: uint64 offset = 3;
+     * @optional
+     *
+     * @description Number of records to skip (offset) for pagination.
+     *
+     * @example 0
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
+     *
+     * @generated from field: optional uint64 offset = 3;
      */
-    offset: bigint;
+    offset?: bigint;
     /**
      *
      * @optional
@@ -1272,39 +1585,68 @@ export declare class ClientUsersSearchRequest extends Message<ClientUsersSearchR
      *
      * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
      *
-     * @generated from field: string entity_uuid = 6;
+     * @generated from field: optional string entity_uuid = 6;
      */
-    entityUuid: string;
+    entityUuid?: string;
     /**
-     * The status of the users
      *
-     * @generated from field: Scailo.CLIENT_USER_STATUS status = 7;
+     * @optional
+     *
+     * @description Filter records by their verification lifecycle state (e.g., Approved, Unapproved). Defaults to unspecified/any.
+     *
+     * @example CLIENT_USER_STATUS_APPROVED
+     *
+     * @generated from field: optional Scailo.CLIENT_USER_STATUS status = 7;
      */
-    status: CLIENT_USER_STATUS;
+    status?: CLIENT_USER_STATUS;
     /**
-     * Stores the client ID
      *
-     * @generated from field: uint64 client_id = 10;
+     * @optional
+     *
+     * @description Filter by a specific client internal ID.
+     *
+     * @example 1024
+     *
+     * @generated from field: optional uint64 client_id = 10;
      */
-    clientId: bigint;
+    clientId?: bigint;
     /**
-     * Stores the user ID
      *
-     * @generated from field: uint64 user_id = 11;
+     * @optional
+     *
+     * @description Filter by a specific user internal ID.
+     *
+     * @example 5678
+     *
+     * @generated from field: optional uint64 user_id = 11;
      */
-    userId: bigint;
+    userId?: bigint;
     /**
-     * Stores an optional associate ID
      *
-     * @generated from field: uint64 associate_id = 12;
+     * @optional
+     *
+     * @description Filter by a specific associate internal ID.
+     *
+     * @example 9012
+     *
+     * @generated from field: optional uint64 associate_id = 12;
      */
-    associateId: bigint;
+    associateId?: bigint;
     /**
-     * Describes the key with which the search operation needs to be performed
      *
-     * @generated from field: string search_key = 20;
+     * @optional
+     *
+     * @description Alphanumeric key phrase or keyword token used to perform lookup matches across searchable fields like names or comments.
+     *
+     * @example "John Doe"
+     *
+     * @regex .*
+     *
+     * @format String value, can be empty.
+     *
+     * @generated from field: optional string search_key = 20;
      */
-    searchKey: string;
+    searchKey?: string;
     constructor(data?: PartialMessage<ClientUsersSearchRequest>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.ClientUsersSearchRequest";
@@ -1316,7 +1658,8 @@ export declare class ClientUsersSearchRequest extends Message<ClientUsersSearchR
 }
 /**
  *
- * Describes the response to a pagination items request
+ * Paginated response packet containing a subset of Client User records.
+ * Includes complete operational state parameters for rendering frontend data grids and tables.
  *
  * @generated from message Scailo.ClientsServicePaginatedUsersResponse
  */

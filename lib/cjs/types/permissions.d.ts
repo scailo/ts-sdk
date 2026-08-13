@@ -7208,6 +7208,241 @@ export declare const PermissionsWorkflowsRules: {
     Name: string;
     Description: string;
 }[];
+export declare const PermissionQuestionnaireTemplateNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQuestionnaireTemplateDrafts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQuestionnaireTemplateVerify: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQuestionnaireTemplateRevise: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQuestionnaireTemplateHalted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQuestionnaireTemplateDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreQuestionnaireTemplate: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQuestionnaireTemplateApprove: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQuestionnaireTemplateStanding: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQuestionnaireTemplateCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQuestionnaireTemplateHalt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQuestionnaireTemplateComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQuestionnaireTemplateDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReopenQuestionnaireTemplate: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQuestionnaireTemplateCreateMagicLink: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsQuestionnaireTemplates: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionQuestionnaireOptionGroupNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQuestionnaireOptionGroupDrafts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQuestionnaireOptionGroupVerify: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQuestionnaireOptionGroupRevise: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQuestionnaireOptionGroupHalted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQuestionnaireOptionGroupDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreQuestionnaireOptionGroup: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQuestionnaireOptionGroupApprove: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQuestionnaireOptionGroupStanding: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQuestionnaireOptionGroupCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQuestionnaireOptionGroupHalt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQuestionnaireOptionGroupComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQuestionnaireOptionGroupDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReopenQuestionnaireOptionGroup: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsQuestionnaireOptionGroups: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
+export declare const PermissionQuestionnaireSectionNew: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQuestionnaireSectionDrafts: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQuestionnaireSectionVerify: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQuestionnaireSectionRevise: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQuestionnaireSectionHalted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQuestionnaireSectionDiscarded: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionRestoreQuestionnaireSection: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQuestionnaireSectionApprove: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQuestionnaireSectionStanding: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQuestionnaireSectionCompleted: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQuestionnaireSectionHalt: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQuestionnaireSectionComplete: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQuestionnaireSectionDiscard: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionReopenQuestionnaireSection: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionQuestionnaireSectionCreateMagicLink: {
+    Uid: string;
+    Name: string;
+    Description: string;
+};
+export declare const PermissionsQuestionnaireSections: {
+    Uid: string;
+    Name: string;
+    Description: string;
+}[];
 export declare const PermissionsAll: {
     Uid: string;
     Name: string;

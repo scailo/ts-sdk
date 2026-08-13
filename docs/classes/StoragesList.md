@@ -2,7 +2,7 @@
 
 # Class: StoragesList
 
-Describes the message consisting of the list of records
+Container message for a collection of Storage records.
 
 **`Generated`**
 
@@ -66,7 +66,7 @@ Message\&lt;StoragesList\&gt;.constructor
 
 #### Defined in
 
-[src/storages.scailo_pb.ts:405](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/storages.scailo_pb.ts#L405)
+[src/storages.scailo_pb.ts:540](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/storages.scailo_pb.ts#L540)
 
 ## Properties
 
@@ -74,7 +74,9 @@ Message\&lt;StoragesList\&gt;.constructor
 
 • **list**: [`Storage`](Storage.md)[] = `[]`
 
-List of records
+**`Description`**
+
+An array of Storage records.
 
 **`Generated`**
 
@@ -82,7 +84,7 @@ from field: repeated Scailo.Storage list = 1;
 
 #### Defined in
 
-[src/storages.scailo_pb.ts:403](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/storages.scailo_pb.ts#L403)
+[src/storages.scailo_pb.ts:538](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/storages.scailo_pb.ts#L538)
 
 ___
 
@@ -92,7 +94,7 @@ ___
 
 #### Defined in
 
-[src/storages.scailo_pb.ts:412](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/storages.scailo_pb.ts#L412)
+[src/storages.scailo_pb.ts:547](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/storages.scailo_pb.ts#L547)
 
 ___
 
@@ -102,7 +104,7 @@ ___
 
 #### Defined in
 
-[src/storages.scailo_pb.ts:410](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/storages.scailo_pb.ts#L410)
+[src/storages.scailo_pb.ts:545](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/storages.scailo_pb.ts#L545)
 
 ___
 
@@ -112,7 +114,7 @@ ___
 
 #### Defined in
 
-[src/storages.scailo_pb.ts:411](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/storages.scailo_pb.ts#L411)
+[src/storages.scailo_pb.ts:546](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/storages.scailo_pb.ts#L546)
 
 ## Methods
 
@@ -400,7 +402,7 @@ ___
 
 #### Defined in
 
-[src/storages.scailo_pb.ts:428](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/storages.scailo_pb.ts#L428)
+[src/storages.scailo_pb.ts:563](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/storages.scailo_pb.ts#L563)
 
 ___
 
@@ -421,7 +423,7 @@ ___
 
 #### Defined in
 
-[src/storages.scailo_pb.ts:416](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/storages.scailo_pb.ts#L416)
+[src/storages.scailo_pb.ts:551](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/storages.scailo_pb.ts#L551)
 
 ___
 
@@ -442,7 +444,7 @@ ___
 
 #### Defined in
 
-[src/storages.scailo_pb.ts:420](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/storages.scailo_pb.ts#L420)
+[src/storages.scailo_pb.ts:555](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/storages.scailo_pb.ts#L555)
 
 ___
 
@@ -463,4 +465,4 @@ ___
 
 #### Defined in
 
-[src/storages.scailo_pb.ts:424](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/storages.scailo_pb.ts#L424)
+[src/storages.scailo_pb.ts:559](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/storages.scailo_pb.ts#L559)

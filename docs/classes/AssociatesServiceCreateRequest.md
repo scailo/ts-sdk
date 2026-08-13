@@ -2,7 +2,9 @@
 
 # Class: AssociatesServiceCreateRequest
 
-Describes the necessary data structure during creation of a associate
+Represents the structured payload required to initialize and create an associate record.
+Contains primary profile attributes, contact information, organizational mapping data,
+and operational metadata.
 
 **`Generated`**
 
@@ -83,77 +85,149 @@ Message\&lt;AssociatesServiceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:585](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/associates.scailo_pb.ts#L585)
+[src/associates.scailo_pb.ts:787](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/associates.scailo_pb.ts#L787)
 
 ## Properties
 
 ### anniversary
 
-• **anniversary**: `string` = `""`
+• `Optional` **anniversary**: `string`
 
-The associate's anniversary
+**`Optional`**
+
+**`Description`**
+
+The corporate or employment start anniversary date of the associate.
+
+**`Example`**
+
+```ts
+"Mon Jan 02 2016"
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+Must follow the specific string syntax format: `Day Month Date Year`.
 
 **`Generated`**
 
-from field: string anniversary = 23;
+from field: optional string anniversary = 23;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:576](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/associates.scailo_pb.ts#L576)
+[src/associates.scailo_pb.ts:769](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/associates.scailo_pb.ts#L769)
 
 ___
 
 ### birthday
 
-• **birthday**: `string` = `""`
+• `Optional` **birthday**: `string`
 
-The associate's birthday
+**`Optional`**
+
+**`Description`**
+
+The calendar date of birth of the associate.
+
+**`Example`**
+
+```ts
+"Mon Jan 02 2006"
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+Must follow the specific string syntax format: `Day Month Date Year`.
 
 **`Generated`**
 
-from field: string birthday = 22;
+from field: optional string birthday = 22;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:569](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/associates.scailo_pb.ts#L569)
+[src/associates.scailo_pb.ts:753](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/associates.scailo_pb.ts#L753)
 
 ___
 
 ### department
 
-• **department**: `string` = `""`
+• `Optional` **department**: `string`
 
-The department that the associates works in
+**`Optional`**
+
+**`Description`**
+
+The corporate department or division to which the associate is assigned.
+
+**`Example`**
+
+```ts
+"Field Operations"
+```
+
+**`Regex`**
+
+^[0-9A-Za-z ]*$
+
+**`Format`**
+
+Alphanumeric characters and spaces allowed. Maximum length of 256 characters.
 
 **`Generated`**
 
-from field: string department = 17;
+from field: optional string department = 17;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:530](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/associates.scailo_pb.ts#L530)
+[src/associates.scailo_pb.ts:673](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/associates.scailo_pb.ts#L673)
 
 ___
 
 ### description
 
-• **description**: `string` = `""`
+• `Optional` **description**: `string`
 
-A short description of the associate
+**`Optional`**
+
+**`Description`**
+
+A comprehensive text description, biography, or operational notes regarding the associate.
+
+**`Example`**
+
+```ts
+"This is a longer description about the associate"
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+Supports free-form UTF-8 text representation.
 
 **`Generated`**
 
-from field: string description = 24;
+from field: optional string description = 24;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:583](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/associates.scailo_pb.ts#L583)
+[src/associates.scailo_pb.ts:785](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/associates.scailo_pb.ts#L785)
 
 ___
 
 ### entityUuid
 
-• **entityUuid**: `string` = `""`
+• `Optional` **entityUuid**: `string`
 
 **`Optional`**
 
@@ -177,11 +251,11 @@ If provided, must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
-from field: string entity_uuid = 1;
+from field: optional string entity_uuid = 1;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:451](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/associates.scailo_pb.ts#L451)
+[src/associates.scailo_pb.ts:513](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/associates.scailo_pb.ts#L513)
 
 ___
 
@@ -189,7 +263,25 @@ ___
 
 • **firstName**: `string` = `""`
 
-The first name of the associate
+**`Mandatory`**
+
+**`Description`**
+
+The legal first name of the associate. Space characters are strictly prohibited.
+
+**`Example`**
+
+```ts
+"John"
+```
+
+**`Regex`**
+
+^[0-9A-Za-z]+$
+
+**`Format`**
+
+Alphanumeric characters only. Maximum length of 256 characters.
 
 **`Generated`**
 
@@ -197,71 +289,147 @@ from field: string first_name = 10;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:481](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/associates.scailo_pb.ts#L481)
+[src/associates.scailo_pb.ts:561](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/associates.scailo_pb.ts#L561)
 
 ___
 
 ### jobTitle
 
-• **jobTitle**: `string` = `""`
+• `Optional` **jobTitle**: `string`
 
-The job title of the associate
+**`Optional`**
+
+**`Description`**
+
+The professional job title held by the associate.
+
+**`Example`**
+
+```ts
+"Operations Manager"
+```
+
+**`Regex`**
+
+^[0-9A-Za-z ]*$
+
+**`Format`**
+
+Alphanumeric characters and spaces allowed. Maximum length of 256 characters.
 
 **`Generated`**
 
-from field: string job_title = 16;
+from field: optional string job_title = 16;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:523](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/associates.scailo_pb.ts#L523)
+[src/associates.scailo_pb.ts:657](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/associates.scailo_pb.ts#L657)
 
 ___
 
 ### lastName
 
-• **lastName**: `string` = `""`
+• `Optional` **lastName**: `string`
 
-The last name of the associate
+**`Optional`**
+
+**`Description`**
+
+The legal last name of the associate. Space characters are strictly prohibited.
+
+**`Example`**
+
+```ts
+"Doe"
+```
+
+**`Regex`**
+
+^[0-9A-Za-z]*$
+
+**`Format`**
+
+Alphanumeric characters only. Maximum length of 256 characters.
 
 **`Generated`**
 
-from field: string last_name = 12;
+from field: optional string last_name = 12;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:495](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/associates.scailo_pb.ts#L495)
+[src/associates.scailo_pb.ts:593](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/associates.scailo_pb.ts#L593)
 
 ___
 
 ### middleName
 
-• **middleName**: `string` = `""`
+• `Optional` **middleName**: `string`
 
-The middle name of the associate
+**`Optional`**
+
+**`Description`**
+
+The legal middle name of the associate. Space characters are strictly prohibited.
+
+**`Example`**
+
+```ts
+"Fitzgerald"
+```
+
+**`Regex`**
+
+^[0-9A-Za-z]*$
+
+**`Format`**
+
+Alphanumeric characters only. Maximum length of 256 characters.
 
 **`Generated`**
 
-from field: string middle_name = 11;
+from field: optional string middle_name = 11;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:488](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/associates.scailo_pb.ts#L488)
+[src/associates.scailo_pb.ts:577](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/associates.scailo_pb.ts#L577)
 
 ___
 
 ### orgName
 
-• **orgName**: `string` = `""`
+• `Optional` **orgName**: `string`
 
-The name of the organization that the associate works in. Will be autofilled if the associate is associated with either a client or a vendor
+**`Optional`**
+
+**`Description`**
+
+The display name of the organization the associate represents.
+
+**`Example`**
+
+```ts
+"Acme Inc"
+```
+
+**`Note`**
+
+If an explicit `org_ref_id` is supplied, this field will be automatically overwritten and populated by the backend.
+
+**`Regex`**
+
+^[0-9A-Za-z ]*$
+
+**`Format`**
+
+Alphanumeric characters and spaces allowed. Maximum length of 256 characters.
 
 **`Generated`**
 
-from field: string org_name = 15;
+from field: optional string org_name = 15;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:516](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/associates.scailo_pb.ts#L516)
+[src/associates.scailo_pb.ts:641](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/associates.scailo_pb.ts#L641)
 
 ___
 
@@ -269,7 +437,21 @@ ___
 
 • **orgRefFrom**: [`ASSOCIATE_ORG_REF_FROM`](../enums/ASSOCIATE_ORG_REF_FROM.md) = `ASSOCIATE_ORG_REF_FROM.ASSOCIATE_ORG_REF_FROM_ANY_UNSPECIFIED`
 
-The association with a vendor or a client
+**`Mandatory`**
+
+**`Description`**
+
+Identifies the type of external organization mapping (e.g., Client, Vendor, or None).
+
+**`Example`**
+
+```ts
+ASSOCIATE_ORG_REF_FROM_EMPTY
+```
+
+**`Format`**
+
+Must align with valid states within the ASSOCIATE_ORG_REF_FROM enum definition.
 
 **`Generated`**
 
@@ -277,79 +459,149 @@ from field: Scailo.ASSOCIATE_ORG_REF_FROM org_ref_from = 13;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:502](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/associates.scailo_pb.ts#L502)
+[src/associates.scailo_pb.ts:607](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/associates.scailo_pb.ts#L607)
 
 ___
 
 ### orgRefId
 
-• **orgRefId**: `bigint` = `protoInt64.zero`
+• `Optional` **orgRefId**: `bigint`
 
-The ID of the associated vendor or client
+**`Optional`**
+
+**`Description`**
+
+The numeric sequence identifier matching the targeted external Client or Vendor entity.
+
+**`Example`**
+
+```ts
+8923
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer. Evaluated and validated in conjunction with the `org_ref_from` selector.
 
 **`Generated`**
 
-from field: uint64 org_ref_id = 14;
+from field: optional uint64 org_ref_id = 14;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:509](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/associates.scailo_pb.ts#L509)
+[src/associates.scailo_pb.ts:623](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/associates.scailo_pb.ts#L623)
 
 ___
 
 ### personalEmail
 
-• **personalEmail**: `string` = `""`
+• `Optional` **personalEmail**: `string`
 
-The personal email address of the associate
+**`Optional`**
 
-[(buf.validate.field).string.email = true];
+**`Description`**
+
+The personal or non-work email address for the associate.
+
+**`Example`**
+
+```ts
+"j.doe@personal.com"
+```
+
+**`Regex`**
+
+^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
+
+**`Format`**
+
+If provided, must be a valid email address string.
 
 **`Generated`**
 
-from field: string personal_email = 21;
+from field: optional string personal_email = 21;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:562](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/associates.scailo_pb.ts#L562)
+[src/associates.scailo_pb.ts:737](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/associates.scailo_pb.ts#L737)
 
 ___
 
 ### personalPhone
 
-• **personalPhone**: `string` = `""`
+• `Optional` **personalPhone**: `string`
 
-The personal phone number of the associate
+**`Optional`**
+
+**`Description`**
+
+The personal or secondary mobile phone number for the associate.
+
+**`Example`**
+
+```ts
+"+12125550123"
+```
+
+**`Regex`**
+
+.+
+
+**`Format`**
+
+Non-empty string; adoption of standard international E.164 formats is highly recommended.
 
 **`Generated`**
 
-from field: string personal_phone = 20;
+from field: optional string personal_phone = 20;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:553](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/associates.scailo_pb.ts#L553)
+[src/associates.scailo_pb.ts:721](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/associates.scailo_pb.ts#L721)
 
 ___
 
 ### userComment
 
-• **userComment**: `string` = `""`
+• `Optional` **userComment**: `string`
 
-Stores any comment that the user might add during this operation
+**`Optional`**
+
+**`Description`**
+
+Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+
+**`Example`**
+
+```ts
+"This is a comment for audit purposes."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
-from field: string user_comment = 2;
+from field: optional string user_comment = 2;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:458](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/associates.scailo_pb.ts#L458)
+[src/associates.scailo_pb.ts:529](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/associates.scailo_pb.ts#L529)
 
 ___
 
 ### vaultFolderId
 
-• **vaultFolderId**: `bigint` = `protoInt64.zero`
+• `Optional` **vaultFolderId**: `bigint`
 
 **`Optional`**
 
@@ -373,45 +625,79 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 vault_folder_id = 9;
+from field: optional uint64 vault_folder_id = 9;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:474](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/associates.scailo_pb.ts#L474)
+[src/associates.scailo_pb.ts:545](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/associates.scailo_pb.ts#L545)
 
 ___
 
 ### workEmail
 
-• **workEmail**: `string` = `""`
+• `Optional` **workEmail**: `string`
 
-The work email address of the associate
+**`Optional`**
 
-[(buf.validate.field).string.email = true];
+**`Description`**
+
+The primary business-related email address for the associate.
+
+**`Example`**
+
+```ts
+"j.doe@corporate-hub.com"
+```
+
+**`Regex`**
+
+^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
+
+**`Format`**
+
+If provided, must be a valid email address string.
 
 **`Generated`**
 
-from field: string work_email = 19;
+from field: optional string work_email = 19;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:546](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/associates.scailo_pb.ts#L546)
+[src/associates.scailo_pb.ts:705](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/associates.scailo_pb.ts#L705)
 
 ___
 
 ### workPhone
 
-• **workPhone**: `string` = `""`
+• `Optional` **workPhone**: `string`
 
-The work phone number of the associate
+**`Optional`**
+
+**`Description`**
+
+The primary work or corporate telephone number for contacting the associate.
+
+**`Example`**
+
+```ts
+"+12125550123"
+```
+
+**`Regex`**
+
+.+
+
+**`Format`**
+
+Non-empty string; adoption of standard international E.164 formats is highly recommended.
 
 **`Generated`**
 
-from field: string work_phone = 18;
+from field: optional string work_phone = 18;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:537](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/associates.scailo_pb.ts#L537)
+[src/associates.scailo_pb.ts:689](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/associates.scailo_pb.ts#L689)
 
 ___
 
@@ -421,7 +707,7 @@ ___
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:592](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/associates.scailo_pb.ts#L592)
+[src/associates.scailo_pb.ts:794](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/associates.scailo_pb.ts#L794)
 
 ___
 
@@ -431,7 +717,7 @@ ___
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:590](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/associates.scailo_pb.ts#L590)
+[src/associates.scailo_pb.ts:792](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/associates.scailo_pb.ts#L792)
 
 ___
 
@@ -441,7 +727,7 @@ ___
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:591](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/associates.scailo_pb.ts#L591)
+[src/associates.scailo_pb.ts:793](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/associates.scailo_pb.ts#L793)
 
 ## Methods
 
@@ -729,7 +1015,7 @@ ___
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:625](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/associates.scailo_pb.ts#L625)
+[src/associates.scailo_pb.ts:827](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/associates.scailo_pb.ts#L827)
 
 ___
 
@@ -750,7 +1036,7 @@ ___
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:613](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/associates.scailo_pb.ts#L613)
+[src/associates.scailo_pb.ts:815](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/associates.scailo_pb.ts#L815)
 
 ___
 
@@ -771,7 +1057,7 @@ ___
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:617](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/associates.scailo_pb.ts#L617)
+[src/associates.scailo_pb.ts:819](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/associates.scailo_pb.ts#L819)
 
 ___
 
@@ -792,4 +1078,4 @@ ___
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:621](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/associates.scailo_pb.ts#L621)
+[src/associates.scailo_pb.ts:823](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/associates.scailo_pb.ts#L823)

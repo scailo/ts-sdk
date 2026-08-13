@@ -1,9 +1,12 @@
 import { Department, DepartmentsList, DepartmentsServiceCountReq, DepartmentsServiceCreateRequest, DepartmentsServiceFilterReq, DepartmentsServicePaginationReq, DepartmentsServicePaginationResponse, DepartmentsServiceSearchAllReq, DepartmentsServiceUpdateRequest } from "./departments.scailo_pb.js";
 import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
+import { VaultFolderAttachRequest } from "./vault_folders.scailo_pb.js";
 /**
  *
- * Describes the common methods applicable on each department
+ * The DepartmentsService manages the full lifecycle of departments.
+ * It provides standard CRUD operations alongside a robust state machine for
+ * verification, manager approval, and completion.
  *
  * @generated from service Scailo.DepartmentsService
  */
@@ -11,7 +14,18 @@ export declare const DepartmentsService: {
     readonly typeName: "Scailo.DepartmentsService";
     readonly methods: {
         /**
-         * Create and send for verification
+         * Creates a new record and immediately moves it to the verification workflow.
+         *
+         * This method validates all required fields.
+         * The record is created with a `STANDARD_LIFECYCLE_STATUS.PREVERIFY` status.
+         *
+         * **Side Effects:**
+         * - Generates a unique system UUID.
+         * - Records an audit log for the "Create" action.
+         * - May trigger automated verification workflows.
+         *
+         * **Errors:**
+         * - `INVALID_ARGUMENT`: If validation rules fail.
          *
          * @generated from rpc Scailo.DepartmentsService.Create
          */
@@ -217,7 +231,13 @@ export declare const DepartmentsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Reopen
+         * Reopens a finalized or closed record for further modifications.
+         *
+         * **Status Transition:** -> `REVISION`
+         *
+         * **Side Effects:**
+         * - Unlocks the record to allow edits.
+         * - Logs the required user comment into the audit trail for compliance tracking.
          *
          * @generated from rpc Scailo.DepartmentsService.Reopen
          */
@@ -238,6 +258,26 @@ export declare const DepartmentsService: {
         readonly commentAdd: {
             readonly name: "CommentAdd";
             readonly I: typeof IdentifierUUIDWithUserComment;
+            readonly O: typeof IdentifierResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Attaches a specified folder directly to a record without requiring a full revision workflow.
+         *
+         * This is a convenience API designed to bypass the traditional multi-step modification lifecycle
+         * (e.g., creating a revision, updating data, submitting for verification, and awaiting approval).
+         * It allows for the immediate, single-step association of a vault folder.
+         *
+         * **Side Effects & Lifecycle:**
+         * * The overall status of the record remains unchanged.
+         * * The record's modification timestamp is automatically updated to the current time.
+         * * An entry is appended to the record's audit log tracking this attachment.
+         *
+         * @generated from rpc Scailo.DepartmentsService.AttachVaultFolder
+         */
+        readonly attachVaultFolder: {
+            readonly name: "AttachVaultFolder";
+            readonly I: typeof VaultFolderAttachRequest;
             readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };

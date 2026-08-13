@@ -227,7 +227,16 @@ export declare class PurchasesReturnsServiceCreateRequest extends Message<Purcha
      */
     entityUuid: string;
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 2;
      */
@@ -281,7 +290,14 @@ export declare class PurchasesReturnsServiceCreateRequest extends Message<Purcha
      */
     locationId: bigint;
     /**
-     * The list of dynamic forms
+     *
+     * @optional
+     *
+     * @description A collection of dynamic form fields for organization-specific data.
+     *
+     * @example []
+     *
+     * @format An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
      *
      * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
      */
@@ -303,13 +319,31 @@ export declare class PurchasesReturnsServiceCreateRequest extends Message<Purcha
  */
 export declare class PurchasesReturnsServiceUpdateRequest extends Message<PurchasesReturnsServiceUpdateRequest> {
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 1;
      */
     userComment: string;
     /**
-     * The ID of the record that needs to be updated
+     *
+     * @mandatory
+     *
+     * @description The unique internal identifier of the target record that needs to be updated.
+     *
+     * @example 1024
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 id = 2;
      */
@@ -356,7 +390,14 @@ export declare class PurchasesReturnsServiceUpdateRequest extends Message<Purcha
      */
     referenceId: string;
     /**
-     * The list of dynamic forms
+     *
+     * @optional
+     *
+     * @description A collection of dynamic form fields for organization-specific data.
+     *
+     * @example []
+     *
+     * @format An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
      *
      * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
      */
@@ -503,7 +544,8 @@ export declare class PurchaseReturn extends Message<PurchaseReturn> {
      */
     list: PurchaseReturnItem[];
     /**
-     * The list of dynamic forms
+     *
+     * @description Collection of organization-specific dynamic data.
      *
      * @generated from field: repeated Scailo.FormFieldDatum form_data = 30;
      */
@@ -525,7 +567,16 @@ export declare class PurchaseReturn extends Message<PurchaseReturn> {
  */
 export declare class PurchasesReturnsServiceItemCreateRequest extends Message<PurchasesReturnsServiceItemCreateRequest> {
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 1;
      */
@@ -583,7 +634,16 @@ export declare class PurchasesReturnsServiceItemCreateRequest extends Message<Pu
  */
 export declare class PurchasesReturnsServiceItemUpdateRequest extends Message<PurchasesReturnsServiceItemUpdateRequest> {
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 1;
      */
@@ -659,7 +719,11 @@ export declare class PurchaseReturnItem extends Message<PurchaseReturnItem> {
     approvalMetadata?: ApprovalMetadata;
     /**
      *
-     * @description The approval state of the record
+     * @description A boolean flag indicating whether this specific record requires further administrative approval.
+     *
+     * @example false
+     *
+     * @format Boolean true or false.
      *
      * @generated from field: bool need_approval = 4;
      */
@@ -1797,7 +1861,10 @@ export declare class PurchasesReturnsServiceCountReq extends Message<PurchasesRe
      */
     familyId: bigint;
     /**
-     * The list of form data filters
+     *
+     * @optional
+     *
+     * @description Count based on dynamic form field values.
      *
      * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
      */

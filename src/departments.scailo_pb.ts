@@ -9,76 +9,76 @@ import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, 
 
 /**
  *
- * Describes the available sort keys
+ * Enumeration of fields available for sorting department search results.
  *
  * @generated from enum Scailo.DEPARTMENT_SORT_KEY
  */
 export enum DEPARTMENT_SORT_KEY {
   /**
-   * Fetch ordered results by id
+   * @description Default sort behavior (by internal ID).
    *
    * @generated from enum value: DEPARTMENT_SORT_KEY_ID_UNSPECIFIED = 0;
    */
   DEPARTMENT_SORT_KEY_ID_UNSPECIFIED = 0,
 
   /**
-   * Fetch ordered results by the creation timestamp
+   * @description Sort by the timestamp the record was initially created.
    *
    * @generated from enum value: DEPARTMENT_SORT_KEY_CREATED_AT = 1;
    */
   DEPARTMENT_SORT_KEY_CREATED_AT = 1,
 
   /**
-   * Fetch ordered results by the modified timestamp
+   * @description Sort by the timestamp the record was last modified.
    *
    * @generated from enum value: DEPARTMENT_SORT_KEY_MODIFIED_AT = 2;
    */
   DEPARTMENT_SORT_KEY_MODIFIED_AT = 2,
 
   /**
-   * Fetch ordered results by the approved on timestamp
+   * @description Sort by the official approval timestamp.
    *
    * @generated from enum value: DEPARTMENT_SORT_KEY_APPROVED_ON = 3;
    */
   DEPARTMENT_SORT_KEY_APPROVED_ON = 3,
 
   /**
-   * Fetch ordered results by the approved by field
+   * @description Sort by the system ID of the approving user.
    *
    * @generated from enum value: DEPARTMENT_SORT_KEY_APPROVED_BY = 4;
    */
   DEPARTMENT_SORT_KEY_APPROVED_BY = 4,
 
   /**
-   * Fetch ordered results by the approver's role ID
+   * @description Sort by the security role ID used by the approver.
    *
    * @generated from enum value: DEPARTMENT_SORT_KEY_APPROVER_ROLE_ID = 5;
    */
   DEPARTMENT_SORT_KEY_APPROVER_ROLE_ID = 5,
 
   /**
-   * Fetch ordered results by the approver's completed on timestamp
+   * @description Sort by the timestamp of record completion.
    *
    * @generated from enum value: DEPARTMENT_SORT_KEY_COMPLETED_ON = 6;
    */
   DEPARTMENT_SORT_KEY_COMPLETED_ON = 6,
 
   /**
-   * Fetch ordered results by the name
+   * @description Sort alphabetically by the user-provided name.
    *
    * @generated from enum value: DEPARTMENT_SORT_KEY_NAME = 10;
    */
   DEPARTMENT_SORT_KEY_NAME = 10,
 
   /**
-   * Fetch ordered results by the code
+   * @description Sort alphabetically by the user-provided code.
    *
    * @generated from enum value: DEPARTMENT_SORT_KEY_CODE = 11;
    */
   DEPARTMENT_SORT_KEY_CODE = 11,
 
   /**
-   * Fetch ordered results by the head user ID
+   * @description Sort by the user ID of the head.
    *
    * @generated from enum value: DEPARTMENT_SORT_KEY_HEAD_USER_ID = 12;
    */
@@ -100,7 +100,12 @@ proto3.util.setEnumType(DEPARTMENT_SORT_KEY, "Scailo.DEPARTMENT_SORT_KEY", [
 
 /**
  *
- * Describes the parameters necessary to create a record
+ * Request message for creating and establishing a new corporate Department.
+ * This record tracks organizational unit hierarchies, internal classification codes,
+ * leadership assignments, and document management paths within a specific tenant entity.
+ *
+ * **Note:** This is the primary entry point for HR, Operations, and Admins to
+ * provision new corporate branches, functional teams, or operational cost centers.
  *
  * @generated from message Scailo.DepartmentsServiceCreateRequest
  */
@@ -117,16 +122,25 @@ export class DepartmentsServiceCreateRequest extends Message<DepartmentsServiceC
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 1;
+   * @generated from field: optional string entity_uuid = 1;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 2;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 2;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
    *
@@ -140,33 +154,69 @@ export class DepartmentsServiceCreateRequest extends Message<DepartmentsServiceC
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 vault_folder_id = 9;
+   * @generated from field: optional uint64 vault_folder_id = 9;
    */
-  vaultFolderId = protoInt64.zero;
+  vaultFolderId?: bigint;
 
   /**
-   * The name of the department
+   *
+   * @mandatory
+   *
+   * @description The official or friendly name of the department.
+   *
+   * @example "Engineering and Architecture"
+   *
+   * @regex .+
+   *
+   * @format Must be a non-empty string.
    *
    * @generated from field: string name = 10;
    */
   name = "";
 
   /**
-   * The code of the department
+   *
+   * @mandatory
+   *
+   * @description The unique code or internal alphanumeric token used to classify the department for billing or budgeting.
+   *
+   * @example "DEPT-ENG-04"
+   *
+   * @regex .+
+   *
+   * @format Must be a non-empty string.
    *
    * @generated from field: string code = 11;
    */
   code = "";
 
   /**
-   * The ID of the user who is the department head of this department
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the user assigned as the department head.
+   *
+   * @example 8842
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer greater than zero.
    *
    * @generated from field: uint64 head_user_id = 12;
    */
   headUserId = protoInt64.zero;
 
   /**
-   * The description of the department
+   *
+   * @mandatory
+   *
+   * @description Expanded details outlining the core operational responsibilities, functions, or charter of the department.
+   *
+   * @example "Responsible for developing core cloud infrastructure and cross-platform software systems."
+   *
+   * @regex .+
+   *
+   * @format Must be a non-empty string.
    *
    * @generated from field: string description = 13;
    */
@@ -180,9 +230,9 @@ export class DepartmentsServiceCreateRequest extends Message<DepartmentsServiceC
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.DepartmentsServiceCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
     { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 12, name: "head_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
@@ -208,20 +258,44 @@ export class DepartmentsServiceCreateRequest extends Message<DepartmentsServiceC
 
 /**
  *
- * Describes the parameters necessary to update a record
+ * Request message for updating an existing Department record.
+ * Only applicable for records in `DRAFT` or `REVISION` states.
+ * This message allows for modifying the name, code, head user, and description
+ * of an established Department.
+ *
+ * **Note:** Only fields provided in the request will typically be updated.
+ * The unique system ID is required to locate the target record.
  *
  * @generated from message Scailo.DepartmentsServiceUpdateRequest
  */
 export class DepartmentsServiceUpdateRequest extends Message<DepartmentsServiceUpdateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * The ID of the record that needs to be updated
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target record that needs to be updated.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 id = 2;
    */
@@ -235,9 +309,9 @@ export class DepartmentsServiceUpdateRequest extends Message<DepartmentsServiceU
    *
    * @example true
    *
-   * @generated from field: bool notify_users = 3;
+   * @generated from field: optional bool notify_users = 3;
    */
-  notifyUsers = false;
+  notifyUsers?: boolean;
 
   /**
    *
@@ -251,37 +325,73 @@ export class DepartmentsServiceUpdateRequest extends Message<DepartmentsServiceU
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 vault_folder_id = 9;
+   * @generated from field: optional uint64 vault_folder_id = 9;
    */
-  vaultFolderId = protoInt64.zero;
+  vaultFolderId?: bigint;
 
   /**
-   * The name of the department
    *
-   * @generated from field: string name = 10;
+   * @optional
+   *
+   * @description The official or friendly name of the department.
+   *
+   * @example "Engineering and Architecture"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string name = 10;
    */
-  name = "";
+  name?: string;
 
   /**
-   * The code of the department
    *
-   * @generated from field: string code = 11;
+   * @optional
+   *
+   * @description The unique code or internal alphanumeric token used to classify the department for billing or budgeting.
+   *
+   * @example "DEPT-ENG-04"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string code = 11;
    */
-  code = "";
+  code?: string;
 
   /**
-   * The ID of the user who is the department head of this department
    *
-   * @generated from field: uint64 head_user_id = 12;
+   * @optional
+   *
+   * @description The unique internal identifier of the user assigned as the department head.
+   *
+   * @example 8842
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer greater than zero.
+   *
+   * @generated from field: optional uint64 head_user_id = 12;
    */
-  headUserId = protoInt64.zero;
+  headUserId?: bigint;
 
   /**
-   * The description of the department
    *
-   * @generated from field: string description = 13;
+   * @optional
+   *
+   * @description Expanded details outlining the core operational responsibilities, functions, or charter of the department.
+   *
+   * @example "Responsible for developing core cloud infrastructure and cross-platform software systems."
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string description = 13;
    */
-  description = "";
+  description?: string;
 
   constructor(data?: PartialMessage<DepartmentsServiceUpdateRequest>) {
     super();
@@ -291,14 +401,14 @@ export class DepartmentsServiceUpdateRequest extends Message<DepartmentsServiceU
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.DepartmentsServiceUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 2, name: "id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
-    { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 11, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 12, name: "head_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 13, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 11, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 12, name: "head_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 13, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): DepartmentsServiceUpdateRequest {
@@ -320,7 +430,7 @@ export class DepartmentsServiceUpdateRequest extends Message<DepartmentsServiceU
 
 /**
  *
- * Describes the parameters that are part of a standard response
+ * Represents a full Department within the system.
  *
  * @generated from message Scailo.Department
  */
@@ -388,28 +498,40 @@ export class Department extends Message<Department> {
   vaultFolderId = protoInt64.zero;
 
   /**
-   * The name of the department
+   *
+   * @description The official or friendly name of the department.
+   *
+   * @example "Engineering and Architecture"
    *
    * @generated from field: string name = 10;
    */
   name = "";
 
   /**
-   * The code of the department
+   *
+   * @description The unique code or internal alphanumeric token used to classify the department for billing or budgeting.
+   *
+   * @example "DEPT-ENG-04"
    *
    * @generated from field: string code = 11;
    */
   code = "";
 
   /**
-   * The ID of the user who is the department head of this department
+   *
+   * @description The unique internal identifier of the user assigned as the department head.
+   *
+   * @example 8842
    *
    * @generated from field: uint64 head_user_id = 12;
    */
   headUserId = protoInt64.zero;
 
   /**
-   * The description of the department
+   *
+   * @description Expanded details outlining the core operational responsibilities, functions, or charter of the department.
+   *
+   * @example "Responsible for developing core cloud infrastructure and cross-platform software systems."
    *
    * @generated from field: string description = 13;
    */
@@ -455,13 +577,13 @@ export class Department extends Message<Department> {
 
 /**
  *
- * Describes the message consisting of the list of departments
+ * Container message for a collection of Department records.
  *
  * @generated from message Scailo.DepartmentsList
  */
 export class DepartmentsList extends Message<DepartmentsList> {
   /**
-   * List of records
+   * @description An array of Department records.
    *
    * @generated from field: repeated Scailo.Department list = 1;
    */
@@ -497,7 +619,7 @@ export class DepartmentsList extends Message<DepartmentsList> {
 
 /**
  *
- * Describes a pagination request to retrieve records
+ * Pagination request for retrieving slices of Department records.
  *
  * @generated from message Scailo.DepartmentsServicePaginationReq
  */
@@ -510,9 +632,9 @@ export class DepartmentsServicePaginationReq extends Message<DepartmentsServiceP
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -542,9 +664,9 @@ export class DepartmentsServicePaginationReq extends Message<DepartmentsServiceP
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -554,9 +676,9 @@ export class DepartmentsServicePaginationReq extends Message<DepartmentsServiceP
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -564,16 +686,21 @@ export class DepartmentsServicePaginationReq extends Message<DepartmentsServiceP
    *
    * @description The specific field key to sort the results by.
    *
-   * @generated from field: Scailo.DEPARTMENT_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.DEPARTMENT_SORT_KEY sort_key = 5;
    */
-  sortKey = DEPARTMENT_SORT_KEY.DEPARTMENT_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: DEPARTMENT_SORT_KEY;
 
   /**
-   * The status of this department
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
+   * @optional
+   *
+   * @description Filter results by a specific lifecycle status.
+   *
+   * @example STANDING
+   *
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   constructor(data?: PartialMessage<DepartmentsServicePaginationReq>) {
     super();
@@ -583,12 +710,12 @@ export class DepartmentsServicePaginationReq extends Message<DepartmentsServiceP
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.DepartmentsServicePaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(DEPARTMENT_SORT_KEY) },
-    { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(DEPARTMENT_SORT_KEY), opt: true },
+    { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): DepartmentsServicePaginationReq {
@@ -610,7 +737,7 @@ export class DepartmentsServicePaginationReq extends Message<DepartmentsServiceP
 
 /**
  *
- * Describes the response to a pagination request
+ * Response message for paginated queries, including total counts for UI elements.
  *
  * @generated from message Scailo.DepartmentsServicePaginationResponse
  */
@@ -686,7 +813,12 @@ export class DepartmentsServicePaginationResponse extends Message<DepartmentsSer
 
 /**
  *
- * Describes the base request payload of a filter search
+ * Advanced filter request for searching and paginating departments using multiple logical criteria.
+ * This message encapsulates pagination controls, sorting keys, lifecycle status filters,
+ * timestamp ranges, and entity references.
+ *
+ * **Note:** This is the primary message layout used by the frontend and external API clients
+ * to build robust data-table queries, reporting views, and targeted record lookups.
  *
  * @generated from message Scailo.DepartmentsServiceFilterReq
  */
@@ -699,9 +831,9 @@ export class DepartmentsServiceFilterReq extends Message<DepartmentsServiceFilte
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -731,9 +863,9 @@ export class DepartmentsServiceFilterReq extends Message<DepartmentsServiceFilte
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -743,9 +875,9 @@ export class DepartmentsServiceFilterReq extends Message<DepartmentsServiceFilte
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -753,9 +885,9 @@ export class DepartmentsServiceFilterReq extends Message<DepartmentsServiceFilte
    *
    * @description The field used for sorting.
    *
-   * @generated from field: Scailo.DEPARTMENT_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.DEPARTMENT_SORT_KEY sort_key = 5;
    */
-  sortKey = DEPARTMENT_SORT_KEY.DEPARTMENT_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: DEPARTMENT_SORT_KEY;
 
   /**
    *
@@ -769,9 +901,9 @@ export class DepartmentsServiceFilterReq extends Message<DepartmentsServiceFilte
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_start = 101;
+   * @generated from field: optional uint64 creation_timestamp_start = 101;
    */
-  creationTimestampStart = protoInt64.zero;
+  creationTimestampStart?: bigint;
 
   /**
    *
@@ -785,9 +917,9 @@ export class DepartmentsServiceFilterReq extends Message<DepartmentsServiceFilte
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_end = 102;
+   * @generated from field: optional uint64 creation_timestamp_end = 102;
    */
-  creationTimestampEnd = protoInt64.zero;
+  creationTimestampEnd?: bigint;
 
   /**
    *
@@ -801,9 +933,9 @@ export class DepartmentsServiceFilterReq extends Message<DepartmentsServiceFilte
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_start = 103;
+   * @generated from field: optional uint64 modification_timestamp_start = 103;
    */
-  modificationTimestampStart = protoInt64.zero;
+  modificationTimestampStart?: bigint;
 
   /**
    *
@@ -817,9 +949,9 @@ export class DepartmentsServiceFilterReq extends Message<DepartmentsServiceFilte
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_end = 104;
+   * @generated from field: optional uint64 modification_timestamp_end = 104;
    */
-  modificationTimestampEnd = protoInt64.zero;
+  modificationTimestampEnd?: bigint;
 
   /**
    *
@@ -833,9 +965,9 @@ export class DepartmentsServiceFilterReq extends Message<DepartmentsServiceFilte
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 8;
+   * @generated from field: optional string entity_uuid = 8;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
    *
@@ -845,9 +977,9 @@ export class DepartmentsServiceFilterReq extends Message<DepartmentsServiceFilte
    *
    * @example STANDING
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   /**
    *
@@ -861,9 +993,9 @@ export class DepartmentsServiceFilterReq extends Message<DepartmentsServiceFilte
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_start = 11;
+   * @generated from field: optional uint64 approved_on_start = 11;
    */
-  approvedOnStart = protoInt64.zero;
+  approvedOnStart?: bigint;
 
   /**
    *
@@ -877,9 +1009,9 @@ export class DepartmentsServiceFilterReq extends Message<DepartmentsServiceFilte
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_end = 12;
+   * @generated from field: optional uint64 approved_on_end = 12;
    */
-  approvedOnEnd = protoInt64.zero;
+  approvedOnEnd?: bigint;
 
   /**
    *
@@ -893,9 +1025,9 @@ export class DepartmentsServiceFilterReq extends Message<DepartmentsServiceFilte
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_by_user_id = 13;
+   * @generated from field: optional uint64 approved_by_user_id = 13;
    */
-  approvedByUserId = protoInt64.zero;
+  approvedByUserId?: bigint;
 
   /**
    *
@@ -909,9 +1041,9 @@ export class DepartmentsServiceFilterReq extends Message<DepartmentsServiceFilte
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approver_role_id = 14;
+   * @generated from field: optional uint64 approver_role_id = 14;
    */
-  approverRoleId = protoInt64.zero;
+  approverRoleId?: bigint;
 
   /**
    *
@@ -925,9 +1057,9 @@ export class DepartmentsServiceFilterReq extends Message<DepartmentsServiceFilte
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 completed_on_start = 15;
+   * @generated from field: optional uint64 completed_on_start = 15;
    */
-  completedOnStart = protoInt64.zero;
+  completedOnStart?: bigint;
 
   /**
    *
@@ -941,30 +1073,57 @@ export class DepartmentsServiceFilterReq extends Message<DepartmentsServiceFilte
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 completed_on_end = 16;
+   * @generated from field: optional uint64 completed_on_end = 16;
    */
-  completedOnEnd = protoInt64.zero;
+  completedOnEnd?: bigint;
 
   /**
-   * The name of the department
    *
-   * @generated from field: string name = 20;
+   * @optional
+   *
+   * @description The official or friendly name of the department.
+   *
+   * @example "Engineering and Architecture"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string name = 20;
    */
-  name = "";
+  name?: string;
 
   /**
-   * The code of the department
    *
-   * @generated from field: string code = 21;
+   * @optional
+   *
+   * @description The unique code or internal alphanumeric token used to classify the department for billing or budgeting.
+   *
+   * @example "DEPT-ENG-04"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string code = 21;
    */
-  code = "";
+  code?: string;
 
   /**
-   * The user ID of the head
    *
-   * @generated from field: uint64 head_user_id = 22;
+   * @optional
+   *
+   * @description The unique internal identifier of the user assigned as the department head.
+   *
+   * @example 8842
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer greater than zero.
+   *
+   * @generated from field: optional uint64 head_user_id = 22;
    */
-  headUserId = protoInt64.zero;
+  headUserId?: bigint;
 
   constructor(data?: PartialMessage<DepartmentsServiceFilterReq>) {
     super();
@@ -974,26 +1133,26 @@ export class DepartmentsServiceFilterReq extends Message<DepartmentsServiceFilte
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.DepartmentsServiceFilterReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(DEPARTMENT_SORT_KEY) },
-    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
-    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 15, name: "completed_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "head_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(DEPARTMENT_SORT_KEY), opt: true },
+    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
+    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 15, name: "completed_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 22, name: "head_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): DepartmentsServiceFilterReq {
@@ -1015,7 +1174,13 @@ export class DepartmentsServiceFilterReq extends Message<DepartmentsServiceFilte
 
 /**
  *
- * Describes the base request payload of a count search
+ * Target filter request for counting department records matching specific logical criteria.
+ * This message encapsulates lifecycle status filters, timestamp ranges, workflow markers,
+ * and entity references to determine the total size of a targeted dataset.
+ *
+ * **Note:** This is the primary message layout used by backend calculation engines, reporting
+ * services, and frontend pagination headers to evaluate total record matches dynamically
+ * before or alongside retrieving paginated results.
  *
  * @generated from message Scailo.DepartmentsServiceCountReq
  */
@@ -1028,9 +1193,9 @@ export class DepartmentsServiceCountReq extends Message<DepartmentsServiceCountR
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -1044,9 +1209,9 @@ export class DepartmentsServiceCountReq extends Message<DepartmentsServiceCountR
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_start = 101;
+   * @generated from field: optional uint64 creation_timestamp_start = 101;
    */
-  creationTimestampStart = protoInt64.zero;
+  creationTimestampStart?: bigint;
 
   /**
    *
@@ -1060,9 +1225,9 @@ export class DepartmentsServiceCountReq extends Message<DepartmentsServiceCountR
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_end = 102;
+   * @generated from field: optional uint64 creation_timestamp_end = 102;
    */
-  creationTimestampEnd = protoInt64.zero;
+  creationTimestampEnd?: bigint;
 
   /**
    *
@@ -1076,9 +1241,9 @@ export class DepartmentsServiceCountReq extends Message<DepartmentsServiceCountR
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_start = 103;
+   * @generated from field: optional uint64 modification_timestamp_start = 103;
    */
-  modificationTimestampStart = protoInt64.zero;
+  modificationTimestampStart?: bigint;
 
   /**
    *
@@ -1092,9 +1257,9 @@ export class DepartmentsServiceCountReq extends Message<DepartmentsServiceCountR
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_end = 104;
+   * @generated from field: optional uint64 modification_timestamp_end = 104;
    */
-  modificationTimestampEnd = protoInt64.zero;
+  modificationTimestampEnd?: bigint;
 
   /**
    *
@@ -1108,9 +1273,9 @@ export class DepartmentsServiceCountReq extends Message<DepartmentsServiceCountR
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 8;
+   * @generated from field: optional string entity_uuid = 8;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
    *
@@ -1120,9 +1285,9 @@ export class DepartmentsServiceCountReq extends Message<DepartmentsServiceCountR
    *
    * @example STANDING
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   /**
    *
@@ -1136,9 +1301,9 @@ export class DepartmentsServiceCountReq extends Message<DepartmentsServiceCountR
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_start = 11;
+   * @generated from field: optional uint64 approved_on_start = 11;
    */
-  approvedOnStart = protoInt64.zero;
+  approvedOnStart?: bigint;
 
   /**
    *
@@ -1152,9 +1317,9 @@ export class DepartmentsServiceCountReq extends Message<DepartmentsServiceCountR
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_end = 12;
+   * @generated from field: optional uint64 approved_on_end = 12;
    */
-  approvedOnEnd = protoInt64.zero;
+  approvedOnEnd?: bigint;
 
   /**
    *
@@ -1168,9 +1333,9 @@ export class DepartmentsServiceCountReq extends Message<DepartmentsServiceCountR
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_by_user_id = 13;
+   * @generated from field: optional uint64 approved_by_user_id = 13;
    */
-  approvedByUserId = protoInt64.zero;
+  approvedByUserId?: bigint;
 
   /**
    *
@@ -1184,9 +1349,9 @@ export class DepartmentsServiceCountReq extends Message<DepartmentsServiceCountR
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approver_role_id = 14;
+   * @generated from field: optional uint64 approver_role_id = 14;
    */
-  approverRoleId = protoInt64.zero;
+  approverRoleId?: bigint;
 
   /**
    *
@@ -1200,9 +1365,9 @@ export class DepartmentsServiceCountReq extends Message<DepartmentsServiceCountR
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 completed_on_start = 15;
+   * @generated from field: optional uint64 completed_on_start = 15;
    */
-  completedOnStart = protoInt64.zero;
+  completedOnStart?: bigint;
 
   /**
    *
@@ -1216,30 +1381,57 @@ export class DepartmentsServiceCountReq extends Message<DepartmentsServiceCountR
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 completed_on_end = 16;
+   * @generated from field: optional uint64 completed_on_end = 16;
    */
-  completedOnEnd = protoInt64.zero;
+  completedOnEnd?: bigint;
 
   /**
-   * The name of the department
    *
-   * @generated from field: string name = 20;
+   * @optional
+   *
+   * @description The official or friendly name of the department.
+   *
+   * @example "Engineering and Architecture"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string name = 20;
    */
-  name = "";
+  name?: string;
 
   /**
-   * The code of the department
    *
-   * @generated from field: string code = 21;
+   * @optional
+   *
+   * @description The unique code or internal alphanumeric token used to classify the department for billing or budgeting.
+   *
+   * @example "DEPT-ENG-04"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string code = 21;
    */
-  code = "";
+  code?: string;
 
   /**
-   * The user ID of the head
    *
-   * @generated from field: uint64 head_user_id = 22;
+   * @optional
+   *
+   * @description The unique internal identifier of the user assigned as the department head.
+   *
+   * @example 8842
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer greater than zero.
+   *
+   * @generated from field: optional uint64 head_user_id = 22;
    */
-  headUserId = protoInt64.zero;
+  headUserId?: bigint;
 
   constructor(data?: PartialMessage<DepartmentsServiceCountReq>) {
     super();
@@ -1249,22 +1441,22 @@ export class DepartmentsServiceCountReq extends Message<DepartmentsServiceCountR
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.DepartmentsServiceCountReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
-    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
-    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 15, name: "completed_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "head_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
+    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
+    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 15, name: "completed_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 22, name: "head_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): DepartmentsServiceCountReq {
@@ -1286,7 +1478,13 @@ export class DepartmentsServiceCountReq extends Message<DepartmentsServiceCountR
 
 /**
  *
- * Describes the request payload for performing a generic search operation on records
+ * Broad-spectrum search and lookup request for locating and paginating currencies via text matching.
+ * This message encapsulates full-text query parameters, pagination controls, sorting keys,
+ * lifecycle status constraints, and other core references.
+ *
+ * **Note:** This is the primary message layout used for global search bars, fast-filtering dashboard
+ * inputs, and omni-box search utilities where users need to match loose textual terms against
+ * records while retaining structural pagination.
  *
  * @generated from message Scailo.DepartmentsServiceSearchAllReq
  */
@@ -1299,9 +1497,9 @@ export class DepartmentsServiceSearchAllReq extends Message<DepartmentsServiceSe
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -1331,9 +1529,9 @@ export class DepartmentsServiceSearchAllReq extends Message<DepartmentsServiceSe
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -1343,9 +1541,9 @@ export class DepartmentsServiceSearchAllReq extends Message<DepartmentsServiceSe
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -1353,9 +1551,9 @@ export class DepartmentsServiceSearchAllReq extends Message<DepartmentsServiceSe
    *
    * @description The field used for sorting.
    *
-   * @generated from field: Scailo.DEPARTMENT_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.DEPARTMENT_SORT_KEY sort_key = 5;
    */
-  sortKey = DEPARTMENT_SORT_KEY.DEPARTMENT_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: DEPARTMENT_SORT_KEY;
 
   /**
    *
@@ -1369,9 +1567,9 @@ export class DepartmentsServiceSearchAllReq extends Message<DepartmentsServiceSe
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 6;
+   * @generated from field: optional string entity_uuid = 6;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
    *
@@ -1381,13 +1579,13 @@ export class DepartmentsServiceSearchAllReq extends Message<DepartmentsServiceSe
    *
    * @example STANDING
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   /**
    *
-   * @mandatory
+   * @optional
    *
    * @description The search string to match against reference IDs.
    *
@@ -1397,9 +1595,9 @@ export class DepartmentsServiceSearchAllReq extends Message<DepartmentsServiceSe
    *
    * @format: May contain any UTF-8 characters.
    *
-   * @generated from field: string search_key = 11;
+   * @generated from field: optional string search_key = 11;
    */
-  searchKey = "";
+  searchKey?: string;
 
   constructor(data?: PartialMessage<DepartmentsServiceSearchAllReq>) {
     super();
@@ -1409,14 +1607,14 @@ export class DepartmentsServiceSearchAllReq extends Message<DepartmentsServiceSe
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.DepartmentsServiceSearchAllReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(DEPARTMENT_SORT_KEY) },
-    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
-    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(DEPARTMENT_SORT_KEY), opt: true },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
+    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): DepartmentsServiceSearchAllReq {

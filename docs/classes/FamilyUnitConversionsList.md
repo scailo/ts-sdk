@@ -2,7 +2,7 @@
 
 # Class: FamilyUnitConversionsList
 
-Describes the message consisting of the list of family unit conversions
+Represents a collection payload encapsulating multiple family unit conversion rules.
 
 **`Generated`**
 
@@ -66,7 +66,7 @@ Message\&lt;FamilyUnitConversionsList\&gt;.constructor
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2867](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2867)
+[src/families.scailo_pb.ts:3823](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3823)
 
 ## Properties
 
@@ -74,7 +74,13 @@ Message\&lt;FamilyUnitConversionsList\&gt;.constructor
 
 • **list**: [`FamilyUnitConversion`](FamilyUnitConversion.md)[] = `[]`
 
-List of records
+**`Description`**
+
+An array containing the requested family unit conversion records.
+
+**`Format`**
+
+Repeated array of FamilyUnitConversion message blocks.
 
 **`Generated`**
 
@@ -82,7 +88,7 @@ from field: repeated Scailo.FamilyUnitConversion list = 1;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2865](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2865)
+[src/families.scailo_pb.ts:3821](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3821)
 
 ___
 
@@ -92,7 +98,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2874](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2874)
+[src/families.scailo_pb.ts:3830](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3830)
 
 ___
 
@@ -102,7 +108,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2872](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2872)
+[src/families.scailo_pb.ts:3828](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3828)
 
 ___
 
@@ -112,7 +118,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2873](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2873)
+[src/families.scailo_pb.ts:3829](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3829)
 
 ## Methods
 
@@ -400,7 +406,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2890](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2890)
+[src/families.scailo_pb.ts:3846](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3846)
 
 ___
 
@@ -421,7 +427,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2878](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2878)
+[src/families.scailo_pb.ts:3834](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3834)
 
 ___
 
@@ -442,7 +448,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2882](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2882)
+[src/families.scailo_pb.ts:3838](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3838)
 
 ___
 
@@ -463,4 +469,4 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2886](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2886)
+[src/families.scailo_pb.ts:3842](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3842)

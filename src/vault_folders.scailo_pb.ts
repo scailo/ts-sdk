@@ -26,7 +26,16 @@ export class VaultFolderAddRequest extends Message<VaultFolderAddRequest> {
   entityUuid = "";
 
   /**
-   * Stores any comment that the user might add during this operation
+   *
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
    *
    * @generated from field: string user_comment = 2;
    */
@@ -527,6 +536,73 @@ export class VaultFolderDownload extends Message<VaultFolderDownload> {
 
   static equals(a: VaultFolderDownload | PlainMessage<VaultFolderDownload> | undefined, b: VaultFolderDownload | PlainMessage<VaultFolderDownload> | undefined): boolean {
     return proto3.util.equals(VaultFolderDownload, a, b);
+  }
+}
+
+/**
+ *
+ * Describes the message that allows a folder to be attached to a resource
+ *
+ * @generated from message Scailo.VaultFolderAttachRequest
+ */
+export class VaultFolderAttachRequest extends Message<VaultFolderAttachRequest> {
+  /**
+   *
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: string user_comment = 2;
+   */
+  userComment = "";
+
+  /**
+   * The UUID of the folder that needs to be attached
+   *
+   * @generated from field: string folder_uuid = 10;
+   */
+  folderUuid = "";
+
+  /**
+   * The UUID of the resource to which the folder is attached
+   *
+   * @generated from field: string resource_uuid = 20;
+   */
+  resourceUuid = "";
+
+  constructor(data?: PartialMessage<VaultFolderAttachRequest>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.VaultFolderAttachRequest";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "folder_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 20, name: "resource_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): VaultFolderAttachRequest {
+    return new VaultFolderAttachRequest().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): VaultFolderAttachRequest {
+    return new VaultFolderAttachRequest().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): VaultFolderAttachRequest {
+    return new VaultFolderAttachRequest().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: VaultFolderAttachRequest | PlainMessage<VaultFolderAttachRequest> | undefined, b: VaultFolderAttachRequest | PlainMessage<VaultFolderAttachRequest> | undefined): boolean {
+    return proto3.util.equals(VaultFolderAttachRequest, a, b);
   }
 }
 

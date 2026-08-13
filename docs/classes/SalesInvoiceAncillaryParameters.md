@@ -2,7 +2,9 @@
 
 # Class: SalesInvoiceAncillaryParameters
 
-Stores the UUID references of the record
+Represents a read-only container for universally unique identifiers (UUIDs) of related external entities.
+This message securely exposes the downstream linkages (like the source order or currency) to external
+clients or frontend interfaces without revealing internal sequential IDs.
 
 **`Generated`**
 
@@ -67,7 +69,7 @@ Message\&lt;SalesInvoiceAncillaryParameters\&gt;.constructor
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:700](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L700)
+[src/sales_invoices.scailo_pb.ts:948](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L948)
 
 ## Properties
 
@@ -75,7 +77,25 @@ Message\&lt;SalesInvoiceAncillaryParameters\&gt;.constructor
 
 • **currencyUuid**: `string` = `""`
 
-The UUID of the currency (the UUID of the associated currency)
+**`Mandatory`**
+
+**`Description`**
+
+The globally unique identifier (UUID) of the currency used for financial calculations within this invoice.
+
+**`Example`**
+
+```ts
+"772a8422-e18b-42d4-a815-446655442222"
+```
+
+**`Regex`**
+
+^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+
+**`Format`**
+
+Valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
@@ -83,7 +103,7 @@ from field: string currency_uuid = 214;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:698](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L698)
+[src/sales_invoices.scailo_pb.ts:946](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L946)
 
 ___
 
@@ -91,7 +111,25 @@ ___
 
 • **refUuid**: `string` = `""`
 
-The UUID of the ref_id (the UUID of the associated ref_id)
+**`Mandatory`**
+
+**`Description`**
+
+The globally unique identifier (UUID) of the associated source document (e.g., the parent Sales Order).
+
+**`Example`**
+
+```ts
+"661f9511-f39c-42d5-b827-557766551111"
+```
+
+**`Regex`**
+
+^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+
+**`Format`**
+
+Valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
@@ -99,7 +137,7 @@ from field: string ref_uuid = 213;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:691](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L691)
+[src/sales_invoices.scailo_pb.ts:930](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L930)
 
 ___
 
@@ -109,7 +147,7 @@ ___
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:707](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L707)
+[src/sales_invoices.scailo_pb.ts:955](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L955)
 
 ___
 
@@ -119,7 +157,7 @@ ___
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:705](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L705)
+[src/sales_invoices.scailo_pb.ts:953](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L953)
 
 ___
 
@@ -129,7 +167,7 @@ ___
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:706](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L706)
+[src/sales_invoices.scailo_pb.ts:954](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L954)
 
 ## Methods
 
@@ -417,7 +455,7 @@ ___
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:724](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L724)
+[src/sales_invoices.scailo_pb.ts:972](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L972)
 
 ___
 
@@ -438,7 +476,7 @@ ___
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:712](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L712)
+[src/sales_invoices.scailo_pb.ts:960](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L960)
 
 ___
 
@@ -459,7 +497,7 @@ ___
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:716](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L716)
+[src/sales_invoices.scailo_pb.ts:964](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L964)
 
 ___
 
@@ -480,4 +518,4 @@ ___
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:720](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L720)
+[src/sales_invoices.scailo_pb.ts:968](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L968)

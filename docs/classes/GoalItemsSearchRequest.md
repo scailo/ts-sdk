@@ -79,7 +79,7 @@ Message\&lt;GoalItemsSearchRequest\&gt;.constructor
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1357](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goals.scailo_pb.ts#L1357)
+[src/goals.scailo_pb.ts:1421](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goals.scailo_pb.ts#L1421)
 
 ## Properties
 
@@ -95,7 +95,7 @@ from field: uint64 approved_by_user_id = 12;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1327](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goals.scailo_pb.ts#L1327)
+[src/goals.scailo_pb.ts:1391](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goals.scailo_pb.ts#L1391)
 
 ___
 
@@ -111,7 +111,7 @@ from field: uint64 approved_on_end = 11;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1320](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goals.scailo_pb.ts#L1320)
+[src/goals.scailo_pb.ts:1384](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goals.scailo_pb.ts#L1384)
 
 ___
 
@@ -127,7 +127,7 @@ from field: uint64 approved_on_start = 10;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1313](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goals.scailo_pb.ts#L1313)
+[src/goals.scailo_pb.ts:1377](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goals.scailo_pb.ts#L1377)
 
 ___
 
@@ -143,7 +143,7 @@ from field: uint64 approver_role_id = 13;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1334](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goals.scailo_pb.ts#L1334)
+[src/goals.scailo_pb.ts:1398](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goals.scailo_pb.ts#L1398)
 
 ___
 
@@ -177,7 +177,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1245](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goals.scailo_pb.ts#L1245)
+[src/goals.scailo_pb.ts:1309](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goals.scailo_pb.ts#L1309)
 
 ___
 
@@ -211,7 +211,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1299](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goals.scailo_pb.ts#L1299)
+[src/goals.scailo_pb.ts:1363](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goals.scailo_pb.ts#L1363)
 
 ___
 
@@ -227,7 +227,7 @@ from field: uint64 goal_id = 20;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1341](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goals.scailo_pb.ts#L1341)
+[src/goals.scailo_pb.ts:1405](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goals.scailo_pb.ts#L1405)
 
 ___
 
@@ -253,7 +253,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1229](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goals.scailo_pb.ts#L1229)
+[src/goals.scailo_pb.ts:1293](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goals.scailo_pb.ts#L1293)
 
 ___
 
@@ -269,7 +269,7 @@ from field: uint64 label_id = 21;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1348](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goals.scailo_pb.ts#L1348)
+[src/goals.scailo_pb.ts:1412](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goals.scailo_pb.ts#L1412)
 
 ___
 
@@ -303,7 +303,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1261](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goals.scailo_pb.ts#L1261)
+[src/goals.scailo_pb.ts:1325](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goals.scailo_pb.ts#L1325)
 
 ___
 
@@ -319,7 +319,7 @@ from field: string search_key = 40;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1355](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goals.scailo_pb.ts#L1355)
+[src/goals.scailo_pb.ts:1419](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goals.scailo_pb.ts#L1419)
 
 ___
 
@@ -339,7 +339,7 @@ from field: Scailo.GOAL_ITEM_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1283](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goals.scailo_pb.ts#L1283)
+[src/goals.scailo_pb.ts:1347](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goals.scailo_pb.ts#L1347)
 
 ___
 
@@ -365,7 +365,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1273](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goals.scailo_pb.ts#L1273)
+[src/goals.scailo_pb.ts:1337](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goals.scailo_pb.ts#L1337)
 
 ___
 
@@ -381,7 +381,7 @@ from field: Scailo.GOAL_ITEM_STATUS status = 7;
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1306](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goals.scailo_pb.ts#L1306)
+[src/goals.scailo_pb.ts:1370](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goals.scailo_pb.ts#L1370)
 
 ___
 
@@ -391,7 +391,7 @@ ___
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1364](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goals.scailo_pb.ts#L1364)
+[src/goals.scailo_pb.ts:1428](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goals.scailo_pb.ts#L1428)
 
 ___
 
@@ -401,7 +401,7 @@ ___
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1362](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goals.scailo_pb.ts#L1362)
+[src/goals.scailo_pb.ts:1426](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goals.scailo_pb.ts#L1426)
 
 ___
 
@@ -411,7 +411,7 @@ ___
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1363](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goals.scailo_pb.ts#L1363)
+[src/goals.scailo_pb.ts:1427](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goals.scailo_pb.ts#L1427)
 
 ## Methods
 
@@ -699,7 +699,7 @@ ___
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1393](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goals.scailo_pb.ts#L1393)
+[src/goals.scailo_pb.ts:1457](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goals.scailo_pb.ts#L1457)
 
 ___
 
@@ -720,7 +720,7 @@ ___
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1381](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goals.scailo_pb.ts#L1381)
+[src/goals.scailo_pb.ts:1445](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goals.scailo_pb.ts#L1445)
 
 ___
 
@@ -741,7 +741,7 @@ ___
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1385](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goals.scailo_pb.ts#L1385)
+[src/goals.scailo_pb.ts:1449](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goals.scailo_pb.ts#L1449)
 
 ___
 
@@ -762,4 +762,4 @@ ___
 
 #### Defined in
 
-[src/goals.scailo_pb.ts:1389](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goals.scailo_pb.ts#L1389)
+[src/goals.scailo_pb.ts:1453](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goals.scailo_pb.ts#L1453)

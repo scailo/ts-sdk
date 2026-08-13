@@ -2,7 +2,12 @@
 
 # Class: SalesInvoiceDispatchedStatistics
 
-Describes the dispatched statistics of the sales invoice
+Represents the reconciliation metrics for a specific family within a Sales Invoice.
+This message tracks the variance between the financial obligation (what the buyer is being billed for)
+and the physical fulfillment (what has actually been shipped via linked Goods Dispatches).
+
+**Note:** This statistical comparison is crucial for identifying partial shipments, backorders,
+or potential billing discrepancies before finalizing an invoice.
 
 **`Generated`**
 
@@ -68,7 +73,7 @@ Message\&lt;SalesInvoiceDispatchedStatistics\&gt;.constructor
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:3517](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L3517)
+[src/sales_invoices.scailo_pb.ts:4678](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L4678)
 
 ## Properties
 
@@ -76,7 +81,25 @@ Message\&lt;SalesInvoiceDispatchedStatistics\&gt;.constructor
 
 • **dispatchedQuantity**: `bigint` = `protoInt64.zero`
 
-Stores the dispatched quantity
+**`Mandatory`**
+
+**`Description`**
+
+The cumulative physical quantity of this family that has been successfully shipped or issued from the warehouse (aggregated across all linked Goods Dispatches). Represented in the system's internal base unit of measure (stored in subunits/cents).
+
+**`Example`**
+
+```ts
+10000
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -84,7 +107,7 @@ from field: uint64 dispatched_quantity = 3;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:3515](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L3515)
+[src/sales_invoices.scailo_pb.ts:4676](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L4676)
 
 ___
 
@@ -92,7 +115,15 @@ ___
 
 • **familyId**: `bigint` = `protoInt64.zero`
 
-Stores the ID of the family
+**`Description`**
+
+The unique internal identifier of the specific family or catalog item being analyzed.
+
+**`Example`**
+
+```ts
+505
+```
 
 **`Generated`**
 
@@ -100,7 +131,7 @@ from field: uint64 family_id = 1;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:3501](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L3501)
+[src/sales_invoices.scailo_pb.ts:4644](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L4644)
 
 ___
 
@@ -108,7 +139,25 @@ ___
 
 • **invoicedQuantity**: `bigint` = `protoInt64.zero`
 
-Stores the invoiced quantity
+**`Mandatory`**
+
+**`Description`**
+
+The total quantity of this family that has been formally billed on the invoice. Represented in the system's internal base unit of measure (stored in subunits/cents).
+
+**`Example`**
+
+```ts
+10000
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -116,7 +165,7 @@ from field: uint64 invoiced_quantity = 2;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:3508](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L3508)
+[src/sales_invoices.scailo_pb.ts:4660](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L4660)
 
 ___
 
@@ -126,7 +175,7 @@ ___
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:3524](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L3524)
+[src/sales_invoices.scailo_pb.ts:4685](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L4685)
 
 ___
 
@@ -136,7 +185,7 @@ ___
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:3522](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L3522)
+[src/sales_invoices.scailo_pb.ts:4683](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L4683)
 
 ___
 
@@ -146,7 +195,7 @@ ___
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:3523](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L3523)
+[src/sales_invoices.scailo_pb.ts:4684](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L4684)
 
 ## Methods
 
@@ -434,7 +483,7 @@ ___
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:3542](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L3542)
+[src/sales_invoices.scailo_pb.ts:4703](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L4703)
 
 ___
 
@@ -455,7 +504,7 @@ ___
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:3530](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L3530)
+[src/sales_invoices.scailo_pb.ts:4691](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L4691)
 
 ___
 
@@ -476,7 +525,7 @@ ___
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:3534](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L3534)
+[src/sales_invoices.scailo_pb.ts:4695](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L4695)
 
 ___
 
@@ -497,4 +546,4 @@ ___
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:3538](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L3538)
+[src/sales_invoices.scailo_pb.ts:4699](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L4699)

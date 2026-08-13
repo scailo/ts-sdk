@@ -2,7 +2,8 @@
 
 # Class: SalesInvoiceItemsSearchRequest
 
-Describes the request payload to retrieve approved or unapproved items.
+Request payload structure used to search and filter Sales Invoice Item records.
+Supports pagination controls, tenancy isolation, status grouping, and text-based matching.
 
 **`Generated`**
 
@@ -82,103 +83,211 @@ Message\&lt;SalesInvoiceItemsSearchRequest\&gt;.constructor
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:3369](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L3369)
+[src/sales_invoices.scailo_pb.ts:4503](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L4503)
 
 ## Properties
 
 ### approvedByUserId
 
-• **approvedByUserId**: `bigint` = `protoInt64.zero`
+• `Optional` **approvedByUserId**: `bigint`
 
-The ID of the approver
+**`Optional`**
+
+**`Description`**
+
+Filter by the specific user ID who approved the records.
+
+**`Example`**
+
+```ts
+501
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 approved_by_user_id = 12;
+from field: optional uint64 approved_by_user_id = 12;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:3318](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L3318)
+[src/sales_invoices.scailo_pb.ts:4389](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L4389)
 
 ___
 
 ### approvedOnEnd
 
-• **approvedOnEnd**: `bigint` = `protoInt64.zero`
+• `Optional` **approvedOnEnd**: `bigint`
 
-The end range of approved timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records approved ON or BEFORE this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1704067199
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 approved_on_end = 11;
+from field: optional uint64 approved_on_end = 11;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:3311](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L3311)
+[src/sales_invoices.scailo_pb.ts:4373](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L4373)
 
 ___
 
 ### approvedOnStart
 
-• **approvedOnStart**: `bigint` = `protoInt64.zero`
+• `Optional` **approvedOnStart**: `bigint`
 
-The start range of approved timestamp
+**`Optional`**
+
+**`Description`**
+
+Filter records approved ON or AFTER this UNIX timestamp.
+
+**`Example`**
+
+```ts
+1672531200
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 approved_on_start = 10;
+from field: optional uint64 approved_on_start = 10;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:3304](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L3304)
+[src/sales_invoices.scailo_pb.ts:4357](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L4357)
 
 ___
 
 ### approverRoleId
 
-• **approverRoleId**: `bigint` = `protoInt64.zero`
+• `Optional` **approverRoleId**: `bigint`
 
-The role ID of the approver
+**`Optional`**
+
+**`Description`**
+
+Filter by the role ID of the approver.
+
+**`Example`**
+
+```ts
+5
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 approver_role_id = 13;
+from field: optional uint64 approver_role_id = 13;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:3325](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L3325)
+[src/sales_invoices.scailo_pb.ts:4405](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L4405)
 
 ___
 
 ### clientFamilyCode
 
-• **clientFamilyCode**: `string` = `""`
+• `Optional` **clientFamilyCode**: `string`
 
-Stores the family code as given by the client
+**`Optional`**
+
+**`Description`**
+
+Fuzzy match for the client's specific alphanumeric part number, SKU, or family code.
+
+**`Example`**
+
+```ts
+"CLI-SKU-992"
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
-from field: string client_family_code = 25;
+from field: optional string client_family_code = 25;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:3353](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L3353)
+[src/sales_invoices.scailo_pb.ts:4469](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L4469)
 
 ___
 
 ### clientUomId
 
-• **clientUomId**: `bigint` = `protoInt64.zero`
+• `Optional` **clientUomId**: `bigint`
 
-The ID of the client's unit of material
+**`Optional`**
+
+**`Description`**
+
+Filter line items requesting a specific client Unit of Measure (UOM).
+
+**`Example`**
+
+```ts
+12
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 client_uom_id = 23;
+from field: optional uint64 client_uom_id = 23;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:3346](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L3346)
+[src/sales_invoices.scailo_pb.ts:4453](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L4453)
 
 ___
 
@@ -212,13 +321,13 @@ from field: int64 count = 2;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:3236](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L3236)
+[src/sales_invoices.scailo_pb.ts:4277](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L4277)
 
 ___
 
 ### entityUuid
 
-• **entityUuid**: `string` = `""`
+• `Optional` **entityUuid**: `string`
 
 **`Optional`**
 
@@ -242,33 +351,51 @@ If provided, must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
-from field: string entity_uuid = 6;
+from field: optional string entity_uuid = 6;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:3290](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L3290)
+[src/sales_invoices.scailo_pb.ts:4331](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L4331)
 
 ___
 
 ### familyId
 
-• **familyId**: `bigint` = `protoInt64.zero`
+• `Optional` **familyId**: `bigint`
 
-The ID of the family
+**`Optional`**
+
+**`Description`**
+
+Filter line items belonging to a specific family.
+
+**`Example`**
+
+```ts
+505
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 family_id = 21;
+from field: optional uint64 family_id = 21;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:3339](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L3339)
+[src/sales_invoices.scailo_pb.ts:4437](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L4437)
 
 ___
 
 ### isActive
 
-• **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
+• `Optional` **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md)
 
 **`Optional`**
 
@@ -284,17 +411,17 @@ ANY
 
 **`Generated`**
 
-from field: Scailo.BOOL_FILTER is_active = 1;
+from field: optional Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:3220](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L3220)
+[src/sales_invoices.scailo_pb.ts:4261](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L4261)
 
 ___
 
 ### offset
 
-• **offset**: `bigint` = `protoInt64.zero`
+• `Optional` **offset**: `bigint`
 
 **`Optional`**
 
@@ -318,49 +445,83 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 offset = 3;
+from field: optional uint64 offset = 3;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:3252](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L3252)
+[src/sales_invoices.scailo_pb.ts:4293](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L4293)
 
 ___
 
 ### salesInvoiceId
 
-• **salesInvoiceId**: `bigint` = `protoInt64.zero`
+• `Optional` **salesInvoiceId**: `bigint`
 
-The ID of the sales invoice
+**`Optional`**
+
+**`Description`**
+
+Filter line items belonging to a specific parent sales invoice.
+
+**`Example`**
+
+```ts
+1024
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 sales_invoice_id = 20;
+from field: optional uint64 sales_invoice_id = 20;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:3332](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L3332)
+[src/sales_invoices.scailo_pb.ts:4421](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L4421)
 
 ___
 
 ### searchKey
 
-• **searchKey**: `string` = `""`
+• `Optional` **searchKey**: `string`
 
-Describes the key with which the search operation needs to be performed
+**`Optional`**
+
+**`Description`**
+
+The search string to match against reference IDs.
+
+**`Example`**
+
+```ts
+"Medical 2023"
+```
+
+**`Regex`**
+
+.*
+
+@format: May contain any UTF-8 characters.
 
 **`Generated`**
 
-from field: string search_key = 40;
+from field: optional string search_key = 40;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:3367](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L3367)
+[src/sales_invoices.scailo_pb.ts:4501](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L4501)
 
 ___
 
 ### sortKey
 
-• **sortKey**: [`SALES_INVOICE_ITEM_SORT_KEY`](../enums/SALES_INVOICE_ITEM_SORT_KEY.md) = `SALES_INVOICE_ITEM_SORT_KEY.SALES_INVOICE_ITEM_SORT_KEY_ID_UNSPECIFIED`
+• `Optional` **sortKey**: [`SALES_INVOICE_ITEM_SORT_KEY`](../enums/SALES_INVOICE_ITEM_SORT_KEY.md)
 
 **`Optional`**
 
@@ -370,17 +531,17 @@ The field used for sorting.
 
 **`Generated`**
 
-from field: Scailo.SALES_INVOICE_ITEM_SORT_KEY sort_key = 5;
+from field: optional Scailo.SALES_INVOICE_ITEM_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:3274](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L3274)
+[src/sales_invoices.scailo_pb.ts:4315](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L4315)
 
 ___
 
 ### sortOrder
 
-• **sortOrder**: [`SORT_ORDER`](../enums/SORT_ORDER.md) = `SORT_ORDER.ASCENDING_UNSPECIFIED`
+• `Optional` **sortOrder**: [`SORT_ORDER`](../enums/SORT_ORDER.md)
 
 **`Optional`**
 
@@ -396,43 +557,65 @@ DESCENDING
 
 **`Generated`**
 
-from field: Scailo.SORT_ORDER sort_order = 4;
+from field: optional Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:3264](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L3264)
+[src/sales_invoices.scailo_pb.ts:4305](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L4305)
 
 ___
 
 ### status
 
-• **status**: [`SALES_INVOICE_ITEM_STATUS`](../enums/SALES_INVOICE_ITEM_STATUS.md) = `SALES_INVOICE_ITEM_STATUS.SALES_INVOICE_ITEM_STATUS_ANY_UNSPECIFIED`
+• `Optional` **status**: [`SALES_INVOICE_ITEM_STATUS`](../enums/SALES_INVOICE_ITEM_STATUS.md)
 
-The status of the items
+**`Optional`**
+
+**`Description`**
+
+The field used for sorting.
 
 **`Generated`**
 
-from field: Scailo.SALES_INVOICE_ITEM_STATUS status = 7;
+from field: optional Scailo.SALES_INVOICE_ITEM_STATUS status = 7;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:3297](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L3297)
+[src/sales_invoices.scailo_pb.ts:4341](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L4341)
 
 ___
 
 ### taxGroupId
 
-• **taxGroupId**: `bigint` = `protoInt64.zero`
+• `Optional` **taxGroupId**: `bigint`
 
-The ID of the tax group
+**`Optional`**
+
+**`Description`**
+
+Filter line items mapped to a specific tax group.
+
+**`Example`**
+
+```ts
+4
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 tax_group_id = 27;
+from field: optional uint64 tax_group_id = 27;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:3360](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L3360)
+[src/sales_invoices.scailo_pb.ts:4485](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L4485)
 
 ___
 
@@ -442,7 +625,7 @@ ___
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:3376](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L3376)
+[src/sales_invoices.scailo_pb.ts:4510](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L4510)
 
 ___
 
@@ -452,7 +635,7 @@ ___
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:3374](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L3374)
+[src/sales_invoices.scailo_pb.ts:4508](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L4508)
 
 ___
 
@@ -462,7 +645,7 @@ ___
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:3375](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L3375)
+[src/sales_invoices.scailo_pb.ts:4509](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L4509)
 
 ## Methods
 
@@ -750,7 +933,7 @@ ___
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:3408](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L3408)
+[src/sales_invoices.scailo_pb.ts:4542](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L4542)
 
 ___
 
@@ -771,7 +954,7 @@ ___
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:3396](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L3396)
+[src/sales_invoices.scailo_pb.ts:4530](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L4530)
 
 ___
 
@@ -792,7 +975,7 @@ ___
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:3400](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L3400)
+[src/sales_invoices.scailo_pb.ts:4534](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L4534)
 
 ___
 
@@ -813,4 +996,4 @@ ___
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:3404](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L3404)
+[src/sales_invoices.scailo_pb.ts:4538](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L4538)

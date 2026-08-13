@@ -67,7 +67,7 @@ Message\&lt;IdentifierWithUserComment\&gt;.constructor
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2665](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/base.scailo_pb.ts#L2665)
+[src/base.scailo_pb.ts:2782](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/base.scailo_pb.ts#L2782)
 
 ## Properties
 
@@ -83,7 +83,7 @@ from field: uint64 id = 1;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2656](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/base.scailo_pb.ts#L2656)
+[src/base.scailo_pb.ts:2764](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/base.scailo_pb.ts#L2764)
 
 ___
 
@@ -91,7 +91,25 @@ ___
 
 • **userComment**: `string` = `""`
 
-Stores any comment that the user might add during this operation
+**`Optional`**
+
+**`Description`**
+
+Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+
+**`Example`**
+
+```ts
+"This is a comment for audit purposes."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
@@ -99,7 +117,7 @@ from field: string user_comment = 2;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2663](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/base.scailo_pb.ts#L2663)
+[src/base.scailo_pb.ts:2780](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/base.scailo_pb.ts#L2780)
 
 ___
 
@@ -109,7 +127,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2672](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/base.scailo_pb.ts#L2672)
+[src/base.scailo_pb.ts:2789](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/base.scailo_pb.ts#L2789)
 
 ___
 
@@ -119,7 +137,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2670](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/base.scailo_pb.ts#L2670)
+[src/base.scailo_pb.ts:2787](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/base.scailo_pb.ts#L2787)
 
 ___
 
@@ -129,7 +147,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2671](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/base.scailo_pb.ts#L2671)
+[src/base.scailo_pb.ts:2788](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/base.scailo_pb.ts#L2788)
 
 ## Methods
 
@@ -417,7 +435,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2689](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/base.scailo_pb.ts#L2689)
+[src/base.scailo_pb.ts:2806](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/base.scailo_pb.ts#L2806)
 
 ___
 
@@ -438,7 +456,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2677](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/base.scailo_pb.ts#L2677)
+[src/base.scailo_pb.ts:2794](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/base.scailo_pb.ts#L2794)
 
 ___
 
@@ -459,7 +477,7 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2681](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/base.scailo_pb.ts#L2681)
+[src/base.scailo_pb.ts:2798](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/base.scailo_pb.ts#L2798)
 
 ___
 
@@ -480,4 +498,4 @@ ___
 
 #### Defined in
 
-[src/base.scailo_pb.ts:2685](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/base.scailo_pb.ts#L2685)
+[src/base.scailo_pb.ts:2802](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/base.scailo_pb.ts#L2802)

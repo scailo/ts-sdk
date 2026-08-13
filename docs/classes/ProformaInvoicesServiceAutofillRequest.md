@@ -2,7 +2,12 @@
 
 # Class: ProformaInvoicesServiceAutofillRequest
 
-Describes the parameters necessary to perform an autofill request
+Request message for triggering an autofill operation on an existing Proforma Invoice.
+This operation automatically populates the invoice with relevant line items (and optionally services)
+by pulling them directly from the associated source document (e.g., the parent Sales Order).
+
+**Note:** The invoice must already be created and explicitly linked to a source reference
+before this operation can be invoked.
 
 **`Generated`**
 
@@ -68,39 +73,75 @@ Message\&lt;ProformaInvoicesServiceAutofillRequest\&gt;.constructor
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:684](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L684)
+[src/proforma_invoices.scailo_pb.ts:914](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L914)
 
 ## Properties
 
 ### includeServices
 
-• **includeServices**: `boolean` = `false`
+• `Optional` **includeServices**: `boolean`
 
-Stores if services should also be autofilled
+**`Optional`**
+
+**`Description`**
+
+A boolean flag indicating whether service-type line items should also be pulled from the source document during the autofill operation (in addition to standard physical inventory goods).
+
+**`Example`**
+
+```ts
+true
+```
+
+**`Regex`**
+
+^(?:true|false)$
+
+**`Format`**
+
+Boolean true or false.
 
 **`Generated`**
 
-from field: bool include_services = 10;
+from field: optional bool include_services = 10;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:682](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L682)
+[src/proforma_invoices.scailo_pb.ts:912](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L912)
 
 ___
 
 ### userComment
 
-• **userComment**: `string` = `""`
+• `Optional` **userComment**: `string`
 
-Stores any comment that the user might add during this operation
+**`Optional`**
+
+**`Description`**
+
+Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+
+**`Example`**
+
+```ts
+"This is a comment for audit purposes."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
-from field: string user_comment = 1;
+from field: optional string user_comment = 1;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:668](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L668)
+[src/proforma_invoices.scailo_pb.ts:880](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L880)
 
 ___
 
@@ -108,7 +149,25 @@ ___
 
 • **uuid**: `string` = `""`
 
-The UUID of the record that needs to be updated
+**`Mandatory`**
+
+**`Description`**
+
+The globally unique identifier (UUID) of the target proforma invoice that needs to be autofilled.
+
+**`Example`**
+
+```ts
+"550e8400-e29b-41d4-a716-446655440000"
+```
+
+**`Regex`**
+
+^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+
+**`Format`**
+
+Must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
@@ -116,7 +175,7 @@ from field: string uuid = 2;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:675](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L675)
+[src/proforma_invoices.scailo_pb.ts:896](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L896)
 
 ___
 
@@ -126,7 +185,7 @@ ___
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:691](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L691)
+[src/proforma_invoices.scailo_pb.ts:921](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L921)
 
 ___
 
@@ -136,7 +195,7 @@ ___
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:689](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L689)
+[src/proforma_invoices.scailo_pb.ts:919](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L919)
 
 ___
 
@@ -146,7 +205,7 @@ ___
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:690](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L690)
+[src/proforma_invoices.scailo_pb.ts:920](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L920)
 
 ## Methods
 
@@ -434,7 +493,7 @@ ___
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:709](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L709)
+[src/proforma_invoices.scailo_pb.ts:939](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L939)
 
 ___
 
@@ -455,7 +514,7 @@ ___
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:697](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L697)
+[src/proforma_invoices.scailo_pb.ts:927](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L927)
 
 ___
 
@@ -476,7 +535,7 @@ ___
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:701](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L701)
+[src/proforma_invoices.scailo_pb.ts:931](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L931)
 
 ___
 
@@ -497,4 +556,4 @@ ___
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:705](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L705)
+[src/proforma_invoices.scailo_pb.ts:935](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L935)

@@ -16,21 +16,21 @@ import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, 
  */
 export enum VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE {
   /**
-   * Denotes that price limit type be disregarded. This is used only within search/filter APIs
+   * @description Denotes that price limit type be disregarded. Used exclusively within search/filter APIs to bypass restrictions.
    *
    * @generated from enum value: VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE_ANY_UNSPECIFIED = 0;
    */
   VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE_ANY_UNSPECIFIED = 0,
 
   /**
-   * Denotes that the price limit type is a percentage
+   * @description Denotes that the price limit type is evaluated as a percentage.
    *
    * @generated from enum value: VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE_PERCENTAGE = 1;
    */
   VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE_PERCENTAGE = 1,
 
   /**
-   * Denotes that the price limit type is an absolute value
+   * @description Denotes that the price limit type is evaluated as a fixed, absolute currency value.
    *
    * @generated from enum value: VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE_ABSOLUTE = 2;
    */
@@ -45,76 +45,76 @@ proto3.util.setEnumType(VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE, "Scailo.VENDOR_I
 
 /**
  *
- * Describes the available sort keys
+ * Enumeration of fields available for sorting vendor search results.
  *
  * @generated from enum Scailo.VENDOR_SORT_KEY
  */
 export enum VENDOR_SORT_KEY {
   /**
-   * Fetch ordered results by id
+   * @description Default sort behavior (by internal ID).
    *
    * @generated from enum value: VENDOR_SORT_KEY_ID_UNSPECIFIED = 0;
    */
   VENDOR_SORT_KEY_ID_UNSPECIFIED = 0,
 
   /**
-   * Fetch ordered results by the creation timestamp
+   * @description Sort by the timestamp the record was initially created.
    *
    * @generated from enum value: VENDOR_SORT_KEY_CREATED_AT = 1;
    */
   VENDOR_SORT_KEY_CREATED_AT = 1,
 
   /**
-   * Fetch ordered results by the modified timestamp
+   * @description Sort by the timestamp the record was last modified.
    *
    * @generated from enum value: VENDOR_SORT_KEY_MODIFIED_AT = 2;
    */
   VENDOR_SORT_KEY_MODIFIED_AT = 2,
 
   /**
-   * Fetch ordered results by the approved on timestamp
+   * @description Sort by the official approval timestamp.
    *
    * @generated from enum value: VENDOR_SORT_KEY_APPROVED_ON = 3;
    */
   VENDOR_SORT_KEY_APPROVED_ON = 3,
 
   /**
-   * Fetch ordered results by the approved by field
+   * @description Sort by the system ID of the approving user.
    *
    * @generated from enum value: VENDOR_SORT_KEY_APPROVED_BY = 4;
    */
   VENDOR_SORT_KEY_APPROVED_BY = 4,
 
   /**
-   * Fetch ordered results by the approver's role ID
+   * @description Sort by the security role ID used by the approver.
    *
    * @generated from enum value: VENDOR_SORT_KEY_APPROVER_ROLE_ID = 5;
    */
   VENDOR_SORT_KEY_APPROVER_ROLE_ID = 5,
 
   /**
-   * Fetch ordered results by the name
+   * @description Sort alphabetically by the user-provided name.
    *
    * @generated from enum value: VENDOR_SORT_KEY_NAME = 10;
    */
   VENDOR_SORT_KEY_NAME = 10,
 
   /**
-   * Fetch ordered results by the code
+   * @description Sort alphabetically by the user-provided code.
    *
    * @generated from enum value: VENDOR_SORT_KEY_CODE = 11;
    */
   VENDOR_SORT_KEY_CODE = 11,
 
   /**
-   * Fetch ordered results by the email address
+   * @description Sort alphabetically by the user-provided email.
    *
    * @generated from enum value: VENDOR_SORT_KEY_EMAIL = 12;
    */
   VENDOR_SORT_KEY_EMAIL = 12,
 
   /**
-   * Fetch ordered results by the phone number
+   * @description Sort alphabetically by the user-provided phone number.
    *
    * @generated from enum value: VENDOR_SORT_KEY_PHONE = 13;
    */
@@ -136,104 +136,104 @@ proto3.util.setEnumType(VENDOR_SORT_KEY, "Scailo.VENDOR_SORT_KEY", [
 
 /**
  *
- * Describes the available sort keys
+ * Enumeration of fields available for sorting vendor item search results.
  *
  * @generated from enum Scailo.VENDOR_ITEM_SORT_KEY
  */
 export enum VENDOR_ITEM_SORT_KEY {
   /**
-   * Fetch ordered results by id
+   * @description Default sort behavior (by internal ID).
    *
    * @generated from enum value: VENDOR_ITEM_SORT_KEY_ID_UNSPECIFIED = 0;
    */
   VENDOR_ITEM_SORT_KEY_ID_UNSPECIFIED = 0,
 
   /**
-   * Fetch ordered results by the creation timestamp
+   * @description Sort by the timestamp the record was initially created.
    *
    * @generated from enum value: VENDOR_ITEM_SORT_KEY_CREATED_AT = 1;
    */
   VENDOR_ITEM_SORT_KEY_CREATED_AT = 1,
 
   /**
-   * Fetch ordered results by the modified timestamp
+   * @description Sort by the timestamp the record was last modified.
    *
    * @generated from enum value: VENDOR_ITEM_SORT_KEY_MODIFIED_AT = 2;
    */
   VENDOR_ITEM_SORT_KEY_MODIFIED_AT = 2,
 
   /**
-   * Fetch ordered results by the approved on timestamp
+   * @description Sort by the official approval timestamp.
    *
    * @generated from enum value: VENDOR_ITEM_SORT_KEY_APPROVED_ON = 3;
    */
   VENDOR_ITEM_SORT_KEY_APPROVED_ON = 3,
 
   /**
-   * Fetch ordered results by the approved by field
+   * @description Sort by the system ID of the approving user.
    *
    * @generated from enum value: VENDOR_ITEM_SORT_KEY_APPROVED_BY = 4;
    */
   VENDOR_ITEM_SORT_KEY_APPROVED_BY = 4,
 
   /**
-   * Fetch ordered results by the approver's role ID
+   * @description Sort by the security role ID used by the approver.
    *
    * @generated from enum value: VENDOR_ITEM_SORT_KEY_APPROVER_ROLE_ID = 5;
    */
   VENDOR_ITEM_SORT_KEY_APPROVER_ROLE_ID = 5,
 
   /**
-   * Fetch ordered results by the family ID
+   * @description Sort by the system ID of the associated family.
    *
    * @generated from enum value: VENDOR_ITEM_SORT_KEY_FAMILY_ID = 10;
    */
   VENDOR_ITEM_SORT_KEY_FAMILY_ID = 10,
 
   /**
-   * Fetch ordered results by the vendor family code
+   * @description Sort alphabetically by the user-provided vendor family code.
    *
    * @generated from enum value: VENDOR_ITEM_SORT_KEY_VENDOR_FAMILY_CODE = 11;
    */
   VENDOR_ITEM_SORT_KEY_VENDOR_FAMILY_CODE = 11,
 
   /**
-   * Fetch ordered results by the unit of material ID
+   * @description Sort by the system ID of the associated unit of material.
    *
    * @generated from enum value: VENDOR_ITEM_SORT_KEY_UOM_ID = 12;
    */
   VENDOR_ITEM_SORT_KEY_UOM_ID = 12,
 
   /**
-   * Fetch ordered results by the tax group ID
+   * @description Sort by the system ID of the associated tax group.
    *
    * @generated from enum value: VENDOR_ITEM_SORT_KEY_TAX_GROUP_ID = 13;
    */
   VENDOR_ITEM_SORT_KEY_TAX_GROUP_ID = 13,
 
   /**
-   * Fetch ordered results by the price
+   * @description Sort by the user-provided price.
    *
    * @generated from enum value: VENDOR_ITEM_SORT_KEY_PRICE = 14;
    */
   VENDOR_ITEM_SORT_KEY_PRICE = 14,
 
   /**
-   * Fetch ordered results by the minimum order quantity
+   * @description Sort by the user-provided minimum order quantity.
    *
    * @generated from enum value: VENDOR_ITEM_SORT_KEY_MIN_ORDER_QTY = 15;
    */
   VENDOR_ITEM_SORT_KEY_MIN_ORDER_QTY = 15,
 
   /**
-   * Fetch ordered results by the maximum order quantity
+   * @description Sort by the user-provided maximum order quantity.
    *
    * @generated from enum value: VENDOR_ITEM_SORT_KEY_MAX_ORDER_QTY = 16;
    */
   VENDOR_ITEM_SORT_KEY_MAX_ORDER_QTY = 16,
 
   /**
-   * Fetch ordered results by the step interval
+   * @description Sort by the user-provided step interval.
    *
    * @generated from enum value: VENDOR_ITEM_SORT_KEY_STEP_INTERVAL = 17;
    */
@@ -259,27 +259,27 @@ proto3.util.setEnumType(VENDOR_ITEM_SORT_KEY, "Scailo.VENDOR_ITEM_SORT_KEY", [
 
 /**
  *
- * Describes the applicable statuses of vendor items
+ * Enum defining the applicable lifecycle and verification statuses for vendor items.
  *
  * @generated from enum Scailo.VENDOR_ITEM_STATUS
  */
 export enum VENDOR_ITEM_STATUS {
   /**
-   * Denotes that status be disregarded. This is used only within search APIs
+   * @description Denotes that the status filter should be disregarded. Used exclusively within search APIs to bypass status restrictions.
    *
    * @generated from enum value: VENDOR_ITEM_STATUS_ANY_UNSPECIFIED = 0;
    */
   VENDOR_ITEM_STATUS_ANY_UNSPECIFIED = 0,
 
   /**
-   * Denotes that the vendor items must have been approved
+   * @description Denotes that the vendor item association has passed verification and is actively approved.
    *
    * @generated from enum value: VENDOR_ITEM_STATUS_APPROVED = 1;
    */
   VENDOR_ITEM_STATUS_APPROVED = 1,
 
   /**
-   * Denotes that the vendor items must be waiting for approval
+   * @description Denotes that the vendor item association is pending review and waiting for administrative approval.
    *
    * @generated from enum value: VENDOR_ITEM_STATUS_UNAPPROVED = 2;
    */
@@ -294,27 +294,27 @@ proto3.util.setEnumType(VENDOR_ITEM_STATUS, "Scailo.VENDOR_ITEM_STATUS", [
 
 /**
  *
- * Describes the applicable statuses of vendor users
+ * Enum defining the applicable lifecycle and verification statuses for vendor users.
  *
  * @generated from enum Scailo.VENDOR_USER_STATUS
  */
 export enum VENDOR_USER_STATUS {
   /**
-   * Denotes that status be disregarded. This is used only within search APIs
+   * @description Denotes that the status filter should be disregarded. Used exclusively within search APIs to bypass status restrictions.
    *
    * @generated from enum value: VENDOR_USER_STATUS_ANY_UNSPECIFIED = 0;
    */
   VENDOR_USER_STATUS_ANY_UNSPECIFIED = 0,
 
   /**
-   * Denotes that the vendor items must have been approved
+   * @description Denotes that the vendor user association has passed verification and is actively approved.
    *
    * @generated from enum value: VENDOR_USER_STATUS_APPROVED = 1;
    */
   VENDOR_USER_STATUS_APPROVED = 1,
 
   /**
-   * Denotes that the vendor items must be waiting for approval
+   * @description Denotes that the vendor user association is pending review and waiting for administrative approval.
    *
    * @generated from enum value: VENDOR_USER_STATUS_UNAPPROVED = 2;
    */
@@ -329,7 +329,12 @@ proto3.util.setEnumType(VENDOR_USER_STATUS, "Scailo.VENDOR_USER_STATUS", [
 
 /**
  *
- * Describes the parameters necessary to create a record
+ * Request message for onboarding and creating a new Vendor profile.
+ * This record tracks critical vendor metadata, unique business identifiers,
+ * contact details, and custom fields associated with a target entity.
+ *
+ * **Note:** This is the primary entry point for Procurement, Vendor Management, and Admins
+ * to register new vendor profiles or external entities for compliance and tracking.
  *
  * @generated from message Scailo.VendorsServiceCreateRequest
  */
@@ -346,16 +351,25 @@ export class VendorsServiceCreateRequest extends Message<VendorsServiceCreateReq
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 1;
+   * @generated from field: optional string entity_uuid = 1;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 2;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 2;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
    *
@@ -369,40 +383,83 @@ export class VendorsServiceCreateRequest extends Message<VendorsServiceCreateReq
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 vault_folder_id = 9;
+   * @generated from field: optional uint64 vault_folder_id = 9;
    */
-  vaultFolderId = protoInt64.zero;
+  vaultFolderId?: bigint;
 
   /**
-   * The name of the vendor
+   *
+   * @mandatory
+   *
+   * @description The official or legal name of the vendor organization or individual.
+   *
+   * @example "Acme Logistics"
+   *
+   * @regex .+
+   *
+   * @format Must be a non-empty string.
    *
    * @generated from field: string name = 10;
    */
   name = "";
 
   /**
-   * The unique code by which the vendor is classified
+   *
+   * @mandatory
+   *
+   * @description The unique code or alphanumeric token by which the vendor is classified or categorized internally.
+   *
+   * @example "VND-ACME-001"
+   *
+   * @regex .+
+   *
+   * @format Must be a non-empty string.
    *
    * @generated from field: string code = 11;
    */
   code = "";
 
   /**
-   * The primary email of the vendor
+   *
+   * @mandatory
+   *
+   * @description The primary communication email address of the vendor.
+   *
+   * @example "orders@acmelogistics.com"
+   *
+   * @regex ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
+   *
+   * @format Must be a valid and structurally sound email address format.
    *
    * @generated from field: string email = 12;
    */
   email = "";
 
   /**
-   * The primary contact number of the vendor
+   *
+   * @mandatory
+   *
+   * @description The primary contact phone number of the vendor, typically including country and area codes.
+   *
+   * @example "+1-555-222-0199"
+   *
+   * @regex .+
+   *
+   * @format Must be a non-empty string representing a valid phone number format.
    *
    * @generated from field: string phone = 13;
    */
   phone = "";
 
   /**
-   * The list of dynamic forms
+   *
+   * @optional
+   *
+   * @description A collection of dynamic form fields for organization-specific data.
+   *
+   * @example []
+   *
+   * @format An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
    *
    * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
    */
@@ -416,9 +473,9 @@ export class VendorsServiceCreateRequest extends Message<VendorsServiceCreateReq
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.VendorsServiceCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
     { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 12, name: "email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
@@ -445,20 +502,44 @@ export class VendorsServiceCreateRequest extends Message<VendorsServiceCreateReq
 
 /**
  *
- * Describes the parameters necessary to update a record
+ * Request message for updating an existing Vendor record.
+ * Only applicable for records in `DRAFT` or `REVISION` states.
+ * This message allows for modifying the name, code, email, phone and other custom form fields
+ * of an established Vendor.
+ *
+ * **Note:** Only fields provided in the request will typically be updated.
+ * The unique system ID is required to locate the target record.
  *
  * @generated from message Scailo.VendorsServiceUpdateRequest
  */
 export class VendorsServiceUpdateRequest extends Message<VendorsServiceUpdateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * The ID of the record that needs to be updated
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target record that needs to be updated.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 id = 2;
    */
@@ -472,9 +553,9 @@ export class VendorsServiceUpdateRequest extends Message<VendorsServiceUpdateReq
    *
    * @example true
    *
-   * @generated from field: bool notify_users = 3;
+   * @generated from field: optional bool notify_users = 3;
    */
-  notifyUsers = false;
+  notifyUsers?: boolean;
 
   /**
    *
@@ -488,40 +569,83 @@ export class VendorsServiceUpdateRequest extends Message<VendorsServiceUpdateReq
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 vault_folder_id = 9;
+   * @generated from field: optional uint64 vault_folder_id = 9;
    */
-  vaultFolderId = protoInt64.zero;
+  vaultFolderId?: bigint;
 
   /**
-   * The name of the vendor
    *
-   * @generated from field: string name = 10;
-   */
-  name = "";
-
-  /**
-   * The unique code by which the vendor is classified
+   * @optional
    *
-   * @generated from field: string code = 11;
-   */
-  code = "";
-
-  /**
-   * The primary email of the vendor
+   * @description The official or legal name of the vendor organization or individual.
    *
-   * @generated from field: string email = 12;
-   */
-  email = "";
-
-  /**
-   * The primary contact number of the vendor
+   * @example "Acme Logistics"
    *
-   * @generated from field: string phone = 13;
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string name = 10;
    */
-  phone = "";
+  name?: string;
 
   /**
-   * The list of dynamic forms
+   *
+   * @optional
+   *
+   * @description The unique code or alphanumeric token by which the vendor is classified or categorized internally.
+   *
+   * @example "VND-ACME-001"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string code = 11;
+   */
+  code?: string;
+
+  /**
+   *
+   * @optional
+   *
+   * @description The primary communication email address of the vendor.
+   *
+   * @example "orders@acmelogistics.com"
+   *
+   * @regex ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
+   *
+   * @format Must be a valid and structurally sound email address format.
+   *
+   * @generated from field: optional string email = 12;
+   */
+  email?: string;
+
+  /**
+   *
+   * @optional
+   *
+   * @description The primary contact phone number of the vendor, typically including country and area codes.
+   *
+   * @example "+1-555-222-0199"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string representing a valid phone number format.
+   *
+   * @generated from field: optional string phone = 13;
+   */
+  phone?: string;
+
+  /**
+   *
+   * @optional
+   *
+   * @description A collection of dynamic form fields for organization-specific data.
+   *
+   * @example []
+   *
+   * @format An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
    *
    * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
    */
@@ -535,14 +659,14 @@ export class VendorsServiceUpdateRequest extends Message<VendorsServiceUpdateReq
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.VendorsServiceUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 2, name: "id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
-    { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 11, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 12, name: "email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 13, name: "phone", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 11, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 12, name: "email", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 13, name: "phone", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
 
@@ -565,7 +689,7 @@ export class VendorsServiceUpdateRequest extends Message<VendorsServiceUpdateReq
 
 /**
  *
- * Describes the parameters that are part of a standard response
+ * Represents a full Vendor within the system.
  *
  * @generated from message Scailo.Vendor
  */
@@ -623,35 +747,48 @@ export class Vendor extends Message<Vendor> {
   vaultFolderId = protoInt64.zero;
 
   /**
-   * The name of the vendor
+   *
+   * @description The official or legal name of the vendor organization or individual.
+   *
+   * @example "Acme Logistics"
    *
    * @generated from field: string name = 10;
    */
   name = "";
 
   /**
-   * The unique code by which the vendor is classified
+   *
+   * @description The unique code or alphanumeric token by which the vendor is classified or categorized internally.
+   *
+   * @example "VND-ACME-001"
    *
    * @generated from field: string code = 11;
    */
   code = "";
 
   /**
-   * The primary email of the vendor
+   *
+   * @description The primary communication email address of the vendor.
+   *
+   * @example "orders@acmelogistics.com"
    *
    * @generated from field: string email = 12;
    */
   email = "";
 
   /**
-   * The primary contact number of the vendor
+   *
+   * @description The primary contact phone number of the vendor, typically including country and area codes.
+   *
+   * @example "+1-555-222-0199"
    *
    * @generated from field: string phone = 13;
    */
   phone = "";
 
   /**
-   * The list of dynamic forms
+   *
+   * @description Collection of organization-specific dynamic data.
    *
    * @generated from field: repeated Scailo.FormFieldDatum form_data = 30;
    */
@@ -697,104 +834,231 @@ export class Vendor extends Message<Vendor> {
 
 /**
  *
- * Describes the parameters required to add an item to a vendor
+ * Represents the request payload containing the parameter constraints and validation rules
+ * required to create and register a new item association under a target vendor.
  *
  * @generated from message Scailo.VendorsServiceItemCreateRequest
  */
 export class VendorsServiceItemCreateRequest extends Message<VendorsServiceItemCreateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * Stores the vendor ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target vendor to which the item will be associated.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer greater than zero.
    *
    * @generated from field: uint64 vendor_id = 10;
    */
   vendorId = protoInt64.zero;
 
   /**
-   * Stores the family ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target family to which the item belongs.
+   *
+   * @example 582
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer greater than zero.
    *
    * @generated from field: uint64 family_id = 11;
    */
   familyId = protoInt64.zero;
 
   /**
-   * Stores the optional family code as represented by the vendor
    *
-   * @generated from field: string vendor_family_code = 12;
+   * @optional
+   *
+   * @description Stores the optional family code string as represented internally by the vendor.
+   *
+   * @example "VEND-FAM-XYZ-01"
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string vendor_family_code = 12;
    */
-  vendorFamilyCode = "";
+  vendorFamilyCode?: string;
 
   /**
-   * Stores the ID of the vendor's unit of material
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target unit of material (UOM) associated with the item.
+   *
+   * @example 12
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer greater than zero.
    *
    * @generated from field: uint64 uom_id = 13;
    */
   uomId = protoInt64.zero;
 
   /**
-   * The ID of the associated tax group
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target tax group applied to this item.
+   *
+   * @example 4
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer greater than zero.
    *
    * @generated from field: uint64 tax_group_id = 14;
    */
   taxGroupId = protoInt64.zero;
 
   /**
-   * The unit price of the item (as supplied by the vendor)
+   *
+   * @mandatory
+   *
+   * @description The unit price of the item as supplied by the vendor, represented in the base currency subunit (e.g., cents).
+   *
+   * @example 1550
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Unsigned 64-bit integer greater than or equal to 0.
    *
    * @generated from field: uint64 price = 15;
    */
   price = protoInt64.zero;
 
   /**
-   * The relative lower limit type on the price deviation of the item
+   *
+   * @mandatory
+   *
+   * @description The relative lower limit type used to evaluate price deviation rules for the item.
+   *
+   * @example "VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE_PERCENTAGE"
+   *
+   * @regex ^[A-Z_]+$
+   *
+   * @format Valid VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE enum value string or integer.
    *
    * @generated from field: Scailo.VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE price_deviation_rel_lower_limit_type = 46;
    */
   priceDeviationRelLowerLimitType = VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE.VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE_ANY_UNSPECIFIED;
 
   /**
-   * The relative lower limit value on the price deviation of the item (in cents). For percentage, this is the percentage value; for absolute, this is the absolute value. If set to -1, the limit is ignored. The final lower limit of the item is computed as (price - price_deviation_rel_lower_limit_value)
+   *
+   * @mandatory
+   *
+   * @description The relative lower limit value on the price deviation of the item (in cents). For percentage, this is the percentage value; for absolute, this is the absolute value. If set to -1, the limit is ignored. The final lower limit of the item is computed as (price - price_deviation_rel_lower_limit_value).
+   *
+   * @example 10
+   *
+   * @regex ^-?[0-9]+$
+   *
+   * @format Signed 64-bit integer greater than or equal to -100.
    *
    * @generated from field: int64 price_deviation_rel_lower_limit_value = 47;
    */
   priceDeviationRelLowerLimitValue = protoInt64.zero;
 
   /**
-   * The relative upper limit type on the price deviation of the item
+   *
+   * @mandatory
+   *
+   * @description The relative upper limit type used to evaluate price deviation rules for the item.
+   *
+   * @example "VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE_ABSOLUTE"
+   *
+   * @regex ^[A-Z_]+$
+   *
+   * @format Valid VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE enum value string or integer.
    *
    * @generated from field: Scailo.VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE price_deviation_rel_upper_limit_type = 48;
    */
   priceDeviationRelUpperLimitType = VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE.VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE_ANY_UNSPECIFIED;
 
   /**
-   * The relative upper limit value on the price deviation of the item (in cents). For percentage, this is the percentage value; for absolute, this is the absolute value. If set to -1, the limit is ignored. The final upper limit of the item is computed as (price + price_deviation_rel_upper_limit_value)
+   *
+   * @mandatory
+   *
+   * @description The relative upper limit value on the price deviation of the item (in cents). For percentage, this is the percentage value; for absolute, this is the absolute value. If set to -1, the limit is ignored. The final upper limit of the item is computed as (price + price_deviation_rel_upper_limit_value).
+   *
+   * @example 25
+   *
+   * @regex ^-?[0-9]+$
+   *
+   * @format Signed 64-bit integer greater than or equal to -100.
    *
    * @generated from field: int64 price_deviation_rel_upper_limit_value = 49;
    */
   priceDeviationRelUpperLimitValue = protoInt64.zero;
 
   /**
-   * The minimum order quantity that needs to be placed (in cents) (0.01 is the minimum)
+   *
+   * @mandatory
+   *
+   * @description The minimum order quantity that needs to be placed, represented in cents (where a value of 1 represents the absolute minimum increment of 0.01).
+   *
+   * @example 100
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer greater than zero.
    *
    * @generated from field: uint64 min_order_qty = 20;
    */
   minOrderQty = protoInt64.zero;
 
   /**
-   * The maximum order quantity that can be placed (in cents) (0 represents unlimited max quantity)
+   *
+   * @mandatory
+   *
+   * @description The maximum order quantity that can be placed, represented in cents. A value of 0 represents an unlimited maximum quantity.
+   *
+   * @example 0
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Unsigned 64-bit integer greater than or equal to 0.
    *
    * @generated from field: uint64 max_order_qty = 21;
    */
   maxOrderQty = protoInt64.zero;
 
   /**
-   * The incremental count by which the order quantity can be increased (in cents)
+   *
+   * @mandatory
+   *
+   * @description The incremental unit step count by which the order quantity can be increased, represented in cents.
+   *
+   * @example 50
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer greater than zero.
    *
    * @generated from field: uint64 step_interval = 22;
    */
@@ -808,10 +1072,10 @@ export class VendorsServiceItemCreateRequest extends Message<VendorsServiceItemC
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.VendorsServiceItemCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 10, name: "vendor_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 11, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 12, name: "vendor_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "vendor_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 13, name: "uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 14, name: "tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 15, name: "price", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
@@ -843,97 +1107,215 @@ export class VendorsServiceItemCreateRequest extends Message<VendorsServiceItemC
 
 /**
  *
- * Describes the parameters required to update an item in a vendor
+ * Represents the request payload containing the parameter constraints and validation rules
+ * required to update and modify an existing item association under a target vendor.
  *
  * @generated from message Scailo.VendorsServiceItemUpdateRequest
  */
 export class VendorsServiceItemUpdateRequest extends Message<VendorsServiceItemUpdateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * The ID of the record
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target record that needs to be updated.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 id = 2;
    */
   id = protoInt64.zero;
 
   /**
-   * Stores the optional family code as represented by the vendor
    *
-   * @generated from field: string vendor_family_code = 12;
+   * @optional
+   *
+   * @description Stores the optional family code string as represented internally by the vendor.
+   *
+   * @example "VEND-FAM-XYZ-01"
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string vendor_family_code = 12;
    */
-  vendorFamilyCode = "";
+  vendorFamilyCode?: string;
 
   /**
-   * Stores the ID of the vendor's unit of material
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target unit of material (UOM) associated with the item.
+   *
+   * @example 12
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer greater than zero.
    *
    * @generated from field: uint64 uom_id = 13;
    */
   uomId = protoInt64.zero;
 
   /**
-   * The ID of the associated tax group
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target tax group applied to this item.
+   *
+   * @example 4
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer greater than zero.
    *
    * @generated from field: uint64 tax_group_id = 14;
    */
   taxGroupId = protoInt64.zero;
 
   /**
-   * The unit price of the item (as supplied by the vendor)
+   *
+   * @mandatory
+   *
+   * @description The unit price of the item as supplied by the vendor, represented in the base currency subunit (e.g., cents).
+   *
+   * @example 1550
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Unsigned 64-bit integer greater than or equal to 0.
    *
    * @generated from field: uint64 price = 15;
    */
   price = protoInt64.zero;
 
   /**
-   * The relative lower limit type on the price deviation of the item
+   *
+   * @mandatory
+   *
+   * @description The relative lower limit type used to evaluate price deviation rules for the item.
+   *
+   * @example "VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE_PERCENTAGE"
+   *
+   * @regex ^[A-Z_]+$
+   *
+   * @format Valid VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE enum value string or integer.
    *
    * @generated from field: Scailo.VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE price_deviation_rel_lower_limit_type = 46;
    */
   priceDeviationRelLowerLimitType = VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE.VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE_ANY_UNSPECIFIED;
 
   /**
-   * The relative lower limit value on the price deviation of the item (in cents). For percentage, this is the percentage value; for absolute, this is the absolute value. If set to -1, the limit is ignored. The final lower limit of the item is computed as (price - price_deviation_rel_lower_limit_value)
+   *
+   * @mandatory
+   *
+   * @description The relative lower limit value on the price deviation of the item (in cents). For percentage, this is the percentage value; for absolute, this is the absolute value. If set to -1, the limit is ignored. The final lower limit of the item is computed as (price - price_deviation_rel_lower_limit_value).
+   *
+   * @example 10
+   *
+   * @regex ^-?[0-9]+$
+   *
+   * @format Signed 64-bit integer greater than or equal to -100.
    *
    * @generated from field: int64 price_deviation_rel_lower_limit_value = 47;
    */
   priceDeviationRelLowerLimitValue = protoInt64.zero;
 
   /**
-   * The relative upper limit type on the price deviation of the item
+   *
+   * @mandatory
+   *
+   * @description The relative upper limit type used to evaluate price deviation rules for the item.
+   *
+   * @example "VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE_ABSOLUTE"
+   *
+   * @regex ^[A-Z_]+$
+   *
+   * @format Valid VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE enum value string or integer.
    *
    * @generated from field: Scailo.VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE price_deviation_rel_upper_limit_type = 48;
    */
   priceDeviationRelUpperLimitType = VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE.VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE_ANY_UNSPECIFIED;
 
   /**
-   * The relative upper limit value on the price deviation of the item (in cents). For percentage, this is the percentage value; for absolute, this is the absolute value. If set to -1, the limit is ignored. The final upper limit of the item is computed as (price + price_deviation_rel_upper_limit_value)
+   *
+   * @mandatory
+   *
+   * @description The relative upper limit value on the price deviation of the item (in cents). For percentage, this is the percentage value; for absolute, this is the absolute value. If set to -1, the limit is ignored. The final upper limit of the item is computed as (price + price_deviation_rel_upper_limit_value).
+   *
+   * @example 25
+   *
+   * @regex ^-?[0-9]+$
+   *
+   * @format Signed 64-bit integer greater than or equal to -100.
    *
    * @generated from field: int64 price_deviation_rel_upper_limit_value = 49;
    */
   priceDeviationRelUpperLimitValue = protoInt64.zero;
 
   /**
-   * The minimum order quantity that needs to be placed (in cents) (0.01 is the minimum)
+   *
+   * @mandatory
+   *
+   * @description The minimum order quantity that needs to be placed, represented in cents (where a value of 1 represents the absolute minimum increment of 0.01).
+   *
+   * @example 100
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer greater than zero.
    *
    * @generated from field: uint64 min_order_qty = 20;
    */
   minOrderQty = protoInt64.zero;
 
   /**
-   * The maximum order quantity that can be placed (in cents) (0 represents unlimited max quantity)
+   *
+   * @mandatory
+   *
+   * @description The maximum order quantity that can be placed, represented in cents. A value of 0 represents an unlimited maximum quantity.
+   *
+   * @example 0
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Unsigned 64-bit integer greater than or equal to 0.
    *
    * @generated from field: uint64 max_order_qty = 21;
    */
   maxOrderQty = protoInt64.zero;
 
   /**
-   * The incremental count by which the order quantity can be increased (in cents)
+   *
+   * @mandatory
+   *
+   * @description The incremental unit step count by which the order quantity can be increased, represented in cents.
+   *
+   * @example 50
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer greater than zero.
    *
    * @generated from field: uint64 step_interval = 22;
    */
@@ -947,9 +1329,9 @@ export class VendorsServiceItemUpdateRequest extends Message<VendorsServiceItemU
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.VendorsServiceItemUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 2, name: "id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 12, name: "vendor_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "vendor_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 13, name: "uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 14, name: "tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 15, name: "price", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
@@ -981,7 +1363,10 @@ export class VendorsServiceItemUpdateRequest extends Message<VendorsServiceItemU
 
 /**
  *
- * Describes the parameters that constitute an item associated to a vendor
+ * Represents a full Vendor Item association within the system.
+ * This message encapsulates the complete state of a vendor item relationship,
+ * including catalog family mappings, core entity identifiers, unit price configurations,
+ * and granular deviation limit metadata alongside order quantity constraints.
  *
  * @generated from message Scailo.VendorItem
  */
@@ -1014,105 +1399,151 @@ export class VendorItem extends Message<VendorItem> {
 
   /**
    *
-   * @description The approval state of the record
+   * @description A boolean flag indicating whether this specific record requires further administrative approval.
+   *
+   * @example false
+   *
+   * @format Boolean true or false.
    *
    * @generated from field: bool need_approval = 4;
    */
   needApproval = false;
 
   /**
-   * Stores any comment that the user might have added during an operation
+   *
+   * @description Audit log comment or justification captured during the last modification or transactional operation.
+   *
+   * @example "This is a comment for audit purposes."
    *
    * @generated from field: string user_comment = 5;
    */
   userComment = "";
 
   /**
-   * Stores the vendor ID
+   *
+   * @description The unique internal identifier of the target vendor to which the item will be associated.
+   *
+   * @example 1024
    *
    * @generated from field: uint64 vendor_id = 10;
    */
   vendorId = protoInt64.zero;
 
   /**
-   * Stores the family ID
+   *
+   * @description The unique internal identifier of the target family to which the item belongs.
+   *
+   * @example 582
    *
    * @generated from field: uint64 family_id = 11;
    */
   familyId = protoInt64.zero;
 
   /**
-   * Stores the optional family code as represented by the vendor
+   *
+   * @description Stores the optional family code string as represented internally by the vendor.
+   *
+   * @example "VEND-FAM-XYZ-01"
    *
    * @generated from field: string vendor_family_code = 12;
    */
   vendorFamilyCode = "";
 
   /**
-   * Stores the ID of the vendor's unit of material
+   *
+   * @description The unique internal identifier of the target unit of material (UOM) associated with the item.
+   *
+   * @example 12
    *
    * @generated from field: uint64 uom_id = 13;
    */
   uomId = protoInt64.zero;
 
   /**
-   * The ID of the associated tax group
+   *
+   * @description The unique internal identifier of the target tax group applied to this item.
+   *
+   * @example 4
    *
    * @generated from field: uint64 tax_group_id = 14;
    */
   taxGroupId = protoInt64.zero;
 
   /**
-   * The unit price of the item (as supplied by the vendor)
+   *
+   * @description The unit price of the item as supplied by the vendor, represented in the base currency subunit (e.g., cents).
+   *
+   * @example 1550
    *
    * @generated from field: uint64 price = 15;
    */
   price = protoInt64.zero;
 
   /**
-   * The relative lower limit type on the price deviation of the item
+   *
+   * @description The relative lower limit type used to evaluate price deviation rules for the item.
+   *
+   * @example "VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE_PERCENTAGE"
    *
    * @generated from field: Scailo.VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE price_deviation_rel_lower_limit_type = 46;
    */
   priceDeviationRelLowerLimitType = VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE.VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE_ANY_UNSPECIFIED;
 
   /**
-   * The relative lower limit value on the price deviation of the item (in cents). For percentage, this is the percentage value; for absolute, this is the absolute value. If set to -1, the limit is ignored. The final lower limit of the item is computed as (price - price_deviation_rel_lower_limit_value)
+   *
+   * @description The relative lower limit value on the price deviation of the item (in cents). For percentage, this is the percentage value; for absolute, this is the absolute value. If set to -1, the limit is ignored. The final lower limit of the item is computed as (price - price_deviation_rel_lower_limit_value).
+   *
+   * @example 10
    *
    * @generated from field: int64 price_deviation_rel_lower_limit_value = 47;
    */
   priceDeviationRelLowerLimitValue = protoInt64.zero;
 
   /**
-   * The relative upper limit type on the price deviation of the item
+   *
+   * @description The relative upper limit type used to evaluate price deviation rules for the item.
+   *
+   * @example "VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE_ABSOLUTE"
    *
    * @generated from field: Scailo.VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE price_deviation_rel_upper_limit_type = 48;
    */
   priceDeviationRelUpperLimitType = VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE.VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE_ANY_UNSPECIFIED;
 
   /**
-   * The relative upper limit value on the price deviation of the item (in cents). For percentage, this is the percentage value; for absolute, this is the absolute value. If set to -1, the limit is ignored. The final upper limit of the item is computed as (price + price_deviation_rel_upper_limit_value)
+   *
+   * @description The relative upper limit value on the price deviation of the item (in cents). For percentage, this is the percentage value; for absolute, this is the absolute value. If set to -1, the limit is ignored. The final upper limit of the item is computed as (price + price_deviation_rel_upper_limit_value).
+   *
+   * @example 25
    *
    * @generated from field: int64 price_deviation_rel_upper_limit_value = 49;
    */
   priceDeviationRelUpperLimitValue = protoInt64.zero;
 
   /**
-   * The minimum order quantity that needs to be placed (in cents) (0.01 is the minimum)
+   *
+   * @description The minimum order quantity that needs to be placed, represented in cents (where a value of 1 represents the absolute minimum increment of 0.01).
+   *
+   * @example 100
    *
    * @generated from field: uint64 min_order_qty = 20;
    */
   minOrderQty = protoInt64.zero;
 
   /**
-   * The maximum order quantity that can be placed (in cents) (0 represents unlimited max quantity)
+   *
+   * @description The maximum order quantity that can be placed, represented in cents. A value of 0 represents an unlimited maximum quantity.
+   *
+   * @example 0
    *
    * @generated from field: uint64 max_order_qty = 21;
    */
   maxOrderQty = protoInt64.zero;
 
   /**
-   * The incremental count by which the order quantity can be increased (in cents)
+   *
+   * @description The incremental unit step count by which the order quantity can be increased, represented in cents.
+   *
+   * @example 50
    *
    * @generated from field: uint64 step_interval = 22;
    */
@@ -1165,13 +1596,13 @@ export class VendorItem extends Message<VendorItem> {
 
 /**
  *
- * Describes the message consisting of the list of vendors
+ * Container message for a collection of Vendor records.
  *
  * @generated from message Scailo.VendorsList
  */
 export class VendorsList extends Message<VendorsList> {
   /**
-   * List of records
+   * @description An array of Vendor records.
    *
    * @generated from field: repeated Scailo.Vendor list = 1;
    */
@@ -1207,13 +1638,13 @@ export class VendorsList extends Message<VendorsList> {
 
 /**
  *
- * Describes the message consisting of the list of vendor items
+ * Container message for a collection of Vendor Item records.
  *
  * @generated from message Scailo.VendorItemsList
  */
 export class VendorItemsList extends Message<VendorItemsList> {
   /**
-   * List of records
+   * @description An array of Vendor Item records.
    *
    * @generated from field: repeated Scailo.VendorItem list = 1;
    */
@@ -1249,27 +1680,55 @@ export class VendorItemsList extends Message<VendorItemsList> {
 
 /**
  *
- * Describes the parameters that are required to retrieve the history of the record
+ * Represents the request payload containing the parameter constraints required to
+ * retrieve the historical audit trail and lifecycle changes of a specific vendor item record.
  *
  * @generated from message Scailo.VendorItemHistoryRequest
  */
 export class VendorItemHistoryRequest extends Message<VendorItemHistoryRequest> {
   /**
-   * Stores the vendor ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target vendor associated with the historical record.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer greater than zero.
    *
    * @generated from field: uint64 vendor_id = 10;
    */
   vendorId = protoInt64.zero;
 
   /**
-   * Stores the family ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target family associated with the historical record.
+   *
+   * @example 582
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer greater than zero.
    *
    * @generated from field: uint64 family_id = 11;
    */
   familyId = protoInt64.zero;
 
   /**
-   * Stores the ID of the vendor's unit of material
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target unit of material (UOM) associated with the historical record.
+   *
+   * @example 12
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer greater than zero.
    *
    * @generated from field: uint64 uom_id = 13;
    */
@@ -1307,7 +1766,7 @@ export class VendorItemHistoryRequest extends Message<VendorItemHistoryRequest> 
 
 /**
  *
- * Describes a pagination request to retrieve records
+ * Pagination request for retrieving slices of Vendor records.
  *
  * @generated from message Scailo.VendorsServicePaginationReq
  */
@@ -1320,9 +1779,9 @@ export class VendorsServicePaginationReq extends Message<VendorsServicePaginatio
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -1352,9 +1811,9 @@ export class VendorsServicePaginationReq extends Message<VendorsServicePaginatio
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -1364,9 +1823,9 @@ export class VendorsServicePaginationReq extends Message<VendorsServicePaginatio
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -1374,16 +1833,21 @@ export class VendorsServicePaginationReq extends Message<VendorsServicePaginatio
    *
    * @description The specific field key to sort the results by.
    *
-   * @generated from field: Scailo.VENDOR_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.VENDOR_SORT_KEY sort_key = 5;
    */
-  sortKey = VENDOR_SORT_KEY.VENDOR_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: VENDOR_SORT_KEY;
 
   /**
-   * The status of this vendor
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
+   * @optional
+   *
+   * @description Filter results by a specific lifecycle status.
+   *
+   * @example STANDING
+   *
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   constructor(data?: PartialMessage<VendorsServicePaginationReq>) {
     super();
@@ -1393,12 +1857,12 @@ export class VendorsServicePaginationReq extends Message<VendorsServicePaginatio
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.VendorsServicePaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(VENDOR_SORT_KEY) },
-    { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(VENDOR_SORT_KEY), opt: true },
+    { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): VendorsServicePaginationReq {
@@ -1420,7 +1884,7 @@ export class VendorsServicePaginationReq extends Message<VendorsServicePaginatio
 
 /**
  *
- * Describes the response to a pagination request
+ * Response message for paginated queries, including total counts for UI elements.
  *
  * @generated from message Scailo.VendorsServicePaginationResponse
  */
@@ -1496,7 +1960,12 @@ export class VendorsServicePaginationResponse extends Message<VendorsServicePagi
 
 /**
  *
- * Describes the base request payload of a filter search
+ * Advanced filter request for searching and paginating vendors using multiple logical criteria.
+ * This message encapsulates pagination controls, sorting keys, lifecycle status filters,
+ * timestamp ranges, and entity references.
+ *
+ * **Note:** This is the primary message layout used by the frontend and external API clients
+ * to build robust data-table queries, reporting views, and targeted record lookups.
  *
  * @generated from message Scailo.VendorsServiceFilterReq
  */
@@ -1509,9 +1978,9 @@ export class VendorsServiceFilterReq extends Message<VendorsServiceFilterReq> {
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -1541,9 +2010,9 @@ export class VendorsServiceFilterReq extends Message<VendorsServiceFilterReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -1553,9 +2022,9 @@ export class VendorsServiceFilterReq extends Message<VendorsServiceFilterReq> {
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -1563,9 +2032,9 @@ export class VendorsServiceFilterReq extends Message<VendorsServiceFilterReq> {
    *
    * @description The field used for sorting.
    *
-   * @generated from field: Scailo.VENDOR_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.VENDOR_SORT_KEY sort_key = 5;
    */
-  sortKey = VENDOR_SORT_KEY.VENDOR_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: VENDOR_SORT_KEY;
 
   /**
    *
@@ -1579,9 +2048,9 @@ export class VendorsServiceFilterReq extends Message<VendorsServiceFilterReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_start = 101;
+   * @generated from field: optional uint64 creation_timestamp_start = 101;
    */
-  creationTimestampStart = protoInt64.zero;
+  creationTimestampStart?: bigint;
 
   /**
    *
@@ -1595,9 +2064,9 @@ export class VendorsServiceFilterReq extends Message<VendorsServiceFilterReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_end = 102;
+   * @generated from field: optional uint64 creation_timestamp_end = 102;
    */
-  creationTimestampEnd = protoInt64.zero;
+  creationTimestampEnd?: bigint;
 
   /**
    *
@@ -1611,9 +2080,9 @@ export class VendorsServiceFilterReq extends Message<VendorsServiceFilterReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_start = 103;
+   * @generated from field: optional uint64 modification_timestamp_start = 103;
    */
-  modificationTimestampStart = protoInt64.zero;
+  modificationTimestampStart?: bigint;
 
   /**
    *
@@ -1627,9 +2096,9 @@ export class VendorsServiceFilterReq extends Message<VendorsServiceFilterReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_end = 104;
+   * @generated from field: optional uint64 modification_timestamp_end = 104;
    */
-  modificationTimestampEnd = protoInt64.zero;
+  modificationTimestampEnd?: bigint;
 
   /**
    *
@@ -1643,9 +2112,9 @@ export class VendorsServiceFilterReq extends Message<VendorsServiceFilterReq> {
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 8;
+   * @generated from field: optional string entity_uuid = 8;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
    *
@@ -1655,9 +2124,9 @@ export class VendorsServiceFilterReq extends Message<VendorsServiceFilterReq> {
    *
    * @example STANDING
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   /**
    *
@@ -1671,9 +2140,9 @@ export class VendorsServiceFilterReq extends Message<VendorsServiceFilterReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_start = 11;
+   * @generated from field: optional uint64 approved_on_start = 11;
    */
-  approvedOnStart = protoInt64.zero;
+  approvedOnStart?: bigint;
 
   /**
    *
@@ -1687,9 +2156,9 @@ export class VendorsServiceFilterReq extends Message<VendorsServiceFilterReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_end = 12;
+   * @generated from field: optional uint64 approved_on_end = 12;
    */
-  approvedOnEnd = protoInt64.zero;
+  approvedOnEnd?: bigint;
 
   /**
    *
@@ -1703,9 +2172,9 @@ export class VendorsServiceFilterReq extends Message<VendorsServiceFilterReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_by_user_id = 13;
+   * @generated from field: optional uint64 approved_by_user_id = 13;
    */
-  approvedByUserId = protoInt64.zero;
+  approvedByUserId?: bigint;
 
   /**
    *
@@ -1719,44 +2188,89 @@ export class VendorsServiceFilterReq extends Message<VendorsServiceFilterReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approver_role_id = 14;
+   * @generated from field: optional uint64 approver_role_id = 14;
    */
-  approverRoleId = protoInt64.zero;
+  approverRoleId?: bigint;
 
   /**
-   * The name of the vendor
    *
-   * @generated from field: string name = 20;
+   * @optional
+   *
+   * @description The official or legal name of the vendor organization or individual.
+   *
+   * @example "Acme Logistics"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string name = 20;
    */
-  name = "";
+  name?: string;
 
   /**
-   * The unique code by which the vendor is classified
    *
-   * @generated from field: string code = 21;
+   * @optional
+   *
+   * @description The unique code or alphanumeric token by which the vendor is classified or categorized internally.
+   *
+   * @example "VND-ACME-001"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string code = 21;
    */
-  code = "";
+  code?: string;
 
   /**
-   * The primary email of the vendor
    *
-   * @generated from field: string email = 22;
+   * @optional
+   *
+   * @description The primary communication email address of the vendor.
+   *
+   * @example "orders@acmelogistics.com"
+   *
+   * @regex ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
+   *
+   * @format Must be a valid and structurally sound email address format.
+   *
+   * @generated from field: optional string email = 22;
    */
-  email = "";
+  email?: string;
 
   /**
-   * The primary contact number of the vendor
    *
-   * @generated from field: string phone = 23;
+   * @optional
+   *
+   * @description The primary contact phone number of the vendor, typically including country and area codes.
+   *
+   * @example "+1-555-222-0199"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string representing a valid phone number format.
+   *
+   * @generated from field: optional string phone = 23;
    */
-  phone = "";
+  phone?: string;
 
   /**
-   * The ID of the family
    *
-   * @generated from field: uint64 family_id = 40;
+   * @optional
+   *
+   * @description Filter by the unique internal identifier of a family. Setting this value restricts the results to only include vendors that are associated with this specific family.
+   *
+   * @example 582
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 family_id = 40;
    */
-  familyId = protoInt64.zero;
+  familyId?: bigint;
 
   /**
    *
@@ -1777,9 +2291,9 @@ export class VendorsServiceFilterReq extends Message<VendorsServiceFilterReq> {
    *
    * @example true
    *
-   * @generated from field: bool include_form_data = 501;
+   * @generated from field: optional bool include_form_data = 501;
    */
-  includeFormData = false;
+  includeFormData?: boolean;
 
   constructor(data?: PartialMessage<VendorsServiceFilterReq>) {
     super();
@@ -1789,28 +2303,28 @@ export class VendorsServiceFilterReq extends Message<VendorsServiceFilterReq> {
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.VendorsServiceFilterReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(VENDOR_SORT_KEY) },
-    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
-    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 23, name: "phone", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 40, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(VENDOR_SORT_KEY), opt: true },
+    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
+    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 22, name: "email", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 23, name: "phone", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 40, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
     { no: 500, name: "form_data", kind: "message", T: FormFieldDatumFilterRequest, repeated: true },
-    { no: 501, name: "include_form_data", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 501, name: "include_form_data", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): VendorsServiceFilterReq {
@@ -1832,7 +2346,13 @@ export class VendorsServiceFilterReq extends Message<VendorsServiceFilterReq> {
 
 /**
  *
- * Describes the base request payload of a count search
+ * Target filter request for counting vendor records matching specific logical criteria.
+ * This message encapsulates lifecycle status filters, timestamp ranges, workflow markers,
+ * and entity references to determine the total size of a targeted dataset.
+ *
+ * **Note:** This is the primary message layout used by backend calculation engines, reporting
+ * services, and frontend pagination headers to evaluate total record matches dynamically
+ * before or alongside retrieving paginated results.
  *
  * @generated from message Scailo.VendorsServiceCountReq
  */
@@ -1845,9 +2365,9 @@ export class VendorsServiceCountReq extends Message<VendorsServiceCountReq> {
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -1861,9 +2381,9 @@ export class VendorsServiceCountReq extends Message<VendorsServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_start = 101;
+   * @generated from field: optional uint64 creation_timestamp_start = 101;
    */
-  creationTimestampStart = protoInt64.zero;
+  creationTimestampStart?: bigint;
 
   /**
    *
@@ -1877,9 +2397,9 @@ export class VendorsServiceCountReq extends Message<VendorsServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_end = 102;
+   * @generated from field: optional uint64 creation_timestamp_end = 102;
    */
-  creationTimestampEnd = protoInt64.zero;
+  creationTimestampEnd?: bigint;
 
   /**
    *
@@ -1893,9 +2413,9 @@ export class VendorsServiceCountReq extends Message<VendorsServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_start = 103;
+   * @generated from field: optional uint64 modification_timestamp_start = 103;
    */
-  modificationTimestampStart = protoInt64.zero;
+  modificationTimestampStart?: bigint;
 
   /**
    *
@@ -1909,9 +2429,9 @@ export class VendorsServiceCountReq extends Message<VendorsServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_end = 104;
+   * @generated from field: optional uint64 modification_timestamp_end = 104;
    */
-  modificationTimestampEnd = protoInt64.zero;
+  modificationTimestampEnd?: bigint;
 
   /**
    *
@@ -1925,9 +2445,9 @@ export class VendorsServiceCountReq extends Message<VendorsServiceCountReq> {
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 8;
+   * @generated from field: optional string entity_uuid = 8;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
    *
@@ -1937,9 +2457,9 @@ export class VendorsServiceCountReq extends Message<VendorsServiceCountReq> {
    *
    * @example STANDING
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   /**
    *
@@ -1953,9 +2473,9 @@ export class VendorsServiceCountReq extends Message<VendorsServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_start = 11;
+   * @generated from field: optional uint64 approved_on_start = 11;
    */
-  approvedOnStart = protoInt64.zero;
+  approvedOnStart?: bigint;
 
   /**
    *
@@ -1969,9 +2489,9 @@ export class VendorsServiceCountReq extends Message<VendorsServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_end = 12;
+   * @generated from field: optional uint64 approved_on_end = 12;
    */
-  approvedOnEnd = protoInt64.zero;
+  approvedOnEnd?: bigint;
 
   /**
    *
@@ -1985,9 +2505,9 @@ export class VendorsServiceCountReq extends Message<VendorsServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_by_user_id = 13;
+   * @generated from field: optional uint64 approved_by_user_id = 13;
    */
-  approvedByUserId = protoInt64.zero;
+  approvedByUserId?: bigint;
 
   /**
    *
@@ -2001,47 +2521,95 @@ export class VendorsServiceCountReq extends Message<VendorsServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approver_role_id = 14;
+   * @generated from field: optional uint64 approver_role_id = 14;
    */
-  approverRoleId = protoInt64.zero;
+  approverRoleId?: bigint;
 
   /**
-   * The name of the vendor
    *
-   * @generated from field: string name = 20;
-   */
-  name = "";
-
-  /**
-   * The unique code by which the vendor is classified
+   * @optional
    *
-   * @generated from field: string code = 21;
-   */
-  code = "";
-
-  /**
-   * The primary email of the vendor
+   * @description The official or legal name of the vendor organization or individual.
    *
-   * @generated from field: string email = 22;
-   */
-  email = "";
-
-  /**
-   * The primary contact number of the vendor
+   * @example "Acme Logistics"
    *
-   * @generated from field: string phone = 23;
-   */
-  phone = "";
-
-  /**
-   * The ID of the family
+   * @regex .*
    *
-   * @generated from field: uint64 family_id = 40;
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string name = 20;
    */
-  familyId = protoInt64.zero;
+  name?: string;
 
   /**
-   * The list of form data filters
+   *
+   * @optional
+   *
+   * @description The unique code or alphanumeric token by which the vendor is classified or categorized internally.
+   *
+   * @example "VND-ACME-001"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string code = 21;
+   */
+  code?: string;
+
+  /**
+   *
+   * @optional
+   *
+   * @description The primary communication email address of the vendor.
+   *
+   * @example "orders@acmelogistics.com"
+   *
+   * @regex ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
+   *
+   * @format Must be a valid and structurally sound email address format.
+   *
+   * @generated from field: optional string email = 22;
+   */
+  email?: string;
+
+  /**
+   *
+   * @optional
+   *
+   * @description The primary contact phone number of the vendor, typically including country and area codes.
+   *
+   * @example "+1-555-222-0199"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string representing a valid phone number format.
+   *
+   * @generated from field: optional string phone = 23;
+   */
+  phone?: string;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Filter by the unique internal identifier of a family. Setting this value restricts the results to only include vendors that are associated with this specific family.
+   *
+   * @example 582
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 family_id = 40;
+   */
+  familyId?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Count based on dynamic form field values.
    *
    * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
    */
@@ -2055,22 +2623,22 @@ export class VendorsServiceCountReq extends Message<VendorsServiceCountReq> {
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.VendorsServiceCountReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
-    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
-    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "email", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 23, name: "phone", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 40, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
+    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
+    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 22, name: "email", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 23, name: "phone", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 40, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
     { no: 500, name: "form_data", kind: "message", T: FormFieldDatumFilterRequest, repeated: true },
   ]);
 
@@ -2093,7 +2661,13 @@ export class VendorsServiceCountReq extends Message<VendorsServiceCountReq> {
 
 /**
  *
- * Describes the request payload for performing a generic search operation on records
+ * Broad-spectrum search and lookup request for locating and paginating vendors via text matching.
+ * This message encapsulates full-text query parameters, pagination controls, sorting keys,
+ * lifecycle status constraints, and other core references.
+ *
+ * **Note:** This is the primary message layout used for global search bars, fast-filtering dashboard
+ * inputs, and omni-box search utilities where users need to match loose textual terms against
+ * records while retaining structural pagination.
  *
  * @generated from message Scailo.VendorsServiceSearchAllReq
  */
@@ -2106,9 +2680,9 @@ export class VendorsServiceSearchAllReq extends Message<VendorsServiceSearchAllR
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -2138,9 +2712,9 @@ export class VendorsServiceSearchAllReq extends Message<VendorsServiceSearchAllR
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -2150,9 +2724,9 @@ export class VendorsServiceSearchAllReq extends Message<VendorsServiceSearchAllR
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -2160,9 +2734,9 @@ export class VendorsServiceSearchAllReq extends Message<VendorsServiceSearchAllR
    *
    * @description The field used for sorting.
    *
-   * @generated from field: Scailo.VENDOR_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.VENDOR_SORT_KEY sort_key = 5;
    */
-  sortKey = VENDOR_SORT_KEY.VENDOR_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: VENDOR_SORT_KEY;
 
   /**
    *
@@ -2176,9 +2750,9 @@ export class VendorsServiceSearchAllReq extends Message<VendorsServiceSearchAllR
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 6;
+   * @generated from field: optional string entity_uuid = 6;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
    *
@@ -2188,13 +2762,13 @@ export class VendorsServiceSearchAllReq extends Message<VendorsServiceSearchAllR
    *
    * @example STANDING
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   /**
    *
-   * @mandatory
+   * @optional
    *
    * @description The search string to match against reference IDs.
    *
@@ -2204,9 +2778,9 @@ export class VendorsServiceSearchAllReq extends Message<VendorsServiceSearchAllR
    *
    * @format: May contain any UTF-8 characters.
    *
-   * @generated from field: string search_key = 11;
+   * @generated from field: optional string search_key = 11;
    */
-  searchKey = "";
+  searchKey?: string;
 
   constructor(data?: PartialMessage<VendorsServiceSearchAllReq>) {
     super();
@@ -2216,14 +2790,14 @@ export class VendorsServiceSearchAllReq extends Message<VendorsServiceSearchAllR
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.VendorsServiceSearchAllReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(VENDOR_SORT_KEY) },
-    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
-    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(VENDOR_SORT_KEY), opt: true },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
+    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): VendorsServiceSearchAllReq {
@@ -2245,7 +2819,8 @@ export class VendorsServiceSearchAllReq extends Message<VendorsServiceSearchAllR
 
 /**
  *
- * Describes the request payload to retrieve approved or unapproved items.
+ * Request payload structure used to search and filter Vendor Item records.
+ * Supports pagination controls, tenancy isolation, status grouping, and text-based matching.
  *
  * @generated from message Scailo.VendorItemsSearchRequest
  */
@@ -2258,9 +2833,9 @@ export class VendorItemsSearchRequest extends Message<VendorItemsSearchRequest> 
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -2290,9 +2865,9 @@ export class VendorItemsSearchRequest extends Message<VendorItemsSearchRequest> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -2302,9 +2877,9 @@ export class VendorItemsSearchRequest extends Message<VendorItemsSearchRequest> 
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -2312,9 +2887,9 @@ export class VendorItemsSearchRequest extends Message<VendorItemsSearchRequest> 
    *
    * @description The field used for sorting.
    *
-   * @generated from field: Scailo.VENDOR_ITEM_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.VENDOR_ITEM_SORT_KEY sort_key = 5;
    */
-  sortKey = VENDOR_ITEM_SORT_KEY.VENDOR_ITEM_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: VENDOR_ITEM_SORT_KEY;
 
   /**
    *
@@ -2328,58 +2903,117 @@ export class VendorItemsSearchRequest extends Message<VendorItemsSearchRequest> 
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 6;
+   * @generated from field: optional string entity_uuid = 6;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
-   * The status of the items
    *
-   * @generated from field: Scailo.VENDOR_ITEM_STATUS status = 7;
+   * @optional
+   *
+   * @description Filter records by their verification lifecycle state (e.g., Approved, Unapproved). Defaults to unspecified/any.
+   *
+   * @example VENDOR_ITEM_STATUS_APPROVED
+   *
+   * @generated from field: optional Scailo.VENDOR_ITEM_STATUS status = 7;
    */
-  status = VENDOR_ITEM_STATUS.VENDOR_ITEM_STATUS_ANY_UNSPECIFIED;
+  status?: VENDOR_ITEM_STATUS;
 
   /**
-   * The ID of the vendor
    *
-   * @generated from field: uint64 vendor_id = 10;
+   * @optional
+   *
+   * @description The unique internal identifier of the target vendor to which the item has been associated.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer greater than zero.
+   *
+   * @generated from field: optional uint64 vendor_id = 10;
    */
-  vendorId = protoInt64.zero;
+  vendorId?: bigint;
 
   /**
-   * The ID of the family
    *
-   * @generated from field: uint64 family_id = 11;
+   * @optional
+   *
+   * @description The unique internal identifier of the target family to which the item belongs.
+   *
+   * @example 582
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer greater than zero.
+   *
+   * @generated from field: optional uint64 family_id = 11;
    */
-  familyId = protoInt64.zero;
+  familyId?: bigint;
 
   /**
-   * The vendor's family code
    *
-   * @generated from field: string vendor_family_code = 12;
+   * @optional
+   *
+   * @description Stores the optional family code string as represented internally by the vendor.
+   *
+   * @example "VEND-FAM-XYZ-01"
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string vendor_family_code = 12;
    */
-  vendorFamilyCode = "";
+  vendorFamilyCode?: string;
 
   /**
-   * The ID of the unit of material
    *
-   * @generated from field: uint64 uom_id = 13;
+   * @optional
+   *
+   * @description The unique internal identifier of the target unit of material (UOM) associated with the item.
+   *
+   * @example 12
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer greater than zero.
+   *
+   * @generated from field: optional uint64 uom_id = 13;
    */
-  uomId = protoInt64.zero;
+  uomId?: bigint;
 
   /**
-   * The ID of the tax group
    *
-   * @generated from field: uint64 tax_group_id = 14;
+   * @optional
+   *
+   * @description The unique internal identifier of the target tax group applied to this item.
+   *
+   * @example 4
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer greater than zero.
+   *
+   * @generated from field: optional uint64 tax_group_id = 14;
    */
-  taxGroupId = protoInt64.zero;
+  taxGroupId?: bigint;
 
   /**
-   * Describes the key with which the search operation needs to be performed
    *
-   * @generated from field: string search_key = 20;
+   * @optional
+   *
+   * @description Alphanumeric key phrase or keyword token used to perform lookup matches across searchable fields like item names.
+   *
+   * @example "Item A"
+   *
+   * @regex .*
+   *
+   * @format String value, can be empty.
+   *
+   * @generated from field: optional string search_key = 20;
    */
-  searchKey = "";
+  searchKey?: string;
 
   constructor(data?: PartialMessage<VendorItemsSearchRequest>) {
     super();
@@ -2389,19 +3023,19 @@ export class VendorItemsSearchRequest extends Message<VendorItemsSearchRequest> 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.VendorItemsSearchRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(VENDOR_ITEM_SORT_KEY) },
-    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 7, name: "status", kind: "enum", T: proto3.getEnumType(VENDOR_ITEM_STATUS) },
-    { no: 10, name: "vendor_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 11, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 12, name: "vendor_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 13, name: "uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 14, name: "tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 20, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(VENDOR_ITEM_SORT_KEY), opt: true },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 7, name: "status", kind: "enum", T: proto3.getEnumType(VENDOR_ITEM_STATUS), opt: true },
+    { no: 10, name: "vendor_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 11, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 12, name: "vendor_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 13, name: "uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 14, name: "tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 20, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): VendorItemsSearchRequest {
@@ -2423,7 +3057,8 @@ export class VendorItemsSearchRequest extends Message<VendorItemsSearchRequest> 
 
 /**
  *
- * Describes the response to a pagination items request
+ * Paginated response packet containing a subset of Vendor Item records.
+ * Includes complete operational state parameters for rendering frontend data grids and tables.
  *
  * @generated from message Scailo.VendorsServicePaginatedItemsResponse
  */
@@ -2499,20 +3134,26 @@ export class VendorsServicePaginatedItemsResponse extends Message<VendorsService
 
 /**
  *
- * Describes the vendor item that also stores the quantity that is required
+ * Represents a vendor item paired with a specific required quantity.
+ * This message encapsulates the base vendor item entity alongside
+ * operational demand metadata, specifying the exact quantity needed.
  *
  * @generated from message Scailo.VendorItemRequired
  */
 export class VendorItemRequired extends Message<VendorItemRequired> {
   /**
-   * The applicable vendor item
+   *
+   * @description The complete vendor item entity containing catalog mappings, pricing configurations, and constraint metadata.
    *
    * @generated from field: Scailo.VendorItem item = 1;
    */
   item?: VendorItem;
 
   /**
-   * The quantity that is required
+   *
+   * @description The exact quantity of the vendor item that is required, represented in the base currency or measurement subunit (e.g., cents).
+   *
+   * @example 500
    *
    * @generated from field: uint64 required_qty = 10;
    */
@@ -2549,7 +3190,9 @@ export class VendorItemRequired extends Message<VendorItemRequired> {
 
 /**
  *
- * Describes the response to a pagination items request for items with applicable required quantities
+ * Represents a paginated response payload containing a specific slice of required vendor items.
+ * This message encapsulates the requested subset of data along with standard pagination
+ * metadata to facilitate offset-based traversal of large datasets.
  *
  * @generated from message Scailo.VendorsServicePaginatedRequiredItemsResponse
  */
@@ -2588,6 +3231,8 @@ export class VendorsServicePaginatedRequiredItemsResponse extends Message<Vendor
    *
    * @description The array of records for the current page.
    *
+   * @example []
+   *
    * @generated from field: repeated Scailo.VendorItemRequired payload = 4;
    */
   payload: VendorItemRequired[] = [];
@@ -2625,38 +3270,79 @@ export class VendorsServicePaginatedRequiredItemsResponse extends Message<Vendor
 
 /**
  *
- * Describes the parameters necessary to create a vendor user
+ * Request message for creating a new vendor user association.
+ * This message encapsulates the necessary identifiers to link a user (and optionally an associate)
+ * to a vendor, along with compliance details and audit logs required for record initialization.
+ *
+ * **Note:** This serves as the primary entry point for managing vendor personnel, ensuring
+ * that the relationship between the vendor and the user is properly audited and validated.
  *
  * @generated from message Scailo.VendorsServiceUserCreateRequest
  */
 export class VendorsServiceUserCreateRequest extends Message<VendorsServiceUserCreateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * Stores the vendor ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target vendor to which the user will be associated.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer greater than zero.
    *
    * @generated from field: uint64 vendor_id = 10;
    */
   vendorId = protoInt64.zero;
 
   /**
-   * Stores the user ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the user being assigned to the vendor.
+   *
+   * @example 5678
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer greater than zero.
    *
    * @generated from field: uint64 user_id = 11;
    */
   userId = protoInt64.zero;
 
   /**
-   * Stores an optional associate ID
    *
-   * @generated from field: uint64 associate_id = 12;
+   * @optional
+   *
+   * @description The unique internal identifier of an associated secondary entity or associate party, if applicable.
+   *
+   * @example 9012
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer. Defaults to 0 if unassigned.
+   *
+   * @generated from field: optional uint64 associate_id = 12;
    */
-  associateId = protoInt64.zero;
+  associateId?: bigint;
 
   constructor(data?: PartialMessage<VendorsServiceUserCreateRequest>) {
     super();
@@ -2666,10 +3352,10 @@ export class VendorsServiceUserCreateRequest extends Message<VendorsServiceUserC
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.VendorsServiceUserCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 10, name: "vendor_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 11, name: "user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 12, name: "associate_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 12, name: "associate_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): VendorsServiceUserCreateRequest {
@@ -2691,7 +3377,10 @@ export class VendorsServiceUserCreateRequest extends Message<VendorsServiceUserC
 
 /**
  *
- * Describes the parameters that constitute a vendor user
+ * Represents a full Vendor User association within the system.
+ * This message encapsulates the complete state of a vendor user relationship,
+ * including organization tenancy, core entity identifiers, audit trails, and
+ * granular approval workflow metadata.
  *
  * @generated from message Scailo.VendorUser
  */
@@ -2724,35 +3413,51 @@ export class VendorUser extends Message<VendorUser> {
 
   /**
    *
-   * @description The approval state of the record
+   * @description A boolean flag indicating whether this specific record requires further administrative approval.
+   *
+   * @example false
+   *
+   * @format Boolean true or false.
    *
    * @generated from field: bool need_approval = 4;
    */
   needApproval = false;
 
   /**
-   * Stores any comment that the user might have added during an operation
+   *
+   * @description Audit log comment or justification captured during the last modification or transactional operation.
+   *
+   * @example "Updated user relationship per customer contract renewal."
    *
    * @generated from field: string user_comment = 5;
    */
   userComment = "";
 
   /**
-   * Stores the vendor ID
+   *
+   * @description The unique internal identifier of the associated vendor.
+   *
+   * @example 1024
    *
    * @generated from field: uint64 vendor_id = 10;
    */
   vendorId = protoInt64.zero;
 
   /**
-   * Stores the user ID
+   *
+   * @description The unique internal identifier of the associated user.
+   *
+   * @example 5678
    *
    * @generated from field: uint64 user_id = 11;
    */
   userId = protoInt64.zero;
 
   /**
-   * Stores an optional associate ID
+   *
+   * @description The unique internal identifier of the optional associated secondary entity or associate party.
+   *
+   * @example 9012
    *
    * @generated from field: uint64 associate_id = 12;
    */
@@ -2795,13 +3500,13 @@ export class VendorUser extends Message<VendorUser> {
 
 /**
  *
- * Describes the message consisting of the list of vendor users
+ * Container message for a collection of Vendor User records.
  *
  * @generated from message Scailo.VendorUsersList
  */
 export class VendorUsersList extends Message<VendorUsersList> {
   /**
-   * List of records
+   * @description An array of Vendor User records.
    *
    * @generated from field: repeated Scailo.VendorUser list = 1;
    */
@@ -2837,7 +3542,8 @@ export class VendorUsersList extends Message<VendorUsersList> {
 
 /**
  *
- * Describes the request payload to search vendor users
+ * Request payload structure used to search and filter Vendor User records.
+ * Supports pagination controls, tenancy isolation, status grouping, and text-based matching.
  *
  * @generated from message Scailo.VendorUsersSearchRequest
  */
@@ -2850,23 +3556,41 @@ export class VendorUsersSearchRequest extends Message<VendorUsersSearchRequest> 
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
-   * The number of records that need to be sent in the response. Returns all records if it is set to -1
+   *
+   * @mandatory
+   *
+   * @description Number of records to fetch. **Critical:** Use `-1` to retrieve all records. A value of `0` will return no results. Default is `0`.
+   *
+   * @example 100
+   *
+   * @regex ^(?:-1|0|[1-9][0-9]*)$
+   *
+   * @format Must be -1 or any non-negative integer (>= -1).
    *
    * @generated from field: int64 count = 2;
    */
   count = protoInt64.zero;
 
   /**
-   * The number that need to be offset by before fetching the records
    *
-   * @generated from field: uint64 offset = 3;
+   * @optional
+   *
+   * @description Number of records to skip (offset) for pagination.
+   *
+   * @example 0
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -2880,44 +3604,73 @@ export class VendorUsersSearchRequest extends Message<VendorUsersSearchRequest> 
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 6;
+   * @generated from field: optional string entity_uuid = 6;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
-   * The status of the users
    *
-   * @generated from field: Scailo.VENDOR_USER_STATUS status = 7;
+   * @optional
+   *
+   * @description Filter records by their verification lifecycle state (e.g., Approved, Unapproved). Defaults to unspecified/any.
+   *
+   * @example VENDOR_USER_STATUS_APPROVED
+   *
+   * @generated from field: optional Scailo.VENDOR_USER_STATUS status = 7;
    */
-  status = VENDOR_USER_STATUS.VENDOR_USER_STATUS_ANY_UNSPECIFIED;
+  status?: VENDOR_USER_STATUS;
 
   /**
-   * Stores the vendor ID
    *
-   * @generated from field: uint64 vendor_id = 10;
+   * @optional
+   *
+   * @description Filter by a specific vendor internal ID.
+   *
+   * @example 1024
+   *
+   * @generated from field: optional uint64 vendor_id = 10;
    */
-  vendorId = protoInt64.zero;
+  vendorId?: bigint;
 
   /**
-   * Stores the user ID
    *
-   * @generated from field: uint64 user_id = 11;
+   * @optional
+   *
+   * @description Filter by a specific user internal ID.
+   *
+   * @example 5678
+   *
+   * @generated from field: optional uint64 user_id = 11;
    */
-  userId = protoInt64.zero;
+  userId?: bigint;
 
   /**
-   * Stores an optional associate ID
    *
-   * @generated from field: uint64 associate_id = 12;
+   * @optional
+   *
+   * @description Filter by a specific associate internal ID.
+   *
+   * @example 9012
+   *
+   * @generated from field: optional uint64 associate_id = 12;
    */
-  associateId = protoInt64.zero;
+  associateId?: bigint;
 
   /**
-   * Describes the key with which the search operation needs to be performed
    *
-   * @generated from field: string search_key = 20;
+   * @optional
+   *
+   * @description Alphanumeric key phrase or keyword token used to perform lookup matches across searchable fields like names or comments.
+   *
+   * @example "John Doe"
+   *
+   * @regex .*
+   *
+   * @format String value, can be empty.
+   *
+   * @generated from field: optional string search_key = 20;
    */
-  searchKey = "";
+  searchKey?: string;
 
   constructor(data?: PartialMessage<VendorUsersSearchRequest>) {
     super();
@@ -2927,15 +3680,15 @@ export class VendorUsersSearchRequest extends Message<VendorUsersSearchRequest> 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.VendorUsersSearchRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 7, name: "status", kind: "enum", T: proto3.getEnumType(VENDOR_USER_STATUS) },
-    { no: 10, name: "vendor_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 11, name: "user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 12, name: "associate_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 20, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 7, name: "status", kind: "enum", T: proto3.getEnumType(VENDOR_USER_STATUS), opt: true },
+    { no: 10, name: "vendor_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 11, name: "user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 12, name: "associate_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 20, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): VendorUsersSearchRequest {
@@ -2957,7 +3710,8 @@ export class VendorUsersSearchRequest extends Message<VendorUsersSearchRequest> 
 
 /**
  *
- * Describes the response to a pagination items request
+ * Paginated response packet containing a subset of Vendor User records.
+ * Includes complete operational state parameters for rendering frontend data grids and tables.
  *
  * @generated from message Scailo.VendorsServicePaginatedUsersResponse
  */

@@ -2,7 +2,17 @@
 
 # Class: ProformaInvoice
 
-Describes the parameters that are part of a standard response
+Represents a complete, finalized Proforma Invoice entity within the system.
+This message encapsulates the comprehensive state of a preliminary billing document
+issued to a buyer prior to physical fulfillment or final delivery. It includes the
+document's identity metadata, operational linkages to a source record (e.g., Sales Order),
+designated bank accounts for advance payments, financial estimations (taxes, discounts, and round-offs),
+approval lifecycle, audit history, and the complete collection of estimated line items.
+
+**Note:** This payload is typically utilized in read operations (e.g., View, Search)
+and provides frontend clients, financial dashboards, and external systems with the
+entire context needed to render the proforma document for customs declarations,
+secure advance payments, or facilitate internal purchasing approvals on the buyer's end.
 
 **`Generated`**
 
@@ -87,7 +97,7 @@ Message\&lt;ProformaInvoice\&gt;.constructor
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:944](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L944)
+[src/proforma_invoices.scailo_pb.ts:1245](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L1245)
 
 ## Properties
 
@@ -95,7 +105,15 @@ Message\&lt;ProformaInvoice\&gt;.constructor
 
 • **amendmentCount**: `bigint` = `protoInt64.zero`
 
-The number of times that the proforma invoice has been amended
+**`Description`**
+
+The number of times that this record has been amended after approval.
+
+**`Example`**
+
+```ts
+5
+```
 
 **`Generated`**
 
@@ -103,7 +121,7 @@ from field: uint64 amendment_count = 22;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:928](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L928)
+[src/proforma_invoices.scailo_pb.ts:1223](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L1223)
 
 ___
 
@@ -121,7 +139,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:795](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L795)
+[src/proforma_invoices.scailo_pb.ts:1055](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L1055)
 
 ___
 
@@ -129,7 +147,15 @@ ___
 
 • **bankAccountId**: `bigint` = `protoInt64.zero`
 
-The associated ID of the bank account
+**`Description`**
+
+The unique internal identifier of the organization's bank account designated to receive advance payments based on this proforma invoice.
+
+**`Example`**
+
+```ts
+15
+```
 
 **`Generated`**
 
@@ -137,7 +163,7 @@ from field: uint64 bank_account_id = 15;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:879](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L879)
+[src/proforma_invoices.scailo_pb.ts:1151](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L1151)
 
 ___
 
@@ -161,7 +187,7 @@ from field: uint64 completed_on = 6;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:821](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L821)
+[src/proforma_invoices.scailo_pb.ts:1081](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L1081)
 
 ___
 
@@ -169,7 +195,15 @@ ___
 
 • **cumulativeExcessTaxAmount**: `bigint` = `protoInt64.zero`
 
-The excess tax amount
+**`Description`**
+
+The anticipated monetary amount of the cumulative excess tax applied to the proforma invoice, represented in the base currency subunit.
+
+**`Example`**
+
+```ts
+1250
+```
 
 **`Generated`**
 
@@ -177,7 +211,7 @@ from field: uint64 cumulative_excess_tax_amount = 20;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:914](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L914)
+[src/proforma_invoices.scailo_pb.ts:1201](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L1201)
 
 ___
 
@@ -185,7 +219,15 @@ ___
 
 • **cumulativeExcessTaxGroupId**: `bigint` = `protoInt64.zero`
 
-The excess tax group
+**`Description`**
+
+The unique internal identifier of an excess tax group anticipated at the cumulative/invoice level (e.g., for specialized regional surcharges).
+
+**`Example`**
+
+```ts
+6
+```
 
 **`Generated`**
 
@@ -193,7 +235,7 @@ from field: uint64 cumulative_excess_tax_group_id = 19;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:907](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L907)
+[src/proforma_invoices.scailo_pb.ts:1191](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L1191)
 
 ___
 
@@ -201,7 +243,15 @@ ___
 
 • **currencyId**: `bigint` = `protoInt64.zero`
 
-The associated ID of the currency
+**`Description`**
+
+The unique internal identifier of the currency used for all financial estimations within this proforma invoice.
+
+**`Example`**
+
+```ts
+3
+```
 
 **`Generated`**
 
@@ -209,7 +259,7 @@ from field: uint64 currency_id = 14;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:872](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L872)
+[src/proforma_invoices.scailo_pb.ts:1141](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L1141)
 
 ___
 
@@ -233,7 +283,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:779](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L779)
+[src/proforma_invoices.scailo_pb.ts:1039](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L1039)
 
 ___
 
@@ -257,7 +307,7 @@ from field: string final_ref_number = 11;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:851](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L851)
+[src/proforma_invoices.scailo_pb.ts:1111](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L1111)
 
 ___
 
@@ -265,7 +315,9 @@ ___
 
 • **formData**: [`FormFieldDatum`](FormFieldDatum.md)[] = `[]`
 
-The list of dynamic forms
+**`Description`**
+
+Collection of organization-specific dynamic data.
 
 **`Generated`**
 
@@ -273,7 +325,7 @@ from field: repeated Scailo.FormFieldDatum form_data = 40;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:942](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L942)
+[src/proforma_invoices.scailo_pb.ts:1243](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L1243)
 
 ___
 
@@ -281,7 +333,19 @@ ___
 
 • **list**: [`ProformaInvoiceItem`](ProformaInvoiceItem.md)[] = `[]`
 
-The list of associated proforma invoice items
+**`Description`**
+
+The complete, aggregated list of individual line items, products, or services that constitute this proforma invoice.
+
+**`Example`**
+
+```ts
+[]
+```
+
+**`Format`**
+
+Repeated array of ProformaInvoiceItem message blocks.
 
 **`Generated`**
 
@@ -289,7 +353,7 @@ from field: repeated Scailo.ProformaInvoiceItem list = 30;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:935](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L935)
+[src/proforma_invoices.scailo_pb.ts:1235](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L1235)
 
 ___
 
@@ -307,7 +371,7 @@ from field: repeated Scailo.LogbookLogConciseSLC logs = 5;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:811](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L811)
+[src/proforma_invoices.scailo_pb.ts:1071](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L1071)
 
 ___
 
@@ -325,7 +389,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:787](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L787)
+[src/proforma_invoices.scailo_pb.ts:1047](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L1047)
 
 ___
 
@@ -333,7 +397,15 @@ ___
 
 • **miscellaneousCost**: `bigint` = `protoInt64.zero`
 
-Any miscellaneous cost
+**`Description`**
+
+Any estimated additional miscellaneous costs (e.g., anticipated freight charges) applied to the proforma invoice, represented in the base currency subunit (e.g., cents).
+
+**`Example`**
+
+```ts
+1500
+```
 
 **`Generated`**
 
@@ -341,7 +413,7 @@ from field: uint64 miscellaneous_cost = 16;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:886](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L886)
+[src/proforma_invoices.scailo_pb.ts:1161](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L1161)
 
 ___
 
@@ -349,7 +421,15 @@ ___
 
 • **overallDiscount**: `bigint` = `protoInt64.zero`
 
-The optional discount amount
+**`Description`**
+
+A flat estimated discount amount applied across the entire proforma invoice total, represented in the base currency subunit (e.g., cents).
+
+**`Example`**
+
+```ts
+500
+```
 
 **`Generated`**
 
@@ -357,7 +437,7 @@ from field: uint64 overall_discount = 17;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:893](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L893)
+[src/proforma_invoices.scailo_pb.ts:1171](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L1171)
 
 ___
 
@@ -365,7 +445,15 @@ ___
 
 • **refFrom**: [`PROFORMA_INVOICE_REF_FROM`](../enums/PROFORMA_INVOICE_REF_FROM.md) = `PROFORMA_INVOICE_REF_FROM.PROFORMA_INVOICE_REF_FROM_ANY_UNSPECIFIED`
 
-The associated reference
+**`Description`**
+
+The specific module or record type from which this preliminary invoice originates (e.g., Sales Order).
+
+**`Example`**
+
+```ts
+"PROFORMA_INVOICE_REF_FROM_SALES_ORDER"
+```
 
 **`Generated`**
 
@@ -373,7 +461,7 @@ from field: Scailo.PROFORMA_INVOICE_REF_FROM ref_from = 12;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:858](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L858)
+[src/proforma_invoices.scailo_pb.ts:1121](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L1121)
 
 ___
 
@@ -381,7 +469,15 @@ ___
 
 • **refId**: `bigint` = `protoInt64.zero`
 
-The associated ID of the reference
+**`Description`**
+
+The unique internal identifier of the specific referenced source document (e.g., the ID of the actual Sales Order being estimated).
+
+**`Example`**
+
+```ts
+1024
+```
 
 **`Generated`**
 
@@ -389,7 +485,7 @@ from field: uint64 ref_id = 13;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:865](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L865)
+[src/proforma_invoices.scailo_pb.ts:1131](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L1131)
 
 ___
 
@@ -413,7 +509,7 @@ from field: string reference_id = 10;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:841](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L841)
+[src/proforma_invoices.scailo_pb.ts:1101](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L1101)
 
 ___
 
@@ -421,7 +517,15 @@ ___
 
 • **roundOff**: `bigint` = `protoInt64.zero`
 
-The applicable round off amount (optional, and can be positive or negative)
+**`Description`**
+
+The estimated rounding adjustment amount to align the anticipated final invoice total. Can be positive or negative, represented in the base currency subunit.
+
+**`Example`**
+
+```ts
+-15
+```
 
 **`Generated`**
 
@@ -429,7 +533,7 @@ from field: int64 round_off = 18;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:900](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L900)
+[src/proforma_invoices.scailo_pb.ts:1181](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L1181)
 
 ___
 
@@ -447,7 +551,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 4;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:803](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L803)
+[src/proforma_invoices.scailo_pb.ts:1063](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L1063)
 
 ___
 
@@ -455,7 +559,19 @@ ___
 
 • **totalValue**: `number` = `0`
 
-Stores the total value of the proforma invoice (as a double, which requires no adjustments)
+**`Description`**
+
+The calculated grand total value of the proforma invoice, including all items, discounts, costs, and round-offs. Represented as a standard decimal value.
+
+**`Example`**
+
+```ts
+15250.75
+```
+
+**`Format`**
+
+Double-precision floating-point number.
 
 **`Generated`**
 
@@ -463,7 +579,7 @@ from field: double total_value = 21;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:921](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L921)
+[src/proforma_invoices.scailo_pb.ts:1213](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L1213)
 
 ___
 
@@ -487,7 +603,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:831](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L831)
+[src/proforma_invoices.scailo_pb.ts:1091](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L1091)
 
 ___
 
@@ -497,7 +613,7 @@ ___
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:951](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L951)
+[src/proforma_invoices.scailo_pb.ts:1252](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L1252)
 
 ___
 
@@ -507,7 +623,7 @@ ___
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:949](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L949)
+[src/proforma_invoices.scailo_pb.ts:1250](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L1250)
 
 ___
 
@@ -517,7 +633,7 @@ ___
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:950](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L950)
+[src/proforma_invoices.scailo_pb.ts:1251](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L1251)
 
 ## Methods
 
@@ -805,7 +921,7 @@ ___
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:988](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L988)
+[src/proforma_invoices.scailo_pb.ts:1289](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L1289)
 
 ___
 
@@ -826,7 +942,7 @@ ___
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:976](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L976)
+[src/proforma_invoices.scailo_pb.ts:1277](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L1277)
 
 ___
 
@@ -847,7 +963,7 @@ ___
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:980](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L980)
+[src/proforma_invoices.scailo_pb.ts:1281](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L1281)
 
 ___
 
@@ -868,4 +984,4 @@ ___
 
 #### Defined in
 
-[src/proforma_invoices.scailo_pb.ts:984](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/proforma_invoices.scailo_pb.ts#L984)
+[src/proforma_invoices.scailo_pb.ts:1285](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/proforma_invoices.scailo_pb.ts#L1285)

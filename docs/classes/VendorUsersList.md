@@ -2,7 +2,7 @@
 
 # Class: VendorUsersList
 
-Describes the message consisting of the list of vendor users
+Container message for a collection of Vendor User records.
 
 **`Generated`**
 
@@ -66,7 +66,7 @@ Message\&lt;VendorUsersList\&gt;.constructor
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2810](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L2810)
+[src/vendors.scailo_pb.ts:3515](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L3515)
 
 ## Properties
 
@@ -74,7 +74,9 @@ Message\&lt;VendorUsersList\&gt;.constructor
 
 • **list**: [`VendorUser`](VendorUser.md)[] = `[]`
 
-List of records
+**`Description`**
+
+An array of Vendor User records.
 
 **`Generated`**
 
@@ -82,7 +84,7 @@ from field: repeated Scailo.VendorUser list = 1;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2808](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L2808)
+[src/vendors.scailo_pb.ts:3513](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L3513)
 
 ___
 
@@ -92,7 +94,7 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2817](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L2817)
+[src/vendors.scailo_pb.ts:3522](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L3522)
 
 ___
 
@@ -102,7 +104,7 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2815](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L2815)
+[src/vendors.scailo_pb.ts:3520](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L3520)
 
 ___
 
@@ -112,7 +114,7 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2816](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L2816)
+[src/vendors.scailo_pb.ts:3521](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L3521)
 
 ## Methods
 
@@ -400,7 +402,7 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2833](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L2833)
+[src/vendors.scailo_pb.ts:3538](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L3538)
 
 ___
 
@@ -421,7 +423,7 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2821](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L2821)
+[src/vendors.scailo_pb.ts:3526](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L3526)
 
 ___
 
@@ -442,7 +444,7 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2825](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L2825)
+[src/vendors.scailo_pb.ts:3530](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L3530)
 
 ___
 
@@ -463,4 +465,4 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2829](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L2829)
+[src/vendors.scailo_pb.ts:3534](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L3534)

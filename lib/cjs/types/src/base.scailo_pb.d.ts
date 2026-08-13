@@ -458,7 +458,37 @@ export declare enum FORM_TYPE {
      *
      * @generated from enum value: FORM_TYPE_GENERAL_SETTINGS_FORM = 800;
      */
-    FORM_TYPE_GENERAL_SETTINGS_FORM = 800
+    FORM_TYPE_GENERAL_SETTINGS_FORM = 800,
+    /**
+     * The form type is "questionnaire-template-form"
+     *
+     * @generated from enum value: FORM_TYPE_QUESTIONNAIRE_TEMPLATE_FORM = 900;
+     */
+    FORM_TYPE_QUESTIONNAIRE_TEMPLATE_FORM = 900,
+    /**
+     * The form type is "questionnaire-option-group-form"
+     *
+     * @generated from enum value: FORM_TYPE_QUESTIONNAIRE_OPTION_GROUP_FORM = 910;
+     */
+    FORM_TYPE_QUESTIONNAIRE_OPTION_GROUP_FORM = 910,
+    /**
+     * The form type is "questionnaire-section-form"
+     *
+     * @generated from enum value: FORM_TYPE_QUESTIONNAIRE_SECTION_FORM = 920;
+     */
+    FORM_TYPE_QUESTIONNAIRE_SECTION_FORM = 920,
+    /**
+     * The form type is "questionnaire-question-form"
+     *
+     * @generated from enum value: FORM_TYPE_QUESTIONNAIRE_QUESTION_FORM = 930;
+     */
+    FORM_TYPE_QUESTIONNAIRE_QUESTION_FORM = 930,
+    /**
+     * The form type is "questionnaire-submission-form"
+     *
+     * @generated from enum value: FORM_TYPE_QUESTIONNAIRE_SUBMISSION_FORM = 940;
+     */
+    FORM_TYPE_QUESTIONNAIRE_SUBMISSION_FORM = 940
 }
 /**
  *
@@ -1430,7 +1460,16 @@ export declare class ActiveStatus extends Message<ActiveStatus> {
  */
 export declare class UpdatePasswordReq extends Message<UpdatePasswordReq> {
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 1;
      */
@@ -1464,7 +1503,16 @@ export declare class UpdatePasswordReq extends Message<UpdatePasswordReq> {
  */
 export declare class UpdateOwnPasswordReq extends Message<UpdateOwnPasswordReq> {
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 1;
      */
@@ -1498,13 +1546,31 @@ export declare class UpdateOwnPasswordReq extends Message<UpdateOwnPasswordReq> 
  */
 export declare class UploadPictureReq extends Message<UploadPictureReq> {
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 1;
      */
     userComment: string;
     /**
-     * The ID of the record that needs to be updated
+     *
+     * @mandatory
+     *
+     * @description The unique internal identifier of the target record that needs to be updated.
+     *
+     * @example 1024
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 id = 2;
      */
@@ -1552,19 +1618,42 @@ export declare class SimpleSearchReq extends Message<SimpleSearchReq> {
 }
 /**
  *
- * Describes the payload necessary for performing Repeat requests with a specific delivery date
+ * Request message for duplicating an existing record while projecting it onto a new timeline.
+ * This payload identifies the source record to be cloned and provides the mandatory overrides
+ * (such as a new reference ID and delivery date) required to instantiate the new entity.
+ *
+ * **Note:** This is commonly used in procurement and sales workflows to rapidly recreate
+ * frequent or recurring orders without manually re-entering line items and complex configurations.
  *
  * @generated from message Scailo.RepeatWithDeliveryDate
  */
 export declare class RepeatWithDeliveryDate extends Message<RepeatWithDeliveryDate> {
     /**
-     * UUID of the resource
+     *
+     * @mandatory
+     *
+     * @description The globally unique identifier (UUID) of the source record that serves as the blueprint for duplication.
+     *
+     * @example "550e8400-e29b-41d4-a716-446655440000"
+     *
+     * @regex ^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+     *
+     * @format Must be a valid v4 UUID in canonical hyphenated form.
      *
      * @generated from field: string uuid = 1;
      */
     uuid: string;
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 2;
      */
@@ -1585,7 +1674,16 @@ export declare class RepeatWithDeliveryDate extends Message<RepeatWithDeliveryDa
      */
     referenceId: string;
     /**
-     * The common delivery date
+     *
+     * @mandatory
+     *
+     * @description The target delivery date to be applied to the newly created record, overriding the schedule of the original source.
+     *
+     * @example "2023-12-31"
+     *
+     * @regex .*
+     *
+     * @format Must be a non-empty string. Expected to follow the standard date format designated by the client (e.g., YYYY-MM-DD).
      *
      * @generated from field: string delivery_date = 13;
      */
@@ -1735,7 +1833,16 @@ export declare class IdentifierWithUserComment extends Message<IdentifierWithUse
      */
     id: bigint;
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 2;
      */
@@ -2375,7 +2482,16 @@ export declare class InventoryPartitionRequest extends Message<InventoryPartitio
      */
     id: bigint;
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 2;
      */

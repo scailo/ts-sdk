@@ -75,7 +75,7 @@ Message\&lt;ReplaceableIndentsServiceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:316](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/replaceable_indents.scailo_pb.ts#L316)
+[src/replaceable_indents.scailo_pb.ts:332](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/replaceable_indents.scailo_pb.ts#L332)
 
 ## Properties
 
@@ -91,7 +91,7 @@ from field: string description = 16;
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:307](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/replaceable_indents.scailo_pb.ts#L307)
+[src/replaceable_indents.scailo_pb.ts:316](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/replaceable_indents.scailo_pb.ts#L316)
 
 ___
 
@@ -125,7 +125,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:233](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/replaceable_indents.scailo_pb.ts#L233)
+[src/replaceable_indents.scailo_pb.ts:233](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/replaceable_indents.scailo_pb.ts#L233)
 
 ___
 
@@ -141,7 +141,7 @@ from field: uint64 family_id = 14;
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:293](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/replaceable_indents.scailo_pb.ts#L293)
+[src/replaceable_indents.scailo_pb.ts:302](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/replaceable_indents.scailo_pb.ts#L302)
 
 ___
 
@@ -149,7 +149,21 @@ ___
 
 • **formData**: [`FormFieldDatumCreateRequest`](FormFieldDatumCreateRequest.md)[] = `[]`
 
-The list of dynamic forms
+**`Optional`**
+
+**`Description`**
+
+A collection of dynamic form fields for organization-specific data.
+
+**`Example`**
+
+```ts
+[]
+```
+
+**`Format`**
+
+An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
 
 **`Generated`**
 
@@ -157,7 +171,7 @@ from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:314](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/replaceable_indents.scailo_pb.ts#L314)
+[src/replaceable_indents.scailo_pb.ts:330](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/replaceable_indents.scailo_pb.ts#L330)
 
 ___
 
@@ -173,7 +187,7 @@ from field: string item_hash = 15;
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:300](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/replaceable_indents.scailo_pb.ts#L300)
+[src/replaceable_indents.scailo_pb.ts:309](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/replaceable_indents.scailo_pb.ts#L309)
 
 ___
 
@@ -189,7 +203,7 @@ from field: uint64 location_id = 12;
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:279](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/replaceable_indents.scailo_pb.ts#L279)
+[src/replaceable_indents.scailo_pb.ts:288](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/replaceable_indents.scailo_pb.ts#L288)
 
 ___
 
@@ -223,7 +237,7 @@ from field: string reference_id = 10;
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:272](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/replaceable_indents.scailo_pb.ts#L272)
+[src/replaceable_indents.scailo_pb.ts:281](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/replaceable_indents.scailo_pb.ts#L281)
 
 ___
 
@@ -239,7 +253,7 @@ from field: string supervisor = 13;
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:286](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/replaceable_indents.scailo_pb.ts#L286)
+[src/replaceable_indents.scailo_pb.ts:295](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/replaceable_indents.scailo_pb.ts#L295)
 
 ___
 
@@ -247,7 +261,25 @@ ___
 
 • **userComment**: `string` = `""`
 
-Stores any comment that the user might add during this operation
+**`Optional`**
+
+**`Description`**
+
+Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+
+**`Example`**
+
+```ts
+"This is a comment for audit purposes."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
@@ -255,7 +287,7 @@ from field: string user_comment = 2;
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:240](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/replaceable_indents.scailo_pb.ts#L240)
+[src/replaceable_indents.scailo_pb.ts:249](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/replaceable_indents.scailo_pb.ts#L249)
 
 ___
 
@@ -289,7 +321,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:256](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/replaceable_indents.scailo_pb.ts#L256)
+[src/replaceable_indents.scailo_pb.ts:265](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/replaceable_indents.scailo_pb.ts#L265)
 
 ___
 
@@ -299,7 +331,7 @@ ___
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:323](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/replaceable_indents.scailo_pb.ts#L323)
+[src/replaceable_indents.scailo_pb.ts:339](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/replaceable_indents.scailo_pb.ts#L339)
 
 ___
 
@@ -309,7 +341,7 @@ ___
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:321](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/replaceable_indents.scailo_pb.ts#L321)
+[src/replaceable_indents.scailo_pb.ts:337](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/replaceable_indents.scailo_pb.ts#L337)
 
 ___
 
@@ -319,7 +351,7 @@ ___
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:322](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/replaceable_indents.scailo_pb.ts#L322)
+[src/replaceable_indents.scailo_pb.ts:338](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/replaceable_indents.scailo_pb.ts#L338)
 
 ## Methods
 
@@ -607,7 +639,7 @@ ___
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:348](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/replaceable_indents.scailo_pb.ts#L348)
+[src/replaceable_indents.scailo_pb.ts:364](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/replaceable_indents.scailo_pb.ts#L364)
 
 ___
 
@@ -628,7 +660,7 @@ ___
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:336](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/replaceable_indents.scailo_pb.ts#L336)
+[src/replaceable_indents.scailo_pb.ts:352](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/replaceable_indents.scailo_pb.ts#L352)
 
 ___
 
@@ -649,7 +681,7 @@ ___
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:340](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/replaceable_indents.scailo_pb.ts#L340)
+[src/replaceable_indents.scailo_pb.ts:356](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/replaceable_indents.scailo_pb.ts#L356)
 
 ___
 
@@ -670,4 +702,4 @@ ___
 
 #### Defined in
 
-[src/replaceable_indents.scailo_pb.ts:344](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/replaceable_indents.scailo_pb.ts#L344)
+[src/replaceable_indents.scailo_pb.ts:360](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/replaceable_indents.scailo_pb.ts#L360)

@@ -9,62 +9,62 @@ import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, 
 
 /**
  *
- * Describes the available sort keys
+ * Enumeration of fields available for sorting store search results.
  *
  * @generated from enum Scailo.STORE_SORT_KEY
  */
 export enum STORE_SORT_KEY {
   /**
-   * Fetch ordered results by id
+   * @description Default sort behavior (by internal ID).
    *
    * @generated from enum value: STORE_SORT_KEY_ID_UNSPECIFIED = 0;
    */
   STORE_SORT_KEY_ID_UNSPECIFIED = 0,
 
   /**
-   * Fetch ordered results by the creation timestamp
+   * @description Sort by the timestamp the record was initially created.
    *
    * @generated from enum value: STORE_SORT_KEY_CREATED_AT = 1;
    */
   STORE_SORT_KEY_CREATED_AT = 1,
 
   /**
-   * Fetch ordered results by the modified timestamp
+   * @description Sort by the timestamp the record was last modified.
    *
    * @generated from enum value: STORE_SORT_KEY_MODIFIED_AT = 2;
    */
   STORE_SORT_KEY_MODIFIED_AT = 2,
 
   /**
-   * Fetch ordered results by the approved on timestamp
+   * @description Sort by the official approval timestamp.
    *
    * @generated from enum value: STORE_SORT_KEY_APPROVED_ON = 3;
    */
   STORE_SORT_KEY_APPROVED_ON = 3,
 
   /**
-   * Fetch ordered results by the approved by field
+   * @description Sort by the system ID of the approving user.
    *
    * @generated from enum value: STORE_SORT_KEY_APPROVED_BY = 4;
    */
   STORE_SORT_KEY_APPROVED_BY = 4,
 
   /**
-   * Fetch ordered results by the approver's role ID
+   * @description Sort by the security role ID used by the approver.
    *
    * @generated from enum value: STORE_SORT_KEY_APPROVER_ROLE_ID = 5;
    */
   STORE_SORT_KEY_APPROVER_ROLE_ID = 5,
 
   /**
-   * Fetch ordered results by the name
+   * @description Sort alphabetically by the user-provided name.
    *
    * @generated from enum value: STORE_SORT_KEY_NAME = 10;
    */
   STORE_SORT_KEY_NAME = 10,
 
   /**
-   * Fetch ordered results by the code
+   * @description Sort alphabetically by the user-provided code.
    *
    * @generated from enum value: STORE_SORT_KEY_CODE = 11;
    */
@@ -84,7 +84,12 @@ proto3.util.setEnumType(STORE_SORT_KEY, "Scailo.STORE_SORT_KEY", [
 
 /**
  *
- * Describes the parameters necessary to create a record
+ * Request message for creating and registering a new retail, wholesale, or fulfillment Store facility.
+ * This record maps geographic or logical location associations, operational points of contact,
+ * internal inventory codes, and multi-tenant security identifiers.
+ *
+ * **Note:** This is the primary entry point for Operations, Supply Chain, and Admins to
+ * initialize major business facilities, retail hubs, or regional warehouse environments.
  *
  * @generated from message Scailo.StoresServiceCreateRequest
  */
@@ -101,58 +106,121 @@ export class StoresServiceCreateRequest extends Message<StoresServiceCreateReque
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 1;
+   * @generated from field: optional string entity_uuid = 1;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 2;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 2;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * The ID of the associated location
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the geographic or logical location under which this store is situated.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative 64-bit integer greater than zero.
    *
    * @generated from field: uint64 location_id = 9;
    */
   locationId = protoInt64.zero;
 
   /**
-   * The name of the store
+   *
+   * @mandatory
+   *
+   * @description The official, friendly, or legal branding name of the store facility.
+   *
+   * @example "Downtown Flagship Store"
+   *
+   * @regex .+
+   *
+   * @format Must be a non-empty string.
    *
    * @generated from field: string name = 10;
    */
   name = "";
 
   /**
-   * The unique code by which the store is classified
+   *
+   * @mandatory
+   *
+   * @description The unique code or internal alphanumeric token used to classify the store facility for accounting, delivery, or inventory mapping.
+   *
+   * @example "STR-DT-01"
+   *
+   * @regex .+
+   *
+   * @format Must be a non-empty string.
    *
    * @generated from field: string code = 11;
    */
   code = "";
 
   /**
-   * The description of the store
    *
-   * @generated from field: string description = 12;
+   * @optional
+   *
+   * @description Clarifying details or operational parameters regarding the store layout, capacity thresholds, or hours of operation.
+   *
+   * @example "Primary retail outlet serving the metropolitan area. Includes standard fulfillment capabilities."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string description = 12;
    */
-  description = "";
+  description?: string;
 
   /**
-   * The username of the incharge
+   *
+   * @mandatory
+   *
+   * @description The unique system username or account identifier of the person-in-charge or facility manager responsible for this store.
+   *
+   * @example "johndoe_mgr"
+   *
+   * @regex .+
+   *
+   * @format Must be a non-empty string representing a valid user identity token.
    *
    * @generated from field: string incharge_username = 13;
    */
   inchargeUsername = "";
 
   /**
-   * The contact number of the store
    *
-   * @generated from field: string phone = 14;
+   * @optional
+   *
+   * @description The primary telephone or hot-line contact number explicitly assigned to the store facility.
+   *
+   * @example "+1-555-0177"
+   *
+   * @regex .*
+   *
+   * @format If provided, should follow valid regional or international telephone formatting specifications.
+   *
+   * @generated from field: optional string phone = 14;
    */
-  phone = "";
+  phone?: string;
 
   constructor(data?: PartialMessage<StoresServiceCreateRequest>) {
     super();
@@ -162,14 +230,14 @@ export class StoresServiceCreateRequest extends Message<StoresServiceCreateReque
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.StoresServiceCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 9, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 12, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 12, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 13, name: "incharge_username", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 14, name: "phone", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 14, name: "phone", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): StoresServiceCreateRequest {
@@ -191,20 +259,44 @@ export class StoresServiceCreateRequest extends Message<StoresServiceCreateReque
 
 /**
  *
- * Describes the parameters necessary to update a record
+ * Request message for updating an existing Store record.
+ * Only applicable for records in `DRAFT` or `REVISION` states.
+ * This message allows for modifying the name, code, description, incharge username, and phone
+ * of an established Store.
+ *
+ * **Note:** Only fields provided in the request will typically be updated.
+ * The unique system ID is required to locate the target record.
  *
  * @generated from message Scailo.StoresServiceUpdateRequest
  */
 export class StoresServiceUpdateRequest extends Message<StoresServiceUpdateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * The ID of the record that needs to be updated
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target record that needs to be updated.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 id = 2;
    */
@@ -218,44 +310,89 @@ export class StoresServiceUpdateRequest extends Message<StoresServiceUpdateReque
    *
    * @example true
    *
-   * @generated from field: bool notify_users = 3;
+   * @generated from field: optional bool notify_users = 3;
    */
-  notifyUsers = false;
+  notifyUsers?: boolean;
 
   /**
-   * The name of the store
    *
-   * @generated from field: string name = 10;
+   * @optional
+   *
+   * @description The official, friendly, or legal branding name of the store facility.
+   *
+   * @example "Downtown Flagship Store"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string name = 10;
    */
-  name = "";
+  name?: string;
 
   /**
-   * The unique code by which the store is classified
    *
-   * @generated from field: string code = 11;
+   * @optional
+   *
+   * @description The unique code or internal alphanumeric token used to classify the store facility for accounting, delivery, or inventory mapping.
+   *
+   * @example "STR-DT-01"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string code = 11;
    */
-  code = "";
+  code?: string;
 
   /**
-   * The description of the store
    *
-   * @generated from field: string description = 12;
+   * @optional
+   *
+   * @description Clarifying details or operational parameters regarding the store layout, capacity thresholds, or hours of operation.
+   *
+   * @example "Primary retail outlet serving the metropolitan area. Includes standard fulfillment capabilities."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string description = 12;
    */
-  description = "";
+  description?: string;
 
   /**
-   * The username of the incharge
    *
-   * @generated from field: string incharge_username = 13;
+   * @optional
+   *
+   * @description The unique system username or account identifier of the person-in-charge or facility manager responsible for this store.
+   *
+   * @example "johndoe_mgr"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string representing a valid user identity token.
+   *
+   * @generated from field: optional string incharge_username = 13;
    */
-  inchargeUsername = "";
+  inchargeUsername?: string;
 
   /**
-   * The contact number of the store
    *
-   * @generated from field: string phone = 14;
+   * @optional
+   *
+   * @description The primary telephone or hot-line contact number explicitly assigned to the store facility.
+   *
+   * @example "+1-555-0177"
+   *
+   * @regex .*
+   *
+   * @format If provided, should follow valid regional or international telephone formatting specifications.
+   *
+   * @generated from field: optional string phone = 14;
    */
-  phone = "";
+  phone?: string;
 
   constructor(data?: PartialMessage<StoresServiceUpdateRequest>) {
     super();
@@ -265,14 +402,14 @@ export class StoresServiceUpdateRequest extends Message<StoresServiceUpdateReque
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.StoresServiceUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 2, name: "id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
-    { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 11, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 12, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 13, name: "incharge_username", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 14, name: "phone", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
+    { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 11, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 12, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 13, name: "incharge_username", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 14, name: "phone", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): StoresServiceUpdateRequest {
@@ -294,7 +431,7 @@ export class StoresServiceUpdateRequest extends Message<StoresServiceUpdateReque
 
 /**
  *
- * Describes the parameters that are part of a standard response
+ * Represents a full Store within the system.
  *
  * @generated from message Scailo.Store
  */
@@ -342,42 +479,60 @@ export class Store extends Message<Store> {
   logs: LogbookLogConciseSLC[] = [];
 
   /**
-   * The ID of the associated location
+   *
+   * @description The unique internal identifier of the geographic or logical location under which this store is situated.
+   *
+   * @example 1024
    *
    * @generated from field: uint64 location_id = 9;
    */
   locationId = protoInt64.zero;
 
   /**
-   * The name of the store
+   *
+   * @description The official, friendly, or legal branding name of the store facility.
+   *
+   * @example "Downtown Flagship Store"
    *
    * @generated from field: string name = 10;
    */
   name = "";
 
   /**
-   * The unique code by which the store is classified
+   *
+   * @description The unique code or internal alphanumeric token used to classify the store facility for accounting, delivery, or inventory mapping.
+   *
+   * @example "STR-DT-01"
    *
    * @generated from field: string code = 11;
    */
   code = "";
 
   /**
-   * The description of the store
+   *
+   * @description Clarifying details or operational parameters regarding the store layout, capacity thresholds, or hours of operation.
+   *
+   * @example "Primary retail outlet serving the metropolitan area. Includes standard fulfillment capabilities."
    *
    * @generated from field: string description = 12;
    */
   description = "";
 
   /**
-   * The username of the incharge
+   *
+   * @description The unique system username or account identifier of the person-in-charge or facility manager responsible for this store.
+   *
+   * @example "johndoe_mgr"
    *
    * @generated from field: string incharge_username = 13;
    */
   inchargeUsername = "";
 
   /**
-   * The contact number of the store
+   *
+   * @description The primary telephone or hot-line contact number explicitly assigned to the store facility.
+   *
+   * @example "+1-555-0177"
    *
    * @generated from field: string phone = 14;
    */
@@ -423,13 +578,13 @@ export class Store extends Message<Store> {
 
 /**
  *
- * Describes the message consisting of the list of records
+ * Container message for a collection of Store records.
  *
  * @generated from message Scailo.StoresList
  */
 export class StoresList extends Message<StoresList> {
   /**
-   * List of records
+   * @description An array of Store records.
    *
    * @generated from field: repeated Scailo.Store list = 1;
    */
@@ -465,7 +620,7 @@ export class StoresList extends Message<StoresList> {
 
 /**
  *
- * Describes a pagination request to retrieve records
+ * Pagination request for retrieving slices of Store records.
  *
  * @generated from message Scailo.StoresServicePaginationReq
  */
@@ -478,9 +633,9 @@ export class StoresServicePaginationReq extends Message<StoresServicePaginationR
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -510,9 +665,9 @@ export class StoresServicePaginationReq extends Message<StoresServicePaginationR
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -522,9 +677,9 @@ export class StoresServicePaginationReq extends Message<StoresServicePaginationR
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -532,16 +687,21 @@ export class StoresServicePaginationReq extends Message<StoresServicePaginationR
    *
    * @description The specific field key to sort the results by.
    *
-   * @generated from field: Scailo.STORE_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.STORE_SORT_KEY sort_key = 5;
    */
-  sortKey = STORE_SORT_KEY.STORE_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: STORE_SORT_KEY;
 
   /**
-   * The status of this store
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
+   * @optional
+   *
+   * @description Filter results by a specific lifecycle status.
+   *
+   * @example STANDING
+   *
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   constructor(data?: PartialMessage<StoresServicePaginationReq>) {
     super();
@@ -551,12 +711,12 @@ export class StoresServicePaginationReq extends Message<StoresServicePaginationR
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.StoresServicePaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(STORE_SORT_KEY) },
-    { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(STORE_SORT_KEY), opt: true },
+    { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): StoresServicePaginationReq {
@@ -578,7 +738,7 @@ export class StoresServicePaginationReq extends Message<StoresServicePaginationR
 
 /**
  *
- * Describes the response to a pagination request
+ * Response message for paginated queries, including total counts for UI elements.
  *
  * @generated from message Scailo.StoresServicePaginationResponse
  */
@@ -654,7 +814,12 @@ export class StoresServicePaginationResponse extends Message<StoresServicePagina
 
 /**
  *
- * Describes the base request payload of a filter search
+ * Advanced filter request for searching and paginating stores using multiple logical criteria.
+ * This message encapsulates pagination controls, sorting keys, lifecycle status filters,
+ * timestamp ranges, and entity references.
+ *
+ * **Note:** This is the primary message layout used by the frontend and external API clients
+ * to build robust data-table queries, reporting views, and targeted record lookups.
  *
  * @generated from message Scailo.StoresServiceFilterReq
  */
@@ -667,9 +832,9 @@ export class StoresServiceFilterReq extends Message<StoresServiceFilterReq> {
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -699,9 +864,9 @@ export class StoresServiceFilterReq extends Message<StoresServiceFilterReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -711,9 +876,9 @@ export class StoresServiceFilterReq extends Message<StoresServiceFilterReq> {
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -721,9 +886,9 @@ export class StoresServiceFilterReq extends Message<StoresServiceFilterReq> {
    *
    * @description The field used for sorting.
    *
-   * @generated from field: Scailo.STORE_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.STORE_SORT_KEY sort_key = 5;
    */
-  sortKey = STORE_SORT_KEY.STORE_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: STORE_SORT_KEY;
 
   /**
    *
@@ -737,9 +902,9 @@ export class StoresServiceFilterReq extends Message<StoresServiceFilterReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_start = 101;
+   * @generated from field: optional uint64 creation_timestamp_start = 101;
    */
-  creationTimestampStart = protoInt64.zero;
+  creationTimestampStart?: bigint;
 
   /**
    *
@@ -753,9 +918,9 @@ export class StoresServiceFilterReq extends Message<StoresServiceFilterReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_end = 102;
+   * @generated from field: optional uint64 creation_timestamp_end = 102;
    */
-  creationTimestampEnd = protoInt64.zero;
+  creationTimestampEnd?: bigint;
 
   /**
    *
@@ -769,9 +934,9 @@ export class StoresServiceFilterReq extends Message<StoresServiceFilterReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_start = 103;
+   * @generated from field: optional uint64 modification_timestamp_start = 103;
    */
-  modificationTimestampStart = protoInt64.zero;
+  modificationTimestampStart?: bigint;
 
   /**
    *
@@ -785,9 +950,9 @@ export class StoresServiceFilterReq extends Message<StoresServiceFilterReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_end = 104;
+   * @generated from field: optional uint64 modification_timestamp_end = 104;
    */
-  modificationTimestampEnd = protoInt64.zero;
+  modificationTimestampEnd?: bigint;
 
   /**
    *
@@ -801,9 +966,9 @@ export class StoresServiceFilterReq extends Message<StoresServiceFilterReq> {
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 8;
+   * @generated from field: optional string entity_uuid = 8;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
    *
@@ -813,9 +978,9 @@ export class StoresServiceFilterReq extends Message<StoresServiceFilterReq> {
    *
    * @example STANDING
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   /**
    *
@@ -829,9 +994,9 @@ export class StoresServiceFilterReq extends Message<StoresServiceFilterReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_start = 11;
+   * @generated from field: optional uint64 approved_on_start = 11;
    */
-  approvedOnStart = protoInt64.zero;
+  approvedOnStart?: bigint;
 
   /**
    *
@@ -845,9 +1010,9 @@ export class StoresServiceFilterReq extends Message<StoresServiceFilterReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_end = 12;
+   * @generated from field: optional uint64 approved_on_end = 12;
    */
-  approvedOnEnd = protoInt64.zero;
+  approvedOnEnd?: bigint;
 
   /**
    *
@@ -861,9 +1026,9 @@ export class StoresServiceFilterReq extends Message<StoresServiceFilterReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_by_user_id = 13;
+   * @generated from field: optional uint64 approved_by_user_id = 13;
    */
-  approvedByUserId = protoInt64.zero;
+  approvedByUserId?: bigint;
 
   /**
    *
@@ -877,30 +1042,57 @@ export class StoresServiceFilterReq extends Message<StoresServiceFilterReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approver_role_id = 14;
+   * @generated from field: optional uint64 approver_role_id = 14;
    */
-  approverRoleId = protoInt64.zero;
+  approverRoleId?: bigint;
 
   /**
-   * The name of the store
    *
-   * @generated from field: string name = 20;
+   * @optional
+   *
+   * @description The official, friendly, or legal branding name of the store facility.
+   *
+   * @example "Downtown Flagship Store"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string name = 20;
    */
-  name = "";
+  name?: string;
 
   /**
-   * The unique code by which the store is classified
    *
-   * @generated from field: string code = 21;
+   * @optional
+   *
+   * @description The unique code or internal alphanumeric token used to classify the store facility for accounting, delivery, or inventory mapping.
+   *
+   * @example "STR-DT-01"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string code = 21;
    */
-  code = "";
+  code?: string;
 
   /**
-   * The ID of the associated location
    *
-   * @generated from field: uint64 location_id = 22;
+   * @optional
+   *
+   * @description The unique internal identifier of the geographic or logical location under which this store is situated.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]*$
+   *
+   * @format Non-negative 64-bit integer greater than zero.
+   *
+   * @generated from field: optional uint64 location_id = 22;
    */
-  locationId = protoInt64.zero;
+  locationId?: bigint;
 
   constructor(data?: PartialMessage<StoresServiceFilterReq>) {
     super();
@@ -910,24 +1102,24 @@ export class StoresServiceFilterReq extends Message<StoresServiceFilterReq> {
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.StoresServiceFilterReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(STORE_SORT_KEY) },
-    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
-    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(STORE_SORT_KEY), opt: true },
+    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
+    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 22, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): StoresServiceFilterReq {
@@ -949,7 +1141,13 @@ export class StoresServiceFilterReq extends Message<StoresServiceFilterReq> {
 
 /**
  *
- * Describes the base request payload of a count search
+ * Target filter request for counting store records matching specific logical criteria.
+ * This message encapsulates lifecycle status filters, timestamp ranges, workflow markers,
+ * and entity references to determine the total size of a targeted dataset.
+ *
+ * **Note:** This is the primary message layout used by backend calculation engines, reporting
+ * services, and frontend pagination headers to evaluate total record matches dynamically
+ * before or alongside retrieving paginated results.
  *
  * @generated from message Scailo.StoresServiceCountReq
  */
@@ -962,9 +1160,9 @@ export class StoresServiceCountReq extends Message<StoresServiceCountReq> {
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -978,9 +1176,9 @@ export class StoresServiceCountReq extends Message<StoresServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_start = 101;
+   * @generated from field: optional uint64 creation_timestamp_start = 101;
    */
-  creationTimestampStart = protoInt64.zero;
+  creationTimestampStart?: bigint;
 
   /**
    *
@@ -994,9 +1192,9 @@ export class StoresServiceCountReq extends Message<StoresServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_end = 102;
+   * @generated from field: optional uint64 creation_timestamp_end = 102;
    */
-  creationTimestampEnd = protoInt64.zero;
+  creationTimestampEnd?: bigint;
 
   /**
    *
@@ -1010,9 +1208,9 @@ export class StoresServiceCountReq extends Message<StoresServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_start = 103;
+   * @generated from field: optional uint64 modification_timestamp_start = 103;
    */
-  modificationTimestampStart = protoInt64.zero;
+  modificationTimestampStart?: bigint;
 
   /**
    *
@@ -1026,9 +1224,9 @@ export class StoresServiceCountReq extends Message<StoresServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_end = 104;
+   * @generated from field: optional uint64 modification_timestamp_end = 104;
    */
-  modificationTimestampEnd = protoInt64.zero;
+  modificationTimestampEnd?: bigint;
 
   /**
    *
@@ -1042,9 +1240,9 @@ export class StoresServiceCountReq extends Message<StoresServiceCountReq> {
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 8;
+   * @generated from field: optional string entity_uuid = 8;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
    *
@@ -1054,9 +1252,9 @@ export class StoresServiceCountReq extends Message<StoresServiceCountReq> {
    *
    * @example STANDING
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   /**
    *
@@ -1070,9 +1268,9 @@ export class StoresServiceCountReq extends Message<StoresServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_start = 11;
+   * @generated from field: optional uint64 approved_on_start = 11;
    */
-  approvedOnStart = protoInt64.zero;
+  approvedOnStart?: bigint;
 
   /**
    *
@@ -1086,9 +1284,9 @@ export class StoresServiceCountReq extends Message<StoresServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_end = 12;
+   * @generated from field: optional uint64 approved_on_end = 12;
    */
-  approvedOnEnd = protoInt64.zero;
+  approvedOnEnd?: bigint;
 
   /**
    *
@@ -1102,9 +1300,9 @@ export class StoresServiceCountReq extends Message<StoresServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_by_user_id = 13;
+   * @generated from field: optional uint64 approved_by_user_id = 13;
    */
-  approvedByUserId = protoInt64.zero;
+  approvedByUserId?: bigint;
 
   /**
    *
@@ -1118,30 +1316,57 @@ export class StoresServiceCountReq extends Message<StoresServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approver_role_id = 14;
+   * @generated from field: optional uint64 approver_role_id = 14;
    */
-  approverRoleId = protoInt64.zero;
+  approverRoleId?: bigint;
 
   /**
-   * The name of the store
    *
-   * @generated from field: string name = 20;
+   * @optional
+   *
+   * @description The official, friendly, or legal branding name of the store facility.
+   *
+   * @example "Downtown Flagship Store"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string name = 20;
    */
-  name = "";
+  name?: string;
 
   /**
-   * The unique code by which the store is classified
    *
-   * @generated from field: string code = 21;
+   * @optional
+   *
+   * @description The unique code or internal alphanumeric token used to classify the store facility for accounting, delivery, or inventory mapping.
+   *
+   * @example "STR-DT-01"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string code = 21;
    */
-  code = "";
+  code?: string;
 
   /**
-   * The ID of the associated location
    *
-   * @generated from field: uint64 location_id = 22;
+   * @optional
+   *
+   * @description The unique internal identifier of the geographic or logical location under which this store is situated.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]*$
+   *
+   * @format Non-negative 64-bit integer greater than zero.
+   *
+   * @generated from field: optional uint64 location_id = 22;
    */
-  locationId = protoInt64.zero;
+  locationId?: bigint;
 
   constructor(data?: PartialMessage<StoresServiceCountReq>) {
     super();
@@ -1151,20 +1376,20 @@ export class StoresServiceCountReq extends Message<StoresServiceCountReq> {
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.StoresServiceCountReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
-    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
-    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
+    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
+    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 22, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): StoresServiceCountReq {
@@ -1186,7 +1411,13 @@ export class StoresServiceCountReq extends Message<StoresServiceCountReq> {
 
 /**
  *
- * Describes the request payload for performing a generic search operation on records
+ * Broad-spectrum search and lookup request for locating and paginating stores via text matching.
+ * This message encapsulates full-text query parameters, pagination controls, sorting keys,
+ * lifecycle status constraints, and other core references.
+ *
+ * **Note:** This is the primary message layout used for global search bars, fast-filtering dashboard
+ * inputs, and omni-box search utilities where users need to match loose textual terms against
+ * records while retaining structural pagination.
  *
  * @generated from message Scailo.StoresServiceSearchAllReq
  */
@@ -1199,9 +1430,9 @@ export class StoresServiceSearchAllReq extends Message<StoresServiceSearchAllReq
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -1231,9 +1462,9 @@ export class StoresServiceSearchAllReq extends Message<StoresServiceSearchAllReq
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -1243,9 +1474,9 @@ export class StoresServiceSearchAllReq extends Message<StoresServiceSearchAllReq
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -1253,9 +1484,9 @@ export class StoresServiceSearchAllReq extends Message<StoresServiceSearchAllReq
    *
    * @description The field used for sorting.
    *
-   * @generated from field: Scailo.STORE_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.STORE_SORT_KEY sort_key = 5;
    */
-  sortKey = STORE_SORT_KEY.STORE_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: STORE_SORT_KEY;
 
   /**
    *
@@ -1269,9 +1500,9 @@ export class StoresServiceSearchAllReq extends Message<StoresServiceSearchAllReq
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 6;
+   * @generated from field: optional string entity_uuid = 6;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
    *
@@ -1281,9 +1512,9 @@ export class StoresServiceSearchAllReq extends Message<StoresServiceSearchAllReq
    *
    * @example STANDING
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   /**
    *
@@ -1297,16 +1528,25 @@ export class StoresServiceSearchAllReq extends Message<StoresServiceSearchAllReq
    *
    * @format: May contain any UTF-8 characters.
    *
-   * @generated from field: string search_key = 11;
+   * @generated from field: optional string search_key = 11;
    */
-  searchKey = "";
+  searchKey?: string;
 
   /**
-   * The ID of the associated location
    *
-   * @generated from field: uint64 location_id = 12;
+   * @optional
+   *
+   * @description The unique internal identifier of the geographic or logical location under which this store is situated.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]*$
+   *
+   * @format Non-negative 64-bit integer greater than zero.
+   *
+   * @generated from field: optional uint64 location_id = 12;
    */
-  locationId = protoInt64.zero;
+  locationId?: bigint;
 
   constructor(data?: PartialMessage<StoresServiceSearchAllReq>) {
     super();
@@ -1316,15 +1556,15 @@ export class StoresServiceSearchAllReq extends Message<StoresServiceSearchAllReq
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.StoresServiceSearchAllReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(STORE_SORT_KEY) },
-    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
-    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 12, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(STORE_SORT_KEY), opt: true },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
+    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 12, name: "location_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): StoresServiceSearchAllReq {

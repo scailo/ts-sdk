@@ -1,6 +1,7 @@
 import { AttendanceAmendment, AttendancesAmendmentsList, AttendancesAmendmentsServiceCountReq, AttendancesAmendmentsServiceCreateRequest, AttendancesAmendmentsServiceFilterReq, AttendancesAmendmentsServicePaginationReq, AttendancesAmendmentsServicePaginationResponse, AttendancesAmendmentsServiceSearchAllReq, AttendancesAmendmentsServiceUpdateRequest } from "./attendances_amendments.scailo_pb.js";
 import { ActiveStatus, BooleanResponse, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithUserComment, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
+import { VaultFolderAttachRequest } from "./vault_folders.scailo_pb.js";
 /**
  *
  * Describes the common methods applicable on each attendance amendment
@@ -227,6 +228,26 @@ export declare const AttendancesAmendmentsService: {
         readonly commentAdd: {
             readonly name: "CommentAdd";
             readonly I: typeof IdentifierUUIDWithUserComment;
+            readonly O: typeof IdentifierResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Attaches a specified folder directly to a record without requiring a full revision workflow.
+         *
+         * This is a convenience API designed to bypass the traditional multi-step modification lifecycle
+         * (e.g., creating a revision, updating data, submitting for verification, and awaiting approval).
+         * It allows for the immediate, single-step association of a vault folder.
+         *
+         * **Side Effects & Lifecycle:**
+         * * The overall status of the record remains unchanged.
+         * * The record's modification timestamp is automatically updated to the current time.
+         * * An entry is appended to the record's audit log tracking this attachment.
+         *
+         * @generated from rpc Scailo.AttendancesAmendmentsService.AttachVaultFolder
+         */
+        readonly attachVaultFolder: {
+            readonly name: "AttachVaultFolder";
+            readonly I: typeof VaultFolderAttachRequest;
             readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };

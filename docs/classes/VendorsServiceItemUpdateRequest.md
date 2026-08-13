@@ -2,7 +2,8 @@
 
 # Class: VendorsServiceItemUpdateRequest
 
-Describes the parameters required to update an item in a vendor
+Represents the request payload containing the parameter constraints and validation rules
+required to update and modify an existing item association under a target vendor.
 
 **`Generated`**
 
@@ -78,7 +79,7 @@ Message\&lt;VendorsServiceItemUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:942](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L942)
+[src/vendors.scailo_pb.ts:1324](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L1324)
 
 ## Properties
 
@@ -86,7 +87,25 @@ Message\&lt;VendorsServiceItemUpdateRequest\&gt;.constructor
 
 • **id**: `bigint` = `protoInt64.zero`
 
-The ID of the record
+**`Mandatory`**
+
+**`Description`**
+
+The unique internal identifier of the target record that needs to be updated.
+
+**`Example`**
+
+```ts
+1024
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -94,7 +113,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:863](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L863)
+[src/vendors.scailo_pb.ts:1146](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L1146)
 
 ___
 
@@ -102,7 +121,25 @@ ___
 
 • **maxOrderQty**: `bigint` = `protoInt64.zero`
 
-The maximum order quantity that can be placed (in cents) (0 represents unlimited max quantity)
+**`Mandatory`**
+
+**`Description`**
+
+The maximum order quantity that can be placed, represented in cents. A value of 0 represents an unlimited maximum quantity.
+
+**`Example`**
+
+```ts
+0
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Unsigned 64-bit integer greater than or equal to 0.
 
 **`Generated`**
 
@@ -110,7 +147,7 @@ from field: uint64 max_order_qty = 21;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:933](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L933)
+[src/vendors.scailo_pb.ts:1306](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L1306)
 
 ___
 
@@ -118,7 +155,25 @@ ___
 
 • **minOrderQty**: `bigint` = `protoInt64.zero`
 
-The minimum order quantity that needs to be placed (in cents) (0.01 is the minimum)
+**`Mandatory`**
+
+**`Description`**
+
+The minimum order quantity that needs to be placed, represented in cents (where a value of 1 represents the absolute minimum increment of 0.01).
+
+**`Example`**
+
+```ts
+100
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer greater than zero.
 
 **`Generated`**
 
@@ -126,7 +181,7 @@ from field: uint64 min_order_qty = 20;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:926](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L926)
+[src/vendors.scailo_pb.ts:1290](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L1290)
 
 ___
 
@@ -134,7 +189,25 @@ ___
 
 • **price**: `bigint` = `protoInt64.zero`
 
-The unit price of the item (as supplied by the vendor)
+**`Mandatory`**
+
+**`Description`**
+
+The unit price of the item as supplied by the vendor, represented in the base currency subunit (e.g., cents).
+
+**`Example`**
+
+```ts
+1550
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Unsigned 64-bit integer greater than or equal to 0.
 
 **`Generated`**
 
@@ -142,7 +215,7 @@ from field: uint64 price = 15;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:891](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L891)
+[src/vendors.scailo_pb.ts:1210](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L1210)
 
 ___
 
@@ -150,7 +223,25 @@ ___
 
 • **priceDeviationRelLowerLimitType**: [`VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE`](../enums/VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE.md) = `VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE.VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE_ANY_UNSPECIFIED`
 
-The relative lower limit type on the price deviation of the item
+**`Mandatory`**
+
+**`Description`**
+
+The relative lower limit type used to evaluate price deviation rules for the item.
+
+**`Example`**
+
+```ts
+"VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE_PERCENTAGE"
+```
+
+**`Regex`**
+
+^[A-Z_]+$
+
+**`Format`**
+
+Valid VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE enum value string or integer.
 
 **`Generated`**
 
@@ -158,7 +249,7 @@ from field: Scailo.VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE price_deviation_rel_lo
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:898](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L898)
+[src/vendors.scailo_pb.ts:1226](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L1226)
 
 ___
 
@@ -166,7 +257,25 @@ ___
 
 • **priceDeviationRelLowerLimitValue**: `bigint` = `protoInt64.zero`
 
-The relative lower limit value on the price deviation of the item (in cents). For percentage, this is the percentage value; for absolute, this is the absolute value. If set to -1, the limit is ignored. The final lower limit of the item is computed as (price - price_deviation_rel_lower_limit_value)
+**`Mandatory`**
+
+**`Description`**
+
+The relative lower limit value on the price deviation of the item (in cents). For percentage, this is the percentage value; for absolute, this is the absolute value. If set to -1, the limit is ignored. The final lower limit of the item is computed as (price - price_deviation_rel_lower_limit_value).
+
+**`Example`**
+
+```ts
+10
+```
+
+**`Regex`**
+
+^-?[0-9]+$
+
+**`Format`**
+
+Signed 64-bit integer greater than or equal to -100.
 
 **`Generated`**
 
@@ -174,7 +283,7 @@ from field: int64 price_deviation_rel_lower_limit_value = 47;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:905](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L905)
+[src/vendors.scailo_pb.ts:1242](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L1242)
 
 ___
 
@@ -182,7 +291,25 @@ ___
 
 • **priceDeviationRelUpperLimitType**: [`VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE`](../enums/VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE.md) = `VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE.VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE_ANY_UNSPECIFIED`
 
-The relative upper limit type on the price deviation of the item
+**`Mandatory`**
+
+**`Description`**
+
+The relative upper limit type used to evaluate price deviation rules for the item.
+
+**`Example`**
+
+```ts
+"VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE_ABSOLUTE"
+```
+
+**`Regex`**
+
+^[A-Z_]+$
+
+**`Format`**
+
+Valid VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE enum value string or integer.
 
 **`Generated`**
 
@@ -190,7 +317,7 @@ from field: Scailo.VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE price_deviation_rel_up
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:912](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L912)
+[src/vendors.scailo_pb.ts:1258](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L1258)
 
 ___
 
@@ -198,7 +325,25 @@ ___
 
 • **priceDeviationRelUpperLimitValue**: `bigint` = `protoInt64.zero`
 
-The relative upper limit value on the price deviation of the item (in cents). For percentage, this is the percentage value; for absolute, this is the absolute value. If set to -1, the limit is ignored. The final upper limit of the item is computed as (price + price_deviation_rel_upper_limit_value)
+**`Mandatory`**
+
+**`Description`**
+
+The relative upper limit value on the price deviation of the item (in cents). For percentage, this is the percentage value; for absolute, this is the absolute value. If set to -1, the limit is ignored. The final upper limit of the item is computed as (price + price_deviation_rel_upper_limit_value).
+
+**`Example`**
+
+```ts
+25
+```
+
+**`Regex`**
+
+^-?[0-9]+$
+
+**`Format`**
+
+Signed 64-bit integer greater than or equal to -100.
 
 **`Generated`**
 
@@ -206,7 +351,7 @@ from field: int64 price_deviation_rel_upper_limit_value = 49;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:919](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L919)
+[src/vendors.scailo_pb.ts:1274](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L1274)
 
 ___
 
@@ -214,7 +359,25 @@ ___
 
 • **stepInterval**: `bigint` = `protoInt64.zero`
 
-The incremental count by which the order quantity can be increased (in cents)
+**`Mandatory`**
+
+**`Description`**
+
+The incremental unit step count by which the order quantity can be increased, represented in cents.
+
+**`Example`**
+
+```ts
+50
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer greater than zero.
 
 **`Generated`**
 
@@ -222,7 +385,7 @@ from field: uint64 step_interval = 22;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:940](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L940)
+[src/vendors.scailo_pb.ts:1322](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L1322)
 
 ___
 
@@ -230,7 +393,25 @@ ___
 
 • **taxGroupId**: `bigint` = `protoInt64.zero`
 
-The ID of the associated tax group
+**`Mandatory`**
+
+**`Description`**
+
+The unique internal identifier of the target tax group applied to this item.
+
+**`Example`**
+
+```ts
+4
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer greater than zero.
 
 **`Generated`**
 
@@ -238,7 +419,7 @@ from field: uint64 tax_group_id = 14;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:884](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L884)
+[src/vendors.scailo_pb.ts:1194](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L1194)
 
 ___
 
@@ -246,7 +427,25 @@ ___
 
 • **uomId**: `bigint` = `protoInt64.zero`
 
-Stores the ID of the vendor's unit of material
+**`Mandatory`**
+
+**`Description`**
+
+The unique internal identifier of the target unit of material (UOM) associated with the item.
+
+**`Example`**
+
+```ts
+12
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer greater than zero.
 
 **`Generated`**
 
@@ -254,39 +453,75 @@ from field: uint64 uom_id = 13;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:877](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L877)
+[src/vendors.scailo_pb.ts:1178](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L1178)
 
 ___
 
 ### userComment
 
-• **userComment**: `string` = `""`
+• `Optional` **userComment**: `string`
 
-Stores any comment that the user might add during this operation
+**`Optional`**
+
+**`Description`**
+
+Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+
+**`Example`**
+
+```ts
+"This is a comment for audit purposes."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
-from field: string user_comment = 1;
+from field: optional string user_comment = 1;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:856](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L856)
+[src/vendors.scailo_pb.ts:1130](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L1130)
 
 ___
 
 ### vendorFamilyCode
 
-• **vendorFamilyCode**: `string` = `""`
+• `Optional` **vendorFamilyCode**: `string`
 
-Stores the optional family code as represented by the vendor
+**`Optional`**
+
+**`Description`**
+
+Stores the optional family code string as represented internally by the vendor.
+
+**`Example`**
+
+```ts
+"VEND-FAM-XYZ-01"
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
-from field: string vendor_family_code = 12;
+from field: optional string vendor_family_code = 12;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:870](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L870)
+[src/vendors.scailo_pb.ts:1162](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L1162)
 
 ___
 
@@ -296,7 +531,7 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:949](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L949)
+[src/vendors.scailo_pb.ts:1331](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L1331)
 
 ___
 
@@ -306,7 +541,7 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:947](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L947)
+[src/vendors.scailo_pb.ts:1329](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L1329)
 
 ___
 
@@ -316,7 +551,7 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:948](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L948)
+[src/vendors.scailo_pb.ts:1330](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L1330)
 
 ## Methods
 
@@ -604,7 +839,7 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:977](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L977)
+[src/vendors.scailo_pb.ts:1359](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L1359)
 
 ___
 
@@ -625,7 +860,7 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:965](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L965)
+[src/vendors.scailo_pb.ts:1347](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L1347)
 
 ___
 
@@ -646,7 +881,7 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:969](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L969)
+[src/vendors.scailo_pb.ts:1351](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L1351)
 
 ___
 
@@ -667,4 +902,4 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:973](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L973)
+[src/vendors.scailo_pb.ts:1355](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L1355)

@@ -2,7 +2,12 @@
 
 # Class: UserPrimaryInfo
 
-Describes the message that is used internally to validate user
+Micro-structure utilized strictly for internal authentication, identity verification, and cryptographic evaluation.
+This message isolates sensitive credential states, role matrices, Multi-Factor Authentication (MFA) secrets,
+and critical baseline attributes required to securely issue session tokens.
+
+**Security Warning:** This message handles raw cryptographic data and password hashes. It must never
+be exposed directly to public-facing edge services or untrusted client layers.
 
 **`Generated`**
 
@@ -74,7 +79,7 @@ Message\&lt;UserPrimaryInfo\&gt;.constructor
 
 #### Defined in
 
-[src/users.scailo_pb.ts:1115](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L1115)
+[src/users.scailo_pb.ts:1706](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L1706)
 
 ## Properties
 
@@ -82,7 +87,15 @@ Message\&lt;UserPrimaryInfo\&gt;.constructor
 
 • **bloodGroup**: `string` = `""`
 
-THe Blood Group of the user
+**`Description`**
+
+Medical identifier indicating the user's legal ABO blood group for emergency or corporate wellness logs.
+
+**`Example`**
+
+```ts
+"O+"
+```
 
 **`Generated`**
 
@@ -90,7 +103,7 @@ from field: string blood_group = 20;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:1113](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L1113)
+[src/users.scailo_pb.ts:1704](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L1704)
 
 ___
 
@@ -98,7 +111,19 @@ ___
 
 • **mfaSecret**: `Uint8Array`
 
-Stores the MFA secret
+**`Description`**
+
+The encrypted or raw binary cryptographic secret used to evaluate Time-Based One-Time Password (TOTP) seed structures during verification loops.
+
+**`Example`**
+
+```ts
+"\x4e\x58\x57\x32\x4d\x34\x33\x55..."
+```
+
+**`Format`**
+
+Sensitive byte array. Access must remain strictly isolated within internal authentication boundaries.
 
 **`Generated`**
 
@@ -106,7 +131,7 @@ from field: bytes mfa_secret = 16;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:1106](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L1106)
+[src/users.scailo_pb.ts:1694](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L1694)
 
 ___
 
@@ -114,7 +139,19 @@ ___
 
 • **mfaStatus**: `boolean` = `false`
 
-Stores if MFA has been enabled by the user
+**`Description`**
+
+Security flag determining whether Multi-Factor Authentication (MFA) has been explicitly provisioned and enabled for this user account.
+
+**`Example`**
+
+```ts
+true
+```
+
+**`Format`**
+
+Boolean value (`true` or `false`).
 
 **`Generated`**
 
@@ -122,7 +159,7 @@ from field: bool mfa_status = 15;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:1099](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L1099)
+[src/users.scailo_pb.ts:1682](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L1682)
 
 ___
 
@@ -130,7 +167,15 @@ ___
 
 • **mobileRoleId**: `bigint` = `protoInt64.zero`
 
-The associated mobile role ID
+**`Description`**
+
+The unique internal identifier of a secondary security role tailored exclusively for mobile application endpoints.
+
+**`Example`**
+
+```ts
+2048
+```
 
 **`Generated`**
 
@@ -138,7 +183,7 @@ from field: uint64 mobile_role_id = 14;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:1092](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L1092)
+[src/users.scailo_pb.ts:1670](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L1670)
 
 ___
 
@@ -146,7 +191,15 @@ ___
 
 • **name**: `string` = `""`
 
-The name of the user
+**`Description`**
+
+The official or full legal name of the user as recognized on statutory documentation.
+
+**`Example`**
+
+```ts
+"Jane Doe"
+```
 
 **`Generated`**
 
@@ -154,7 +207,7 @@ from field: string name = 11;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:1071](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L1071)
+[src/users.scailo_pb.ts:1638](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L1638)
 
 ___
 
@@ -162,7 +215,19 @@ ___
 
 • **password**: `Uint8Array`
 
-Stores the hashed password
+**`Description`**
+
+The securely salted and compiled binary representation of the user's password hash.
+
+**`Example`**
+
+```ts
+"\x24\x32\x61\x24\x31\x32\x24\x4b\x53..."
+```
+
+**`Format`**
+
+Byte array containing the evaluated cryptographic digest (e.g., bcrypt payload).
 
 **`Generated`**
 
@@ -170,7 +235,7 @@ from field: bytes password = 12;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:1078](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L1078)
+[src/users.scailo_pb.ts:1650](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L1650)
 
 ___
 
@@ -178,7 +243,15 @@ ___
 
 • **roleId**: `bigint` = `protoInt64.zero`
 
-The associated role ID
+**`Description`**
+
+The unique internal identifier of the primary web application access or RBAC security role.
+
+**`Example`**
+
+```ts
+1024
+```
 
 **`Generated`**
 
@@ -186,7 +259,7 @@ from field: uint64 role_id = 13;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:1085](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L1085)
+[src/users.scailo_pb.ts:1660](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L1660)
 
 ___
 
@@ -194,7 +267,15 @@ ___
 
 • **userType**: [`USER_TYPE`](../enums/USER_TYPE.md) = `USER_TYPE.USER_TYPE_ANY_UNSPECIFIED`
 
-Stores the user type
+**`Description`**
+
+The categorical classification of the user entity determining their system scope and behavioral rules.
+
+**`Example`**
+
+```ts
+USER_TYPE_EMPLOYEE
+```
 
 **`Generated`**
 
@@ -202,7 +283,7 @@ from field: Scailo.USER_TYPE user_type = 7;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:1057](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L1057)
+[src/users.scailo_pb.ts:1618](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L1618)
 
 ___
 
@@ -210,7 +291,15 @@ ___
 
 • **username**: `string` = `""`
 
-The username of the user
+**`Description`**
+
+The unique system-level login alias used by the actor to authenticate against the platform.
+
+**`Example`**
+
+```ts
+"jane.doe"
+```
 
 **`Generated`**
 
@@ -218,7 +307,7 @@ from field: string username = 10;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:1064](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L1064)
+[src/users.scailo_pb.ts:1628](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L1628)
 
 ___
 
@@ -228,7 +317,7 @@ ___
 
 #### Defined in
 
-[src/users.scailo_pb.ts:1122](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L1122)
+[src/users.scailo_pb.ts:1713](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L1713)
 
 ___
 
@@ -238,7 +327,7 @@ ___
 
 #### Defined in
 
-[src/users.scailo_pb.ts:1120](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L1120)
+[src/users.scailo_pb.ts:1711](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L1711)
 
 ___
 
@@ -248,7 +337,7 @@ ___
 
 #### Defined in
 
-[src/users.scailo_pb.ts:1121](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L1121)
+[src/users.scailo_pb.ts:1712](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L1712)
 
 ## Methods
 
@@ -536,7 +625,7 @@ ___
 
 #### Defined in
 
-[src/users.scailo_pb.ts:1146](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L1146)
+[src/users.scailo_pb.ts:1737](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L1737)
 
 ___
 
@@ -557,7 +646,7 @@ ___
 
 #### Defined in
 
-[src/users.scailo_pb.ts:1134](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L1134)
+[src/users.scailo_pb.ts:1725](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L1725)
 
 ___
 
@@ -578,7 +667,7 @@ ___
 
 #### Defined in
 
-[src/users.scailo_pb.ts:1138](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L1138)
+[src/users.scailo_pb.ts:1729](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L1729)
 
 ___
 
@@ -599,4 +688,4 @@ ___
 
 #### Defined in
 
-[src/users.scailo_pb.ts:1142](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L1142)
+[src/users.scailo_pb.ts:1733](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L1733)

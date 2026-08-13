@@ -9,76 +9,76 @@ import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, 
 
 /**
  *
- * Describes the available sort keys
+ * Enumeration of fields available for sorting team search results.
  *
  * @generated from enum Scailo.TEAM_SORT_KEY
  */
 export enum TEAM_SORT_KEY {
   /**
-   * Fetch ordered results by id
+   * @description Default sort behavior (by internal ID).
    *
    * @generated from enum value: TEAM_SORT_KEY_ID_UNSPECIFIED = 0;
    */
   TEAM_SORT_KEY_ID_UNSPECIFIED = 0,
 
   /**
-   * Fetch ordered results by the creation timestamp
+   * @description Sort by the timestamp the record was initially created.
    *
    * @generated from enum value: TEAM_SORT_KEY_CREATED_AT = 1;
    */
   TEAM_SORT_KEY_CREATED_AT = 1,
 
   /**
-   * Fetch ordered results by the modified timestamp
+   * @description Sort by the timestamp the record was last modified.
    *
    * @generated from enum value: TEAM_SORT_KEY_MODIFIED_AT = 2;
    */
   TEAM_SORT_KEY_MODIFIED_AT = 2,
 
   /**
-   * Fetch ordered results by the approved on timestamp
+   * @description Sort by the official approval timestamp.
    *
    * @generated from enum value: TEAM_SORT_KEY_APPROVED_ON = 3;
    */
   TEAM_SORT_KEY_APPROVED_ON = 3,
 
   /**
-   * Fetch ordered results by the approved by field
+   * @description Sort by the system ID of the approving user.
    *
    * @generated from enum value: TEAM_SORT_KEY_APPROVED_BY = 4;
    */
   TEAM_SORT_KEY_APPROVED_BY = 4,
 
   /**
-   * Fetch ordered results by the approver's role ID
+   * @description Sort by the security role ID used by the approver.
    *
    * @generated from enum value: TEAM_SORT_KEY_APPROVER_ROLE_ID = 5;
    */
   TEAM_SORT_KEY_APPROVER_ROLE_ID = 5,
 
   /**
-   * Fetch ordered results by the approver's completed on timestamp
+   * @description Sort by the timestamp of record completion.
    *
    * @generated from enum value: TEAM_SORT_KEY_COMPLETED_ON = 6;
    */
   TEAM_SORT_KEY_COMPLETED_ON = 6,
 
   /**
-   * Fetch ordered results by the name
+   * @description Sort alphabetically by the user-provided name.
    *
    * @generated from enum value: TEAM_SORT_KEY_NAME = 10;
    */
   TEAM_SORT_KEY_NAME = 10,
 
   /**
-   * Fetch ordered results by the code
+   * @description Sort alphabetically by the user-provided code.
    *
    * @generated from enum value: TEAM_SORT_KEY_CODE = 11;
    */
   TEAM_SORT_KEY_CODE = 11,
 
   /**
-   * Fetch ordered results by the leader ID
+   * @description Sort alphabetically by the ID of the leader.
    *
    * @generated from enum value: TEAM_SORT_KEY_LEAD_USER_ID = 12;
    */
@@ -100,62 +100,62 @@ proto3.util.setEnumType(TEAM_SORT_KEY, "Scailo.TEAM_SORT_KEY", [
 
 /**
  *
- * Describes the available sort keys
+ * Enumeration of fields available for sorting team member search results.
  *
  * @generated from enum Scailo.TEAM_MEMBER_SORT_KEY
  */
 export enum TEAM_MEMBER_SORT_KEY {
   /**
-   * Fetch invoiced results by id
+   * @description Default sort behavior (by internal ID).
    *
    * @generated from enum value: TEAM_MEMBER_SORT_KEY_ID_UNSPECIFIED = 0;
    */
   TEAM_MEMBER_SORT_KEY_ID_UNSPECIFIED = 0,
 
   /**
-   * Fetch invoiced results by the creation timestamp
+   * @description Sort by the timestamp the record was initially created.
    *
    * @generated from enum value: TEAM_MEMBER_SORT_KEY_CREATED_AT = 1;
    */
   TEAM_MEMBER_SORT_KEY_CREATED_AT = 1,
 
   /**
-   * Fetch invoiced results by the modified timestamp
+   * @description Sort by the timestamp the record was last modified.
    *
    * @generated from enum value: TEAM_MEMBER_SORT_KEY_MODIFIED_AT = 2;
    */
   TEAM_MEMBER_SORT_KEY_MODIFIED_AT = 2,
 
   /**
-   * Fetch invoiced results by the approved on timestamp
+   * @description Sort by the official approval timestamp.
    *
    * @generated from enum value: TEAM_MEMBER_SORT_KEY_APPROVED_ON = 3;
    */
   TEAM_MEMBER_SORT_KEY_APPROVED_ON = 3,
 
   /**
-   * Fetch invoiced results by the approved by field
+   * @description Sort by the system ID of the approving user.
    *
    * @generated from enum value: TEAM_MEMBER_SORT_KEY_APPROVED_BY = 4;
    */
   TEAM_MEMBER_SORT_KEY_APPROVED_BY = 4,
 
   /**
-   * Fetch invoiced results by the approver's role ID
+   * @description Sort by the security role ID used by the approver.
    *
    * @generated from enum value: TEAM_MEMBER_SORT_KEY_APPROVER_ROLE_ID = 5;
    */
   TEAM_MEMBER_SORT_KEY_APPROVER_ROLE_ID = 5,
 
   /**
-   * Fetch invoiced results by the team ID
+   * @description Sort by the system ID of the associated team.
    *
    * @generated from enum value: TEAM_MEMBER_SORT_KEY_TEAM_ID = 10;
    */
   TEAM_MEMBER_SORT_KEY_TEAM_ID = 10,
 
   /**
-   * Fetch invoiced results by the member ID
+   * @description Sort by the system ID of the associated member.
    *
    * @generated from enum value: TEAM_MEMBER_SORT_KEY_MEMBER_ID = 11;
    */
@@ -175,27 +175,27 @@ proto3.util.setEnumType(TEAM_MEMBER_SORT_KEY, "Scailo.TEAM_MEMBER_SORT_KEY", [
 
 /**
  *
- * Describes the applicable statuses of team members
+ * Enum defining the applicable lifecycle and verification statuses for team members.
  *
  * @generated from enum Scailo.TEAM_MEMBER_STATUS
  */
 export enum TEAM_MEMBER_STATUS {
   /**
-   * Denotes that status be disregarded. This is used only within search APIs
+   * @description Denotes that the status filter should be disregarded. Used exclusively within search APIs to bypass status restrictions.
    *
    * @generated from enum value: TEAM_MEMBER_STATUS_ANY_UNSPECIFIED = 0;
    */
   TEAM_MEMBER_STATUS_ANY_UNSPECIFIED = 0,
 
   /**
-   * Denotes that the team members must have been approved
+   * @description Denotes that the team member association has passed verification and is actively approved.
    *
    * @generated from enum value: TEAM_MEMBER_STATUS_APPROVED = 1;
    */
   TEAM_MEMBER_STATUS_APPROVED = 1,
 
   /**
-   * Denotes that the team members must be waiting for approval
+   * @description Denotes that the team member association is pending review and waiting for administrative approval.
    *
    * @generated from enum value: TEAM_MEMBER_STATUS_UNAPPROVED = 2;
    */
@@ -210,7 +210,13 @@ proto3.util.setEnumType(TEAM_MEMBER_STATUS, "Scailo.TEAM_MEMBER_STATUS", [
 
 /**
  *
- * Describes the parameters necessary to create a record
+ * Request message for defining and creating a new Team profile within the organizational structure.
+ * This record tracks critical group metadata, unique internal alphanumeric identifiers,
+ * operational descriptions, and leadership assignments.
+ *
+ * **Note:** This is the primary entry point for HR or Organization Administrators
+ * to register new functional groups, squads, or departments to facilitate access control,
+ * task assignment, and workflow routing.
  *
  * @generated from message Scailo.TeamsServiceCreateRequest
  */
@@ -227,16 +233,25 @@ export class TeamsServiceCreateRequest extends Message<TeamsServiceCreateRequest
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 1;
+   * @generated from field: optional string entity_uuid = 1;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 2;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 2;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
    *
@@ -250,37 +265,73 @@ export class TeamsServiceCreateRequest extends Message<TeamsServiceCreateRequest
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 vault_folder_id = 9;
+   * @generated from field: optional uint64 vault_folder_id = 9;
    */
-  vaultFolderId = protoInt64.zero;
+  vaultFolderId?: bigint;
 
   /**
-   * The name of the team
+   *
+   * @mandatory
+   *
+   * @description The primary, human-readable name of the team.
+   *
+   * @example "Core Backend Engineering"
+   *
+   * @regex .+
+   *
+   * @format Must be a non-empty string.
    *
    * @generated from field: string name = 10;
    */
   name = "";
 
   /**
-   * The code of the team
+   *
+   * @mandatory
+   *
+   * @description The unique alphanumeric code used to internally classify and represent the team.
+   *
+   * @example "ENG-CORE-01"
+   *
+   * @regex .+
+   *
+   * @format Must be a non-empty string.
    *
    * @generated from field: string code = 11;
    */
   code = "";
 
   /**
-   * The ID of the user who is the team lead of this team
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the user designated as the team lead or manager for this group.
+   *
+   * @example 402
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 lead_user_id = 12;
    */
   leadUserId = protoInt64.zero;
 
   /**
-   * The description of the team
    *
-   * @generated from field: string description = 13;
+   * @optional
+   *
+   * @description A detailed text description outlining the purpose, responsibilities, and scope of the team.
+   *
+   * @example "Responsible for maintaining backend microservices and core API infrastructure."
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string description = 13;
    */
-  description = "";
+  description?: string;
 
   constructor(data?: PartialMessage<TeamsServiceCreateRequest>) {
     super();
@@ -290,13 +341,13 @@ export class TeamsServiceCreateRequest extends Message<TeamsServiceCreateRequest
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.TeamsServiceCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
     { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 12, name: "lead_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 13, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 13, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): TeamsServiceCreateRequest {
@@ -318,20 +369,44 @@ export class TeamsServiceCreateRequest extends Message<TeamsServiceCreateRequest
 
 /**
  *
- * Describes the parameters necessary to update a record
+ * Request message for updating an existing Team record.
+ * Only applicable for records in `DRAFT` or `REVISION` states.
+ * This message allows for modifying the name, code, lead user id, and description
+ * of an established Team.
+ *
+ * **Note:** Only fields provided in the request will typically be updated.
+ * The unique system ID is required to locate the target record.
  *
  * @generated from message Scailo.TeamsServiceUpdateRequest
  */
 export class TeamsServiceUpdateRequest extends Message<TeamsServiceUpdateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * The ID of the record that needs to be updated
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target record that needs to be updated.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 id = 2;
    */
@@ -345,9 +420,9 @@ export class TeamsServiceUpdateRequest extends Message<TeamsServiceUpdateRequest
    *
    * @example true
    *
-   * @generated from field: bool notify_users = 3;
+   * @generated from field: optional bool notify_users = 3;
    */
-  notifyUsers = false;
+  notifyUsers?: boolean;
 
   /**
    *
@@ -361,37 +436,73 @@ export class TeamsServiceUpdateRequest extends Message<TeamsServiceUpdateRequest
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 vault_folder_id = 9;
+   * @generated from field: optional uint64 vault_folder_id = 9;
    */
-  vaultFolderId = protoInt64.zero;
+  vaultFolderId?: bigint;
 
   /**
-   * The name of the team
    *
-   * @generated from field: string name = 10;
+   * @optional
+   *
+   * @description The primary, human-readable name of the team.
+   *
+   * @example "Core Backend Engineering"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string name = 10;
    */
-  name = "";
+  name?: string;
 
   /**
-   * The code of the team
    *
-   * @generated from field: string code = 11;
+   * @optional
+   *
+   * @description The unique alphanumeric code used to internally classify and represent the team.
+   *
+   * @example "ENG-CORE-01"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string code = 11;
    */
-  code = "";
+  code?: string;
 
   /**
-   * The ID of the user who is the team lead of this team
    *
-   * @generated from field: uint64 lead_user_id = 12;
+   * @optional
+   *
+   * @description The unique internal identifier of the user designated as the team lead or manager for this group.
+   *
+   * @example 402
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: optional uint64 lead_user_id = 12;
    */
-  leadUserId = protoInt64.zero;
+  leadUserId?: bigint;
 
   /**
-   * The description of the team
    *
-   * @generated from field: string description = 13;
+   * @optional
+   *
+   * @description A detailed text description outlining the purpose, responsibilities, and scope of the team.
+   *
+   * @example "Responsible for maintaining backend microservices and core API infrastructure."
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string description = 13;
    */
-  description = "";
+  description?: string;
 
   constructor(data?: PartialMessage<TeamsServiceUpdateRequest>) {
     super();
@@ -401,14 +512,14 @@ export class TeamsServiceUpdateRequest extends Message<TeamsServiceUpdateRequest
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.TeamsServiceUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 2, name: "id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
-    { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 11, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 12, name: "lead_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 13, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 11, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 12, name: "lead_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 13, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): TeamsServiceUpdateRequest {
@@ -430,7 +541,7 @@ export class TeamsServiceUpdateRequest extends Message<TeamsServiceUpdateRequest
 
 /**
  *
- * Describes the parameters that are part of a standard response
+ * Represents a full Team within the system.
  *
  * @generated from message Scailo.Team
  */
@@ -498,35 +609,48 @@ export class Team extends Message<Team> {
   vaultFolderId = protoInt64.zero;
 
   /**
-   * The name of the team
+   *
+   * @description The primary, human-readable name of the team.
+   *
+   * @example "Core Backend Engineering"
    *
    * @generated from field: string name = 10;
    */
   name = "";
 
   /**
-   * The code of the team
+   *
+   * @description The unique alphanumeric code used to internally classify and represent the team.
+   *
+   * @example "ENG-CORE-01"
    *
    * @generated from field: string code = 11;
    */
   code = "";
 
   /**
-   * The ID of the user who is the team lead of this team
+   *
+   * @description The unique internal identifier of the user designated as the team lead or manager for this group.
+   *
+   * @example 402
    *
    * @generated from field: uint64 lead_user_id = 12;
    */
   leadUserId = protoInt64.zero;
 
   /**
-   * The description of the team
+   *
+   * @description A detailed text description outlining the purpose, responsibilities, and scope of the team.
+   *
+   * @example "Responsible for maintaining backend microservices and core API infrastructure."
    *
    * @generated from field: string description = 13;
    */
   description = "";
 
   /**
-   * The list of associated team members
+   *
+   * @description The aggregated list of active member associations mapped to this team.
    *
    * @generated from field: repeated Scailo.TeamMember list = 20;
    */
@@ -573,27 +697,56 @@ export class Team extends Message<Team> {
 
 /**
  *
- * Describes the parameters required to add a member to a team
+ * Request message for assigning and associating a user to an existing team.
+ * This instructs the system to formally bind a personnel record to a functional group,
+ * granting them any relevant downstream access or routing capabilities.
  *
  * @generated from message Scailo.TeamsServiceMemberCreateRequest
  */
 export class TeamsServiceMemberCreateRequest extends Message<TeamsServiceMemberCreateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * Stores the ID of the team
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target team to which the user will be added.
+   *
+   * @example 105
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 team_id = 10;
    */
   teamId = protoInt64.zero;
 
   /**
-   * The ID of the user that is part of the team
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the user being mapped to the team.
+   *
+   * @example 420
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 user_id = 11;
    */
@@ -607,7 +760,7 @@ export class TeamsServiceMemberCreateRequest extends Message<TeamsServiceMemberC
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.TeamsServiceMemberCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 10, name: "team_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 11, name: "user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
@@ -631,20 +784,38 @@ export class TeamsServiceMemberCreateRequest extends Message<TeamsServiceMemberC
 
 /**
  *
- * Describes the parameters required to update a member in a team
+ * Request message for updating the metadata of an existing team member association.
  *
  * @generated from message Scailo.TeamsServiceMemberUpdateRequest
  */
 export class TeamsServiceMemberUpdateRequest extends Message<TeamsServiceMemberUpdateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * The ID of the record
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target record that needs to be updated.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 id = 2;
    */
@@ -658,7 +829,7 @@ export class TeamsServiceMemberUpdateRequest extends Message<TeamsServiceMemberU
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.TeamsServiceMemberUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 2, name: "id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
 
@@ -681,7 +852,8 @@ export class TeamsServiceMemberUpdateRequest extends Message<TeamsServiceMemberU
 
 /**
  *
- * Describes the parameters that constitute a member associated to a team
+ * Represents the finalized association between a user and a team.
+ * Encapsulates the core mapping along with standard lifecycle and compliance metadata.
  *
  * @generated from message Scailo.TeamMember
  */
@@ -714,28 +886,41 @@ export class TeamMember extends Message<TeamMember> {
 
   /**
    *
-   * @description The approval state of the record
+   * @description A boolean flag indicating whether this specific record requires further administrative approval.
+   *
+   * @example false
+   *
+   * @format Boolean true or false.
    *
    * @generated from field: bool need_approval = 4;
    */
   needApproval = false;
 
   /**
-   * Stores any comment that the user might have added during an operation
+   *
+   * @description Audit log comment or justification captured during the last modification or transactional operation.
+   *
+   * @example "This is a comment for audit purposes."
    *
    * @generated from field: string user_comment = 5;
    */
   userComment = "";
 
   /**
-   * Stores the ID of the team
+   *
+   * @description The unique internal identifier of the target team.
+   *
+   * @example 105
    *
    * @generated from field: uint64 team_id = 10;
    */
   teamId = protoInt64.zero;
 
   /**
-   * The ID of the user that is part of the team
+   *
+   * @description The unique internal identifier of the user that is mapped to the team.
+   *
+   * @example 420
    *
    * @generated from field: uint64 user_id = 11;
    */
@@ -777,13 +962,13 @@ export class TeamMember extends Message<TeamMember> {
 
 /**
  *
- * Describes the message consisting of the list of teams
+ * Container message for a collection of Team records.
  *
  * @generated from message Scailo.TeamsList
  */
 export class TeamsList extends Message<TeamsList> {
   /**
-   * List of records
+   * @description An array of Team records.
    *
    * @generated from field: repeated Scailo.Team list = 1;
    */
@@ -819,13 +1004,14 @@ export class TeamsList extends Message<TeamsList> {
 
 /**
  *
- * Describes the message consisting of the list of team members
+ * Represents a collection payload encapsulating multiple Team Member associations.
+ * Used primarily to return the active personnel roster of a specific team.
  *
  * @generated from message Scailo.TeamsMembersList
  */
 export class TeamsMembersList extends Message<TeamsMembersList> {
   /**
-   * List of records
+   * @description An array of Team Member records.
    *
    * @generated from field: repeated Scailo.TeamMember list = 1;
    */
@@ -861,20 +1047,39 @@ export class TeamsMembersList extends Message<TeamsMembersList> {
 
 /**
  *
- * Describes the parameters that are required to retrieve the history of the record
+ * Request payload containing the parameter constraints required to retrieve the historical
+ * audit trail and lifecycle changes of a specific team member association.
  *
  * @generated from message Scailo.TeamMemberHistoryRequest
  */
 export class TeamMemberHistoryRequest extends Message<TeamMemberHistoryRequest> {
   /**
-   * Stores the ID of the team
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target team associated with the historical record.
+   *
+   * @example 105
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 team_id = 10;
    */
   teamId = protoInt64.zero;
 
   /**
-   * The ID of the user that is part of the team
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the user associated with the historical record.
+   *
+   * @example 420
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 user_id = 11;
    */
@@ -911,7 +1116,7 @@ export class TeamMemberHistoryRequest extends Message<TeamMemberHistoryRequest> 
 
 /**
  *
- * Describes a pagination request to retrieve records
+ * Pagination request for retrieving slices of Team records.
  *
  * @generated from message Scailo.TeamsServicePaginationReq
  */
@@ -924,9 +1129,9 @@ export class TeamsServicePaginationReq extends Message<TeamsServicePaginationReq
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -956,9 +1161,9 @@ export class TeamsServicePaginationReq extends Message<TeamsServicePaginationReq
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -968,9 +1173,9 @@ export class TeamsServicePaginationReq extends Message<TeamsServicePaginationReq
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -978,16 +1183,21 @@ export class TeamsServicePaginationReq extends Message<TeamsServicePaginationReq
    *
    * @description The specific field key to sort the results by.
    *
-   * @generated from field: Scailo.TEAM_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.TEAM_SORT_KEY sort_key = 5;
    */
-  sortKey = TEAM_SORT_KEY.TEAM_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: TEAM_SORT_KEY;
 
   /**
-   * The status of this team
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
+   * @optional
+   *
+   * @description Filter results by a specific lifecycle status.
+   *
+   * @example STANDING
+   *
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   constructor(data?: PartialMessage<TeamsServicePaginationReq>) {
     super();
@@ -997,12 +1207,12 @@ export class TeamsServicePaginationReq extends Message<TeamsServicePaginationReq
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.TeamsServicePaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(TEAM_SORT_KEY) },
-    { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(TEAM_SORT_KEY), opt: true },
+    { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): TeamsServicePaginationReq {
@@ -1024,7 +1234,7 @@ export class TeamsServicePaginationReq extends Message<TeamsServicePaginationReq
 
 /**
  *
- * Describes the response to a pagination request
+ * Response message for paginated queries, including total counts for UI elements.
  *
  * @generated from message Scailo.TeamsServicePaginationResponse
  */
@@ -1100,7 +1310,12 @@ export class TeamsServicePaginationResponse extends Message<TeamsServicePaginati
 
 /**
  *
- * Describes the base request payload of a filter search
+ * Advanced filter request for searching and paginating teams using multiple logical criteria.
+ * This message encapsulates pagination controls, sorting keys, lifecycle status filters,
+ * timestamp ranges, and entity references.
+ *
+ * **Note:** This is the primary message layout used by the frontend and external API clients
+ * to build robust data-table queries, reporting views, and targeted record lookups.
  *
  * @generated from message Scailo.TeamsServiceFilterReq
  */
@@ -1113,9 +1328,9 @@ export class TeamsServiceFilterReq extends Message<TeamsServiceFilterReq> {
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -1145,9 +1360,9 @@ export class TeamsServiceFilterReq extends Message<TeamsServiceFilterReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -1157,9 +1372,9 @@ export class TeamsServiceFilterReq extends Message<TeamsServiceFilterReq> {
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -1167,9 +1382,9 @@ export class TeamsServiceFilterReq extends Message<TeamsServiceFilterReq> {
    *
    * @description The field used for sorting.
    *
-   * @generated from field: Scailo.TEAM_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.TEAM_SORT_KEY sort_key = 5;
    */
-  sortKey = TEAM_SORT_KEY.TEAM_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: TEAM_SORT_KEY;
 
   /**
    *
@@ -1183,9 +1398,9 @@ export class TeamsServiceFilterReq extends Message<TeamsServiceFilterReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_start = 101;
+   * @generated from field: optional uint64 creation_timestamp_start = 101;
    */
-  creationTimestampStart = protoInt64.zero;
+  creationTimestampStart?: bigint;
 
   /**
    *
@@ -1199,9 +1414,9 @@ export class TeamsServiceFilterReq extends Message<TeamsServiceFilterReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_end = 102;
+   * @generated from field: optional uint64 creation_timestamp_end = 102;
    */
-  creationTimestampEnd = protoInt64.zero;
+  creationTimestampEnd?: bigint;
 
   /**
    *
@@ -1215,9 +1430,9 @@ export class TeamsServiceFilterReq extends Message<TeamsServiceFilterReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_start = 103;
+   * @generated from field: optional uint64 modification_timestamp_start = 103;
    */
-  modificationTimestampStart = protoInt64.zero;
+  modificationTimestampStart?: bigint;
 
   /**
    *
@@ -1231,9 +1446,9 @@ export class TeamsServiceFilterReq extends Message<TeamsServiceFilterReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_end = 104;
+   * @generated from field: optional uint64 modification_timestamp_end = 104;
    */
-  modificationTimestampEnd = protoInt64.zero;
+  modificationTimestampEnd?: bigint;
 
   /**
    *
@@ -1247,9 +1462,9 @@ export class TeamsServiceFilterReq extends Message<TeamsServiceFilterReq> {
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 8;
+   * @generated from field: optional string entity_uuid = 8;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
    *
@@ -1259,9 +1474,9 @@ export class TeamsServiceFilterReq extends Message<TeamsServiceFilterReq> {
    *
    * @example STANDING
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   /**
    *
@@ -1275,9 +1490,9 @@ export class TeamsServiceFilterReq extends Message<TeamsServiceFilterReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_start = 11;
+   * @generated from field: optional uint64 approved_on_start = 11;
    */
-  approvedOnStart = protoInt64.zero;
+  approvedOnStart?: bigint;
 
   /**
    *
@@ -1291,9 +1506,9 @@ export class TeamsServiceFilterReq extends Message<TeamsServiceFilterReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_end = 12;
+   * @generated from field: optional uint64 approved_on_end = 12;
    */
-  approvedOnEnd = protoInt64.zero;
+  approvedOnEnd?: bigint;
 
   /**
    *
@@ -1307,9 +1522,9 @@ export class TeamsServiceFilterReq extends Message<TeamsServiceFilterReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_by_user_id = 13;
+   * @generated from field: optional uint64 approved_by_user_id = 13;
    */
-  approvedByUserId = protoInt64.zero;
+  approvedByUserId?: bigint;
 
   /**
    *
@@ -1323,9 +1538,9 @@ export class TeamsServiceFilterReq extends Message<TeamsServiceFilterReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approver_role_id = 14;
+   * @generated from field: optional uint64 approver_role_id = 14;
    */
-  approverRoleId = protoInt64.zero;
+  approverRoleId?: bigint;
 
   /**
    *
@@ -1339,9 +1554,9 @@ export class TeamsServiceFilterReq extends Message<TeamsServiceFilterReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 completed_on_start = 15;
+   * @generated from field: optional uint64 completed_on_start = 15;
    */
-  completedOnStart = protoInt64.zero;
+  completedOnStart?: bigint;
 
   /**
    *
@@ -1355,37 +1570,73 @@ export class TeamsServiceFilterReq extends Message<TeamsServiceFilterReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 completed_on_end = 16;
+   * @generated from field: optional uint64 completed_on_end = 16;
    */
-  completedOnEnd = protoInt64.zero;
+  completedOnEnd?: bigint;
 
   /**
-   * The name of the team
    *
-   * @generated from field: string name = 20;
+   * @optional
+   *
+   * @description The primary, human-readable name of the team.
+   *
+   * @example "Core Backend Engineering"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string name = 20;
    */
-  name = "";
+  name?: string;
 
   /**
-   * The code of the team
    *
-   * @generated from field: string code = 21;
+   * @optional
+   *
+   * @description The unique alphanumeric code used to internally classify and represent the team.
+   *
+   * @example "ENG-CORE-01"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string code = 21;
    */
-  code = "";
+  code?: string;
 
   /**
-   * The ID of the leader
    *
-   * @generated from field: uint64 lead_user_id = 22;
+   * @optional
+   *
+   * @description The unique internal identifier of the user designated as the team lead or manager for this group.
+   *
+   * @example 402
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: optional uint64 lead_user_id = 22;
    */
-  leadUserId = protoInt64.zero;
+  leadUserId?: bigint;
 
   /**
-   * The ID of the member
    *
-   * @generated from field: uint64 member_user_id = 23;
+   * @optional
+   *
+   * @description The unique internal identifier of the user designated as the team member that is part of this group.
+   *
+   * @example 402
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: optional uint64 member_user_id = 23;
    */
-  memberUserId = protoInt64.zero;
+  memberUserId?: bigint;
 
   constructor(data?: PartialMessage<TeamsServiceFilterReq>) {
     super();
@@ -1395,27 +1646,27 @@ export class TeamsServiceFilterReq extends Message<TeamsServiceFilterReq> {
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.TeamsServiceFilterReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(TEAM_SORT_KEY) },
-    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
-    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 15, name: "completed_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "lead_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 23, name: "member_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(TEAM_SORT_KEY), opt: true },
+    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
+    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 15, name: "completed_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 22, name: "lead_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 23, name: "member_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): TeamsServiceFilterReq {
@@ -1437,7 +1688,13 @@ export class TeamsServiceFilterReq extends Message<TeamsServiceFilterReq> {
 
 /**
  *
- * Describes the base request payload of a count search
+ * Target filter request for counting team records matching specific logical criteria.
+ * This message encapsulates lifecycle status filters, timestamp ranges, workflow markers,
+ * and entity references to determine the total size of a targeted dataset.
+ *
+ * **Note:** This is the primary message layout used by backend calculation engines, reporting
+ * services, and frontend pagination headers to evaluate total record matches dynamically
+ * before or alongside retrieving paginated results.
  *
  * @generated from message Scailo.TeamsServiceCountReq
  */
@@ -1450,9 +1707,9 @@ export class TeamsServiceCountReq extends Message<TeamsServiceCountReq> {
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -1466,9 +1723,9 @@ export class TeamsServiceCountReq extends Message<TeamsServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_start = 101;
+   * @generated from field: optional uint64 creation_timestamp_start = 101;
    */
-  creationTimestampStart = protoInt64.zero;
+  creationTimestampStart?: bigint;
 
   /**
    *
@@ -1482,9 +1739,9 @@ export class TeamsServiceCountReq extends Message<TeamsServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_end = 102;
+   * @generated from field: optional uint64 creation_timestamp_end = 102;
    */
-  creationTimestampEnd = protoInt64.zero;
+  creationTimestampEnd?: bigint;
 
   /**
    *
@@ -1498,9 +1755,9 @@ export class TeamsServiceCountReq extends Message<TeamsServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_start = 103;
+   * @generated from field: optional uint64 modification_timestamp_start = 103;
    */
-  modificationTimestampStart = protoInt64.zero;
+  modificationTimestampStart?: bigint;
 
   /**
    *
@@ -1514,9 +1771,9 @@ export class TeamsServiceCountReq extends Message<TeamsServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_end = 104;
+   * @generated from field: optional uint64 modification_timestamp_end = 104;
    */
-  modificationTimestampEnd = protoInt64.zero;
+  modificationTimestampEnd?: bigint;
 
   /**
    *
@@ -1530,9 +1787,9 @@ export class TeamsServiceCountReq extends Message<TeamsServiceCountReq> {
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 8;
+   * @generated from field: optional string entity_uuid = 8;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
    *
@@ -1542,9 +1799,9 @@ export class TeamsServiceCountReq extends Message<TeamsServiceCountReq> {
    *
    * @example STANDING
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   /**
    *
@@ -1558,9 +1815,9 @@ export class TeamsServiceCountReq extends Message<TeamsServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_start = 11;
+   * @generated from field: optional uint64 approved_on_start = 11;
    */
-  approvedOnStart = protoInt64.zero;
+  approvedOnStart?: bigint;
 
   /**
    *
@@ -1574,9 +1831,9 @@ export class TeamsServiceCountReq extends Message<TeamsServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_end = 12;
+   * @generated from field: optional uint64 approved_on_end = 12;
    */
-  approvedOnEnd = protoInt64.zero;
+  approvedOnEnd?: bigint;
 
   /**
    *
@@ -1590,9 +1847,9 @@ export class TeamsServiceCountReq extends Message<TeamsServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_by_user_id = 13;
+   * @generated from field: optional uint64 approved_by_user_id = 13;
    */
-  approvedByUserId = protoInt64.zero;
+  approvedByUserId?: bigint;
 
   /**
    *
@@ -1606,9 +1863,9 @@ export class TeamsServiceCountReq extends Message<TeamsServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approver_role_id = 14;
+   * @generated from field: optional uint64 approver_role_id = 14;
    */
-  approverRoleId = protoInt64.zero;
+  approverRoleId?: bigint;
 
   /**
    *
@@ -1622,9 +1879,9 @@ export class TeamsServiceCountReq extends Message<TeamsServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 completed_on_start = 15;
+   * @generated from field: optional uint64 completed_on_start = 15;
    */
-  completedOnStart = protoInt64.zero;
+  completedOnStart?: bigint;
 
   /**
    *
@@ -1638,37 +1895,73 @@ export class TeamsServiceCountReq extends Message<TeamsServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 completed_on_end = 16;
+   * @generated from field: optional uint64 completed_on_end = 16;
    */
-  completedOnEnd = protoInt64.zero;
+  completedOnEnd?: bigint;
 
   /**
-   * The name of the team
    *
-   * @generated from field: string name = 20;
+   * @optional
+   *
+   * @description The primary, human-readable name of the team.
+   *
+   * @example "Core Backend Engineering"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string name = 20;
    */
-  name = "";
+  name?: string;
 
   /**
-   * The code of the team
    *
-   * @generated from field: string code = 21;
+   * @optional
+   *
+   * @description The unique alphanumeric code used to internally classify and represent the team.
+   *
+   * @example "ENG-CORE-01"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string code = 21;
    */
-  code = "";
+  code?: string;
 
   /**
-   * The ID of the leader
    *
-   * @generated from field: uint64 lead_user_id = 22;
+   * @optional
+   *
+   * @description The unique internal identifier of the user designated as the team lead or manager for this group.
+   *
+   * @example 402
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: optional uint64 lead_user_id = 22;
    */
-  leadUserId = protoInt64.zero;
+  leadUserId?: bigint;
 
   /**
-   * The ID of the member
    *
-   * @generated from field: uint64 member_user_id = 23;
+   * @optional
+   *
+   * @description The unique internal identifier of the user designated as the team member that is part of this group.
+   *
+   * @example 402
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: optional uint64 member_user_id = 23;
    */
-  memberUserId = protoInt64.zero;
+  memberUserId?: bigint;
 
   constructor(data?: PartialMessage<TeamsServiceCountReq>) {
     super();
@@ -1678,23 +1971,23 @@ export class TeamsServiceCountReq extends Message<TeamsServiceCountReq> {
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.TeamsServiceCountReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
-    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
-    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 15, name: "completed_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "lead_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 23, name: "member_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
+    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
+    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 15, name: "completed_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 22, name: "lead_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 23, name: "member_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): TeamsServiceCountReq {
@@ -1716,7 +2009,13 @@ export class TeamsServiceCountReq extends Message<TeamsServiceCountReq> {
 
 /**
  *
- * Describes the request payload for performing a generic search operation on records
+ * Broad-spectrum search and lookup request for locating and paginating teams via text matching.
+ * This message encapsulates full-text query parameters, pagination controls, sorting keys,
+ * lifecycle status constraints, and other core references.
+ *
+ * **Note:** This is the primary message layout used for global search bars, fast-filtering dashboard
+ * inputs, and omni-box search utilities where users need to match loose textual terms against
+ * records while retaining structural pagination.
  *
  * @generated from message Scailo.TeamsServiceSearchAllReq
  */
@@ -1729,9 +2028,9 @@ export class TeamsServiceSearchAllReq extends Message<TeamsServiceSearchAllReq> 
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -1761,9 +2060,9 @@ export class TeamsServiceSearchAllReq extends Message<TeamsServiceSearchAllReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -1773,9 +2072,9 @@ export class TeamsServiceSearchAllReq extends Message<TeamsServiceSearchAllReq> 
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -1783,9 +2082,9 @@ export class TeamsServiceSearchAllReq extends Message<TeamsServiceSearchAllReq> 
    *
    * @description The field used for sorting.
    *
-   * @generated from field: Scailo.TEAM_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.TEAM_SORT_KEY sort_key = 5;
    */
-  sortKey = TEAM_SORT_KEY.TEAM_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: TEAM_SORT_KEY;
 
   /**
    *
@@ -1799,9 +2098,9 @@ export class TeamsServiceSearchAllReq extends Message<TeamsServiceSearchAllReq> 
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 6;
+   * @generated from field: optional string entity_uuid = 6;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
    *
@@ -1811,13 +2110,13 @@ export class TeamsServiceSearchAllReq extends Message<TeamsServiceSearchAllReq> 
    *
    * @example STANDING
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   /**
    *
-   * @mandatory
+   * @optional
    *
    * @description The search string to match against reference IDs.
    *
@@ -1827,9 +2126,9 @@ export class TeamsServiceSearchAllReq extends Message<TeamsServiceSearchAllReq> 
    *
    * @format: May contain any UTF-8 characters.
    *
-   * @generated from field: string search_key = 11;
+   * @generated from field: optional string search_key = 11;
    */
-  searchKey = "";
+  searchKey?: string;
 
   constructor(data?: PartialMessage<TeamsServiceSearchAllReq>) {
     super();
@@ -1839,14 +2138,14 @@ export class TeamsServiceSearchAllReq extends Message<TeamsServiceSearchAllReq> 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.TeamsServiceSearchAllReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(TEAM_SORT_KEY) },
-    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
-    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(TEAM_SORT_KEY), opt: true },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
+    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): TeamsServiceSearchAllReq {
@@ -1868,7 +2167,8 @@ export class TeamsServiceSearchAllReq extends Message<TeamsServiceSearchAllReq> 
 
 /**
  *
- * Describes the request payload to retrieve approved or unapproved members.
+ * Request payload structure used to search and filter Team Member records.
+ * Supports pagination controls, tenancy isolation, status grouping, and text-based matching.
  *
  * @generated from message Scailo.TeamMembersSearchRequest
  */
@@ -1881,9 +2181,9 @@ export class TeamMembersSearchRequest extends Message<TeamMembersSearchRequest> 
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -1913,9 +2213,9 @@ export class TeamMembersSearchRequest extends Message<TeamMembersSearchRequest> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -1925,9 +2225,9 @@ export class TeamMembersSearchRequest extends Message<TeamMembersSearchRequest> 
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -1935,9 +2235,9 @@ export class TeamMembersSearchRequest extends Message<TeamMembersSearchRequest> 
    *
    * @description The field used for sorting.
    *
-   * @generated from field: Scailo.TEAM_MEMBER_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.TEAM_MEMBER_SORT_KEY sort_key = 5;
    */
-  sortKey = TEAM_MEMBER_SORT_KEY.TEAM_MEMBER_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: TEAM_MEMBER_SORT_KEY;
 
   /**
    *
@@ -1951,65 +2251,133 @@ export class TeamMembersSearchRequest extends Message<TeamMembersSearchRequest> 
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 6;
+   * @generated from field: optional string entity_uuid = 6;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
-   * The status of the members
    *
-   * @generated from field: Scailo.TEAM_MEMBER_STATUS status = 7;
+   * @optional
+   *
+   * @description Filter records by their verification lifecycle state (e.g., Approved, Unapproved). Defaults to unspecified/any.
+   *
+   * @example TEAM_MEMBER_STATUS_APPROVED
+   *
+   * @generated from field: optional Scailo.TEAM_MEMBER_STATUS status = 7;
    */
-  status = TEAM_MEMBER_STATUS.TEAM_MEMBER_STATUS_ANY_UNSPECIFIED;
+  status?: TEAM_MEMBER_STATUS;
 
   /**
-   * The start range of approved timestamp
    *
-   * @generated from field: uint64 approved_on_start = 10;
+   * @optional
+   *
+   * @description Filter records approved ON or AFTER this UNIX timestamp.
+   *
+   * @example 1672531200
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 approved_on_start = 10;
    */
-  approvedOnStart = protoInt64.zero;
+  approvedOnStart?: bigint;
 
   /**
-   * The end range of approved timestamp
    *
-   * @generated from field: uint64 approved_on_end = 11;
+   * @optional
+   *
+   * @description Filter records approved ON or BEFORE this UNIX timestamp.
+   *
+   * @example 1704067199
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 approved_on_end = 11;
    */
-  approvedOnEnd = protoInt64.zero;
+  approvedOnEnd?: bigint;
 
   /**
-   * The ID of the approver
    *
-   * @generated from field: uint64 approved_by_user_id = 12;
+   * @optional
+   *
+   * @description Filter by the specific user ID who approved the records.
+   *
+   * @example 501
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 approved_by_user_id = 12;
    */
-  approvedByUserId = protoInt64.zero;
+  approvedByUserId?: bigint;
 
   /**
-   * The role ID of the approver
    *
-   * @generated from field: uint64 approver_role_id = 13;
+   * @optional
+   *
+   * @description Filter by the role ID of the approver.
+   *
+   * @example 5
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 approver_role_id = 13;
    */
-  approverRoleId = protoInt64.zero;
+  approverRoleId?: bigint;
 
   /**
-   * The ID of the team
    *
-   * @generated from field: uint64 team_id = 20;
+   * @optional
+   *
+   * @description The unique internal identifier of the target team to which the user will be added.
+   *
+   * @example 105
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: optional uint64 team_id = 20;
    */
-  teamId = protoInt64.zero;
+  teamId?: bigint;
 
   /**
-   * The ID of the member
    *
-   * @generated from field: uint64 user_id = 21;
+   * @optional
+   *
+   * @description The unique internal identifier of the user being mapped to the team.
+   *
+   * @example 420
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: optional uint64 user_id = 21;
    */
-  userId = protoInt64.zero;
+  userId?: bigint;
 
   /**
-   * Describes the key with which the search operation needs to be performed
    *
-   * @generated from field: string search_key = 40;
+   * @optional
+   *
+   * @description The search string to match against reference IDs.
+   *
+   * @example "Medical 2023"
+   *
+   * @regex .*
+   *
+   * @format: May contain any UTF-8 characters.
+   *
+   * @generated from field: optional string search_key = 40;
    */
-  searchKey = "";
+  searchKey?: string;
 
   constructor(data?: PartialMessage<TeamMembersSearchRequest>) {
     super();
@@ -2019,20 +2387,20 @@ export class TeamMembersSearchRequest extends Message<TeamMembersSearchRequest> 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.TeamMembersSearchRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(TEAM_MEMBER_SORT_KEY) },
-    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 7, name: "status", kind: "enum", T: proto3.getEnumType(TEAM_MEMBER_STATUS) },
-    { no: 10, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 11, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 12, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 13, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 20, name: "team_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 21, name: "user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 40, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(TEAM_MEMBER_SORT_KEY), opt: true },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 7, name: "status", kind: "enum", T: proto3.getEnumType(TEAM_MEMBER_STATUS), opt: true },
+    { no: 10, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 11, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 12, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 13, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 20, name: "team_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 21, name: "user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 40, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): TeamMembersSearchRequest {
@@ -2054,7 +2422,8 @@ export class TeamMembersSearchRequest extends Message<TeamMembersSearchRequest> 
 
 /**
  *
- * Describes the response to a pagination members request
+ * Paginated response packet containing a subset of Team Member records.
+ * Includes complete operational state parameters for rendering frontend data grids and tables.
  *
  * @generated from message Scailo.TeamsServicePaginatedMembersResponse
  */

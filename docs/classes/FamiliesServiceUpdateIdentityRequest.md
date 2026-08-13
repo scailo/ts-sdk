@@ -2,7 +2,16 @@
 
 # Class: FamiliesServiceUpdateIdentityRequest
 
-Describes the parameters necessary to update the identity of a family
+Request message for modifying the foundational identity and structural classification of an existing Family.
+This payload specifically targets core attributes that define the record's base operational behavior—such as
+the unique alphanumeric code, structural hierarchy (parent mapping and leaf status), and the primary family type.
+
+**Critical Constraint:** Because these fields dictate core catalog integrity and transactional rules, consumers
+must use this request strictly **prior to the first approval** of the family record. Once a family has been
+approved, its identity attributes are permanently locked and cannot be mutated via this operation.
+
+**Note:** This is typically utilized by Catalog Administrators or Inventory Managers during the initial onboarding,
+draft, or review phases to correct structural mappings before finalizing the catalog entry.
 
 **`Generated`**
 
@@ -71,39 +80,75 @@ Message\&lt;FamiliesServiceUpdateIdentityRequest\&gt;.constructor
 
 #### Defined in
 
-[src/families.scailo_pb.ts:718](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L718)
+[src/families.scailo_pb.ts:1083](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L1083)
 
 ## Properties
 
 ### code
 
-• **code**: `string` = `""`
+• `Optional` **code**: `string`
 
-The unique code that represents the family (can be updated only prior to the first approval)
+**`Optional`**
+
+**`Description`**
+
+The unique alphanumeric code used to internally classify and represent the family. Can be updated only prior to the first approval.
+
+**`Example`**
+
+```ts
+"FAM-IND-FST-01"
+```
+
+**`Regex`**
+
+.+
+
+**`Format`**
+
+Must be a non-empty string.
 
 **`Generated`**
 
-from field: string code = 12;
+from field: optional string code = 12;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:695](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L695)
+[src/families.scailo_pb.ts:1033](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L1033)
 
 ___
 
 ### familyType
 
-• **familyType**: [`FAMILY_TYPE`](../enums/FAMILY_TYPE.md) = `FAMILY_TYPE.FAMILY_TYPE_ANY_UNSPECIFIED`
+• `Optional` **familyType**: [`FAMILY_TYPE`](../enums/FAMILY_TYPE.md)
 
-The type of the family (can be updated only prior to the first approval)
+**`Optional`**
+
+**`Description`**
+
+The classification type of the family, dictating its operational lifecycle and valid transaction types (e.g., equipment, feedstock, product). Can be updated only prior to the first approval.
+
+**`Example`**
+
+```ts
+"FAMILY_TYPE_COMPONENT"
+```
+
+**`Regex`**
+
+^[A-Z_]+$
+
+**`Format`**
+
+Valid FAMILY_TYPE enum value string or integer.
 
 **`Generated`**
 
-from field: Scailo.FAMILY_TYPE family_type = 15;
+from field: optional Scailo.FAMILY_TYPE family_type = 15;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:702](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L702)
+[src/families.scailo_pb.ts:1049](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L1049)
 
 ___
 
@@ -111,7 +156,25 @@ ___
 
 • **id**: `bigint` = `protoInt64.zero`
 
-The ID of the record that needs to be updated
+**`Mandatory`**
+
+**`Description`**
+
+The unique internal identifier of the target record that needs to be updated.
+
+**`Example`**
+
+```ts
+1024
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -119,55 +182,109 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:688](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L688)
+[src/families.scailo_pb.ts:1017](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L1017)
 
 ___
 
 ### isLeaf
 
-• **isLeaf**: `boolean` = `false`
+• `Optional` **isLeaf**: `boolean`
 
-Stores if the family is a leaf family (can be updated only prior to the first approval)
+**`Optional`**
+
+**`Description`**
+
+A boolean flag indicating whether this family is a leaf node in the hierarchy (i.e., it cannot contain nested sub-families). Can be updated only prior to the first approval.
+
+**`Example`**
+
+```ts
+true
+```
+
+**`Regex`**
+
+^(?:true|false)$
+
+**`Format`**
+
+Boolean true or false.
 
 **`Generated`**
 
-from field: bool is_leaf = 20;
+from field: optional bool is_leaf = 20;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:716](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L716)
+[src/families.scailo_pb.ts:1081](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L1081)
 
 ___
 
 ### parentId
 
-• **parentId**: `bigint` = `protoInt64.zero`
+• `Optional` **parentId**: `bigint`
 
-Stores the ID of the parent family (can be updated only prior to the first approval)
+**`Optional`**
+
+**`Description`**
+
+The unique internal identifier of the parent family. A value of 0 indicates this is a top-level root family. Can be updated only prior to the first approval.
+
+**`Example`**
+
+```ts
+0
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Unsigned 64-bit integer greater than or equal to 0.
 
 **`Generated`**
 
-from field: uint64 parent_id = 19;
+from field: optional uint64 parent_id = 19;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:709](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L709)
+[src/families.scailo_pb.ts:1065](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L1065)
 
 ___
 
 ### userComment
 
-• **userComment**: `string` = `""`
+• `Optional` **userComment**: `string`
 
-Stores any comment that the user might add during this operation
+**`Optional`**
+
+**`Description`**
+
+Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+
+**`Example`**
+
+```ts
+"This is a comment for audit purposes."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
-from field: string user_comment = 1;
+from field: optional string user_comment = 1;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:681](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L681)
+[src/families.scailo_pb.ts:1001](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L1001)
 
 ___
 
@@ -177,7 +294,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:725](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L725)
+[src/families.scailo_pb.ts:1090](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L1090)
 
 ___
 
@@ -187,7 +304,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:723](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L723)
+[src/families.scailo_pb.ts:1088](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L1088)
 
 ___
 
@@ -197,7 +314,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:724](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L724)
+[src/families.scailo_pb.ts:1089](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L1089)
 
 ## Methods
 
@@ -485,7 +602,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:746](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L746)
+[src/families.scailo_pb.ts:1111](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L1111)
 
 ___
 
@@ -506,7 +623,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:734](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L734)
+[src/families.scailo_pb.ts:1099](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L1099)
 
 ___
 
@@ -527,7 +644,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:738](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L738)
+[src/families.scailo_pb.ts:1103](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L1103)
 
 ___
 
@@ -548,4 +665,4 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:742](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L742)
+[src/families.scailo_pb.ts:1107](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L1107)

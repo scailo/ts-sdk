@@ -2,7 +2,7 @@
 
 # Class: Store
 
-Describes the parameters that are part of a standard response
+Represents a full Store within the system.
 
 **`Generated`**
 
@@ -76,7 +76,7 @@ Message\&lt;Store\&gt;.constructor
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:386](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stores.scailo_pb.ts#L386)
+[src/stores.scailo_pb.ts:541](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stores.scailo_pb.ts#L541)
 
 ## Properties
 
@@ -94,7 +94,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:326](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stores.scailo_pb.ts#L326)
+[src/stores.scailo_pb.ts:463](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stores.scailo_pb.ts#L463)
 
 ___
 
@@ -102,7 +102,15 @@ ___
 
 • **code**: `string` = `""`
 
-The unique code by which the store is classified
+**`Description`**
+
+The unique code or internal alphanumeric token used to classify the store facility for accounting, delivery, or inventory mapping.
+
+**`Example`**
+
+```ts
+"STR-DT-01"
+```
 
 **`Generated`**
 
@@ -110,7 +118,7 @@ from field: string code = 11;
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:363](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stores.scailo_pb.ts#L363)
+[src/stores.scailo_pb.ts:509](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stores.scailo_pb.ts#L509)
 
 ___
 
@@ -118,7 +126,15 @@ ___
 
 • **description**: `string` = `""`
 
-The description of the store
+**`Description`**
+
+Clarifying details or operational parameters regarding the store layout, capacity thresholds, or hours of operation.
+
+**`Example`**
+
+```ts
+"Primary retail outlet serving the metropolitan area. Includes standard fulfillment capabilities."
+```
 
 **`Generated`**
 
@@ -126,7 +142,7 @@ from field: string description = 12;
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:370](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stores.scailo_pb.ts#L370)
+[src/stores.scailo_pb.ts:519](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stores.scailo_pb.ts#L519)
 
 ___
 
@@ -150,7 +166,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:310](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stores.scailo_pb.ts#L310)
+[src/stores.scailo_pb.ts:447](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stores.scailo_pb.ts#L447)
 
 ___
 
@@ -158,7 +174,15 @@ ___
 
 • **inchargeUsername**: `string` = `""`
 
-The username of the incharge
+**`Description`**
+
+The unique system username or account identifier of the person-in-charge or facility manager responsible for this store.
+
+**`Example`**
+
+```ts
+"johndoe_mgr"
+```
 
 **`Generated`**
 
@@ -166,7 +190,7 @@ from field: string incharge_username = 13;
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:377](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stores.scailo_pb.ts#L377)
+[src/stores.scailo_pb.ts:529](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stores.scailo_pb.ts#L529)
 
 ___
 
@@ -174,7 +198,15 @@ ___
 
 • **locationId**: `bigint` = `protoInt64.zero`
 
-The ID of the associated location
+**`Description`**
+
+The unique internal identifier of the geographic or logical location under which this store is situated.
+
+**`Example`**
+
+```ts
+1024
+```
 
 **`Generated`**
 
@@ -182,7 +214,7 @@ from field: uint64 location_id = 9;
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:349](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stores.scailo_pb.ts#L349)
+[src/stores.scailo_pb.ts:489](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stores.scailo_pb.ts#L489)
 
 ___
 
@@ -200,7 +232,7 @@ from field: repeated Scailo.LogbookLogConciseSLC logs = 5;
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:342](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stores.scailo_pb.ts#L342)
+[src/stores.scailo_pb.ts:479](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stores.scailo_pb.ts#L479)
 
 ___
 
@@ -218,7 +250,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:318](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stores.scailo_pb.ts#L318)
+[src/stores.scailo_pb.ts:455](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stores.scailo_pb.ts#L455)
 
 ___
 
@@ -226,7 +258,15 @@ ___
 
 • **name**: `string` = `""`
 
-The name of the store
+**`Description`**
+
+The official, friendly, or legal branding name of the store facility.
+
+**`Example`**
+
+```ts
+"Downtown Flagship Store"
+```
 
 **`Generated`**
 
@@ -234,7 +274,7 @@ from field: string name = 10;
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:356](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stores.scailo_pb.ts#L356)
+[src/stores.scailo_pb.ts:499](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stores.scailo_pb.ts#L499)
 
 ___
 
@@ -242,7 +282,15 @@ ___
 
 • **phone**: `string` = `""`
 
-The contact number of the store
+**`Description`**
+
+The primary telephone or hot-line contact number explicitly assigned to the store facility.
+
+**`Example`**
+
+```ts
+"+1-555-0177"
+```
 
 **`Generated`**
 
@@ -250,7 +298,7 @@ from field: string phone = 14;
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:384](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stores.scailo_pb.ts#L384)
+[src/stores.scailo_pb.ts:539](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stores.scailo_pb.ts#L539)
 
 ___
 
@@ -268,7 +316,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 4;
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:334](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stores.scailo_pb.ts#L334)
+[src/stores.scailo_pb.ts:471](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stores.scailo_pb.ts#L471)
 
 ___
 
@@ -278,7 +326,7 @@ ___
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:393](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stores.scailo_pb.ts#L393)
+[src/stores.scailo_pb.ts:548](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stores.scailo_pb.ts#L548)
 
 ___
 
@@ -288,7 +336,7 @@ ___
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:391](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stores.scailo_pb.ts#L391)
+[src/stores.scailo_pb.ts:546](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stores.scailo_pb.ts#L546)
 
 ___
 
@@ -298,7 +346,7 @@ ___
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:392](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stores.scailo_pb.ts#L392)
+[src/stores.scailo_pb.ts:547](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stores.scailo_pb.ts#L547)
 
 ## Methods
 
@@ -586,7 +634,7 @@ ___
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:419](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stores.scailo_pb.ts#L419)
+[src/stores.scailo_pb.ts:574](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stores.scailo_pb.ts#L574)
 
 ___
 
@@ -607,7 +655,7 @@ ___
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:407](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stores.scailo_pb.ts#L407)
+[src/stores.scailo_pb.ts:562](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stores.scailo_pb.ts#L562)
 
 ___
 
@@ -628,7 +676,7 @@ ___
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:411](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stores.scailo_pb.ts#L411)
+[src/stores.scailo_pb.ts:566](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stores.scailo_pb.ts#L566)
 
 ___
 
@@ -649,4 +697,4 @@ ___
 
 #### Defined in
 
-[src/stores.scailo_pb.ts:415](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/stores.scailo_pb.ts#L415)
+[src/stores.scailo_pb.ts:570](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/stores.scailo_pb.ts#L570)

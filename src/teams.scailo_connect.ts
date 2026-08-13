@@ -6,10 +6,13 @@
 import { Team, TeamMember, TeamMemberHistoryRequest, TeamMembersSearchRequest, TeamsList, TeamsMembersList, TeamsServiceCountReq, TeamsServiceCreateRequest, TeamsServiceFilterReq, TeamsServiceMemberCreateRequest, TeamsServiceMemberUpdateRequest, TeamsServicePaginatedMembersResponse, TeamsServicePaginationReq, TeamsServicePaginationResponse, TeamsServiceSearchAllReq, TeamsServiceUpdateRequest } from "./teams.scailo_pb.js";
 import { ActiveStatus, CloneRequest, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
+import { VaultFolderAttachRequest } from "./vault_folders.scailo_pb.js";
 
 /**
  *
- * Describes the common methods applicable on each team
+ * The TeamsService manages the full lifecycle of team records.
+ * It provides standard CRUD operations alongside a robust state machine for
+ * verification, manager approval, and completion.
  *
  * @generated from service Scailo.TeamsService
  */
@@ -17,7 +20,18 @@ export const TeamsService = {
   typeName: "Scailo.TeamsService",
   methods: {
     /**
-     * Create and send for verification
+     * Creates a new record and immediately moves it to the verification workflow.
+     *
+     * This method validates all required fields.
+     * The record is created with a `STANDARD_LIFECYCLE_STATUS.PREVERIFY` status.
+     *
+     * **Side Effects:**
+     * - Generates a unique system UUID.
+     * - Records an audit log for the "Create" action.
+     * - May trigger automated verification workflows.
+     *
+     * **Errors:**
+     * - `INVALID_ARGUMENT`: If validation rules fail (e.g., negative quantity, invalid timestamps).
      *
      * @generated from rpc Scailo.TeamsService.Create
      */
@@ -223,7 +237,13 @@ export const TeamsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Reopen
+     * Reopens a finalized or closed record for further modifications.
+     *
+     * **Status Transition:** -> `REVISION`
+     *
+     * **Side Effects:**
+     * - Unlocks the record to allow edits.
+     * - Logs the required user comment into the audit trail for compliance tracking.
      *
      * @generated from rpc Scailo.TeamsService.Reopen
      */
@@ -248,7 +268,32 @@ export const TeamsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Clone team from an existing team (denoted by the identifier)
+     * Attaches a specified folder directly to a record without requiring a full revision workflow.
+     *
+     * This is a convenience API designed to bypass the traditional multi-step modification lifecycle
+     * (e.g., creating a revision, updating data, submitting for verification, and awaiting approval).
+     * It allows for the immediate, single-step association of a vault folder.
+     *
+     * **Side Effects & Lifecycle:**
+     * * The overall status of the record remains unchanged.
+     * * The record's modification timestamp is automatically updated to the current time.
+     * * An entry is appended to the record's audit log tracking this attachment.
+     *
+     * @generated from rpc Scailo.TeamsService.AttachVaultFolder
+     */
+    attachVaultFolder: {
+      name: "AttachVaultFolder",
+      I: VaultFolderAttachRequest,
+      O: IdentifierResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Initiates the creation of a new record by duplicating the structural properties of an existing record.
+     *
+     * **Side Effects:**
+     * - Provisions a new record populated with the metadata and configurations of the source record.
+     * - Does not clone operational transactions or historical logs of the source.
+     * - Appends an audit trail entry tracking the cloning operation and justification.
      *
      * @generated from rpc Scailo.TeamsService.Clone
      */
@@ -259,7 +304,11 @@ export const TeamsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Add a member to a team
+     * Associates a user with an existing team, formally adding them to the group's roster.
+     *
+     * **Side Effects:**
+     * - Validates the structural relationship and checks for duplicate associations.
+     * - Depending on system configurations, may place this new member association into a pending approval state before granting full access.
      *
      * @generated from rpc Scailo.TeamsService.AddTeamMember
      */
@@ -270,7 +319,12 @@ export const TeamsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Modify a member in a team
+     * Updates the metadata or configuration of an existing team member association.
+     *
+     * **Side Effects:**
+     * - Modifies the member's association attributes (e.g., custom fields).
+     * - May trigger a re-approval workflow depending on the severity of the modifications.
+     * - Appends an audit trail entry tracking the change.
      *
      * @generated from rpc Scailo.TeamsService.ModifyTeamMember
      */
@@ -281,7 +335,11 @@ export const TeamsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Approve a member in a team
+     * Approves a pending team member association, finalizing their inclusion in the team.
+     *
+     * **Side Effects:**
+     * - Activates the user's mapping, formally granting them team-level access, context, or routing capabilities.
+     * - Appends the required approval metadata, timestamp, and audit comment to the record's history.
      *
      * @generated from rpc Scailo.TeamsService.ApproveTeamMember
      */
@@ -292,7 +350,11 @@ export const TeamsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Delete a member in a team
+     * Permanently removes or deactivates a user association from a team profile.
+     *
+     * **Side Effects:**
+     * - Revokes any team-specific context, routing assignments, and data access previously linked to this user.
+     * - Logs the deletion justification comment into the system compliance log.
      *
      * @generated from rpc Scailo.TeamsService.DeleteTeamMember
      */
@@ -303,7 +365,11 @@ export const TeamsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Reorder members in a team
+     * Reorders the sequence or hierarchy of members within a team.
+     *
+     * **Side Effects:**
+     * - Mutates the display sequence or hierarchical priority of the specified team members in bulk.
+     * - Primarily affects how the team roster is presented in administrative and frontend views.
      *
      * @generated from rpc Scailo.TeamsService.ReorderTeamMembers
      */
@@ -314,7 +380,9 @@ export const TeamsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View Team Member by ID
+     * Retrieves the complete, granular details of a specific team member association by its internal sequence ID.
+     *
+     * This is a read-only operation that fetches full metadata, mapping context, and approval histories.
      *
      * @generated from rpc Scailo.TeamsService.ViewTeamMemberByID
      */
@@ -325,7 +393,9 @@ export const TeamsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View approved team members for given team ID
+     * Lists all active, fully approved member associations mapped to a specific team ID.
+     *
+     * This read-only query is optimized for operational routing and directory lookups, returning only the personnel who are officially authorized as part of the team.
      *
      * @generated from rpc Scailo.TeamsService.ViewApprovedTeamMembers
      */
@@ -336,7 +406,9 @@ export const TeamsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View unapproved team members for given team ID
+     * Lists pending or unapproved member associations mapped to a specific team ID.
+     *
+     * This read-only query is utilized primarily by team leads and administrators to quickly identify and review personnel awaiting onboarding authorization.
      *
      * @generated from rpc Scailo.TeamsService.ViewUnapprovedTeamMembers
      */
@@ -347,7 +419,9 @@ export const TeamsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View the history of the team member
+     * Retrieves the historical audit trail and lifecycle changes of a specific team member record.
+     *
+     * This read-only operation aggregates the chronological evolution of the user's association with the team, tracking role shifts and approval state changes.
      *
      * @generated from rpc Scailo.TeamsService.ViewTeamMemberHistory
      */
@@ -358,7 +432,9 @@ export const TeamsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View approved team members for given team ID with pagination
+     * Lists active, approved team member associations using robust pagination controls.
+     *
+     * This read-only query is optimized for frontend data grids viewing large teams, supporting explicit windowing parameters (count and offset) while restricting results to fully authorized members.
      *
      * @generated from rpc Scailo.TeamsService.ViewPaginatedApprovedTeamMembers
      */
@@ -369,7 +445,9 @@ export const TeamsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View unapproved team members for given team ID with pagination
+     * Lists pending or unapproved team member associations using robust pagination controls.
+     *
+     * This read-only query is optimized for administrative review dashboards handling high volumes of onboarding requests.
      *
      * @generated from rpc Scailo.TeamsService.ViewPaginatedUnapprovedTeamMembers
      */
@@ -380,7 +458,9 @@ export const TeamsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Search through team members with pagination
+     * Searches through all team member records using advanced filters, status flags, and pagination tokens.
+     *
+     * This read-only query is the primary entry point for complex, multi-attribute personnel lookups within a team, commonly utilized by HR and administrative reporting views.
      *
      * @generated from rpc Scailo.TeamsService.SearchMembersWithPagination
      */
@@ -391,7 +471,9 @@ export const TeamsService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View all the teams that the member is part of (and not the team lead)
+     * Retrieves all team profiles that a specified user is associated with as a standard member.
+     *
+     * This read-only query executes a reverse lookup to determine a user's cross-functional footprint within the organization. It explicitly excludes teams where the user is designated strictly as the top-level Team Lead.
      *
      * @generated from rpc Scailo.TeamsService.ViewTeamsForMember
      */

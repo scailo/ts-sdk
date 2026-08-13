@@ -2,7 +2,12 @@
 
 # Class: ClientsServiceUserCreateRequest
 
-Describes the parameters necessary to create a client user
+Request message for creating a new client user association.
+This message encapsulates the necessary identifiers to link a user (and optionally an associate)
+to a client, along with compliance details and audit logs required for record initialization.
+
+**Note:** This serves as the primary entry point for managing client personnel, ensuring
+that the relationship between the client and the user is properly audited and validated.
 
 **`Generated`**
 
@@ -69,23 +74,41 @@ Message\&lt;ClientsServiceUserCreateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:1504](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L1504)
+[src/clients.scailo_pb.ts:1779](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L1779)
 
 ## Properties
 
 ### associateId
 
-• **associateId**: `bigint` = `protoInt64.zero`
+• `Optional` **associateId**: `bigint`
 
-Stores an optional associate ID
+**`Optional`**
+
+**`Description`**
+
+The unique internal identifier of an associated secondary entity or associate party, if applicable.
+
+**`Example`**
+
+```ts
+9012
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer. Defaults to 0 if unassigned.
 
 **`Generated`**
 
-from field: uint64 associate_id = 12;
+from field: optional uint64 associate_id = 12;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:1502](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L1502)
+[src/clients.scailo_pb.ts:1777](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L1777)
 
 ___
 
@@ -93,7 +116,25 @@ ___
 
 • **clientId**: `bigint` = `protoInt64.zero`
 
-Stores the client ID
+**`Mandatory`**
+
+**`Description`**
+
+The unique internal identifier of the target client to which the user will be associated.
+
+**`Example`**
+
+```ts
+1024
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer greater than zero.
 
 **`Generated`**
 
@@ -101,23 +142,41 @@ from field: uint64 client_id = 10;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:1488](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L1488)
+[src/clients.scailo_pb.ts:1745](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L1745)
 
 ___
 
 ### userComment
 
-• **userComment**: `string` = `""`
+• `Optional` **userComment**: `string`
 
-Stores any comment that the user might add during this operation
+**`Optional`**
+
+**`Description`**
+
+Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+
+**`Example`**
+
+```ts
+"This is a comment for audit purposes."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
-from field: string user_comment = 1;
+from field: optional string user_comment = 1;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:1481](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L1481)
+[src/clients.scailo_pb.ts:1729](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L1729)
 
 ___
 
@@ -125,7 +184,25 @@ ___
 
 • **userId**: `bigint` = `protoInt64.zero`
 
-Stores the user ID
+**`Mandatory`**
+
+**`Description`**
+
+The unique internal identifier of the user being assigned to the client.
+
+**`Example`**
+
+```ts
+5678
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer greater than zero.
 
 **`Generated`**
 
@@ -133,7 +210,7 @@ from field: uint64 user_id = 11;
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:1495](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L1495)
+[src/clients.scailo_pb.ts:1761](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L1761)
 
 ___
 
@@ -143,7 +220,7 @@ ___
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:1511](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L1511)
+[src/clients.scailo_pb.ts:1786](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L1786)
 
 ___
 
@@ -153,7 +230,7 @@ ___
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:1509](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L1509)
+[src/clients.scailo_pb.ts:1784](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L1784)
 
 ___
 
@@ -163,7 +240,7 @@ ___
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:1510](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L1510)
+[src/clients.scailo_pb.ts:1785](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L1785)
 
 ## Methods
 
@@ -451,7 +528,7 @@ ___
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:1530](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L1530)
+[src/clients.scailo_pb.ts:1805](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L1805)
 
 ___
 
@@ -472,7 +549,7 @@ ___
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:1518](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L1518)
+[src/clients.scailo_pb.ts:1793](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L1793)
 
 ___
 
@@ -493,7 +570,7 @@ ___
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:1522](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L1522)
+[src/clients.scailo_pb.ts:1797](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L1797)
 
 ___
 
@@ -514,4 +591,4 @@ ___
 
 #### Defined in
 
-[src/clients.scailo_pb.ts:1526](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/clients.scailo_pb.ts#L1526)
+[src/clients.scailo_pb.ts:1801](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/clients.scailo_pb.ts#L1801)

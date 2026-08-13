@@ -2,7 +2,10 @@
 
 # Class: SalesEnquiryContact
 
-Describes the parameters that constitute a sales enquiry contact
+Represents the finalized state of a Sales Enquiry Contact mapping.
+This entity securely binds a designated associate (the client's point of contact)
+to the parent enquiry, tracking accountability, approval workflows, and providing
+both internal IDs and unpredictable UUIDs for secure downstream referencing.
 
 **`Generated`**
 
@@ -73,7 +76,7 @@ Message\&lt;SalesEnquiryContact\&gt;.constructor
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:2962](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L2962)
+[src/sales_enquiries.scailo_pb.ts:3730](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L3730)
 
 ## Properties
 
@@ -91,7 +94,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:2924](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L2924)
+[src/sales_enquiries.scailo_pb.ts:3674](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L3674)
 
 ___
 
@@ -99,7 +102,15 @@ ___
 
 • **associateId**: `bigint` = `protoInt64.zero`
 
-Stores the associate ID
+**`Description`**
+
+The unique internal identifier of the associate acting as the point of contact.
+
+**`Example`**
+
+```ts
+55
+```
 
 **`Generated`**
 
@@ -107,7 +118,7 @@ from field: uint64 associate_id = 11;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:2953](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L2953)
+[src/sales_enquiries.scailo_pb.ts:3716](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L3716)
 
 ___
 
@@ -115,7 +126,19 @@ ___
 
 • **associateUuid**: `string` = `""`
 
-Stores the UUID of the associate
+**`Description`**
+
+The globally unique identifier (UUID) of the associate, used for secure external referencing without exposing sequential internal IDs.
+
+**`Example`**
+
+```ts
+"661f9511-f39c-42d5-b827-557766551111"
+```
+
+**`Format`**
+
+Valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
@@ -123,7 +146,7 @@ from field: string associate_uuid = 211;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:2960](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L2960)
+[src/sales_enquiries.scailo_pb.ts:3728](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L3728)
 
 ___
 
@@ -147,7 +170,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:2908](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L2908)
+[src/sales_enquiries.scailo_pb.ts:3658](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L3658)
 
 ___
 
@@ -165,7 +188,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:2916](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L2916)
+[src/sales_enquiries.scailo_pb.ts:3666](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L3666)
 
 ___
 
@@ -175,7 +198,17 @@ ___
 
 **`Description`**
 
-The approval state of the record
+A boolean flag indicating whether this specific record requires further administrative approval.
+
+**`Example`**
+
+```ts
+false
+```
+
+**`Format`**
+
+Boolean true or false.
 
 **`Generated`**
 
@@ -183,7 +216,7 @@ from field: bool need_approval = 4;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:2932](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L2932)
+[src/sales_enquiries.scailo_pb.ts:3686](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L3686)
 
 ___
 
@@ -191,7 +224,15 @@ ___
 
 • **salesEnquiryId**: `bigint` = `protoInt64.zero`
 
-Stores the sales enquiry ID
+**`Description`**
+
+The unique internal identifier of the parent sales enquiry to which this contact belongs.
+
+**`Example`**
+
+```ts
+1024
+```
 
 **`Generated`**
 
@@ -199,7 +240,7 @@ from field: uint64 sales_enquiry_id = 10;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:2946](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L2946)
+[src/sales_enquiries.scailo_pb.ts:3706](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L3706)
 
 ___
 
@@ -207,7 +248,15 @@ ___
 
 • **userComment**: `string` = `""`
 
-Stores any comment that the user might have added during an operation
+**`Description`**
+
+Audit log comment or justification captured during the last modification or transactional operation.
+
+**`Example`**
+
+```ts
+"Assigned primary warehouse manager as the main contact."
+```
 
 **`Generated`**
 
@@ -215,7 +264,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:2939](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L2939)
+[src/sales_enquiries.scailo_pb.ts:3696](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L3696)
 
 ___
 
@@ -225,7 +274,7 @@ ___
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:2969](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L2969)
+[src/sales_enquiries.scailo_pb.ts:3737](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L3737)
 
 ___
 
@@ -235,7 +284,7 @@ ___
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:2967](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L2967)
+[src/sales_enquiries.scailo_pb.ts:3735](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L3735)
 
 ___
 
@@ -245,7 +294,7 @@ ___
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:2968](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L2968)
+[src/sales_enquiries.scailo_pb.ts:3736](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L3736)
 
 ## Methods
 
@@ -533,7 +582,7 @@ ___
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:2992](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L2992)
+[src/sales_enquiries.scailo_pb.ts:3760](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L3760)
 
 ___
 
@@ -554,7 +603,7 @@ ___
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:2980](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L2980)
+[src/sales_enquiries.scailo_pb.ts:3748](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L3748)
 
 ___
 
@@ -575,7 +624,7 @@ ___
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:2984](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L2984)
+[src/sales_enquiries.scailo_pb.ts:3752](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L3752)
 
 ___
 
@@ -596,4 +645,4 @@ ___
 
 #### Defined in
 
-[src/sales_enquiries.scailo_pb.ts:2988](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_enquiries.scailo_pb.ts#L2988)
+[src/sales_enquiries.scailo_pb.ts:3756](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_enquiries.scailo_pb.ts#L3756)

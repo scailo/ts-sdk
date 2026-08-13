@@ -2,7 +2,8 @@
 
 # Enumeration: CONSUMPTION\_SEQUENCE
 
-Stores the available consumption sequences
+Defines the inventory depletion strategy and consumption prioritization rules for stored items.
+These sequences determine the exact order in which stock is utilized, fulfilled, or depleted based on temporal or lifecycle attributes.
 
 **`Generated`**
 
@@ -26,7 +27,9 @@ from enum Scailo.CONSUMPTION_SEQUENCE
 
 • **CONSUMPTION\_SEQUENCE\_ANY\_UNSPECIFIED** = ``0``
 
-Denotes any consumption sequence (only used for filter and search queries, when consumption sequence needs to be disregarded)
+**`Description`**
+
+Denotes that the consumption sequence should be disregarded. Used exclusively within search/filter APIs to bypass sequencing restrictions.
 
 **`Generated`**
 
@@ -34,7 +37,7 @@ from enum value: CONSUMPTION_SEQUENCE_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:98](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L98)
+[src/families.scailo_pb.ts:101](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L101)
 
 ___
 
@@ -42,7 +45,9 @@ ___
 
 • **CONSUMPTION\_SEQUENCE\_FIFO\_INTAKE** = ``1``
 
-Denotes first-in-first-out according to the intake timestamp
+**`Description`**
+
+Denotes a First-In-First-Out (FIFO) prioritization strictly based on the physical intake or receiving timestamp.
 
 **`Generated`**
 
@@ -50,7 +55,7 @@ from enum value: CONSUMPTION_SEQUENCE_FIFO_INTAKE = 1;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:105](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L105)
+[src/families.scailo_pb.ts:108](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L108)
 
 ___
 
@@ -58,7 +63,9 @@ ___
 
 • **CONSUMPTION\_SEQUENCE\_FIFO\_SHELF\_LIFE** = ``2``
 
-Denotes first-in-first-out according to the shelf life
+**`Description`**
+
+Denotes a First-In-First-Out (FIFO) prioritization based on the expiration or shelf-life timeline (earliest to expire is consumed first).
 
 **`Generated`**
 
@@ -66,7 +73,7 @@ from enum value: CONSUMPTION_SEQUENCE_FIFO_SHELF_LIFE = 2;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:112](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L112)
+[src/families.scailo_pb.ts:115](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L115)
 
 ___
 
@@ -74,7 +81,9 @@ ___
 
 • **CONSUMPTION\_SEQUENCE\_FIFO\_WARRANTY** = ``3``
 
-Denotes first-in-first-out according to the warranty
+**`Description`**
+
+Denotes a First-In-First-Out (FIFO) prioritization based on the warranty expiration timeline (earliest warranty end is consumed first).
 
 **`Generated`**
 
@@ -82,7 +91,7 @@ from enum value: CONSUMPTION_SEQUENCE_FIFO_WARRANTY = 3;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:119](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L119)
+[src/families.scailo_pb.ts:122](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L122)
 
 ___
 
@@ -90,7 +99,9 @@ ___
 
 • **CONSUMPTION\_SEQUENCE\_LIFO\_INTAKE** = ``4``
 
-Denotes last-in-first-out according to the intake timestamp
+**`Description`**
+
+Denotes a Last-In-First-Out (LIFO) prioritization strictly based on the physical intake or receiving timestamp (newest arrivals consumed first).
 
 **`Generated`**
 
@@ -98,7 +109,7 @@ from enum value: CONSUMPTION_SEQUENCE_LIFO_INTAKE = 4;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:126](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L126)
+[src/families.scailo_pb.ts:129](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L129)
 
 ___
 
@@ -106,7 +117,9 @@ ___
 
 • **CONSUMPTION\_SEQUENCE\_LIFO\_SHELF\_LIFE** = ``5``
 
-Denotes last-in-first-out according to the shelf life
+**`Description`**
+
+Denotes a Last-In-First-Out (LIFO) prioritization based on the expiration or shelf-life timeline (latest to expire is consumed first).
 
 **`Generated`**
 
@@ -114,7 +127,7 @@ from enum value: CONSUMPTION_SEQUENCE_LIFO_SHELF_LIFE = 5;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:133](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L133)
+[src/families.scailo_pb.ts:136](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L136)
 
 ___
 
@@ -122,7 +135,9 @@ ___
 
 • **CONSUMPTION\_SEQUENCE\_LIFO\_WARRANTY** = ``6``
 
-Denotes last-in-first-out according to the warranty
+**`Description`**
+
+Denotes a Last-In-First-Out (LIFO) prioritization based on the warranty expiration timeline (latest warranty end is consumed first).
 
 **`Generated`**
 
@@ -130,4 +145,4 @@ from enum value: CONSUMPTION_SEQUENCE_LIFO_WARRANTY = 6;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:140](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L140)
+[src/families.scailo_pb.ts:143](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L143)

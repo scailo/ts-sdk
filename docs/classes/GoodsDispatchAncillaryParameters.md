@@ -2,7 +2,9 @@
 
 # Class: GoodsDispatchAncillaryParameters
 
-Stores the UUID references of the record
+Represents a read-only container for universally unique identifiers (UUIDs) of related external entities.
+This message securely exposes the downstream linkages (like the source order or location) to external
+clients or frontend interfaces without revealing internal sequential IDs.
 
 **`Generated`**
 
@@ -67,7 +69,7 @@ Message\&lt;GoodsDispatchAncillaryParameters\&gt;.constructor
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:599](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L599)
+[src/goods_dispatches.scailo_pb.ts:733](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L733)
 
 ## Properties
 
@@ -75,7 +77,25 @@ Message\&lt;GoodsDispatchAncillaryParameters\&gt;.constructor
 
 • **locationUuid**: `string` = `""`
 
-The UUID of the location (the UUID of the associated location_id)
+**`Mandatory`**
+
+**`Description`**
+
+The globally unique identifier (UUID) of the physical physical fulfillment center, warehouse, or location from which the goods are being dispatched.
+
+**`Example`**
+
+```ts
+"88b1b220-e29b-41d4-a716-446655440999"
+```
+
+**`Regex`**
+
+^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+
+**`Format`**
+
+Valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
@@ -83,7 +103,7 @@ from field: string location_uuid = 215;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:597](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L597)
+[src/goods_dispatches.scailo_pb.ts:731](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L731)
 
 ___
 
@@ -91,7 +111,25 @@ ___
 
 • **refUuid**: `string` = `""`
 
-The UUID of the ref_id (the UUID of the associated ref_id)
+**`Mandatory`**
+
+**`Description`**
+
+The globally unique identifier (UUID) of the associated source document (e.g., the parent Sales Order).
+
+**`Example`**
+
+```ts
+"661f9511-f39c-42d5-b827-557766551111"
+```
+
+**`Regex`**
+
+^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+
+**`Format`**
+
+Valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
@@ -99,7 +137,7 @@ from field: string ref_uuid = 213;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:590](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L590)
+[src/goods_dispatches.scailo_pb.ts:715](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L715)
 
 ___
 
@@ -109,7 +147,7 @@ ___
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:606](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L606)
+[src/goods_dispatches.scailo_pb.ts:740](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L740)
 
 ___
 
@@ -119,7 +157,7 @@ ___
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:604](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L604)
+[src/goods_dispatches.scailo_pb.ts:738](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L738)
 
 ___
 
@@ -129,7 +167,7 @@ ___
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:605](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L605)
+[src/goods_dispatches.scailo_pb.ts:739](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L739)
 
 ## Methods
 
@@ -417,7 +455,7 @@ ___
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:623](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L623)
+[src/goods_dispatches.scailo_pb.ts:757](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L757)
 
 ___
 
@@ -438,7 +476,7 @@ ___
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:611](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L611)
+[src/goods_dispatches.scailo_pb.ts:745](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L745)
 
 ___
 
@@ -459,7 +497,7 @@ ___
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:615](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L615)
+[src/goods_dispatches.scailo_pb.ts:749](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L749)
 
 ___
 
@@ -480,4 +518,4 @@ ___
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:619](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L619)
+[src/goods_dispatches.scailo_pb.ts:753](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L753)

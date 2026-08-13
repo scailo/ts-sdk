@@ -2,7 +2,9 @@
 
 # Class: SalesQuotationsServiceContactCreateRequest
 
-Describes the parameters necessary to create a sales quotation contact
+Request message for assigning a specific contact person (associate) to a Sales Quotation.
+This operation creates a linkage between the quotation and a designated individual belonging
+to the customer, explicitly identifying who is in charge of or accountable for the sales quotation from the client's side.
 
 **`Generated`**
 
@@ -68,7 +70,7 @@ Message\&lt;SalesQuotationsServiceContactCreateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:3627](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_quotations.scailo_pb.ts#L3627)
+[src/sales_quotations.scailo_pb.ts:4847](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_quotations.scailo_pb.ts#L4847)
 
 ## Properties
 
@@ -76,7 +78,25 @@ Message\&lt;SalesQuotationsServiceContactCreateRequest\&gt;.constructor
 
 • **associateId**: `bigint` = `protoInt64.zero`
 
-Stores the associate ID
+**`Mandatory`**
+
+**`Description`**
+
+The unique internal identifier of the associate being assigned to the quotation.
+
+**`Example`**
+
+```ts
+55
+```
+
+**`Regex`**
+
+^[1-9][0-9]*$
+
+**`Format`**
+
+Unsigned 64-bit integer greater than 0.
 
 **`Generated`**
 
@@ -84,7 +104,7 @@ from field: uint64 associate_id = 11;
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:3625](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_quotations.scailo_pb.ts#L3625)
+[src/sales_quotations.scailo_pb.ts:4845](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_quotations.scailo_pb.ts#L4845)
 
 ___
 
@@ -92,7 +112,25 @@ ___
 
 • **salesQuotationId**: `bigint` = `protoInt64.zero`
 
-Stores the sales quotation ID
+**`Mandatory`**
+
+**`Description`**
+
+The unique internal identifier of the parent sales quotation to which this contact is being assigned.
+
+**`Example`**
+
+```ts
+1024
+```
+
+**`Regex`**
+
+^[1-9][0-9]*$
+
+**`Format`**
+
+Unsigned 64-bit integer greater than 0.
 
 **`Generated`**
 
@@ -100,23 +138,41 @@ from field: uint64 sales_quotation_id = 10;
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:3618](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_quotations.scailo_pb.ts#L3618)
+[src/sales_quotations.scailo_pb.ts:4829](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_quotations.scailo_pb.ts#L4829)
 
 ___
 
 ### userComment
 
-• **userComment**: `string` = `""`
+• `Optional` **userComment**: `string`
 
-Stores any comment that the user might add during this operation
+**`Optional`**
+
+**`Description`**
+
+Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+
+**`Example`**
+
+```ts
+"This is a comment for audit purposes."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
-from field: string user_comment = 1;
+from field: optional string user_comment = 1;
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:3611](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_quotations.scailo_pb.ts#L3611)
+[src/sales_quotations.scailo_pb.ts:4813](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_quotations.scailo_pb.ts#L4813)
 
 ___
 
@@ -126,7 +182,7 @@ ___
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:3634](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_quotations.scailo_pb.ts#L3634)
+[src/sales_quotations.scailo_pb.ts:4854](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_quotations.scailo_pb.ts#L4854)
 
 ___
 
@@ -136,7 +192,7 @@ ___
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:3632](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_quotations.scailo_pb.ts#L3632)
+[src/sales_quotations.scailo_pb.ts:4852](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_quotations.scailo_pb.ts#L4852)
 
 ___
 
@@ -146,7 +202,7 @@ ___
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:3633](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_quotations.scailo_pb.ts#L3633)
+[src/sales_quotations.scailo_pb.ts:4853](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_quotations.scailo_pb.ts#L4853)
 
 ## Methods
 
@@ -434,7 +490,7 @@ ___
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:3652](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_quotations.scailo_pb.ts#L3652)
+[src/sales_quotations.scailo_pb.ts:4872](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_quotations.scailo_pb.ts#L4872)
 
 ___
 
@@ -455,7 +511,7 @@ ___
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:3640](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_quotations.scailo_pb.ts#L3640)
+[src/sales_quotations.scailo_pb.ts:4860](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_quotations.scailo_pb.ts#L4860)
 
 ___
 
@@ -476,7 +532,7 @@ ___
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:3644](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_quotations.scailo_pb.ts#L3644)
+[src/sales_quotations.scailo_pb.ts:4864](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_quotations.scailo_pb.ts#L4864)
 
 ___
 
@@ -497,4 +553,4 @@ ___
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:3648](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_quotations.scailo_pb.ts#L3648)
+[src/sales_quotations.scailo_pb.ts:4868](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_quotations.scailo_pb.ts#L4868)

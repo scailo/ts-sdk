@@ -2,7 +2,12 @@
 
 # Class: StoragesServiceCreateRequest
 
-Describes the parameters necessary to create a record
+Request message for creating and registering a new Storage unit or sub-location.
+This record maps hierarchical storage structures (leaf vs. non-leaf zones), parent store
+associations, unique classification codes, and multi-tenant security identifiers.
+
+**Note:** This is the primary entry point for Inventory, Logistics, and Admins to
+configure physical or logical storage layouts like warehouses, aisles, shelves, or bins.
 
 **`Generated`**
 
@@ -73,7 +78,7 @@ Message\&lt;StoragesServiceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/storages.scailo_pb.ts:157](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/storages.scailo_pb.ts#L157)
+[src/storages.scailo_pb.ts:223](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/storages.scailo_pb.ts#L223)
 
 ## Properties
 
@@ -81,7 +86,25 @@ Message\&lt;StoragesServiceCreateRequest\&gt;.constructor
 
 • **code**: `string` = `""`
 
-The unique code by which the storage is classified
+**`Mandatory`**
+
+**`Description`**
+
+The unique code or internal alphanumeric token used to classify the storage unit for inventory tracking.
+
+**`Example`**
+
+```ts
+"STRG-CS-A01"
+```
+
+**`Regex`**
+
+.+
+
+**`Format`**
+
+Must be a non-empty string.
 
 **`Generated`**
 
@@ -89,29 +112,47 @@ from field: string code = 11;
 
 #### Defined in
 
-[src/storages.scailo_pb.ts:127](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/storages.scailo_pb.ts#L127)
+[src/storages.scailo_pb.ts:159](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/storages.scailo_pb.ts#L159)
 
 ___
 
 ### description
 
-• **description**: `string` = `""`
+• `Optional` **description**: `string`
 
-The description of the storage
+**`Optional`**
+
+**`Description`**
+
+Contextual details concerning environmental constraints, structural capacities, or unique access instructions for this storage unit.
+
+**`Example`**
+
+```ts
+"Maintained at temperature thresholds between 2-4°C. Holds standard pharmaceutical pallets."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
-from field: string description = 15;
+from field: optional string description = 15;
 
 #### Defined in
 
-[src/storages.scailo_pb.ts:155](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/storages.scailo_pb.ts#L155)
+[src/storages.scailo_pb.ts:221](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/storages.scailo_pb.ts#L221)
 
 ___
 
 ### entityUuid
 
-• **entityUuid**: `string` = `""`
+• `Optional` **entityUuid**: `string`
 
 **`Optional`**
 
@@ -135,11 +176,11 @@ If provided, must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
-from field: string entity_uuid = 1;
+from field: optional string entity_uuid = 1;
 
 #### Defined in
 
-[src/storages.scailo_pb.ts:106](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/storages.scailo_pb.ts#L106)
+[src/storages.scailo_pb.ts:111](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/storages.scailo_pb.ts#L111)
 
 ___
 
@@ -147,7 +188,21 @@ ___
 
 • **isLeaf**: `boolean` = `false`
 
-Stores if this is a leaf storage or a non-leaf storage
+**`Mandatory`**
+
+**`Description`**
+
+Flag determining whether this storage node is a terminal 'leaf' allocation (e.g., a specific shelf/bin holding stock) or a 'non-leaf' grouping structure (e.g., a whole aisle).
+
+**`Example`**
+
+```ts
+true
+```
+
+**`Format`**
+
+Boolean value (`true` or `false`).
 
 **`Generated`**
 
@@ -155,7 +210,7 @@ from field: bool is_leaf = 14;
 
 #### Defined in
 
-[src/storages.scailo_pb.ts:148](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/storages.scailo_pb.ts#L148)
+[src/storages.scailo_pb.ts:205](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/storages.scailo_pb.ts#L205)
 
 ___
 
@@ -163,7 +218,25 @@ ___
 
 • **name**: `string` = `""`
 
-The name of the storage
+**`Mandatory`**
+
+**`Description`**
+
+The official or friendly descriptive name of the storage zone or unit.
+
+**`Example`**
+
+```ts
+"Cold Storage Vault Alpha"
+```
+
+**`Regex`**
+
+.+
+
+**`Format`**
+
+Must be a non-empty string.
 
 **`Generated`**
 
@@ -171,23 +244,41 @@ from field: string name = 10;
 
 #### Defined in
 
-[src/storages.scailo_pb.ts:120](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/storages.scailo_pb.ts#L120)
+[src/storages.scailo_pb.ts:143](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/storages.scailo_pb.ts#L143)
 
 ___
 
 ### parentStorageId
 
-• **parentStorageId**: `bigint` = `protoInt64.zero`
+• `Optional` **parentStorageId**: `bigint`
 
-The ID of the associated non-leaf parent storage (0, if the first storage that is being created is a leaf storage)
+**`Optional`**
+
+**`Description`**
+
+The unique internal identifier of the parent non-leaf storage unit. Defaults to 0 if this is the root node or top-level layer within the storage area.
+
+**`Example`**
+
+```ts
+1024
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative 64-bit integer.
 
 **`Generated`**
 
-from field: uint64 parent_storage_id = 13;
+from field: optional uint64 parent_storage_id = 13;
 
 #### Defined in
 
-[src/storages.scailo_pb.ts:141](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/storages.scailo_pb.ts#L141)
+[src/storages.scailo_pb.ts:191](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/storages.scailo_pb.ts#L191)
 
 ___
 
@@ -195,7 +286,25 @@ ___
 
 • **storeId**: `bigint` = `protoInt64.zero`
 
-The ID of the associated store
+**`Mandatory`**
+
+**`Description`**
+
+The unique internal identifier of the overarching parent store facility housing this storage unit.
+
+**`Example`**
+
+```ts
+4501
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative 64-bit integer greater than zero.
 
 **`Generated`**
 
@@ -203,23 +312,41 @@ from field: uint64 store_id = 12;
 
 #### Defined in
 
-[src/storages.scailo_pb.ts:134](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/storages.scailo_pb.ts#L134)
+[src/storages.scailo_pb.ts:175](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/storages.scailo_pb.ts#L175)
 
 ___
 
 ### userComment
 
-• **userComment**: `string` = `""`
+• `Optional` **userComment**: `string`
 
-Storages any comment that the user might add during this operation
+**`Optional`**
+
+**`Description`**
+
+Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+
+**`Example`**
+
+```ts
+"This is a comment for audit purposes."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
-from field: string user_comment = 2;
+from field: optional string user_comment = 2;
 
 #### Defined in
 
-[src/storages.scailo_pb.ts:113](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/storages.scailo_pb.ts#L113)
+[src/storages.scailo_pb.ts:127](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/storages.scailo_pb.ts#L127)
 
 ___
 
@@ -229,7 +356,7 @@ ___
 
 #### Defined in
 
-[src/storages.scailo_pb.ts:164](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/storages.scailo_pb.ts#L164)
+[src/storages.scailo_pb.ts:230](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/storages.scailo_pb.ts#L230)
 
 ___
 
@@ -239,7 +366,7 @@ ___
 
 #### Defined in
 
-[src/storages.scailo_pb.ts:162](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/storages.scailo_pb.ts#L162)
+[src/storages.scailo_pb.ts:228](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/storages.scailo_pb.ts#L228)
 
 ___
 
@@ -249,7 +376,7 @@ ___
 
 #### Defined in
 
-[src/storages.scailo_pb.ts:163](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/storages.scailo_pb.ts#L163)
+[src/storages.scailo_pb.ts:229](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/storages.scailo_pb.ts#L229)
 
 ## Methods
 
@@ -537,7 +664,7 @@ ___
 
 #### Defined in
 
-[src/storages.scailo_pb.ts:187](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/storages.scailo_pb.ts#L187)
+[src/storages.scailo_pb.ts:253](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/storages.scailo_pb.ts#L253)
 
 ___
 
@@ -558,7 +685,7 @@ ___
 
 #### Defined in
 
-[src/storages.scailo_pb.ts:175](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/storages.scailo_pb.ts#L175)
+[src/storages.scailo_pb.ts:241](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/storages.scailo_pb.ts#L241)
 
 ___
 
@@ -579,7 +706,7 @@ ___
 
 #### Defined in
 
-[src/storages.scailo_pb.ts:179](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/storages.scailo_pb.ts#L179)
+[src/storages.scailo_pb.ts:245](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/storages.scailo_pb.ts#L245)
 
 ___
 
@@ -600,4 +727,4 @@ ___
 
 #### Defined in
 
-[src/storages.scailo_pb.ts:183](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/storages.scailo_pb.ts#L183)
+[src/storages.scailo_pb.ts:249](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/storages.scailo_pb.ts#L249)

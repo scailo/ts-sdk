@@ -2,7 +2,13 @@
 
 # Class: CurrenciesServiceUpdateRequest
 
-Describes the parameters necessary to update a record
+Request message for updating an existing Currency record.
+Only applicable for records in `DRAFT` or `REVISION` states.
+This message allows for modifying the name, symbol, mantissa name, exponent name, and description
+of an established Currency.
+
+**Note:** Only fields provided in the request will typically be updated.
+The unique system ID is required to locate the target record.
 
 **`Generated`**
 
@@ -73,39 +79,75 @@ Message\&lt;CurrenciesServiceUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/currencies.scailo_pb.ts:247](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/currencies.scailo_pb.ts#L247)
+[src/currencies.scailo_pb.ts:380](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/currencies.scailo_pb.ts#L380)
 
 ## Properties
 
 ### description
 
-• **description**: `string` = `""`
+• `Optional` **description**: `string`
 
-The description of the currency
+**`Optional`**
+
+**`Description`**
+
+Contextual description or clarifying details outlining the specific use-case or regional scope of this currency record.
+
+**`Example`**
+
+```ts
+"United States legal tender used for domestic operational accounts."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
-from field: string description = 14;
+from field: optional string description = 14;
 
 #### Defined in
 
-[src/currencies.scailo_pb.ts:245](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/currencies.scailo_pb.ts#L245)
+[src/currencies.scailo_pb.ts:378](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/currencies.scailo_pb.ts#L378)
 
 ___
 
 ### exponentName
 
-• **exponentName**: `string` = `""`
+• `Optional` **exponentName**: `string`
 
-The name of the exponent
+**`Optional`**
+
+**`Description`**
+
+The technical term or label for the currency's fractional sub-unit (often mapping conceptually to the minor unit/exponent).
+
+**`Example`**
+
+```ts
+"Cent"
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+Must be a non-empty string.
 
 **`Generated`**
 
-from field: string exponent_name = 13;
+from field: optional string exponent_name = 13;
 
 #### Defined in
 
-[src/currencies.scailo_pb.ts:238](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/currencies.scailo_pb.ts#L238)
+[src/currencies.scailo_pb.ts:362](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/currencies.scailo_pb.ts#L362)
 
 ___
 
@@ -113,7 +155,25 @@ ___
 
 • **id**: `bigint` = `protoInt64.zero`
 
-The ID of the record that needs to be updated
+**`Mandatory`**
+
+**`Description`**
+
+The unique internal identifier of the target record that needs to be updated.
+
+**`Example`**
+
+```ts
+1024
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -121,87 +181,169 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-[src/currencies.scailo_pb.ts:203](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/currencies.scailo_pb.ts#L203)
+[src/currencies.scailo_pb.ts:286](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/currencies.scailo_pb.ts#L286)
 
 ___
 
 ### mantissaName
 
-• **mantissaName**: `string` = `""`
+• `Optional` **mantissaName**: `string`
 
-The name of the mantissa
+**`Optional`**
+
+**`Description`**
+
+The technical term or label for the currency's major or primary unit (often mapping conceptually to the whole integer part/mantissa).
+
+**`Example`**
+
+```ts
+"Dollar"
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+Must be a non-empty string.
 
 **`Generated`**
 
-from field: string mantissa_name = 12;
+from field: optional string mantissa_name = 12;
 
 #### Defined in
 
-[src/currencies.scailo_pb.ts:231](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/currencies.scailo_pb.ts#L231)
+[src/currencies.scailo_pb.ts:346](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/currencies.scailo_pb.ts#L346)
 
 ___
 
 ### name
 
-• **name**: `string` = `""`
+• `Optional` **name**: `string`
 
-The name of the currency
+**`Optional`**
+
+**`Description`**
+
+The official or canonical name of the currency.
+
+**`Example`**
+
+```ts
+"US Dollar"
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+Must be a non-empty string.
 
 **`Generated`**
 
-from field: string name = 10;
+from field: optional string name = 10;
 
 #### Defined in
 
-[src/currencies.scailo_pb.ts:217](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/currencies.scailo_pb.ts#L217)
+[src/currencies.scailo_pb.ts:314](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/currencies.scailo_pb.ts#L314)
 
 ___
 
 ### notifyUsers
 
-• **notifyUsers**: `boolean` = `false`
+• `Optional` **notifyUsers**: `boolean`
 
-Optional boolean value that denotes if a notification needs to be sent to users about the update to the record. This is useful when a subsequent operation needs to be performed immediately (such as send to verification after updating the revision)
+**`Optional`**
+
+**`Description`**
+
+Flag to trigger system notifications to relevant users upon update. Set to true if subsequent workflows (like verification) depend on this change.
+
+**`Example`**
+
+```ts
+true
+```
 
 **`Generated`**
 
-from field: bool notify_users = 3;
+from field: optional bool notify_users = 3;
 
 #### Defined in
 
-[src/currencies.scailo_pb.ts:210](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/currencies.scailo_pb.ts#L210)
+[src/currencies.scailo_pb.ts:298](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/currencies.scailo_pb.ts#L298)
 
 ___
 
 ### symbol
 
-• **symbol**: `string` = `""`
+• `Optional` **symbol**: `string`
 
-The unique symbol by which the currency is classified
+**`Optional`**
+
+**`Description`**
+
+The unique symbol, shorthand token, or ISO code by which the currency is structurally classified.
+
+**`Example`**
+
+```ts
+"USD"
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+Must be a non-empty string.
 
 **`Generated`**
 
-from field: string symbol = 11;
+from field: optional string symbol = 11;
 
 #### Defined in
 
-[src/currencies.scailo_pb.ts:224](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/currencies.scailo_pb.ts#L224)
+[src/currencies.scailo_pb.ts:330](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/currencies.scailo_pb.ts#L330)
 
 ___
 
 ### userComment
 
-• **userComment**: `string` = `""`
+• `Optional` **userComment**: `string`
 
-Currencies any comment that the user might add during this operation
+**`Optional`**
+
+**`Description`**
+
+Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+
+**`Example`**
+
+```ts
+"This is a comment for audit purposes."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
-from field: string user_comment = 1;
+from field: optional string user_comment = 1;
 
 #### Defined in
 
-[src/currencies.scailo_pb.ts:196](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/currencies.scailo_pb.ts#L196)
+[src/currencies.scailo_pb.ts:270](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/currencies.scailo_pb.ts#L270)
 
 ___
 
@@ -211,7 +353,7 @@ ___
 
 #### Defined in
 
-[src/currencies.scailo_pb.ts:254](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/currencies.scailo_pb.ts#L254)
+[src/currencies.scailo_pb.ts:387](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/currencies.scailo_pb.ts#L387)
 
 ___
 
@@ -221,7 +363,7 @@ ___
 
 #### Defined in
 
-[src/currencies.scailo_pb.ts:252](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/currencies.scailo_pb.ts#L252)
+[src/currencies.scailo_pb.ts:385](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/currencies.scailo_pb.ts#L385)
 
 ___
 
@@ -231,7 +373,7 @@ ___
 
 #### Defined in
 
-[src/currencies.scailo_pb.ts:253](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/currencies.scailo_pb.ts#L253)
+[src/currencies.scailo_pb.ts:386](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/currencies.scailo_pb.ts#L386)
 
 ## Methods
 
@@ -519,7 +661,7 @@ ___
 
 #### Defined in
 
-[src/currencies.scailo_pb.ts:277](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/currencies.scailo_pb.ts#L277)
+[src/currencies.scailo_pb.ts:410](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/currencies.scailo_pb.ts#L410)
 
 ___
 
@@ -540,7 +682,7 @@ ___
 
 #### Defined in
 
-[src/currencies.scailo_pb.ts:265](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/currencies.scailo_pb.ts#L265)
+[src/currencies.scailo_pb.ts:398](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/currencies.scailo_pb.ts#L398)
 
 ___
 
@@ -561,7 +703,7 @@ ___
 
 #### Defined in
 
-[src/currencies.scailo_pb.ts:269](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/currencies.scailo_pb.ts#L269)
+[src/currencies.scailo_pb.ts:402](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/currencies.scailo_pb.ts#L402)
 
 ___
 
@@ -582,4 +724,4 @@ ___
 
 #### Defined in
 
-[src/currencies.scailo_pb.ts:273](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/currencies.scailo_pb.ts#L273)
+[src/currencies.scailo_pb.ts:406](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/currencies.scailo_pb.ts#L406)

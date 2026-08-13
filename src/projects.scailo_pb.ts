@@ -10,69 +10,69 @@ import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, 
 
 /**
  *
- * Describes the available sort keys
+ * Enumeration of fields available for sorting project search results.
  *
  * @generated from enum Scailo.PROJECT_SORT_KEY
  */
 export enum PROJECT_SORT_KEY {
   /**
-   * Fetch ordered results by id
+   * @description Default sort behavior (by internal ID).
    *
    * @generated from enum value: PROJECT_SORT_KEY_ID_UNSPECIFIED = 0;
    */
   PROJECT_SORT_KEY_ID_UNSPECIFIED = 0,
 
   /**
-   * Fetch ordered results by the creation timestamp
+   * @description Sort by the timestamp the record was initially created.
    *
    * @generated from enum value: PROJECT_SORT_KEY_CREATED_AT = 1;
    */
   PROJECT_SORT_KEY_CREATED_AT = 1,
 
   /**
-   * Fetch ordered results by the modified timestamp
+   * @description Sort by the timestamp the record was last modified.
    *
    * @generated from enum value: PROJECT_SORT_KEY_MODIFIED_AT = 2;
    */
   PROJECT_SORT_KEY_MODIFIED_AT = 2,
 
   /**
-   * Fetch ordered results by the approved on timestamp
+   * @description Sort by the official approval timestamp.
    *
    * @generated from enum value: PROJECT_SORT_KEY_APPROVED_ON = 3;
    */
   PROJECT_SORT_KEY_APPROVED_ON = 3,
 
   /**
-   * Fetch ordered results by the approved by field
+   * @description Sort by the system ID of the approving user.
    *
    * @generated from enum value: PROJECT_SORT_KEY_APPROVED_BY = 4;
    */
   PROJECT_SORT_KEY_APPROVED_BY = 4,
 
   /**
-   * Fetch ordered results by the approver's role ID
+   * @description Sort by the security role ID used by the approver.
    *
    * @generated from enum value: PROJECT_SORT_KEY_APPROVER_ROLE_ID = 5;
    */
   PROJECT_SORT_KEY_APPROVER_ROLE_ID = 5,
 
   /**
-   * Fetch ordered results by the approver's completed on timestamp
+   * @description Sort by the timestamp of record completion.
    *
    * @generated from enum value: PROJECT_SORT_KEY_COMPLETED_ON = 6;
    */
   PROJECT_SORT_KEY_COMPLETED_ON = 6,
 
   /**
-   * Fetch ordered results by the reference ID
+   * @description Sort alphabetically by the user-provided reference ID.
    *
    * @generated from enum value: PROJECT_SORT_KEY_REFERENCE_ID = 10;
    */
   PROJECT_SORT_KEY_REFERENCE_ID = 10,
 
   /**
-   * Fetch ordered results by the final ref number
+   * @description Sort alphabetically by the system-generated reference number.
    *
    * @generated from enum value: PROJECT_SORT_KEY_FINAL_REF_NUMBER = 11;
    */
@@ -93,7 +93,12 @@ proto3.util.setEnumType(PROJECT_SORT_KEY, "Scailo.PROJECT_SORT_KEY", [
 
 /**
  *
- * Describes the parameters necessary to create a record
+ * Request message for creating a new project record.
+ * This message encapsulates all the foundational metadata, client associations,
+ * compliance details, and external system cross-references required to initialize a project.
+ *
+ * **Note:** This serves as the primary entry point for project provisioning, ensuring
+ * that required external mapping, auditing comments, and structural configurations are set.
  *
  * @generated from message Scailo.ProjectsServiceCreateRequest
  */
@@ -110,16 +115,25 @@ export class ProjectsServiceCreateRequest extends Message<ProjectsServiceCreateR
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 1;
+   * @generated from field: optional string entity_uuid = 1;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 2;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 2;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
    *
@@ -133,9 +147,9 @@ export class ProjectsServiceCreateRequest extends Message<ProjectsServiceCreateR
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 vault_folder_id = 9;
+   * @generated from field: optional uint64 vault_folder_id = 9;
    */
-  vaultFolderId = protoInt64.zero;
+  vaultFolderId?: bigint;
 
   /**
    *
@@ -154,21 +168,46 @@ export class ProjectsServiceCreateRequest extends Message<ProjectsServiceCreateR
   referenceId = "";
 
   /**
-   * The optional ID of the associated client
    *
-   * @generated from field: uint64 client_id = 12;
+   * @optional
+   *
+   * @description The unique identifier of the associated client.
+   *
+   * @example 455
+   *
+   * @regex ^[0-9]*$
+   *
+   * @format Non-negative 64-bit integer.
+   *
+   * @generated from field: optional uint64 client_id = 12;
    */
-  clientId = protoInt64.zero;
+  clientId?: bigint;
 
   /**
-   * The description of the project
+   *
+   * @mandatory
+   *
+   * @description The core detailed description or summary of the project.
+   *
+   * @example "This is an exploratory project for Customer A."
+   *
+   * @regex ^[0-9A-Za-z ]+$
+   *
+   * @format Alphanumeric characters and spaces only. Must not be empty.
    *
    * @generated from field: string description = 13;
    */
   description = "";
 
   /**
-   * The list of dynamic forms
+   *
+   * @optional
+   *
+   * @description A collection of dynamic form fields for organization-specific data.
+   *
+   * @example []
+   *
+   * @format An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
    *
    * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
    */
@@ -182,11 +221,11 @@ export class ProjectsServiceCreateRequest extends Message<ProjectsServiceCreateR
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.ProjectsServiceCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
     { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 12, name: "client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 12, name: "client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
     { no: 13, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
@@ -210,20 +249,44 @@ export class ProjectsServiceCreateRequest extends Message<ProjectsServiceCreateR
 
 /**
  *
- * Describes the parameters necessary to update a record
+ * Request message for updating an existing Project record.
+ * Only applicable for records in `DRAFT` or `REVISION` states.
+ * This message allows for modifying the internal reference, client, description
+ * of an established Project.
+ *
+ * **Note:** Only fields provided in the request will typically be updated.
+ * The unique system ID is required to locate the target record.
  *
  * @generated from message Scailo.ProjectsServiceUpdateRequest
  */
 export class ProjectsServiceUpdateRequest extends Message<ProjectsServiceUpdateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * The ID of the record that needs to be updated
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target record that needs to be updated.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 id = 2;
    */
@@ -237,9 +300,9 @@ export class ProjectsServiceUpdateRequest extends Message<ProjectsServiceUpdateR
    *
    * @example true
    *
-   * @generated from field: bool notify_users = 3;
+   * @generated from field: optional bool notify_users = 3;
    */
-  notifyUsers = false;
+  notifyUsers?: boolean;
 
   /**
    *
@@ -253,13 +316,13 @@ export class ProjectsServiceUpdateRequest extends Message<ProjectsServiceUpdateR
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 vault_folder_id = 9;
+   * @generated from field: optional uint64 vault_folder_id = 9;
    */
-  vaultFolderId = protoInt64.zero;
+  vaultFolderId?: bigint;
 
   /**
    *
-   * @mandatory
+   * @optional
    *
    * @description Updated alphanumeric reference ID. Must contain at least 1 character.
    *
@@ -269,26 +332,51 @@ export class ProjectsServiceUpdateRequest extends Message<ProjectsServiceUpdateR
    *
    * @format Alphanumeric characters and spaces only. No special symbols or punctuation allowed.
    *
-   * @generated from field: string reference_id = 10;
+   * @generated from field: optional string reference_id = 10;
    */
-  referenceId = "";
+  referenceId?: string;
 
   /**
-   * The optional ID of the associated client
    *
-   * @generated from field: uint64 client_id = 12;
-   */
-  clientId = protoInt64.zero;
-
-  /**
-   * The description of the project
+   * @optional
    *
-   * @generated from field: string description = 13;
+   * @description The unique identifier of the associated client.
+   *
+   * @example 455
+   *
+   * @regex ^[0-9]*$
+   *
+   * @format Non-negative 64-bit integer.
+   *
+   * @generated from field: optional uint64 client_id = 12;
    */
-  description = "";
+  clientId?: bigint;
 
   /**
-   * The list of dynamic forms
+   *
+   * @optional
+   *
+   * @description The core detailed description or summary of the project.
+   *
+   * @example "This is an exploratory project for Customer A."
+   *
+   * @regex ^[0-9A-Za-z ]+$
+   *
+   * @format Alphanumeric characters and spaces only. Must not be empty.
+   *
+   * @generated from field: optional string description = 13;
+   */
+  description?: string;
+
+  /**
+   *
+   * @optional
+   *
+   * @description A collection of dynamic form fields for organization-specific data.
+   *
+   * @example []
+   *
+   * @format An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
    *
    * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
    */
@@ -302,13 +390,13 @@ export class ProjectsServiceUpdateRequest extends Message<ProjectsServiceUpdateR
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.ProjectsServiceUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 2, name: "id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
-    { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 12, name: "client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 13, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 12, name: "client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 13, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
 
@@ -331,7 +419,7 @@ export class ProjectsServiceUpdateRequest extends Message<ProjectsServiceUpdateR
 
 /**
  *
- * Describes the parameters that are part of a standard response
+ * Represents a full Project within the system.
  *
  * @generated from message Scailo.Project
  */
@@ -419,21 +507,28 @@ export class Project extends Message<Project> {
   finalRefNumber = "";
 
   /**
-   * The optional ID of the associated client
+   *
+   * @description The unique identifier of the associated client.
+   *
+   * @example 455
    *
    * @generated from field: uint64 client_id = 12;
    */
   clientId = protoInt64.zero;
 
   /**
-   * The description of the project
+   *
+   * @description The core detailed description or summary of the project.
+   *
+   * @example "This is an exploratory project for Customer A."
    *
    * @generated from field: string description = 13;
    */
   description = "";
 
   /**
-   * The list of dynamic forms
+   *
+   * @description Collection of organization-specific dynamic data.
    *
    * @generated from field: repeated Scailo.FormFieldDatum form_data = 30;
    */
@@ -480,13 +575,13 @@ export class Project extends Message<Project> {
 
 /**
  *
- * Describes the message consisting of the list of records
+ * Container message for a collection of Project records.
  *
  * @generated from message Scailo.ProjectsList
  */
 export class ProjectsList extends Message<ProjectsList> {
   /**
-   * List of records
+   * @description An array of Project records.
    *
    * @generated from field: repeated Scailo.Project list = 1;
    */
@@ -522,27 +617,38 @@ export class ProjectsList extends Message<ProjectsList> {
 
 /**
  *
- * Describes the parameters that are part of a project's statistics payload
+ * Represents a snapshot of performance and progress metrics for a project.
+ * This message aggregates key performance indicators (KPIs) to provide a
+ * high-level overview of project health, effort, and completion status.
  *
  * @generated from message Scailo.ProjectStatistics
  */
 export class ProjectStatistics extends Message<ProjectStatistics> {
   /**
-   * Stores the total amount of time spent on the project
+   *
+   * @description The total accumulated time spent on the project in seconds.
+   *
+   * @example 86400
    *
    * @generated from field: uint64 total_duration = 1;
    */
   totalDuration = protoInt64.zero;
 
   /**
-   * Stores the cumulative completion percentage of the project
+   *
+   * @description The cumulative progress of the project expressed as a percentage. Can have a range between 0 and 10000. A fully completed project would have a value of 10000.
+   *
+   * @example 10000
    *
    * @generated from field: uint64 total_completion_percentage = 2;
    */
   totalCompletionPercentage = protoInt64.zero;
 
   /**
-   * Stores the total number of points
+   *
+   * @description The total number of points earned or assigned to the project. This is used to track effort or value delivery in agile-style workflows.
+   *
+   * @example 10000
    *
    * @generated from field: uint64 total_points = 3;
    */
@@ -580,7 +686,7 @@ export class ProjectStatistics extends Message<ProjectStatistics> {
 
 /**
  *
- * Describes a pagination request to retrieve records
+ * Pagination request for retrieving slices of Project records.
  *
  * @generated from message Scailo.ProjectsServicePaginationReq
  */
@@ -593,9 +699,9 @@ export class ProjectsServicePaginationReq extends Message<ProjectsServicePaginat
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -625,9 +731,9 @@ export class ProjectsServicePaginationReq extends Message<ProjectsServicePaginat
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -637,9 +743,9 @@ export class ProjectsServicePaginationReq extends Message<ProjectsServicePaginat
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -647,16 +753,21 @@ export class ProjectsServicePaginationReq extends Message<ProjectsServicePaginat
    *
    * @description The specific field key to sort the results by.
    *
-   * @generated from field: Scailo.PROJECT_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.PROJECT_SORT_KEY sort_key = 5;
    */
-  sortKey = PROJECT_SORT_KEY.PROJECT_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: PROJECT_SORT_KEY;
 
   /**
-   * The status of this project
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
+   * @optional
+   *
+   * @description Filter results by a specific lifecycle status.
+   *
+   * @example STANDING
+   *
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   constructor(data?: PartialMessage<ProjectsServicePaginationReq>) {
     super();
@@ -666,12 +777,12 @@ export class ProjectsServicePaginationReq extends Message<ProjectsServicePaginat
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.ProjectsServicePaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(PROJECT_SORT_KEY) },
-    { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(PROJECT_SORT_KEY), opt: true },
+    { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProjectsServicePaginationReq {
@@ -693,7 +804,7 @@ export class ProjectsServicePaginationReq extends Message<ProjectsServicePaginat
 
 /**
  *
- * Describes the response to a pagination request
+ * Response message for paginated queries, including total counts for UI elements.
  *
  * @generated from message Scailo.ProjectsServicePaginationResponse
  */
@@ -769,7 +880,12 @@ export class ProjectsServicePaginationResponse extends Message<ProjectsServicePa
 
 /**
  *
- * Describes the base request payload of a filter search
+ * Advanced filter request for searching and paginating projects using multiple logical criteria.
+ * This message encapsulates pagination controls, sorting keys, lifecycle status filters,
+ * timestamp ranges, and entity references.
+ *
+ * **Note:** This is the primary message layout used by the frontend and external API clients
+ * to build robust data-table queries, reporting views, and targeted record lookups.
  *
  * @generated from message Scailo.ProjectsServiceFilterReq
  */
@@ -782,9 +898,9 @@ export class ProjectsServiceFilterReq extends Message<ProjectsServiceFilterReq> 
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -814,9 +930,9 @@ export class ProjectsServiceFilterReq extends Message<ProjectsServiceFilterReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -826,9 +942,9 @@ export class ProjectsServiceFilterReq extends Message<ProjectsServiceFilterReq> 
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -836,9 +952,9 @@ export class ProjectsServiceFilterReq extends Message<ProjectsServiceFilterReq> 
    *
    * @description The field used for sorting.
    *
-   * @generated from field: Scailo.PROJECT_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.PROJECT_SORT_KEY sort_key = 5;
    */
-  sortKey = PROJECT_SORT_KEY.PROJECT_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: PROJECT_SORT_KEY;
 
   /**
    *
@@ -852,9 +968,9 @@ export class ProjectsServiceFilterReq extends Message<ProjectsServiceFilterReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_start = 101;
+   * @generated from field: optional uint64 creation_timestamp_start = 101;
    */
-  creationTimestampStart = protoInt64.zero;
+  creationTimestampStart?: bigint;
 
   /**
    *
@@ -868,9 +984,9 @@ export class ProjectsServiceFilterReq extends Message<ProjectsServiceFilterReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_end = 102;
+   * @generated from field: optional uint64 creation_timestamp_end = 102;
    */
-  creationTimestampEnd = protoInt64.zero;
+  creationTimestampEnd?: bigint;
 
   /**
    *
@@ -884,9 +1000,9 @@ export class ProjectsServiceFilterReq extends Message<ProjectsServiceFilterReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_start = 103;
+   * @generated from field: optional uint64 modification_timestamp_start = 103;
    */
-  modificationTimestampStart = protoInt64.zero;
+  modificationTimestampStart?: bigint;
 
   /**
    *
@@ -900,9 +1016,9 @@ export class ProjectsServiceFilterReq extends Message<ProjectsServiceFilterReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_end = 104;
+   * @generated from field: optional uint64 modification_timestamp_end = 104;
    */
-  modificationTimestampEnd = protoInt64.zero;
+  modificationTimestampEnd?: bigint;
 
   /**
    *
@@ -916,9 +1032,9 @@ export class ProjectsServiceFilterReq extends Message<ProjectsServiceFilterReq> 
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 8;
+   * @generated from field: optional string entity_uuid = 8;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
    *
@@ -928,9 +1044,9 @@ export class ProjectsServiceFilterReq extends Message<ProjectsServiceFilterReq> 
    *
    * @example STANDING
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   /**
    *
@@ -944,9 +1060,9 @@ export class ProjectsServiceFilterReq extends Message<ProjectsServiceFilterReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_start = 11;
+   * @generated from field: optional uint64 approved_on_start = 11;
    */
-  approvedOnStart = protoInt64.zero;
+  approvedOnStart?: bigint;
 
   /**
    *
@@ -960,9 +1076,9 @@ export class ProjectsServiceFilterReq extends Message<ProjectsServiceFilterReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_end = 12;
+   * @generated from field: optional uint64 approved_on_end = 12;
    */
-  approvedOnEnd = protoInt64.zero;
+  approvedOnEnd?: bigint;
 
   /**
    *
@@ -976,9 +1092,9 @@ export class ProjectsServiceFilterReq extends Message<ProjectsServiceFilterReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_by_user_id = 13;
+   * @generated from field: optional uint64 approved_by_user_id = 13;
    */
-  approvedByUserId = protoInt64.zero;
+  approvedByUserId?: bigint;
 
   /**
    *
@@ -992,9 +1108,9 @@ export class ProjectsServiceFilterReq extends Message<ProjectsServiceFilterReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approver_role_id = 14;
+   * @generated from field: optional uint64 approver_role_id = 14;
    */
-  approverRoleId = protoInt64.zero;
+  approverRoleId?: bigint;
 
   /**
    *
@@ -1008,9 +1124,9 @@ export class ProjectsServiceFilterReq extends Message<ProjectsServiceFilterReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 completed_on_start = 15;
+   * @generated from field: optional uint64 completed_on_start = 15;
    */
-  completedOnStart = protoInt64.zero;
+  completedOnStart?: bigint;
 
   /**
    *
@@ -1024,9 +1140,9 @@ export class ProjectsServiceFilterReq extends Message<ProjectsServiceFilterReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 completed_on_end = 16;
+   * @generated from field: optional uint64 completed_on_end = 16;
    */
-  completedOnEnd = protoInt64.zero;
+  completedOnEnd?: bigint;
 
   /**
    *
@@ -1038,11 +1154,11 @@ export class ProjectsServiceFilterReq extends Message<ProjectsServiceFilterReq> 
    *
    * @regex [0-9A-Za-z ]*$
    *
-   * @format: Alphanumeric characters and spaces only. Can be left empty.
+   * @format Alphanumeric characters and spaces only. Can be left empty.
    *
-   * @generated from field: string reference_id = 20;
+   * @generated from field: optional string reference_id = 20;
    */
-  referenceId = "";
+  referenceId?: string;
 
   /**
    *
@@ -1054,60 +1170,123 @@ export class ProjectsServiceFilterReq extends Message<ProjectsServiceFilterReq> 
    *
    * @regex [0-9A-Za-z ]*$
    *
-   * @format: Alphanumeric characters and spaces only. Can be left empty.
+   * @format Alphanumeric characters and spaces only. Can be left empty.
    *
-   * @generated from field: string final_ref_number = 21;
+   * @generated from field: optional string final_ref_number = 21;
    */
-  finalRefNumber = "";
+  finalRefNumber?: string;
 
   /**
-   * The ID of the associated client. Returns all record if it is set to -1. 0 is a valid filter too.
    *
-   * @generated from field: int64 client_id = 22;
+   * @optional
+   *
+   * @description Filter projects assigned to a specific client. Explicitly set to `-1` to bypass this filter and return all client records. `0` acts as a valid, concrete filter ID.
+   *
+   * @example 455
+   *
+   * @regex ^[0-9]*$
+   *
+   * @format 64-bit integer that with a minimum value of -1.
+   *
+   * @generated from field: optional int64 client_id = 22;
    */
-  clientId = protoInt64.zero;
+  clientId?: bigint;
 
   /**
-   * The ID of the associated sales order (ignored if 0)
    *
-   * @generated from field: uint64 sales_order_id = 40;
+   * @optional
+   *
+   * @description Filter projects assigned to a specific sales order. Ignored if set to 0.
+   *
+   * @example 455
+   *
+   * @regex ^[0-9]*$
+   *
+   * @format Non-negative 64-bit integer.
+   *
+   * @generated from field: optional uint64 sales_order_id = 40;
    */
-  salesOrderId = protoInt64.zero;
+  salesOrderId?: bigint;
 
   /**
-   * The ID of the associated purchase order (ignored if 0)
    *
-   * @generated from field: uint64 purchase_order_id = 41;
+   * @optional
+   *
+   * @description Filter projects assigned to a specific purchase order. Ignored if set to 0.
+   *
+   * @example 455
+   *
+   * @regex ^[0-9]*$
+   *
+   * @format Non-negative 64-bit integer.
+   *
+   * @generated from field: optional uint64 purchase_order_id = 41;
    */
-  purchaseOrderId = protoInt64.zero;
+  purchaseOrderId?: bigint;
 
   /**
-   * The ID of the associated outward job (ignored if 0)
    *
-   * @generated from field: uint64 outward_job_id = 42;
+   * @optional
+   *
+   * @description Filter projects assigned to a specific outward job. Ignored if set to 0.
+   *
+   * @example 455
+   *
+   * @regex ^[0-9]*$
+   *
+   * @format Non-negative 64-bit integer.
+   *
+   * @generated from field: optional uint64 outward_job_id = 42;
    */
-  outwardJobId = protoInt64.zero;
+  outwardJobId?: bigint;
 
   /**
-   * The ID of the associated inward job (ignored if 0)
    *
-   * @generated from field: uint64 inward_job_id = 43;
+   * @optional
+   *
+   * @description Filter projects assigned to a specific inward job. Ignored if set to 0.
+   *
+   * @example 455
+   *
+   * @regex ^[0-9]*$
+   *
+   * @format Non-negative 64-bit integer.
+   *
+   * @generated from field: optional uint64 inward_job_id = 43;
    */
-  inwardJobId = protoInt64.zero;
+  inwardJobId?: bigint;
 
   /**
-   * The ID of the associated production plan (ignored if 0)
    *
-   * @generated from field: uint64 production_plan_id = 44;
+   * @optional
+   *
+   * @description Filter projects assigned to a specific production plan. Ignored if set to 0.
+   *
+   * @example 455
+   *
+   * @regex ^[0-9]*$
+   *
+   * @format Non-negative 64-bit integer.
+   *
+   * @generated from field: optional uint64 production_plan_id = 44;
    */
-  productionPlanId = protoInt64.zero;
+  productionPlanId?: bigint;
 
   /**
-   * The ID of the associated meeting (ignored if 0)
    *
-   * @generated from field: uint64 meeting_id = 45;
+   * @optional
+   *
+   * @description Filter projects assigned to a specific meeting. Ignored if set to 0.
+   *
+   * @example 455
+   *
+   * @regex ^[0-9]*$
+   *
+   * @format Non-negative 64-bit integer.
+   *
+   * @generated from field: optional uint64 meeting_id = 45;
    */
-  meetingId = protoInt64.zero;
+  meetingId?: bigint;
 
   /**
    *
@@ -1128,9 +1307,9 @@ export class ProjectsServiceFilterReq extends Message<ProjectsServiceFilterReq> 
    *
    * @example true
    *
-   * @generated from field: bool include_form_data = 501;
+   * @generated from field: optional bool include_form_data = 501;
    */
-  includeFormData = false;
+  includeFormData?: boolean;
 
   constructor(data?: PartialMessage<ProjectsServiceFilterReq>) {
     super();
@@ -1140,34 +1319,34 @@ export class ProjectsServiceFilterReq extends Message<ProjectsServiceFilterReq> 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.ProjectsServiceFilterReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(PROJECT_SORT_KEY) },
-    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
-    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 15, name: "completed_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "client_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 40, name: "sales_order_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 41, name: "purchase_order_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 42, name: "outward_job_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 43, name: "inward_job_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 44, name: "production_plan_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 45, name: "meeting_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(PROJECT_SORT_KEY), opt: true },
+    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
+    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 15, name: "completed_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 22, name: "client_id", kind: "scalar", T: 3 /* ScalarType.INT64 */, opt: true },
+    { no: 40, name: "sales_order_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 41, name: "purchase_order_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 42, name: "outward_job_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 43, name: "inward_job_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 44, name: "production_plan_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 45, name: "meeting_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
     { no: 500, name: "form_data", kind: "message", T: FormFieldDatumFilterRequest, repeated: true },
-    { no: 501, name: "include_form_data", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 501, name: "include_form_data", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProjectsServiceFilterReq {
@@ -1189,7 +1368,13 @@ export class ProjectsServiceFilterReq extends Message<ProjectsServiceFilterReq> 
 
 /**
  *
- * Describes the base request payload of a count search
+ * Target filter request for counting project records matching specific logical criteria.
+ * This message encapsulates lifecycle status filters, timestamp ranges, workflow markers,
+ * and entity references to determine the total size of a targeted dataset.
+ *
+ * **Note:** This is the primary message layout used by backend calculation engines, reporting
+ * services, and frontend pagination headers to evaluate total record matches dynamically
+ * before or alongside retrieving paginated results.
  *
  * @generated from message Scailo.ProjectsServiceCountReq
  */
@@ -1202,9 +1387,9 @@ export class ProjectsServiceCountReq extends Message<ProjectsServiceCountReq> {
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -1218,9 +1403,9 @@ export class ProjectsServiceCountReq extends Message<ProjectsServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_start = 101;
+   * @generated from field: optional uint64 creation_timestamp_start = 101;
    */
-  creationTimestampStart = protoInt64.zero;
+  creationTimestampStart?: bigint;
 
   /**
    *
@@ -1234,9 +1419,9 @@ export class ProjectsServiceCountReq extends Message<ProjectsServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_end = 102;
+   * @generated from field: optional uint64 creation_timestamp_end = 102;
    */
-  creationTimestampEnd = protoInt64.zero;
+  creationTimestampEnd?: bigint;
 
   /**
    *
@@ -1250,9 +1435,9 @@ export class ProjectsServiceCountReq extends Message<ProjectsServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_start = 103;
+   * @generated from field: optional uint64 modification_timestamp_start = 103;
    */
-  modificationTimestampStart = protoInt64.zero;
+  modificationTimestampStart?: bigint;
 
   /**
    *
@@ -1266,9 +1451,9 @@ export class ProjectsServiceCountReq extends Message<ProjectsServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_end = 104;
+   * @generated from field: optional uint64 modification_timestamp_end = 104;
    */
-  modificationTimestampEnd = protoInt64.zero;
+  modificationTimestampEnd?: bigint;
 
   /**
    *
@@ -1282,9 +1467,9 @@ export class ProjectsServiceCountReq extends Message<ProjectsServiceCountReq> {
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 8;
+   * @generated from field: optional string entity_uuid = 8;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
    *
@@ -1294,9 +1479,9 @@ export class ProjectsServiceCountReq extends Message<ProjectsServiceCountReq> {
    *
    * @example STANDING
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   /**
    *
@@ -1310,9 +1495,9 @@ export class ProjectsServiceCountReq extends Message<ProjectsServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_start = 11;
+   * @generated from field: optional uint64 approved_on_start = 11;
    */
-  approvedOnStart = protoInt64.zero;
+  approvedOnStart?: bigint;
 
   /**
    *
@@ -1326,9 +1511,9 @@ export class ProjectsServiceCountReq extends Message<ProjectsServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_end = 12;
+   * @generated from field: optional uint64 approved_on_end = 12;
    */
-  approvedOnEnd = protoInt64.zero;
+  approvedOnEnd?: bigint;
 
   /**
    *
@@ -1342,9 +1527,9 @@ export class ProjectsServiceCountReq extends Message<ProjectsServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_by_user_id = 13;
+   * @generated from field: optional uint64 approved_by_user_id = 13;
    */
-  approvedByUserId = protoInt64.zero;
+  approvedByUserId?: bigint;
 
   /**
    *
@@ -1358,9 +1543,9 @@ export class ProjectsServiceCountReq extends Message<ProjectsServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approver_role_id = 14;
+   * @generated from field: optional uint64 approver_role_id = 14;
    */
-  approverRoleId = protoInt64.zero;
+  approverRoleId?: bigint;
 
   /**
    *
@@ -1374,9 +1559,9 @@ export class ProjectsServiceCountReq extends Message<ProjectsServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 completed_on_start = 15;
+   * @generated from field: optional uint64 completed_on_start = 15;
    */
-  completedOnStart = protoInt64.zero;
+  completedOnStart?: bigint;
 
   /**
    *
@@ -1390,9 +1575,9 @@ export class ProjectsServiceCountReq extends Message<ProjectsServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 completed_on_end = 16;
+   * @generated from field: optional uint64 completed_on_end = 16;
    */
-  completedOnEnd = protoInt64.zero;
+  completedOnEnd?: bigint;
 
   /**
    *
@@ -1404,11 +1589,11 @@ export class ProjectsServiceCountReq extends Message<ProjectsServiceCountReq> {
    *
    * @regex [0-9A-Za-z ]*$
    *
-   * @format: Alphanumeric characters and spaces only. Can be left empty.
+   * @format Alphanumeric characters and spaces only. Can be left empty.
    *
-   * @generated from field: string reference_id = 20;
+   * @generated from field: optional string reference_id = 20;
    */
-  referenceId = "";
+  referenceId?: string;
 
   /**
    *
@@ -1420,63 +1605,129 @@ export class ProjectsServiceCountReq extends Message<ProjectsServiceCountReq> {
    *
    * @regex [0-9A-Za-z ]*$
    *
-   * @format: Alphanumeric characters and spaces only. Can be left empty.
+   * @format Alphanumeric characters and spaces only. Can be left empty.
    *
-   * @generated from field: string final_ref_number = 21;
+   * @generated from field: optional string final_ref_number = 21;
    */
-  finalRefNumber = "";
+  finalRefNumber?: string;
 
   /**
-   * The ID of the associated client. Returns all record if it is set to -1. 0 is a valid filter too.
    *
-   * @generated from field: int64 client_id = 22;
+   * @optional
+   *
+   * @description Filter projects assigned to a specific client. Explicitly set to `-1` to bypass this filter and return all client records. `0` acts as a valid, concrete filter ID.
+   *
+   * @example 455
+   *
+   * @regex ^[0-9]*$
+   *
+   * @format 64-bit integer that with a minimum value of -1.
+   *
+   * @generated from field: optional int64 client_id = 22;
    */
-  clientId = protoInt64.zero;
+  clientId?: bigint;
 
   /**
-   * The ID of the associated sales order (ignored if 0)
    *
-   * @generated from field: uint64 sales_order_id = 40;
+   * @optional
+   *
+   * @description Filter projects assigned to a specific sales order. Ignored if set to 0.
+   *
+   * @example 455
+   *
+   * @regex ^[0-9]*$
+   *
+   * @format Non-negative 64-bit integer.
+   *
+   * @generated from field: optional uint64 sales_order_id = 40;
    */
-  salesOrderId = protoInt64.zero;
+  salesOrderId?: bigint;
 
   /**
-   * The ID of the associated purchase order (ignored if 0)
    *
-   * @generated from field: uint64 purchase_order_id = 41;
+   * @optional
+   *
+   * @description Filter projects assigned to a specific purchase order. Ignored if set to 0.
+   *
+   * @example 455
+   *
+   * @regex ^[0-9]*$
+   *
+   * @format Non-negative 64-bit integer.
+   *
+   * @generated from field: optional uint64 purchase_order_id = 41;
    */
-  purchaseOrderId = protoInt64.zero;
+  purchaseOrderId?: bigint;
 
   /**
-   * The ID of the associated outward job (ignored if 0)
    *
-   * @generated from field: uint64 outward_job_id = 42;
+   * @optional
+   *
+   * @description Filter projects assigned to a specific outward job. Ignored if set to 0.
+   *
+   * @example 455
+   *
+   * @regex ^[0-9]*$
+   *
+   * @format Non-negative 64-bit integer.
+   *
+   * @generated from field: optional uint64 outward_job_id = 42;
    */
-  outwardJobId = protoInt64.zero;
+  outwardJobId?: bigint;
 
   /**
-   * The ID of the associated inward job (ignored if 0)
    *
-   * @generated from field: uint64 inward_job_id = 43;
+   * @optional
+   *
+   * @description Filter projects assigned to a specific inward job. Ignored if set to 0.
+   *
+   * @example 455
+   *
+   * @regex ^[0-9]*$
+   *
+   * @format Non-negative 64-bit integer.
+   *
+   * @generated from field: optional uint64 inward_job_id = 43;
    */
-  inwardJobId = protoInt64.zero;
+  inwardJobId?: bigint;
 
   /**
-   * The ID of the associated production plan (ignored if 0)
    *
-   * @generated from field: uint64 production_plan_id = 44;
+   * @optional
+   *
+   * @description Filter projects assigned to a specific production plan. Ignored if set to 0.
+   *
+   * @example 455
+   *
+   * @regex ^[0-9]*$
+   *
+   * @format Non-negative 64-bit integer.
+   *
+   * @generated from field: optional uint64 production_plan_id = 44;
    */
-  productionPlanId = protoInt64.zero;
+  productionPlanId?: bigint;
 
   /**
-   * The ID of the associated meeting (ignored if 0)
    *
-   * @generated from field: uint64 meeting_id = 45;
+   * @optional
+   *
+   * @description Filter projects assigned to a specific meeting. Ignored if set to 0.
+   *
+   * @example 455
+   *
+   * @regex ^[0-9]*$
+   *
+   * @format Non-negative 64-bit integer.
+   *
+   * @generated from field: optional uint64 meeting_id = 45;
    */
-  meetingId = protoInt64.zero;
+  meetingId?: bigint;
 
   /**
-   * The list of form data filters
+   *
+   * @optional
+   *
+   * @description Count based on dynamic form field values.
    *
    * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
    */
@@ -1490,28 +1741,28 @@ export class ProjectsServiceCountReq extends Message<ProjectsServiceCountReq> {
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.ProjectsServiceCountReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
-    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
-    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 15, name: "completed_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "client_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 40, name: "sales_order_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 41, name: "purchase_order_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 42, name: "outward_job_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 43, name: "inward_job_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 44, name: "production_plan_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 45, name: "meeting_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
+    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
+    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 15, name: "completed_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 22, name: "client_id", kind: "scalar", T: 3 /* ScalarType.INT64 */, opt: true },
+    { no: 40, name: "sales_order_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 41, name: "purchase_order_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 42, name: "outward_job_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 43, name: "inward_job_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 44, name: "production_plan_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 45, name: "meeting_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
     { no: 500, name: "form_data", kind: "message", T: FormFieldDatumFilterRequest, repeated: true },
   ]);
 
@@ -1534,7 +1785,13 @@ export class ProjectsServiceCountReq extends Message<ProjectsServiceCountReq> {
 
 /**
  *
- * Describes the request payload for performing a generic search operation on records
+ * Broad-spectrum search and lookup request for locating and paginating projects via text matching.
+ * This message encapsulates full-text query parameters, pagination controls, sorting keys,
+ * lifecycle status constraints, and other core references.
+ *
+ * **Note:** This is the primary message layout used for global search bars, fast-filtering dashboard
+ * inputs, and omni-box search utilities where users need to match loose textual terms against
+ * records while retaining structural pagination.
  *
  * @generated from message Scailo.ProjectsServiceSearchAllReq
  */
@@ -1547,9 +1804,9 @@ export class ProjectsServiceSearchAllReq extends Message<ProjectsServiceSearchAl
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -1579,9 +1836,9 @@ export class ProjectsServiceSearchAllReq extends Message<ProjectsServiceSearchAl
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -1591,9 +1848,9 @@ export class ProjectsServiceSearchAllReq extends Message<ProjectsServiceSearchAl
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -1601,9 +1858,9 @@ export class ProjectsServiceSearchAllReq extends Message<ProjectsServiceSearchAl
    *
    * @description The field used for sorting.
    *
-   * @generated from field: Scailo.PROJECT_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.PROJECT_SORT_KEY sort_key = 5;
    */
-  sortKey = PROJECT_SORT_KEY.PROJECT_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: PROJECT_SORT_KEY;
 
   /**
    *
@@ -1617,9 +1874,9 @@ export class ProjectsServiceSearchAllReq extends Message<ProjectsServiceSearchAl
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 6;
+   * @generated from field: optional string entity_uuid = 6;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
    *
@@ -1629,9 +1886,9 @@ export class ProjectsServiceSearchAllReq extends Message<ProjectsServiceSearchAl
    *
    * @example STANDING
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   /**
    *
@@ -1643,18 +1900,27 @@ export class ProjectsServiceSearchAllReq extends Message<ProjectsServiceSearchAl
    *
    * @regex .*
    *
-   * @format: May contain any UTF-8 characters.
+   * @format May contain any UTF-8 characters.
    *
-   * @generated from field: string search_key = 11;
+   * @generated from field: optional string search_key = 11;
    */
-  searchKey = "";
+  searchKey?: string;
 
   /**
-   * The ID of the associated client. Returns all record if it is set to -1. 0 is a valid filter too.
    *
-   * @generated from field: int64 client_id = 21;
+   * @optional
+   *
+   * @description Search projects assigned to a specific client. Explicitly set to `-1` to bypass this filter and return all client records. `0` acts as a valid, concrete filter ID.
+   *
+   * @example 455
+   *
+   * @regex ^[0-9]*$
+   *
+   * @format 64-bit integer that with a minimum value of -1.
+   *
+   * @generated from field: optional int64 client_id = 21;
    */
-  clientId = protoInt64.zero;
+  clientId?: bigint;
 
   constructor(data?: PartialMessage<ProjectsServiceSearchAllReq>) {
     super();
@@ -1664,15 +1930,15 @@ export class ProjectsServiceSearchAllReq extends Message<ProjectsServiceSearchAl
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.ProjectsServiceSearchAllReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(PROJECT_SORT_KEY) },
-    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
-    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 21, name: "client_id", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(PROJECT_SORT_KEY), opt: true },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
+    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 21, name: "client_id", kind: "scalar", T: 3 /* ScalarType.INT64 */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProjectsServiceSearchAllReq {
@@ -1694,27 +1960,59 @@ export class ProjectsServiceSearchAllReq extends Message<ProjectsServiceSearchAl
 
 /**
  *
- * Describes the parameters necessary to create a project contact
+ * Request message for creating a new project contact association.
+ * This message encapsulates the necessary identifiers to link an employee to a project,
+ * along with compliance details and audit logs required for record initialization.
+ *
+ * **Note:** This serves as the primary entry point for managing project personnel, ensuring
+ * that the relationship between the project and the internal employee is properly audited and validated.
  *
  * @generated from message Scailo.ProjectsServiceContactCreateRequest
  */
 export class ProjectsServiceContactCreateRequest extends Message<ProjectsServiceContactCreateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * Stores the project ID
+   *
+   * @mandatory
+   *
+   * @description The unique identifier of the target project to which the contact will be associated.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 project_id = 10;
    */
   projectId = protoInt64.zero;
 
   /**
-   * Stores the employee ID
+   *
+   * @mandatory
+   *
+   * @description The unique identifier of the employee being assigned as the project contact.
+   *
+   * @example 5678
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 employee_id = 11;
    */
@@ -1728,7 +2026,7 @@ export class ProjectsServiceContactCreateRequest extends Message<ProjectsService
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.ProjectsServiceContactCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 10, name: "project_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 11, name: "employee_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
@@ -1752,7 +2050,10 @@ export class ProjectsServiceContactCreateRequest extends Message<ProjectsService
 
 /**
  *
- * Describes the parameters that constitute a project contact
+ * Represents a full Project Contact within the system.
+ * This message encapsulates the complete state of a project contact association,
+ * including organization tenancy, core entity identifiers, audit trails, and
+ * granular approval workflow metadata.
  *
  * @generated from message Scailo.ProjectContact
  */
@@ -1785,35 +2086,51 @@ export class ProjectContact extends Message<ProjectContact> {
 
   /**
    *
-   * @description The approval state of the record
+   * @description A boolean flag indicating whether this specific record requires further administrative approval.
+   *
+   * @example false
+   *
+   * @format Boolean true or false.
    *
    * @generated from field: bool need_approval = 4;
    */
   needApproval = false;
 
   /**
-   * Stores any comment that the user might have added during an operation
+   *
+   * @description Audit log comment or justification captured during the last modification or transactional operation.
+   *
+   * @example "Updated contact assignment per Q3 structural reorganization."
    *
    * @generated from field: string user_comment = 5;
    */
   userComment = "";
 
   /**
-   * Stores the project ID
+   *
+   * @description The unique internal identifier of the associated project.
+   *
+   * @example 1024
    *
    * @generated from field: uint64 project_id = 10;
    */
   projectId = protoInt64.zero;
 
   /**
-   * Stores the employee ID
+   *
+   * @description The unique internal identifier of the associated employee.
+   *
+   * @example 5678
    *
    * @generated from field: uint64 employee_id = 11;
    */
   employeeId = protoInt64.zero;
 
   /**
-   * Stores the UUID of the employee
+   *
+   * @description The globally unique identifier for the employee, used for external cross-referencing and identity systems.
+   *
+   * @example "a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d"
    *
    * @generated from field: string employee_uuid = 211;
    */
@@ -1856,13 +2173,13 @@ export class ProjectContact extends Message<ProjectContact> {
 
 /**
  *
- * Describes the message consisting of the list of project contacts
+ * Container message for a collection of Project Contact records.
  *
  * @generated from message Scailo.ProjectContactsList
  */
 export class ProjectContactsList extends Message<ProjectContactsList> {
   /**
-   * List of records
+   * @description An array of Project Contact records.
    *
    * @generated from field: repeated Scailo.ProjectContact list = 1;
    */

@@ -86,7 +86,7 @@ Message\&lt;QuotationsResponsesServiceItemsFilterReq\&gt;.constructor
 
 #### Defined in
 
-[src/quotations_responses.scailo_pb.ts:2928](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/quotations_responses.scailo_pb.ts#L2928)
+[src/quotations_responses.scailo_pb.ts:2995](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/quotations_responses.scailo_pb.ts#L2995)
 
 ## Properties
 
@@ -120,7 +120,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-[src/quotations_responses.scailo_pb.ts:2861](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/quotations_responses.scailo_pb.ts#L2861)
+[src/quotations_responses.scailo_pb.ts:2928](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/quotations_responses.scailo_pb.ts#L2928)
 
 ___
 
@@ -154,7 +154,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-[src/quotations_responses.scailo_pb.ts:2845](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/quotations_responses.scailo_pb.ts#L2845)
+[src/quotations_responses.scailo_pb.ts:2912](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/quotations_responses.scailo_pb.ts#L2912)
 
 ___
 
@@ -188,7 +188,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-[src/quotations_responses.scailo_pb.ts:2829](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/quotations_responses.scailo_pb.ts#L2829)
+[src/quotations_responses.scailo_pb.ts:2896](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/quotations_responses.scailo_pb.ts#L2896)
 
 ___
 
@@ -222,7 +222,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-[src/quotations_responses.scailo_pb.ts:2877](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/quotations_responses.scailo_pb.ts#L2877)
+[src/quotations_responses.scailo_pb.ts:2944](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/quotations_responses.scailo_pb.ts#L2944)
 
 ___
 
@@ -256,7 +256,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-[src/quotations_responses.scailo_pb.ts:2695](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/quotations_responses.scailo_pb.ts#L2695)
+[src/quotations_responses.scailo_pb.ts:2762](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/quotations_responses.scailo_pb.ts#L2762)
 
 ___
 
@@ -290,7 +290,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-[src/quotations_responses.scailo_pb.ts:2765](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/quotations_responses.scailo_pb.ts#L2765)
+[src/quotations_responses.scailo_pb.ts:2832](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/quotations_responses.scailo_pb.ts#L2832)
 
 ___
 
@@ -324,7 +324,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-[src/quotations_responses.scailo_pb.ts:2749](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/quotations_responses.scailo_pb.ts#L2749)
+[src/quotations_responses.scailo_pb.ts:2816](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/quotations_responses.scailo_pb.ts#L2816)
 
 ___
 
@@ -358,7 +358,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-[src/quotations_responses.scailo_pb.ts:2813](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/quotations_responses.scailo_pb.ts#L2813)
+[src/quotations_responses.scailo_pb.ts:2880](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/quotations_responses.scailo_pb.ts#L2880)
 
 ___
 
@@ -374,7 +374,7 @@ from field: string hsn_sac_code = 23;
 
 #### Defined in
 
-[src/quotations_responses.scailo_pb.ts:2905](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/quotations_responses.scailo_pb.ts#L2905)
+[src/quotations_responses.scailo_pb.ts:2972](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/quotations_responses.scailo_pb.ts#L2972)
 
 ___
 
@@ -400,7 +400,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/quotations_responses.scailo_pb.ts:2679](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/quotations_responses.scailo_pb.ts#L2679)
+[src/quotations_responses.scailo_pb.ts:2746](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/quotations_responses.scailo_pb.ts#L2746)
 
 ___
 
@@ -434,7 +434,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-[src/quotations_responses.scailo_pb.ts:2797](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/quotations_responses.scailo_pb.ts#L2797)
+[src/quotations_responses.scailo_pb.ts:2864](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/quotations_responses.scailo_pb.ts#L2864)
 
 ___
 
@@ -468,7 +468,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-[src/quotations_responses.scailo_pb.ts:2781](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/quotations_responses.scailo_pb.ts#L2781)
+[src/quotations_responses.scailo_pb.ts:2848](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/quotations_responses.scailo_pb.ts#L2848)
 
 ___
 
@@ -484,7 +484,7 @@ from field: string name = 22;
 
 #### Defined in
 
-[src/quotations_responses.scailo_pb.ts:2898](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/quotations_responses.scailo_pb.ts#L2898)
+[src/quotations_responses.scailo_pb.ts:2965](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/quotations_responses.scailo_pb.ts#L2965)
 
 ___
 
@@ -518,7 +518,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-[src/quotations_responses.scailo_pb.ts:2711](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/quotations_responses.scailo_pb.ts#L2711)
+[src/quotations_responses.scailo_pb.ts:2778](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/quotations_responses.scailo_pb.ts#L2778)
 
 ___
 
@@ -534,7 +534,7 @@ from field: uint64 quotation_request_item_id = 21;
 
 #### Defined in
 
-[src/quotations_responses.scailo_pb.ts:2891](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/quotations_responses.scailo_pb.ts#L2891)
+[src/quotations_responses.scailo_pb.ts:2958](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/quotations_responses.scailo_pb.ts#L2958)
 
 ___
 
@@ -550,7 +550,7 @@ from field: uint64 quotation_response_id = 20;
 
 #### Defined in
 
-[src/quotations_responses.scailo_pb.ts:2884](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/quotations_responses.scailo_pb.ts#L2884)
+[src/quotations_responses.scailo_pb.ts:2951](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/quotations_responses.scailo_pb.ts#L2951)
 
 ___
 
@@ -570,7 +570,7 @@ from field: Scailo.QUOTATION_RESPONSE_ITEM_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-[src/quotations_responses.scailo_pb.ts:2733](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/quotations_responses.scailo_pb.ts#L2733)
+[src/quotations_responses.scailo_pb.ts:2800](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/quotations_responses.scailo_pb.ts#L2800)
 
 ___
 
@@ -596,7 +596,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-[src/quotations_responses.scailo_pb.ts:2723](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/quotations_responses.scailo_pb.ts#L2723)
+[src/quotations_responses.scailo_pb.ts:2790](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/quotations_responses.scailo_pb.ts#L2790)
 
 ___
 
@@ -612,7 +612,7 @@ from field: uint64 tax_group_id = 29;
 
 #### Defined in
 
-[src/quotations_responses.scailo_pb.ts:2926](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/quotations_responses.scailo_pb.ts#L2926)
+[src/quotations_responses.scailo_pb.ts:2993](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/quotations_responses.scailo_pb.ts#L2993)
 
 ___
 
@@ -628,7 +628,7 @@ from field: uint64 uom_id = 24;
 
 #### Defined in
 
-[src/quotations_responses.scailo_pb.ts:2912](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/quotations_responses.scailo_pb.ts#L2912)
+[src/quotations_responses.scailo_pb.ts:2979](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/quotations_responses.scailo_pb.ts#L2979)
 
 ___
 
@@ -644,7 +644,7 @@ from field: uint64 vendor_uom_id = 26;
 
 #### Defined in
 
-[src/quotations_responses.scailo_pb.ts:2919](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/quotations_responses.scailo_pb.ts#L2919)
+[src/quotations_responses.scailo_pb.ts:2986](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/quotations_responses.scailo_pb.ts#L2986)
 
 ___
 
@@ -654,7 +654,7 @@ ___
 
 #### Defined in
 
-[src/quotations_responses.scailo_pb.ts:2935](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/quotations_responses.scailo_pb.ts#L2935)
+[src/quotations_responses.scailo_pb.ts:3002](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/quotations_responses.scailo_pb.ts#L3002)
 
 ___
 
@@ -664,7 +664,7 @@ ___
 
 #### Defined in
 
-[src/quotations_responses.scailo_pb.ts:2933](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/quotations_responses.scailo_pb.ts#L2933)
+[src/quotations_responses.scailo_pb.ts:3000](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/quotations_responses.scailo_pb.ts#L3000)
 
 ___
 
@@ -674,7 +674,7 @@ ___
 
 #### Defined in
 
-[src/quotations_responses.scailo_pb.ts:2934](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/quotations_responses.scailo_pb.ts#L2934)
+[src/quotations_responses.scailo_pb.ts:3001](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/quotations_responses.scailo_pb.ts#L3001)
 
 ## Methods
 
@@ -962,7 +962,7 @@ ___
 
 #### Defined in
 
-[src/quotations_responses.scailo_pb.ts:2971](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/quotations_responses.scailo_pb.ts#L2971)
+[src/quotations_responses.scailo_pb.ts:3038](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/quotations_responses.scailo_pb.ts#L3038)
 
 ___
 
@@ -983,7 +983,7 @@ ___
 
 #### Defined in
 
-[src/quotations_responses.scailo_pb.ts:2959](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/quotations_responses.scailo_pb.ts#L2959)
+[src/quotations_responses.scailo_pb.ts:3026](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/quotations_responses.scailo_pb.ts#L3026)
 
 ___
 
@@ -1004,7 +1004,7 @@ ___
 
 #### Defined in
 
-[src/quotations_responses.scailo_pb.ts:2963](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/quotations_responses.scailo_pb.ts#L2963)
+[src/quotations_responses.scailo_pb.ts:3030](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/quotations_responses.scailo_pb.ts#L3030)
 
 ___
 
@@ -1025,4 +1025,4 @@ ___
 
 #### Defined in
 
-[src/quotations_responses.scailo_pb.ts:2967](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/quotations_responses.scailo_pb.ts#L2967)
+[src/quotations_responses.scailo_pb.ts:3034](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/quotations_responses.scailo_pb.ts#L3034)

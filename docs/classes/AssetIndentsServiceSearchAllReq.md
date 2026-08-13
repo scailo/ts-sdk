@@ -75,7 +75,7 @@ Message\&lt;AssetIndentsServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-[src/asset_indents.scailo_pb.ts:2334](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/asset_indents.scailo_pb.ts#L2334)
+[src/asset_indents.scailo_pb.ts:2401](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/asset_indents.scailo_pb.ts#L2401)
 
 ## Properties
 
@@ -109,7 +109,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-[src/asset_indents.scailo_pb.ts:2236](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/asset_indents.scailo_pb.ts#L2236)
+[src/asset_indents.scailo_pb.ts:2303](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/asset_indents.scailo_pb.ts#L2303)
 
 ___
 
@@ -143,7 +143,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-[src/asset_indents.scailo_pb.ts:2290](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/asset_indents.scailo_pb.ts#L2290)
+[src/asset_indents.scailo_pb.ts:2357](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/asset_indents.scailo_pb.ts#L2357)
 
 ___
 
@@ -169,7 +169,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/asset_indents.scailo_pb.ts:2220](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/asset_indents.scailo_pb.ts#L2220)
+[src/asset_indents.scailo_pb.ts:2287](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/asset_indents.scailo_pb.ts#L2287)
 
 ___
 
@@ -185,7 +185,7 @@ from field: uint64 location_id = 24;
 
 #### Defined in
 
-[src/asset_indents.scailo_pb.ts:2325](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/asset_indents.scailo_pb.ts#L2325)
+[src/asset_indents.scailo_pb.ts:2392](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/asset_indents.scailo_pb.ts#L2392)
 
 ___
 
@@ -219,7 +219,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-[src/asset_indents.scailo_pb.ts:2252](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/asset_indents.scailo_pb.ts#L2252)
+[src/asset_indents.scailo_pb.ts:2319](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/asset_indents.scailo_pb.ts#L2319)
 
 ___
 
@@ -251,7 +251,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-[src/asset_indents.scailo_pb.ts:2318](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/asset_indents.scailo_pb.ts#L2318)
+[src/asset_indents.scailo_pb.ts:2385](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/asset_indents.scailo_pb.ts#L2385)
 
 ___
 
@@ -271,7 +271,7 @@ from field: Scailo.ASSET_INDENT_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-[src/asset_indents.scailo_pb.ts:2274](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/asset_indents.scailo_pb.ts#L2274)
+[src/asset_indents.scailo_pb.ts:2341](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/asset_indents.scailo_pb.ts#L2341)
 
 ___
 
@@ -297,7 +297,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-[src/asset_indents.scailo_pb.ts:2264](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/asset_indents.scailo_pb.ts#L2264)
+[src/asset_indents.scailo_pb.ts:2331](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/asset_indents.scailo_pb.ts#L2331)
 
 ___
 
@@ -323,7 +323,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-[src/asset_indents.scailo_pb.ts:2302](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/asset_indents.scailo_pb.ts#L2302)
+[src/asset_indents.scailo_pb.ts:2369](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/asset_indents.scailo_pb.ts#L2369)
 
 ___
 
@@ -339,7 +339,7 @@ from field: uint64 user_id = 25;
 
 #### Defined in
 
-[src/asset_indents.scailo_pb.ts:2332](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/asset_indents.scailo_pb.ts#L2332)
+[src/asset_indents.scailo_pb.ts:2399](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/asset_indents.scailo_pb.ts#L2399)
 
 ___
 
@@ -349,7 +349,7 @@ ___
 
 #### Defined in
 
-[src/asset_indents.scailo_pb.ts:2341](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/asset_indents.scailo_pb.ts#L2341)
+[src/asset_indents.scailo_pb.ts:2408](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/asset_indents.scailo_pb.ts#L2408)
 
 ___
 
@@ -359,7 +359,7 @@ ___
 
 #### Defined in
 
-[src/asset_indents.scailo_pb.ts:2339](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/asset_indents.scailo_pb.ts#L2339)
+[src/asset_indents.scailo_pb.ts:2406](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/asset_indents.scailo_pb.ts#L2406)
 
 ___
 
@@ -369,7 +369,7 @@ ___
 
 #### Defined in
 
-[src/asset_indents.scailo_pb.ts:2340](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/asset_indents.scailo_pb.ts#L2340)
+[src/asset_indents.scailo_pb.ts:2407](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/asset_indents.scailo_pb.ts#L2407)
 
 ## Methods
 
@@ -657,7 +657,7 @@ ___
 
 #### Defined in
 
-[src/asset_indents.scailo_pb.ts:2366](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/asset_indents.scailo_pb.ts#L2366)
+[src/asset_indents.scailo_pb.ts:2433](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/asset_indents.scailo_pb.ts#L2433)
 
 ___
 
@@ -678,7 +678,7 @@ ___
 
 #### Defined in
 
-[src/asset_indents.scailo_pb.ts:2354](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/asset_indents.scailo_pb.ts#L2354)
+[src/asset_indents.scailo_pb.ts:2421](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/asset_indents.scailo_pb.ts#L2421)
 
 ___
 
@@ -699,7 +699,7 @@ ___
 
 #### Defined in
 
-[src/asset_indents.scailo_pb.ts:2358](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/asset_indents.scailo_pb.ts#L2358)
+[src/asset_indents.scailo_pb.ts:2425](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/asset_indents.scailo_pb.ts#L2425)
 
 ___
 
@@ -720,4 +720,4 @@ ___
 
 #### Defined in
 
-[src/asset_indents.scailo_pb.ts:2362](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/asset_indents.scailo_pb.ts#L2362)
+[src/asset_indents.scailo_pb.ts:2429](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/asset_indents.scailo_pb.ts#L2429)

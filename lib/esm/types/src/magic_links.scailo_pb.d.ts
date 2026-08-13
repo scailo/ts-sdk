@@ -331,7 +331,13 @@ export declare enum MAGIC_LINK_RESOURCE_TYPE {
      *
      * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_USER_PASSWORD_RESET_EMAIL = 1610;
      */
-    MAGIC_LINK_RESOURCE_TYPE_USER_PASSWORD_RESET_EMAIL = 1610
+    MAGIC_LINK_RESOURCE_TYPE_USER_PASSWORD_RESET_EMAIL = 1610,
+    /**
+     * Denotes that the magic link was created for a vault file
+     *
+     * @generated from enum value: MAGIC_LINK_RESOURCE_TYPE_VAULT_FILE = 2000;
+     */
+    MAGIC_LINK_RESOURCE_TYPE_VAULT_FILE = 2000
 }
 /**
  *
@@ -533,7 +539,16 @@ export declare class MagicLinksServiceCreateRequest extends Message<MagicLinksSe
      */
     entityUuid: string;
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 2;
      */
@@ -591,7 +606,16 @@ export declare class MagicLinksServiceCreateRequest extends Message<MagicLinksSe
  */
 export declare class MagicLinksServiceCreateRequestForSpecificResource extends Message<MagicLinksServiceCreateRequestForSpecificResource> {
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 2;
      */
@@ -643,7 +667,16 @@ export declare class MagicLinksServiceCreateRequestForSpecificResource extends M
  */
 export declare class MagicLinksServiceUpdateRequest extends Message<MagicLinksServiceUpdateRequest> {
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 1;
      */

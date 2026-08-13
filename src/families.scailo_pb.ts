@@ -10,62 +10,64 @@ import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, 
 
 /**
  *
- * Stores the available family types
+ * Defines the core classification categories for a family within the catalog.
+ * These types dictate the operational lifecycle, permitted transactions (e.g., buy, sell, manufacture),
+ * and the general purpose of the associated items.
  *
  * @generated from enum Scailo.FAMILY_TYPE
  */
 export enum FAMILY_TYPE {
   /**
-   * Denotes any family type (only used for filter and search queries, when family type needs to be disregarded)
+   * @description Denotes that the family type filter should be disregarded. Used exclusively within search/filter APIs to bypass type restrictions.
    *
    * @generated from enum value: FAMILY_TYPE_ANY_UNSPECIFIED = 0;
    */
   FAMILY_TYPE_ANY_UNSPECIFIED = 0,
 
   /**
-   * Denotes a component (a family that can be sold, bought, and manufactured - this is a general purpose family)
+   * @description Denotes a component. This is a general-purpose family of items that can be dynamically sold, bought, and manufactured.
    *
    * @generated from enum value: FAMILY_TYPE_COMPONENT = 1;
    */
   FAMILY_TYPE_COMPONENT = 1,
 
   /**
-   * Denotes equipment (a family that can be used within manufacturing process as a capex item, such as machines)
+   * @description Denotes equipment. Represents a capital expenditure (CapEx) item utilized within the manufacturing process (e.g., machinery, assembly tools).
    *
    * @generated from enum value: FAMILY_TYPE_EQUIPMENT = 2;
    */
   FAMILY_TYPE_EQUIPMENT = 2,
 
   /**
-   * Denotes feedstock (a family that will be used as raw material within manufacturing process, and will be consumed)
+   * @description Denotes feedstock. Represents raw materials that will be consumed and transformed during the manufacturing process.
    *
    * @generated from enum value: FAMILY_TYPE_FEEDSTOCK = 3;
    */
   FAMILY_TYPE_FEEDSTOCK = 3,
 
   /**
-   * Denotes infrastructure (a family that can be used for any non-manufacturing purpose. Examples include cars, rtubelights, computers, etc.)
+   * @description Denotes infrastructure. Represents non-manufacturing items utilized for general operational purposes (e.g., vehicles, computers, lighting/tubelights).
    *
    * @generated from enum value: FAMILY_TYPE_INFRASTRUCTURE = 4;
    */
   FAMILY_TYPE_INFRASTRUCTURE = 4,
 
   /**
-   * Denotes merchandise (a family that can only be bought and sold, and will not be a part of any value addition processes)
+   * @description Denotes merchandise. Represents goods that are strictly procured and resold without undergoing any internal value-addition processes.
    *
    * @generated from enum value: FAMILY_TYPE_MERCHANDISE = 5;
    */
   FAMILY_TYPE_MERCHANDISE = 5,
 
   /**
-   * Denotes product (a family that is the final outcome of a manufacturing process. Can only be sold, but not purchased)
+   * @description Denotes a product. Represents the final, finished outcome of a manufacturing process. Products can only be sold, not directly purchased.
    *
    * @generated from enum value: FAMILY_TYPE_PRODUCT = 6;
    */
   FAMILY_TYPE_PRODUCT = 6,
 
   /**
-   * Denotes service (a family that deals exclusively with services, and no goods)
+   * @description Denotes a service. Represents intangible offerings, labor, or digital services, completely excluding physical goods.
    *
    * @generated from enum value: FAMILY_TYPE_SERVICE = 7;
    */
@@ -85,55 +87,56 @@ proto3.util.setEnumType(FAMILY_TYPE, "Scailo.FAMILY_TYPE", [
 
 /**
  *
- * Stores the available consumption sequences
+ * Defines the inventory depletion strategy and consumption prioritization rules for stored items.
+ * These sequences determine the exact order in which stock is utilized, fulfilled, or depleted based on temporal or lifecycle attributes.
  *
  * @generated from enum Scailo.CONSUMPTION_SEQUENCE
  */
 export enum CONSUMPTION_SEQUENCE {
   /**
-   * Denotes any consumption sequence (only used for filter and search queries, when consumption sequence needs to be disregarded)
+   * @description Denotes that the consumption sequence should be disregarded. Used exclusively within search/filter APIs to bypass sequencing restrictions.
    *
    * @generated from enum value: CONSUMPTION_SEQUENCE_ANY_UNSPECIFIED = 0;
    */
   CONSUMPTION_SEQUENCE_ANY_UNSPECIFIED = 0,
 
   /**
-   * Denotes first-in-first-out according to the intake timestamp
+   * @description Denotes a First-In-First-Out (FIFO) prioritization strictly based on the physical intake or receiving timestamp.
    *
    * @generated from enum value: CONSUMPTION_SEQUENCE_FIFO_INTAKE = 1;
    */
   CONSUMPTION_SEQUENCE_FIFO_INTAKE = 1,
 
   /**
-   * Denotes first-in-first-out according to the shelf life
+   * @description Denotes a First-In-First-Out (FIFO) prioritization based on the expiration or shelf-life timeline (earliest to expire is consumed first).
    *
    * @generated from enum value: CONSUMPTION_SEQUENCE_FIFO_SHELF_LIFE = 2;
    */
   CONSUMPTION_SEQUENCE_FIFO_SHELF_LIFE = 2,
 
   /**
-   * Denotes first-in-first-out according to the warranty
+   * @description Denotes a First-In-First-Out (FIFO) prioritization based on the warranty expiration timeline (earliest warranty end is consumed first).
    *
    * @generated from enum value: CONSUMPTION_SEQUENCE_FIFO_WARRANTY = 3;
    */
   CONSUMPTION_SEQUENCE_FIFO_WARRANTY = 3,
 
   /**
-   * Denotes last-in-first-out according to the intake timestamp
+   * @description Denotes a Last-In-First-Out (LIFO) prioritization strictly based on the physical intake or receiving timestamp (newest arrivals consumed first).
    *
    * @generated from enum value: CONSUMPTION_SEQUENCE_LIFO_INTAKE = 4;
    */
   CONSUMPTION_SEQUENCE_LIFO_INTAKE = 4,
 
   /**
-   * Denotes last-in-first-out according to the shelf life
+   * @description Denotes a Last-In-First-Out (LIFO) prioritization based on the expiration or shelf-life timeline (latest to expire is consumed first).
    *
    * @generated from enum value: CONSUMPTION_SEQUENCE_LIFO_SHELF_LIFE = 5;
    */
   CONSUMPTION_SEQUENCE_LIFO_SHELF_LIFE = 5,
 
   /**
-   * Denotes last-in-first-out according to the warranty
+   * @description Denotes a Last-In-First-Out (LIFO) prioritization based on the warranty expiration timeline (latest warranty end is consumed first).
    *
    * @generated from enum value: CONSUMPTION_SEQUENCE_LIFO_WARRANTY = 6;
    */
@@ -152,83 +155,83 @@ proto3.util.setEnumType(CONSUMPTION_SEQUENCE, "Scailo.CONSUMPTION_SEQUENCE", [
 
 /**
  *
- * Describes the available sort keys
+ * Enumeration of fields available for sorting vendor search results.
  *
  * @generated from enum Scailo.FAMILY_SORT_KEY
  */
 export enum FAMILY_SORT_KEY {
   /**
-   * Fetch ordered results by id
+   * @description Default sort behavior (by internal ID).
    *
    * @generated from enum value: FAMILY_SORT_KEY_ID_UNSPECIFIED = 0;
    */
   FAMILY_SORT_KEY_ID_UNSPECIFIED = 0,
 
   /**
-   * Fetch ordered results by the creation timestamp
+   * @description Sort by the timestamp the record was initially created.
    *
    * @generated from enum value: FAMILY_SORT_KEY_CREATED_AT = 1;
    */
   FAMILY_SORT_KEY_CREATED_AT = 1,
 
   /**
-   * Fetch ordered results by the modified timestamp
+   * @description Sort by the timestamp the record was last modified.
    *
    * @generated from enum value: FAMILY_SORT_KEY_MODIFIED_AT = 2;
    */
   FAMILY_SORT_KEY_MODIFIED_AT = 2,
 
   /**
-   * Fetch ordered results by the approved on timestamp
+   * @description Sort by the official approval timestamp.
    *
    * @generated from enum value: FAMILY_SORT_KEY_APPROVED_ON = 3;
    */
   FAMILY_SORT_KEY_APPROVED_ON = 3,
 
   /**
-   * Fetch ordered results by the approved by field
+   * @description Sort by the system ID of the approving user.
    *
    * @generated from enum value: FAMILY_SORT_KEY_APPROVED_BY = 4;
    */
   FAMILY_SORT_KEY_APPROVED_BY = 4,
 
   /**
-   * Fetch ordered results by the approver's role ID
+   * @description Sort by the security role ID used by the approver.
    *
    * @generated from enum value: FAMILY_SORT_KEY_APPROVER_ROLE_ID = 5;
    */
   FAMILY_SORT_KEY_APPROVER_ROLE_ID = 5,
 
   /**
-   * Fetch ordered results by the name
+   * @description Sort alphabetically by the user-provided name.
    *
    * @generated from enum value: FAMILY_SORT_KEY_NAME = 10;
    */
   FAMILY_SORT_KEY_NAME = 10,
 
   /**
-   * Fetch ordered results by the code
+   * @description Sort alphabetically by the user-provided code.
    *
    * @generated from enum value: FAMILY_SORT_KEY_CODE = 12;
    */
   FAMILY_SORT_KEY_CODE = 12,
 
   /**
-   * Fetch ordered results by the unit quantity
+   * @description Sort by the user-provided unit quantity.
    *
    * @generated from enum value: FAMILY_SORT_KEY_UNIT_QUANTITY = 13;
    */
   FAMILY_SORT_KEY_UNIT_QUANTITY = 13,
 
   /**
-   * Fetch ordered results by the price
+   * @description Sort by the user-provided price.
    *
    * @generated from enum value: FAMILY_SORT_KEY_PRICE = 14;
    */
   FAMILY_SORT_KEY_PRICE = 14,
 
   /**
-   * Fetch ordered results by the amendment count
+   * @description Sort by the user-provided amendment count.
    *
    * @generated from enum value: FAMILY_SORT_KEY_AMENDMENT_COUNT = 15;
    */
@@ -251,13 +254,21 @@ proto3.util.setEnumType(FAMILY_SORT_KEY, "Scailo.FAMILY_SORT_KEY", [
 
 /**
  *
- * Describes the message consisting of the list of family types
+ * Represents a collection payload encapsulating multiple family type classifications.
+ * This message is commonly utilized in bulk retrieval responses or as a multi-select filter array.
  *
  * @generated from message Scailo.FamilyTypesList
  */
 export class FamilyTypesList extends Message<FamilyTypesList> {
   /**
-   * List of family types
+   *
+   * @optional
+   *
+   * @description An array containing one or more specific family type classifications.
+   *
+   * @example ["FAMILY_TYPE_COMPONENT", "FAMILY_TYPE_MERCHANDISE"]
+   *
+   * @format Repeated array of valid FAMILY_TYPE enum strings or integer values.
    *
    * @generated from field: repeated Scailo.FAMILY_TYPE list = 1;
    */
@@ -293,7 +304,12 @@ export class FamilyTypesList extends Message<FamilyTypesList> {
 
 /**
  *
- * Describes the parameters necessary to create a record
+ * Request message for defining and creating a new Family profile within the catalog.
+ * This record tracks critical hierarchical metadata, classification types, taxation codes,
+ * pricing configurations, and inventory consumption rules associated with a target entity.
+ *
+ * **Note:** This is the primary entry point for Inventory Managers, Catalog Administrators,
+ * and Procurement to register new item families and structural classifications for inventory tracking and compliance.
  *
  * @generated from message Scailo.FamiliesServiceCreateRequest
  */
@@ -310,16 +326,25 @@ export class FamiliesServiceCreateRequest extends Message<FamiliesServiceCreateR
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 1;
+   * @generated from field: optional string entity_uuid = 1;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 2;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 2;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
    *
@@ -333,117 +358,259 @@ export class FamiliesServiceCreateRequest extends Message<FamiliesServiceCreateR
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 vault_folder_id = 9;
+   * @generated from field: optional uint64 vault_folder_id = 9;
    */
-  vaultFolderId = protoInt64.zero;
+  vaultFolderId?: bigint;
 
   /**
-   * The name of the family
+   *
+   * @mandatory
+   *
+   * @description The primary, human-readable name of the family.
+   *
+   * @example "Industrial Fasteners"
+   *
+   * @regex .+
+   *
+   * @format Must be a non-empty string.
    *
    * @generated from field: string name = 10;
    */
   name = "";
 
   /**
-   * The name of the family that is to be used on prints
+   *
+   * @mandatory
+   *
+   * @description The designated name of the family utilized for external-facing documents, invoices, and printed reports.
+   *
+   * @example "Ind. Fasteners"
+   *
+   * @regex .+
+   *
+   * @format Must be a non-empty string.
    *
    * @generated from field: string print_name = 11;
    */
   printName = "";
 
   /**
-   * The unique code that represents the family
+   *
+   * @mandatory
+   *
+   * @description The unique alphanumeric code used to internally classify and represent the family.
+   *
+   * @example "FAM-IND-FST-01"
+   *
+   * @regex .+
+   *
+   * @format Must be a non-empty string.
    *
    * @generated from field: string code = 12;
    */
   code = "";
 
   /**
-   * The description of the family
    *
-   * @generated from field: string description = 14;
+   * @optional
+   *
+   * @description A detailed text description outlining the characteristics, specifications, and purpose of the family.
+   *
+   * @example "Heavy duty industrial fasteners suitable for high-stress applications."
+   *
+   * @regex .+
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string description = 14;
    */
-  description = "";
+  description?: string;
 
   /**
-   * The type of the family
+   *
+   * @mandatory
+   *
+   * @description The classification type of the family, dictating its operational lifecycle and valid transaction types (e.g., equipment, feedstock, product).
+   *
+   * @example "FAMILY_TYPE_COMPONENT"
+   *
+   * @regex ^[A-Z_]+$
+   *
+   * @format Valid FAMILY_TYPE enum value string or integer.
    *
    * @generated from field: Scailo.FAMILY_TYPE family_type = 15;
    */
   familyType = FAMILY_TYPE.FAMILY_TYPE_ANY_UNSPECIFIED;
 
   /**
-   * The HSN/SAC code of the family
    *
-   * @generated from field: string hsn_sac_code = 16;
+   * @optional
+   *
+   * @description The Harmonized System of Nomenclature (HSN) or Service Accounting Code (SAC) applied for taxation and regulatory compliance.
+   *
+   * @example "73181500"
+   *
+   * @regex .+
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string hsn_sac_code = 16;
    */
-  hsnSacCode = "";
+  hsnSacCode?: string;
 
   /**
-   * Stores the ID of the associated unit of material
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the unit of material (UOM) used to measure items within this family.
+   *
+   * @example 12
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 uom_id = 17;
    */
   uomId = protoInt64.zero;
 
   /**
-   * Stores the unit quantity
+   *
+   * @mandatory
+   *
+   * @description The standard batch or unit quantity multiplier for items within this family, represented in base subunits.
+   *
+   * @example 100
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 unit_quantity = 18;
    */
   unitQuantity = protoInt64.zero;
 
   /**
-   * Stores the ID of the parent family
    *
-   * @generated from field: uint64 parent_id = 19;
+   * @optional
+   *
+   * @description The unique internal identifier of the parent family. A value of 0 indicates this is a top-level root family.
+   *
+   * @example 0
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Unsigned 64-bit integer greater than or equal to 0.
+   *
+   * @generated from field: optional uint64 parent_id = 19;
    */
-  parentId = protoInt64.zero;
+  parentId?: bigint;
 
   /**
-   * Stores if the family is a leaf family
+   *
+   * @mandatory
+   *
+   * @description A boolean flag indicating whether this family is a leaf node in the hierarchy (i.e., it cannot contain nested sub-families).
+   *
+   * @example true
+   *
+   * @regex ^(?:true|false)$
+   *
+   * @format Boolean true or false.
    *
    * @generated from field: bool is_leaf = 20;
    */
   isLeaf = false;
 
   /**
-   * Stores the ID of the ledger
    *
-   * @generated from field: uint64 ledger_id = 21;
+   * @optional
+   *
+   * @description The unique internal identifier of the accounting ledger associated with this family for financial tracking. A value of 0 typically denotes no specific ledger assignment.
+   *
+   * @example 452
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Unsigned 64-bit integer greater than or equal to 0.
+   *
+   * @generated from field: optional uint64 ledger_id = 21;
    */
-  ledgerId = protoInt64.zero;
+  ledgerId?: bigint;
 
   /**
-   * Stores the ID of the tax group
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the default tax group applied to items nested under this family.
+   *
+   * @example 4
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 tax_group_id = 23;
    */
   taxGroupId = protoInt64.zero;
 
   /**
-   * Stores the unit price
    *
-   * @generated from field: uint64 price = 26;
+   * @optional
+   *
+   * @description The default base unit price for items in this family, represented in the base currency subunit (e.g., cents).
+   *
+   * @example 1550
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Unsigned 64-bit integer greater than or equal to 0.
+   *
+   * @generated from field: optional uint64 price = 26;
    */
-  price = protoInt64.zero;
+  price?: bigint;
 
   /**
-   * Stores the minimum stock to maintain
    *
-   * @generated from field: uint64 min_stock_to_maintain = 27;
+   * @optional
+   *
+   * @description The minimum inventory threshold required to be maintained for items within this family, commonly used to trigger automated restock alerts.
+   *
+   * @example 500
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Unsigned 64-bit integer greater than or equal to 0.
+   *
+   * @generated from field: optional uint64 min_stock_to_maintain = 27;
    */
-  minStockToMaintain = protoInt64.zero;
+  minStockToMaintain?: bigint;
 
   /**
-   * Stores the consumption sequence
+   *
+   * @mandatory
+   *
+   * @description The default inventory depletion sequence applied to items within this family (e.g., FIFO based on intake, LIFO based on shelf life).
+   *
+   * @example "CONSUMPTION_SEQUENCE_FIFO_INTAKE"
+   *
+   * @regex ^[A-Z_]+$
+   *
+   * @format Valid CONSUMPTION_SEQUENCE enum value string or integer.
    *
    * @generated from field: Scailo.CONSUMPTION_SEQUENCE consumption_sequence = 28;
    */
   consumptionSequence = CONSUMPTION_SEQUENCE.CONSUMPTION_SEQUENCE_ANY_UNSPECIFIED;
 
   /**
-   * The list of dynamic forms
+   *
+   * @optional
+   *
+   * @description A collection of dynamic form fields for organization-specific data.
+   *
+   * @example []
+   *
+   * @format An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
    *
    * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 50;
    */
@@ -457,23 +624,23 @@ export class FamiliesServiceCreateRequest extends Message<FamiliesServiceCreateR
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.FamiliesServiceCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
     { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "print_name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 12, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 14, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 14, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 15, name: "family_type", kind: "enum", T: proto3.getEnumType(FAMILY_TYPE) },
-    { no: 16, name: "hsn_sac_code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 16, name: "hsn_sac_code", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 17, name: "uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 18, name: "unit_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 19, name: "parent_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 19, name: "parent_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
     { no: 20, name: "is_leaf", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
-    { no: 21, name: "ledger_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 21, name: "ledger_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
     { no: 23, name: "tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 26, name: "price", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 27, name: "min_stock_to_maintain", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 26, name: "price", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 27, name: "min_stock_to_maintain", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
     { no: 28, name: "consumption_sequence", kind: "enum", T: proto3.getEnumType(CONSUMPTION_SEQUENCE) },
     { no: 50, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
@@ -497,31 +664,60 @@ export class FamiliesServiceCreateRequest extends Message<FamiliesServiceCreateR
 
 /**
  *
- * Describes the parameters necessary to update a record
+ * Request message for updating an existing Family record.
+ * Only applicable for records in `DRAFT` or `REVISION` states.
+ * This message allows for modifying the name, print name, description, hsn sac code, uom id, unit quantity, ledger id, tax group id, price, min stock to maintain, consumption sequence and other custom form fields
+ * of an established Family.
+ *
+ * **Note:** Only fields provided in the request will typically be updated.
+ * The unique system ID is required to locate the target record.
  *
  * @generated from message Scailo.FamiliesServiceUpdateRequest
  */
 export class FamiliesServiceUpdateRequest extends Message<FamiliesServiceUpdateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * The ID of the record that needs to be updated
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target record that needs to be updated.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 id = 2;
    */
   id = protoInt64.zero;
 
   /**
-   * Optional boolean value that denotes if a notification needs to be sent to users about the update to the record. This is useful when a subsequent operation needs to be performed immediately (such as send to verification after updating the revision)
    *
-   * @generated from field: bool notify_users = 3;
+   * @optional
+   *
+   * @description Flag to trigger system notifications to relevant users upon update. Set to true if subsequent workflows (like verification) depend on this change.
+   *
+   * @example true
+   *
+   * @generated from field: optional bool notify_users = 3;
    */
-  notifyUsers = false;
+  notifyUsers?: boolean;
 
   /**
    *
@@ -535,89 +731,195 @@ export class FamiliesServiceUpdateRequest extends Message<FamiliesServiceUpdateR
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 vault_folder_id = 9;
+   * @generated from field: optional uint64 vault_folder_id = 9;
    */
-  vaultFolderId = protoInt64.zero;
+  vaultFolderId?: bigint;
 
   /**
-   * The name of the family
    *
-   * @generated from field: string name = 10;
-   */
-  name = "";
-
-  /**
-   * The name of the family that is to be used on prints
+   * @optional
    *
-   * @generated from field: string print_name = 11;
-   */
-  printName = "";
-
-  /**
-   * The description of the family
+   * @description The primary, human-readable name of the family.
    *
-   * @generated from field: string description = 14;
-   */
-  description = "";
-
-  /**
-   * The HSN/SAC code of the family
+   * @example "Industrial Fasteners"
    *
-   * @generated from field: string hsn_sac_code = 16;
-   */
-  hsnSacCode = "";
-
-  /**
-   * Stores the ID of the associated unit of material
+   * @regex .*
    *
-   * @generated from field: uint64 uom_id = 17;
-   */
-  uomId = protoInt64.zero;
-
-  /**
-   * Stores the unit quantity
+   * @format Must be a non-empty string.
    *
-   * @generated from field: uint64 unit_quantity = 18;
+   * @generated from field: optional string name = 10;
    */
-  unitQuantity = protoInt64.zero;
+  name?: string;
 
   /**
-   * Stores the ID of the ledger
    *
-   * @generated from field: uint64 ledger_id = 21;
-   */
-  ledgerId = protoInt64.zero;
-
-  /**
-   * Stores the ID of the tax group
+   * @optional
    *
-   * @generated from field: uint64 tax_group_id = 23;
-   */
-  taxGroupId = protoInt64.zero;
-
-  /**
-   * Stores the unit price
+   * @description The designated name of the family utilized for external-facing documents, invoices, and printed reports.
    *
-   * @generated from field: uint64 price = 26;
-   */
-  price = protoInt64.zero;
-
-  /**
-   * Stores the minimum stock to maintain
+   * @example "Ind. Fasteners"
    *
-   * @generated from field: uint64 min_stock_to_maintain = 27;
-   */
-  minStockToMaintain = protoInt64.zero;
-
-  /**
-   * Stores the consumption sequence
+   * @regex .*
    *
-   * @generated from field: Scailo.CONSUMPTION_SEQUENCE consumption_sequence = 28;
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string print_name = 11;
    */
-  consumptionSequence = CONSUMPTION_SEQUENCE.CONSUMPTION_SEQUENCE_ANY_UNSPECIFIED;
+  printName?: string;
 
   /**
-   * The list of dynamic forms
+   *
+   * @optional
+   *
+   * @description A detailed text description outlining the characteristics, specifications, and purpose of the family.
+   *
+   * @example "Heavy duty industrial fasteners suitable for high-stress applications."
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string description = 14;
+   */
+  description?: string;
+
+  /**
+   *
+   * @optional
+   *
+   * @description The Harmonized System of Nomenclature (HSN) or Service Accounting Code (SAC) applied for taxation and regulatory compliance.
+   *
+   * @example "73181500"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string hsn_sac_code = 16;
+   */
+  hsnSacCode?: string;
+
+  /**
+   *
+   * @optional
+   *
+   * @description The unique internal identifier of the unit of material (UOM) used to measure items within this family.
+   *
+   * @example 12
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: optional uint64 uom_id = 17;
+   */
+  uomId?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description The standard batch or unit quantity multiplier for items within this family, represented in base subunits.
+   *
+   * @example 100
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: optional uint64 unit_quantity = 18;
+   */
+  unitQuantity?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description The unique internal identifier of the accounting ledger associated with this family for financial tracking. A value of 0 typically denotes no specific ledger assignment.
+   *
+   * @example 452
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Unsigned 64-bit integer greater than or equal to 0.
+   *
+   * @generated from field: optional uint64 ledger_id = 21;
+   */
+  ledgerId?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description The unique internal identifier of the default tax group applied to items nested under this family.
+   *
+   * @example 4
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: optional uint64 tax_group_id = 23;
+   */
+  taxGroupId?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description The default base unit price for items in this family, represented in the base currency subunit (e.g., cents).
+   *
+   * @example 1550
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Unsigned 64-bit integer greater than or equal to 0.
+   *
+   * @generated from field: optional uint64 price = 26;
+   */
+  price?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description The minimum inventory threshold required to be maintained for items within this family, commonly used to trigger automated restock alerts.
+   *
+   * @example 500
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Unsigned 64-bit integer greater than or equal to 0.
+   *
+   * @generated from field: optional uint64 min_stock_to_maintain = 27;
+   */
+  minStockToMaintain?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description The default inventory depletion sequence applied to items within this family (e.g., FIFO based on intake, LIFO based on shelf life).
+   *
+   * @example "CONSUMPTION_SEQUENCE_FIFO_INTAKE"
+   *
+   * @regex ^[A-Z_]+$
+   *
+   * @format Valid CONSUMPTION_SEQUENCE enum value string or integer.
+   *
+   * @generated from field: optional Scailo.CONSUMPTION_SEQUENCE consumption_sequence = 28;
+   */
+  consumptionSequence?: CONSUMPTION_SEQUENCE;
+
+  /**
+   *
+   * @optional
+   *
+   * @description A collection of dynamic form fields for organization-specific data.
+   *
+   * @example []
+   *
+   * @format An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
    *
    * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 50;
    */
@@ -631,21 +933,21 @@ export class FamiliesServiceUpdateRequest extends Message<FamiliesServiceUpdateR
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.FamiliesServiceUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 2, name: "id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
-    { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 11, name: "print_name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 14, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 16, name: "hsn_sac_code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 17, name: "uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 18, name: "unit_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 21, name: "ledger_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 23, name: "tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 26, name: "price", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 27, name: "min_stock_to_maintain", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 28, name: "consumption_sequence", kind: "enum", T: proto3.getEnumType(CONSUMPTION_SEQUENCE) },
+    { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 11, name: "print_name", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 14, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 16, name: "hsn_sac_code", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 17, name: "uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 18, name: "unit_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 21, name: "ledger_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 23, name: "tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 26, name: "price", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 27, name: "min_stock_to_maintain", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 28, name: "consumption_sequence", kind: "enum", T: proto3.getEnumType(CONSUMPTION_SEQUENCE), opt: true },
     { no: 50, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
 
@@ -668,52 +970,115 @@ export class FamiliesServiceUpdateRequest extends Message<FamiliesServiceUpdateR
 
 /**
  *
- * Describes the parameters necessary to update the identity of a family
+ * Request message for modifying the foundational identity and structural classification of an existing Family.
+ * This payload specifically targets core attributes that define the record's base operational behavior—such as
+ * the unique alphanumeric code, structural hierarchy (parent mapping and leaf status), and the primary family type.
+ *
+ * **Critical Constraint:** Because these fields dictate core catalog integrity and transactional rules, consumers
+ * must use this request strictly **prior to the first approval** of the family record. Once a family has been
+ * approved, its identity attributes are permanently locked and cannot be mutated via this operation.
+ *
+ * **Note:** This is typically utilized by Catalog Administrators or Inventory Managers during the initial onboarding,
+ * draft, or review phases to correct structural mappings before finalizing the catalog entry.
  *
  * @generated from message Scailo.FamiliesServiceUpdateIdentityRequest
  */
 export class FamiliesServiceUpdateIdentityRequest extends Message<FamiliesServiceUpdateIdentityRequest> {
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * The ID of the record that needs to be updated
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target record that needs to be updated.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 id = 2;
    */
   id = protoInt64.zero;
 
   /**
-   * The unique code that represents the family (can be updated only prior to the first approval)
    *
-   * @generated from field: string code = 12;
+   * @optional
+   *
+   * @description The unique alphanumeric code used to internally classify and represent the family. Can be updated only prior to the first approval.
+   *
+   * @example "FAM-IND-FST-01"
+   *
+   * @regex .+
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string code = 12;
    */
-  code = "";
+  code?: string;
 
   /**
-   * The type of the family (can be updated only prior to the first approval)
    *
-   * @generated from field: Scailo.FAMILY_TYPE family_type = 15;
+   * @optional
+   *
+   * @description The classification type of the family, dictating its operational lifecycle and valid transaction types (e.g., equipment, feedstock, product). Can be updated only prior to the first approval.
+   *
+   * @example "FAMILY_TYPE_COMPONENT"
+   *
+   * @regex ^[A-Z_]+$
+   *
+   * @format Valid FAMILY_TYPE enum value string or integer.
+   *
+   * @generated from field: optional Scailo.FAMILY_TYPE family_type = 15;
    */
-  familyType = FAMILY_TYPE.FAMILY_TYPE_ANY_UNSPECIFIED;
+  familyType?: FAMILY_TYPE;
 
   /**
-   * Stores the ID of the parent family (can be updated only prior to the first approval)
    *
-   * @generated from field: uint64 parent_id = 19;
+   * @optional
+   *
+   * @description The unique internal identifier of the parent family. A value of 0 indicates this is a top-level root family. Can be updated only prior to the first approval.
+   *
+   * @example 0
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Unsigned 64-bit integer greater than or equal to 0.
+   *
+   * @generated from field: optional uint64 parent_id = 19;
    */
-  parentId = protoInt64.zero;
+  parentId?: bigint;
 
   /**
-   * Stores if the family is a leaf family (can be updated only prior to the first approval)
    *
-   * @generated from field: bool is_leaf = 20;
+   * @optional
+   *
+   * @description A boolean flag indicating whether this family is a leaf node in the hierarchy (i.e., it cannot contain nested sub-families). Can be updated only prior to the first approval.
+   *
+   * @example true
+   *
+   * @regex ^(?:true|false)$
+   *
+   * @format Boolean true or false.
+   *
+   * @generated from field: optional bool is_leaf = 20;
    */
-  isLeaf = false;
+  isLeaf?: boolean;
 
   constructor(data?: PartialMessage<FamiliesServiceUpdateIdentityRequest>) {
     super();
@@ -723,12 +1088,12 @@ export class FamiliesServiceUpdateIdentityRequest extends Message<FamiliesServic
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.FamiliesServiceUpdateIdentityRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 2, name: "id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 12, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 15, name: "family_type", kind: "enum", T: proto3.getEnumType(FAMILY_TYPE) },
-    { no: 19, name: "parent_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 20, name: "is_leaf", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 12, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 15, name: "family_type", kind: "enum", T: proto3.getEnumType(FAMILY_TYPE), opt: true },
+    { no: 19, name: "parent_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 20, name: "is_leaf", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FamiliesServiceUpdateIdentityRequest {
@@ -750,7 +1115,7 @@ export class FamiliesServiceUpdateIdentityRequest extends Message<FamiliesServic
 
 /**
  *
- * Describes the parameters that are part of a family structure
+ * Represents a full Family within the system.
  *
  * @generated from message Scailo.Family
  */
@@ -808,119 +1173,168 @@ export class Family extends Message<Family> {
   vaultFolderId = protoInt64.zero;
 
   /**
-   * The name of the family
+   *
+   * @description The primary, human-readable name of the family.
+   *
+   * @example "Industrial Fasteners"
    *
    * @generated from field: string name = 10;
    */
   name = "";
 
   /**
-   * The name of the family that is to be used on prints
+   *
+   * @description The designated name of the family utilized for external-facing documents, invoices, and printed reports.
+   *
+   * @example "Ind. Fasteners"
    *
    * @generated from field: string print_name = 11;
    */
   printName = "";
 
   /**
-   * The unique code that represents the family
+   *
+   * @description The unique alphanumeric code used to internally classify and represent the family.
+   *
+   * @example "FAM-IND-FST-01"
    *
    * @generated from field: string code = 12;
    */
   code = "";
 
   /**
-   * The description of the family
+   *
+   * @description A detailed text description outlining the characteristics, specifications, and purpose of the family.
+   *
+   * @example "Heavy duty industrial fasteners suitable for high-stress applications."
    *
    * @generated from field: string description = 14;
    */
   description = "";
 
   /**
-   * The type of the family
+   *
+   * @description The classification type of the family, dictating its operational lifecycle and valid transaction types (e.g., equipment, feedstock, product).
+   *
+   * @example "FAMILY_TYPE_COMPONENT"
    *
    * @generated from field: Scailo.FAMILY_TYPE family_type = 15;
    */
   familyType = FAMILY_TYPE.FAMILY_TYPE_ANY_UNSPECIFIED;
 
   /**
-   * The HSN/SAC code of the family
+   *
+   * @description The Harmonized System of Nomenclature (HSN) or Service Accounting Code (SAC) applied for taxation and regulatory compliance.
+   *
+   * @example "73181500"
    *
    * @generated from field: string hsn_sac_code = 16;
    */
   hsnSacCode = "";
 
   /**
-   * Stores the ID of the associated unit of material
+   *
+   * @description The unique internal identifier of the unit of material (UOM) used to measure items within this family.
+   *
+   * @example 12
    *
    * @generated from field: uint64 uom_id = 17;
    */
   uomId = protoInt64.zero;
 
   /**
-   * Stores the unit quantity
+   *
+   * @description The standard batch or unit quantity multiplier for items within this family, represented in base subunits.
+   *
+   * @example 100
    *
    * @generated from field: uint64 unit_quantity = 18;
    */
   unitQuantity = protoInt64.zero;
 
   /**
-   * Stores the ID of the parent family
+   *
+   * @description The unique internal identifier of the parent family. A value of 0 indicates this is a top-level root family.
+   *
+   * @example 0
    *
    * @generated from field: uint64 parent_id = 19;
    */
   parentId = protoInt64.zero;
 
   /**
-   * Stores if the family is a leaf family
+   *
+   * @description A boolean flag indicating whether this family is a leaf node in the hierarchy (i.e., it cannot contain nested sub-families).
+   *
+   * @example true
    *
    * @generated from field: bool is_leaf = 20;
    */
   isLeaf = false;
 
   /**
-   * Stores the ID of the ledger
+   *
+   * @description The unique internal identifier of the accounting ledger associated with this family for financial tracking. A value of 0 typically denotes no specific ledger assignment.
+   *
+   * @example 452
    *
    * @generated from field: uint64 ledger_id = 21;
    */
   ledgerId = protoInt64.zero;
 
   /**
-   * Stores the ID of the tax group
+   *
+   * @description The unique internal identifier of the default tax group applied to items nested under this family.
+   *
+   * @example 4
    *
    * @generated from field: uint64 tax_group_id = 23;
    */
   taxGroupId = protoInt64.zero;
 
   /**
-   * Stores the unit price
+   *
+   * @description The default base unit price for items in this family, represented in the base currency subunit (e.g., cents).
+   *
+   * @example 1550
    *
    * @generated from field: uint64 price = 26;
    */
   price = protoInt64.zero;
 
   /**
-   * Stores the minimum stock to maintain
+   *
+   * @description The minimum inventory threshold required to be maintained for items within this family, commonly used to trigger automated restock alerts.
+   *
+   * @example 500
    *
    * @generated from field: uint64 min_stock_to_maintain = 27;
    */
   minStockToMaintain = protoInt64.zero;
 
   /**
-   * Stores the consumption sequence
+   *
+   * @description The default inventory depletion sequence applied to items within this family (e.g., FIFO based on intake, LIFO based on shelf life).
+   *
+   * @example "CONSUMPTION_SEQUENCE_FIFO_INTAKE"
    *
    * @generated from field: Scailo.CONSUMPTION_SEQUENCE consumption_sequence = 29;
    */
   consumptionSequence = CONSUMPTION_SEQUENCE.CONSUMPTION_SEQUENCE_ANY_UNSPECIFIED;
 
   /**
-   * The number of times that the family has been amended
+   *
+   * @description The number of times that this record has been amended after approval.
+   *
+   * @example 5
    *
    * @generated from field: uint64 amendment_count = 40;
    */
   amendmentCount = protoInt64.zero;
 
   /**
-   * The list of dynamic forms
+   *
+   * @description Collection of organization-specific dynamic data.
    *
    * @generated from field: repeated Scailo.FormFieldDatum form_data = 50;
    */
@@ -978,13 +1392,13 @@ export class Family extends Message<Family> {
 
 /**
  *
- * Describes the message consisting of the list of families
+ * Container message for a collection of Family records.
  *
  * @generated from message Scailo.FamiliesList
  */
 export class FamiliesList extends Message<FamiliesList> {
   /**
-   * List of families
+   * @description An array of Family records.
    *
    * @generated from field: repeated Scailo.Family list = 1;
    */
@@ -1020,7 +1434,7 @@ export class FamiliesList extends Message<FamiliesList> {
 
 /**
  *
- * Describes a pagination request to retrieve records
+ * Pagination request for retrieving slices of Family records.
  *
  * @generated from message Scailo.FamiliesServicePaginationReq
  */
@@ -1033,9 +1447,9 @@ export class FamiliesServicePaginationReq extends Message<FamiliesServicePaginat
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -1065,9 +1479,9 @@ export class FamiliesServicePaginationReq extends Message<FamiliesServicePaginat
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -1077,9 +1491,9 @@ export class FamiliesServicePaginationReq extends Message<FamiliesServicePaginat
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -1087,16 +1501,21 @@ export class FamiliesServicePaginationReq extends Message<FamiliesServicePaginat
    *
    * @description The specific field key to sort the results by.
    *
-   * @generated from field: Scailo.FAMILY_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.FAMILY_SORT_KEY sort_key = 5;
    */
-  sortKey = FAMILY_SORT_KEY.FAMILY_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: FAMILY_SORT_KEY;
 
   /**
-   * The status of this family
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
+   * @optional
+   *
+   * @description Filter results by a specific lifecycle status.
+   *
+   * @example STANDING
+   *
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   constructor(data?: PartialMessage<FamiliesServicePaginationReq>) {
     super();
@@ -1106,12 +1525,12 @@ export class FamiliesServicePaginationReq extends Message<FamiliesServicePaginat
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.FamiliesServicePaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(FAMILY_SORT_KEY) },
-    { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(FAMILY_SORT_KEY), opt: true },
+    { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FamiliesServicePaginationReq {
@@ -1133,7 +1552,7 @@ export class FamiliesServicePaginationReq extends Message<FamiliesServicePaginat
 
 /**
  *
- * Describes the response to a pagination request
+ * Response message for paginated queries, including total counts for UI elements.
  *
  * @generated from message Scailo.FamiliesServicePaginationResponse
  */
@@ -1209,7 +1628,12 @@ export class FamiliesServicePaginationResponse extends Message<FamiliesServicePa
 
 /**
  *
- * Describes the base request payload of a filter search
+ * Advanced filter request for searching and paginating families using multiple logical criteria.
+ * This message encapsulates pagination controls, sorting keys, lifecycle status filters,
+ * timestamp ranges, and entity references.
+ *
+ * **Note:** This is the primary message layout used by the frontend and external API clients
+ * to build robust data-table queries, reporting views, and targeted record lookups.
  *
  * @generated from message Scailo.FamiliesServiceFilterReq
  */
@@ -1222,9 +1646,9 @@ export class FamiliesServiceFilterReq extends Message<FamiliesServiceFilterReq> 
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -1254,9 +1678,9 @@ export class FamiliesServiceFilterReq extends Message<FamiliesServiceFilterReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -1266,9 +1690,9 @@ export class FamiliesServiceFilterReq extends Message<FamiliesServiceFilterReq> 
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -1276,9 +1700,9 @@ export class FamiliesServiceFilterReq extends Message<FamiliesServiceFilterReq> 
    *
    * @description The field used for sorting.
    *
-   * @generated from field: Scailo.FAMILY_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.FAMILY_SORT_KEY sort_key = 5;
    */
-  sortKey = FAMILY_SORT_KEY.FAMILY_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: FAMILY_SORT_KEY;
 
   /**
    *
@@ -1292,9 +1716,9 @@ export class FamiliesServiceFilterReq extends Message<FamiliesServiceFilterReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_start = 101;
+   * @generated from field: optional uint64 creation_timestamp_start = 101;
    */
-  creationTimestampStart = protoInt64.zero;
+  creationTimestampStart?: bigint;
 
   /**
    *
@@ -1308,9 +1732,9 @@ export class FamiliesServiceFilterReq extends Message<FamiliesServiceFilterReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_end = 102;
+   * @generated from field: optional uint64 creation_timestamp_end = 102;
    */
-  creationTimestampEnd = protoInt64.zero;
+  creationTimestampEnd?: bigint;
 
   /**
    *
@@ -1324,9 +1748,9 @@ export class FamiliesServiceFilterReq extends Message<FamiliesServiceFilterReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_start = 103;
+   * @generated from field: optional uint64 modification_timestamp_start = 103;
    */
-  modificationTimestampStart = protoInt64.zero;
+  modificationTimestampStart?: bigint;
 
   /**
    *
@@ -1340,9 +1764,9 @@ export class FamiliesServiceFilterReq extends Message<FamiliesServiceFilterReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_end = 104;
+   * @generated from field: optional uint64 modification_timestamp_end = 104;
    */
-  modificationTimestampEnd = protoInt64.zero;
+  modificationTimestampEnd?: bigint;
 
   /**
    *
@@ -1356,9 +1780,9 @@ export class FamiliesServiceFilterReq extends Message<FamiliesServiceFilterReq> 
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 8;
+   * @generated from field: optional string entity_uuid = 8;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
    *
@@ -1368,12 +1792,19 @@ export class FamiliesServiceFilterReq extends Message<FamiliesServiceFilterReq> 
    *
    * @example STANDING
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   /**
-   * Filter with the given multiple statuses (if the list is not empty). All the records that match any of the statuses will be returned
+   *
+   * @optional
+   *
+   * @description Filter by multiple lifecycle statuses simultaneously. Returns records that match any of the provided statuses (logical OR). If the list is empty, this filter is disregarded.
+   *
+   * @example ["DRAFT", "STANDING"]
+   *
+   * @format Repeated array of valid STANDARD_LIFECYCLE_STATUS enum strings or integer values.
    *
    * @generated from field: repeated Scailo.STANDARD_LIFECYCLE_STATUS multi_status = 100;
    */
@@ -1391,9 +1822,9 @@ export class FamiliesServiceFilterReq extends Message<FamiliesServiceFilterReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_start = 11;
+   * @generated from field: optional uint64 approved_on_start = 11;
    */
-  approvedOnStart = protoInt64.zero;
+  approvedOnStart?: bigint;
 
   /**
    *
@@ -1407,9 +1838,9 @@ export class FamiliesServiceFilterReq extends Message<FamiliesServiceFilterReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_end = 12;
+   * @generated from field: optional uint64 approved_on_end = 12;
    */
-  approvedOnEnd = protoInt64.zero;
+  approvedOnEnd?: bigint;
 
   /**
    *
@@ -1423,9 +1854,9 @@ export class FamiliesServiceFilterReq extends Message<FamiliesServiceFilterReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_by_user_id = 13;
+   * @generated from field: optional uint64 approved_by_user_id = 13;
    */
-  approvedByUserId = protoInt64.zero;
+  approvedByUserId?: bigint;
 
   /**
    *
@@ -1439,114 +1870,247 @@ export class FamiliesServiceFilterReq extends Message<FamiliesServiceFilterReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approver_role_id = 14;
+   * @generated from field: optional uint64 approver_role_id = 14;
    */
-  approverRoleId = protoInt64.zero;
+  approverRoleId?: bigint;
 
   /**
-   * The name of the family
    *
-   * @generated from field: string name = 20;
-   */
-  name = "";
-
-  /**
-   * The unique code that represents the family
+   * @optional
    *
-   * @generated from field: string code = 22;
-   */
-  code = "";
-
-  /**
-   * The type of the family
+   * @description The primary, human-readable name of the family.
    *
-   * @generated from field: Scailo.FAMILY_TYPE family_type = 25;
+   * @example "Industrial Fasteners"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string name = 20;
    */
-  familyType = FAMILY_TYPE.FAMILY_TYPE_ANY_UNSPECIFIED;
+  name?: string;
 
   /**
-   * Filter from any of the given family types. All the records that match any of the family types will be returned
+   *
+   * @optional
+   *
+   * @description The unique alphanumeric code used to internally classify and represent the family. Can be updated only prior to the first approval.
+   *
+   * @example "FAM-IND-FST-01"
+   *
+   * @regex .+
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string code = 22;
+   */
+  code?: string;
+
+  /**
+   *
+   * @optional
+   *
+   * @description The classification type of the family, dictating its operational lifecycle and valid transaction types (e.g., equipment, feedstock, product). Can be updated only prior to the first approval.
+   *
+   * @example "FAMILY_TYPE_COMPONENT"
+   *
+   * @regex ^[A-Z_]+$
+   *
+   * @format Valid FAMILY_TYPE enum value string or integer.
+   *
+   * @generated from field: optional Scailo.FAMILY_TYPE family_type = 25;
+   */
+  familyType?: FAMILY_TYPE;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Filter by multiple family classification types simultaneously. Returns records that match any of the provided types (logical OR). If the list is empty, this filter is disregarded.
+   *
+   * @example ["FAMILY_TYPE_COMPONENT", "FAMILY_TYPE_EQUIPMENT"]
+   *
+   * @format Repeated array of valid FAMILY_TYPE enum strings or integer values.
    *
    * @generated from field: repeated Scailo.FAMILY_TYPE multi_family_type = 250;
    */
   multiFamilyType: FAMILY_TYPE[] = [];
 
   /**
-   * The HSN/SAC code of the family
    *
-   * @generated from field: string hsn_sac_code = 26;
+   * @optional
+   *
+   * @description The Harmonized System of Nomenclature (HSN) or Service Accounting Code (SAC) applied for taxation and regulatory compliance.
+   *
+   * @example "73181500"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string hsn_sac_code = 26;
    */
-  hsnSacCode = "";
+  hsnSacCode?: string;
 
   /**
-   * Stores the ID of the associated unit of material
    *
-   * @generated from field: uint64 uom_id = 27;
+   * @optional
+   *
+   * @description The unique internal identifier of the unit of material (UOM) used to measure items within this family.
+   *
+   * @example 12
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: optional uint64 uom_id = 27;
    */
-  uomId = protoInt64.zero;
+  uomId?: bigint;
 
   /**
-   * Stores the unit quantity
    *
-   * @generated from field: uint64 unit_quantity = 28;
+   * @optional
+   *
+   * @description The standard batch or unit quantity multiplier for items within this family, represented in base subunits.
+   *
+   * @example 100
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: optional uint64 unit_quantity = 28;
    */
-  unitQuantity = protoInt64.zero;
+  unitQuantity?: bigint;
 
   /**
-   * Stores the ID of the parent family
    *
-   * @generated from field: uint64 parent_id = 29;
+   * @optional
+   *
+   * @description The unique internal identifier of the parent family. A value of 0 indicates this is a top-level root family. Can be updated only prior to the first approval.
+   *
+   * @example 0
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Unsigned 64-bit integer greater than or equal to 0.
+   *
+   * @generated from field: optional uint64 parent_id = 29;
    */
-  parentId = protoInt64.zero;
+  parentId?: bigint;
 
   /**
-   * Filter with the given leaf property
    *
-   * @generated from field: Scailo.BOOL_FILTER is_leaf = 30;
+   * @optional
+   *
+   * @description A boolean flag indicating whether this family is a leaf node in the hierarchy (i.e., it cannot contain nested sub-families). Can be updated only prior to the first approval.
+   *
+   * @example true
+   *
+   * @regex ^(?:true|false)$
+   *
+   * @format Boolean true or false.
+   *
+   * @generated from field: optional Scailo.BOOL_FILTER is_leaf = 30;
    */
-  isLeaf = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isLeaf?: BOOL_FILTER;
 
   /**
-   * Stores the ID of the ledger
    *
-   * @generated from field: uint64 ledger_id = 31;
+   * @optional
+   *
+   * @description The unique internal identifier of the accounting ledger associated with this family for financial tracking. A value of 0 typically denotes no specific ledger assignment.
+   *
+   * @example 452
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Unsigned 64-bit integer greater than or equal to 0.
+   *
+   * @generated from field: optional uint64 ledger_id = 31;
    */
-  ledgerId = protoInt64.zero;
+  ledgerId?: bigint;
 
   /**
-   * Stores the ID of the QC group
    *
-   * @generated from field: uint64 qc_group_id = 32;
+   * @optional
+   *
+   * @description Filter by the unique internal identifier of the Quality Control (QC) group associated with the family.
+   *
+   * @example 88
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 qc_group_id = 32;
    */
-  qcGroupId = protoInt64.zero;
+  qcGroupId?: bigint;
 
   /**
-   * Stores the ID of the tax group
    *
-   * @generated from field: uint64 tax_group_id = 33;
+   * @optional
+   *
+   * @description The unique internal identifier of the default tax group applied to items nested under this family.
+   *
+   * @example 4
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: optional uint64 tax_group_id = 33;
    */
-  taxGroupId = protoInt64.zero;
+  taxGroupId?: bigint;
 
   /**
-   * Stores the consumption sequence
    *
-   * @generated from field: Scailo.CONSUMPTION_SEQUENCE consumption_sequence = 39;
+   * @optional
+   *
+   * @description The default inventory depletion sequence applied to items within this family (e.g., FIFO based on intake, LIFO based on shelf life).
+   *
+   * @example "CONSUMPTION_SEQUENCE_FIFO_INTAKE"
+   *
+   * @regex ^[A-Z_]+$
+   *
+   * @format Valid CONSUMPTION_SEQUENCE enum value string or integer.
+   *
+   * @generated from field: optional Scailo.CONSUMPTION_SEQUENCE consumption_sequence = 39;
    */
-  consumptionSequence = CONSUMPTION_SEQUENCE.CONSUMPTION_SEQUENCE_ANY_UNSPECIFIED;
+  consumptionSequence?: CONSUMPTION_SEQUENCE;
 
   /**
-   * Filter by families that are present in the given parent storage ID (and all the corresponding child storage IDs)
    *
-   * @generated from field: uint64 parent_storage_id = 50;
+   * @optional
+   *
+   * @description Filter by the unique internal identifier of a parent storage location. Returns all families physically located within this storage node or any of its nested child storage locations.
+   *
+   * @example 1050
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 parent_storage_id = 50;
    */
-  parentStorageId = protoInt64.zero;
+  parentStorageId?: bigint;
 
   /**
-   * Filter by families that have the given label ID
    *
-   * @generated from field: uint64 label_id = 60;
+   * @optional
+   *
+   * @description Filter by the unique internal identifier of a categorization label applied to the family.
+   *
+   * @example 12
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 label_id = 60;
    */
-  labelId = protoInt64.zero;
+  labelId?: bigint;
 
   /**
    *
@@ -1567,9 +2131,9 @@ export class FamiliesServiceFilterReq extends Message<FamiliesServiceFilterReq> 
    *
    * @example true
    *
-   * @generated from field: bool include_form_data = 501;
+   * @generated from field: optional bool include_form_data = 501;
    */
-  includeFormData = false;
+  includeFormData?: boolean;
 
   constructor(data?: PartialMessage<FamiliesServiceFilterReq>) {
     super();
@@ -1579,39 +2143,39 @@ export class FamiliesServiceFilterReq extends Message<FamiliesServiceFilterReq> 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.FamiliesServiceFilterReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(FAMILY_SORT_KEY) },
-    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(FAMILY_SORT_KEY), opt: true },
+    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
     { no: 100, name: "multi_status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), repeated: true },
-    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 25, name: "family_type", kind: "enum", T: proto3.getEnumType(FAMILY_TYPE) },
+    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 22, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 25, name: "family_type", kind: "enum", T: proto3.getEnumType(FAMILY_TYPE), opt: true },
     { no: 250, name: "multi_family_type", kind: "enum", T: proto3.getEnumType(FAMILY_TYPE), repeated: true },
-    { no: 26, name: "hsn_sac_code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 27, name: "uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 28, name: "unit_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 29, name: "parent_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 30, name: "is_leaf", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
-    { no: 31, name: "ledger_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 32, name: "qc_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 33, name: "tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 39, name: "consumption_sequence", kind: "enum", T: proto3.getEnumType(CONSUMPTION_SEQUENCE) },
-    { no: 50, name: "parent_storage_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 60, name: "label_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 26, name: "hsn_sac_code", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 27, name: "uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 28, name: "unit_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 29, name: "parent_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 30, name: "is_leaf", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
+    { no: 31, name: "ledger_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 32, name: "qc_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 33, name: "tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 39, name: "consumption_sequence", kind: "enum", T: proto3.getEnumType(CONSUMPTION_SEQUENCE), opt: true },
+    { no: 50, name: "parent_storage_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 60, name: "label_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
     { no: 500, name: "form_data", kind: "message", T: FormFieldDatumFilterRequest, repeated: true },
-    { no: 501, name: "include_form_data", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 501, name: "include_form_data", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FamiliesServiceFilterReq {
@@ -1633,7 +2197,13 @@ export class FamiliesServiceFilterReq extends Message<FamiliesServiceFilterReq> 
 
 /**
  *
- * Describes the request to count all families with the given criteria
+ * Target filter request for counting family records matching specific logical criteria.
+ * This message encapsulates lifecycle status filters, timestamp ranges, workflow markers,
+ * and entity references to determine the total size of a targeted dataset.
+ *
+ * **Note:** This is the primary message layout used by backend calculation engines, reporting
+ * services, and frontend pagination headers to evaluate total record matches dynamically
+ * before or alongside retrieving paginated results.
  *
  * @generated from message Scailo.FamiliesServiceCountReq
  */
@@ -1646,9 +2216,9 @@ export class FamiliesServiceCountReq extends Message<FamiliesServiceCountReq> {
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -1662,9 +2232,9 @@ export class FamiliesServiceCountReq extends Message<FamiliesServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_start = 101;
+   * @generated from field: optional uint64 creation_timestamp_start = 101;
    */
-  creationTimestampStart = protoInt64.zero;
+  creationTimestampStart?: bigint;
 
   /**
    *
@@ -1678,9 +2248,9 @@ export class FamiliesServiceCountReq extends Message<FamiliesServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_end = 102;
+   * @generated from field: optional uint64 creation_timestamp_end = 102;
    */
-  creationTimestampEnd = protoInt64.zero;
+  creationTimestampEnd?: bigint;
 
   /**
    *
@@ -1694,9 +2264,9 @@ export class FamiliesServiceCountReq extends Message<FamiliesServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_start = 103;
+   * @generated from field: optional uint64 modification_timestamp_start = 103;
    */
-  modificationTimestampStart = protoInt64.zero;
+  modificationTimestampStart?: bigint;
 
   /**
    *
@@ -1710,9 +2280,9 @@ export class FamiliesServiceCountReq extends Message<FamiliesServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_end = 104;
+   * @generated from field: optional uint64 modification_timestamp_end = 104;
    */
-  modificationTimestampEnd = protoInt64.zero;
+  modificationTimestampEnd?: bigint;
 
   /**
    *
@@ -1726,9 +2296,9 @@ export class FamiliesServiceCountReq extends Message<FamiliesServiceCountReq> {
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 8;
+   * @generated from field: optional string entity_uuid = 8;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
    *
@@ -1738,12 +2308,19 @@ export class FamiliesServiceCountReq extends Message<FamiliesServiceCountReq> {
    *
    * @example STANDING
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   /**
-   * Filter with the given multiple statuses (if the list is not empty). All the records that match any of the statuses will be returned
+   *
+   * @optional
+   *
+   * @description Filter by multiple lifecycle statuses simultaneously. Returns records that match any of the provided statuses (logical OR). If the list is empty, this filter is disregarded.
+   *
+   * @example ["DRAFT", "STANDING"]
+   *
+   * @format Repeated array of valid STANDARD_LIFECYCLE_STATUS enum strings or integer values.
    *
    * @generated from field: repeated Scailo.STANDARD_LIFECYCLE_STATUS multi_status = 100;
    */
@@ -1761,9 +2338,9 @@ export class FamiliesServiceCountReq extends Message<FamiliesServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_start = 11;
+   * @generated from field: optional uint64 approved_on_start = 11;
    */
-  approvedOnStart = protoInt64.zero;
+  approvedOnStart?: bigint;
 
   /**
    *
@@ -1777,9 +2354,9 @@ export class FamiliesServiceCountReq extends Message<FamiliesServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_end = 12;
+   * @generated from field: optional uint64 approved_on_end = 12;
    */
-  approvedOnEnd = protoInt64.zero;
+  approvedOnEnd?: bigint;
 
   /**
    *
@@ -1793,9 +2370,9 @@ export class FamiliesServiceCountReq extends Message<FamiliesServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_by_user_id = 13;
+   * @generated from field: optional uint64 approved_by_user_id = 13;
    */
-  approvedByUserId = protoInt64.zero;
+  approvedByUserId?: bigint;
 
   /**
    *
@@ -1809,117 +2386,253 @@ export class FamiliesServiceCountReq extends Message<FamiliesServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approver_role_id = 14;
+   * @generated from field: optional uint64 approver_role_id = 14;
    */
-  approverRoleId = protoInt64.zero;
+  approverRoleId?: bigint;
 
   /**
-   * The name of the family
    *
-   * @generated from field: string name = 20;
-   */
-  name = "";
-
-  /**
-   * The unique code that represents the family
+   * @optional
    *
-   * @generated from field: string code = 22;
-   */
-  code = "";
-
-  /**
-   * The type of the family
+   * @description The primary, human-readable name of the family.
    *
-   * @generated from field: Scailo.FAMILY_TYPE family_type = 25;
+   * @example "Industrial Fasteners"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string name = 20;
    */
-  familyType = FAMILY_TYPE.FAMILY_TYPE_ANY_UNSPECIFIED;
+  name?: string;
 
   /**
-   * Filter from any of the given family types. All the records that match any of the family types will be returned
+   *
+   * @optional
+   *
+   * @description The unique alphanumeric code used to internally classify and represent the family. Can be updated only prior to the first approval.
+   *
+   * @example "FAM-IND-FST-01"
+   *
+   * @regex .+
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string code = 22;
+   */
+  code?: string;
+
+  /**
+   *
+   * @optional
+   *
+   * @description The classification type of the family, dictating its operational lifecycle and valid transaction types (e.g., equipment, feedstock, product). Can be updated only prior to the first approval.
+   *
+   * @example "FAMILY_TYPE_COMPONENT"
+   *
+   * @regex ^[A-Z_]+$
+   *
+   * @format Valid FAMILY_TYPE enum value string or integer.
+   *
+   * @generated from field: optional Scailo.FAMILY_TYPE family_type = 25;
+   */
+  familyType?: FAMILY_TYPE;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Filter by multiple family classification types simultaneously. Returns records that match any of the provided types (logical OR). If the list is empty, this filter is disregarded.
+   *
+   * @example ["FAMILY_TYPE_COMPONENT", "FAMILY_TYPE_EQUIPMENT"]
+   *
+   * @format Repeated array of valid FAMILY_TYPE enum strings or integer values.
    *
    * @generated from field: repeated Scailo.FAMILY_TYPE multi_family_type = 250;
    */
   multiFamilyType: FAMILY_TYPE[] = [];
 
   /**
-   * The HSN/SAC code of the family
    *
-   * @generated from field: string hsn_sac_code = 26;
+   * @optional
+   *
+   * @description The Harmonized System of Nomenclature (HSN) or Service Accounting Code (SAC) applied for taxation and regulatory compliance.
+   *
+   * @example "73181500"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string hsn_sac_code = 26;
    */
-  hsnSacCode = "";
+  hsnSacCode?: string;
 
   /**
-   * Stores the ID of the associated unit of material
    *
-   * @generated from field: uint64 uom_id = 27;
+   * @optional
+   *
+   * @description The unique internal identifier of the unit of material (UOM) used to measure items within this family.
+   *
+   * @example 12
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: optional uint64 uom_id = 27;
    */
-  uomId = protoInt64.zero;
+  uomId?: bigint;
 
   /**
-   * Stores the unit quantity
    *
-   * @generated from field: uint64 unit_quantity = 28;
+   * @optional
+   *
+   * @description The standard batch or unit quantity multiplier for items within this family, represented in base subunits.
+   *
+   * @example 100
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: optional uint64 unit_quantity = 28;
    */
-  unitQuantity = protoInt64.zero;
+  unitQuantity?: bigint;
 
   /**
-   * Stores the ID of the parent family
    *
-   * @generated from field: uint64 parent_id = 29;
+   * @optional
+   *
+   * @description The unique internal identifier of the parent family. A value of 0 indicates this is a top-level root family. Can be updated only prior to the first approval.
+   *
+   * @example 0
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Unsigned 64-bit integer greater than or equal to 0.
+   *
+   * @generated from field: optional uint64 parent_id = 29;
    */
-  parentId = protoInt64.zero;
+  parentId?: bigint;
 
   /**
-   * Filter with the given leaf property
    *
-   * @generated from field: Scailo.BOOL_FILTER is_leaf = 30;
+   * @optional
+   *
+   * @description A boolean flag indicating whether this family is a leaf node in the hierarchy (i.e., it cannot contain nested sub-families). Can be updated only prior to the first approval.
+   *
+   * @example true
+   *
+   * @regex ^(?:true|false)$
+   *
+   * @format Boolean true or false.
+   *
+   * @generated from field: optional Scailo.BOOL_FILTER is_leaf = 30;
    */
-  isLeaf = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isLeaf?: BOOL_FILTER;
 
   /**
-   * Stores the ID of the ledger
    *
-   * @generated from field: uint64 ledger_id = 31;
+   * @optional
+   *
+   * @description The unique internal identifier of the accounting ledger associated with this family for financial tracking. A value of 0 typically denotes no specific ledger assignment.
+   *
+   * @example 452
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Unsigned 64-bit integer greater than or equal to 0.
+   *
+   * @generated from field: optional uint64 ledger_id = 31;
    */
-  ledgerId = protoInt64.zero;
+  ledgerId?: bigint;
 
   /**
-   * Stores the ID of the QC group
    *
-   * @generated from field: uint64 qc_group_id = 32;
+   * @optional
+   *
+   * @description Filter by the unique internal identifier of the Quality Control (QC) group associated with the family.
+   *
+   * @example 88
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 qc_group_id = 32;
    */
-  qcGroupId = protoInt64.zero;
+  qcGroupId?: bigint;
 
   /**
-   * Stores the ID of the tax group
    *
-   * @generated from field: uint64 tax_group_id = 33;
+   * @optional
+   *
+   * @description The unique internal identifier of the default tax group applied to items nested under this family.
+   *
+   * @example 4
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: optional uint64 tax_group_id = 33;
    */
-  taxGroupId = protoInt64.zero;
+  taxGroupId?: bigint;
 
   /**
-   * Stores the consumption sequence
    *
-   * @generated from field: Scailo.CONSUMPTION_SEQUENCE consumption_sequence = 39;
+   * @optional
+   *
+   * @description The default inventory depletion sequence applied to items within this family (e.g., FIFO based on intake, LIFO based on shelf life).
+   *
+   * @example "CONSUMPTION_SEQUENCE_FIFO_INTAKE"
+   *
+   * @regex ^[A-Z_]+$
+   *
+   * @format Valid CONSUMPTION_SEQUENCE enum value string or integer.
+   *
+   * @generated from field: optional Scailo.CONSUMPTION_SEQUENCE consumption_sequence = 39;
    */
-  consumptionSequence = CONSUMPTION_SEQUENCE.CONSUMPTION_SEQUENCE_ANY_UNSPECIFIED;
+  consumptionSequence?: CONSUMPTION_SEQUENCE;
 
   /**
-   * Filter by families that are present in the given parent storage ID (and all the corresponding child storage IDs)
    *
-   * @generated from field: uint64 parent_storage_id = 50;
+   * @optional
+   *
+   * @description Filter by the unique internal identifier of a parent storage location. Returns all families physically located within this storage node or any of its nested child storage locations.
+   *
+   * @example 1050
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 parent_storage_id = 50;
    */
-  parentStorageId = protoInt64.zero;
+  parentStorageId?: bigint;
 
   /**
-   * Filter by families that have the given label ID
    *
-   * @generated from field: uint64 label_id = 60;
+   * @optional
+   *
+   * @description Filter by the unique internal identifier of a categorization label applied to the family.
+   *
+   * @example 12
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 label_id = 60;
    */
-  labelId = protoInt64.zero;
+  labelId?: bigint;
 
   /**
-   * The list of form data filters
+   *
+   * @optional
+   *
+   * @description Filter based on dynamic form field values.
    *
    * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
    */
@@ -1933,33 +2646,33 @@ export class FamiliesServiceCountReq extends Message<FamiliesServiceCountReq> {
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.FamiliesServiceCountReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
-    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
+    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
     { no: 100, name: "multi_status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), repeated: true },
-    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 25, name: "family_type", kind: "enum", T: proto3.getEnumType(FAMILY_TYPE) },
+    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 22, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 25, name: "family_type", kind: "enum", T: proto3.getEnumType(FAMILY_TYPE), opt: true },
     { no: 250, name: "multi_family_type", kind: "enum", T: proto3.getEnumType(FAMILY_TYPE), repeated: true },
-    { no: 26, name: "hsn_sac_code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 27, name: "uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 28, name: "unit_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 29, name: "parent_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 30, name: "is_leaf", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
-    { no: 31, name: "ledger_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 32, name: "qc_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 33, name: "tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 39, name: "consumption_sequence", kind: "enum", T: proto3.getEnumType(CONSUMPTION_SEQUENCE) },
-    { no: 50, name: "parent_storage_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 60, name: "label_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 26, name: "hsn_sac_code", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 27, name: "uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 28, name: "unit_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 29, name: "parent_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 30, name: "is_leaf", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
+    { no: 31, name: "ledger_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 32, name: "qc_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 33, name: "tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 39, name: "consumption_sequence", kind: "enum", T: proto3.getEnumType(CONSUMPTION_SEQUENCE), opt: true },
+    { no: 50, name: "parent_storage_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 60, name: "label_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
     { no: 500, name: "form_data", kind: "message", T: FormFieldDatumFilterRequest, repeated: true },
   ]);
 
@@ -1982,7 +2695,13 @@ export class FamiliesServiceCountReq extends Message<FamiliesServiceCountReq> {
 
 /**
  *
- * Describes the request payload for performing a generic search operation on records
+ * Broad-spectrum search and lookup request for locating and paginating families via text matching.
+ * This message encapsulates full-text query parameters, pagination controls, sorting keys,
+ * lifecycle status constraints, and other core references.
+ *
+ * **Note:** This is the primary message layout used for global search bars, fast-filtering dashboard
+ * inputs, and omni-box search utilities where users need to match loose textual terms against
+ * records while retaining structural pagination.
  *
  * @generated from message Scailo.FamiliesServiceSearchAllReq
  */
@@ -1995,9 +2714,9 @@ export class FamiliesServiceSearchAllReq extends Message<FamiliesServiceSearchAl
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -2027,9 +2746,9 @@ export class FamiliesServiceSearchAllReq extends Message<FamiliesServiceSearchAl
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -2039,9 +2758,9 @@ export class FamiliesServiceSearchAllReq extends Message<FamiliesServiceSearchAl
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -2049,9 +2768,9 @@ export class FamiliesServiceSearchAllReq extends Message<FamiliesServiceSearchAl
    *
    * @description The field used for sorting.
    *
-   * @generated from field: Scailo.FAMILY_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.FAMILY_SORT_KEY sort_key = 5;
    */
-  sortKey = FAMILY_SORT_KEY.FAMILY_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: FAMILY_SORT_KEY;
 
   /**
    *
@@ -2065,9 +2784,9 @@ export class FamiliesServiceSearchAllReq extends Message<FamiliesServiceSearchAl
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 6;
+   * @generated from field: optional string entity_uuid = 6;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
    *
@@ -2077,12 +2796,19 @@ export class FamiliesServiceSearchAllReq extends Message<FamiliesServiceSearchAl
    *
    * @example STANDING
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   /**
-   * Filter with the given multiple statuses (if the list is not empty). All the records that match any of the statuses will be returned
+   *
+   * @optional
+   *
+   * @description Filter by multiple lifecycle statuses simultaneously. Returns records that match any of the provided statuses (logical OR). If the list is empty, this filter is disregarded.
+   *
+   * @example ["DRAFT", "STANDING"]
+   *
+   * @format Repeated array of valid STANDARD_LIFECYCLE_STATUS enum strings or integer values.
    *
    * @generated from field: repeated Scailo.STANDARD_LIFECYCLE_STATUS multi_status = 100;
    */
@@ -2090,7 +2816,7 @@ export class FamiliesServiceSearchAllReq extends Message<FamiliesServiceSearchAl
 
   /**
    *
-   * @mandatory
+   * @optional
    *
    * @description The search string to match against reference IDs.
    *
@@ -2100,37 +2826,71 @@ export class FamiliesServiceSearchAllReq extends Message<FamiliesServiceSearchAl
    *
    * @format: May contain any UTF-8 characters.
    *
-   * @generated from field: string search_key = 11;
+   * @generated from field: optional string search_key = 11;
    */
-  searchKey = "";
+  searchKey?: string;
 
   /**
-   * The type of the family
    *
-   * @generated from field: Scailo.FAMILY_TYPE family_type = 25;
+   * @optional
+   *
+   * @description The classification type of the family, dictating its operational lifecycle and valid transaction types (e.g., equipment, feedstock, product). Can be updated only prior to the first approval.
+   *
+   * @example "FAMILY_TYPE_COMPONENT"
+   *
+   * @regex ^[A-Z_]+$
+   *
+   * @format Valid FAMILY_TYPE enum value string or integer.
+   *
+   * @generated from field: optional Scailo.FAMILY_TYPE family_type = 25;
    */
-  familyType = FAMILY_TYPE.FAMILY_TYPE_ANY_UNSPECIFIED;
+  familyType?: FAMILY_TYPE;
 
   /**
-   * Filter from any of the given family types. All the records that match any of the family types will be returned
+   *
+   * @optional
+   *
+   * @description Filter by multiple family classification types simultaneously. Returns records that match any of the provided types (logical OR). If the list is empty, this filter is disregarded.
+   *
+   * @example ["FAMILY_TYPE_COMPONENT", "FAMILY_TYPE_EQUIPMENT"]
+   *
+   * @format Repeated array of valid FAMILY_TYPE enum strings or integer values.
    *
    * @generated from field: repeated Scailo.FAMILY_TYPE multi_family_type = 250;
    */
   multiFamilyType: FAMILY_TYPE[] = [];
 
   /**
-   * The ID of the associated non-leaf parent family
    *
-   * @generated from field: uint64 parent_id = 29;
+   * @optional
+   *
+   * @description The unique internal identifier of the parent family. A value of 0 indicates this is a top-level root family. Can be updated only prior to the first approval.
+   *
+   * @example 0
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Unsigned 64-bit integer greater than or equal to 0.
+   *
+   * @generated from field: optional uint64 parent_id = 29;
    */
-  parentId = protoInt64.zero;
+  parentId?: bigint;
 
   /**
-   * Filter with the given leaf property
    *
-   * @generated from field: Scailo.BOOL_FILTER is_leaf = 30;
+   * @optional
+   *
+   * @description A boolean flag indicating whether this family is a leaf node in the hierarchy (i.e., it cannot contain nested sub-families). Can be updated only prior to the first approval.
+   *
+   * @example true
+   *
+   * @regex ^(?:true|false)$
+   *
+   * @format Boolean true or false.
+   *
+   * @generated from field: optional Scailo.BOOL_FILTER is_leaf = 30;
    */
-  isLeaf = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isLeaf?: BOOL_FILTER;
 
   constructor(data?: PartialMessage<FamiliesServiceSearchAllReq>) {
     super();
@@ -2140,19 +2900,19 @@ export class FamiliesServiceSearchAllReq extends Message<FamiliesServiceSearchAl
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.FamiliesServiceSearchAllReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(FAMILY_SORT_KEY) },
-    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(FAMILY_SORT_KEY), opt: true },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
     { no: 100, name: "multi_status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), repeated: true },
-    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 25, name: "family_type", kind: "enum", T: proto3.getEnumType(FAMILY_TYPE) },
+    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 25, name: "family_type", kind: "enum", T: proto3.getEnumType(FAMILY_TYPE), opt: true },
     { no: 250, name: "multi_family_type", kind: "enum", T: proto3.getEnumType(FAMILY_TYPE), repeated: true },
-    { no: 29, name: "parent_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 30, name: "is_leaf", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 29, name: "parent_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 30, name: "is_leaf", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): FamiliesServiceSearchAllReq {
@@ -2174,20 +2934,39 @@ export class FamiliesServiceSearchAllReq extends Message<FamiliesServiceSearchAl
 
 /**
  *
- * Describes the parameters that are required to filter the prospective families for a record represented by the given UUID
+ * Request message for filtering and retrieving prospective families applicable to a specific transactional record.
+ * This payload combines a universally unique identifier (UUID) for a target resource (e.g., a Purchase Order, Sales Order, or Production Plan)
+ * with standard catalog filtering criteria to narrow down eligible families that can be associated with that resource.
+ *
+ * **Note:** This is commonly used by frontend interfaces to populate context-aware dropdowns or selection grids,
+ * ensuring users only see families that are legally or operationally valid for the specified document.
  *
  * @generated from message Scailo.FilterFamiliesReqForIdentifier
  */
 export class FilterFamiliesReqForIdentifier extends Message<FilterFamiliesReqForIdentifier> {
   /**
-   * UUID of the resource
+   *
+   * @mandatory
+   *
+   * @description The globally unique identifier of the target resource (e.g., Purchase Order, Sales Order) for which prospective families are being evaluated and filtered.
+   *
+   * @example "550e8400-e29b-41d4-a716-446655440000"
+   *
+   * @regex ^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+   *
+   * @format Must be a valid v4 UUID in canonical hyphenated form.
    *
    * @generated from field: string uuid = 1;
    */
   uuid = "";
 
   /**
-   * The families filter to apply
+   *
+   * @mandatory
+   *
+   * @description The advanced filtering criteria used to narrow down the list of prospective families. Encapsulates pagination, sorting, and attribute-based constraints.
+   *
+   * @format Nested FamiliesServiceFilterReq message block.
    *
    * @generated from field: Scailo.FamiliesServiceFilterReq filter = 10;
    */
@@ -2224,27 +3003,55 @@ export class FilterFamiliesReqForIdentifier extends Message<FilterFamiliesReqFor
 
 /**
  *
- * Describes the parameters necessary to create a family label
+ * Request message for associating a categorization label with a specific family.
+ * This mapping is primarily used to tag families for reporting, targeted filtering, or localized taxonomy without altering their core identity.
  *
  * @generated from message Scailo.FamiliesServiceLabelCreateRequest
  */
 export class FamiliesServiceLabelCreateRequest extends Message<FamiliesServiceLabelCreateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * Stores the family ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target family.
+   *
+   * @example 582
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 family_id = 10;
    */
   familyId = protoInt64.zero;
 
   /**
-   * Stores the label ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target label to attach to the family.
+   *
+   * @example 12
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 label_id = 11;
    */
@@ -2258,7 +3065,7 @@ export class FamiliesServiceLabelCreateRequest extends Message<FamiliesServiceLa
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.FamiliesServiceLabelCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 10, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 11, name: "label_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
@@ -2282,7 +3089,8 @@ export class FamiliesServiceLabelCreateRequest extends Message<FamiliesServiceLa
 
 /**
  *
- * Describes the parameters that constitute a family label
+ * Represents the finalized association between a family and a categorization label.
+ * Encapsulates the core entity mapping along with standard lifecycle and compliance metadata.
  *
  * @generated from message Scailo.FamilyLabel
  */
@@ -2315,28 +3123,41 @@ export class FamilyLabel extends Message<FamilyLabel> {
 
   /**
    *
-   * @description The approval state of the record
+   * @description A boolean flag indicating whether this specific record requires further administrative approval.
+   *
+   * @example false
+   *
+   * @format Boolean true or false.
    *
    * @generated from field: bool need_approval = 4;
    */
   needApproval = false;
 
   /**
-   * Stores any comment that the user might have added during an operation
+   *
+   * @description Audit log comment or justification captured during the last modification or transactional operation.
+   *
+   * @example "This is a comment for audit purposes."
    *
    * @generated from field: string user_comment = 5;
    */
   userComment = "";
 
   /**
-   * Stores the family ID
+   *
+   * @description The unique internal identifier of the associated family.
+   *
+   * @example 582
    *
    * @generated from field: uint64 family_id = 10;
    */
   familyId = protoInt64.zero;
 
   /**
-   * Stores the label ID
+   *
+   * @description The unique internal identifier of the associated label.
+   *
+   * @example 12
    *
    * @generated from field: uint64 label_id = 11;
    */
@@ -2378,13 +3199,17 @@ export class FamilyLabel extends Message<FamilyLabel> {
 
 /**
  *
- * Describes the message consisting of the list of family labels
+ * Represents a collection payload encapsulating multiple family label associations.
+ * Used for bulk retrieval or data-grid population.
  *
  * @generated from message Scailo.FamilyLabelsList
  */
 export class FamilyLabelsList extends Message<FamilyLabelsList> {
   /**
-   * List of records
+   *
+   * @description An array containing the requested family label association records.
+   *
+   * @format Repeated array of FamilyLabel message blocks.
    *
    * @generated from field: repeated Scailo.FamilyLabel list = 1;
    */
@@ -2420,27 +3245,55 @@ export class FamilyLabelsList extends Message<FamilyLabelsList> {
 
 /**
  *
- * Describes the parameters necessary to create a family storage
+ * Request message for associating a physical or logical storage location with a specific family.
+ * This instructs the inventory management system where items within this family are permitted to be stored.
  *
  * @generated from message Scailo.FamiliesServiceStorageCreateRequest
  */
 export class FamiliesServiceStorageCreateRequest extends Message<FamiliesServiceStorageCreateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * Stores the family ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target family.
+   *
+   * @example 582
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 family_id = 10;
    */
   familyId = protoInt64.zero;
 
   /**
-   * Stores the storage ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target storage location to associate with the family.
+   *
+   * @example 1050
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 storage_id = 11;
    */
@@ -2454,7 +3307,7 @@ export class FamiliesServiceStorageCreateRequest extends Message<FamiliesService
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.FamiliesServiceStorageCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 10, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 11, name: "storage_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
@@ -2478,7 +3331,7 @@ export class FamiliesServiceStorageCreateRequest extends Message<FamiliesService
 
 /**
  *
- * Describes the parameters that constitute a family storage
+ * Represents the finalized association between a family and an authorized storage location.
  *
  * @generated from message Scailo.FamilyStorage
  */
@@ -2511,28 +3364,41 @@ export class FamilyStorage extends Message<FamilyStorage> {
 
   /**
    *
-   * @description The approval state of the record
+   * @description A boolean flag indicating whether this specific record requires further administrative approval.
+   *
+   * @example false
+   *
+   * @format Boolean true or false.
    *
    * @generated from field: bool need_approval = 4;
    */
   needApproval = false;
 
   /**
-   * Stores any comment that the user might have added during an operation
+   *
+   * @description Audit log comment or justification captured during the last modification or transactional operation.
+   *
+   * @example "This is a comment for audit purposes."
    *
    * @generated from field: string user_comment = 5;
    */
   userComment = "";
 
   /**
-   * Stores the family ID
+   *
+   * @description The unique internal identifier of the associated family.
+   *
+   * @example 582
    *
    * @generated from field: uint64 family_id = 10;
    */
   familyId = protoInt64.zero;
 
   /**
-   * Stores the storage ID
+   *
+   * @description The unique internal identifier of the associated storage location.
+   *
+   * @example 1050
    *
    * @generated from field: uint64 storage_id = 11;
    */
@@ -2574,13 +3440,16 @@ export class FamilyStorage extends Message<FamilyStorage> {
 
 /**
  *
- * Describes the message consisting of the list of family storages
+ * Represents a collection payload encapsulating multiple family storage location assignments.
  *
  * @generated from message Scailo.FamilyStoragesList
  */
 export class FamilyStoragesList extends Message<FamilyStoragesList> {
   /**
-   * List of records
+   *
+   * @description An array containing the requested family storage association records.
+   *
+   * @format Repeated array of FamilyStorage message blocks.
    *
    * @generated from field: repeated Scailo.FamilyStorage list = 1;
    */
@@ -2616,20 +3485,39 @@ export class FamilyStoragesList extends Message<FamilyStoragesList> {
 
 /**
  *
- * Describes the parameters necessary to check if a family unit conversion is available
+ * Request message to verify the existence or availability of a specific unit of material (UOM) conversion rule for a given family.
+ * Used defensively by client applications before allowing orders in alternate units.
  *
  * @generated from message Scailo.FamiliesServiceUnitConversionPresenceRequest
  */
 export class FamiliesServiceUnitConversionPresenceRequest extends Message<FamiliesServiceUnitConversionPresenceRequest> {
   /**
-   * Stores the family ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target family.
+   *
+   * @example 582
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 family_id = 10;
    */
   familyId = protoInt64.zero;
 
   /**
-   * Stores the unit of material ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target alternate unit of material (UOM).
+   *
+   * @example 12
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 uom_id = 11;
    */
@@ -2666,41 +3554,87 @@ export class FamiliesServiceUnitConversionPresenceRequest extends Message<Famili
 
 /**
  *
- * Describes the parameters necessary to create a family unit conversion
+ * Request message for creating a mathematical conversion rule between a family's base unit of material and an alternate unit.
+ * Used to support multi-unit procurement and manufacturing (e.g., converting base 'Pieces' to alternate 'Boxes').
  *
  * @generated from message Scailo.FamiliesServiceUnitConversionCreateRequest
  */
 export class FamiliesServiceUnitConversionCreateRequest extends Message<FamiliesServiceUnitConversionCreateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * Stores the family ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target family.
+   *
+   * @example 582
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 family_id = 10;
    */
   familyId = protoInt64.zero;
 
   /**
-   * Stores the unit of material ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the alternate unit of material (UOM) being mapped.
+   *
+   * @example 12
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 uom_id = 11;
    */
   uomId = protoInt64.zero;
 
   /**
-   * Stores the factor
+   *
+   * @mandatory
+   *
+   * @description The mathematical multiplication factor applied to calculate the conversion (Base Unit * Factor / Divisor = Alternate Unit).
+   *
+   * @example 10
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 factor = 12;
    */
   factor = protoInt64.zero;
 
   /**
-   * Stores the divisor
+   *
+   * @mandatory
+   *
+   * @description The mathematical division factor applied to calculate the conversion.
+   *
+   * @example 1
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 divisor = 13;
    */
@@ -2714,7 +3648,7 @@ export class FamiliesServiceUnitConversionCreateRequest extends Message<Families
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.FamiliesServiceUnitConversionCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 10, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 11, name: "uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 12, name: "factor", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
@@ -2740,7 +3674,7 @@ export class FamiliesServiceUnitConversionCreateRequest extends Message<Families
 
 /**
  *
- * Describes the parameters that constitute a family unit conversion
+ * Represents a mathematical conversion rule mapped to a specific family, facilitating transactions in multiple units of material.
  *
  * @generated from message Scailo.FamilyUnitConversion
  */
@@ -2773,42 +3707,61 @@ export class FamilyUnitConversion extends Message<FamilyUnitConversion> {
 
   /**
    *
-   * @description The approval state of the record
+   * @description A boolean flag indicating whether this specific record requires further administrative approval.
+   *
+   * @example false
+   *
+   * @format Boolean true or false.
    *
    * @generated from field: bool need_approval = 4;
    */
   needApproval = false;
 
   /**
-   * Stores any comment that the user might have added during an operation
+   *
+   * @description Audit log comment or justification captured during the last modification or transactional operation.
+   *
+   * @example "This is a comment for audit purposes."
    *
    * @generated from field: string user_comment = 5;
    */
   userComment = "";
 
   /**
-   * Stores the family ID
+   *
+   * @description The unique internal identifier of the associated family.
+   *
+   * @example 582
    *
    * @generated from field: uint64 family_id = 10;
    */
   familyId = protoInt64.zero;
 
   /**
-   * Stores the unit of material ID
+   *
+   * @description The unique internal identifier of the alternate unit of material (UOM).
+   *
+   * @example 12
    *
    * @generated from field: uint64 uom_id = 11;
    */
   uomId = protoInt64.zero;
 
   /**
-   * Stores the factor
+   *
+   * @description The mathematical multiplication factor for the conversion.
+   *
+   * @example 10
    *
    * @generated from field: uint64 factor = 12;
    */
   factor = protoInt64.zero;
 
   /**
-   * Stores the divisor
+   *
+   * @description The mathematical division factor for the conversion.
+   *
+   * @example 1
    *
    * @generated from field: uint64 divisor = 13;
    */
@@ -2852,13 +3805,16 @@ export class FamilyUnitConversion extends Message<FamilyUnitConversion> {
 
 /**
  *
- * Describes the message consisting of the list of family unit conversions
+ * Represents a collection payload encapsulating multiple family unit conversion rules.
  *
  * @generated from message Scailo.FamilyUnitConversionsList
  */
 export class FamilyUnitConversionsList extends Message<FamilyUnitConversionsList> {
   /**
-   * List of records
+   *
+   * @description An array containing the requested family unit conversion records.
+   *
+   * @format Repeated array of FamilyUnitConversion message blocks.
    *
    * @generated from field: repeated Scailo.FamilyUnitConversion list = 1;
    */
@@ -2894,27 +3850,55 @@ export class FamilyUnitConversionsList extends Message<FamilyUnitConversionsList
 
 /**
  *
- * Describes the parameters necessary to create a family qc group
+ * Request message for associating a Quality Control (QC) group with a specific family.
+ * This determines the specific inspection and compliance workflows required for items within this family upon intake or production.
  *
  * @generated from message Scailo.FamiliesServiceQCGroupCreateRequest
  */
 export class FamiliesServiceQCGroupCreateRequest extends Message<FamiliesServiceQCGroupCreateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * Stores the family ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target family.
+   *
+   * @example 582
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 family_id = 10;
    */
   familyId = protoInt64.zero;
 
   /**
-   * Stores the qc group ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the QC group to associate with the family.
+   *
+   * @example 88
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 qc_group_id = 11;
    */
@@ -2928,7 +3912,7 @@ export class FamiliesServiceQCGroupCreateRequest extends Message<FamiliesService
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.FamiliesServiceQCGroupCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 10, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 11, name: "qc_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
@@ -2952,7 +3936,7 @@ export class FamiliesServiceQCGroupCreateRequest extends Message<FamiliesService
 
 /**
  *
- * Describes the parameters that constitute a family qc group
+ * Represents the finalized association between a family and a Quality Control (QC) compliance group.
  *
  * @generated from message Scailo.FamilyQCGroup
  */
@@ -2985,28 +3969,41 @@ export class FamilyQCGroup extends Message<FamilyQCGroup> {
 
   /**
    *
-   * @description The approval state of the record
+   * @description A boolean flag indicating whether this specific record requires further administrative approval.
+   *
+   * @example false
+   *
+   * @format Boolean true or false.
    *
    * @generated from field: bool need_approval = 4;
    */
   needApproval = false;
 
   /**
-   * Stores any comment that the user might have added during an operation
+   *
+   * @description Audit log comment or justification captured during the last modification or transactional operation.
+   *
+   * @example "This is a comment for audit purposes."
    *
    * @generated from field: string user_comment = 5;
    */
   userComment = "";
 
   /**
-   * Stores the family ID
+   *
+   * @description The unique internal identifier of the associated family.
+   *
+   * @example 582
    *
    * @generated from field: uint64 family_id = 10;
    */
   familyId = protoInt64.zero;
 
   /**
-   * Stores the qc group ID
+   *
+   * @description The unique internal identifier of the associated QC group.
+   *
+   * @example 88
    *
    * @generated from field: uint64 qc_group_id = 11;
    */
@@ -3048,13 +4045,16 @@ export class FamilyQCGroup extends Message<FamilyQCGroup> {
 
 /**
  *
- * Describes the message consisting of the list of family qc groups
+ * Represents a collection payload encapsulating multiple family QC group assignments.
  *
  * @generated from message Scailo.FamilyQCGroupsList
  */
 export class FamilyQCGroupsList extends Message<FamilyQCGroupsList> {
   /**
-   * List of records
+   *
+   * @description An array containing the requested family QC group association records.
+   *
+   * @format Repeated array of FamilyQCGroup message blocks.
    *
    * @generated from field: repeated Scailo.FamilyQCGroup list = 1;
    */
@@ -3090,41 +4090,87 @@ export class FamilyQCGroupsList extends Message<FamilyQCGroupsList> {
 
 /**
  *
- * Describes the parameters necessary to create a family image
+ * Request message for attaching an image or visual asset to a specific family.
+ * This binds a previously uploaded document vault file to the family for use in catalogs or technical references.
  *
  * @generated from message Scailo.FamiliesServiceImageCreateRequest
  */
 export class FamiliesServiceImageCreateRequest extends Message<FamiliesServiceImageCreateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * Stores the family ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target family.
+   *
+   * @example 582
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 family_id = 10;
    */
   familyId = protoInt64.zero;
 
   /**
-   * Stores the vault file ID
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the uploaded image file within Vault.
+   *
+   * @example 15234
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 vault_file_id = 11;
    */
   vaultFileId = protoInt64.zero;
 
   /**
-   * Denotes if the image is public
+   *
+   * @mandatory
+   *
+   * @description A boolean flag indicating whether the image is publicly accessible (e.g., on external catalogs) or restricted to internal users.
+   *
+   * @example true
+   *
+   * @regex ^(?:true|false)$
+   *
+   * @format Boolean true or false.
    *
    * @generated from field: bool is_public = 12;
    */
   isPublic = false;
 
   /**
-   * Stores the sequence number
+   *
+   * @mandatory
+   *
+   * @description The ordering or display sequence of the image relative to other images in the family gallery.
+   *
+   * @example 1
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 sequence_number = 13;
    */
@@ -3138,7 +4184,7 @@ export class FamiliesServiceImageCreateRequest extends Message<FamiliesServiceIm
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.FamiliesServiceImageCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 10, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 11, name: "vault_file_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 12, name: "is_public", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
@@ -3164,34 +4210,70 @@ export class FamiliesServiceImageCreateRequest extends Message<FamiliesServiceIm
 
 /**
  *
- * Describes the parameters necessary to update a family image
+ * Request message for modifying the metadata (such as visibility or display order) of an existing family image attachment.
  *
  * @generated from message Scailo.FamiliesServiceImageUpdateRequest
  */
 export class FamiliesServiceImageUpdateRequest extends Message<FamiliesServiceImageUpdateRequest> {
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * The ID of the record
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target record that needs to be updated.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 id = 2;
    */
   id = protoInt64.zero;
 
   /**
-   * Denotes if the image is public
+   *
+   * @mandatory
+   *
+   * @description A boolean flag indicating whether the image is publicly accessible (e.g., on external catalogs) or restricted to internal users.
+   *
+   * @example false
+   *
+   * @regex ^(?:true|false)$
+   *
+   * @format Boolean true or false.
    *
    * @generated from field: bool is_public = 12;
    */
   isPublic = false;
 
   /**
-   * Stores the sequence number
+   *
+   * @mandatory
+   *
+   * @description The updated ordering or display sequence of the image relative to other images in the family gallery.
+   *
+   * @example 2
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
    *
    * @generated from field: uint64 sequence_number = 13;
    */
@@ -3205,7 +4287,7 @@ export class FamiliesServiceImageUpdateRequest extends Message<FamiliesServiceIm
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.FamiliesServiceImageUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 2, name: "id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 12, name: "is_public", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
     { no: 13, name: "sequence_number", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
@@ -3230,7 +4312,7 @@ export class FamiliesServiceImageUpdateRequest extends Message<FamiliesServiceIm
 
 /**
  *
- * Describes the parameters that constitute a family image
+ * Represents a visual asset association tied to a family, dictating its presentation order and access visibility.
  *
  * @generated from message Scailo.FamilyImage
  */
@@ -3263,42 +4345,61 @@ export class FamilyImage extends Message<FamilyImage> {
 
   /**
    *
-   * @description The approval state of the record
+   * @description A boolean flag indicating whether this specific record requires further administrative approval.
+   *
+   * @example false
+   *
+   * @format Boolean true or false.
    *
    * @generated from field: bool need_approval = 4;
    */
   needApproval = false;
 
   /**
-   * Stores any comment that the user might have added during an operation
+   *
+   * @description Audit log comment or justification captured during the last modification or transactional operation.
+   *
+   * @example "This is a comment for audit purposes."
    *
    * @generated from field: string user_comment = 5;
    */
   userComment = "";
 
   /**
-   * Stores the family ID
+   *
+   * @description The unique internal identifier of the associated family.
+   *
+   * @example 582
    *
    * @generated from field: uint64 family_id = 10;
    */
   familyId = protoInt64.zero;
 
   /**
-   * Stores the vault file ID
+   *
+   * @description The unique internal identifier of the vault file acting as the image source.
+   *
+   * @example 15234
    *
    * @generated from field: uint64 vault_file_id = 11;
    */
   vaultFileId = protoInt64.zero;
 
   /**
-   * Denotes if the image is public
+   *
+   * @description A boolean flag indicating if the image is publicly accessible.
+   *
+   * @example true
    *
    * @generated from field: bool is_public = 12;
    */
   isPublic = false;
 
   /**
-   * Stores the sequence number
+   *
+   * @description The sequential display order of the image.
+   *
+   * @example 1
    *
    * @generated from field: uint64 sequence_number = 13;
    */
@@ -3342,13 +4443,16 @@ export class FamilyImage extends Message<FamilyImage> {
 
 /**
  *
- * Describes the message consisting of the list of family images
+ * Represents a collection payload encapsulating multiple family image associations.
  *
  * @generated from message Scailo.FamilyImagesList
  */
 export class FamilyImagesList extends Message<FamilyImagesList> {
   /**
-   * List of records
+   *
+   * @description An array containing the requested family image association records.
+   *
+   * @format Repeated array of FamilyImage message blocks.
    *
    * @generated from field: repeated Scailo.FamilyImage list = 1;
    */
@@ -3384,27 +4488,55 @@ export class FamilyImagesList extends Message<FamilyImagesList> {
 
 /**
  *
- * Describes the parameters necessary to update a family's price
+ * Request message for updating the standard base unit price of an existing family.
+ * This isolates price mutations from deeper structural updates, enabling rapid pricing adjustments while maintaining catalog integrity.
  *
  * @generated from message Scailo.FamiliesServiceUpdatePriceRequest
  */
 export class FamiliesServiceUpdatePriceRequest extends Message<FamiliesServiceUpdatePriceRequest> {
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * The UUID of the family
+   *
+   * @mandatory
+   *
+   * @description The globally unique identifier (UUID) of the target family.
+   *
+   * @example "550e8400-e29b-41d4-a716-446655440000"
+   *
+   * @regex ^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+   *
+   * @format Valid v4 UUID in canonical hyphenated form.
    *
    * @generated from field: string uuid = 10;
    */
   uuid = "";
 
   /**
-   * Stores the unit price
+   *
+   * @mandatory
+   *
+   * @description The new base unit price for items in this family, represented in the base currency subunit (e.g., cents).
+   *
+   * @example 1750
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Unsigned 64-bit integer greater than or equal to 0.
    *
    * @generated from field: uint64 price = 26;
    */
@@ -3418,7 +4550,7 @@ export class FamiliesServiceUpdatePriceRequest extends Message<FamiliesServiceUp
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.FamiliesServiceUpdatePriceRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 10, name: "uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 26, name: "price", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
@@ -3442,27 +4574,55 @@ export class FamiliesServiceUpdatePriceRequest extends Message<FamiliesServiceUp
 
 /**
  *
- * Describes the parameters necessary to update a family's min stock to maintain
+ * Request message for updating the minimum inventory threshold (safety stock) of an existing family.
+ * This triggers operational rules within the inventory system to automate restock alerts when physical stock dips below this value.
  *
  * @generated from message Scailo.FamiliesServiceUpdateMinStockToMaintainRequest
  */
 export class FamiliesServiceUpdateMinStockToMaintainRequest extends Message<FamiliesServiceUpdateMinStockToMaintainRequest> {
   /**
-   * Stores any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * The UUID of the family
+   *
+   * @mandatory
+   *
+   * @description The globally unique identifier (UUID) of the target family.
+   *
+   * @example "550e8400-e29b-41d4-a716-446655440000"
+   *
+   * @regex ^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+   *
+   * @format Valid v4 UUID in canonical hyphenated form.
    *
    * @generated from field: string uuid = 10;
    */
   uuid = "";
 
   /**
-   * Stores the minimum stock to maintain
+   *
+   * @mandatory
+   *
+   * @description The updated minimum inventory threshold required to be maintained for items within this family.
+   *
+   * @example 1000
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Unsigned 64-bit integer greater than or equal to 0.
    *
    * @generated from field: uint64 min_stock_to_maintain = 27;
    */
@@ -3476,7 +4636,7 @@ export class FamiliesServiceUpdateMinStockToMaintainRequest extends Message<Fami
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.FamiliesServiceUpdateMinStockToMaintainRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 10, name: "uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 27, name: "min_stock_to_maintain", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);

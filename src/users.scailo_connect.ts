@@ -6,11 +6,14 @@
 import { User, UsersList, UsersServiceCountReq, UsersServiceCreateRequest, UsersServiceFilterReq, UsersServicePaginationReq, UsersServicePaginationResponse, UsersServicePasswordResetReq, UsersServiceRegisterMobileDeviceRequest, UsersServiceSearchAllReq, UsersServiceUpdateRequest } from "./users.scailo_pb.js";
 import { ActiveStatus, Base64String, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, IdentifierZeroable, ImageResponse, MonthAndDayFilter, SimpleSearchReq, StandardFile, StringResponse, StringsList, UpdateOwnPasswordReq, UpdatePasswordReq, UploadPictureReq } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
+import { VaultFolderAttachRequest } from "./vault_folders.scailo_pb.js";
 import { MagicLink, MagicLinksServiceCreateRequestForSpecificResource } from "./magic_links.scailo_pb.js";
 
 /**
  *
- * Describes the common methods applicable on each user
+ * The UsersService manages the full lifecycle of users.
+ * It provides standard CRUD operations alongside a robust state machine for
+ * verification, manager approval, and completion.
  *
  * @generated from service Scailo.UsersService
  */
@@ -18,7 +21,13 @@ export const UsersService = {
   typeName: "Scailo.UsersService",
   methods: {
     /**
-     * Register user's mobile device for push notifications. Returns the ID of the user device record
+     * Registers a user's mobile device to enable push notifications.
+     *
+     * **Side Effects:**
+     * - Binds the device token to the authenticated user's session profile.
+     * - Invalidates previous device tokens if maximum device limits per user are exceeded.
+     *
+     * Returns the unique identifier response of the newly registered user device record.
      *
      * @generated from rpc Scailo.UsersService.RegisterMobileDevice
      */
@@ -223,7 +232,30 @@ export const UsersService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Create a magic link that allows user to upload their signature
+     * Attaches a specified folder directly to a record without requiring a full revision workflow.
+     *
+     * This is a convenience API designed to bypass the traditional multi-step modification lifecycle
+     * (e.g., creating a revision, updating data, submitting for verification, and awaiting approval).
+     * It allows for the immediate, single-step association of a vault folder.
+     *
+     * **Side Effects & Lifecycle:**
+     * * The overall status of the record remains unchanged.
+     * * The record's modification timestamp is automatically updated to the current time.
+     * * An entry is appended to the record's audit log tracking this attachment.
+     *
+     * @generated from rpc Scailo.UsersService.AttachVaultFolder
+     */
+    attachVaultFolder: {
+      name: "AttachVaultFolder",
+      I: VaultFolderAttachRequest,
+      O: IdentifierResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Generates a secure, short-lived magic link allowing the user to securely upload their signature.
+     *
+     * **Side Effects:**
+     * - Creates a time-bounded resource access token in the system database.
      *
      * @generated from rpc Scailo.UsersService.CreateMagicLinkForSignature
      */
@@ -234,7 +266,17 @@ export const UsersService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Update user's password by another user (such as an administrator)
+     * Administrative override method to forcefully update a user's password.
+     *
+     * This is typically invoked by an administrator or helpdesk agent.
+     *
+     * **Side Effects:**
+     * - Overwrites the existing password hash.
+     * - Triggers a security notification email to the target user notifying them of the change.
+     * - Terminates all active sessions for the target user, forcing a re-login.
+     *
+     * **Errors:**
+     * - `PERMISSION_DENIED`: If the calling user lacks administrative password modification privileges.
      *
      * @generated from rpc Scailo.UsersService.UpdatePassword
      */
@@ -245,7 +287,16 @@ export const UsersService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Update user's own password
+     * Allows the currently authenticated user to update their own account password.
+     *
+     * This method strictly enforces a check against the user's current password to prevent hijacking.
+     *
+     * **Side Effects:**
+     * - Updates the password hash in the secure identity vault.
+     * - Revokes all other active login tokens/sessions except for the current operational session.
+     *
+     * **Errors:**
+     * - `INVALID_ARGUMENT`: If the new password fails system complexity guidelines.
      *
      * @generated from rpc Scailo.UsersService.UpdateOwnPassword
      */
@@ -256,7 +307,14 @@ export const UsersService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Request the password reset email for the given username. An email is triggered if the username is found.
+     * Initiates the self-service password recovery workflow for a specific username.
+     *
+     * **Side Effects:**
+     * - If the username is matched, asynchronously dispatches a structured reset email containing a token.
+     * - Appends a tracking entry to the system security logs.
+     *
+     * **Note:** To prevent user enumeration attacks, this endpoint may return a successful status
+     * even if the provided username does not exist in the system.
      *
      * @generated from rpc Scailo.UsersService.RequestPasswordResetEmail
      */
@@ -267,7 +325,14 @@ export const UsersService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Update the user's profile picture
+     * Updates the profile picture associated with the user account.
+     *
+     * **Side Effects:**
+     * - Uploads the binary payload to the secure object store.
+     * - Automatically triggers an asynchronous background job to generate standardized thumbnails.
+     *
+     * **Errors:**
+     * - `INVALID_ARGUMENT`: If the file format is unsupported or file size limits are exceeded.
      *
      * @generated from rpc Scailo.UsersService.UpdateProfilePicture
      */
@@ -278,7 +343,11 @@ export const UsersService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Update the user's signature
+     * Updates the user's official signature resource.
+     *
+     * **Side Effects:**
+     * - Overwrites the existing signature image artifact.
+     * - Logs a compliance entry in the audit trail indicating a credential/signature modification.
      *
      * @generated from rpc Scailo.UsersService.UpdateSignature
      */
@@ -289,7 +358,11 @@ export const UsersService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Enable MFA for user
+     * Enables Multi-Factor Authentication (MFA) for the specified user account.
+     *
+     * **Side Effects:**
+     * - Initializes a new cryptographic seed for the user.
+     * - Generates a setup QR code image payload required to configure authenticator applications.
      *
      * @generated from rpc Scailo.UsersService.MFAEnable
      */
@@ -300,7 +373,15 @@ export const UsersService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Reset MFA for user
+     * Disables and resets the Multi-Factor Authentication configuration for a user.
+     *
+     * **Side Effects:**
+     * - Completely clears the assigned cryptographic seed from the user's profile.
+     * - Reverts the account authentication requirement back to single-factor (password only).
+     * - Records a high-severity entry in the system compliance log.
+     *
+     * **Errors:**
+     * - `PERMISSION_DENIED`: If the action is not performed by an authorized security administrator.
      *
      * @generated from rpc Scailo.UsersService.MFAReset
      */
@@ -355,7 +436,14 @@ export const UsersService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View by username (logs aren't returned)
+     * Retrieves a single user record utilizing their unique username.
+     *
+     * This is a high-performance, read-only query designed for quick profile validation.
+     *
+     * **Note:** High-volume compliance data, audit records, and system logs are excluded from the response payload.
+     *
+     * **Errors:**
+     * - `NOT_FOUND`: If the provided username does not match an active user record.
      *
      * @generated from rpc Scailo.UsersService.ViewByUsername
      */
@@ -366,7 +454,12 @@ export const UsersService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View by user's code (logs aren't returned)
+     * Retrieves a single record via the assigned internal code.
+     *
+     * **Note:** High-volume compliance data, audit records, and system logs are excluded from the response payload.
+     *
+     * **Errors:**
+     * - `NOT_FOUND`: If the provided internal code does not exist.
      *
      * @generated from rpc Scailo.UsersService.ViewByCode
      */
@@ -432,7 +525,10 @@ export const UsersService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View all users with the given usernames
+     * Resolves and returns a collection of user records corresponding to an explicit list of usernames.
+     *
+     * This query handles multi-record fetching efficiently and will return empty entries or skip
+     * usernames that fail to map to a valid record.
      *
      * @generated from rpc Scailo.UsersService.ViewFromUsernames
      */
@@ -443,7 +539,12 @@ export const UsersService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View self user (the profile of the logged in user)
+     * Retrieves the contextual profile details of the currently authenticated system caller.
+     *
+     * This serves as the primary endpoint for populating active user dashboards and checking current permissions.
+     *
+     * **Errors:**
+     * - `UNAUTHENTICATED`: If the calling context lacks valid session tokens.
      *
      * @generated from rpc Scailo.UsersService.ViewSelf
      */
@@ -454,7 +555,9 @@ export const UsersService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View all users with birthdays on the given date
+     * Filters and returns all user records whose birthday falls on the specified month and day.
+     *
+     * This read-only utility API is typically utilized for scheduling automated cultural or internal system greetings.
      *
      * @generated from rpc Scailo.UsersService.ViewBirthdaysOn
      */
@@ -465,7 +568,9 @@ export const UsersService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View user's signature
+     * Fetches the user's official signature rendered as a Base64 encoded string format.
+     *
+     * This is optimized for inline document embedding and programmatic PDF signing processes.
      *
      * @generated from rpc Scailo.UsersService.ViewSignature
      */
@@ -476,7 +581,7 @@ export const UsersService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View user's profile picture
+     * Retrieves the primary full-resolution profile picture artifact mapped to the user UUID.
      *
      * @generated from rpc Scailo.UsersService.ViewProfilePicture
      */
@@ -487,7 +592,9 @@ export const UsersService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View user's thumbnail picture
+     * Retrieves the optimized, low-bandwidth thumbnail image variant of the user's profile picture.
+     *
+     * This operation is heavily optimized for rendering lists, directory grids, and navigation bars.
      *
      * @generated from rpc Scailo.UsersService.ViewThumbnailPicture
      */
@@ -498,7 +605,7 @@ export const UsersService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View user's VCard
+     * Generates and returns a standard electronic business card (VCard) structure formatted as an image asset.
      *
      * @generated from rpc Scailo.UsersService.ViewVCard
      */
@@ -509,7 +616,9 @@ export const UsersService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View user's QR Code as image
+     * Retrieves the user's unique identification QR Code rendered cleanly as an image asset.
+     *
+     * Useful for displaying physical scanning cards within mobile user interfaces.
      *
      * @generated from rpc Scailo.UsersService.ViewQRImage
      */
@@ -520,7 +629,7 @@ export const UsersService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View user's QR Code as string
+     * Retrieves the text payload or URL represented within the user's identification QR code.
      *
      * @generated from rpc Scailo.UsersService.ViewQRString
      */
@@ -531,7 +640,13 @@ export const UsersService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View user info on the basis of the provided image. The image should consist of only the user's face. Will return an error if the image has not been recognized.
+     * Performs biometric identification against a tightly pre-cropped image focusing solely on a single human face.
+     *
+     * The backend processes the facial vector characteristics to identify the target system user.
+     *
+     * **Errors:**
+     * - `NOT_FOUND`: If the biometric scan cannot securely match the facial vector against the active registry.
+     * - `INVALID_ARGUMENT`: If multiple faces or no recognizable facial features are discovered in the image template.
      *
      * @generated from rpc Scailo.UsersService.IdentifyCroppedFace
      */
@@ -542,7 +657,14 @@ export const UsersService = {
       kind: MethodKind.Unary,
     },
     /**
-     * View user info on the basis of the provided image. The image should consist of just the user (might be a full sized photo). The face will be cropped. Will return an error if the image has not been recognized.
+     * Performs biometric identification against a standard or full-scale multi-context photograph.
+     *
+     * **Side Effects:**
+     * - The backend automatically applies edge-detection algorithms to locate, isolate, and crop the face before running validation.
+     *
+     * **Errors:**
+     * - `NOT_FOUND`: If no corresponding user identity maps to the isolated face vector.
+     * - `INVALID_ARGUMENT`: If the photo contains multiple conflicting subjects or formatting anomalies.
      *
      * @generated from rpc Scailo.UsersService.IdentifyFullFace
      */

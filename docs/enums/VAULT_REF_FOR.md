@@ -30,7 +30,7 @@ from enum value: VAULT_REF_FOR_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:22](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vault_commons.scailo_pb.ts#L22)
+[src/vault_commons.scailo_pb.ts:22](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vault_commons.scailo_pb.ts#L22)
 
 ___
 
@@ -46,7 +46,7 @@ from enum value: VAULT_REF_FOR_FILE = 1;
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:29](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vault_commons.scailo_pb.ts#L29)
+[src/vault_commons.scailo_pb.ts:29](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vault_commons.scailo_pb.ts#L29)
 
 ___
 
@@ -62,4 +62,4 @@ from enum value: VAULT_REF_FOR_FOLDER = 2;
 
 #### Defined in
 
-[src/vault_commons.scailo_pb.ts:36](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vault_commons.scailo_pb.ts#L36)
+[src/vault_commons.scailo_pb.ts:36](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vault_commons.scailo_pb.ts#L36)

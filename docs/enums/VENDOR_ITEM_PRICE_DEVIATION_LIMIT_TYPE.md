@@ -22,7 +22,9 @@ from enum Scailo.VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE
 
 • **VENDOR\_ITEM\_PRICE\_DEVIATION\_LIMIT\_TYPE\_ABSOLUTE** = ``2``
 
-Denotes that the price limit type is an absolute value
+**`Description`**
+
+Denotes that the price limit type is evaluated as a fixed, absolute currency value.
 
 **`Generated`**
 
@@ -30,7 +32,7 @@ from enum value: VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE_ABSOLUTE = 2;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:37](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L37)
+[src/vendors.scailo_pb.ts:37](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L37)
 
 ___
 
@@ -38,7 +40,9 @@ ___
 
 • **VENDOR\_ITEM\_PRICE\_DEVIATION\_LIMIT\_TYPE\_ANY\_UNSPECIFIED** = ``0``
 
-Denotes that price limit type be disregarded. This is used only within search/filter APIs
+**`Description`**
+
+Denotes that price limit type be disregarded. Used exclusively within search/filter APIs to bypass restrictions.
 
 **`Generated`**
 
@@ -46,7 +50,7 @@ from enum value: VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L23)
+[src/vendors.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L23)
 
 ___
 
@@ -54,7 +58,9 @@ ___
 
 • **VENDOR\_ITEM\_PRICE\_DEVIATION\_LIMIT\_TYPE\_PERCENTAGE** = ``1``
 
-Denotes that the price limit type is a percentage
+**`Description`**
+
+Denotes that the price limit type is evaluated as a percentage.
 
 **`Generated`**
 
@@ -62,4 +68,4 @@ from enum value: VENDOR_ITEM_PRICE_DEVIATION_LIMIT_TYPE_PERCENTAGE = 1;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L30)
+[src/vendors.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L30)

@@ -9,62 +9,62 @@ import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, 
 
 /**
  *
- * Describes the available sort keys
+ * Enumeration of fields available for sorting storage search results.
  *
  * @generated from enum Scailo.STORAGE_SORT_KEY
  */
 export enum STORAGE_SORT_KEY {
   /**
-   * Fetch ordered results by id
+   * @description Default sort behavior (by internal ID).
    *
    * @generated from enum value: STORAGE_SORT_KEY_ID_UNSPECIFIED = 0;
    */
   STORAGE_SORT_KEY_ID_UNSPECIFIED = 0,
 
   /**
-   * Fetch ordered results by the creation timestamp
+   * @description Sort by the timestamp the record was initially created.
    *
    * @generated from enum value: STORAGE_SORT_KEY_CREATED_AT = 1;
    */
   STORAGE_SORT_KEY_CREATED_AT = 1,
 
   /**
-   * Fetch ordered results by the modified timestamp
+   * @description Sort by the timestamp the record was last modified.
    *
    * @generated from enum value: STORAGE_SORT_KEY_MODIFIED_AT = 2;
    */
   STORAGE_SORT_KEY_MODIFIED_AT = 2,
 
   /**
-   * Fetch ordered results by the approved on timestamp
+   * @description Sort by the official approval timestamp.
    *
    * @generated from enum value: STORAGE_SORT_KEY_APPROVED_ON = 3;
    */
   STORAGE_SORT_KEY_APPROVED_ON = 3,
 
   /**
-   * Fetch ordered results by the approved by field
+   * @description Sort by the system ID of the approving user.
    *
    * @generated from enum value: STORAGE_SORT_KEY_APPROVED_BY = 4;
    */
   STORAGE_SORT_KEY_APPROVED_BY = 4,
 
   /**
-   * Fetch ordered results by the approver's role ID
+   * @description Sort by the security role ID used by the approver.
    *
    * @generated from enum value: STORAGE_SORT_KEY_APPROVER_ROLE_ID = 5;
    */
   STORAGE_SORT_KEY_APPROVER_ROLE_ID = 5,
 
   /**
-   * Fetch ordered results by the name
+   * @description Sort alphabetically by the user-provided name.
    *
    * @generated from enum value: STORAGE_SORT_KEY_NAME = 10;
    */
   STORAGE_SORT_KEY_NAME = 10,
 
   /**
-   * Fetch ordered results by the code
+   * @description Sort alphabetically by the user-provided code.
    *
    * @generated from enum value: STORAGE_SORT_KEY_CODE = 11;
    */
@@ -84,7 +84,12 @@ proto3.util.setEnumType(STORAGE_SORT_KEY, "Scailo.STORAGE_SORT_KEY", [
 
 /**
  *
- * Describes the parameters necessary to create a record
+ * Request message for creating and registering a new Storage unit or sub-location.
+ * This record maps hierarchical storage structures (leaf vs. non-leaf zones), parent store
+ * associations, unique classification codes, and multi-tenant security identifiers.
+ *
+ * **Note:** This is the primary entry point for Inventory, Logistics, and Admins to
+ * configure physical or logical storage layouts like warehouses, aisles, shelves, or bins.
  *
  * @generated from message Scailo.StoragesServiceCreateRequest
  */
@@ -101,58 +106,119 @@ export class StoragesServiceCreateRequest extends Message<StoragesServiceCreateR
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 1;
+   * @generated from field: optional string entity_uuid = 1;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
-   * Storages any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 2;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 2;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * The name of the storage
+   *
+   * @mandatory
+   *
+   * @description The official or friendly descriptive name of the storage zone or unit.
+   *
+   * @example "Cold Storage Vault Alpha"
+   *
+   * @regex .+
+   *
+   * @format Must be a non-empty string.
    *
    * @generated from field: string name = 10;
    */
   name = "";
 
   /**
-   * The unique code by which the storage is classified
+   *
+   * @mandatory
+   *
+   * @description The unique code or internal alphanumeric token used to classify the storage unit for inventory tracking.
+   *
+   * @example "STRG-CS-A01"
+   *
+   * @regex .+
+   *
+   * @format Must be a non-empty string.
    *
    * @generated from field: string code = 11;
    */
   code = "";
 
   /**
-   * The ID of the associated store
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the overarching parent store facility housing this storage unit.
+   *
+   * @example 4501
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative 64-bit integer greater than zero.
    *
    * @generated from field: uint64 store_id = 12;
    */
   storeId = protoInt64.zero;
 
   /**
-   * The ID of the associated non-leaf parent storage (0, if the first storage that is being created is a leaf storage)
    *
-   * @generated from field: uint64 parent_storage_id = 13;
+   * @optional
+   *
+   * @description The unique internal identifier of the parent non-leaf storage unit. Defaults to 0 if this is the root node or top-level layer within the storage area.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative 64-bit integer.
+   *
+   * @generated from field: optional uint64 parent_storage_id = 13;
    */
-  parentStorageId = protoInt64.zero;
+  parentStorageId?: bigint;
 
   /**
-   * Stores if this is a leaf storage or a non-leaf storage
+   *
+   * @mandatory
+   *
+   * @description Flag determining whether this storage node is a terminal 'leaf' allocation (e.g., a specific shelf/bin holding stock) or a 'non-leaf' grouping structure (e.g., a whole aisle).
+   *
+   * @example true
+   *
+   * @format Boolean value (`true` or `false`).
    *
    * @generated from field: bool is_leaf = 14;
    */
   isLeaf = false;
 
   /**
-   * The description of the storage
    *
-   * @generated from field: string description = 15;
+   * @optional
+   *
+   * @description Contextual details concerning environmental constraints, structural capacities, or unique access instructions for this storage unit.
+   *
+   * @example "Maintained at temperature thresholds between 2-4°C. Holds standard pharmaceutical pallets."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string description = 15;
    */
-  description = "";
+  description?: string;
 
   constructor(data?: PartialMessage<StoragesServiceCreateRequest>) {
     super();
@@ -162,14 +228,14 @@ export class StoragesServiceCreateRequest extends Message<StoragesServiceCreateR
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.StoragesServiceCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 12, name: "store_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 13, name: "parent_storage_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 13, name: "parent_storage_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
     { no: 14, name: "is_leaf", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
-    { no: 15, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 15, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): StoragesServiceCreateRequest {
@@ -191,45 +257,92 @@ export class StoragesServiceCreateRequest extends Message<StoragesServiceCreateR
 
 /**
  *
- * Describes the parameters necessary to update a record
+ * Request message for updating an existing Storage record.
+ * Only applicable for records in `DRAFT` or `REVISION` states.
+ * This message allows for modifying the name, and description
+ * of an established Storage.
+ *
+ * **Note:** Only fields provided in the request will typically be updated.
+ * The unique system ID is required to locate the target record.
  *
  * @generated from message Scailo.StoragesServiceUpdateRequest
  */
 export class StoragesServiceUpdateRequest extends Message<StoragesServiceUpdateRequest> {
   /**
-   * Storages any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * The ID of the record that needs to be updated
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target record that needs to be updated.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 id = 2;
    */
   id = protoInt64.zero;
 
   /**
-   * Optional boolean value that storages if a notification needs to be sent to users about the update to the record. This is useful when a subsequent operation needs to be performed immediately (such as send to verification after updating the revision)
    *
-   * @generated from field: bool notify_users = 3;
+   * @optional
+   *
+   * @description Flag to trigger system notifications to relevant users upon update. Set to true if subsequent workflows (like verification) depend on this change.
+   *
+   * @example true
+   *
+   * @generated from field: optional bool notify_users = 3;
    */
-  notifyUsers = false;
+  notifyUsers?: boolean;
 
   /**
-   * The name of the storage
    *
-   * @generated from field: string name = 10;
+   * @optional
+   *
+   * @description The official or friendly descriptive name of the storage zone or unit.
+   *
+   * @example "Cold Storage Vault Alpha"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string name = 10;
    */
-  name = "";
+  name?: string;
 
   /**
-   * The description of the storage
    *
-   * @generated from field: string description = 15;
+   * @optional
+   *
+   * @description Contextual details concerning environmental constraints, structural capacities, or unique access instructions for this storage unit.
+   *
+   * @example "Maintained at temperature thresholds between 2-4°C. Holds standard pharmaceutical pallets."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string description = 15;
    */
-  description = "";
+  description?: string;
 
   constructor(data?: PartialMessage<StoragesServiceUpdateRequest>) {
     super();
@@ -239,11 +352,11 @@ export class StoragesServiceUpdateRequest extends Message<StoragesServiceUpdateR
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.StoragesServiceUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 2, name: "id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
-    { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 15, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
+    { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 15, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): StoragesServiceUpdateRequest {
@@ -265,7 +378,7 @@ export class StoragesServiceUpdateRequest extends Message<StoragesServiceUpdateR
 
 /**
  *
- * Describes the parameters that are part of a standard response
+ * Represents a full Storage within the system.
  *
  * @generated from message Scailo.Storage
  */
@@ -281,70 +394,92 @@ export class Storage extends Message<Storage> {
   entityUuid = "";
 
   /**
-   * Storages the metadata of this storage
+   *
+   * @description Standard employee and record metadata including timestamps.
    *
    * @generated from field: Scailo.EmployeeMetadata metadata = 2;
    */
   metadata?: EmployeeMetadata;
 
   /**
-   * Storages the approval metadata
+   *
+   * @description Detailed approval workflow state (Approver ID, Role, and Timestamps).
    *
    * @generated from field: Scailo.ApprovalMetadata approval_metadata = 3;
    */
   approvalMetadata?: ApprovalMetadata;
 
   /**
-   * The status of this storage
+   *
+   * @description The current lifecycle status (e.g., DRAFT, VERIFIED, STANDING).
    *
    * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 4;
    */
   status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
 
   /**
-   * Storages the logs of every operation performed on this storage
+   *
+   * @description Comprehensive audit trail of every operation performed on this record.
    *
    * @generated from field: repeated Scailo.LogbookLogConciseSLC logs = 5;
    */
   logs: LogbookLogConciseSLC[] = [];
 
   /**
-   * The name of the storage
+   *
+   * @description The official or friendly descriptive name of the storage zone or unit.
+   *
+   * @example "Cold Storage Vault Alpha"
    *
    * @generated from field: string name = 10;
    */
   name = "";
 
   /**
-   * The unique code by which the storage is classified
+   *
+   * @description The unique code or internal alphanumeric token used to classify the storage unit for inventory tracking.
+   *
+   * @example "STRG-CS-A01"
    *
    * @generated from field: string code = 11;
    */
   code = "";
 
   /**
-   * The ID of the associated store
+   *
+   * @description The unique internal identifier of the overarching parent store facility housing this storage unit.
+   *
+   * @example 4501
    *
    * @generated from field: uint64 store_id = 12;
    */
   storeId = protoInt64.zero;
 
   /**
-   * The ID of the associated non-leaf parent storage (0, if the first storage that is being created is a leaf storage)
+   *
+   * @description The unique internal identifier of the parent non-leaf storage unit. Defaults to 0 if this is the root node or top-level layer within the storage area.
+   *
+   * @example 1024
    *
    * @generated from field: uint64 parent_storage_id = 13;
    */
   parentStorageId = protoInt64.zero;
 
   /**
-   * Stores if this is a leaf storage or a non-leaf storage
+   *
+   * @description Flag determining whether this storage node is a terminal 'leaf' allocation (e.g., a specific shelf/bin holding stock) or a 'non-leaf' grouping structure (e.g., a whole aisle).
+   *
+   * @example true
    *
    * @generated from field: bool is_leaf = 14;
    */
   isLeaf = false;
 
   /**
-   * The description of the storage
+   *
+   * @description Contextual details concerning environmental constraints, structural capacities, or unique access instructions for this storage unit.
+   *
+   * @example "Maintained at temperature thresholds between 2-4°C. Holds standard pharmaceutical pallets."
    *
    * @generated from field: string description = 15;
    */
@@ -390,13 +525,13 @@ export class Storage extends Message<Storage> {
 
 /**
  *
- * Describes the message consisting of the list of records
+ * Container message for a collection of Storage records.
  *
  * @generated from message Scailo.StoragesList
  */
 export class StoragesList extends Message<StoragesList> {
   /**
-   * List of records
+   * @description An array of Storage records.
    *
    * @generated from field: repeated Scailo.Storage list = 1;
    */
@@ -432,7 +567,7 @@ export class StoragesList extends Message<StoragesList> {
 
 /**
  *
- * Describes a pagination request to retrieve records
+ * Pagination request for retrieving slices of Storage records.
  *
  * @generated from message Scailo.StoragesServicePaginationReq
  */
@@ -445,9 +580,9 @@ export class StoragesServicePaginationReq extends Message<StoragesServicePaginat
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -477,9 +612,9 @@ export class StoragesServicePaginationReq extends Message<StoragesServicePaginat
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -489,9 +624,9 @@ export class StoragesServicePaginationReq extends Message<StoragesServicePaginat
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -499,16 +634,21 @@ export class StoragesServicePaginationReq extends Message<StoragesServicePaginat
    *
    * @description The specific field key to sort the results by.
    *
-   * @generated from field: Scailo.STORAGE_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.STORAGE_SORT_KEY sort_key = 5;
    */
-  sortKey = STORAGE_SORT_KEY.STORAGE_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: STORAGE_SORT_KEY;
 
   /**
-   * The status of this storage
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
+   * @optional
+   *
+   * @description Filter results by a specific lifecycle status.
+   *
+   * @example STANDING
+   *
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   constructor(data?: PartialMessage<StoragesServicePaginationReq>) {
     super();
@@ -518,12 +658,12 @@ export class StoragesServicePaginationReq extends Message<StoragesServicePaginat
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.StoragesServicePaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(STORAGE_SORT_KEY) },
-    { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(STORAGE_SORT_KEY), opt: true },
+    { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): StoragesServicePaginationReq {
@@ -545,7 +685,7 @@ export class StoragesServicePaginationReq extends Message<StoragesServicePaginat
 
 /**
  *
- * Describes the response to a pagination request
+ * Response message for paginated queries, including total counts for UI elements.
  *
  * @generated from message Scailo.StoragesServicePaginationResponse
  */
@@ -621,7 +761,12 @@ export class StoragesServicePaginationResponse extends Message<StoragesServicePa
 
 /**
  *
- * Describes the base request payload of a filter search
+ * Advanced filter request for searching and paginating storages using multiple logical criteria.
+ * This message encapsulates pagination controls, sorting keys, lifecycle status filters,
+ * timestamp ranges, and entity references.
+ *
+ * **Note:** This is the primary message layout used by the frontend and external API clients
+ * to build robust data-table queries, reporting views, and targeted record lookups.
  *
  * @generated from message Scailo.StoragesServiceFilterReq
  */
@@ -634,9 +779,9 @@ export class StoragesServiceFilterReq extends Message<StoragesServiceFilterReq> 
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -666,9 +811,9 @@ export class StoragesServiceFilterReq extends Message<StoragesServiceFilterReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -678,9 +823,9 @@ export class StoragesServiceFilterReq extends Message<StoragesServiceFilterReq> 
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -688,9 +833,9 @@ export class StoragesServiceFilterReq extends Message<StoragesServiceFilterReq> 
    *
    * @description The field used for sorting.
    *
-   * @generated from field: Scailo.STORAGE_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.STORAGE_SORT_KEY sort_key = 5;
    */
-  sortKey = STORAGE_SORT_KEY.STORAGE_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: STORAGE_SORT_KEY;
 
   /**
    *
@@ -704,9 +849,9 @@ export class StoragesServiceFilterReq extends Message<StoragesServiceFilterReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_start = 101;
+   * @generated from field: optional uint64 creation_timestamp_start = 101;
    */
-  creationTimestampStart = protoInt64.zero;
+  creationTimestampStart?: bigint;
 
   /**
    *
@@ -720,9 +865,9 @@ export class StoragesServiceFilterReq extends Message<StoragesServiceFilterReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_end = 102;
+   * @generated from field: optional uint64 creation_timestamp_end = 102;
    */
-  creationTimestampEnd = protoInt64.zero;
+  creationTimestampEnd?: bigint;
 
   /**
    *
@@ -736,9 +881,9 @@ export class StoragesServiceFilterReq extends Message<StoragesServiceFilterReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_start = 103;
+   * @generated from field: optional uint64 modification_timestamp_start = 103;
    */
-  modificationTimestampStart = protoInt64.zero;
+  modificationTimestampStart?: bigint;
 
   /**
    *
@@ -752,9 +897,9 @@ export class StoragesServiceFilterReq extends Message<StoragesServiceFilterReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_end = 104;
+   * @generated from field: optional uint64 modification_timestamp_end = 104;
    */
-  modificationTimestampEnd = protoInt64.zero;
+  modificationTimestampEnd?: bigint;
 
   /**
    *
@@ -768,9 +913,9 @@ export class StoragesServiceFilterReq extends Message<StoragesServiceFilterReq> 
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 8;
+   * @generated from field: optional string entity_uuid = 8;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
    *
@@ -780,9 +925,9 @@ export class StoragesServiceFilterReq extends Message<StoragesServiceFilterReq> 
    *
    * @example STANDING
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   /**
    *
@@ -796,9 +941,9 @@ export class StoragesServiceFilterReq extends Message<StoragesServiceFilterReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_start = 11;
+   * @generated from field: optional uint64 approved_on_start = 11;
    */
-  approvedOnStart = protoInt64.zero;
+  approvedOnStart?: bigint;
 
   /**
    *
@@ -812,9 +957,9 @@ export class StoragesServiceFilterReq extends Message<StoragesServiceFilterReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_end = 12;
+   * @generated from field: optional uint64 approved_on_end = 12;
    */
-  approvedOnEnd = protoInt64.zero;
+  approvedOnEnd?: bigint;
 
   /**
    *
@@ -828,9 +973,9 @@ export class StoragesServiceFilterReq extends Message<StoragesServiceFilterReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_by_user_id = 13;
+   * @generated from field: optional uint64 approved_by_user_id = 13;
    */
-  approvedByUserId = protoInt64.zero;
+  approvedByUserId?: bigint;
 
   /**
    *
@@ -844,51 +989,103 @@ export class StoragesServiceFilterReq extends Message<StoragesServiceFilterReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approver_role_id = 14;
+   * @generated from field: optional uint64 approver_role_id = 14;
    */
-  approverRoleId = protoInt64.zero;
+  approverRoleId?: bigint;
 
   /**
-   * The name of the storage
    *
-   * @generated from field: string name = 20;
+   * @optional
+   *
+   * @description The official or friendly descriptive name of the storage zone or unit.
+   *
+   * @example "Cold Storage Vault Alpha"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string name = 20;
    */
-  name = "";
+  name?: string;
 
   /**
-   * The unique code by which the storage is classified
    *
-   * @generated from field: string code = 21;
+   * @optional
+   *
+   * @description The unique code or internal alphanumeric token used to classify the storage unit for inventory tracking.
+   *
+   * @example "STRG-CS-A01"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string code = 21;
    */
-  code = "";
+  code?: string;
 
   /**
-   * The ID of the associated store
    *
-   * @generated from field: uint64 store_id = 22;
+   * @optional
+   *
+   * @description The unique internal identifier of the overarching parent store facility housing this storage unit.
+   *
+   * @example 4501
+   *
+   * @regex ^[0-9]*$
+   *
+   * @format Non-negative 64-bit integer greater than zero.
+   *
+   * @generated from field: optional uint64 store_id = 22;
    */
-  storeId = protoInt64.zero;
+  storeId?: bigint;
 
   /**
-   * The ID of the associated non-leaf parent storage (0, if the first storage that is being created is a leaf storage)
    *
-   * @generated from field: uint64 parent_storage_id = 23;
+   * @optional
+   *
+   * @description The unique internal identifier of the parent non-leaf storage unit. Defaults to 0 if this is the root node or top-level layer within the storage area.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]*$
+   *
+   * @format Non-negative 64-bit integer.
+   *
+   * @generated from field: optional uint64 parent_storage_id = 23;
    */
-  parentStorageId = protoInt64.zero;
+  parentStorageId?: bigint;
 
   /**
-   * Filter with the given leaf property
    *
-   * @generated from field: Scailo.BOOL_FILTER is_leaf = 24;
+   * @optional
+   *
+   * @description Flag determining whether this storage node is a terminal 'leaf' allocation (e.g., a specific shelf/bin holding stock) or a 'non-leaf' grouping structure (e.g., a whole aisle).
+   *
+   * @example true
+   *
+   * @format Boolean value (`true` or `false`).
+   *
+   * @generated from field: optional Scailo.BOOL_FILTER is_leaf = 24;
    */
-  isLeaf = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isLeaf?: BOOL_FILTER;
 
   /**
-   * Retrieve storages that are assigned to the given family ID
    *
-   * @generated from field: uint64 family_id = 30;
+   * @optional
+   *
+   * @description Filter results to retrieve only the storages that are assigned to a specific item family or classification group identifier.
+   *
+   * @example 7890
+   *
+   * @regex ^[0-9]*$
+   *
+   * @format Non-negative 64-bit integer.
+   *
+   * @generated from field: optional uint64 family_id = 30;
    */
-  familyId = protoInt64.zero;
+  familyId?: bigint;
 
   constructor(data?: PartialMessage<StoragesServiceFilterReq>) {
     super();
@@ -898,27 +1095,27 @@ export class StoragesServiceFilterReq extends Message<StoragesServiceFilterReq> 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.StoragesServiceFilterReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(STORAGE_SORT_KEY) },
-    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
-    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "store_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 23, name: "parent_storage_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 24, name: "is_leaf", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
-    { no: 30, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(STORAGE_SORT_KEY), opt: true },
+    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
+    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 22, name: "store_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 23, name: "parent_storage_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 24, name: "is_leaf", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
+    { no: 30, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): StoragesServiceFilterReq {
@@ -940,7 +1137,13 @@ export class StoragesServiceFilterReq extends Message<StoragesServiceFilterReq> 
 
 /**
  *
- * Describes the base request payload of a count search
+ * Target filter request for counting storage records matching specific logical criteria.
+ * This message encapsulates lifecycle status filters, timestamp ranges, workflow markers,
+ * and entity references to determine the total size of a targeted dataset.
+ *
+ * **Note:** This is the primary message layout used by backend calculation engines, reporting
+ * services, and frontend pagination headers to evaluate total record matches dynamically
+ * before or alongside retrieving paginated results.
  *
  * @generated from message Scailo.StoragesServiceCountReq
  */
@@ -953,9 +1156,9 @@ export class StoragesServiceCountReq extends Message<StoragesServiceCountReq> {
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -969,9 +1172,9 @@ export class StoragesServiceCountReq extends Message<StoragesServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_start = 101;
+   * @generated from field: optional uint64 creation_timestamp_start = 101;
    */
-  creationTimestampStart = protoInt64.zero;
+  creationTimestampStart?: bigint;
 
   /**
    *
@@ -985,9 +1188,9 @@ export class StoragesServiceCountReq extends Message<StoragesServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_end = 102;
+   * @generated from field: optional uint64 creation_timestamp_end = 102;
    */
-  creationTimestampEnd = protoInt64.zero;
+  creationTimestampEnd?: bigint;
 
   /**
    *
@@ -1001,9 +1204,9 @@ export class StoragesServiceCountReq extends Message<StoragesServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_start = 103;
+   * @generated from field: optional uint64 modification_timestamp_start = 103;
    */
-  modificationTimestampStart = protoInt64.zero;
+  modificationTimestampStart?: bigint;
 
   /**
    *
@@ -1017,9 +1220,9 @@ export class StoragesServiceCountReq extends Message<StoragesServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_end = 104;
+   * @generated from field: optional uint64 modification_timestamp_end = 104;
    */
-  modificationTimestampEnd = protoInt64.zero;
+  modificationTimestampEnd?: bigint;
 
   /**
    *
@@ -1033,9 +1236,9 @@ export class StoragesServiceCountReq extends Message<StoragesServiceCountReq> {
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 8;
+   * @generated from field: optional string entity_uuid = 8;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
    *
@@ -1045,9 +1248,9 @@ export class StoragesServiceCountReq extends Message<StoragesServiceCountReq> {
    *
    * @example STANDING
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   /**
    *
@@ -1061,9 +1264,9 @@ export class StoragesServiceCountReq extends Message<StoragesServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_start = 11;
+   * @generated from field: optional uint64 approved_on_start = 11;
    */
-  approvedOnStart = protoInt64.zero;
+  approvedOnStart?: bigint;
 
   /**
    *
@@ -1077,9 +1280,9 @@ export class StoragesServiceCountReq extends Message<StoragesServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_end = 12;
+   * @generated from field: optional uint64 approved_on_end = 12;
    */
-  approvedOnEnd = protoInt64.zero;
+  approvedOnEnd?: bigint;
 
   /**
    *
@@ -1093,9 +1296,9 @@ export class StoragesServiceCountReq extends Message<StoragesServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_by_user_id = 13;
+   * @generated from field: optional uint64 approved_by_user_id = 13;
    */
-  approvedByUserId = protoInt64.zero;
+  approvedByUserId?: bigint;
 
   /**
    *
@@ -1109,51 +1312,103 @@ export class StoragesServiceCountReq extends Message<StoragesServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approver_role_id = 14;
+   * @generated from field: optional uint64 approver_role_id = 14;
    */
-  approverRoleId = protoInt64.zero;
+  approverRoleId?: bigint;
 
   /**
-   * The name of the storage
    *
-   * @generated from field: string name = 20;
+   * @optional
+   *
+   * @description The official or friendly descriptive name of the storage zone or unit.
+   *
+   * @example "Cold Storage Vault Alpha"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string name = 20;
    */
-  name = "";
+  name?: string;
 
   /**
-   * The unique code by which the storage is classified
    *
-   * @generated from field: string code = 21;
+   * @optional
+   *
+   * @description The unique code or internal alphanumeric token used to classify the storage unit for inventory tracking.
+   *
+   * @example "STRG-CS-A01"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string code = 21;
    */
-  code = "";
+  code?: string;
 
   /**
-   * The ID of the associated store
    *
-   * @generated from field: uint64 store_id = 22;
+   * @optional
+   *
+   * @description The unique internal identifier of the overarching parent store facility housing this storage unit.
+   *
+   * @example 4501
+   *
+   * @regex ^[0-9]*$
+   *
+   * @format Non-negative 64-bit integer greater than zero.
+   *
+   * @generated from field: optional uint64 store_id = 22;
    */
-  storeId = protoInt64.zero;
+  storeId?: bigint;
 
   /**
-   * The ID of the associated non-leaf parent storage (0, if the first storage that is being created is a leaf storage)
    *
-   * @generated from field: uint64 parent_storage_id = 23;
+   * @optional
+   *
+   * @description The unique internal identifier of the parent non-leaf storage unit. Defaults to 0 if this is the root node or top-level layer within the storage area.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]*$
+   *
+   * @format Non-negative 64-bit integer.
+   *
+   * @generated from field: optional uint64 parent_storage_id = 23;
    */
-  parentStorageId = protoInt64.zero;
+  parentStorageId?: bigint;
 
   /**
-   * Filter with the given leaf property
    *
-   * @generated from field: Scailo.BOOL_FILTER is_leaf = 24;
+   * @optional
+   *
+   * @description Flag determining whether this storage node is a terminal 'leaf' allocation (e.g., a specific shelf/bin holding stock) or a 'non-leaf' grouping structure (e.g., a whole aisle).
+   *
+   * @example true
+   *
+   * @format Boolean value (`true` or `false`).
+   *
+   * @generated from field: optional Scailo.BOOL_FILTER is_leaf = 24;
    */
-  isLeaf = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isLeaf?: BOOL_FILTER;
 
   /**
-   * Retrieve storages that are assigned to the given family ID
    *
-   * @generated from field: uint64 family_id = 30;
+   * @optional
+   *
+   * @description Filter results to retrieve only the storages that are assigned to a specific item family or classification group identifier.
+   *
+   * @example 7890
+   *
+   * @regex ^[0-9]*$
+   *
+   * @format Non-negative 64-bit integer.
+   *
+   * @generated from field: optional uint64 family_id = 30;
    */
-  familyId = protoInt64.zero;
+  familyId?: bigint;
 
   constructor(data?: PartialMessage<StoragesServiceCountReq>) {
     super();
@@ -1163,23 +1418,23 @@ export class StoragesServiceCountReq extends Message<StoragesServiceCountReq> {
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.StoragesServiceCountReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
-    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
-    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "store_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 23, name: "parent_storage_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 24, name: "is_leaf", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
-    { no: 30, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
+    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
+    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 22, name: "store_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 23, name: "parent_storage_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 24, name: "is_leaf", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
+    { no: 30, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): StoragesServiceCountReq {
@@ -1201,7 +1456,13 @@ export class StoragesServiceCountReq extends Message<StoragesServiceCountReq> {
 
 /**
  *
- * Describes the request payload for performing a generic search operation on records
+ * Broad-spectrum search and lookup request for locating and paginating storages via text matching.
+ * This message encapsulates full-text query parameters, pagination controls, sorting keys,
+ * lifecycle status constraints, and other core references.
+ *
+ * **Note:** This is the primary message layout used for global search bars, fast-filtering dashboard
+ * inputs, and omni-box search utilities where users need to match loose textual terms against
+ * records while retaining structural pagination.
  *
  * @generated from message Scailo.StoragesServiceSearchAllReq
  */
@@ -1214,9 +1475,9 @@ export class StoragesServiceSearchAllReq extends Message<StoragesServiceSearchAl
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -1246,9 +1507,9 @@ export class StoragesServiceSearchAllReq extends Message<StoragesServiceSearchAl
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -1258,9 +1519,9 @@ export class StoragesServiceSearchAllReq extends Message<StoragesServiceSearchAl
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -1268,9 +1529,9 @@ export class StoragesServiceSearchAllReq extends Message<StoragesServiceSearchAl
    *
    * @description The field used for sorting.
    *
-   * @generated from field: Scailo.STORAGE_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.STORAGE_SORT_KEY sort_key = 5;
    */
-  sortKey = STORAGE_SORT_KEY.STORAGE_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: STORAGE_SORT_KEY;
 
   /**
    *
@@ -1284,9 +1545,9 @@ export class StoragesServiceSearchAllReq extends Message<StoragesServiceSearchAl
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 6;
+   * @generated from field: optional string entity_uuid = 6;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
    *
@@ -1296,13 +1557,13 @@ export class StoragesServiceSearchAllReq extends Message<StoragesServiceSearchAl
    *
    * @example STANDING
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   /**
    *
-   * @mandatory
+   * @optional
    *
    * @description The search string to match against reference IDs.
    *
@@ -1312,37 +1573,71 @@ export class StoragesServiceSearchAllReq extends Message<StoragesServiceSearchAl
    *
    * @format: May contain any UTF-8 characters.
    *
-   * @generated from field: string search_key = 11;
+   * @generated from field: optional string search_key = 11;
    */
-  searchKey = "";
+  searchKey?: string;
 
   /**
-   * The ID of the associated store
    *
-   * @generated from field: uint64 store_id = 22;
+   * @optional
+   *
+   * @description The unique internal identifier of the overarching parent store facility housing this storage unit.
+   *
+   * @example 4501
+   *
+   * @regex ^[0-9]*$
+   *
+   * @format Non-negative 64-bit integer greater than zero.
+   *
+   * @generated from field: optional uint64 store_id = 22;
    */
-  storeId = protoInt64.zero;
+  storeId?: bigint;
 
   /**
-   * The ID of the associated non-leaf parent storage (0, if the first storage that is being created is a leaf storage)
    *
-   * @generated from field: uint64 parent_storage_id = 23;
+   * @optional
+   *
+   * @description The unique internal identifier of the parent non-leaf storage unit. Defaults to 0 if this is the root node or top-level layer within the storage area.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]*$
+   *
+   * @format Non-negative 64-bit integer.
+   *
+   * @generated from field: optional uint64 parent_storage_id = 23;
    */
-  parentStorageId = protoInt64.zero;
+  parentStorageId?: bigint;
 
   /**
-   * Filter with the given leaf property
    *
-   * @generated from field: Scailo.BOOL_FILTER is_leaf = 24;
+   * @optional
+   *
+   * @description Flag determining whether this storage node is a terminal 'leaf' allocation (e.g., a specific shelf/bin holding stock) or a 'non-leaf' grouping structure (e.g., a whole aisle).
+   *
+   * @example true
+   *
+   * @format Boolean value (`true` or `false`).
+   *
+   * @generated from field: optional Scailo.BOOL_FILTER is_leaf = 24;
    */
-  isLeaf = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isLeaf?: BOOL_FILTER;
 
   /**
-   * Retrieve storages that are assigned to the given family ID
    *
-   * @generated from field: uint64 family_id = 30;
+   * @optional
+   *
+   * @description Filter results to retrieve only the storages that are assigned to a specific item family or classification group identifier.
+   *
+   * @example 7890
+   *
+   * @regex ^[0-9]*$
+   *
+   * @format Non-negative 64-bit integer.
+   *
+   * @generated from field: optional uint64 family_id = 30;
    */
-  familyId = protoInt64.zero;
+  familyId?: bigint;
 
   constructor(data?: PartialMessage<StoragesServiceSearchAllReq>) {
     super();
@@ -1352,18 +1647,18 @@ export class StoragesServiceSearchAllReq extends Message<StoragesServiceSearchAl
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.StoragesServiceSearchAllReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(STORAGE_SORT_KEY) },
-    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
-    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "store_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 23, name: "parent_storage_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 24, name: "is_leaf", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
-    { no: 30, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(STORAGE_SORT_KEY), opt: true },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
+    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 22, name: "store_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 23, name: "parent_storage_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 24, name: "is_leaf", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
+    { no: 30, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): StoragesServiceSearchAllReq {

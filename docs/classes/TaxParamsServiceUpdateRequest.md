@@ -71,7 +71,7 @@ Message\&lt;TaxParamsServiceUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/tax_params.scailo_pb.ts:359](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/tax_params.scailo_pb.ts#L359)
+[src/tax_params.scailo_pb.ts:373](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/tax_params.scailo_pb.ts#L373)
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: string code = 21;
 
 #### Defined in
 
-[src/tax_params.scailo_pb.ts:350](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/tax_params.scailo_pb.ts#L350)
+[src/tax_params.scailo_pb.ts:364](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/tax_params.scailo_pb.ts#L364)
 
 ___
 
@@ -103,7 +103,7 @@ from field: string description = 20;
 
 #### Defined in
 
-[src/tax_params.scailo_pb.ts:357](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/tax_params.scailo_pb.ts#L357)
+[src/tax_params.scailo_pb.ts:371](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/tax_params.scailo_pb.ts#L371)
 
 ___
 
@@ -111,7 +111,25 @@ ___
 
 • **id**: `bigint` = `protoInt64.zero`
 
-The ID of the record that needs to be updated
+**`Mandatory`**
+
+**`Description`**
+
+The unique internal identifier of the target record that needs to be updated.
+
+**`Example`**
+
+```ts
+1024
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -119,7 +137,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-[src/tax_params.scailo_pb.ts:329](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/tax_params.scailo_pb.ts#L329)
+[src/tax_params.scailo_pb.ts:338](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/tax_params.scailo_pb.ts#L338)
 
 ___
 
@@ -135,7 +153,7 @@ from field: string name = 10;
 
 #### Defined in
 
-[src/tax_params.scailo_pb.ts:343](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/tax_params.scailo_pb.ts#L343)
+[src/tax_params.scailo_pb.ts:357](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/tax_params.scailo_pb.ts#L357)
 
 ___
 
@@ -143,7 +161,17 @@ ___
 
 • **notifyUsers**: `boolean` = `false`
 
-Optional boolean value that denotes if a notification needs to be sent to users about the update to the record. This is useful when a subsequent operation needs to be performed immediately (such as send to verification after updating the revision)
+**`Optional`**
+
+**`Description`**
+
+Flag to trigger system notifications to relevant users upon update. Set to true if subsequent workflows (like verification) depend on this change.
+
+**`Example`**
+
+```ts
+true
+```
 
 **`Generated`**
 
@@ -151,7 +179,7 @@ from field: bool notify_users = 3;
 
 #### Defined in
 
-[src/tax_params.scailo_pb.ts:336](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/tax_params.scailo_pb.ts#L336)
+[src/tax_params.scailo_pb.ts:350](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/tax_params.scailo_pb.ts#L350)
 
 ___
 
@@ -167,7 +195,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-[src/tax_params.scailo_pb.ts:322](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/tax_params.scailo_pb.ts#L322)
+[src/tax_params.scailo_pb.ts:322](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/tax_params.scailo_pb.ts#L322)
 
 ___
 
@@ -177,7 +205,7 @@ ___
 
 #### Defined in
 
-[src/tax_params.scailo_pb.ts:366](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/tax_params.scailo_pb.ts#L366)
+[src/tax_params.scailo_pb.ts:380](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/tax_params.scailo_pb.ts#L380)
 
 ___
 
@@ -187,7 +215,7 @@ ___
 
 #### Defined in
 
-[src/tax_params.scailo_pb.ts:364](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/tax_params.scailo_pb.ts#L364)
+[src/tax_params.scailo_pb.ts:378](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/tax_params.scailo_pb.ts#L378)
 
 ___
 
@@ -197,7 +225,7 @@ ___
 
 #### Defined in
 
-[src/tax_params.scailo_pb.ts:365](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/tax_params.scailo_pb.ts#L365)
+[src/tax_params.scailo_pb.ts:379](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/tax_params.scailo_pb.ts#L379)
 
 ## Methods
 
@@ -485,7 +513,7 @@ ___
 
 #### Defined in
 
-[src/tax_params.scailo_pb.ts:387](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/tax_params.scailo_pb.ts#L387)
+[src/tax_params.scailo_pb.ts:401](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/tax_params.scailo_pb.ts#L401)
 
 ___
 
@@ -506,7 +534,7 @@ ___
 
 #### Defined in
 
-[src/tax_params.scailo_pb.ts:375](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/tax_params.scailo_pb.ts#L375)
+[src/tax_params.scailo_pb.ts:389](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/tax_params.scailo_pb.ts#L389)
 
 ___
 
@@ -527,7 +555,7 @@ ___
 
 #### Defined in
 
-[src/tax_params.scailo_pb.ts:379](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/tax_params.scailo_pb.ts#L379)
+[src/tax_params.scailo_pb.ts:393](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/tax_params.scailo_pb.ts#L393)
 
 ___
 
@@ -548,4 +576,4 @@ ___
 
 #### Defined in
 
-[src/tax_params.scailo_pb.ts:383](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/tax_params.scailo_pb.ts#L383)
+[src/tax_params.scailo_pb.ts:397](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/tax_params.scailo_pb.ts#L397)

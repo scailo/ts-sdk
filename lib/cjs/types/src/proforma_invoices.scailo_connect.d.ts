@@ -1,11 +1,30 @@
 import { ProformaInvoice, ProformaInvoiceAncillaryParameters, ProformaInvoiceItem, ProformaInvoiceItemHistoryRequest, ProformaInvoiceItemProspectiveInfoRequest, ProformaInvoiceItemsList, ProformaInvoiceItemsSearchRequest, ProformaInvoicesList, ProformaInvoicesServiceAlreadyAddedQuantityForSourceRequest, ProformaInvoicesServiceAutofillRequest, ProformaInvoicesServiceCountReq, ProformaInvoicesServiceCreateRequest, ProformaInvoicesServiceFilterReq, ProformaInvoicesServiceItemCreateRequest, ProformaInvoicesServiceItemSpecificationsUpdateRequest, ProformaInvoicesServiceItemUpdateRequest, ProformaInvoicesServiceMultipleItemsCreateRequest, ProformaInvoicesServicePaginatedItemsResponse, ProformaInvoicesServicePaginationReq, ProformaInvoicesServicePaginationResponse, ProformaInvoicesServiceSearchAllReq, ProformaInvoicesServiceUpdateRequest } from "./proforma_invoices.scailo_pb.js";
 import { ActiveStatus, AmendmentLogsList, BooleanResponse, CountInSLCStatusRequest, CountResponse, DualQuantitiesResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq, StandardFile, SumResponse } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
+import { VaultFolderAttachRequest } from "./vault_folders.scailo_pb.js";
 import { MagicLink, MagicLinksServiceCreateRequestForSpecificResource } from "./magic_links.scailo_pb.js";
 import { FamiliesList, FilterFamiliesReqForIdentifier } from "./families.scailo_pb.js";
 /**
  *
- * Describes the common methods applicable on each proforma invoice
+ * Core service for managing the complete operational and approval lifecycle of Proforma Invoices.
+ *
+ * A Proforma Invoice is a preliminary, estimated bill of sale issued to a buyer prior to the
+ * physical fulfillment or final delivery of goods and services. Unlike a finalized Sales Invoice,
+ * it does not immediately impact accounts receivable or act as a legally binding financial demand.
+ * Instead, it serves as a critical operational document utilized to secure advance payments,
+ * facilitate international customs declarations, or obtain internal purchasing approvals from the buyer.
+ *
+ * **Lifecycle & Workflow:**
+ * This service strictly enforces the state machine of a Proforma Invoice:
+ * - **Drafting:** Creating initial drafts to estimate anticipated quantities, commercial terms, and taxes based on a source document (e.g., Sales Order).
+ * - **Verification:** Submitting the estimate through internal review to ensure alignment with negotiated contracts and organizational policies.
+ * - **Approval:** Finalizing the proforma invoice into a `STANDING` state, generating the immutable reference number, and locking the document for distribution to the buyer.
+ *
+ * **Operational Impact:**
+ * Reaching the approved (`STANDING`) state allows the organization to formally request advance
+ * funding or proceed with cross-border shipping workflows. Over time, these approved records are
+ * tracked via a billing conversion status to ensure all preliminary estimates are ultimately realized
+ * as recognized revenue via a final Sales Invoice.
  *
  * @generated from service Scailo.ProformaInvoicesService
  */
@@ -13,7 +32,19 @@ export declare const ProformaInvoicesService: {
     readonly typeName: "Scailo.ProformaInvoicesService";
     readonly methods: {
         /**
-         * Create and send for verification
+         * Creates a new record and immediately moves it to the verification workflow.
+         *
+         * This method validates all required fields.
+         * The record is created with a `STANDARD_LIFECYCLE_STATUS.PREVERIFY` status.
+         *
+         * **Side Effects:**
+         * - Generates a unique system UUID.
+         * - Records an audit log for the "Create" action.
+         * - May trigger automated verification workflows.
+         *
+         * **Errors:**
+         * - `INVALID_ARGUMENT`: If validation rules fail (e.g., negative quantity, invalid timestamps).
+         * - `ALREADY_EXISTS`: If the `reference_id` is already taken.
          *
          * @generated from rpc Scailo.ProformaInvoicesService.Create
          */
@@ -219,7 +250,13 @@ export declare const ProformaInvoicesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Reopen
+         * Reopens a finalized or closed record for further modifications.
+         *
+         * **Status Transition:** -> `REVISION`
+         *
+         * **Side Effects:**
+         * - Unlocks the record to allow edits.
+         * - Logs the required user comment into the audit trail for compliance tracking.
          *
          * @generated from rpc Scailo.ProformaInvoicesService.Reopen
          */
@@ -241,7 +278,11 @@ export declare const ProformaInvoicesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Send Email
+         * Triggers an automated email notification related to the record.
+         *
+         * **Side Effects:**
+         * - Dispatches a structured email to the designated recipients based on the provided attributes.
+         * - Appends an entry to the system communication logs for auditing purposes.
          *
          * @generated from rpc Scailo.ProformaInvoicesService.SendEmail
          */
@@ -252,7 +293,32 @@ export declare const ProformaInvoicesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Autofill the proforma invoice
+         * Attaches a specified folder directly to a record without requiring a full revision workflow.
+         *
+         * This is a convenience API designed to bypass the traditional multi-step modification lifecycle
+         * (e.g., creating a revision, updating data, submitting for verification, and awaiting approval).
+         * It allows for the immediate, single-step association of a vault folder.
+         *
+         * **Side Effects & Lifecycle:**
+         * * The overall status of the record remains unchanged.
+         * * The record's modification timestamp is automatically updated to the current time.
+         * * An entry is appended to the record's audit log tracking this attachment.
+         *
+         * @generated from rpc Scailo.ProformaInvoicesService.AttachVaultFolder
+         */
+        readonly attachVaultFolder: {
+            readonly name: "AttachVaultFolder";
+            readonly I: typeof VaultFolderAttachRequest;
+            readonly O: typeof IdentifierResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Automatically populates a record with line items and configurations derived from its linked references.
+         *
+         * **Side Effects:**
+         * - Queries the target record (identified by its UUID) for any attached operational constraints or references.
+         * - Dynamically generates and attaches the corresponding line items to the record based on the sourced data, minimizing manual data entry.
+         * - Appends an audit trail entry tracking the execution of the autofill operation and the provided justification comment.
          *
          * @generated from rpc Scailo.ProformaInvoicesService.Autofill
          */
@@ -263,7 +329,16 @@ export declare const ProformaInvoicesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Amend the proforma invoice and send for revision
+         * Initiates a formal amendment process for a specific record, transitioning it into a structured revision workflow.
+         *
+         * This API is utilized when substantive modifications are required for an already finalized or approved record.
+         * Rather than mutating the active data directly, it explicitly triggers a compliance-driven revision cycle,
+         * ensuring that all proposed changes are tracked and undergo standard review and authorization procedures.
+         *
+         * **Side Effects & Lifecycle:**
+         * * The record's internal amendment count property is strictly incremented by 1.
+         * * The record is placed into a pending revision state, typically preserving the availability of the currently approved version until the amendment is finalized.
+         * * The optional user comment is permanently appended to the record's audit log as the formal justification for initiating the change.
          *
          * @generated from rpc Scailo.ProformaInvoicesService.Amend
          */
@@ -287,7 +362,12 @@ export declare const ProformaInvoicesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Add multiple items to a proforma invoice
+         * Appends a batch of estimated line items to an existing Proforma Invoice in a single transactional operation.
+         *
+         * **Side Effects:**
+         * - Maps multiple catalog families, estimated quantities, and anticipated pricing structures simultaneously.
+         * - Triggers a bulk recalculation of the proforma invoice's anticipated financial grand total.
+         * - Appends creation audit logs for all attached preliminary items.
          *
          * @generated from rpc Scailo.ProformaInvoicesService.AddMultipleProformaInvoiceItems
          */
@@ -298,7 +378,12 @@ export declare const ProformaInvoicesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Add an item to a proforma invoice
+         * Appends a single estimated line item to an existing Proforma Invoice.
+         *
+         * **Side Effects:**
+         * - Defines the specific family, mapped internal/client unit quantities, and anticipated commercial terms (price, tax) being estimated for the buyer.
+         * - Recomputes the parent proforma invoice's prospective grand total.
+         * - Appends an audit trail entry tracking the creation and user justification.
          *
          * @generated from rpc Scailo.ProformaInvoicesService.AddProformaInvoiceItem
          */
@@ -309,7 +394,13 @@ export declare const ProformaInvoicesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Modify an item in a proforma invoice
+         * Modifies the core transactional parameters of an existing estimated line item.
+         *
+         * **Side Effects:**
+         * - Overwrites anticipated quantities, proposed commercial terms (unit price, tax), and custom specifications to refine the estimate.
+         * - Triggers a recalculation of the parent proforma invoice's anticipated financial grand total.
+         * - May reset the item's approval status, requiring re-authorization by financial or sales leads.
+         * - Appends an audit trail entry tracking the modifications.
          *
          * @generated from rpc Scailo.ProformaInvoicesService.ModifyProformaInvoiceItem
          */
@@ -320,7 +411,12 @@ export declare const ProformaInvoicesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Update specifications of an item in a proforma invoice
+         * Updates strictly the custom textual specifications or notes associated with an estimated item.
+         *
+         * **Side Effects:**
+         * - Modifies descriptive text without impacting or triggering recalculations of the item's financial values.
+         * - Typically avoids resetting the approval workflow state, allowing for minor typographical corrections on the estimate.
+         * - Appends an audit trail entry tracking the text update.
          *
          * @generated from rpc Scailo.ProformaInvoicesService.UpdateProformaInvoiceItemSpecifications
          */
@@ -331,7 +427,11 @@ export declare const ProformaInvoicesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Approve an item in a proforma invoice
+         * Approves a pending estimated line item, finalizing its active status within the proforma invoice.
+         *
+         * **Side Effects:**
+         * - Activates the estimated item, validating its inclusion in the preliminary financial document presented to the buyer (e.g., for customs or advance payment).
+         * - Appends the required approval metadata, timestamp, and audit comment to the record's history.
          *
          * @generated from rpc Scailo.ProformaInvoicesService.ApproveProformaInvoiceItem
          */
@@ -342,7 +442,11 @@ export declare const ProformaInvoicesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Delete an item in a proforma invoice
+         * Permanently removes or deactivates an estimated line item from the proforma invoice.
+         *
+         * **Side Effects:**
+         * - Revokes the item from the estimate, subtracting its anticipated financial value from the grand total.
+         * - Logs the deletion justification comment into the system compliance log.
          *
          * @generated from rpc Scailo.ProformaInvoicesService.DeleteProformaInvoiceItem
          */
@@ -353,7 +457,11 @@ export declare const ProformaInvoicesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Reorder items in a proforma invoice
+         * Reorders the numerical sequence of estimated line items within the proforma invoice.
+         *
+         * **Side Effects:**
+         * - Mutates the display sequence (`sort_order`) of the specified items in bulk.
+         * - Directly dictates how the items are visually arranged on the generated PDF proforma document sent to the buyer.
          *
          * @generated from rpc Scailo.ProformaInvoicesService.ReorderProformaInvoiceItems
          */
@@ -364,7 +472,9 @@ export declare const ProformaInvoicesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View Proforma Invoice Item by ID
+         * Retrieves the complete details of a specific estimated line item by its internal sequence ID.
+         *
+         * This read-only operation fetches full metadata, approval histories, and calculated preliminary financial values.
          *
          * @generated from rpc Scailo.ProformaInvoicesService.ViewProformaInvoiceItemByID
          */
@@ -375,7 +485,9 @@ export declare const ProformaInvoicesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View approved proforma invoice items for given proforma invoice ID
+         * Lists all active, fully approved estimated line items mapped to a specific proforma invoice ID.
+         *
+         * This read-only query is optimized for rendering the finalized estimate summary on frontend interfaces and generating the formal PDF document.
          *
          * @generated from rpc Scailo.ProformaInvoicesService.ViewApprovedProformaInvoiceItems
          */
@@ -386,7 +498,9 @@ export declare const ProformaInvoicesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View unapproved proforma invoice items for given proforma invoice ID
+         * Lists pending or unapproved estimated line items mapped to a specific proforma invoice ID.
+         *
+         * This read-only query is utilized primarily by administrative dashboards to quickly identify proforma components awaiting internal review.
          *
          * @generated from rpc Scailo.ProformaInvoicesService.ViewUnapprovedProformaInvoiceItems
          */
@@ -397,7 +511,9 @@ export declare const ProformaInvoicesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View the history of the proforma invoice item
+         * Retrieves the historical audit trail and lifecycle changes of a specific estimated line item.
+         *
+         * This read-only operation aggregates the chronological evolution of the item, tracking how estimated quantities or prices were adjusted throughout the drafting phase.
          *
          * @generated from rpc Scailo.ProformaInvoicesService.ViewProformaInvoiceItemHistory
          */
@@ -408,7 +524,9 @@ export declare const ProformaInvoicesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View approved proforma invoice items for given proforma invoice ID with pagination
+         * Lists active, approved estimated line items using robust pagination controls.
+         *
+         * This read-only query is optimized for rendering massive proforma invoices in frontend data tables, supporting explicit windowing parameters.
          *
          * @generated from rpc Scailo.ProformaInvoicesService.ViewPaginatedApprovedProformaInvoiceItems
          */
@@ -419,7 +537,9 @@ export declare const ProformaInvoicesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View unapproved proforma invoice items for given proforma invoice ID with pagination
+         * Lists pending or unapproved estimated line items using robust pagination controls.
+         *
+         * This read-only query is optimized for administrative review dashboards handling high volumes of unapproved proforma components.
          *
          * @generated from rpc Scailo.ProformaInvoicesService.ViewPaginatedUnapprovedProformaInvoiceItems
          */
@@ -430,7 +550,9 @@ export declare const ProformaInvoicesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Search through proforma invoice items with pagination
+         * Searches through all estimated line items using advanced filters, status flags, fuzzy text matching, and pagination.
+         *
+         * This read-only query is the primary entry point for complex lookups across massive lists of estimated items.
          *
          * @generated from rpc Scailo.ProformaInvoicesService.SearchItemsWithPagination
          */
@@ -441,8 +563,9 @@ export declare const ProformaInvoicesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * CSV operations
-         * Download the CSV file with the associated line items. The same file could then be used to upload line items.
+         * Exports the current list of estimated line items for a specific proforma invoice into a downloadable CSV file.
+         *
+         * This read-only operation is used by sales or finance teams to review large estimates offline in spreadsheet software, or as a baseline to modify items locally before executing a bulk upload.
          *
          * @generated from rpc Scailo.ProformaInvoicesService.DownloadItemsAsCSV
          */
@@ -453,7 +576,9 @@ export declare const ProformaInvoicesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Download the CSV template that could be used to upload items
+         * Generates and downloads a blank, structurally compliant CSV template.
+         *
+         * This read-only operation provides clients with the exact column headers required to successfully perform a bulk line-item upload for a proforma invoice.
          *
          * @generated from rpc Scailo.ProformaInvoicesService.DownloadItemsTemplateAsCSV
          */
@@ -464,7 +589,12 @@ export declare const ProformaInvoicesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Upload items using a CSV file. This is an idempotent operation. All the existing items are deleted before adding the items from the file.
+         * Processes a bulk ingestion of estimated line items for a specific proforma invoice via a CSV file upload.
+         *
+         * **Side Effects:**
+         * - **CRITICAL:** This is an idempotent, destructive operation. It automatically deletes all existing line items currently mapped to the proforma invoice before applying the new items from the CSV.
+         * - Wipes the current active list and replaces it entirely with the parsed file contents.
+         * - Triggers a complete recalculation of the proforma invoice's anticipated financial totals and appends creation audit logs for all newly imported items.
          *
          * @generated from rpc Scailo.ProformaInvoicesService.UploadProformaInvoiceItems
          */
@@ -497,7 +627,12 @@ export declare const ProformaInvoicesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View by Reference ID (returns the latest record in case of duplicates)
+         * Retrieves a single record based on its user-defined, external reference ID.
+         *
+         * This read-only operation is utilized for targeted lookups using human-readable identifiers (e.g., "REF-2023-001") rather than internal system IDs or unpredictable UUIDs.
+         * Because external reference IDs might occasionally be duplicated across a tenant's dataset (due to legacy data imports, external CRM syncing overlaps, or manual entry overrides),
+         * this query guarantees a deterministic response. In the event of a collision, it automatically resolves the conflict by returning only the most recently created or modified record
+         * that matches the requested reference string.
          *
          * @generated from rpc Scailo.ProformaInvoicesService.ViewByReferenceID
          */
@@ -541,7 +676,11 @@ export declare const ProformaInvoicesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View the ancillary parameters (UUIDs of the internal references) by UUID
+         * Retrieves the supplementary, globally unique identifiers (UUIDs) of the foreign key entities associated with a specific Proforma Invoice.
+         *
+         * This read-only query acts as an architectural accelerator for frontend clients and external integrations. By instantly resolving internal
+         * integer IDs into their corresponding UUIDs (such as the parent Sales Order's UUID and the currency UUID,
+         * it enables seamless cross-module deep-linking and eliminates the need for secondary API lookups to traverse the commercial estimation hierarchy.
          *
          * @generated from rpc Scailo.ProformaInvoicesService.ViewAncillaryParametersByUUID
          */
@@ -585,7 +724,15 @@ export declare const ProformaInvoicesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View all the amendments made
+         * Retrieves the comprehensive, chronological history of formal amendments applied to a specific record.
+         *
+         * This read-only query exposes the complete audit trail of revision workflows that the entity has undergone.
+         * It is explicitly designed to support compliance checks, historical tracking, and administrative reviews by
+         * detailing exactly how and when a record evolved over its lifecycle.
+         *
+         * **Side Effects & Lifecycle:**
+         * * This is a strictly read-only operation; the underlying record and its current lifecycle state remain entirely unchanged.
+         * * Aggregates and returns a sequential log of amendment events, which typically include revision counts, initiation timestamps, and the justification comments provided when the amendments were triggered.
          *
          * @generated from rpc Scailo.ProformaInvoicesService.ViewAmendments
          */
@@ -596,7 +743,9 @@ export declare const ProformaInvoicesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View prospective families for the given proforma invoice
+         * Retrieves a list of eligible product families that can be added as preliminary line items to a specific proforma invoice.
+         *
+         * This read-only query evaluates the originating source document (e.g., the parent Sales Order) and returns only those items that still have pending, unestimated quantities. It is typically utilized to populate frontend dropdowns during the estimate drafting phase, ensuring users can only request advance payments or prepare customs declarations for valid, negotiated products.
          *
          * @generated from rpc Scailo.ProformaInvoicesService.ViewProspectiveFamilies
          */
@@ -607,7 +756,9 @@ export declare const ProformaInvoicesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Filter prospective families for the record represented by the given UUID identifier
+         * Searches and filters the list of eligible, unestimated product families for a specific proforma invoice using advanced criteria.
+         *
+         * This read-only query provides the same business value as `ViewProspectiveFamilies` but includes robust pagination and filtering. It is optimized for scenarios where the source document contains hundreds of line items, allowing sales or finance users to quickly locate specific unbilled products to add to the current preliminary estimate.
          *
          * @generated from rpc Scailo.ProformaInvoicesService.FilterProspectiveFamilies
          */
@@ -618,7 +769,9 @@ export declare const ProformaInvoicesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View prospective proforma invoice item info for the given family ID and proforma invoice ID
+         * Generates a pre-populated item creation payload for a specific eligible family.
+         *
+         * This read-only operation acts as a templating engine. When a user selects a product to estimate, this endpoint fetches the negotiated unit prices, default tax brackets, and remaining eligible quantities directly from the source document. It returns a ready-to-submit payload that minimizes manual frontend data entry and enforces financial consistency between the original contract and the preliminary proforma invoice.
          *
          * @generated from rpc Scailo.ProformaInvoicesService.ViewProspectiveProformaInvoiceItem
          */
@@ -629,7 +782,14 @@ export declare const ProformaInvoicesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Checks if the record is downloadable (checks if the custom download function has been implemented)
+         * Evaluates the download eligibility of a specific record using its universally unique identifier (UUID).
+         *
+         * This endpoint serves as a lightweight precursor to the actual file retrieval process. It verifies
+         * whether the target record supports file extraction by checking if a custom download function has
+         * been implemented for the underlying asset. By utilizing this check, client applications can
+         * preemptively determine file availability and dynamically adjust user interface elements
+         * (e.g., enabling or disabling a download button) without initiating a full, potentially heavy
+         * download request.
          *
          * @generated from rpc Scailo.ProformaInvoicesService.IsDownloadable
          */
@@ -640,7 +800,13 @@ export declare const ProformaInvoicesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Download proforma invoice with the given IdentifierUUID (can be used to allow public downloads)
+         * Retrieves the underlying file or document payload associated with a specific entity
+         * using its universally unique identifier (UUID).
+         *
+         * This endpoint is designed for versatile resource retrieval and is commonly utilized
+         * to facilitate direct, secure, or public-facing downloads. By relying on an obscure
+         * UUID rather than predictable internal sequential IDs, it ensures that external
+         * download links remain unguessable and safe for broad distribution.
          *
          * @generated from rpc Scailo.ProformaInvoicesService.DownloadByUUID
          */
@@ -651,7 +817,9 @@ export declare const ProformaInvoicesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View the associated sales invoice information that is denoted by the identifier in the response for the proforma invoice that is denoted by the identifier UUID in the request
+         * Retrieves the internal system identifier of the finalized Sales Invoice that was generated from this specific Proforma Invoice.
+         *
+         * This read-only query establishes the traceability link between the preliminary estimate and the final legally binding bill. It is utilized by frontend interfaces to provide users with seamless, one-click navigation from an approved proforma document directly to its corresponding realized sales invoice.
          *
          * @generated from rpc Scailo.ProformaInvoicesService.ViewAssociatedSalesInvoiceInfo
          */
@@ -662,7 +830,9 @@ export declare const ProformaInvoicesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Checks if the Goods Dispatch has been billed
+         * Evaluates whether the preliminary Proforma Invoice has been formally converted into a finalized Sales Invoice.
+         *
+         * This read-only query returns a strict boolean flag (`true` if billed, `false` if unbilled). It is widely used by client applications to dynamically update UI status badges or to lock editing capabilities on the proforma document once the estimate has been successfully realized as a formal financial obligation.
          *
          * @generated from rpc Scailo.ProformaInvoicesService.IsBilled
          */
@@ -673,7 +843,9 @@ export declare const ProformaInvoicesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View already added quantities
+         * Calculates the cumulative quantity of a specific family that has already been included across all preliminary proforma invoices linked to a given source document.
+         *
+         * This read-only query acts as a critical financial safeguard during the pre-billing drafting phase. By revealing exactly how much of a product has already been estimated, it prevents frontend clients and downstream APIs from accidentally requesting advance payments or generating customs declarations for more items than were originally constrained in the parent Sales Order.
          *
          * @generated from rpc Scailo.ProformaInvoicesService.ViewAddedFamilyQuantityForSource
          */
@@ -728,7 +900,9 @@ export declare const ProformaInvoicesService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Returns the sum of the total value of all the records that match the given criteria
+         * Calculates and returns the aggregated anticipated financial grand total (accrued estimated value) across all Proforma Invoices that match the specified filter criteria.
+         *
+         * This read-only analytical query is optimized for high-level financial forecasting, sales pipeline reporting, and dashboard metrics. It empowers client applications to dynamically compute potential incoming advance payments, evaluate pending pipeline totals, or summarize anticipated revenue over designated time periods without the overhead of fetching and parsing massive lists of individual preliminary records.
          *
          * @generated from rpc Scailo.ProformaInvoicesService.AccruedValue
          */

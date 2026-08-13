@@ -101,123 +101,245 @@ Message\&lt;UsersServiceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/users.scailo_pb.ts:408](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L408)
+[src/users.scailo_pb.ts:644](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L644)
 
 ## Properties
 
 ### address
 
-• **address**: `string` = `""`
+• `Optional` **address**: `string`
 
-[Optional] Primary residential or mailing address.
+**`Optional`**
+
+**`Description`**
+
+Primary street details, building number, or geographic line matching residential or official mailing location records.
+
+**`Example`**
+
+```ts
+"123 Business Park Drive, Suite 400"
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters.
 
 **`Generated`**
 
-from field: string address = 32;
+from field: optional string address = 32;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:304](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L304)
+[src/users.scailo_pb.ts:420](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L420)
 
 ___
 
 ### attendanceUomId
 
-• **attendanceUomId**: `bigint` = `protoInt64.zero`
+• `Optional` **attendanceUomId**: `bigint`
 
-[Optional] Unit of Measure (UOM) for tracking attendance duration.
+**`Optional`**
+
+**`Description`**
+
+The internal Unit of Measure (UOM) tracking ID used to evaluate time structures, shifts, or active work hour configurations.
+
+**`Example`**
+
+```ts
+12
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative 64-bit integer. Defaults to 0 if unallocated.
 
 **`Generated`**
 
-from field: uint64 attendance_uom_id = 51;
+from field: optional uint64 attendance_uom_id = 51;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:355](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L355)
+[src/users.scailo_pb.ts:532](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L532)
 
 ___
 
 ### basicPayAmount
 
-• **basicPayAmount**: `bigint` = `protoInt64.zero`
+• `Optional` **basicPayAmount**: `bigint`
 
-[Optional] The base salary amount in the **smallest currency unit**.
-For USD, 500000 represents $5,000.00.
+**`Optional`**
+
+**`Description`**
+
+The raw volume integer representing basic salary compensation. **Critical:** Value must be defined in the minor unit of the currency.
+
+**`Example`**
+
+```ts
+500000
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative 64-bit integer. For example, a value of 500000 in USD represents $5,000.00.
 
 **`Generated`**
 
-from field: uint64 basic_pay_amount = 56;
+from field: optional uint64 basic_pay_amount = 56;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:391](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L391)
+[src/users.scailo_pb.ts:612](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L612)
 
 ___
 
 ### basicPayUomId
 
-• **basicPayUomId**: `bigint` = `protoInt64.zero`
+• `Optional` **basicPayUomId**: `bigint`
 
-[Optional] The UOM ID for the basic pay (e.g., Per Month, Per Year).
+**`Optional`**
+
+**`Description`**
+
+The internal Unit of Measure (UOM) tracking ID applied to contextualize basic pay duration distributions (e.g., Per Month, Per Annum).
+
+**`Example`**
+
+```ts
+701
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative 64-bit integer. Defaults to 0 if unassigned.
 
 **`Generated`**
 
-from field: uint64 basic_pay_uom_id = 57;
+from field: optional uint64 basic_pay_uom_id = 57;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:398](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L398)
+[src/users.scailo_pb.ts:628](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L628)
 
 ___
 
 ### birthday
 
-• **birthday**: `string` = `""`
+• `Optional` **birthday**: `string`
 
-[Optional] The user's date of birth.
-**Format:** `Day Month Date Year`
-Example: "Mon Jan 02 2006"
+**`Optional`**
+
+**`Description`**
+
+The calendar date of birth of the user, primarily captured for verification workflows.
+
+**`Example`**
+
+```ts
+"Mon Jan 02 2006"
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+Must follow the specific string syntax format: `Day Month Date Year`.
 
 **`Generated`**
 
-from field: string birthday = 30;
+from field: optional string birthday = 30;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:288](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L288)
+[src/users.scailo_pb.ts:388](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L388)
 
 ___
 
 ### bloodGroup
 
-• **bloodGroup**: `string` = `""`
+• `Optional` **bloodGroup**: `string`
 
-[Optional] The user's blood group.
-Example: "O+", "A-", "B+"
+**`Optional`**
+
+**`Description`**
+
+Medical identifier indicating the user's legal ABO blood group for emergency or corporate wellness logs.
+
+**`Example`**
+
+```ts
+"O+"
+```
+
+**`Regex`**
+
+^(A|B|AB|O)[+-]$
+
+**`Format`**
+
+Alphanumeric value containing classification type followed by rh factor sign.
 
 **`Generated`**
 
-from field: string blood_group = 37;
+from field: optional string blood_group = 37;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:341](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L341)
+[src/users.scailo_pb.ts:500](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L500)
 
 ___
 
 ### city
 
-• **city**: `string` = `""`
+• `Optional` **city**: `string`
 
-[Optional] City of residence.
+**`Optional`**
+
+**`Description`**
+
+The explicit city name corresponding to the user's primary residence or workplace assignment.
+
+**`Example`**
+
+```ts
+"Austin"
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+String value, can be empty.
 
 **`Generated`**
 
-from field: string city = 33;
+from field: optional string city = 33;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:311](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L311)
+[src/users.scailo_pb.ts:436](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L436)
 
 ___
 
@@ -225,8 +347,25 @@ ___
 
 • **code**: `string` = `""`
 
-[Required] The unique employee or payroll code.
-Used for cross-referencing with external HR or ERP systems.
+**`Mandatory`**
+
+**`Description`**
+
+The unique internal enterprise code assigned to the individual, utilized for cross-referencing external platforms.
+
+**`Example`**
+
+```ts
+"EMP-2026-992"
+```
+
+**`Regex`**
+
+.+
+
+**`Format`**
+
+Must be a non-empty string.
 
 **`Generated`**
 
@@ -234,40 +373,75 @@ from field: string code = 11;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:227](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L227)
+[src/users.scailo_pb.ts:260](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L260)
 
 ___
 
 ### country
 
-• **country**: `string` = `""`
+• `Optional` **country**: `string`
 
-[Optional] Country of residence (ISO 3166-1 alpha-2 recommended).
-Example: "US", "GB", "IN"
+**`Optional`**
+
+**`Description`**
+
+The country code corresponding to the user's operational location.
+
+**`Example`**
+
+```ts
+"US"
+```
+
+**`Regex`**
+
+^[A-Z]{2}$
+
+**`Format`**
+
+Strict ISO 3166-1 alpha-2 standard country codes are highly recommended.
 
 **`Generated`**
 
-from field: string country = 35;
+from field: optional string country = 35;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:326](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L326)
+[src/users.scailo_pb.ts:468](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L468)
 
 ___
 
 ### departmentId
 
-• **departmentId**: `bigint` = `protoInt64.zero`
+• `Optional` **departmentId**: `bigint`
 
-[Optional] The department ID. Set to 0 for unassigned/general.
+**`Optional`**
+
+**`Description`**
+
+The unique internal sequence identifier of the corporate Department or business unit to which the user is structurally assigned.
+
+**`Example`**
+
+```ts
+304
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative 64-bit integer. Defaults to 0 for general or unassigned staff vectors.
 
 **`Generated`**
 
-from field: uint64 department_id = 52;
+from field: optional uint64 department_id = 52;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:362](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L362)
+[src/users.scailo_pb.ts:548](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L548)
 
 ___
 
@@ -275,8 +449,25 @@ ___
 
 • **email**: `string` = `""`
 
-[Required] The primary email address for system notifications.
-Example: "jane.doe@example.com"
+**`Mandatory`**
+
+**`Description`**
+
+The primary communication or routing email address where structural system notifications are dispatched.
+
+**`Example`**
+
+```ts
+"jane.doe@example.com"
+```
+
+**`Regex`**
+
+^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
+
+**`Format`**
+
+Must be a structurally sound and valid email address string.
 
 **`Generated`**
 
@@ -284,13 +475,13 @@ from field: string email = 16;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:264](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L264)
+[src/users.scailo_pb.ts:340](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L340)
 
 ___
 
 ### entityUuid
 
-• **entityUuid**: `string` = `""`
+• `Optional` **entityUuid**: `string`
 
 **`Optional`**
 
@@ -314,11 +505,11 @@ If provided, must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
-from field: string entity_uuid = 1;
+from field: optional string entity_uuid = 1;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:180](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L180)
+[src/users.scailo_pb.ts:184](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L184)
 
 ___
 
@@ -326,8 +517,21 @@ ___
 
 • **formData**: [`FormFieldDatumCreateRequest`](FormFieldDatumCreateRequest.md)[] = `[]`
 
-[Optional] A collection of custom field data.
-Use this for any organization-specific dynamic attributes.
+**`Optional`**
+
+**`Description`**
+
+A collection of dynamic form fields for organization-specific data.
+
+**`Example`**
+
+```ts
+[]
+```
+
+**`Format`**
+
+An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
 
 **`Generated`**
 
@@ -335,41 +539,75 @@ from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 70;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:406](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L406)
+[src/users.scailo_pb.ts:642](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L642)
 
 ___
 
 ### joiningDate
 
-• **joiningDate**: `string` = `""`
+• `Optional` **joiningDate**: `string`
 
-[Optional] The official start date for the user.
-**Format:** `Day Month Date Year`
-Example: "Wed Oct 25 2023"
+**`Optional`**
+
+**`Description`**
+
+The formal start or contract initialization date marking when the individual officially joins the team roster.
+
+**`Example`**
+
+```ts
+"Wed Oct 25 2023"
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+Must follow the specific string syntax format: `Day Month Date Year`.
 
 **`Generated`**
 
-from field: string joining_date = 31;
+from field: optional string joining_date = 31;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:297](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L297)
+[src/users.scailo_pb.ts:404](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L404)
 
 ___
 
 ### mobileRoleId
 
-• **mobileRoleId**: `bigint` = `protoInt64.zero`
+• `Optional` **mobileRoleId**: `bigint`
 
-[Optional] The secondary Role ID for mobile application access.
+**`Optional`**
+
+**`Description`**
+
+The unique internal identifier of a secondary security role tailored exclusively for mobile application endpoints.
+
+**`Example`**
+
+```ts
+2048
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative 64-bit integer. Defaults to 0 if unassigned.
 
 **`Generated`**
 
-from field: uint64 mobile_role_id = 15;
+from field: optional uint64 mobile_role_id = 15;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:256](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L256)
+[src/users.scailo_pb.ts:324](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L324)
 
 ___
 
@@ -377,7 +615,25 @@ ___
 
 • **name**: `string` = `""`
 
-[Required] The full legal name of the user.
+**`Mandatory`**
+
+**`Description`**
+
+The official or full legal name of the user as recognized on statutory documentation.
+
+**`Example`**
+
+```ts
+"Jane Doe"
+```
+
+**`Regex`**
+
+.+
+
+**`Format`**
+
+Must be a non-empty string.
 
 **`Generated`**
 
@@ -385,55 +641,109 @@ from field: string name = 12;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:234](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L234)
+[src/users.scailo_pb.ts:276](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L276)
 
 ___
 
 ### payrollCurrencyId
 
-• **payrollCurrencyId**: `bigint` = `protoInt64.zero`
+• `Optional` **payrollCurrencyId**: `bigint`
 
-[Optional] The ID of the currency for the user's base salary.
+**`Optional`**
+
+**`Description`**
+
+The internal identifier matching the currency context in which the user's base salary and line compensation amounts are denominated.
+
+**`Example`**
+
+```ts
+3
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative 64-bit integer. Defaults to 0 if unassigned.
 
 **`Generated`**
 
-from field: uint64 payroll_currency_id = 55;
+from field: optional uint64 payroll_currency_id = 55;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:383](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L383)
+[src/users.scailo_pb.ts:596](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L596)
 
 ___
 
 ### payrollGroupId
 
-• **payrollGroupId**: `bigint` = `protoInt64.zero`
+• `Optional` **payrollGroupId**: `bigint`
 
-[Optional] The payroll group used for salary batching.
+**`Optional`**
+
+**`Description`**
+
+The unique internal identifier of the designated payroll distribution group used for localized batch processing and compensation disbursement.
+
+**`Example`**
+
+```ts
+88
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative 64-bit integer. Defaults to 0 if unassigned.
 
 **`Generated`**
 
-from field: uint64 payroll_group_id = 53;
+from field: optional uint64 payroll_group_id = 53;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:369](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L369)
+[src/users.scailo_pb.ts:564](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L564)
 
 ___
 
 ### payrollTaxGroupId
 
-• **payrollTaxGroupId**: `bigint` = `protoInt64.zero`
+• `Optional` **payrollTaxGroupId**: `bigint`
 
-[Optional] The tax group used for statutory deductions.
+**`Optional`**
+
+**`Description`**
+
+The unique internal identifier of the tax matrix or statutory configuration rule governing payroll deductions.
+
+**`Example`**
+
+```ts
+19
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative 64-bit integer. Defaults to 0 if no deductions are assigned.
 
 **`Generated`**
 
-from field: uint64 payroll_tax_group_id = 54;
+from field: optional uint64 payroll_tax_group_id = 54;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:376](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L376)
+[src/users.scailo_pb.ts:580](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L580)
 
 ___
 
@@ -441,8 +751,25 @@ ___
 
 • **phone**: `string` = `""`
 
-[Required] The primary contact number (e.g., Mobile or Landline).
-Recommended format: E.164 (e.g., "+12125550123").
+**`Mandatory`**
+
+**`Description`**
+
+The primary telephone contact or mobile line number assigned to the account profile.
+
+**`Example`**
+
+```ts
+"+12125550123"
+```
+
+**`Regex`**
+
+.+
+
+**`Format`**
+
+Non-empty string; adoption of standard international E.164 formats is highly recommended.
 
 **`Generated`**
 
@@ -450,23 +777,41 @@ from field: string phone = 18;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:279](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L279)
+[src/users.scailo_pb.ts:372](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L372)
 
 ___
 
 ### pinCode
 
-• **pinCode**: `string` = `""`
+• `Optional` **pinCode**: `string`
 
-[Optional] Postal or ZIP code.
+**`Optional`**
+
+**`Description`**
+
+The standardized postal index number or geographic ZIP routing code.
+
+**`Example`**
+
+```ts
+"78701"
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+String value, can be empty.
 
 **`Generated`**
 
-from field: string pin_code = 36;
+from field: optional string pin_code = 36;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:333](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L333)
+[src/users.scailo_pb.ts:484](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L484)
 
 ___
 
@@ -474,8 +819,25 @@ ___
 
 • **plainTextPassword**: `string` = `""`
 
-[Required] The plain text password for the account.
-This value is hashed before storage.
+**`Mandatory`**
+
+**`Description`**
+
+The raw plain text password string supplied for account registration. This token is cryptographically hashed before commitment to persistent storage.
+
+**`Example`**
+
+```ts
+"S3cureP@ssword123!"
+```
+
+**`Regex`**
+
+.+
+
+**`Format`**
+
+Must be a non-empty string meeting organizational length and entropy guidelines.
 
 **`Generated`**
 
@@ -483,7 +845,7 @@ from field: string plain_text_password = 13;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:242](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L242)
+[src/users.scailo_pb.ts:292](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L292)
 
 ___
 
@@ -491,7 +853,25 @@ ___
 
 • **roleId**: `bigint` = `protoInt64.zero`
 
-[Required] The primary security Role ID (System/Web access).
+**`Mandatory`**
+
+**`Description`**
+
+The unique internal identifier of the primary web application access or RBAC security role.
+
+**`Example`**
+
+```ts
+1024
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative 64-bit integer greater than zero.
 
 **`Generated`**
 
@@ -499,56 +879,109 @@ from field: uint64 role_id = 14;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:249](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L249)
+[src/users.scailo_pb.ts:308](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L308)
 
 ___
 
 ### shiftGroupId
 
-• **shiftGroupId**: `bigint` = `protoInt64.zero`
+• `Optional` **shiftGroupId**: `bigint`
 
-[Optional] Assigned shift group for attendance scheduling.
+**`Optional`**
+
+**`Description`**
+
+The unique internal identifier of the operational work shift group mapped to this account profile for scheduling and timecard verification.
+
+**`Example`**
+
+```ts
+45
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative 64-bit integer. Defaults to 0 if unallocated.
 
 **`Generated`**
 
-from field: uint64 shift_group_id = 50;
+from field: optional uint64 shift_group_id = 50;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:348](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L348)
+[src/users.scailo_pb.ts:516](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L516)
 
 ___
 
 ### state
 
-• **state**: `string` = `""`
+• `Optional` **state**: `string`
 
-[Optional] State, Province, or Region of residence.
+**`Optional`**
+
+**`Description`**
+
+The administrative territory, province, state, or regional zone of residence.
+
+**`Example`**
+
+```ts
+"Texas"
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+String value, can be empty.
 
 **`Generated`**
 
-from field: string state = 34;
+from field: optional string state = 34;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:318](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L318)
+[src/users.scailo_pb.ts:452](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L452)
 
 ___
 
 ### userComment
 
-• **userComment**: `string` = `""`
+• `Optional` **userComment**: `string`
 
-[Optional] Internal notes or audit comments for this creation event.
-Maximum 500 characters.
+**`Optional`**
+
+**`Description`**
+
+Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+
+**`Example`**
+
+```ts
+"This is a comment for audit purposes."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
-from field: string user_comment = 2;
+from field: optional string user_comment = 2;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:188](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L188)
+[src/users.scailo_pb.ts:200](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L200)
 
 ___
 
@@ -556,7 +989,17 @@ ___
 
 • **userType**: [`USER_TYPE`](../enums/USER_TYPE.md) = `USER_TYPE.USER_TYPE_ANY_UNSPECIFIED`
 
-[Required] The classification of the user (e.g., CLIENT, EMPLOYEE, VENDOR).
+**`Mandatory`**
+
+**`Description`**
+
+The categorical classification of the user entity determining their system scope and behavioral rules.
+
+**`Example`**
+
+```ts
+USER_TYPE_EMPLOYEE
+```
 
 **`Generated`**
 
@@ -564,7 +1007,7 @@ from field: Scailo.USER_TYPE user_type = 7;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:195](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L195)
+[src/users.scailo_pb.ts:212](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L212)
 
 ___
 
@@ -572,8 +1015,25 @@ ___
 
 • **username**: `string` = `""`
 
-[Required] The unique login identifier.
-Must be at least 1 character and unique across the entity.
+**`Mandatory`**
+
+**`Description`**
+
+The unique system-level login alias used by the actor to authenticate against the platform.
+
+**`Example`**
+
+```ts
+"jane.doe"
+```
+
+**`Regex`**
+
+.+
+
+**`Format`**
+
+Must be a non-empty string and completely unique across the given business entity space.
 
 **`Generated`**
 
@@ -581,13 +1041,13 @@ from field: string username = 10;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:219](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L219)
+[src/users.scailo_pb.ts:244](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L244)
 
 ___
 
 ### vaultFolderId
 
-• **vaultFolderId**: `bigint` = `protoInt64.zero`
+• `Optional` **vaultFolderId**: `bigint`
 
 **`Optional`**
 
@@ -611,27 +1071,45 @@ Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 vault_folder_id = 9;
+from field: optional uint64 vault_folder_id = 9;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:211](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L211)
+[src/users.scailo_pb.ts:228](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L228)
 
 ___
 
 ### workEmail
 
-• **workEmail**: `string` = `""`
+• `Optional` **workEmail**: `string`
 
-[Optional] The secondary/corporate work email address.
+**`Optional`**
+
+**`Description`**
+
+A secondary, fallback, or corporate work email address for overlapping communication loops.
+
+**`Example`**
+
+```ts
+"j.doe@corporate-hub.com"
+```
+
+**`Regex`**
+
+^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
+
+**`Format`**
+
+If provided, must be a valid email address string.
 
 **`Generated`**
 
-from field: string work_email = 17;
+from field: optional string work_email = 17;
 
 #### Defined in
 
-[src/users.scailo_pb.ts:271](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L271)
+[src/users.scailo_pb.ts:356](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L356)
 
 ___
 
@@ -641,7 +1119,7 @@ ___
 
 #### Defined in
 
-[src/users.scailo_pb.ts:415](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L415)
+[src/users.scailo_pb.ts:651](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L651)
 
 ___
 
@@ -651,7 +1129,7 @@ ___
 
 #### Defined in
 
-[src/users.scailo_pb.ts:413](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L413)
+[src/users.scailo_pb.ts:649](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L649)
 
 ___
 
@@ -661,7 +1139,7 @@ ___
 
 #### Defined in
 
-[src/users.scailo_pb.ts:414](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L414)
+[src/users.scailo_pb.ts:650](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L650)
 
 ## Methods
 
@@ -949,7 +1427,7 @@ ___
 
 #### Defined in
 
-[src/users.scailo_pb.ts:460](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L460)
+[src/users.scailo_pb.ts:696](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L696)
 
 ___
 
@@ -970,7 +1448,7 @@ ___
 
 #### Defined in
 
-[src/users.scailo_pb.ts:448](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L448)
+[src/users.scailo_pb.ts:684](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L684)
 
 ___
 
@@ -991,7 +1469,7 @@ ___
 
 #### Defined in
 
-[src/users.scailo_pb.ts:452](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L452)
+[src/users.scailo_pb.ts:688](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L688)
 
 ___
 
@@ -1012,4 +1490,4 @@ ___
 
 #### Defined in
 
-[src/users.scailo_pb.ts:456](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/users.scailo_pb.ts#L456)
+[src/users.scailo_pb.ts:692](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/users.scailo_pb.ts#L692)

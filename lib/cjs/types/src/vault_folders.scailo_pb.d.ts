@@ -19,7 +19,16 @@ export declare class VaultFolderAddRequest extends Message<VaultFolderAddRequest
      */
     entityUuid: string;
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 2;
      */
@@ -329,5 +338,48 @@ export declare class VaultFolderDownload extends Message<VaultFolderDownload> {
     static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): VaultFolderDownload;
     static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): VaultFolderDownload;
     static equals(a: VaultFolderDownload | PlainMessage<VaultFolderDownload> | undefined, b: VaultFolderDownload | PlainMessage<VaultFolderDownload> | undefined): boolean;
+}
+/**
+ *
+ * Describes the message that allows a folder to be attached to a resource
+ *
+ * @generated from message Scailo.VaultFolderAttachRequest
+ */
+export declare class VaultFolderAttachRequest extends Message<VaultFolderAttachRequest> {
+    /**
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
+     *
+     * @generated from field: string user_comment = 2;
+     */
+    userComment: string;
+    /**
+     * The UUID of the folder that needs to be attached
+     *
+     * @generated from field: string folder_uuid = 10;
+     */
+    folderUuid: string;
+    /**
+     * The UUID of the resource to which the folder is attached
+     *
+     * @generated from field: string resource_uuid = 20;
+     */
+    resourceUuid: string;
+    constructor(data?: PartialMessage<VaultFolderAttachRequest>);
+    static readonly runtime: typeof proto3;
+    static readonly typeName = "Scailo.VaultFolderAttachRequest";
+    static readonly fields: FieldList;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): VaultFolderAttachRequest;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): VaultFolderAttachRequest;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): VaultFolderAttachRequest;
+    static equals(a: VaultFolderAttachRequest | PlainMessage<VaultFolderAttachRequest> | undefined, b: VaultFolderAttachRequest | PlainMessage<VaultFolderAttachRequest> | undefined): boolean;
 }
 //# sourceMappingURL=vault_folders.scailo_pb.d.ts.map

@@ -6,6 +6,7 @@
 import { EquationFamily, EquationFamilyItem, EquationFamilyItemHistoryRequest, EquationFamilyItemsSearchRequest, EquationsFamiliesItemsList, EquationsFamiliesList, EquationsFamiliesServiceCountReq, EquationsFamiliesServiceCreateRequest, EquationsFamiliesServiceFilterReq, EquationsFamiliesServiceItemCreateRequest, EquationsFamiliesServiceItemUpdateRequest, EquationsFamiliesServicePaginatedItemsResponse, EquationsFamiliesServicePaginationReq, EquationsFamiliesServicePaginationResponse, EquationsFamiliesServiceSearchAllReq, EquationsFamiliesServiceUpdateRequest } from "./equations_families.scailo_pb.js";
 import { ActiveStatus, BooleanResponse, CloneRequest, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithSearchKey, IdentifierWithUserComment, ReorderItemsRequest, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
+import { VaultFolderAttachRequest } from "./vault_folders.scailo_pb.js";
 import { MagicLink, MagicLinksServiceCreateRequestForSpecificResource } from "./magic_links.scailo_pb.js";
 import { FamiliesList, FilterFamiliesReqForIdentifier } from "./families.scailo_pb.js";
 
@@ -225,7 +226,13 @@ export const EquationsFamiliesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Reopen
+     * Reopens a finalized or closed record for further modifications.
+     *
+     * **Status Transition:** -> `REVISION`
+     *
+     * **Side Effects:**
+     * - Unlocks the record to allow edits.
+     * - Logs the required user comment into the audit trail for compliance tracking.
      *
      * @generated from rpc Scailo.EquationsFamiliesService.Reopen
      */
@@ -250,6 +257,26 @@ export const EquationsFamiliesService = {
       kind: MethodKind.Unary,
     },
     /**
+     * Attaches a specified folder directly to a record without requiring a full revision workflow.
+     *
+     * This is a convenience API designed to bypass the traditional multi-step modification lifecycle
+     * (e.g., creating a revision, updating data, submitting for verification, and awaiting approval).
+     * It allows for the immediate, single-step association of a vault folder.
+     *
+     * **Side Effects & Lifecycle:**
+     * * The overall status of the record remains unchanged.
+     * * The record's modification timestamp is automatically updated to the current time.
+     * * An entry is appended to the record's audit log tracking this attachment.
+     *
+     * @generated from rpc Scailo.EquationsFamiliesService.AttachVaultFolder
+     */
+    attachVaultFolder: {
+      name: "AttachVaultFolder",
+      I: VaultFolderAttachRequest,
+      O: IdentifierResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
      * Generates a magic link for temporary, authenticated access to the resource.
      *
      * This enables non-system users (or users without active sessions) to view specific details.
@@ -263,7 +290,12 @@ export const EquationsFamiliesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Clone equation from an existing equation (denoted by the identifier)
+     * Initiates the creation of a new record by duplicating the structural properties of an existing record.
+     *
+     * **Side Effects:**
+     * - Provisions a new record populated with the metadata and configurations of the source record.
+     * - Does not clone operational transactions or historical logs of the source.
+     * - Appends an audit trail entry tracking the cloning operation and justification.
      *
      * @generated from rpc Scailo.EquationsFamiliesService.Clone
      */
@@ -594,7 +626,14 @@ export const EquationsFamiliesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Checks if the record is downloadable (checks if the custom download function has been implemented)
+     * Evaluates the download eligibility of a specific record using its universally unique identifier (UUID).
+     *
+     * This endpoint serves as a lightweight precursor to the actual file retrieval process. It verifies
+     * whether the target record supports file extraction by checking if a custom download function has
+     * been implemented for the underlying asset. By utilizing this check, client applications can
+     * preemptively determine file availability and dynamically adjust user interface elements
+     * (e.g., enabling or disabling a download button) without initiating a full, potentially heavy
+     * download request.
      *
      * @generated from rpc Scailo.EquationsFamiliesService.IsDownloadable
      */
@@ -605,7 +644,13 @@ export const EquationsFamiliesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Download equation with the given IdentifierUUID
+     * Retrieves the underlying file or document payload associated with a specific entity
+     * using its universally unique identifier (UUID).
+     *
+     * This endpoint is designed for versatile resource retrieval and is commonly utilized
+     * to facilitate direct, secure, or public-facing downloads. By relying on an obscure
+     * UUID rather than predictable internal sequential IDs, it ensures that external
+     * download links remain unguessable and safe for broad distribution.
      *
      * @generated from rpc Scailo.EquationsFamiliesService.DownloadByUUID
      */

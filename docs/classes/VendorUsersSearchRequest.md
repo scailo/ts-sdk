@@ -2,7 +2,8 @@
 
 # Class: VendorUsersSearchRequest
 
-Describes the request payload to search vendor users
+Request payload structure used to search and filter Vendor User records.
+Supports pagination controls, tenancy isolation, status grouping, and text-based matching.
 
 **`Generated`**
 
@@ -74,23 +75,33 @@ Message\&lt;VendorUsersSearchRequest\&gt;.constructor
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2922](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L2922)
+[src/vendors.scailo_pb.ts:3675](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L3675)
 
 ## Properties
 
 ### associateId
 
-• **associateId**: `bigint` = `protoInt64.zero`
+• `Optional` **associateId**: `bigint`
 
-Stores an optional associate ID
+**`Optional`**
+
+**`Description`**
+
+Filter by a specific associate internal ID.
+
+**`Example`**
+
+```ts
+9012
+```
 
 **`Generated`**
 
-from field: uint64 associate_id = 12;
+from field: optional uint64 associate_id = 12;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2913](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L2913)
+[src/vendors.scailo_pb.ts:3657](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L3657)
 
 ___
 
@@ -98,7 +109,25 @@ ___
 
 • **count**: `bigint` = `protoInt64.zero`
 
-The number of records that need to be sent in the response. Returns all records if it is set to -1
+**`Mandatory`**
+
+**`Description`**
+
+Number of records to fetch. **Critical:** Use `-1` to retrieve all records. A value of `0` will return no results. Default is `0`.
+
+**`Example`**
+
+```ts
+100
+```
+
+**`Regex`**
+
+^(?:-1|0|[1-9][0-9]*)$
+
+**`Format`**
+
+Must be -1 or any non-negative integer (>= -1).
 
 **`Generated`**
 
@@ -106,13 +135,13 @@ from field: int64 count = 2;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2862](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L2862)
+[src/vendors.scailo_pb.ts:3577](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L3577)
 
 ___
 
 ### entityUuid
 
-• **entityUuid**: `string` = `""`
+• `Optional` **entityUuid**: `string`
 
 **`Optional`**
 
@@ -136,17 +165,17 @@ If provided, must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
-from field: string entity_uuid = 6;
+from field: optional string entity_uuid = 6;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2885](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L2885)
+[src/vendors.scailo_pb.ts:3609](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L3609)
 
 ___
 
 ### isActive
 
-• **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md) = `BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED`
+• `Optional` **isActive**: [`BOOL_FILTER`](../enums/BOOL_FILTER.md)
 
 **`Optional`**
 
@@ -162,91 +191,157 @@ ANY
 
 **`Generated`**
 
-from field: Scailo.BOOL_FILTER is_active = 1;
+from field: optional Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2855](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L2855)
+[src/vendors.scailo_pb.ts:3561](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L3561)
 
 ___
 
 ### offset
 
-• **offset**: `bigint` = `protoInt64.zero`
+• `Optional` **offset**: `bigint`
 
-The number that need to be offset by before fetching the records
+**`Optional`**
+
+**`Description`**
+
+Number of records to skip (offset) for pagination.
+
+**`Example`**
+
+```ts
+0
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
-from field: uint64 offset = 3;
+from field: optional uint64 offset = 3;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2869](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L2869)
+[src/vendors.scailo_pb.ts:3593](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L3593)
 
 ___
 
 ### searchKey
 
-• **searchKey**: `string` = `""`
+• `Optional` **searchKey**: `string`
 
-Describes the key with which the search operation needs to be performed
+**`Optional`**
+
+**`Description`**
+
+Alphanumeric key phrase or keyword token used to perform lookup matches across searchable fields like names or comments.
+
+**`Example`**
+
+```ts
+"John Doe"
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+String value, can be empty.
 
 **`Generated`**
 
-from field: string search_key = 20;
+from field: optional string search_key = 20;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2920](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L2920)
+[src/vendors.scailo_pb.ts:3673](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L3673)
 
 ___
 
 ### status
 
-• **status**: [`VENDOR_USER_STATUS`](../enums/VENDOR_USER_STATUS.md) = `VENDOR_USER_STATUS.VENDOR_USER_STATUS_ANY_UNSPECIFIED`
+• `Optional` **status**: [`VENDOR_USER_STATUS`](../enums/VENDOR_USER_STATUS.md)
 
-The status of the users
+**`Optional`**
+
+**`Description`**
+
+Filter records by their verification lifecycle state (e.g., Approved, Unapproved). Defaults to unspecified/any.
+
+**`Example`**
+
+```ts
+VENDOR_USER_STATUS_APPROVED
+```
 
 **`Generated`**
 
-from field: Scailo.VENDOR_USER_STATUS status = 7;
+from field: optional Scailo.VENDOR_USER_STATUS status = 7;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2892](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L2892)
+[src/vendors.scailo_pb.ts:3621](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L3621)
 
 ___
 
 ### userId
 
-• **userId**: `bigint` = `protoInt64.zero`
+• `Optional` **userId**: `bigint`
 
-Stores the user ID
+**`Optional`**
+
+**`Description`**
+
+Filter by a specific user internal ID.
+
+**`Example`**
+
+```ts
+5678
+```
 
 **`Generated`**
 
-from field: uint64 user_id = 11;
+from field: optional uint64 user_id = 11;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2906](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L2906)
+[src/vendors.scailo_pb.ts:3645](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L3645)
 
 ___
 
 ### vendorId
 
-• **vendorId**: `bigint` = `protoInt64.zero`
+• `Optional` **vendorId**: `bigint`
 
-Stores the vendor ID
+**`Optional`**
+
+**`Description`**
+
+Filter by a specific vendor internal ID.
+
+**`Example`**
+
+```ts
+1024
+```
 
 **`Generated`**
 
-from field: uint64 vendor_id = 10;
+from field: optional uint64 vendor_id = 10;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2899](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L2899)
+[src/vendors.scailo_pb.ts:3633](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L3633)
 
 ___
 
@@ -256,7 +351,7 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2929](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L2929)
+[src/vendors.scailo_pb.ts:3682](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L3682)
 
 ___
 
@@ -266,7 +361,7 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2927](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L2927)
+[src/vendors.scailo_pb.ts:3680](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L3680)
 
 ___
 
@@ -276,7 +371,7 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2928](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L2928)
+[src/vendors.scailo_pb.ts:3681](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L3681)
 
 ## Methods
 
@@ -564,7 +659,7 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2953](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L2953)
+[src/vendors.scailo_pb.ts:3706](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L3706)
 
 ___
 
@@ -585,7 +680,7 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2941](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L2941)
+[src/vendors.scailo_pb.ts:3694](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L3694)
 
 ___
 
@@ -606,7 +701,7 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2945](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L2945)
+[src/vendors.scailo_pb.ts:3698](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L3698)
 
 ___
 
@@ -627,4 +722,4 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2949](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L2949)
+[src/vendors.scailo_pb.ts:3702](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L3702)

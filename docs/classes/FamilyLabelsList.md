@@ -2,7 +2,8 @@
 
 # Class: FamilyLabelsList
 
-Describes the message consisting of the list of family labels
+Represents a collection payload encapsulating multiple family label associations.
+Used for bulk retrieval or data-grid population.
 
 **`Generated`**
 
@@ -66,7 +67,7 @@ Message\&lt;FamilyLabelsList\&gt;.constructor
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2393](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2393)
+[src/families.scailo_pb.ts:3218](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3218)
 
 ## Properties
 
@@ -74,7 +75,13 @@ Message\&lt;FamilyLabelsList\&gt;.constructor
 
 • **list**: [`FamilyLabel`](FamilyLabel.md)[] = `[]`
 
-List of records
+**`Description`**
+
+An array containing the requested family label association records.
+
+**`Format`**
+
+Repeated array of FamilyLabel message blocks.
 
 **`Generated`**
 
@@ -82,7 +89,7 @@ from field: repeated Scailo.FamilyLabel list = 1;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2391](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2391)
+[src/families.scailo_pb.ts:3216](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3216)
 
 ___
 
@@ -92,7 +99,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2400](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2400)
+[src/families.scailo_pb.ts:3225](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3225)
 
 ___
 
@@ -102,7 +109,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2398](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2398)
+[src/families.scailo_pb.ts:3223](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3223)
 
 ___
 
@@ -112,7 +119,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2399](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2399)
+[src/families.scailo_pb.ts:3224](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3224)
 
 ## Methods
 
@@ -400,7 +407,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2416](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2416)
+[src/families.scailo_pb.ts:3241](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3241)
 
 ___
 
@@ -421,7 +428,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2404](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2404)
+[src/families.scailo_pb.ts:3229](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3229)
 
 ___
 
@@ -442,7 +449,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2408](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2408)
+[src/families.scailo_pb.ts:3233](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3233)
 
 ___
 
@@ -463,4 +470,4 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2412](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2412)
+[src/families.scailo_pb.ts:3237](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3237)

@@ -6,10 +6,13 @@
 import { Announcement, AnnouncementsList, AnnouncementsServiceCountReq, AnnouncementsServiceCreateRequest, AnnouncementsServiceFilterReq, AnnouncementsServicePaginationReq, AnnouncementsServicePaginationResponse, AnnouncementsServiceSearchAllReq, AnnouncementsServiceUpdateRequest } from "./announcements.scailo_pb.js";
 import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
+import { VaultFolderAttachRequest } from "./vault_folders.scailo_pb.js";
 
 /**
  *
- * Describes the common methods applicable on each announcement
+ * The AnnouncementsService manages the full lifecycle of public announcements.
+ * It provides standard CRUD operations alongside a robust state machine for
+ * verification, manager approval, and completion.
  *
  * @generated from service Scailo.AnnouncementsService
  */
@@ -17,7 +20,18 @@ export const AnnouncementsService = {
   typeName: "Scailo.AnnouncementsService",
   methods: {
     /**
-     * Create and send for verification
+     * Creates a new record and immediately moves it to the verification workflow.
+     *
+     * This method validates all required fields.
+     * The record is created with a `STANDARD_LIFECYCLE_STATUS.PREVERIFY` status.
+     *
+     * **Side Effects:**
+     * - Generates a unique system UUID.
+     * - Records an audit log for the "Create" action.
+     * - May trigger automated verification workflows.
+     *
+     * **Errors:**
+     * - `INVALID_ARGUMENT`: If validation rules fail (e.g., negative quantity, invalid timestamps).
      *
      * @generated from rpc Scailo.AnnouncementsService.Create
      */
@@ -233,6 +247,26 @@ export const AnnouncementsService = {
     commentAdd: {
       name: "CommentAdd",
       I: IdentifierUUIDWithUserComment,
+      O: IdentifierResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Attaches a specified folder directly to a record without requiring a full revision workflow.
+     *
+     * This is a convenience API designed to bypass the traditional multi-step modification lifecycle
+     * (e.g., creating a revision, updating data, submitting for verification, and awaiting approval).
+     * It allows for the immediate, single-step association of a vault folder.
+     *
+     * **Side Effects & Lifecycle:**
+     * * The overall status of the record remains unchanged.
+     * * The record's modification timestamp is automatically updated to the current time.
+     * * An entry is appended to the record's audit log tracking this attachment.
+     *
+     * @generated from rpc Scailo.AnnouncementsService.AttachVaultFolder
+     */
+    attachVaultFolder: {
+      name: "AttachVaultFolder",
+      I: VaultFolderAttachRequest,
       O: IdentifierResponse,
       kind: MethodKind.Unary,
     },

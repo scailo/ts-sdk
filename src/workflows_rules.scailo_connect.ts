@@ -6,6 +6,7 @@
 import { WorkflowRule, WorkflowsRulesList, WorkflowsRulesServiceCountReq, WorkflowsRulesServiceCreateRequest, WorkflowsRulesServiceFilterReq, WorkflowsRulesServicePaginationReq, WorkflowsRulesServicePaginationResponse, WorkflowsRulesServiceSearchAllReq, WorkflowsRulesServiceUpdateRequest } from "./workflows_rules.scailo_pb.js";
 import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Identifier, IdentifierResponse, IdentifierUUID, IdentifierUUIDWithUserComment } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
+import { VaultFolderAttachRequest } from "./vault_folders.scailo_pb.js";
 
 /**
  *
@@ -223,7 +224,13 @@ export const WorkflowsRulesService = {
       kind: MethodKind.Unary,
     },
     /**
-     * Reopen
+     * Reopens a finalized or closed record for further modifications.
+     *
+     * **Status Transition:** -> `REVISION`
+     *
+     * **Side Effects:**
+     * - Unlocks the record to allow edits.
+     * - Logs the required user comment into the audit trail for compliance tracking.
      *
      * @generated from rpc Scailo.WorkflowsRulesService.Reopen
      */
@@ -244,6 +251,26 @@ export const WorkflowsRulesService = {
     commentAdd: {
       name: "CommentAdd",
       I: IdentifierUUIDWithUserComment,
+      O: IdentifierResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Attaches a specified folder directly to a record without requiring a full revision workflow.
+     *
+     * This is a convenience API designed to bypass the traditional multi-step modification lifecycle
+     * (e.g., creating a revision, updating data, submitting for verification, and awaiting approval).
+     * It allows for the immediate, single-step association of a vault folder.
+     *
+     * **Side Effects & Lifecycle:**
+     * * The overall status of the record remains unchanged.
+     * * The record's modification timestamp is automatically updated to the current time.
+     * * An entry is appended to the record's audit log tracking this attachment.
+     *
+     * @generated from rpc Scailo.WorkflowsRulesService.AttachVaultFolder
+     */
+    attachVaultFolder: {
+      name: "AttachVaultFolder",
+      I: VaultFolderAttachRequest,
       O: IdentifierResponse,
       kind: MethodKind.Unary,
     },

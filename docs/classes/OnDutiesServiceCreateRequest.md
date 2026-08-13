@@ -74,7 +74,7 @@ Message\&lt;OnDutiesServiceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/on_duties.scailo_pb.ts:215](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/on_duties.scailo_pb.ts#L215)
+[src/on_duties.scailo_pb.ts:231](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/on_duties.scailo_pb.ts#L231)
 
 ## Properties
 
@@ -90,7 +90,7 @@ from field: string description = 14;
 
 #### Defined in
 
-[src/on_duties.scailo_pb.ts:206](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/on_duties.scailo_pb.ts#L206)
+[src/on_duties.scailo_pb.ts:215](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/on_duties.scailo_pb.ts#L215)
 
 ___
 
@@ -124,7 +124,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-[src/on_duties.scailo_pb.ts:139](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/on_duties.scailo_pb.ts#L139)
+[src/on_duties.scailo_pb.ts:139](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/on_duties.scailo_pb.ts#L139)
 
 ___
 
@@ -140,7 +140,7 @@ from field: uint64 entry_timestamp = 12;
 
 #### Defined in
 
-[src/on_duties.scailo_pb.ts:192](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/on_duties.scailo_pb.ts#L192)
+[src/on_duties.scailo_pb.ts:201](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/on_duties.scailo_pb.ts#L201)
 
 ___
 
@@ -156,7 +156,7 @@ from field: uint64 exit_timestamp = 13;
 
 #### Defined in
 
-[src/on_duties.scailo_pb.ts:199](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/on_duties.scailo_pb.ts#L199)
+[src/on_duties.scailo_pb.ts:208](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/on_duties.scailo_pb.ts#L208)
 
 ___
 
@@ -164,7 +164,21 @@ ___
 
 • **formData**: [`FormFieldDatumCreateRequest`](FormFieldDatumCreateRequest.md)[] = `[]`
 
-The list of dynamic forms
+**`Optional`**
+
+**`Description`**
+
+A collection of dynamic form fields for organization-specific data.
+
+**`Example`**
+
+```ts
+[]
+```
+
+**`Format`**
+
+An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
 
 **`Generated`**
 
@@ -172,7 +186,7 @@ from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
 
 #### Defined in
 
-[src/on_duties.scailo_pb.ts:213](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/on_duties.scailo_pb.ts#L213)
+[src/on_duties.scailo_pb.ts:229](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/on_duties.scailo_pb.ts#L229)
 
 ___
 
@@ -206,7 +220,7 @@ from field: string reference_id = 10;
 
 #### Defined in
 
-[src/on_duties.scailo_pb.ts:178](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/on_duties.scailo_pb.ts#L178)
+[src/on_duties.scailo_pb.ts:187](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/on_duties.scailo_pb.ts#L187)
 
 ___
 
@@ -214,7 +228,25 @@ ___
 
 • **userComment**: `string` = `""`
 
-Stores any comment that the user might add during this operation
+**`Optional`**
+
+**`Description`**
+
+Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+
+**`Example`**
+
+```ts
+"This is a comment for audit purposes."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
@@ -222,7 +254,7 @@ from field: string user_comment = 2;
 
 #### Defined in
 
-[src/on_duties.scailo_pb.ts:146](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/on_duties.scailo_pb.ts#L146)
+[src/on_duties.scailo_pb.ts:155](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/on_duties.scailo_pb.ts#L155)
 
 ___
 
@@ -238,7 +270,7 @@ from field: uint64 user_id = 11;
 
 #### Defined in
 
-[src/on_duties.scailo_pb.ts:185](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/on_duties.scailo_pb.ts#L185)
+[src/on_duties.scailo_pb.ts:194](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/on_duties.scailo_pb.ts#L194)
 
 ___
 
@@ -272,7 +304,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-[src/on_duties.scailo_pb.ts:162](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/on_duties.scailo_pb.ts#L162)
+[src/on_duties.scailo_pb.ts:171](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/on_duties.scailo_pb.ts#L171)
 
 ___
 
@@ -282,7 +314,7 @@ ___
 
 #### Defined in
 
-[src/on_duties.scailo_pb.ts:222](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/on_duties.scailo_pb.ts#L222)
+[src/on_duties.scailo_pb.ts:238](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/on_duties.scailo_pb.ts#L238)
 
 ___
 
@@ -292,7 +324,7 @@ ___
 
 #### Defined in
 
-[src/on_duties.scailo_pb.ts:220](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/on_duties.scailo_pb.ts#L220)
+[src/on_duties.scailo_pb.ts:236](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/on_duties.scailo_pb.ts#L236)
 
 ___
 
@@ -302,7 +334,7 @@ ___
 
 #### Defined in
 
-[src/on_duties.scailo_pb.ts:221](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/on_duties.scailo_pb.ts#L221)
+[src/on_duties.scailo_pb.ts:237](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/on_duties.scailo_pb.ts#L237)
 
 ## Methods
 
@@ -590,7 +622,7 @@ ___
 
 #### Defined in
 
-[src/on_duties.scailo_pb.ts:246](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/on_duties.scailo_pb.ts#L246)
+[src/on_duties.scailo_pb.ts:262](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/on_duties.scailo_pb.ts#L262)
 
 ___
 
@@ -611,7 +643,7 @@ ___
 
 #### Defined in
 
-[src/on_duties.scailo_pb.ts:234](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/on_duties.scailo_pb.ts#L234)
+[src/on_duties.scailo_pb.ts:250](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/on_duties.scailo_pb.ts#L250)
 
 ___
 
@@ -632,7 +664,7 @@ ___
 
 #### Defined in
 
-[src/on_duties.scailo_pb.ts:238](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/on_duties.scailo_pb.ts#L238)
+[src/on_duties.scailo_pb.ts:254](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/on_duties.scailo_pb.ts#L254)
 
 ___
 
@@ -653,4 +685,4 @@ ___
 
 #### Defined in
 
-[src/on_duties.scailo_pb.ts:242](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/on_duties.scailo_pb.ts#L242)
+[src/on_duties.scailo_pb.ts:258](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/on_duties.scailo_pb.ts#L258)

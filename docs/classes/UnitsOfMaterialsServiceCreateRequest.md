@@ -2,7 +2,12 @@
 
 # Class: UnitsOfMaterialsServiceCreateRequest
 
-Describes the parameters necessary to create a record
+Request message for creating and registering a new Unit of Material (UOM) definition.
+This record tracks standardized measurement units, classification symbols, descriptive metadata,
+and tenant isolation parameters for physical or logistical item quantities.
+
+**Note:** This is the primary entry point for Procurement, Supply Chain, and Admins to
+initialize systemic units of measure (e.g., kilograms, liters, packs) used for inventory ledgering.
 
 **`Generated`**
 
@@ -70,29 +75,47 @@ Message\&lt;UnitsOfMaterialsServiceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/units_of_materials.scailo_pb.ts:136](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/units_of_materials.scailo_pb.ts#L136)
+[src/units_of_materials.scailo_pb.ts:177](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/units_of_materials.scailo_pb.ts#L177)
 
 ## Properties
 
 ### description
 
-• **description**: `string` = `""`
+• `Optional` **description**: `string`
 
-The description of the unit of material
+**`Optional`**
+
+**`Description`**
+
+Contextual description or clarifying details outlining the operational bounds, conversions, or standard applications of this unit.
+
+**`Example`**
+
+```ts
+"Standard SI unit for mass, utilized across all raw bulk compound inventory tables."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
-from field: string description = 12;
+from field: optional string description = 12;
 
 #### Defined in
 
-[src/units_of_materials.scailo_pb.ts:134](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/units_of_materials.scailo_pb.ts#L134)
+[src/units_of_materials.scailo_pb.ts:175](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/units_of_materials.scailo_pb.ts#L175)
 
 ___
 
 ### entityUuid
 
-• **entityUuid**: `string` = `""`
+• `Optional` **entityUuid**: `string`
 
 **`Optional`**
 
@@ -116,11 +139,11 @@ If provided, must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
-from field: string entity_uuid = 1;
+from field: optional string entity_uuid = 1;
 
 #### Defined in
 
-[src/units_of_materials.scailo_pb.ts:106](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/units_of_materials.scailo_pb.ts#L106)
+[src/units_of_materials.scailo_pb.ts:111](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/units_of_materials.scailo_pb.ts#L111)
 
 ___
 
@@ -128,7 +151,25 @@ ___
 
 • **name**: `string` = `""`
 
-The name of the unit of material
+**`Mandatory`**
+
+**`Description`**
+
+The official or canonical name of the unit of material.
+
+**`Example`**
+
+```ts
+"Kilogram"
+```
+
+**`Regex`**
+
+.+
+
+**`Format`**
+
+Must be a non-empty string.
 
 **`Generated`**
 
@@ -136,7 +177,7 @@ from field: string name = 10;
 
 #### Defined in
 
-[src/units_of_materials.scailo_pb.ts:120](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/units_of_materials.scailo_pb.ts#L120)
+[src/units_of_materials.scailo_pb.ts:143](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/units_of_materials.scailo_pb.ts#L143)
 
 ___
 
@@ -144,7 +185,25 @@ ___
 
 • **symbol**: `string` = `""`
 
-The unique symbol by which the unit of material is classified
+**`Mandatory`**
+
+**`Description`**
+
+The unique shorthand symbol, abbreviation, or metric token by which the unit of material is structurally classified.
+
+**`Example`**
+
+```ts
+"kg"
+```
+
+**`Regex`**
+
+.+
+
+**`Format`**
+
+Must be a non-empty string.
 
 **`Generated`**
 
@@ -152,23 +211,41 @@ from field: string symbol = 11;
 
 #### Defined in
 
-[src/units_of_materials.scailo_pb.ts:127](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/units_of_materials.scailo_pb.ts#L127)
+[src/units_of_materials.scailo_pb.ts:159](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/units_of_materials.scailo_pb.ts#L159)
 
 ___
 
 ### userComment
 
-• **userComment**: `string` = `""`
+• `Optional` **userComment**: `string`
 
-Stores any comment that the user might add during this operation
+**`Optional`**
+
+**`Description`**
+
+Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+
+**`Example`**
+
+```ts
+"This is a comment for audit purposes."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
-from field: string user_comment = 2;
+from field: optional string user_comment = 2;
 
 #### Defined in
 
-[src/units_of_materials.scailo_pb.ts:113](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/units_of_materials.scailo_pb.ts#L113)
+[src/units_of_materials.scailo_pb.ts:127](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/units_of_materials.scailo_pb.ts#L127)
 
 ___
 
@@ -178,7 +255,7 @@ ___
 
 #### Defined in
 
-[src/units_of_materials.scailo_pb.ts:143](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/units_of_materials.scailo_pb.ts#L143)
+[src/units_of_materials.scailo_pb.ts:184](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/units_of_materials.scailo_pb.ts#L184)
 
 ___
 
@@ -188,7 +265,7 @@ ___
 
 #### Defined in
 
-[src/units_of_materials.scailo_pb.ts:141](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/units_of_materials.scailo_pb.ts#L141)
+[src/units_of_materials.scailo_pb.ts:182](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/units_of_materials.scailo_pb.ts#L182)
 
 ___
 
@@ -198,7 +275,7 @@ ___
 
 #### Defined in
 
-[src/units_of_materials.scailo_pb.ts:142](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/units_of_materials.scailo_pb.ts#L142)
+[src/units_of_materials.scailo_pb.ts:183](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/units_of_materials.scailo_pb.ts#L183)
 
 ## Methods
 
@@ -486,7 +563,7 @@ ___
 
 #### Defined in
 
-[src/units_of_materials.scailo_pb.ts:163](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/units_of_materials.scailo_pb.ts#L163)
+[src/units_of_materials.scailo_pb.ts:204](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/units_of_materials.scailo_pb.ts#L204)
 
 ___
 
@@ -507,7 +584,7 @@ ___
 
 #### Defined in
 
-[src/units_of_materials.scailo_pb.ts:151](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/units_of_materials.scailo_pb.ts#L151)
+[src/units_of_materials.scailo_pb.ts:192](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/units_of_materials.scailo_pb.ts#L192)
 
 ___
 
@@ -528,7 +605,7 @@ ___
 
 #### Defined in
 
-[src/units_of_materials.scailo_pb.ts:155](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/units_of_materials.scailo_pb.ts#L155)
+[src/units_of_materials.scailo_pb.ts:196](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/units_of_materials.scailo_pb.ts#L196)
 
 ___
 
@@ -549,4 +626,4 @@ ___
 
 #### Defined in
 
-[src/units_of_materials.scailo_pb.ts:159](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/units_of_materials.scailo_pb.ts#L159)
+[src/units_of_materials.scailo_pb.ts:200](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/units_of_materials.scailo_pb.ts#L200)

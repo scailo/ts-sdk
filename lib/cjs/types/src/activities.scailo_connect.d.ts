@@ -1,6 +1,7 @@
 import { ActivitiesList, ActivitiesServiceActionCreateRequest, ActivitiesServiceActionUpdateRequest, ActivitiesServiceActionWithTimerCreateRequest, ActivitiesServiceActivityTagAssociationCreateRequest, ActivitiesServiceCountReq, ActivitiesServiceCreateRequest, ActivitiesServiceFilterReq, ActivitiesServiceImportOwnersRequest, ActivitiesServiceOwnerCreateRequest, ActivitiesServicePaginatedActionsResponse, ActivitiesServicePaginatedTimersResponse, ActivitiesServicePaginationReq, ActivitiesServicePaginationResponse, ActivitiesServiceSearchAllReq, ActivitiesServiceSupervisorCreateRequest, ActivitiesServiceTimerCreateRequest, ActivitiesServiceTimerEndRequest, ActivitiesServiceUpdateRequest, Activity, ActivityAction, ActivityActionHistoryRequest, ActivityActionsList, ActivityActionsSearchRequest, ActivityActionStatistics, ActivityOwner, ActivityOwnersList, ActivityStatistics, ActivitySupervisor, ActivitySupervisorsList, ActivityTagAssociation, ActivityTagAssociationsList, ActivityTimer, ActivityTimersList, ActivityTimersSearchRequest } from "./activities.scailo_pb.js";
 import { ActiveStatus, CountResponse, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithUserComment, ReorderItemsRequest, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
+import { VaultFolderAttachRequest } from "./vault_folders.scailo_pb.js";
 /**
  *
  * Describes the common methods applicable on each activity
@@ -96,6 +97,26 @@ export declare const ActivitiesService: {
             readonly name: "SendEmail";
             readonly I: typeof IdentifierWithEmailAttributes;
             readonly O: typeof IdentifierUUID;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Attaches a specified folder directly to a record without requiring a full revision workflow.
+         *
+         * This is a convenience API designed to bypass the traditional multi-step modification lifecycle
+         * (e.g., creating a revision, updating data, submitting for verification, and awaiting approval).
+         * It allows for the immediate, single-step association of a vault folder.
+         *
+         * **Side Effects & Lifecycle:**
+         * * The overall status of the record remains unchanged.
+         * * The record's modification timestamp is automatically updated to the current time.
+         * * An entry is appended to the record's audit log tracking this attachment.
+         *
+         * @generated from rpc Scailo.ActivitiesService.AttachVaultFolder
+         */
+        readonly attachVaultFolder: {
+            readonly name: "AttachVaultFolder";
+            readonly I: typeof VaultFolderAttachRequest;
+            readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
         /**

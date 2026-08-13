@@ -2,7 +2,7 @@
 
 # Class: FamilyStorage
 
-Describes the parameters that constitute a family storage
+Represents the finalized association between a family and an authorized storage location.
 
 **`Generated`**
 
@@ -72,7 +72,7 @@ Message\&lt;FamilyStorage\&gt;.constructor
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2541](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2541)
+[src/families.scailo_pb.ts:3407](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3407)
 
 ## Properties
 
@@ -90,7 +90,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2510](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2510)
+[src/families.scailo_pb.ts:3363](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3363)
 
 ___
 
@@ -114,7 +114,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2494](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2494)
+[src/families.scailo_pb.ts:3347](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3347)
 
 ___
 
@@ -122,7 +122,15 @@ ___
 
 • **familyId**: `bigint` = `protoInt64.zero`
 
-Stores the family ID
+**`Description`**
+
+The unique internal identifier of the associated family.
+
+**`Example`**
+
+```ts
+582
+```
 
 **`Generated`**
 
@@ -130,7 +138,7 @@ from field: uint64 family_id = 10;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2532](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2532)
+[src/families.scailo_pb.ts:3395](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3395)
 
 ___
 
@@ -148,7 +156,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2502](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2502)
+[src/families.scailo_pb.ts:3355](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3355)
 
 ___
 
@@ -158,7 +166,17 @@ ___
 
 **`Description`**
 
-The approval state of the record
+A boolean flag indicating whether this specific record requires further administrative approval.
+
+**`Example`**
+
+```ts
+false
+```
+
+**`Format`**
+
+Boolean true or false.
 
 **`Generated`**
 
@@ -166,7 +184,7 @@ from field: bool need_approval = 4;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2518](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2518)
+[src/families.scailo_pb.ts:3375](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3375)
 
 ___
 
@@ -174,7 +192,15 @@ ___
 
 • **storageId**: `bigint` = `protoInt64.zero`
 
-Stores the storage ID
+**`Description`**
+
+The unique internal identifier of the associated storage location.
+
+**`Example`**
+
+```ts
+1050
+```
 
 **`Generated`**
 
@@ -182,7 +208,7 @@ from field: uint64 storage_id = 11;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2539](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2539)
+[src/families.scailo_pb.ts:3405](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3405)
 
 ___
 
@@ -190,7 +216,15 @@ ___
 
 • **userComment**: `string` = `""`
 
-Stores any comment that the user might have added during an operation
+**`Description`**
+
+Audit log comment or justification captured during the last modification or transactional operation.
+
+**`Example`**
+
+```ts
+"This is a comment for audit purposes."
+```
 
 **`Generated`**
 
@@ -198,7 +232,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2525](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2525)
+[src/families.scailo_pb.ts:3385](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3385)
 
 ___
 
@@ -208,7 +242,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2548](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2548)
+[src/families.scailo_pb.ts:3414](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3414)
 
 ___
 
@@ -218,7 +252,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2546](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2546)
+[src/families.scailo_pb.ts:3412](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3412)
 
 ___
 
@@ -228,7 +262,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2547](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2547)
+[src/families.scailo_pb.ts:3413](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3413)
 
 ## Methods
 
@@ -516,7 +550,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2570](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2570)
+[src/families.scailo_pb.ts:3436](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3436)
 
 ___
 
@@ -537,7 +571,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2558](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2558)
+[src/families.scailo_pb.ts:3424](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3424)
 
 ___
 
@@ -558,7 +592,7 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2562](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2562)
+[src/families.scailo_pb.ts:3428](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3428)
 
 ___
 
@@ -579,4 +613,4 @@ ___
 
 #### Defined in
 
-[src/families.scailo_pb.ts:2566](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L2566)
+[src/families.scailo_pb.ts:3432](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L3432)

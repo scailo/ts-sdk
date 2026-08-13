@@ -117,7 +117,16 @@ export declare class SalariesServiceCreateRequest extends Message<SalariesServic
      */
     entityUuid: string;
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 2;
      */
@@ -234,7 +243,14 @@ export declare class SalariesServiceCreateRequest extends Message<SalariesServic
      */
     roundOff: bigint;
     /**
-     * The list of dynamic forms
+     *
+     * @optional
+     *
+     * @description A collection of dynamic form fields for organization-specific data.
+     *
+     * @example []
+     *
+     * @format An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
      *
      * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 50;
      */
@@ -256,13 +272,31 @@ export declare class SalariesServiceCreateRequest extends Message<SalariesServic
  */
 export declare class SalariesServiceUpdateRequest extends Message<SalariesServiceUpdateRequest> {
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 1;
      */
     userComment: string;
     /**
-     * The ID of the record that needs to be updated
+     *
+     * @mandatory
+     *
+     * @description The unique internal identifier of the target record that needs to be updated.
+     *
+     * @example 1024
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 id = 2;
      */
@@ -384,7 +418,14 @@ export declare class SalariesServiceUpdateRequest extends Message<SalariesServic
      */
     roundOff: bigint;
     /**
-     * The list of dynamic forms
+     *
+     * @optional
+     *
+     * @description A collection of dynamic form fields for organization-specific data.
+     *
+     * @example []
+     *
+     * @format An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
      *
      * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 50;
      */
@@ -406,7 +447,16 @@ export declare class SalariesServiceUpdateRequest extends Message<SalariesServic
  */
 export declare class SalariesServiceAutofillRequest extends Message<SalariesServiceAutofillRequest> {
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 1;
      */
@@ -609,7 +659,8 @@ export declare class Salary extends Message<Salary> {
      */
     reimbursementItemsList: SalaryReimbursementItem[];
     /**
-     * The list of dynamic forms
+     *
+     * @description Collection of organization-specific dynamic data.
      *
      * @generated from field: repeated Scailo.FormFieldDatum form_data = 50;
      */
@@ -659,7 +710,16 @@ export declare class SalariesList extends Message<SalariesList> {
  */
 export declare class SalariesServiceAdditionItemCreateRequest extends Message<SalariesServiceAdditionItemCreateRequest> {
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 1;
      */
@@ -705,7 +765,16 @@ export declare class SalariesServiceAdditionItemCreateRequest extends Message<Sa
  */
 export declare class SalariesServiceAdditionItemUpdateRequest extends Message<SalariesServiceAdditionItemUpdateRequest> {
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 1;
      */
@@ -763,7 +832,11 @@ export declare class SalaryAdditionItem extends Message<SalaryAdditionItem> {
     approvalMetadata?: ApprovalMetadata;
     /**
      *
-     * @description The approval state of the record
+     * @description A boolean flag indicating whether this specific record requires further administrative approval.
+     *
+     * @example false
+     *
+     * @format Boolean true or false.
      *
      * @generated from field: bool need_approval = 4;
      */
@@ -899,7 +972,16 @@ export declare class SalaryAdditionItemProspectiveInfoRequest extends Message<Sa
  */
 export declare class SalariesServiceDeductionItemCreateRequest extends Message<SalariesServiceDeductionItemCreateRequest> {
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 1;
      */
@@ -945,7 +1027,16 @@ export declare class SalariesServiceDeductionItemCreateRequest extends Message<S
  */
 export declare class SalariesServiceDeductionItemUpdateRequest extends Message<SalariesServiceDeductionItemUpdateRequest> {
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 1;
      */
@@ -1003,7 +1094,11 @@ export declare class SalaryDeductionItem extends Message<SalaryDeductionItem> {
     approvalMetadata?: ApprovalMetadata;
     /**
      *
-     * @description The approval state of the record
+     * @description A boolean flag indicating whether this specific record requires further administrative approval.
+     *
+     * @example false
+     *
+     * @format Boolean true or false.
      *
      * @generated from field: bool need_approval = 4;
      */
@@ -1139,7 +1234,16 @@ export declare class SalaryDeductionItemProspectiveInfoRequest extends Message<S
  */
 export declare class SalariesServiceReimbursementItemCreateRequest extends Message<SalariesServiceReimbursementItemCreateRequest> {
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 1;
      */
@@ -1185,7 +1289,16 @@ export declare class SalariesServiceReimbursementItemCreateRequest extends Messa
  */
 export declare class SalariesServiceReimbursementItemUpdateRequest extends Message<SalariesServiceReimbursementItemUpdateRequest> {
     /**
-     * Stores any comment that the user might add during this operation
+     *
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
      *
      * @generated from field: string user_comment = 1;
      */
@@ -1243,7 +1356,11 @@ export declare class SalaryReimbursementItem extends Message<SalaryReimbursement
     approvalMetadata?: ApprovalMetadata;
     /**
      *
-     * @description The approval state of the record
+     * @description A boolean flag indicating whether this specific record requires further administrative approval.
+     *
+     * @example false
+     *
+     * @format Boolean true or false.
      *
      * @generated from field: bool need_approval = 4;
      */
@@ -1929,7 +2046,10 @@ export declare class SalariesServiceCountReq extends Message<SalariesServiceCoun
      */
     taxGroupId: bigint;
     /**
-     * The list of form data filters
+     *
+     * @optional
+     *
+     * @description Count based on dynamic form field values.
      *
      * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
      */

@@ -74,7 +74,7 @@ Message\&lt;QCGroupsServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:2420](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/qc_groups.scailo_pb.ts#L2420)
+[src/qc_groups.scailo_pb.ts:2487](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/qc_groups.scailo_pb.ts#L2487)
 
 ## Properties
 
@@ -108,7 +108,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:2329](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/qc_groups.scailo_pb.ts#L2329)
+[src/qc_groups.scailo_pb.ts:2396](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/qc_groups.scailo_pb.ts#L2396)
 
 ___
 
@@ -142,7 +142,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:2383](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/qc_groups.scailo_pb.ts#L2383)
+[src/qc_groups.scailo_pb.ts:2450](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/qc_groups.scailo_pb.ts#L2450)
 
 ___
 
@@ -158,7 +158,7 @@ from field: uint64 family_id = 30;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:2418](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/qc_groups.scailo_pb.ts#L2418)
+[src/qc_groups.scailo_pb.ts:2485](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/qc_groups.scailo_pb.ts#L2485)
 
 ___
 
@@ -184,7 +184,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:2313](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/qc_groups.scailo_pb.ts#L2313)
+[src/qc_groups.scailo_pb.ts:2380](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/qc_groups.scailo_pb.ts#L2380)
 
 ___
 
@@ -218,7 +218,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:2345](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/qc_groups.scailo_pb.ts#L2345)
+[src/qc_groups.scailo_pb.ts:2412](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/qc_groups.scailo_pb.ts#L2412)
 
 ___
 
@@ -250,7 +250,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:2411](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/qc_groups.scailo_pb.ts#L2411)
+[src/qc_groups.scailo_pb.ts:2478](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/qc_groups.scailo_pb.ts#L2478)
 
 ___
 
@@ -270,7 +270,7 @@ from field: Scailo.QC_GROUP_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:2367](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/qc_groups.scailo_pb.ts#L2367)
+[src/qc_groups.scailo_pb.ts:2434](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/qc_groups.scailo_pb.ts#L2434)
 
 ___
 
@@ -296,7 +296,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:2357](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/qc_groups.scailo_pb.ts#L2357)
+[src/qc_groups.scailo_pb.ts:2424](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/qc_groups.scailo_pb.ts#L2424)
 
 ___
 
@@ -322,7 +322,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:2395](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/qc_groups.scailo_pb.ts#L2395)
+[src/qc_groups.scailo_pb.ts:2462](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/qc_groups.scailo_pb.ts#L2462)
 
 ___
 
@@ -332,7 +332,7 @@ ___
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:2427](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/qc_groups.scailo_pb.ts#L2427)
+[src/qc_groups.scailo_pb.ts:2494](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/qc_groups.scailo_pb.ts#L2494)
 
 ___
 
@@ -342,7 +342,7 @@ ___
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:2425](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/qc_groups.scailo_pb.ts#L2425)
+[src/qc_groups.scailo_pb.ts:2492](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/qc_groups.scailo_pb.ts#L2492)
 
 ___
 
@@ -352,7 +352,7 @@ ___
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:2426](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/qc_groups.scailo_pb.ts#L2426)
+[src/qc_groups.scailo_pb.ts:2493](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/qc_groups.scailo_pb.ts#L2493)
 
 ## Methods
 
@@ -640,7 +640,7 @@ ___
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:2451](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/qc_groups.scailo_pb.ts#L2451)
+[src/qc_groups.scailo_pb.ts:2518](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/qc_groups.scailo_pb.ts#L2518)
 
 ___
 
@@ -661,7 +661,7 @@ ___
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:2439](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/qc_groups.scailo_pb.ts#L2439)
+[src/qc_groups.scailo_pb.ts:2506](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/qc_groups.scailo_pb.ts#L2506)
 
 ___
 
@@ -682,7 +682,7 @@ ___
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:2443](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/qc_groups.scailo_pb.ts#L2443)
+[src/qc_groups.scailo_pb.ts:2510](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/qc_groups.scailo_pb.ts#L2510)
 
 ___
 
@@ -703,4 +703,4 @@ ___
 
 #### Defined in
 
-[src/qc_groups.scailo_pb.ts:2447](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/qc_groups.scailo_pb.ts#L2447)
+[src/qc_groups.scailo_pb.ts:2514](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/qc_groups.scailo_pb.ts#L2514)

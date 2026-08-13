@@ -2,7 +2,9 @@
 
 # Enumeration: FAMILY\_TYPE
 
-Stores the available family types
+Defines the core classification categories for a family within the catalog.
+These types dictate the operational lifecycle, permitted transactions (e.g., buy, sell, manufacture),
+and the general purpose of the associated items.
 
 **`Generated`**
 
@@ -27,7 +29,9 @@ from enum Scailo.FAMILY_TYPE
 
 • **FAMILY\_TYPE\_ANY\_UNSPECIFIED** = ``0``
 
-Denotes any family type (only used for filter and search queries, when family type needs to be disregarded)
+**`Description`**
+
+Denotes that the family type filter should be disregarded. Used exclusively within search/filter APIs to bypass type restrictions.
 
 **`Generated`**
 
@@ -35,7 +39,7 @@ from enum value: FAMILY_TYPE_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L23)
+[src/families.scailo_pb.ts:25](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L25)
 
 ___
 
@@ -43,7 +47,9 @@ ___
 
 • **FAMILY\_TYPE\_COMPONENT** = ``1``
 
-Denotes a component (a family that can be sold, bought, and manufactured - this is a general purpose family)
+**`Description`**
+
+Denotes a component. This is a general-purpose family of items that can be dynamically sold, bought, and manufactured.
 
 **`Generated`**
 
@@ -51,7 +57,7 @@ from enum value: FAMILY_TYPE_COMPONENT = 1;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L30)
+[src/families.scailo_pb.ts:32](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L32)
 
 ___
 
@@ -59,7 +65,9 @@ ___
 
 • **FAMILY\_TYPE\_EQUIPMENT** = ``2``
 
-Denotes equipment (a family that can be used within manufacturing process as a capex item, such as machines)
+**`Description`**
+
+Denotes equipment. Represents a capital expenditure (CapEx) item utilized within the manufacturing process (e.g., machinery, assembly tools).
 
 **`Generated`**
 
@@ -67,7 +75,7 @@ from enum value: FAMILY_TYPE_EQUIPMENT = 2;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:37](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L37)
+[src/families.scailo_pb.ts:39](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L39)
 
 ___
 
@@ -75,7 +83,9 @@ ___
 
 • **FAMILY\_TYPE\_FEEDSTOCK** = ``3``
 
-Denotes feedstock (a family that will be used as raw material within manufacturing process, and will be consumed)
+**`Description`**
+
+Denotes feedstock. Represents raw materials that will be consumed and transformed during the manufacturing process.
 
 **`Generated`**
 
@@ -83,7 +93,7 @@ from enum value: FAMILY_TYPE_FEEDSTOCK = 3;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:44](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L44)
+[src/families.scailo_pb.ts:46](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L46)
 
 ___
 
@@ -91,7 +101,9 @@ ___
 
 • **FAMILY\_TYPE\_INFRASTRUCTURE** = ``4``
 
-Denotes infrastructure (a family that can be used for any non-manufacturing purpose. Examples include cars, rtubelights, computers, etc.)
+**`Description`**
+
+Denotes infrastructure. Represents non-manufacturing items utilized for general operational purposes (e.g., vehicles, computers, lighting/tubelights).
 
 **`Generated`**
 
@@ -99,7 +111,7 @@ from enum value: FAMILY_TYPE_INFRASTRUCTURE = 4;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:51](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L51)
+[src/families.scailo_pb.ts:53](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L53)
 
 ___
 
@@ -107,7 +119,9 @@ ___
 
 • **FAMILY\_TYPE\_MERCHANDISE** = ``5``
 
-Denotes merchandise (a family that can only be bought and sold, and will not be a part of any value addition processes)
+**`Description`**
+
+Denotes merchandise. Represents goods that are strictly procured and resold without undergoing any internal value-addition processes.
 
 **`Generated`**
 
@@ -115,7 +129,7 @@ from enum value: FAMILY_TYPE_MERCHANDISE = 5;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:58](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L58)
+[src/families.scailo_pb.ts:60](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L60)
 
 ___
 
@@ -123,7 +137,9 @@ ___
 
 • **FAMILY\_TYPE\_PRODUCT** = ``6``
 
-Denotes product (a family that is the final outcome of a manufacturing process. Can only be sold, but not purchased)
+**`Description`**
+
+Denotes a product. Represents the final, finished outcome of a manufacturing process. Products can only be sold, not directly purchased.
 
 **`Generated`**
 
@@ -131,7 +147,7 @@ from enum value: FAMILY_TYPE_PRODUCT = 6;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:65](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L65)
+[src/families.scailo_pb.ts:67](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L67)
 
 ___
 
@@ -139,7 +155,9 @@ ___
 
 • **FAMILY\_TYPE\_SERVICE** = ``7``
 
-Denotes service (a family that deals exclusively with services, and no goods)
+**`Description`**
+
+Denotes a service. Represents intangible offerings, labor, or digital services, completely excluding physical goods.
 
 **`Generated`**
 
@@ -147,4 +165,4 @@ from enum value: FAMILY_TYPE_SERVICE = 7;
 
 #### Defined in
 
-[src/families.scailo_pb.ts:72](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/families.scailo_pb.ts#L72)
+[src/families.scailo_pb.ts:74](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/families.scailo_pb.ts#L74)

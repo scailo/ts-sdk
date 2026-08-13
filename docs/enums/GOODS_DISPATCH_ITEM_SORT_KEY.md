@@ -2,7 +2,7 @@
 
 # Enumeration: GOODS\_DISPATCH\_ITEM\_SORT\_KEY
 
-Describes the available sort keys
+Enumeration of fields available for sorting goods dispatch item search results.
 
 **`Generated`**
 
@@ -30,7 +30,9 @@ from enum Scailo.GOODS_DISPATCH_ITEM_SORT_KEY
 
 • **GOODS\_DISPATCH\_ITEM\_SORT\_KEY\_APPROVED\_BY** = ``4``
 
-Fetch ordered results by the approved by field
+**`Description`**
+
+Sort by the system ID of the approving user.
 
 **`Generated`**
 
@@ -38,7 +40,7 @@ from enum value: GOODS_DISPATCH_ITEM_SORT_KEY_APPROVED_BY = 4;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:78](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L78)
+[src/goods_dispatches.scailo_pb.ts:80](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L80)
 
 ___
 
@@ -46,7 +48,9 @@ ___
 
 • **GOODS\_DISPATCH\_ITEM\_SORT\_KEY\_APPROVED\_ON** = ``3``
 
-Fetch ordered results by the approved on timestamp
+**`Description`**
+
+Sort by the official approval timestamp of the item.
 
 **`Generated`**
 
@@ -54,7 +58,7 @@ from enum value: GOODS_DISPATCH_ITEM_SORT_KEY_APPROVED_ON = 3;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:71](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L71)
+[src/goods_dispatches.scailo_pb.ts:73](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L73)
 
 ___
 
@@ -62,7 +66,9 @@ ___
 
 • **GOODS\_DISPATCH\_ITEM\_SORT\_KEY\_APPROVER\_ROLE\_ID** = ``5``
 
-Fetch ordered results by the approver's role ID
+**`Description`**
+
+Sort by the security role ID used by the approver.
 
 **`Generated`**
 
@@ -70,7 +76,7 @@ from enum value: GOODS_DISPATCH_ITEM_SORT_KEY_APPROVER_ROLE_ID = 5;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:85](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L85)
+[src/goods_dispatches.scailo_pb.ts:87](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L87)
 
 ___
 
@@ -78,7 +84,9 @@ ___
 
 • **GOODS\_DISPATCH\_ITEM\_SORT\_KEY\_CLIENT\_FAMILY\_CODE** = ``14``
 
-Fetch ordered results by the client family code
+**`Description`**
+
+Sort alphabetically by the client's specific family code or SKU.
 
 **`Generated`**
 
@@ -86,7 +94,7 @@ from enum value: GOODS_DISPATCH_ITEM_SORT_KEY_CLIENT_FAMILY_CODE = 14;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:120](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L120)
+[src/goods_dispatches.scailo_pb.ts:122](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L122)
 
 ___
 
@@ -94,7 +102,9 @@ ___
 
 • **GOODS\_DISPATCH\_ITEM\_SORT\_KEY\_CLIENT\_QUANTITY** = ``13``
 
-Fetch ordered results by the client quantity
+**`Description`**
+
+Sort by the dispatched quantity evaluated in the client's unit of measure.
 
 **`Generated`**
 
@@ -102,7 +112,7 @@ from enum value: GOODS_DISPATCH_ITEM_SORT_KEY_CLIENT_QUANTITY = 13;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:113](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L113)
+[src/goods_dispatches.scailo_pb.ts:115](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L115)
 
 ___
 
@@ -110,7 +120,9 @@ ___
 
 • **GOODS\_DISPATCH\_ITEM\_SORT\_KEY\_CLIENT\_UOM\_ID** = ``12``
 
-Fetch ordered results by the client unit of material ID
+**`Description`**
+
+Sort by the internal ID of the client's requested unit of measure.
 
 **`Generated`**
 
@@ -118,7 +130,7 @@ from enum value: GOODS_DISPATCH_ITEM_SORT_KEY_CLIENT_UOM_ID = 12;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:106](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L106)
+[src/goods_dispatches.scailo_pb.ts:108](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L108)
 
 ___
 
@@ -126,7 +138,9 @@ ___
 
 • **GOODS\_DISPATCH\_ITEM\_SORT\_KEY\_CREATED\_AT** = ``1``
 
-Fetch ordered results by the creation timestamp
+**`Description`**
+
+Sort by the timestamp the item record was initially created.
 
 **`Generated`**
 
@@ -134,7 +148,7 @@ from enum value: GOODS_DISPATCH_ITEM_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:57](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L57)
+[src/goods_dispatches.scailo_pb.ts:59](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L59)
 
 ___
 
@@ -142,7 +156,9 @@ ___
 
 • **GOODS\_DISPATCH\_ITEM\_SORT\_KEY\_FAMILY\_ID** = ``10``
 
-Fetch ordered results by the family ID
+**`Description`**
+
+Sort by the internal ID of the family.
 
 **`Generated`**
 
@@ -150,7 +166,7 @@ from enum value: GOODS_DISPATCH_ITEM_SORT_KEY_FAMILY_ID = 10;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:92](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L92)
+[src/goods_dispatches.scailo_pb.ts:94](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L94)
 
 ___
 
@@ -158,7 +174,9 @@ ___
 
 • **GOODS\_DISPATCH\_ITEM\_SORT\_KEY\_ID\_UNSPECIFIED** = ``0``
 
-Fetch ordered results by id
+**`Description`**
+
+Default sort behavior (by internal item sequence ID).
 
 **`Generated`**
 
@@ -166,7 +184,7 @@ from enum value: GOODS_DISPATCH_ITEM_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:50](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L50)
+[src/goods_dispatches.scailo_pb.ts:52](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L52)
 
 ___
 
@@ -174,7 +192,9 @@ ___
 
 • **GOODS\_DISPATCH\_ITEM\_SORT\_KEY\_INTERNAL\_QUANTITY** = ``11``
 
-Fetch ordered results by the internal quantity
+**`Description`**
+
+Sort by the dispatched quantity evaluated in the internal unit of measure.
 
 **`Generated`**
 
@@ -182,7 +202,7 @@ from enum value: GOODS_DISPATCH_ITEM_SORT_KEY_INTERNAL_QUANTITY = 11;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:99](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L99)
+[src/goods_dispatches.scailo_pb.ts:101](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L101)
 
 ___
 
@@ -190,7 +210,9 @@ ___
 
 • **GOODS\_DISPATCH\_ITEM\_SORT\_KEY\_MODIFIED\_AT** = ``2``
 
-Fetch ordered results by the modified timestamp
+**`Description`**
+
+Sort by the timestamp the item record was last modified.
 
 **`Generated`**
 
@@ -198,4 +220,4 @@ from enum value: GOODS_DISPATCH_ITEM_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-[src/goods_dispatches.scailo_pb.ts:64](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/goods_dispatches.scailo_pb.ts#L64)
+[src/goods_dispatches.scailo_pb.ts:66](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/goods_dispatches.scailo_pb.ts#L66)

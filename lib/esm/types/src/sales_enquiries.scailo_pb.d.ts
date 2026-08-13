@@ -4,73 +4,73 @@ import { FormFieldDatum, FormFieldDatumCreateRequest, FormFieldDatumFilterReques
 import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base.scailo_pb.js";
 /**
  *
- * Describes the available sort keys
+ * Enumeration of fields available for sorting sales enquiry item search results.
  *
  * @generated from enum Scailo.SALES_ENQUIRY_ITEM_SORT_KEY
  */
 export declare enum SALES_ENQUIRY_ITEM_SORT_KEY {
     /**
-     * Fetch ordered results by id
+     * @description Default sort behavior (by internal item sequence ID).
      *
      * @generated from enum value: SALES_ENQUIRY_ITEM_SORT_KEY_ID_UNSPECIFIED = 0;
      */
     SALES_ENQUIRY_ITEM_SORT_KEY_ID_UNSPECIFIED = 0,
     /**
-     * Fetch ordered results by the creation timestamp
+     * @description Sort by the timestamp the item record was initially created.
      *
      * @generated from enum value: SALES_ENQUIRY_ITEM_SORT_KEY_CREATED_AT = 1;
      */
     SALES_ENQUIRY_ITEM_SORT_KEY_CREATED_AT = 1,
     /**
-     * Fetch ordered results by the modified timestamp
+     * @description Sort by the timestamp the item record was last modified.
      *
      * @generated from enum value: SALES_ENQUIRY_ITEM_SORT_KEY_MODIFIED_AT = 2;
      */
     SALES_ENQUIRY_ITEM_SORT_KEY_MODIFIED_AT = 2,
     /**
-     * Fetch ordered results by the approved on timestamp
+     * @description Sort by the official approval timestamp of the item.
      *
      * @generated from enum value: SALES_ENQUIRY_ITEM_SORT_KEY_APPROVED_ON = 3;
      */
     SALES_ENQUIRY_ITEM_SORT_KEY_APPROVED_ON = 3,
     /**
-     * Fetch ordered results by the approved by field
+     * @description Sort by the system ID of the approving user.
      *
      * @generated from enum value: SALES_ENQUIRY_ITEM_SORT_KEY_APPROVED_BY = 4;
      */
     SALES_ENQUIRY_ITEM_SORT_KEY_APPROVED_BY = 4,
     /**
-     * Fetch ordered results by the approver's role ID
+     * @description Sort by the security role ID used by the approver.
      *
      * @generated from enum value: SALES_ENQUIRY_ITEM_SORT_KEY_APPROVER_ROLE_ID = 5;
      */
     SALES_ENQUIRY_ITEM_SORT_KEY_APPROVER_ROLE_ID = 5,
     /**
-     * Fetch ordered results by the name
+     * @description Sort alphabetically by the user provided item name.
      *
      * @generated from enum value: SALES_ENQUIRY_ITEM_SORT_KEY_NAME = 10;
      */
     SALES_ENQUIRY_ITEM_SORT_KEY_NAME = 10,
     /**
-     * Fetch ordered results by the internal quantity
+     * @description Sort by the ordered quantity evaluated in the internal unit of measure.
      *
      * @generated from enum value: SALES_ENQUIRY_ITEM_SORT_KEY_INTERNAL_QUANTITY = 11;
      */
     SALES_ENQUIRY_ITEM_SORT_KEY_INTERNAL_QUANTITY = 11,
     /**
-     * Fetch ordered results by the unit price
+     * @description Sort by the base unit price.
      *
      * @generated from enum value: SALES_ENQUIRY_ITEM_SORT_KEY_UNIT_PRICE = 12;
      */
     SALES_ENQUIRY_ITEM_SORT_KEY_UNIT_PRICE = 12,
     /**
-     * Fetch ordered results by the discount
+     * @description Sort by the percentage discount applied to the item.
      *
      * @generated from enum value: SALES_ENQUIRY_ITEM_SORT_KEY_DISCOUNT = 13;
      */
     SALES_ENQUIRY_ITEM_SORT_KEY_DISCOUNT = 13,
     /**
-     * Fetch ordered results by the delivery date
+     * @description Sort chronologically by the target delivery date for the item.
      *
      * @generated from enum value: SALES_ENQUIRY_ITEM_SORT_KEY_DELIVERY_DATE = 14;
      */
@@ -78,25 +78,25 @@ export declare enum SALES_ENQUIRY_ITEM_SORT_KEY {
 }
 /**
  *
- * Describes the applicable statuses of sales enquiry items
+ * Enum defining the applicable lifecycle and verification statuses for sales enquiry items.
  *
  * @generated from enum Scailo.SALES_ENQUIRY_ITEM_STATUS
  */
 export declare enum SALES_ENQUIRY_ITEM_STATUS {
     /**
-     * Denotes that status be disregarded. This is used only within search APIs
+     * @description Denotes that the status filter should be disregarded. Used exclusively within search APIs to bypass status restrictions.
      *
      * @generated from enum value: SALES_ENQUIRY_ITEM_STATUS_ANY_UNSPECIFIED = 0;
      */
     SALES_ENQUIRY_ITEM_STATUS_ANY_UNSPECIFIED = 0,
     /**
-     * Denotes that the sales enquiry items must have been approved
+     * @description Denotes that the sales enquiry item association has passed verification and is actively approved.
      *
      * @generated from enum value: SALES_ENQUIRY_ITEM_STATUS_APPROVED = 1;
      */
     SALES_ENQUIRY_ITEM_STATUS_APPROVED = 1,
     /**
-     * Denotes that the sales enquiry items must be waiting for approval
+     * @description Denotes that the sales enquiry item association is pending review and waiting for administrative approval.
      *
      * @generated from enum value: SALES_ENQUIRY_ITEM_STATUS_UNAPPROVED = 2;
      */
@@ -104,85 +104,79 @@ export declare enum SALES_ENQUIRY_ITEM_STATUS {
 }
 /**
  *
- * Describes the available sort keys
+ * Enumeration of fields available for sorting sales enquiry search results.
  *
  * @generated from enum Scailo.SALES_ENQUIRY_SORT_KEY
  */
 export declare enum SALES_ENQUIRY_SORT_KEY {
     /**
-     * Fetch ordered results by id
+     * @description Default sort behavior (by internal ID).
      *
      * @generated from enum value: SALES_ENQUIRY_SORT_KEY_ID_UNSPECIFIED = 0;
      */
     SALES_ENQUIRY_SORT_KEY_ID_UNSPECIFIED = 0,
     /**
-     * Fetch ordered results by the creation timestamp
+     * @description Sort by the timestamp the record was initially created.
      *
      * @generated from enum value: SALES_ENQUIRY_SORT_KEY_CREATED_AT = 1;
      */
     SALES_ENQUIRY_SORT_KEY_CREATED_AT = 1,
     /**
-     * Fetch ordered results by the modified timestamp
+     * @description Sort by the timestamp the record was last modified.
      *
      * @generated from enum value: SALES_ENQUIRY_SORT_KEY_MODIFIED_AT = 2;
      */
     SALES_ENQUIRY_SORT_KEY_MODIFIED_AT = 2,
     /**
-     * Fetch ordered results by the approved on timestamp
+     * @description Sort by the official approval timestamp.
      *
      * @generated from enum value: SALES_ENQUIRY_SORT_KEY_APPROVED_ON = 3;
      */
     SALES_ENQUIRY_SORT_KEY_APPROVED_ON = 3,
     /**
-     * Fetch ordered results by the approved by field
+     * @description Sort by the system ID of the approving user.
      *
      * @generated from enum value: SALES_ENQUIRY_SORT_KEY_APPROVED_BY = 4;
      */
     SALES_ENQUIRY_SORT_KEY_APPROVED_BY = 4,
     /**
-     * Fetch ordered results by the approver's role ID
+     * @description Sort by the security role ID used by the approver.
      *
      * @generated from enum value: SALES_ENQUIRY_SORT_KEY_APPROVER_ROLE_ID = 5;
      */
     SALES_ENQUIRY_SORT_KEY_APPROVER_ROLE_ID = 5,
     /**
-     * Fetch ordered results by the approver's completed on timestamp
+     * @description Sort by the timestamp of record completion.
      *
      * @generated from enum value: SALES_ENQUIRY_SORT_KEY_COMPLETED_ON = 6;
      */
     SALES_ENQUIRY_SORT_KEY_COMPLETED_ON = 6,
     /**
-     * Fetch ordered results by the reference ID
+     * @description Sort alphabetically by the user-provided reference ID.
      *
      * @generated from enum value: SALES_ENQUIRY_SORT_KEY_REFERENCE_ID = 10;
      */
     SALES_ENQUIRY_SORT_KEY_REFERENCE_ID = 10,
     /**
-     * Fetch ordered results by the final ref number
+     * @description Sort alphabetically by the system-generated reference number.
      *
      * @generated from enum value: SALES_ENQUIRY_SORT_KEY_FINAL_REF_NUMBER = 11;
      */
     SALES_ENQUIRY_SORT_KEY_FINAL_REF_NUMBER = 11,
     /**
-     * Fetch ordered results by the consignee client ID
+     * @description Sort by the internal ID of the consignee client.
      *
      * @generated from enum value: SALES_ENQUIRY_SORT_KEY_CONSIGNEE_CLIENT_ID = 12;
      */
     SALES_ENQUIRY_SORT_KEY_CONSIGNEE_CLIENT_ID = 12,
     /**
-     * Fetch ordered results by the buyer client ID
+     * @description Sort by the internal ID of the buyer client.
      *
      * @generated from enum value: SALES_ENQUIRY_SORT_KEY_BUYER_CLIENT_ID = 13;
      */
     SALES_ENQUIRY_SORT_KEY_BUYER_CLIENT_ID = 13,
     /**
-     * Fetch ordered results by the priority
-     *
-     * @generated from enum value: SALES_ENQUIRY_SORT_KEY_PRIORITY = 14;
-     */
-    SALES_ENQUIRY_SORT_KEY_PRIORITY = 14,
-    /**
-     * Fetch ordered results by the amendment count
+     * @description Sort by the total number of times the sales enquiry has been amended.
      *
      * @generated from enum value: SALES_ENQUIRY_SORT_KEY_AMENDMENT_COUNT = 15;
      */
@@ -190,7 +184,14 @@ export declare enum SALES_ENQUIRY_SORT_KEY {
 }
 /**
  *
- * Describes the parameters necessary to create a record
+ * Request message for defining and creating a new Sales Enquiry within the system.
+ * A Sales Enquiry represents an inbound request or lead from a prospective or existing customer
+ * (e.g., submitted via a website contact form or direct communication). It captures the initial
+ * interest in products or services, allowing sales teams to track, analyze, and subsequently respond
+ * to the prospect.
+ *
+ * **Note:** This record serves as the earliest stage in the outbound sales pipeline, often acting
+ * as the precursor to a formal Sales Quotation or Sales Order.
  *
  * @generated from message Scailo.SalesEnquiriesServiceCreateRequest
  */
@@ -207,15 +208,24 @@ export declare class SalesEnquiriesServiceCreateRequest extends Message<SalesEnq
      *
      * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
      *
-     * @generated from field: string entity_uuid = 1;
+     * @generated from field: optional string entity_uuid = 1;
      */
-    entityUuid: string;
+    entityUuid?: string;
     /**
-     * Stores any comment that the user might add during this operation
      *
-     * @generated from field: string user_comment = 2;
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
+     *
+     * @generated from field: optional string user_comment = 2;
      */
-    userComment: string;
+    userComment?: string;
     /**
      *
      * @optional
@@ -228,9 +238,9 @@ export declare class SalesEnquiriesServiceCreateRequest extends Message<SalesEnq
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 vault_folder_id = 9;
+     * @generated from field: optional uint64 vault_folder_id = 9;
      */
-    vaultFolderId: bigint;
+    vaultFolderId?: bigint;
     /**
      *
      * @mandatory
@@ -247,55 +257,119 @@ export declare class SalesEnquiriesServiceCreateRequest extends Message<SalesEnq
      */
     referenceId: string;
     /**
-     * The ID of the consignee
+     *
+     * @mandatory
+     *
+     * @description The unique internal identifier of the prospective consignee client (the entity inquiring about receiving the goods or services).
+     *
+     * @example 1050
+     *
+     * @regex ^[1-9][0-9]*$
+     *
+     * @format Unsigned 64-bit integer greater than 0.
      *
      * @generated from field: uint64 consignee_client_id = 12;
      */
     consigneeClientId: bigint;
     /**
-     * The ID of the buyer
+     *
+     * @mandatory
+     *
+     * @description The unique internal identifier of the prospective buyer client (the entity that would be financially responsible for the requested order).
+     *
+     * @example 1051
+     *
+     * @regex ^[1-9][0-9]*$
+     *
+     * @format Unsigned 64-bit integer greater than 0.
      *
      * @generated from field: uint64 buyer_client_id = 13;
      */
     buyerClientId: bigint;
     /**
-     * The priority of the sales enquiry. Possible values are "low", "medium", "high".
      *
-     * @generated from field: string priority = 14;
-     */
-    priority: string;
-    /**
-     * The ID of the currency
+     * @mandatory
+     *
+     * @description The unique internal identifier of the currency associated with the enquiry, used to frame any prospective financial discussions or quotes.
+     *
+     * @example 3
+     *
+     * @regex ^[1-9][0-9]*$
+     *
+     * @format Unsigned 64-bit integer greater than 0.
      *
      * @generated from field: uint64 currency_id = 15;
      */
     currencyId: bigint;
     /**
-     * The description of the sales enquiry
      *
-     * @generated from field: string description = 16;
-     */
-    description: string;
-    /**
-     * The miscellaneous cost (in cents)
+     * @optional
      *
-     * @generated from field: uint64 miscellaneous_cost = 17;
-     */
-    miscellaneousCost: bigint;
-    /**
-     * The overall discount (in cents)
+     * @description A textual summary detailing the specific products, services, or information the lead is requesting.
      *
-     * @generated from field: uint64 overall_discount = 18;
-     */
-    overallDiscount: bigint;
-    /**
-     * The round off amount (in cents) (both positive and negative values are allowed)
+     * @example "Looking for bulk pricing on industrial copper wiring"
      *
-     * @generated from field: int64 round_off = 19;
+     * @regex ^[0-9A-Za-z ]*$
+     *
+     * @format Alphanumeric characters and spaces only. Can be left empty.
+     *
+     * @generated from field: optional string description = 16;
      */
-    roundOff: bigint;
+    description?: string;
     /**
-     * The list of dynamic forms
+     *
+     * @optional
+     *
+     * @description Any additional miscellaneous costs (e.g., estimated handling or freight charges) tentatively associated with the enquiry, represented in the base currency subunit (e.g., cents).
+     *
+     * @example 1500
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
+     *
+     * @generated from field: optional uint64 miscellaneous_cost = 17;
+     */
+    miscellaneousCost?: bigint;
+    /**
+     *
+     * @optional
+     *
+     * @description A flat target discount amount associated with the enquiry, represented in the base currency subunit (e.g., cents).
+     *
+     * @example 500
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
+     *
+     * @generated from field: optional uint64 overall_discount = 18;
+     */
+    overallDiscount?: bigint;
+    /**
+     *
+     * @optional
+     *
+     * @description The applicable rounding adjustment amount for prospective financial totals. Can be positive or negative, represented in the base currency subunit.
+     *
+     * @example -15
+     *
+     * @regex ^-?[0-9]+$
+     *
+     * @format Signed 64-bit integer.
+     *
+     * @generated from field: optional int64 round_off = 19;
+     */
+    roundOff?: bigint;
+    /**
+     *
+     * @optional
+     *
+     * @description A collection of dynamic form fields for organization-specific data.
+     *
+     * @example []
+     *
+     * @format An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
      *
      * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
      */
@@ -311,19 +385,43 @@ export declare class SalesEnquiriesServiceCreateRequest extends Message<SalesEnq
 }
 /**
  *
- * Describes the parameters necessary to update a record
+ * Request message for updating an existing Sales Enquiry record.
+ * Only applicable for records in `DRAFT` or `REVISION` states.
+ * This message allows for modifying the references, consignee & buyer, currency, costs & discounts, and other custom form fields
+ * of an established Sales Enquiry.
+ *
+ * **Note:** Only fields provided in the request will typically be updated.
+ * The unique system ID is required to locate the target record.
  *
  * @generated from message Scailo.SalesEnquiriesServiceUpdateRequest
  */
 export declare class SalesEnquiriesServiceUpdateRequest extends Message<SalesEnquiriesServiceUpdateRequest> {
     /**
-     * Stores any comment that the user might add during this operation
      *
-     * @generated from field: string user_comment = 1;
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
+     *
+     * @generated from field: optional string user_comment = 1;
      */
-    userComment: string;
+    userComment?: string;
     /**
-     * The ID of the record that needs to be updated
+     *
+     * @mandatory
+     *
+     * @description The unique internal identifier of the target record that needs to be updated.
+     *
+     * @example 1024
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 id = 2;
      */
@@ -336,9 +434,9 @@ export declare class SalesEnquiriesServiceUpdateRequest extends Message<SalesEnq
      *
      * @example true
      *
-     * @generated from field: bool notify_users = 3;
+     * @generated from field: optional bool notify_users = 3;
      */
-    notifyUsers: boolean;
+    notifyUsers?: boolean;
     /**
      *
      * @optional
@@ -351,12 +449,12 @@ export declare class SalesEnquiriesServiceUpdateRequest extends Message<SalesEnq
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 vault_folder_id = 9;
+     * @generated from field: optional uint64 vault_folder_id = 9;
      */
-    vaultFolderId: bigint;
+    vaultFolderId?: bigint;
     /**
      *
-     * @mandatory
+     * @optional
      *
      * @description Updated alphanumeric reference ID. Must contain at least 1 character.
      *
@@ -366,59 +464,123 @@ export declare class SalesEnquiriesServiceUpdateRequest extends Message<SalesEnq
      *
      * @format Alphanumeric characters and spaces only. No special symbols or punctuation allowed.
      *
-     * @generated from field: string reference_id = 10;
+     * @generated from field: optional string reference_id = 10;
      */
-    referenceId: string;
+    referenceId?: string;
     /**
-     * The ID of the consignee
      *
-     * @generated from field: uint64 consignee_client_id = 12;
-     */
-    consigneeClientId: bigint;
-    /**
-     * The ID of the buyer
+     * @optional
      *
-     * @generated from field: uint64 buyer_client_id = 13;
-     */
-    buyerClientId: bigint;
-    /**
-     * The priority of the sales enquiry. Possible values are "low", "medium", "high".
+     * @description The unique internal identifier of the prospective consignee client (the entity inquiring about receiving the goods or services).
      *
-     * @generated from field: string priority = 14;
-     */
-    priority: string;
-    /**
-     * The ID of the currency
+     * @example 1050
      *
-     * @generated from field: uint64 currency_id = 15;
-     */
-    currencyId: bigint;
-    /**
-     * The description of the sales enquiry
+     * @regex ^[1-9][0-9]*$
      *
-     * @generated from field: string description = 16;
-     */
-    description: string;
-    /**
-     * The miscellaneous cost (in cents)
+     * @format Unsigned 64-bit integer greater than 0.
      *
-     * @generated from field: uint64 miscellaneous_cost = 17;
+     * @generated from field: optional uint64 consignee_client_id = 12;
      */
-    miscellaneousCost: bigint;
+    consigneeClientId?: bigint;
     /**
-     * The overall discount (in cents)
      *
-     * @generated from field: uint64 overall_discount = 18;
-     */
-    overallDiscount: bigint;
-    /**
-     * The round off amount (in cents) (both positive and negative values are allowed)
+     * @optional
      *
-     * @generated from field: int64 round_off = 19;
+     * @description The unique internal identifier of the prospective buyer client (the entity that would be financially responsible for the requested order).
+     *
+     * @example 1051
+     *
+     * @regex ^[1-9][0-9]*$
+     *
+     * @format Unsigned 64-bit integer greater than 0.
+     *
+     * @generated from field: optional uint64 buyer_client_id = 13;
      */
-    roundOff: bigint;
+    buyerClientId?: bigint;
     /**
-     * The list of dynamic forms
+     *
+     * @optional
+     *
+     * @description The unique internal identifier of the currency associated with the enquiry, used to frame any prospective financial discussions or quotes.
+     *
+     * @example 3
+     *
+     * @regex ^[1-9][0-9]*$
+     *
+     * @format Unsigned 64-bit integer greater than 0.
+     *
+     * @generated from field: optional uint64 currency_id = 15;
+     */
+    currencyId?: bigint;
+    /**
+     *
+     * @optional
+     *
+     * @description A textual summary detailing the specific products, services, or information the lead is requesting.
+     *
+     * @example "Looking for bulk pricing on industrial copper wiring"
+     *
+     * @regex ^[0-9A-Za-z ]*$
+     *
+     * @format Alphanumeric characters and spaces only. Can be left empty.
+     *
+     * @generated from field: optional string description = 16;
+     */
+    description?: string;
+    /**
+     *
+     * @optional
+     *
+     * @description Any additional miscellaneous costs (e.g., estimated handling or freight charges) tentatively associated with the enquiry, represented in the base currency subunit (e.g., cents).
+     *
+     * @example 1500
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
+     *
+     * @generated from field: optional uint64 miscellaneous_cost = 17;
+     */
+    miscellaneousCost?: bigint;
+    /**
+     *
+     * @optional
+     *
+     * @description A flat target discount amount associated with the enquiry, represented in the base currency subunit (e.g., cents).
+     *
+     * @example 500
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
+     *
+     * @generated from field: optional uint64 overall_discount = 18;
+     */
+    overallDiscount?: bigint;
+    /**
+     *
+     * @optional
+     *
+     * @description The applicable rounding adjustment amount for prospective financial totals. Can be positive or negative, represented in the base currency subunit.
+     *
+     * @example -15
+     *
+     * @regex ^-?[0-9]+$
+     *
+     * @format Signed 64-bit integer.
+     *
+     * @generated from field: optional int64 round_off = 19;
+     */
+    roundOff?: bigint;
+    /**
+     *
+     * @optional
+     *
+     * @description A collection of dynamic form fields for organization-specific data.
+     *
+     * @example []
+     *
+     * @format An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
      *
      * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
      */
@@ -434,25 +596,43 @@ export declare class SalesEnquiriesServiceUpdateRequest extends Message<SalesEnq
 }
 /**
  *
- * Stores the UUID references of the record
+ * Represents the external-facing, unique identifiers (UUIDs) of a Sales Enquiry's core dependencies.
+ * By exposing UUIDs instead of internal sequential integer IDs, this message allows
+ * external clients and frontend applications to securely reference underlying entities
+ * (such as clients, locations, and currencies) without risking data enumeration or leaking system architecture.
  *
  * @generated from message Scailo.SalesEnquiryAncillaryParameters
  */
 export declare class SalesEnquiryAncillaryParameters extends Message<SalesEnquiryAncillaryParameters> {
     /**
-     * The UUID of the consignee client (the UUID of the associated consignee_client_id)
+     *
+     * @description The globally unique identifier (UUID) of the consignee client, correlating to the internal `consignee_client_id`.
+     *
+     * @example "550e8400-e29b-41d4-a716-446655440000"
+     *
+     * @format Valid v4 UUID in canonical hyphenated form.
      *
      * @generated from field: string consignee_client_uuid = 212;
      */
     consigneeClientUuid: string;
     /**
-     * The UUID of the buyer client (the UUID of the associated buyer_client_id)
+     *
+     * @description The globally unique identifier (UUID) of the buyer client, correlating to the internal `buyer_client_id`.
+     *
+     * @example "661f9511-f39c-42d5-b827-557766551111"
+     *
+     * @format Valid v4 UUID in canonical hyphenated form.
      *
      * @generated from field: string buyer_client_uuid = 213;
      */
     buyerClientUuid: string;
     /**
-     * The UUID of the currency (the UUID of the associated currency)
+     *
+     * @description The globally unique identifier (UUID) of the associated currency, correlating to the internal `currency_id`.
+     *
+     * @example "883b1733-b51e-64f7-d049-779988773333"
+     *
+     * @format Valid v4 UUID in canonical hyphenated form.
      *
      * @generated from field: string currency_uuid = 215;
      */
@@ -468,7 +648,14 @@ export declare class SalesEnquiryAncillaryParameters extends Message<SalesEnquir
 }
 /**
  *
- * Describes the parameters that are part of a standard response
+ * Represents a complete Sales Enquiry entity within the system.
+ * This message encapsulates the comprehensive state of an inbound lead or prospective customer request,
+ * including identity metadata, prospective client mapping, preliminary financial aggregates,
+ * approval lifecycle, audit history, and the complete collection of requested line items.
+ *
+ * **Note:** This payload is typically returned in read operations (e.g., View, Search)
+ * and provides frontend clients or external CRMs with the entire context needed to review,
+ * analyze, and ultimately convert the lead into a formal Sales Quotation or Sales Order.
  *
  * @generated from message Scailo.SalesEnquiry
  */
@@ -547,73 +734,102 @@ export declare class SalesEnquiry extends Message<SalesEnquiry> {
      */
     finalRefNumber: string;
     /**
-     * The ID of the consignee
+     *
+     * @description The unique internal identifier of the prospective consignee client (the entity inquiring about receiving the goods or services).
+     *
+     * @example 1050
      *
      * @generated from field: uint64 consignee_client_id = 12;
      */
     consigneeClientId: bigint;
     /**
-     * The ID of the buyer
+     *
+     * @description The unique internal identifier of the prospective buyer client (the entity that would be financially responsible for the requested order).
+     *
+     * @example 1051
      *
      * @generated from field: uint64 buyer_client_id = 13;
      */
     buyerClientId: bigint;
     /**
-     * The priority of the sales enquiry. Possible values are "low", "medium", "high".
      *
-     * @generated from field: string priority = 14;
-     */
-    priority: string;
-    /**
-     * The ID of the currency
+     * @description The unique internal identifier of the currency associated with the enquiry, used to frame any prospective financial discussions or quotes.
+     *
+     * @example 3
      *
      * @generated from field: uint64 currency_id = 15;
      */
     currencyId: bigint;
     /**
-     * The description of the sales enquiry
+     *
+     * @description A textual summary detailing the specific products, services, or information the lead is requesting.
+     *
+     * @example "Looking for bulk pricing on industrial copper wiring"
      *
      * @generated from field: string description = 16;
      */
     description: string;
     /**
-     * The miscellaneous cost (in cents)
+     *
+     * @description Any additional miscellaneous costs (e.g., estimated handling or freight charges) tentatively associated with the enquiry, represented in the base currency subunit (e.g., cents).
+     *
+     * @example 1500
      *
      * @generated from field: uint64 miscellaneous_cost = 17;
      */
     miscellaneousCost: bigint;
     /**
-     * The overall discount (in cents)
+     *
+     * @description A flat target discount amount associated with the enquiry, represented in the base currency subunit (e.g., cents).
+     *
+     * @example 500
      *
      * @generated from field: uint64 overall_discount = 18;
      */
     overallDiscount: bigint;
     /**
-     * The round off amount (in cents)
+     *
+     * @description The applicable rounding adjustment amount for prospective financial totals. Can be positive or negative, represented in the base currency subunit.
+     *
+     * @example -15
      *
      * @generated from field: int64 round_off = 19;
      */
     roundOff: bigint;
     /**
-     * The number of times that the sales enquiry has been amended
+     *
+     * @description The number of times that this record has been amended after approval.
+     *
+     * @example 5
      *
      * @generated from field: uint64 amendment_count = 20;
      */
     amendmentCount: bigint;
     /**
-     * The list of associated sales enquiry items
+     *
+     * @description The complete, aggregated list of individual line items, products, or services that constitute this sales enquiry.
+     *
+     * @example []
+     *
+     * @format Repeated array of SalesEnquiryItem message blocks.
      *
      * @generated from field: repeated Scailo.SalesEnquiryItem list = 30;
      */
     list: SalesEnquiryItem[];
     /**
-     * The list of dynamic forms
+     *
+     * @description Collection of organization-specific dynamic data.
      *
      * @generated from field: repeated Scailo.FormFieldDatum form_data = 40;
      */
     formData: FormFieldDatum[];
     /**
-     * The total price of the sales enquiry
+     *
+     * @description The calculated grand total value of the sales enquiry, including all items, discounts, costs, and round-offs. Represented as a standard decimal value.
+     *
+     * @example 15250.75
+     *
+     * @format Double-precision floating-point number.
      *
      * @generated from field: double total_price = 50;
      */
@@ -629,77 +845,181 @@ export declare class SalesEnquiry extends Message<SalesEnquiry> {
 }
 /**
  *
- * Describes the parameters required to add an item to a sales enquiry
+ * Request message for appending a requested product or service line item to a Sales Enquiry.
+ * This payload captures the prospect's preliminary interest, requested quantities, proposed pricing,
+ * and delivery expectations before a formal quotation is generated.
+ *
+ * **Note:** During the initial enquiry phase, exact catalog matches might not be known;
+ * therefore, the item is primarily identified by a free-text `name` rather than a strict product family ID.
  *
  * @generated from message Scailo.SalesEnquiriesServiceItemCreateRequest
  */
 export declare class SalesEnquiriesServiceItemCreateRequest extends Message<SalesEnquiriesServiceItemCreateRequest> {
     /**
-     * Stores any comment that the user might add during this operation
      *
-     * @generated from field: string user_comment = 1;
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
+     *
+     * @generated from field: optional string user_comment = 1;
      */
-    userComment: string;
+    userComment?: string;
     /**
-     * Stores the sales enquiry ID
+     *
+     * @mandatory
+     *
+     * @description The unique internal identifier of the parent sales enquiry to which this requested item will be attached.
+     *
+     * @example 1024
+     *
+     * @regex ^[1-9][0-9]*$
+     *
+     * @format Unsigned 64-bit integer greater than 0.
      *
      * @generated from field: uint64 sales_enquiry_id = 10;
      */
     salesEnquiryId: bigint;
     /**
-     * Stores the name of the item
+     *
+     * @mandatory
+     *
+     * @description The descriptive name of the requested product or service. Free-text is used here as the exact catalog item may not be definitively identified during the initial lead phase.
+     *
+     * @example "Industrial Copper Wiring - 12 AWG"
+     *
+     * @regex .+
+     *
+     * @format Must be a non-empty string.
      *
      * @generated from field: string name = 11;
      */
     name: string;
     /**
-     * The quantity being offered (in cents)
+     *
+     * @mandatory
+     *
+     * @description The prospective quantity requested, represented in the system's internal base unit of measure. Stored in subunits (cents) to maintain fractional precision.
+     *
+     * @example 10000
+     *
+     * @regex ^[1-9][0-9]*$
+     *
+     * @format Unsigned 64-bit integer greater than 0.
      *
      * @generated from field: uint64 internal_quantity = 12;
      */
     internalQuantity: bigint;
     /**
-     * The ID of the associated unit of material
+     *
+     * @mandatory
+     *
+     * @description The unique internal identifier of the Unit of Measure (UOM) applicable to this requested item.
+     *
+     * @example 12
+     *
+     * @regex ^[1-9][0-9]*$
+     *
+     * @format Unsigned 64-bit integer greater than 0.
      *
      * @generated from field: uint64 uom_id = 13;
      */
     uomId: bigint;
     /**
-     * The unit price
+     *
+     * @mandatory
+     *
+     * @description The proposed or target price per unit for this item, represented in the base currency subunit (e.g., cents).
+     *
+     * @example 2500
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 unit_price = 14;
      */
     unitPrice: bigint;
     /**
-     * The discount percentage (in cents)
+     *
+     * @mandatory
+     *
+     * @description The proposed discount percentage applied to this specific item, represented in subunits (e.g., 1500 for 15.00%).
+     *
+     * @example 1500
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 discount = 15;
      */
     discount: bigint;
     /**
-     * The ID of the associated tax group
+     *
+     * @mandatory
+     *
+     * @description The unique internal identifier of the tax group or tax bracket tentatively applicable to this specific line item.
+     *
+     * @example 4
+     *
+     * @regex ^[1-9][0-9]*$
+     *
+     * @format Unsigned 64-bit integer greater than 0.
      *
      * @generated from field: uint64 tax_group_id = 16;
      */
     taxGroupId: bigint;
     /**
-     * The round off (in cents) (both positive and negative values are allowed)
      *
-     * @generated from field: int64 round_off = 17;
+     * @optional
+     *
+     * @description The applicable rounding adjustment amount for this specific item's financial total. Can be positive or negative, represented in the base currency subunit.
+     *
+     * @example -15
+     *
+     * @regex ^-?[0-9]+$
+     *
+     * @format Signed 64-bit integer.
+     *
+     * @generated from field: optional int64 round_off = 17;
      */
-    roundOff: bigint;
+    roundOff?: bigint;
     /**
-     * The delivery date
+     *
+     * @mandatory
+     *
+     * @description The specific prospective target delivery date requested or proposed for this line item.
+     *
+     * @example "2023-11-15"
+     *
+     * @regex .*
+     *
+     * @format Must be a non-empty string. Expected to follow the standard date format (e.g., YYYY-MM-DD).
      *
      * @generated from field: string delivery_date = 18;
      */
     deliveryDate: string;
     /**
-     * The specifications
      *
-     * @generated from field: string specifications = 19;
+     * @optional
+     *
+     * @description Additional custom textual requirements, notes, or specifications requested by the prospect for this item.
+     *
+     * @example "Requires double-reinforced packaging for international transit."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
+     *
+     * @generated from field: optional string specifications = 19;
      */
-    specifications: string;
+    specifications?: string;
     constructor(data?: PartialMessage<SalesEnquiriesServiceItemCreateRequest>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.SalesEnquiriesServiceItemCreateRequest";
@@ -711,77 +1031,178 @@ export declare class SalesEnquiriesServiceItemCreateRequest extends Message<Sale
 }
 /**
  *
- * Describes the parameters required to update an item in a sales enquiry
+ * Request message for modifying the core parameters of an existing Sales Enquiry line item.
+ * Supports updating requested quantities, proposed commercial terms, delivery dates, and specifications
+ * as the lead is qualified and requirements become clearer.
  *
  * @generated from message Scailo.SalesEnquiriesServiceItemUpdateRequest
  */
 export declare class SalesEnquiriesServiceItemUpdateRequest extends Message<SalesEnquiriesServiceItemUpdateRequest> {
     /**
-     * Stores any comment that the user might add during this operation
      *
-     * @generated from field: string user_comment = 1;
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
+     *
+     * @generated from field: optional string user_comment = 1;
      */
-    userComment: string;
+    userComment?: string;
     /**
-     * The ID of the record
+     *
+     * @mandatory
+     *
+     * @description The unique internal identifier of the target record that needs to be updated.
+     *
+     * @example 1024
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 id = 2;
      */
     id: bigint;
     /**
-     * Stores the name of the item
+     *
+     * @mandatory
+     *
+     * @description The descriptive name of the requested product or service. Free-text is used here as the exact catalog item may not be definitively identified during the initial lead phase.
+     *
+     * @example "Industrial Copper Wiring - 12 AWG"
+     *
+     * @regex .+
+     *
+     * @format Must be a non-empty string.
      *
      * @generated from field: string name = 11;
      */
     name: string;
     /**
-     * The quantity being offered (in cents)
+     *
+     * @mandatory
+     *
+     * @description The prospective quantity requested, represented in the system's internal base unit of measure. Stored in subunits (cents) to maintain fractional precision.
+     *
+     * @example 10000
+     *
+     * @regex ^[1-9][0-9]*$
+     *
+     * @format Unsigned 64-bit integer greater than 0.
      *
      * @generated from field: uint64 internal_quantity = 12;
      */
     internalQuantity: bigint;
     /**
-     * The ID of the associated unit of material
+     *
+     * @mandatory
+     *
+     * @description The unique internal identifier of the Unit of Measure (UOM) applicable to this requested item.
+     *
+     * @example 12
+     *
+     * @regex ^[1-9][0-9]*$
+     *
+     * @format Unsigned 64-bit integer greater than 0.
      *
      * @generated from field: uint64 uom_id = 13;
      */
     uomId: bigint;
     /**
-     * The unit price
+     *
+     * @mandatory
+     *
+     * @description The proposed or target price per unit for this item, represented in the base currency subunit (e.g., cents).
+     *
+     * @example 2500
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 unit_price = 14;
      */
     unitPrice: bigint;
     /**
-     * The discount percentage (in cents)
+     *
+     * @mandatory
+     *
+     * @description The proposed discount percentage applied to this specific item, represented in subunits (e.g., 1500 for 15.00%).
+     *
+     * @example 1500
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 discount = 15;
      */
     discount: bigint;
     /**
-     * The ID of the associated tax group
+     *
+     * @mandatory
+     *
+     * @description The unique internal identifier of the tax group or tax bracket tentatively applicable to this specific line item.
+     *
+     * @example 4
+     *
+     * @regex ^[1-9][0-9]*$
+     *
+     * @format Unsigned 64-bit integer greater than 0.
      *
      * @generated from field: uint64 tax_group_id = 16;
      */
     taxGroupId: bigint;
     /**
-     * The round off (in cents) (both positive and negative values are allowed)
      *
-     * @generated from field: int64 round_off = 17;
+     * @optional
+     *
+     * @description The applicable rounding adjustment amount for this specific item's financial total. Can be positive or negative, represented in the base currency subunit.
+     *
+     * @example -15
+     *
+     * @regex ^-?[0-9]+$
+     *
+     * @format Signed 64-bit integer.
+     *
+     * @generated from field: optional int64 round_off = 17;
      */
-    roundOff: bigint;
+    roundOff?: bigint;
     /**
-     * The delivery date
+     *
+     * @mandatory
+     *
+     * @description The specific prospective target delivery date requested or proposed for this line item.
+     *
+     * @example "2023-11-15"
+     *
+     * @regex .*
+     *
+     * @format Must be a non-empty string. Expected to follow the standard date format (e.g., YYYY-MM-DD).
      *
      * @generated from field: string delivery_date = 18;
      */
     deliveryDate: string;
     /**
-     * The specifications
      *
-     * @generated from field: string specifications = 19;
+     * @optional
+     *
+     * @description Additional custom textual requirements, notes, or specifications requested by the prospect for this item.
+     *
+     * @example "Requires double-reinforced packaging for international transit."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
+     *
+     * @generated from field: optional string specifications = 19;
      */
-    specifications: string;
+    specifications?: string;
     constructor(data?: PartialMessage<SalesEnquiriesServiceItemUpdateRequest>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.SalesEnquiriesServiceItemUpdateRequest";
@@ -793,7 +1214,14 @@ export declare class SalesEnquiriesServiceItemUpdateRequest extends Message<Sale
 }
 /**
  *
- * Describes the parameters that constitute an item associated to a sales enquiry
+ * Represents a complete, finalized Sales Enquiry Item entity within the system.
+ * This message encapsulates the comprehensive state of a single product or service requested by a prospect,
+ * including its relationship to the parent enquiry, requested quantities, proposed commercial terms (pricing, taxes, discounts),
+ * delivery expectations, and derived financial calculations.
+ *
+ * **Note:** This payload is utilized in read operations to provide clients and downstream systems
+ * with the exact, immutable state of an individual line item during the lead qualification phase,
+ * prior to its formal conversion into a quotation or order.
  *
  * @generated from message Scailo.SalesEnquiryItem
  */
@@ -823,79 +1251,119 @@ export declare class SalesEnquiryItem extends Message<SalesEnquiryItem> {
     approvalMetadata?: ApprovalMetadata;
     /**
      *
-     * @description The approval state of the record
+     * @description A boolean flag indicating whether this specific record requires further administrative approval.
+     *
+     * @example false
+     *
+     * @format Boolean true or false.
      *
      * @generated from field: bool need_approval = 4;
      */
     needApproval: boolean;
     /**
-     * Stores any comment that the user might have added during an operation
+     *
+     * @description Audit log comment or justification captured during the last modification or transactional operation.
+     *
+     * @example "This is a comment for audit purposes."
      *
      * @generated from field: string user_comment = 5;
      */
     userComment: string;
     /**
-     * Stores the sales enquiry ID
+     *
+     * @description The unique internal identifier of the parent sales enquiry to which this requested item will be attached.
+     *
+     * @example 1024
      *
      * @generated from field: uint64 sales_enquiry_id = 10;
      */
     salesEnquiryId: bigint;
     /**
-     * Stores the name of the item
+     *
+     * @description The descriptive name of the requested product or service. Free-text is used here as the exact catalog item may not be definitively identified during the initial lead phase.
+     *
+     * @example "Industrial Copper Wiring - 12 AWG"
      *
      * @generated from field: string name = 11;
      */
     name: string;
     /**
-     * The quantity being offered (in cents)
+     *
+     * @description The prospective quantity requested, represented in the system's internal base unit of measure. Stored in subunits (cents) to maintain fractional precision.
+     *
+     * @example 10000
      *
      * @generated from field: uint64 internal_quantity = 12;
      */
     internalQuantity: bigint;
     /**
-     * The ID of the associated unit of material
+     *
+     * @description The unique internal identifier of the Unit of Measure (UOM) applicable to this requested item.
+     *
+     * @example 12
      *
      * @generated from field: uint64 uom_id = 13;
      */
     uomId: bigint;
     /**
-     * The unit price
+     *
+     * @description The proposed or target price per unit for this item, represented in the base currency subunit (e.g., cents).
+     *
+     * @example 2500
      *
      * @generated from field: uint64 unit_price = 14;
      */
     unitPrice: bigint;
     /**
-     * The discount percentage (in cents)
+     *
+     * @description The proposed discount percentage applied to this specific item, represented in subunits (e.g., 1500 for 15.00%).
+     *
+     * @example 1500
      *
      * @generated from field: uint64 discount = 15;
      */
     discount: bigint;
     /**
-     * The ID of the associated tax group
+     *
+     * @description The unique internal identifier of the tax group or tax bracket tentatively applicable to this specific line item.
+     *
+     * @example 4
      *
      * @generated from field: uint64 tax_group_id = 16;
      */
     taxGroupId: bigint;
     /**
-     * The round off (in cents)
+     *
+     * @description The applicable rounding adjustment amount for this specific item's financial total. Can be positive or negative, represented in the base currency subunit.
+     *
+     * @example -15
      *
      * @generated from field: int64 round_off = 17;
      */
     roundOff: bigint;
     /**
-     * The delivery date
+     *
+     * @description The specific prospective target delivery date requested or proposed for this line item.
+     *
+     * @example "2023-11-15"
      *
      * @generated from field: string delivery_date = 18;
      */
     deliveryDate: string;
     /**
-     * The specifications
+     *
+     * @description Additional custom textual requirements, notes, or specifications requested by the prospect for this item.
+     *
+     * @example "Requires double-reinforced packaging for international transit."
      *
      * @generated from field: string specifications = 19;
      */
     specifications: string;
     /**
-     * Stores the unit price after factoring in the discount
+     *
+     * @description The system-calculated net proposed price per unit after the applied discount has been subtracted from the base unit price. Represented in the base currency subunit (e.g., cents).
+     *
+     * @example 2125
      *
      * @generated from field: uint64 discounted_unit_price = 30;
      */
@@ -911,13 +1379,13 @@ export declare class SalesEnquiryItem extends Message<SalesEnquiryItem> {
 }
 /**
  *
- * Describes the message consisting of the list of sales enquiries
+ * Container message for a collection of Sales Enquiry records.
  *
  * @generated from message Scailo.SalesEnquiriesList
  */
 export declare class SalesEnquiriesList extends Message<SalesEnquiriesList> {
     /**
-     * List of records
+     * @description An array of Sales Enquiry records.
      *
      * @generated from field: repeated Scailo.SalesEnquiry list = 1;
      */
@@ -933,13 +1401,13 @@ export declare class SalesEnquiriesList extends Message<SalesEnquiriesList> {
 }
 /**
  *
- * Describes the message consisting of the list of sales enquiry items
+ * Container message for a collection of Sales Enquiry Item records.
  *
  * @generated from message Scailo.SalesEnquiriesItemsList
  */
 export declare class SalesEnquiriesItemsList extends Message<SalesEnquiriesItemsList> {
     /**
-     * List of records
+     * @description An array of Sales Enquiry Item records.
      *
      * @generated from field: repeated Scailo.SalesEnquiryItem list = 1;
      */
@@ -955,19 +1423,38 @@ export declare class SalesEnquiriesItemsList extends Message<SalesEnquiriesItems
 }
 /**
  *
- * Describes the parameters that are required to retrieve the history of the record
+ * Represents the request payload containing the parameter constraints required to
+ * retrieve the historical audit trail and lifecycle changes of a specific sales enquiry item record.
  *
  * @generated from message Scailo.SalesEnquiryItemHistoryRequest
  */
 export declare class SalesEnquiryItemHistoryRequest extends Message<SalesEnquiryItemHistoryRequest> {
     /**
-     * Stores the sales enquiry ID
+     *
+     * @mandatory
+     *
+     * @description The unique internal identifier of the target sales enquiry associated with the historical record.
+     *
+     * @example 1024
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer greater than zero.
      *
      * @generated from field: uint64 sales_enquiry_id = 10;
      */
     salesEnquiryId: bigint;
     /**
-     * Stores the name of the item
+     *
+     * @mandatory
+     *
+     * @description The exact descriptive name of the requested product or service. Because enquiry items are tracked via free-text names instead of strict catalog IDs, this string acts as the secondary identifier for fetching the specific item's historical audit trail.
+     *
+     * @example "Industrial Copper Wiring - 12 AWG"
+     *
+     * @regex .*
+     *
+     * @format Must be a non-empty string.
      *
      * @generated from field: string name = 11;
      */
@@ -983,7 +1470,8 @@ export declare class SalesEnquiryItemHistoryRequest extends Message<SalesEnquiry
 }
 /**
  *
- * Describes the request payload to retrieve approved or unapproved items.
+ * Request payload structure used to search and filter Sales Enquiry Item records.
+ * Supports pagination controls, tenancy isolation, status grouping, and text-based matching.
  *
  * @generated from message Scailo.SalesEnquiryItemsSearchRequest
  */
@@ -996,9 +1484,9 @@ export declare class SalesEnquiryItemsSearchRequest extends Message<SalesEnquiry
      *
      * @example ANY
      *
-     * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+     * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
      */
-    isActive: BOOL_FILTER;
+    isActive?: BOOL_FILTER;
     /**
      *
      * @mandatory
@@ -1026,9 +1514,9 @@ export declare class SalesEnquiryItemsSearchRequest extends Message<SalesEnquiry
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 offset = 3;
+     * @generated from field: optional uint64 offset = 3;
      */
-    offset: bigint;
+    offset?: bigint;
     /**
      *
      * @optional
@@ -1037,18 +1525,18 @@ export declare class SalesEnquiryItemsSearchRequest extends Message<SalesEnquiry
      *
      * @example DESCENDING
      *
-     * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+     * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
      */
-    sortOrder: SORT_ORDER;
+    sortOrder?: SORT_ORDER;
     /**
      *
      * @optional
      *
      * @description The field used for sorting.
      *
-     * @generated from field: Scailo.SALES_ENQUIRY_ITEM_SORT_KEY sort_key = 5;
+     * @generated from field: optional Scailo.SALES_ENQUIRY_ITEM_SORT_KEY sort_key = 5;
      */
-    sortKey: SALES_ENQUIRY_ITEM_SORT_KEY;
+    sortKey?: SALES_ENQUIRY_ITEM_SORT_KEY;
     /**
      *
      * @optional
@@ -1061,81 +1549,183 @@ export declare class SalesEnquiryItemsSearchRequest extends Message<SalesEnquiry
      *
      * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
      *
-     * @generated from field: string entity_uuid = 6;
+     * @generated from field: optional string entity_uuid = 6;
      */
-    entityUuid: string;
+    entityUuid?: string;
     /**
-     * The status of the items
      *
-     * @generated from field: Scailo.SALES_ENQUIRY_ITEM_STATUS status = 7;
+     * @optional
+     *
+     * @description The field used for sorting.
+     *
+     * @generated from field: optional Scailo.SALES_ENQUIRY_ITEM_STATUS status = 7;
      */
-    status: SALES_ENQUIRY_ITEM_STATUS;
+    status?: SALES_ENQUIRY_ITEM_STATUS;
     /**
-     * The start range of approved timestamp
      *
-     * @generated from field: uint64 approved_on_start = 10;
+     * @optional
+     *
+     * @description Filter records approved ON or AFTER this UNIX timestamp.
+     *
+     * @example 1672531200
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
+     *
+     * @generated from field: optional uint64 approved_on_start = 10;
      */
-    approvedOnStart: bigint;
+    approvedOnStart?: bigint;
     /**
-     * The end range of approved timestamp
      *
-     * @generated from field: uint64 approved_on_end = 11;
+     * @optional
+     *
+     * @description Filter records approved ON or BEFORE this UNIX timestamp.
+     *
+     * @example 1704067199
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
+     *
+     * @generated from field: optional uint64 approved_on_end = 11;
      */
-    approvedOnEnd: bigint;
+    approvedOnEnd?: bigint;
     /**
-     * The ID of the approver
      *
-     * @generated from field: uint64 approved_by_user_id = 12;
+     * @optional
+     *
+     * @description Filter by the specific user ID who approved the records.
+     *
+     * @example 501
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
+     *
+     * @generated from field: optional uint64 approved_by_user_id = 12;
      */
-    approvedByUserId: bigint;
+    approvedByUserId?: bigint;
     /**
-     * The role ID of the approver
      *
-     * @generated from field: uint64 approver_role_id = 13;
+     * @optional
+     *
+     * @description Filter by the role ID of the approver.
+     *
+     * @example 5
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
+     *
+     * @generated from field: optional uint64 approver_role_id = 13;
      */
-    approverRoleId: bigint;
+    approverRoleId?: bigint;
     /**
-     * Stores the sales enquiry ID
      *
-     * @generated from field: uint64 sales_enquiry_id = 20;
+     * @optional
+     *
+     * @description Filter line items belonging to a specific parent sales enquiry.
+     *
+     * @example 1024
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
+     *
+     * @generated from field: optional uint64 sales_enquiry_id = 20;
      */
-    salesEnquiryId: bigint;
+    salesEnquiryId?: bigint;
     /**
-     * The ID of the unit of material
      *
-     * @generated from field: uint64 uom_id = 21;
+     * @optional
+     *
+     * @description Filter line items requesting a specific Unit of Measure (UOM).
+     *
+     * @example 12
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
+     *
+     * @generated from field: optional uint64 uom_id = 21;
      */
-    uomId: bigint;
+    uomId?: bigint;
     /**
-     * The ID of the tax group
      *
-     * @generated from field: uint64 tax_group_id = 22;
+     * @optional
+     *
+     * @description Filter line items mapped to a specific tax group.
+     *
+     * @example 4
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
+     *
+     * @generated from field: optional uint64 tax_group_id = 22;
      */
-    taxGroupId: bigint;
+    taxGroupId?: bigint;
     /**
-     * The exact delivery date of the item in the sales enquiry
      *
-     * @generated from field: string delivery_date_exact = 28;
+     * @optional
+     *
+     * @description Filter line items scheduled for exact delivery on this specific date.
+     *
+     * @example "2023-11-15"
+     *
+     * @regex .*
+     *
+     * @format String following the standard date format (e.g., YYYY-MM-DD).
+     *
+     * @generated from field: optional string delivery_date_exact = 28;
      */
-    deliveryDateExact: string;
+    deliveryDateExact?: string;
     /**
-     * The start delivery date of the item in the sales enquiry
      *
-     * @generated from field: string delivery_date_start = 29;
+     * @optional
+     *
+     * @description Filter line items scheduled for delivery ON or AFTER this specific date.
+     *
+     * @example "2023-11-01"
+     *
+     * @regex .*
+     *
+     * @format String following the standard date format (e.g., YYYY-MM-DD).
+     *
+     * @generated from field: optional string delivery_date_start = 29;
      */
-    deliveryDateStart: string;
+    deliveryDateStart?: string;
     /**
-     * The end delivery date of the item in the sales enquiry
      *
-     * @generated from field: string delivery_date_end = 30;
+     * @optional
+     *
+     * @description Filter line items scheduled for delivery ON or BEFORE this specific date.
+     *
+     * @example "2023-11-30"
+     *
+     * @regex .*
+     *
+     * @format String following the standard date format (e.g., YYYY-MM-DD).
+     *
+     * @generated from field: optional string delivery_date_end = 30;
      */
-    deliveryDateEnd: string;
+    deliveryDateEnd?: string;
     /**
-     * Describes the key with which the search operation needs to be performed
      *
-     * @generated from field: string search_key = 40;
+     * @optional
+     *
+     * @description The search string to match against reference IDs.
+     *
+     * @example "Medical 2023"
+     *
+     * @regex .*
+     *
+     * @format: May contain any UTF-8 characters.
+     *
+     * @generated from field: optional string search_key = 40;
      */
-    searchKey: string;
+    searchKey?: string;
     constructor(data?: PartialMessage<SalesEnquiryItemsSearchRequest>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.SalesEnquiryItemsSearchRequest";
@@ -1147,7 +1737,8 @@ export declare class SalesEnquiryItemsSearchRequest extends Message<SalesEnquiry
 }
 /**
  *
- * Describes the response to a pagination items request
+ * Paginated response packet containing a subset of Sales Enquiry Item records.
+ * Includes complete operational state parameters for rendering frontend data grids and tables.
  *
  * @generated from message Scailo.SalesEnquiriesServicePaginatedItemsResponse
  */
@@ -1197,7 +1788,7 @@ export declare class SalesEnquiriesServicePaginatedItemsResponse extends Message
 }
 /**
  *
- * Describes a pagination request to retrieve records
+ * Pagination request for retrieving slices of Sales Enquiry records.
  *
  * @generated from message Scailo.SalesEnquiriesServicePaginationReq
  */
@@ -1210,9 +1801,9 @@ export declare class SalesEnquiriesServicePaginationReq extends Message<SalesEnq
      *
      * @example ANY
      *
-     * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+     * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
      */
-    isActive: BOOL_FILTER;
+    isActive?: BOOL_FILTER;
     /**
      *
      * @mandatory
@@ -1240,9 +1831,9 @@ export declare class SalesEnquiriesServicePaginationReq extends Message<SalesEnq
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 offset = 3;
+     * @generated from field: optional uint64 offset = 3;
      */
-    offset: bigint;
+    offset?: bigint;
     /**
      *
      * @optional
@@ -1251,24 +1842,29 @@ export declare class SalesEnquiriesServicePaginationReq extends Message<SalesEnq
      *
      * @example DESCENDING
      *
-     * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+     * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
      */
-    sortOrder: SORT_ORDER;
+    sortOrder?: SORT_ORDER;
     /**
      *
      * @optional
      *
      * @description The specific field key to sort the results by.
      *
-     * @generated from field: Scailo.SALES_ENQUIRY_SORT_KEY sort_key = 5;
+     * @generated from field: optional Scailo.SALES_ENQUIRY_SORT_KEY sort_key = 5;
      */
-    sortKey: SALES_ENQUIRY_SORT_KEY;
+    sortKey?: SALES_ENQUIRY_SORT_KEY;
     /**
-     * The status of this sales enquiry
      *
-     * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
+     * @optional
+     *
+     * @description Filter results by a specific lifecycle status.
+     *
+     * @example STANDING
+     *
+     * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
      */
-    status: STANDARD_LIFECYCLE_STATUS;
+    status?: STANDARD_LIFECYCLE_STATUS;
     constructor(data?: PartialMessage<SalesEnquiriesServicePaginationReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.SalesEnquiriesServicePaginationReq";
@@ -1280,7 +1876,7 @@ export declare class SalesEnquiriesServicePaginationReq extends Message<SalesEnq
 }
 /**
  *
- * Describes the response to a pagination request
+ * Response message for paginated queries, including total counts for UI elements.
  *
  * @generated from message Scailo.SalesEnquiriesServicePaginationResponse
  */
@@ -1330,7 +1926,12 @@ export declare class SalesEnquiriesServicePaginationResponse extends Message<Sal
 }
 /**
  *
- * Describes the base request payload of a filter search
+ * Advanced filter request for searching and paginating sales enquiries using multiple logical criteria.
+ * This message encapsulates pagination controls, sorting keys, lifecycle status filters,
+ * timestamp ranges, and entity references.
+ *
+ * **Note:** This is the primary message layout used by the frontend and external API clients
+ * to build robust data-table queries, reporting views, and targeted record lookups.
  *
  * @generated from message Scailo.SalesEnquiriesServiceFilterReq
  */
@@ -1343,9 +1944,9 @@ export declare class SalesEnquiriesServiceFilterReq extends Message<SalesEnquiri
      *
      * @example ANY
      *
-     * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+     * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
      */
-    isActive: BOOL_FILTER;
+    isActive?: BOOL_FILTER;
     /**
      *
      * @mandatory
@@ -1373,9 +1974,9 @@ export declare class SalesEnquiriesServiceFilterReq extends Message<SalesEnquiri
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 offset = 3;
+     * @generated from field: optional uint64 offset = 3;
      */
-    offset: bigint;
+    offset?: bigint;
     /**
      *
      * @optional
@@ -1384,18 +1985,18 @@ export declare class SalesEnquiriesServiceFilterReq extends Message<SalesEnquiri
      *
      * @example DESCENDING
      *
-     * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+     * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
      */
-    sortOrder: SORT_ORDER;
+    sortOrder?: SORT_ORDER;
     /**
      *
      * @optional
      *
      * @description The field used for sorting.
      *
-     * @generated from field: Scailo.SALES_ENQUIRY_SORT_KEY sort_key = 5;
+     * @generated from field: optional Scailo.SALES_ENQUIRY_SORT_KEY sort_key = 5;
      */
-    sortKey: SALES_ENQUIRY_SORT_KEY;
+    sortKey?: SALES_ENQUIRY_SORT_KEY;
     /**
      *
      * @optional
@@ -1408,9 +2009,9 @@ export declare class SalesEnquiriesServiceFilterReq extends Message<SalesEnquiri
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 creation_timestamp_start = 101;
+     * @generated from field: optional uint64 creation_timestamp_start = 101;
      */
-    creationTimestampStart: bigint;
+    creationTimestampStart?: bigint;
     /**
      *
      * @optional
@@ -1423,9 +2024,9 @@ export declare class SalesEnquiriesServiceFilterReq extends Message<SalesEnquiri
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 creation_timestamp_end = 102;
+     * @generated from field: optional uint64 creation_timestamp_end = 102;
      */
-    creationTimestampEnd: bigint;
+    creationTimestampEnd?: bigint;
     /**
      *
      * @optional
@@ -1438,9 +2039,9 @@ export declare class SalesEnquiriesServiceFilterReq extends Message<SalesEnquiri
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 modification_timestamp_start = 103;
+     * @generated from field: optional uint64 modification_timestamp_start = 103;
      */
-    modificationTimestampStart: bigint;
+    modificationTimestampStart?: bigint;
     /**
      *
      * @optional
@@ -1453,9 +2054,9 @@ export declare class SalesEnquiriesServiceFilterReq extends Message<SalesEnquiri
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 modification_timestamp_end = 104;
+     * @generated from field: optional uint64 modification_timestamp_end = 104;
      */
-    modificationTimestampEnd: bigint;
+    modificationTimestampEnd?: bigint;
     /**
      *
      * @optional
@@ -1468,9 +2069,9 @@ export declare class SalesEnquiriesServiceFilterReq extends Message<SalesEnquiri
      *
      * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
      *
-     * @generated from field: string entity_uuid = 8;
+     * @generated from field: optional string entity_uuid = 8;
      */
-    entityUuid: string;
+    entityUuid?: string;
     /**
      *
      * @optional
@@ -1479,9 +2080,9 @@ export declare class SalesEnquiriesServiceFilterReq extends Message<SalesEnquiri
      *
      * @example STANDING
      *
-     * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+     * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
      */
-    status: STANDARD_LIFECYCLE_STATUS;
+    status?: STANDARD_LIFECYCLE_STATUS;
     /**
      *
      * @optional
@@ -1494,9 +2095,9 @@ export declare class SalesEnquiriesServiceFilterReq extends Message<SalesEnquiri
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approved_on_start = 11;
+     * @generated from field: optional uint64 approved_on_start = 11;
      */
-    approvedOnStart: bigint;
+    approvedOnStart?: bigint;
     /**
      *
      * @optional
@@ -1509,9 +2110,9 @@ export declare class SalesEnquiriesServiceFilterReq extends Message<SalesEnquiri
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approved_on_end = 12;
+     * @generated from field: optional uint64 approved_on_end = 12;
      */
-    approvedOnEnd: bigint;
+    approvedOnEnd?: bigint;
     /**
      *
      * @optional
@@ -1524,9 +2125,9 @@ export declare class SalesEnquiriesServiceFilterReq extends Message<SalesEnquiri
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approved_by_user_id = 13;
+     * @generated from field: optional uint64 approved_by_user_id = 13;
      */
-    approvedByUserId: bigint;
+    approvedByUserId?: bigint;
     /**
      *
      * @optional
@@ -1539,9 +2140,9 @@ export declare class SalesEnquiriesServiceFilterReq extends Message<SalesEnquiri
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approver_role_id = 14;
+     * @generated from field: optional uint64 approver_role_id = 14;
      */
-    approverRoleId: bigint;
+    approverRoleId?: bigint;
     /**
      *
      * @optional
@@ -1554,9 +2155,9 @@ export declare class SalesEnquiriesServiceFilterReq extends Message<SalesEnquiri
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 completed_on_start = 15;
+     * @generated from field: optional uint64 completed_on_start = 15;
      */
-    completedOnStart: bigint;
+    completedOnStart?: bigint;
     /**
      *
      * @optional
@@ -1569,9 +2170,9 @@ export declare class SalesEnquiriesServiceFilterReq extends Message<SalesEnquiri
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 completed_on_end = 16;
+     * @generated from field: optional uint64 completed_on_end = 16;
      */
-    completedOnEnd: bigint;
+    completedOnEnd?: bigint;
     /**
      *
      * @optional
@@ -1584,9 +2185,9 @@ export declare class SalesEnquiriesServiceFilterReq extends Message<SalesEnquiri
      *
      * @format: Alphanumeric characters and spaces only. Can be left empty.
      *
-     * @generated from field: string reference_id = 20;
+     * @generated from field: optional string reference_id = 20;
      */
-    referenceId: string;
+    referenceId?: string;
     /**
      *
      * @optional
@@ -1599,51 +2200,99 @@ export declare class SalesEnquiriesServiceFilterReq extends Message<SalesEnquiri
      *
      * @format: Alphanumeric characters and spaces only. Can be left empty.
      *
-     * @generated from field: string final_ref_number = 21;
+     * @generated from field: optional string final_ref_number = 21;
      */
-    finalRefNumber: string;
+    finalRefNumber?: string;
     /**
-     * The ID of the consignee
      *
-     * @generated from field: uint64 consignee_client_id = 22;
+     * @optional
+     *
+     * @description The unique internal identifier of the prospective consignee client (the entity inquiring about receiving the goods or services).
+     *
+     * @example 1050
+     *
+     * @regex ^[1-9][0-9]*$
+     *
+     * @format Unsigned 64-bit integer greater than 0.
+     *
+     * @generated from field: optional uint64 consignee_client_id = 22;
      */
-    consigneeClientId: bigint;
+    consigneeClientId?: bigint;
     /**
-     * The ID of the buyer
      *
-     * @generated from field: uint64 buyer_client_id = 23;
+     * @optional
+     *
+     * @description The unique internal identifier of the prospective buyer client (the entity that would be financially responsible for the requested order).
+     *
+     * @example 1051
+     *
+     * @regex ^[1-9][0-9]*$
+     *
+     * @format Unsigned 64-bit integer greater than 0.
+     *
+     * @generated from field: optional uint64 buyer_client_id = 23;
      */
-    buyerClientId: bigint;
+    buyerClientId?: bigint;
     /**
-     * The priority of the sales enquiry. Possible values are "low", "medium", "high".
      *
-     * @generated from field: string priority = 24;
+     * @optional
+     *
+     * @description The unique internal identifier of the currency associated with the enquiry, used to frame any prospective financial discussions or quotes.
+     *
+     * @example 3
+     *
+     * @regex ^[1-9][0-9]*$
+     *
+     * @format Unsigned 64-bit integer greater than 0.
+     *
+     * @generated from field: optional uint64 currency_id = 25;
      */
-    priority: string;
+    currencyId?: bigint;
     /**
-     * The ID of the currency
      *
-     * @generated from field: uint64 currency_id = 25;
+     * @optional
+     *
+     * @description Filter sales enquiries containing line items scheduled for exact delivery on this specific date.
+     *
+     * @example "2023-11-15"
+     *
+     * @regex .*
+     *
+     * @format String following the standard date format (e.g., YYYY-MM-DD).
+     *
+     * @generated from field: optional string delivery_date_exact = 41;
      */
-    currencyId: bigint;
+    deliveryDateExact?: string;
     /**
-     * The exact delivery date of the item in the sales enquiry
      *
-     * @generated from field: string delivery_date_exact = 41;
+     * @optional
+     *
+     * @description Filter sales enquiries containing line items scheduled for delivery ON or AFTER this specific date.
+     *
+     * @example "2023-11-01"
+     *
+     * @regex .*
+     *
+     * @format String following the standard date format (e.g., YYYY-MM-DD).
+     *
+     * @generated from field: optional string delivery_date_start = 42;
      */
-    deliveryDateExact: string;
+    deliveryDateStart?: string;
     /**
-     * The start delivery date of the item in the sales enquiry
      *
-     * @generated from field: string delivery_date_start = 42;
-     */
-    deliveryDateStart: string;
-    /**
-     * The end delivery date of the item in the sales enquiry
+     * @optional
      *
-     * @generated from field: string delivery_date_end = 43;
+     * @description Filter sales enquiries containing line items scheduled for delivery ON or BEFORE this specific date.
+     *
+     * @example "2023-11-30"
+     *
+     * @regex .*
+     *
+     * @format String following the standard date format (e.g., YYYY-MM-DD).
+     *
+     * @generated from field: optional string delivery_date_end = 43;
      */
-    deliveryDateEnd: string;
+    deliveryDateEnd?: string;
     /**
      *
      * @optional
@@ -1662,9 +2311,9 @@ export declare class SalesEnquiriesServiceFilterReq extends Message<SalesEnquiri
      *
      * @example true
      *
-     * @generated from field: bool include_form_data = 501;
+     * @generated from field: optional bool include_form_data = 501;
      */
-    includeFormData: boolean;
+    includeFormData?: boolean;
     constructor(data?: PartialMessage<SalesEnquiriesServiceFilterReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.SalesEnquiriesServiceFilterReq";
@@ -1676,7 +2325,13 @@ export declare class SalesEnquiriesServiceFilterReq extends Message<SalesEnquiri
 }
 /**
  *
- * Describes the base request payload of a count search
+ * Target filter request for counting sales enquiry records matching specific logical criteria.
+ * This message encapsulates lifecycle status filters, timestamp ranges, workflow markers,
+ * and entity references to determine the total size of a targeted dataset.
+ *
+ * **Note:** This is the primary message layout used by backend calculation engines, reporting
+ * services, and frontend pagination headers to evaluate total record matches dynamically
+ * before or alongside retrieving paginated results.
  *
  * @generated from message Scailo.SalesEnquiriesServiceCountReq
  */
@@ -1689,9 +2344,9 @@ export declare class SalesEnquiriesServiceCountReq extends Message<SalesEnquirie
      *
      * @example ANY
      *
-     * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+     * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
      */
-    isActive: BOOL_FILTER;
+    isActive?: BOOL_FILTER;
     /**
      *
      * @optional
@@ -1704,9 +2359,9 @@ export declare class SalesEnquiriesServiceCountReq extends Message<SalesEnquirie
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 creation_timestamp_start = 101;
+     * @generated from field: optional uint64 creation_timestamp_start = 101;
      */
-    creationTimestampStart: bigint;
+    creationTimestampStart?: bigint;
     /**
      *
      * @optional
@@ -1719,9 +2374,9 @@ export declare class SalesEnquiriesServiceCountReq extends Message<SalesEnquirie
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 creation_timestamp_end = 102;
+     * @generated from field: optional uint64 creation_timestamp_end = 102;
      */
-    creationTimestampEnd: bigint;
+    creationTimestampEnd?: bigint;
     /**
      *
      * @optional
@@ -1734,9 +2389,9 @@ export declare class SalesEnquiriesServiceCountReq extends Message<SalesEnquirie
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 modification_timestamp_start = 103;
+     * @generated from field: optional uint64 modification_timestamp_start = 103;
      */
-    modificationTimestampStart: bigint;
+    modificationTimestampStart?: bigint;
     /**
      *
      * @optional
@@ -1749,9 +2404,9 @@ export declare class SalesEnquiriesServiceCountReq extends Message<SalesEnquirie
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 modification_timestamp_end = 104;
+     * @generated from field: optional uint64 modification_timestamp_end = 104;
      */
-    modificationTimestampEnd: bigint;
+    modificationTimestampEnd?: bigint;
     /**
      *
      * @optional
@@ -1764,9 +2419,9 @@ export declare class SalesEnquiriesServiceCountReq extends Message<SalesEnquirie
      *
      * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
      *
-     * @generated from field: string entity_uuid = 8;
+     * @generated from field: optional string entity_uuid = 8;
      */
-    entityUuid: string;
+    entityUuid?: string;
     /**
      *
      * @optional
@@ -1775,9 +2430,9 @@ export declare class SalesEnquiriesServiceCountReq extends Message<SalesEnquirie
      *
      * @example STANDING
      *
-     * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+     * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
      */
-    status: STANDARD_LIFECYCLE_STATUS;
+    status?: STANDARD_LIFECYCLE_STATUS;
     /**
      *
      * @optional
@@ -1790,9 +2445,9 @@ export declare class SalesEnquiriesServiceCountReq extends Message<SalesEnquirie
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approved_on_start = 11;
+     * @generated from field: optional uint64 approved_on_start = 11;
      */
-    approvedOnStart: bigint;
+    approvedOnStart?: bigint;
     /**
      *
      * @optional
@@ -1805,9 +2460,9 @@ export declare class SalesEnquiriesServiceCountReq extends Message<SalesEnquirie
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approved_on_end = 12;
+     * @generated from field: optional uint64 approved_on_end = 12;
      */
-    approvedOnEnd: bigint;
+    approvedOnEnd?: bigint;
     /**
      *
      * @optional
@@ -1820,9 +2475,9 @@ export declare class SalesEnquiriesServiceCountReq extends Message<SalesEnquirie
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approved_by_user_id = 13;
+     * @generated from field: optional uint64 approved_by_user_id = 13;
      */
-    approvedByUserId: bigint;
+    approvedByUserId?: bigint;
     /**
      *
      * @optional
@@ -1835,9 +2490,9 @@ export declare class SalesEnquiriesServiceCountReq extends Message<SalesEnquirie
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approver_role_id = 14;
+     * @generated from field: optional uint64 approver_role_id = 14;
      */
-    approverRoleId: bigint;
+    approverRoleId?: bigint;
     /**
      *
      * @optional
@@ -1850,9 +2505,9 @@ export declare class SalesEnquiriesServiceCountReq extends Message<SalesEnquirie
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 completed_on_start = 15;
+     * @generated from field: optional uint64 completed_on_start = 15;
      */
-    completedOnStart: bigint;
+    completedOnStart?: bigint;
     /**
      *
      * @optional
@@ -1865,9 +2520,9 @@ export declare class SalesEnquiriesServiceCountReq extends Message<SalesEnquirie
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 completed_on_end = 16;
+     * @generated from field: optional uint64 completed_on_end = 16;
      */
-    completedOnEnd: bigint;
+    completedOnEnd?: bigint;
     /**
      *
      * @optional
@@ -1880,9 +2535,9 @@ export declare class SalesEnquiriesServiceCountReq extends Message<SalesEnquirie
      *
      * @format: Alphanumeric characters and spaces only. Can be left empty.
      *
-     * @generated from field: string reference_id = 20;
+     * @generated from field: optional string reference_id = 20;
      */
-    referenceId: string;
+    referenceId?: string;
     /**
      *
      * @optional
@@ -1895,53 +2550,104 @@ export declare class SalesEnquiriesServiceCountReq extends Message<SalesEnquirie
      *
      * @format: Alphanumeric characters and spaces only. Can be left empty.
      *
-     * @generated from field: string final_ref_number = 21;
+     * @generated from field: optional string final_ref_number = 21;
      */
-    finalRefNumber: string;
+    finalRefNumber?: string;
     /**
-     * The ID of the consignee
      *
-     * @generated from field: uint64 consignee_client_id = 22;
-     */
-    consigneeClientId: bigint;
-    /**
-     * The ID of the buyer
+     * @optional
      *
-     * @generated from field: uint64 buyer_client_id = 23;
-     */
-    buyerClientId: bigint;
-    /**
-     * The priority of the sales enquiry. Possible values are "low", "medium", "high".
+     * @description The unique internal identifier of the prospective consignee client (the entity inquiring about receiving the goods or services).
      *
-     * @generated from field: string priority = 24;
-     */
-    priority: string;
-    /**
-     * The ID of the currency
+     * @example 1050
      *
-     * @generated from field: uint64 currency_id = 25;
-     */
-    currencyId: bigint;
-    /**
-     * The exact delivery date of the item in the sales enquiry
+     * @regex ^[1-9][0-9]*$
      *
-     * @generated from field: string delivery_date_exact = 41;
-     */
-    deliveryDateExact: string;
-    /**
-     * The start delivery date of the item in the sales enquiry
+     * @format Unsigned 64-bit integer greater than 0.
      *
-     * @generated from field: string delivery_date_start = 42;
+     * @generated from field: optional uint64 consignee_client_id = 22;
      */
-    deliveryDateStart: string;
+    consigneeClientId?: bigint;
     /**
-     * The end delivery date of the item in the sales enquiry
      *
-     * @generated from field: string delivery_date_end = 43;
+     * @optional
+     *
+     * @description The unique internal identifier of the prospective buyer client (the entity that would be financially responsible for the requested order).
+     *
+     * @example 1051
+     *
+     * @regex ^[1-9][0-9]*$
+     *
+     * @format Unsigned 64-bit integer greater than 0.
+     *
+     * @generated from field: optional uint64 buyer_client_id = 23;
      */
-    deliveryDateEnd: string;
+    buyerClientId?: bigint;
     /**
-     * The list of form data filters
+     *
+     * @optional
+     *
+     * @description The unique internal identifier of the currency associated with the enquiry, used to frame any prospective financial discussions or quotes.
+     *
+     * @example 3
+     *
+     * @regex ^[1-9][0-9]*$
+     *
+     * @format Unsigned 64-bit integer greater than 0.
+     *
+     * @generated from field: optional uint64 currency_id = 25;
+     */
+    currencyId?: bigint;
+    /**
+     *
+     * @optional
+     *
+     * @description Filter sales enquiries containing line items scheduled for exact delivery on this specific date.
+     *
+     * @example "2023-11-15"
+     *
+     * @regex .*
+     *
+     * @format String following the standard date format (e.g., YYYY-MM-DD).
+     *
+     * @generated from field: optional string delivery_date_exact = 41;
+     */
+    deliveryDateExact?: string;
+    /**
+     *
+     * @optional
+     *
+     * @description Filter sales enquiries containing line items scheduled for delivery ON or AFTER this specific date.
+     *
+     * @example "2023-11-01"
+     *
+     * @regex .*
+     *
+     * @format String following the standard date format (e.g., YYYY-MM-DD).
+     *
+     * @generated from field: optional string delivery_date_start = 42;
+     */
+    deliveryDateStart?: string;
+    /**
+     *
+     * @optional
+     *
+     * @description Filter sales enquiries containing line items scheduled for delivery ON or BEFORE this specific date.
+     *
+     * @example "2023-11-30"
+     *
+     * @regex .*
+     *
+     * @format String following the standard date format (e.g., YYYY-MM-DD).
+     *
+     * @generated from field: optional string delivery_date_end = 43;
+     */
+    deliveryDateEnd?: string;
+    /**
+     *
+     * @optional
+     *
+     * @description Count based on dynamic form field values.
      *
      * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
      */
@@ -1957,7 +2663,13 @@ export declare class SalesEnquiriesServiceCountReq extends Message<SalesEnquirie
 }
 /**
  *
- * Describes the request payload for performing a generic search operation on records
+ * Broad-spectrum search and lookup request for locating and paginating sales enquiries via text matching.
+ * This message encapsulates full-text query parameters, pagination controls, sorting keys,
+ * lifecycle status constraints, and other core references.
+ *
+ * **Note:** This is the primary message layout used for global search bars, fast-filtering dashboard
+ * inputs, and omni-box search utilities where users need to match loose textual terms against
+ * records while retaining structural pagination.
  *
  * @generated from message Scailo.SalesEnquiriesServiceSearchAllReq
  */
@@ -1970,9 +2682,9 @@ export declare class SalesEnquiriesServiceSearchAllReq extends Message<SalesEnqu
      *
      * @example ANY
      *
-     * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+     * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
      */
-    isActive: BOOL_FILTER;
+    isActive?: BOOL_FILTER;
     /**
      *
      * @mandatory
@@ -2000,9 +2712,9 @@ export declare class SalesEnquiriesServiceSearchAllReq extends Message<SalesEnqu
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 offset = 3;
+     * @generated from field: optional uint64 offset = 3;
      */
-    offset: bigint;
+    offset?: bigint;
     /**
      *
      * @optional
@@ -2011,18 +2723,18 @@ export declare class SalesEnquiriesServiceSearchAllReq extends Message<SalesEnqu
      *
      * @example DESCENDING
      *
-     * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+     * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
      */
-    sortOrder: SORT_ORDER;
+    sortOrder?: SORT_ORDER;
     /**
      *
      * @optional
      *
      * @description The field used for sorting.
      *
-     * @generated from field: Scailo.SALES_ENQUIRY_SORT_KEY sort_key = 5;
+     * @generated from field: optional Scailo.SALES_ENQUIRY_SORT_KEY sort_key = 5;
      */
-    sortKey: SALES_ENQUIRY_SORT_KEY;
+    sortKey?: SALES_ENQUIRY_SORT_KEY;
     /**
      *
      * @optional
@@ -2035,9 +2747,9 @@ export declare class SalesEnquiriesServiceSearchAllReq extends Message<SalesEnqu
      *
      * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
      *
-     * @generated from field: string entity_uuid = 6;
+     * @generated from field: optional string entity_uuid = 6;
      */
-    entityUuid: string;
+    entityUuid?: string;
     /**
      *
      * @optional
@@ -2046,9 +2758,9 @@ export declare class SalesEnquiriesServiceSearchAllReq extends Message<SalesEnqu
      *
      * @example STANDING
      *
-     * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+     * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
      */
-    status: STANDARD_LIFECYCLE_STATUS;
+    status?: STANDARD_LIFECYCLE_STATUS;
     /**
      *
      * @mandatory
@@ -2061,21 +2773,39 @@ export declare class SalesEnquiriesServiceSearchAllReq extends Message<SalesEnqu
      *
      * @format: May contain any UTF-8 characters.
      *
-     * @generated from field: string search_key = 11;
+     * @generated from field: optional string search_key = 11;
      */
-    searchKey: string;
+    searchKey?: string;
     /**
-     * The ID of the consignee
      *
-     * @generated from field: uint64 consignee_client_id = 22;
+     * @optional
+     *
+     * @description The unique internal identifier of the prospective consignee client (the entity inquiring about receiving the goods or services).
+     *
+     * @example 1050
+     *
+     * @regex ^[1-9][0-9]*$
+     *
+     * @format Unsigned 64-bit integer greater than 0.
+     *
+     * @generated from field: optional uint64 consignee_client_id = 22;
      */
-    consigneeClientId: bigint;
+    consigneeClientId?: bigint;
     /**
-     * The ID of the buyer
      *
-     * @generated from field: uint64 buyer_client_id = 23;
+     * @optional
+     *
+     * @description The unique internal identifier of the prospective buyer client (the entity that would be financially responsible for the requested order).
+     *
+     * @example 1051
+     *
+     * @regex ^[1-9][0-9]*$
+     *
+     * @format Unsigned 64-bit integer greater than 0.
+     *
+     * @generated from field: optional uint64 buyer_client_id = 23;
      */
-    buyerClientId: bigint;
+    buyerClientId?: bigint;
     constructor(data?: PartialMessage<SalesEnquiriesServiceSearchAllReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.SalesEnquiriesServiceSearchAllReq";
@@ -2087,25 +2817,54 @@ export declare class SalesEnquiriesServiceSearchAllReq extends Message<SalesEnqu
 }
 /**
  *
- * Describes the parameters necessary to create a sales enquiry contact
+ * Request message for assigning a specific contact person (associate) to a Sales Enquiry.
+ * This operation creates a linkage between the enquiry and a designated individual belonging
+ * to the customer, explicitly identifying who is in charge of or accountable for the sales enquiry from the client's side.
  *
  * @generated from message Scailo.SalesEnquiriesServiceContactCreateRequest
  */
 export declare class SalesEnquiriesServiceContactCreateRequest extends Message<SalesEnquiriesServiceContactCreateRequest> {
     /**
-     * Stores any comment that the user might add during this operation
      *
-     * @generated from field: string user_comment = 1;
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
+     *
+     * @generated from field: optional string user_comment = 1;
      */
-    userComment: string;
+    userComment?: string;
     /**
-     * Stores the sales enquiry ID
+     *
+     * @mandatory
+     *
+     * @description The unique internal identifier of the parent sales enquiry to which this contact is being assigned.
+     *
+     * @example 1024
+     *
+     * @regex ^[1-9][0-9]*$
+     *
+     * @format Unsigned 64-bit integer greater than 0.
      *
      * @generated from field: uint64 sales_enquiry_id = 10;
      */
     salesEnquiryId: bigint;
     /**
-     * Stores the associate ID
+     *
+     * @mandatory
+     *
+     * @description The unique internal identifier of the associate being assigned to the enquiry.
+     *
+     * @example 55
+     *
+     * @regex ^[1-9][0-9]*$
+     *
+     * @format Unsigned 64-bit integer greater than 0.
      *
      * @generated from field: uint64 associate_id = 11;
      */
@@ -2121,7 +2880,10 @@ export declare class SalesEnquiriesServiceContactCreateRequest extends Message<S
 }
 /**
  *
- * Describes the parameters that constitute a sales enquiry contact
+ * Represents the finalized state of a Sales Enquiry Contact mapping.
+ * This entity securely binds a designated associate (the client's point of contact)
+ * to the parent enquiry, tracking accountability, approval workflows, and providing
+ * both internal IDs and unpredictable UUIDs for secure downstream referencing.
  *
  * @generated from message Scailo.SalesEnquiryContact
  */
@@ -2151,31 +2913,49 @@ export declare class SalesEnquiryContact extends Message<SalesEnquiryContact> {
     approvalMetadata?: ApprovalMetadata;
     /**
      *
-     * @description The approval state of the record
+     * @description A boolean flag indicating whether this specific record requires further administrative approval.
+     *
+     * @example false
+     *
+     * @format Boolean true or false.
      *
      * @generated from field: bool need_approval = 4;
      */
     needApproval: boolean;
     /**
-     * Stores any comment that the user might have added during an operation
+     *
+     * @description Audit log comment or justification captured during the last modification or transactional operation.
+     *
+     * @example "Assigned primary warehouse manager as the main contact."
      *
      * @generated from field: string user_comment = 5;
      */
     userComment: string;
     /**
-     * Stores the sales enquiry ID
+     *
+     * @description The unique internal identifier of the parent sales enquiry to which this contact belongs.
+     *
+     * @example 1024
      *
      * @generated from field: uint64 sales_enquiry_id = 10;
      */
     salesEnquiryId: bigint;
     /**
-     * Stores the associate ID
+     *
+     * @description The unique internal identifier of the associate acting as the point of contact.
+     *
+     * @example 55
      *
      * @generated from field: uint64 associate_id = 11;
      */
     associateId: bigint;
     /**
-     * Stores the UUID of the associate
+     *
+     * @description The globally unique identifier (UUID) of the associate, used for secure external referencing without exposing sequential internal IDs.
+     *
+     * @example "661f9511-f39c-42d5-b827-557766551111"
+     *
+     * @format Valid v4 UUID in canonical hyphenated form.
      *
      * @generated from field: string associate_uuid = 211;
      */
@@ -2191,13 +2971,18 @@ export declare class SalesEnquiryContact extends Message<SalesEnquiryContact> {
 }
 /**
  *
- * Describes the message consisting of the list of sales enquiry contacts
+ * Represents a consolidated collection of designated contacts mapped to a Sales Enquiry.
  *
  * @generated from message Scailo.SalesEnquiryContactsList
  */
 export declare class SalesEnquiryContactsList extends Message<SalesEnquiryContactsList> {
     /**
-     * List of records
+     *
+     * @description An array containing the individual associate contact records linked to the enquiry.
+     *
+     * @example []
+     *
+     * @format Repeated array of SalesEnquiryContact message blocks.
      *
      * @generated from field: repeated Scailo.SalesEnquiryContact list = 1;
      */

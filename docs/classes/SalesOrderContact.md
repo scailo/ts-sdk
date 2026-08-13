@@ -2,7 +2,10 @@
 
 # Class: SalesOrderContact
 
-Describes the parameters that constitute a sales order contact
+Represents the finalized state of a Sales Order Contact mapping.
+This entity securely binds a designated associate (the client's point of contact)
+to the parent order, tracking accountability, approval workflows, and providing
+both internal IDs and unpredictable UUIDs for secure downstream referencing.
 
 **`Generated`**
 
@@ -73,7 +76,7 @@ Message\&lt;SalesOrderContact\&gt;.constructor
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3965](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3965)
+[src/sales_orders.scailo_pb.ts:5367](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5367)
 
 ## Properties
 
@@ -91,7 +94,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3927](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3927)
+[src/sales_orders.scailo_pb.ts:5311](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5311)
 
 ___
 
@@ -99,7 +102,15 @@ ___
 
 • **associateId**: `bigint` = `protoInt64.zero`
 
-Stores the associate ID
+**`Description`**
+
+The unique internal identifier of the associate acting as the point of contact.
+
+**`Example`**
+
+```ts
+55
+```
 
 **`Generated`**
 
@@ -107,7 +118,7 @@ from field: uint64 associate_id = 11;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3956](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3956)
+[src/sales_orders.scailo_pb.ts:5353](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5353)
 
 ___
 
@@ -115,7 +126,19 @@ ___
 
 • **associateUuid**: `string` = `""`
 
-Stores the UUID of the associate
+**`Description`**
+
+The globally unique identifier (UUID) of the associate, used for secure external referencing without exposing sequential internal IDs.
+
+**`Example`**
+
+```ts
+"661f9511-f39c-42d5-b827-557766551111"
+```
+
+**`Format`**
+
+Valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
@@ -123,7 +146,7 @@ from field: string associate_uuid = 211;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3963](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3963)
+[src/sales_orders.scailo_pb.ts:5365](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5365)
 
 ___
 
@@ -147,7 +170,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3911](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3911)
+[src/sales_orders.scailo_pb.ts:5295](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5295)
 
 ___
 
@@ -165,7 +188,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3919](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3919)
+[src/sales_orders.scailo_pb.ts:5303](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5303)
 
 ___
 
@@ -175,7 +198,17 @@ ___
 
 **`Description`**
 
-The approval state of the record
+A boolean flag indicating whether this specific record requires further administrative approval.
+
+**`Example`**
+
+```ts
+false
+```
+
+**`Format`**
+
+Boolean true or false.
 
 **`Generated`**
 
@@ -183,7 +216,7 @@ from field: bool need_approval = 4;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3935](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3935)
+[src/sales_orders.scailo_pb.ts:5323](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5323)
 
 ___
 
@@ -191,7 +224,15 @@ ___
 
 • **salesOrderId**: `bigint` = `protoInt64.zero`
 
-Stores the sales order ID
+**`Description`**
+
+The unique internal identifier of the parent sales order to which this contact belongs.
+
+**`Example`**
+
+```ts
+1024
+```
 
 **`Generated`**
 
@@ -199,7 +240,7 @@ from field: uint64 sales_order_id = 10;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3949](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3949)
+[src/sales_orders.scailo_pb.ts:5343](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5343)
 
 ___
 
@@ -207,7 +248,15 @@ ___
 
 • **userComment**: `string` = `""`
 
-Stores any comment that the user might have added during an operation
+**`Description`**
+
+Audit log comment or justification captured during the last modification or transactional operation.
+
+**`Example`**
+
+```ts
+"Assigned primary warehouse manager as the main contact."
+```
 
 **`Generated`**
 
@@ -215,7 +264,7 @@ from field: string user_comment = 5;
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3942](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3942)
+[src/sales_orders.scailo_pb.ts:5333](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5333)
 
 ___
 
@@ -225,7 +274,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3972](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3972)
+[src/sales_orders.scailo_pb.ts:5374](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5374)
 
 ___
 
@@ -235,7 +284,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3970](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3970)
+[src/sales_orders.scailo_pb.ts:5372](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5372)
 
 ___
 
@@ -245,7 +294,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3971](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3971)
+[src/sales_orders.scailo_pb.ts:5373](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5373)
 
 ## Methods
 
@@ -533,7 +582,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3995](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3995)
+[src/sales_orders.scailo_pb.ts:5397](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5397)
 
 ___
 
@@ -554,7 +603,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3983](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3983)
+[src/sales_orders.scailo_pb.ts:5385](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5385)
 
 ___
 
@@ -575,7 +624,7 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3987](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3987)
+[src/sales_orders.scailo_pb.ts:5389](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5389)
 
 ___
 
@@ -596,4 +645,4 @@ ___
 
 #### Defined in
 
-[src/sales_orders.scailo_pb.ts:3991](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_orders.scailo_pb.ts#L3991)
+[src/sales_orders.scailo_pb.ts:5393](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_orders.scailo_pb.ts#L5393)

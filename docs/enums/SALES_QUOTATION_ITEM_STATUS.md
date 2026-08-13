@@ -2,7 +2,7 @@
 
 # Enumeration: SALES\_QUOTATION\_ITEM\_STATUS
 
-Describes the applicable statuses of sales quotation items
+Enum defining the applicable lifecycle and verification statuses for sales quotation items.
 
 **`Generated`**
 
@@ -22,7 +22,9 @@ from enum Scailo.SALES_QUOTATION_ITEM_STATUS
 
 • **SALES\_QUOTATION\_ITEM\_STATUS\_ANY\_UNSPECIFIED** = ``0``
 
-Denotes that status be disregarded. This is used only within search APIs
+**`Description`**
+
+Denotes that the status filter should be disregarded. Used exclusively within search APIs to bypass status restrictions.
 
 **`Generated`**
 
@@ -30,7 +32,7 @@ from enum value: SALES_QUOTATION_ITEM_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:349](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_quotations.scailo_pb.ts#L349)
+[src/sales_quotations.scailo_pb.ts:347](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_quotations.scailo_pb.ts#L347)
 
 ___
 
@@ -38,7 +40,9 @@ ___
 
 • **SALES\_QUOTATION\_ITEM\_STATUS\_APPROVED** = ``1``
 
-Denotes that the sales quotation items must have been approved
+**`Description`**
+
+Denotes that the sales quotation item association has passed verification and is actively approved.
 
 **`Generated`**
 
@@ -46,7 +50,7 @@ from enum value: SALES_QUOTATION_ITEM_STATUS_APPROVED = 1;
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:356](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_quotations.scailo_pb.ts#L356)
+[src/sales_quotations.scailo_pb.ts:354](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_quotations.scailo_pb.ts#L354)
 
 ___
 
@@ -54,7 +58,9 @@ ___
 
 • **SALES\_QUOTATION\_ITEM\_STATUS\_UNAPPROVED** = ``2``
 
-Denotes that the sales quotation items must be waiting for approval
+**`Description`**
+
+Denotes that the sales quotation item association is pending review and waiting for administrative approval.
 
 **`Generated`**
 
@@ -62,4 +68,4 @@ from enum value: SALES_QUOTATION_ITEM_STATUS_UNAPPROVED = 2;
 
 #### Defined in
 
-[src/sales_quotations.scailo_pb.ts:363](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_quotations.scailo_pb.ts#L363)
+[src/sales_quotations.scailo_pb.ts:361](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_quotations.scailo_pb.ts#L361)

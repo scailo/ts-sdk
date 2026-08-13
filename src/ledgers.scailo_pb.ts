@@ -9,62 +9,62 @@ import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, 
 
 /**
  *
- * Describes the available sort keys
+ * Enumeration of fields available for sorting ledger search results.
  *
  * @generated from enum Scailo.LEDGER_SORT_KEY
  */
 export enum LEDGER_SORT_KEY {
   /**
-   * Fetch ordered results by id
+   * @description Default sort behavior (by internal ID).
    *
    * @generated from enum value: LEDGER_SORT_KEY_ID_UNSPECIFIED = 0;
    */
   LEDGER_SORT_KEY_ID_UNSPECIFIED = 0,
 
   /**
-   * Fetch ordered results by the creation timestamp
+   * @description Sort by the timestamp the record was initially created.
    *
    * @generated from enum value: LEDGER_SORT_KEY_CREATED_AT = 1;
    */
   LEDGER_SORT_KEY_CREATED_AT = 1,
 
   /**
-   * Fetch ordered results by the modified timestamp
+   * @description Sort by the timestamp the record was last modified.
    *
    * @generated from enum value: LEDGER_SORT_KEY_MODIFIED_AT = 2;
    */
   LEDGER_SORT_KEY_MODIFIED_AT = 2,
 
   /**
-   * Fetch ordered results by the approved on timestamp
+   * @description Sort by the official approval timestamp.
    *
    * @generated from enum value: LEDGER_SORT_KEY_APPROVED_ON = 3;
    */
   LEDGER_SORT_KEY_APPROVED_ON = 3,
 
   /**
-   * Fetch ordered results by the approved by field
+   * @description Sort by the system ID of the approving user.
    *
    * @generated from enum value: LEDGER_SORT_KEY_APPROVED_BY = 4;
    */
   LEDGER_SORT_KEY_APPROVED_BY = 4,
 
   /**
-   * Fetch ordered results by the approver's role ID
+   * @description Sort by the security role ID used by the approver.
    *
    * @generated from enum value: LEDGER_SORT_KEY_APPROVER_ROLE_ID = 5;
    */
   LEDGER_SORT_KEY_APPROVER_ROLE_ID = 5,
 
   /**
-   * Fetch ordered results by the name
+   * @description Sort alphabetically by the user-provided name.
    *
    * @generated from enum value: LEDGER_SORT_KEY_NAME = 10;
    */
   LEDGER_SORT_KEY_NAME = 10,
 
   /**
-   * Fetch ordered results by the code
+   * @description Sort alphabetically by the user-provided code.
    *
    * @generated from enum value: LEDGER_SORT_KEY_CODE = 11;
    */
@@ -84,7 +84,12 @@ proto3.util.setEnumType(LEDGER_SORT_KEY, "Scailo.LEDGER_SORT_KEY", [
 
 /**
  *
- * Describes the parameters necessary to create a record
+ * Request message for creating and initializing a new financial or operational Ledger.
+ * This record maps accounting node hierarchies, unique account codes, structural types
+ * (leaf vs. non-leaf parent nodes), and compliance attributes within a tenant entity.
+ *
+ * **Note:** This is the primary entry point for Finance teams, Treasury, and Admins to
+ * construct or expand the Chart of Accounts and define transactional ledger groups.
  *
  * @generated from message Scailo.LedgersServiceCreateRequest
  */
@@ -101,51 +106,103 @@ export class LedgersServiceCreateRequest extends Message<LedgersServiceCreateReq
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 1;
+   * @generated from field: optional string entity_uuid = 1;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
-   * Ledgers any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 2;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 2;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * The name of the ledger
+   *
+   * @mandatory
+   *
+   * @description The official or friendly descriptive name of the ledger account.
+   *
+   * @example "General Operating Expenses"
+   *
+   * @regex .+
+   *
+   * @format Must be a non-empty string.
    *
    * @generated from field: string name = 10;
    */
   name = "";
 
   /**
-   * The unique code by which the ledger is classified
+   *
+   * @mandatory
+   *
+   * @description The unique code or alphanumeric token by which the ledger account is classified in the Chart of Accounts.
+   *
+   * @example "LEDGER-1010-OPEX"
+   *
+   * @regex .+
+   *
+   * @format Must be a non-empty string.
    *
    * @generated from field: string code = 11;
    */
   code = "";
 
   /**
-   * The ID of the associated non-leaf parent ledger (0, if the first ledger that is being created is a leaf ledger)
    *
-   * @generated from field: uint64 parent_ledger_id = 12;
+   * @optional
+   *
+   * @description The unique internal identifier of the parent non-leaf ledger. Defaults to 0 if this is the root or top-level node in the ledger hierarchy.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative 64-bit integer.
+   *
+   * @generated from field: optional uint64 parent_ledger_id = 12;
    */
-  parentLedgerId = protoInt64.zero;
+  parentLedgerId?: bigint;
 
   /**
-   * Stores if this is a leaf ledger or a non-leaf ledger
+   *
+   * @mandatory
+   *
+   * @description Flag determining whether this ledger node is a terminal 'leaf' node that can directly hold transactional balances, or a 'non-leaf' grouping node.
+   *
+   * @example true
+   *
+   * @format Boolean value (`true` or `false`).
    *
    * @generated from field: bool is_leaf = 13;
    */
   isLeaf = false;
 
   /**
-   * The description of the ledger
    *
-   * @generated from field: string description = 14;
+   * @optional
+   *
+   * @description Clarifying details or context regarding the ledger's intended accounting use case, currency parameters, or scope.
+   *
+   * @example "Tracks day-to-day corporate operating expenses, utilities, and minor regional software licenses."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string description = 14;
    */
-  description = "";
+  description?: string;
 
   constructor(data?: PartialMessage<LedgersServiceCreateRequest>) {
     super();
@@ -155,13 +212,13 @@ export class LedgersServiceCreateRequest extends Message<LedgersServiceCreateReq
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.LedgersServiceCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 12, name: "parent_ledger_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 12, name: "parent_ledger_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
     { no: 13, name: "is_leaf", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
-    { no: 14, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 14, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LedgersServiceCreateRequest {
@@ -183,45 +240,92 @@ export class LedgersServiceCreateRequest extends Message<LedgersServiceCreateReq
 
 /**
  *
- * Describes the parameters necessary to update a record
+ * Request message for updating an existing Ledger record.
+ * Only applicable for records in `DRAFT` or `REVISION` states.
+ * This message allows for modifying the name, and description
+ * of an established Ledger.
+ *
+ * **Note:** Only fields provided in the request will typically be updated.
+ * The unique system ID is required to locate the target record.
  *
  * @generated from message Scailo.LedgersServiceUpdateRequest
  */
 export class LedgersServiceUpdateRequest extends Message<LedgersServiceUpdateRequest> {
   /**
-   * Ledgers any comment that the user might add during this operation
    *
-   * @generated from field: string user_comment = 1;
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
-   * The ID of the record that needs to be updated
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target record that needs to be updated.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
    *
    * @generated from field: uint64 id = 2;
    */
   id = protoInt64.zero;
 
   /**
-   * Optional boolean value that ledgers if a notification needs to be sent to users about the update to the record. This is useful when a subsequent operation needs to be performed immediately (such as send to verification after updating the revision)
    *
-   * @generated from field: bool notify_users = 3;
+   * @optional
+   *
+   * @description Flag to trigger system notifications to relevant users upon update. Set to true if subsequent workflows (like verification) depend on this change.
+   *
+   * @example true
+   *
+   * @generated from field: optional bool notify_users = 3;
    */
-  notifyUsers = false;
+  notifyUsers?: boolean;
 
   /**
-   * The name of the ledger
    *
-   * @generated from field: string name = 10;
+   * @optional
+   *
+   * @description The official or friendly descriptive name of the ledger account.
+   *
+   * @example "General Operating Expenses"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string name = 10;
    */
-  name = "";
+  name?: string;
 
   /**
-   * The description of the ledger
    *
-   * @generated from field: string description = 14;
+   * @optional
+   *
+   * @description Clarifying details or context regarding the ledger's intended accounting use case, currency parameters, or scope.
+   *
+   * @example "Tracks day-to-day corporate operating expenses, utilities, and minor regional software licenses."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string description = 14;
    */
-  description = "";
+  description?: string;
 
   constructor(data?: PartialMessage<LedgersServiceUpdateRequest>) {
     super();
@@ -231,11 +335,11 @@ export class LedgersServiceUpdateRequest extends Message<LedgersServiceUpdateReq
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.LedgersServiceUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 2, name: "id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
-    { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 14, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
+    { no: 10, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 14, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LedgersServiceUpdateRequest {
@@ -257,7 +361,7 @@ export class LedgersServiceUpdateRequest extends Message<LedgersServiceUpdateReq
 
 /**
  *
- * Describes the parameters that are part of a standard response
+ * Represents a full Ledger within the system.
  *
  * @generated from message Scailo.Ledger
  */
@@ -273,63 +377,82 @@ export class Ledger extends Message<Ledger> {
   entityUuid = "";
 
   /**
-   * Ledgers the metadata of this ledger
+   *
+   * @description Standard employee and record metadata including timestamps.
    *
    * @generated from field: Scailo.EmployeeMetadata metadata = 2;
    */
   metadata?: EmployeeMetadata;
 
   /**
-   * Ledgers the approval metadata
+   *
+   * @description Detailed approval workflow state (Approver ID, Role, and Timestamps).
    *
    * @generated from field: Scailo.ApprovalMetadata approval_metadata = 3;
    */
   approvalMetadata?: ApprovalMetadata;
 
   /**
-   * The status of this ledger
+   *
+   * @description The current lifecycle status (e.g., DRAFT, VERIFIED, STANDING).
    *
    * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 4;
    */
   status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
 
   /**
-   * Ledgers the logs of every operation performed on this ledger
+   *
+   * @description Comprehensive audit trail of every operation performed on this record.
    *
    * @generated from field: repeated Scailo.LogbookLogConciseSLC logs = 5;
    */
   logs: LogbookLogConciseSLC[] = [];
 
   /**
-   * The name of the ledger
+   *
+   * @description The official or friendly descriptive name of the ledger account.
+   *
+   * @example "General Operating Expenses"
    *
    * @generated from field: string name = 10;
    */
   name = "";
 
   /**
-   * The unique code by which the ledger is classified
+   *
+   * @description The unique code or alphanumeric token by which the ledger account is classified in the Chart of Accounts.
+   *
+   * @example "LEDGER-1010-OPEX"
    *
    * @generated from field: string code = 11;
    */
   code = "";
 
   /**
-   * The ID of the associated non-leaf parent ledger (0, if the first ledger that is being created is a leaf ledger)
+   *
+   * @description The unique internal identifier of the parent non-leaf ledger. Defaults to 0 if this is the root or top-level node in the ledger hierarchy.
+   *
+   * @example 1024
    *
    * @generated from field: uint64 parent_ledger_id = 12;
    */
   parentLedgerId = protoInt64.zero;
 
   /**
-   * Stores if this is a leaf ledger or a non-leaf ledger
+   *
+   * @description Flag determining whether this ledger node is a terminal 'leaf' node that can directly hold transactional balances, or a 'non-leaf' grouping node.
+   *
+   * @example true
    *
    * @generated from field: bool is_leaf = 13;
    */
   isLeaf = false;
 
   /**
-   * The description of the ledger
+   *
+   * @description Clarifying details or context regarding the ledger's intended accounting use case, currency parameters, or scope.
+   *
+   * @example "Tracks day-to-day corporate operating expenses, utilities, and minor regional software licenses."
    *
    * @generated from field: string description = 14;
    */
@@ -374,13 +497,13 @@ export class Ledger extends Message<Ledger> {
 
 /**
  *
- * Describes the message consisting of the list of records
+ * Container message for a collection of Ledger records.
  *
  * @generated from message Scailo.LedgersList
  */
 export class LedgersList extends Message<LedgersList> {
   /**
-   * List of records
+   * @description An array of Ledger records.
    *
    * @generated from field: repeated Scailo.Ledger list = 1;
    */
@@ -416,7 +539,7 @@ export class LedgersList extends Message<LedgersList> {
 
 /**
  *
- * Describes a pagination request to retrieve records
+ * Pagination request for retrieving slices of Ledger records.
  *
  * @generated from message Scailo.LedgersServicePaginationReq
  */
@@ -429,9 +552,9 @@ export class LedgersServicePaginationReq extends Message<LedgersServicePaginatio
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -461,9 +584,9 @@ export class LedgersServicePaginationReq extends Message<LedgersServicePaginatio
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -473,9 +596,9 @@ export class LedgersServicePaginationReq extends Message<LedgersServicePaginatio
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -483,16 +606,21 @@ export class LedgersServicePaginationReq extends Message<LedgersServicePaginatio
    *
    * @description The specific field key to sort the results by.
    *
-   * @generated from field: Scailo.LEDGER_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.LEDGER_SORT_KEY sort_key = 5;
    */
-  sortKey = LEDGER_SORT_KEY.LEDGER_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: LEDGER_SORT_KEY;
 
   /**
-   * The status of this ledger
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
+   * @optional
+   *
+   * @description Filter results by a specific lifecycle status.
+   *
+   * @example STANDING
+   *
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   constructor(data?: PartialMessage<LedgersServicePaginationReq>) {
     super();
@@ -502,12 +630,12 @@ export class LedgersServicePaginationReq extends Message<LedgersServicePaginatio
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.LedgersServicePaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(LEDGER_SORT_KEY) },
-    { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(LEDGER_SORT_KEY), opt: true },
+    { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LedgersServicePaginationReq {
@@ -529,7 +657,7 @@ export class LedgersServicePaginationReq extends Message<LedgersServicePaginatio
 
 /**
  *
- * Describes the response to a pagination request
+ * Response message for paginated queries, including total counts for UI elements.
  *
  * @generated from message Scailo.LedgersServicePaginationResponse
  */
@@ -605,7 +733,12 @@ export class LedgersServicePaginationResponse extends Message<LedgersServicePagi
 
 /**
  *
- * Describes the base request payload of a filter search
+ * Advanced filter request for searching and paginating ledgers using multiple logical criteria.
+ * This message encapsulates pagination controls, sorting keys, lifecycle status filters,
+ * timestamp ranges, and entity references.
+ *
+ * **Note:** This is the primary message layout used by the frontend and external API clients
+ * to build robust data-table queries, reporting views, and targeted record lookups.
  *
  * @generated from message Scailo.LedgersServiceFilterReq
  */
@@ -618,9 +751,9 @@ export class LedgersServiceFilterReq extends Message<LedgersServiceFilterReq> {
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -650,9 +783,9 @@ export class LedgersServiceFilterReq extends Message<LedgersServiceFilterReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -662,9 +795,9 @@ export class LedgersServiceFilterReq extends Message<LedgersServiceFilterReq> {
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -672,9 +805,9 @@ export class LedgersServiceFilterReq extends Message<LedgersServiceFilterReq> {
    *
    * @description The field used for sorting.
    *
-   * @generated from field: Scailo.LEDGER_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.LEDGER_SORT_KEY sort_key = 5;
    */
-  sortKey = LEDGER_SORT_KEY.LEDGER_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: LEDGER_SORT_KEY;
 
   /**
    *
@@ -688,9 +821,9 @@ export class LedgersServiceFilterReq extends Message<LedgersServiceFilterReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_start = 101;
+   * @generated from field: optional uint64 creation_timestamp_start = 101;
    */
-  creationTimestampStart = protoInt64.zero;
+  creationTimestampStart?: bigint;
 
   /**
    *
@@ -704,9 +837,9 @@ export class LedgersServiceFilterReq extends Message<LedgersServiceFilterReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_end = 102;
+   * @generated from field: optional uint64 creation_timestamp_end = 102;
    */
-  creationTimestampEnd = protoInt64.zero;
+  creationTimestampEnd?: bigint;
 
   /**
    *
@@ -720,9 +853,9 @@ export class LedgersServiceFilterReq extends Message<LedgersServiceFilterReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_start = 103;
+   * @generated from field: optional uint64 modification_timestamp_start = 103;
    */
-  modificationTimestampStart = protoInt64.zero;
+  modificationTimestampStart?: bigint;
 
   /**
    *
@@ -736,9 +869,9 @@ export class LedgersServiceFilterReq extends Message<LedgersServiceFilterReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_end = 104;
+   * @generated from field: optional uint64 modification_timestamp_end = 104;
    */
-  modificationTimestampEnd = protoInt64.zero;
+  modificationTimestampEnd?: bigint;
 
   /**
    *
@@ -752,9 +885,9 @@ export class LedgersServiceFilterReq extends Message<LedgersServiceFilterReq> {
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 8;
+   * @generated from field: optional string entity_uuid = 8;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
    *
@@ -764,9 +897,9 @@ export class LedgersServiceFilterReq extends Message<LedgersServiceFilterReq> {
    *
    * @example STANDING
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   /**
    *
@@ -780,9 +913,9 @@ export class LedgersServiceFilterReq extends Message<LedgersServiceFilterReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_start = 11;
+   * @generated from field: optional uint64 approved_on_start = 11;
    */
-  approvedOnStart = protoInt64.zero;
+  approvedOnStart?: bigint;
 
   /**
    *
@@ -796,9 +929,9 @@ export class LedgersServiceFilterReq extends Message<LedgersServiceFilterReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_end = 12;
+   * @generated from field: optional uint64 approved_on_end = 12;
    */
-  approvedOnEnd = protoInt64.zero;
+  approvedOnEnd?: bigint;
 
   /**
    *
@@ -812,9 +945,9 @@ export class LedgersServiceFilterReq extends Message<LedgersServiceFilterReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_by_user_id = 13;
+   * @generated from field: optional uint64 approved_by_user_id = 13;
    */
-  approvedByUserId = protoInt64.zero;
+  approvedByUserId?: bigint;
 
   /**
    *
@@ -828,37 +961,71 @@ export class LedgersServiceFilterReq extends Message<LedgersServiceFilterReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approver_role_id = 14;
+   * @generated from field: optional uint64 approver_role_id = 14;
    */
-  approverRoleId = protoInt64.zero;
+  approverRoleId?: bigint;
 
   /**
-   * The name of the ledger
    *
-   * @generated from field: string name = 20;
+   * @optional
+   *
+   * @description The official or friendly descriptive name of the ledger account.
+   *
+   * @example "General Operating Expenses"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string name = 20;
    */
-  name = "";
+  name?: string;
 
   /**
-   * The unique code by which the ledger is classified
    *
-   * @generated from field: string code = 21;
+   * @optional
+   *
+   * @description The unique code or alphanumeric token by which the ledger account is classified in the Chart of Accounts.
+   *
+   * @example "LEDGER-1010-OPEX"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string code = 21;
    */
-  code = "";
+  code?: string;
 
   /**
-   * The ID of the associated non-leaf parent ledger (0, if the first ledger that is being created is a leaf ledger)
    *
-   * @generated from field: uint64 parent_ledger_id = 22;
+   * @optional
+   *
+   * @description The unique internal identifier of the parent non-leaf ledger. Defaults to 0 if this is the root or top-level node in the ledger hierarchy.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative 64-bit integer.
+   *
+   * @generated from field: optional uint64 parent_ledger_id = 22;
    */
-  parentLedgerId = protoInt64.zero;
+  parentLedgerId?: bigint;
 
   /**
-   * Filter with the given leaf property
    *
-   * @generated from field: Scailo.BOOL_FILTER is_leaf = 23;
+   * @optional
+   *
+   * @description Flag determining whether this ledger node is a terminal 'leaf' node that can directly hold transactional balances, or a 'non-leaf' grouping node.
+   *
+   * @example true
+   *
+   * @format Boolean value (`true` or `false`).
+   *
+   * @generated from field: optional Scailo.BOOL_FILTER is_leaf = 23;
    */
-  isLeaf = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isLeaf?: BOOL_FILTER;
 
   constructor(data?: PartialMessage<LedgersServiceFilterReq>) {
     super();
@@ -868,25 +1035,25 @@ export class LedgersServiceFilterReq extends Message<LedgersServiceFilterReq> {
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.LedgersServiceFilterReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(LEDGER_SORT_KEY) },
-    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
-    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "parent_ledger_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 23, name: "is_leaf", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(LEDGER_SORT_KEY), opt: true },
+    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
+    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 22, name: "parent_ledger_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 23, name: "is_leaf", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LedgersServiceFilterReq {
@@ -908,7 +1075,13 @@ export class LedgersServiceFilterReq extends Message<LedgersServiceFilterReq> {
 
 /**
  *
- * Describes the base request payload of a count search
+ * Target filter request for counting ledger records matching specific logical criteria.
+ * This message encapsulates lifecycle status filters, timestamp ranges, workflow markers,
+ * and entity references to determine the total size of a targeted dataset.
+ *
+ * **Note:** This is the primary message layout used by backend calculation engines, reporting
+ * services, and frontend pagination headers to evaluate total record matches dynamically
+ * before or alongside retrieving paginated results.
  *
  * @generated from message Scailo.LedgersServiceCountReq
  */
@@ -921,9 +1094,9 @@ export class LedgersServiceCountReq extends Message<LedgersServiceCountReq> {
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -937,9 +1110,9 @@ export class LedgersServiceCountReq extends Message<LedgersServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_start = 101;
+   * @generated from field: optional uint64 creation_timestamp_start = 101;
    */
-  creationTimestampStart = protoInt64.zero;
+  creationTimestampStart?: bigint;
 
   /**
    *
@@ -953,9 +1126,9 @@ export class LedgersServiceCountReq extends Message<LedgersServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_end = 102;
+   * @generated from field: optional uint64 creation_timestamp_end = 102;
    */
-  creationTimestampEnd = protoInt64.zero;
+  creationTimestampEnd?: bigint;
 
   /**
    *
@@ -969,9 +1142,9 @@ export class LedgersServiceCountReq extends Message<LedgersServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_start = 103;
+   * @generated from field: optional uint64 modification_timestamp_start = 103;
    */
-  modificationTimestampStart = protoInt64.zero;
+  modificationTimestampStart?: bigint;
 
   /**
    *
@@ -985,9 +1158,9 @@ export class LedgersServiceCountReq extends Message<LedgersServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_end = 104;
+   * @generated from field: optional uint64 modification_timestamp_end = 104;
    */
-  modificationTimestampEnd = protoInt64.zero;
+  modificationTimestampEnd?: bigint;
 
   /**
    *
@@ -1001,9 +1174,9 @@ export class LedgersServiceCountReq extends Message<LedgersServiceCountReq> {
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 8;
+   * @generated from field: optional string entity_uuid = 8;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
    *
@@ -1013,9 +1186,9 @@ export class LedgersServiceCountReq extends Message<LedgersServiceCountReq> {
    *
    * @example STANDING
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   /**
    *
@@ -1029,9 +1202,9 @@ export class LedgersServiceCountReq extends Message<LedgersServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_start = 11;
+   * @generated from field: optional uint64 approved_on_start = 11;
    */
-  approvedOnStart = protoInt64.zero;
+  approvedOnStart?: bigint;
 
   /**
    *
@@ -1045,9 +1218,9 @@ export class LedgersServiceCountReq extends Message<LedgersServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_end = 12;
+   * @generated from field: optional uint64 approved_on_end = 12;
    */
-  approvedOnEnd = protoInt64.zero;
+  approvedOnEnd?: bigint;
 
   /**
    *
@@ -1061,9 +1234,9 @@ export class LedgersServiceCountReq extends Message<LedgersServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_by_user_id = 13;
+   * @generated from field: optional uint64 approved_by_user_id = 13;
    */
-  approvedByUserId = protoInt64.zero;
+  approvedByUserId?: bigint;
 
   /**
    *
@@ -1077,37 +1250,71 @@ export class LedgersServiceCountReq extends Message<LedgersServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approver_role_id = 14;
+   * @generated from field: optional uint64 approver_role_id = 14;
    */
-  approverRoleId = protoInt64.zero;
+  approverRoleId?: bigint;
 
   /**
-   * The name of the ledger
    *
-   * @generated from field: string name = 20;
+   * @optional
+   *
+   * @description The official or friendly descriptive name of the ledger account.
+   *
+   * @example "General Operating Expenses"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string name = 20;
    */
-  name = "";
+  name?: string;
 
   /**
-   * The unique code by which the ledger is classified
    *
-   * @generated from field: string code = 21;
+   * @optional
+   *
+   * @description The unique code or alphanumeric token by which the ledger account is classified in the Chart of Accounts.
+   *
+   * @example "LEDGER-1010-OPEX"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: optional string code = 21;
    */
-  code = "";
+  code?: string;
 
   /**
-   * The ID of the associated non-leaf parent ledger (0, if the first ledger that is being created is a leaf ledger)
    *
-   * @generated from field: uint64 parent_ledger_id = 22;
+   * @optional
+   *
+   * @description The unique internal identifier of the parent non-leaf ledger. Defaults to 0 if this is the root or top-level node in the ledger hierarchy.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative 64-bit integer.
+   *
+   * @generated from field: optional uint64 parent_ledger_id = 22;
    */
-  parentLedgerId = protoInt64.zero;
+  parentLedgerId?: bigint;
 
   /**
-   * Filter with the given leaf property
    *
-   * @generated from field: Scailo.BOOL_FILTER is_leaf = 23;
+   * @optional
+   *
+   * @description Flag determining whether this ledger node is a terminal 'leaf' node that can directly hold transactional balances, or a 'non-leaf' grouping node.
+   *
+   * @example true
+   *
+   * @format Boolean value (`true` or `false`).
+   *
+   * @generated from field: optional Scailo.BOOL_FILTER is_leaf = 23;
    */
-  isLeaf = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isLeaf?: BOOL_FILTER;
 
   constructor(data?: PartialMessage<LedgersServiceCountReq>) {
     super();
@@ -1117,21 +1324,21 @@ export class LedgersServiceCountReq extends Message<LedgersServiceCountReq> {
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.LedgersServiceCountReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
-    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
-    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "parent_ledger_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 23, name: "is_leaf", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
+    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
+    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 20, name: "name", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 21, name: "code", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 22, name: "parent_ledger_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 23, name: "is_leaf", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LedgersServiceCountReq {
@@ -1153,7 +1360,13 @@ export class LedgersServiceCountReq extends Message<LedgersServiceCountReq> {
 
 /**
  *
- * Describes the request payload for performing a generic search operation on records
+ * Broad-spectrum search and lookup request for locating and paginating ledgers via text matching.
+ * This message encapsulates full-text query parameters, pagination controls, sorting keys,
+ * lifecycle status constraints, and other core references.
+ *
+ * **Note:** This is the primary message layout used for global search bars, fast-filtering dashboard
+ * inputs, and omni-box search utilities where users need to match loose textual terms against
+ * records while retaining structural pagination.
  *
  * @generated from message Scailo.LedgersServiceSearchAllReq
  */
@@ -1166,9 +1379,9 @@ export class LedgersServiceSearchAllReq extends Message<LedgersServiceSearchAllR
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -1198,9 +1411,9 @@ export class LedgersServiceSearchAllReq extends Message<LedgersServiceSearchAllR
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -1210,9 +1423,9 @@ export class LedgersServiceSearchAllReq extends Message<LedgersServiceSearchAllR
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -1220,9 +1433,9 @@ export class LedgersServiceSearchAllReq extends Message<LedgersServiceSearchAllR
    *
    * @description The field used for sorting.
    *
-   * @generated from field: Scailo.LEDGER_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.LEDGER_SORT_KEY sort_key = 5;
    */
-  sortKey = LEDGER_SORT_KEY.LEDGER_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: LEDGER_SORT_KEY;
 
   /**
    *
@@ -1236,9 +1449,9 @@ export class LedgersServiceSearchAllReq extends Message<LedgersServiceSearchAllR
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 6;
+   * @generated from field: optional string entity_uuid = 6;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
    *
@@ -1248,13 +1461,13 @@ export class LedgersServiceSearchAllReq extends Message<LedgersServiceSearchAllR
    *
    * @example STANDING
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   /**
    *
-   * @mandatory
+   * @optional
    *
    * @description The search string to match against reference IDs.
    *
@@ -1264,23 +1477,39 @@ export class LedgersServiceSearchAllReq extends Message<LedgersServiceSearchAllR
    *
    * @format: May contain any UTF-8 characters.
    *
-   * @generated from field: string search_key = 11;
+   * @generated from field: optional string search_key = 11;
    */
-  searchKey = "";
+  searchKey?: string;
 
   /**
-   * The ID of the associated non-leaf parent ledger (0, if the first ledger that is being created is a leaf ledger)
    *
-   * @generated from field: uint64 parent_ledger_id = 22;
+   * @optional
+   *
+   * @description The unique internal identifier of the parent non-leaf ledger. Defaults to 0 if this is the root or top-level node in the ledger hierarchy.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative 64-bit integer.
+   *
+   * @generated from field: optional uint64 parent_ledger_id = 22;
    */
-  parentLedgerId = protoInt64.zero;
+  parentLedgerId?: bigint;
 
   /**
-   * Filter with the given leaf property
    *
-   * @generated from field: Scailo.BOOL_FILTER is_leaf = 23;
+   * @optional
+   *
+   * @description Flag determining whether this ledger node is a terminal 'leaf' node that can directly hold transactional balances, or a 'non-leaf' grouping node.
+   *
+   * @example true
+   *
+   * @format Boolean value (`true` or `false`).
+   *
+   * @generated from field: optional Scailo.BOOL_FILTER is_leaf = 23;
    */
-  isLeaf = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isLeaf?: BOOL_FILTER;
 
   constructor(data?: PartialMessage<LedgersServiceSearchAllReq>) {
     super();
@@ -1290,16 +1519,16 @@ export class LedgersServiceSearchAllReq extends Message<LedgersServiceSearchAllR
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.LedgersServiceSearchAllReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(LEDGER_SORT_KEY) },
-    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
-    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "parent_ledger_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 23, name: "is_leaf", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(LEDGER_SORT_KEY), opt: true },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
+    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 22, name: "parent_ledger_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 23, name: "is_leaf", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LedgersServiceSearchAllReq {

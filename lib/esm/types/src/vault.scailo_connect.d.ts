@@ -2,6 +2,7 @@ import { VaultFile, VaultFileAddChunkRequest, VaultFileInitiateFileRequest, Vaul
 import { MethodKind } from "@bufbuild/protobuf";
 import { BooleanResponse, CountResponse, Empty, Identifier, IdentifierResponse, IdentifierUUID, IdentifierZeroable, StandardFile } from "./base.scailo_pb.js";
 import { EnclaveDomain, EnclaveDomainAddRequest, EnclaveDomainsFilterReq, EnclaveDomainsList, EnclaveDomainSuffixResp, EnclaveEnvironmentVariable, EnclaveEnvironmentVariableAddRequest, EnclaveEnvironmentVariablesList, EnclaveEnvironmentVariableUpdateRequest, EnclaveFrame, EnclaveFrameAddRequest, EnclaveFrameSetup, EnclaveFrameSetupList, EnclaveFrameUpdateRequest, EnclaveIngress, EnclaveIngressCountReq, EnclaveIngressesList, EnclaveIngressFilterReq, GiXAppRun, GiXAppRunCountReq, GiXAppRunFilterReq, GiXAppRunsList, VaultAccessLogsList, VaultDuplicateCheckReq, VaultPermission, VaultPermissionAddRequest, VaultPermissionModifyRequest, VaultSearchReq, VaultSearchResponsesList, VerifyEnclaveIngressRequest, VerifyEnclaveIngressResponse } from "./vault_commons.scailo_pb.js";
+import { MagicLink, MagicLinksServiceCreateRequestForSpecificResource } from "./magic_links.scailo_pb.js";
 import { VaultFolder, VaultFolderAddRequest, VaultFolderDownload, VaultFolderMoveFolderRequest, VaultFolderRenameFolderRequest, VaultFoldersList } from "./vault_folders.scailo_pb.js";
 import { GiXRelayReqWithBody, GiXRelayReqWithoutBody, GiXRelayResponse, VaultResourcesList } from "./vault.scailo_pb.js";
 import { RolesList } from "./roles.scailo_pb.js";
@@ -258,6 +259,19 @@ export declare const VaultService: {
             readonly name: "ViewFileAccessLogs";
             readonly I: typeof IdentifierUUID;
             readonly O: typeof VaultAccessLogsList;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Generates a magic link for temporary, authenticated access to the resource.
+         *
+         * This enables non-system users (or users without active sessions) to view specific details.
+         *
+         * @generated from rpc Scailo.VaultService.CreateMagicLinkForFile
+         */
+        readonly createMagicLinkForFile: {
+            readonly name: "CreateMagicLinkForFile";
+            readonly I: typeof MagicLinksServiceCreateRequestForSpecificResource;
+            readonly O: typeof MagicLink;
             readonly kind: MethodKind.Unary;
         };
         /**

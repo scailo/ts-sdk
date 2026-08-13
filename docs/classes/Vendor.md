@@ -2,7 +2,7 @@
 
 # Class: Vendor
 
-Describes the parameters that are part of a standard response
+Represents a full Vendor within the system.
 
 **`Generated`**
 
@@ -76,7 +76,7 @@ Message\&lt;Vendor\&gt;.constructor
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:660](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L660)
+[src/vendors.scailo_pb.ts:797](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L797)
 
 ## Properties
 
@@ -94,7 +94,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:597](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L597)
+[src/vendors.scailo_pb.ts:721](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L721)
 
 ___
 
@@ -102,7 +102,15 @@ ___
 
 • **code**: `string` = `""`
 
-The unique code by which the vendor is classified
+**`Description`**
+
+The unique code or alphanumeric token by which the vendor is classified or categorized internally.
+
+**`Example`**
+
+```ts
+"VND-ACME-001"
+```
 
 **`Generated`**
 
@@ -110,7 +118,7 @@ from field: string code = 11;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:637](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L637)
+[src/vendors.scailo_pb.ts:767](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L767)
 
 ___
 
@@ -118,7 +126,15 @@ ___
 
 • **email**: `string` = `""`
 
-The primary email of the vendor
+**`Description`**
+
+The primary communication email address of the vendor.
+
+**`Example`**
+
+```ts
+"orders@acmelogistics.com"
+```
 
 **`Generated`**
 
@@ -126,7 +142,7 @@ from field: string email = 12;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:644](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L644)
+[src/vendors.scailo_pb.ts:777](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L777)
 
 ___
 
@@ -150,7 +166,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:581](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L581)
+[src/vendors.scailo_pb.ts:705](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L705)
 
 ___
 
@@ -158,7 +174,9 @@ ___
 
 • **formData**: [`FormFieldDatum`](FormFieldDatum.md)[] = `[]`
 
-The list of dynamic forms
+**`Description`**
+
+Collection of organization-specific dynamic data.
 
 **`Generated`**
 
@@ -166,7 +184,7 @@ from field: repeated Scailo.FormFieldDatum form_data = 30;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:658](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L658)
+[src/vendors.scailo_pb.ts:795](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L795)
 
 ___
 
@@ -184,7 +202,7 @@ from field: repeated Scailo.LogbookLogConciseSLC logs = 5;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:613](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L613)
+[src/vendors.scailo_pb.ts:737](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L737)
 
 ___
 
@@ -202,7 +220,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:589](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L589)
+[src/vendors.scailo_pb.ts:713](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L713)
 
 ___
 
@@ -210,7 +228,15 @@ ___
 
 • **name**: `string` = `""`
 
-The name of the vendor
+**`Description`**
+
+The official or legal name of the vendor organization or individual.
+
+**`Example`**
+
+```ts
+"Acme Logistics"
+```
 
 **`Generated`**
 
@@ -218,7 +244,7 @@ from field: string name = 10;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:630](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L630)
+[src/vendors.scailo_pb.ts:757](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L757)
 
 ___
 
@@ -226,7 +252,15 @@ ___
 
 • **phone**: `string` = `""`
 
-The primary contact number of the vendor
+**`Description`**
+
+The primary contact phone number of the vendor, typically including country and area codes.
+
+**`Example`**
+
+```ts
+"+1-555-222-0199"
+```
 
 **`Generated`**
 
@@ -234,7 +268,7 @@ from field: string phone = 13;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:651](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L651)
+[src/vendors.scailo_pb.ts:787](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L787)
 
 ___
 
@@ -252,7 +286,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 4;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:605](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L605)
+[src/vendors.scailo_pb.ts:729](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L729)
 
 ___
 
@@ -276,7 +310,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:623](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L623)
+[src/vendors.scailo_pb.ts:747](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L747)
 
 ___
 
@@ -286,7 +320,7 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:667](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L667)
+[src/vendors.scailo_pb.ts:804](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L804)
 
 ___
 
@@ -296,7 +330,7 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:665](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L665)
+[src/vendors.scailo_pb.ts:802](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L802)
 
 ___
 
@@ -306,7 +340,7 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:666](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L666)
+[src/vendors.scailo_pb.ts:803](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L803)
 
 ## Methods
 
@@ -594,7 +628,7 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:693](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L693)
+[src/vendors.scailo_pb.ts:830](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L830)
 
 ___
 
@@ -615,7 +649,7 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:681](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L681)
+[src/vendors.scailo_pb.ts:818](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L818)
 
 ___
 
@@ -636,7 +670,7 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:685](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L685)
+[src/vendors.scailo_pb.ts:822](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L822)
 
 ___
 
@@ -657,4 +691,4 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:689](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L689)
+[src/vendors.scailo_pb.ts:826](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L826)

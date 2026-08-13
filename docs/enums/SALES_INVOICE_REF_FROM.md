@@ -2,7 +2,8 @@
 
 # Enumeration: SALES\_INVOICE\_REF\_FROM
 
-Stores all the possible references from which a sales invoice can be added
+Enumeration of the supported source record types from which a Sales Invoice can be generated.
+This determines the operational linkage and financial inheritance of the billing document.
 
 **`Generated`**
 
@@ -21,7 +22,9 @@ from enum Scailo.SALES_INVOICE_REF_FROM
 
 • **SALES\_INVOICE\_REF\_FROM\_ANY\_UNSPECIFIED** = ``0``
 
-Used only in filters
+**`Description`**
+
+Default behavior, ignoring the source record type. Utilized primarily within search and listing APIs.
 
 **`Generated`**
 
@@ -29,7 +32,7 @@ from enum value: SALES_INVOICE_REF_FROM_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L23)
+[src/sales_invoices.scailo_pb.ts:24](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L24)
 
 ___
 
@@ -37,7 +40,9 @@ ___
 
 • **SALES\_INVOICE\_REF\_FROM\_SALES\_ORDER** = ``1``
 
-Denotes that the sales invoice originated from a sales order
+**`Description`**
+
+Denotes that the sales invoice was generated directly from a fulfilled or approved Sales Order.
 
 **`Generated`**
 
@@ -45,4 +50,4 @@ from enum value: SALES_INVOICE_REF_FROM_SALES_ORDER = 1;
 
 #### Defined in
 
-[src/sales_invoices.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_invoices.scailo_pb.ts#L30)
+[src/sales_invoices.scailo_pb.ts:31](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_invoices.scailo_pb.ts#L31)

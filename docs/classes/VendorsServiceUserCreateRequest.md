@@ -2,7 +2,12 @@
 
 # Class: VendorsServiceUserCreateRequest
 
-Describes the parameters necessary to create a vendor user
+Request message for creating a new vendor user association.
+This message encapsulates the necessary identifiers to link a user (and optionally an associate)
+to a vendor, along with compliance details and audit logs required for record initialization.
+
+**Note:** This serves as the primary entry point for managing vendor personnel, ensuring
+that the relationship between the vendor and the user is properly audited and validated.
 
 **`Generated`**
 
@@ -69,39 +74,75 @@ Message\&lt;VendorsServiceUserCreateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2661](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L2661)
+[src/vendors.scailo_pb.ts:3347](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L3347)
 
 ## Properties
 
 ### associateId
 
-• **associateId**: `bigint` = `protoInt64.zero`
+• `Optional` **associateId**: `bigint`
 
-Stores an optional associate ID
+**`Optional`**
+
+**`Description`**
+
+The unique internal identifier of an associated secondary entity or associate party, if applicable.
+
+**`Example`**
+
+```ts
+9012
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer. Defaults to 0 if unassigned.
 
 **`Generated`**
 
-from field: uint64 associate_id = 12;
+from field: optional uint64 associate_id = 12;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2659](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L2659)
+[src/vendors.scailo_pb.ts:3345](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L3345)
 
 ___
 
 ### userComment
 
-• **userComment**: `string` = `""`
+• `Optional` **userComment**: `string`
 
-Stores any comment that the user might add during this operation
+**`Optional`**
+
+**`Description`**
+
+Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+
+**`Example`**
+
+```ts
+"This is a comment for audit purposes."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
-from field: string user_comment = 1;
+from field: optional string user_comment = 1;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2638](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L2638)
+[src/vendors.scailo_pb.ts:3297](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L3297)
 
 ___
 
@@ -109,7 +150,25 @@ ___
 
 • **userId**: `bigint` = `protoInt64.zero`
 
-Stores the user ID
+**`Mandatory`**
+
+**`Description`**
+
+The unique internal identifier of the user being assigned to the vendor.
+
+**`Example`**
+
+```ts
+5678
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer greater than zero.
 
 **`Generated`**
 
@@ -117,7 +176,7 @@ from field: uint64 user_id = 11;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2652](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L2652)
+[src/vendors.scailo_pb.ts:3329](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L3329)
 
 ___
 
@@ -125,7 +184,25 @@ ___
 
 • **vendorId**: `bigint` = `protoInt64.zero`
 
-Stores the vendor ID
+**`Mandatory`**
+
+**`Description`**
+
+The unique internal identifier of the target vendor to which the user will be associated.
+
+**`Example`**
+
+```ts
+1024
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer greater than zero.
 
 **`Generated`**
 
@@ -133,7 +210,7 @@ from field: uint64 vendor_id = 10;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2645](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L2645)
+[src/vendors.scailo_pb.ts:3313](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L3313)
 
 ___
 
@@ -143,7 +220,7 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2668](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L2668)
+[src/vendors.scailo_pb.ts:3354](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L3354)
 
 ___
 
@@ -153,7 +230,7 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2666](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L2666)
+[src/vendors.scailo_pb.ts:3352](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L3352)
 
 ___
 
@@ -163,7 +240,7 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2667](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L2667)
+[src/vendors.scailo_pb.ts:3353](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L3353)
 
 ## Methods
 
@@ -451,7 +528,7 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2687](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L2687)
+[src/vendors.scailo_pb.ts:3373](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L3373)
 
 ___
 
@@ -472,7 +549,7 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2675](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L2675)
+[src/vendors.scailo_pb.ts:3361](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L3361)
 
 ___
 
@@ -493,7 +570,7 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2679](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L2679)
+[src/vendors.scailo_pb.ts:3365](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L3365)
 
 ___
 
@@ -514,4 +591,4 @@ ___
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:2683](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L2683)
+[src/vendors.scailo_pb.ts:3369](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L3369)

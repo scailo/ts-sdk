@@ -147,9 +147,9 @@ export class AbsencesServiceCreateRequest extends Message<AbsencesServiceCreateR
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 1;
+   * @generated from field: optional string entity_uuid = 1;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
    *
@@ -163,9 +163,9 @@ export class AbsencesServiceCreateRequest extends Message<AbsencesServiceCreateR
    *
    * @format May contain any UTF-8 characters or be left empty.
    *
-   * @generated from field: string user_comment = 2;
+   * @generated from field: optional string user_comment = 2;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
    *
@@ -179,9 +179,9 @@ export class AbsencesServiceCreateRequest extends Message<AbsencesServiceCreateR
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 vault_folder_id = 9;
+   * @generated from field: optional uint64 vault_folder_id = 9;
    */
-  vaultFolderId = protoInt64.zero;
+  vaultFolderId?: bigint;
 
   /**
    *
@@ -227,9 +227,9 @@ export class AbsencesServiceCreateRequest extends Message<AbsencesServiceCreateR
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 leave_request_id = 12;
+   * @generated from field: optional uint64 leave_request_id = 12;
    */
-  leaveRequestId = protoInt64.zero;
+  leaveRequestId?: bigint;
 
   /**
    *
@@ -307,15 +307,19 @@ export class AbsencesServiceCreateRequest extends Message<AbsencesServiceCreateR
    *
    * @format: Alphanumeric characters and spaces only. Can be left empty.
    *
-   * @generated from field: string description = 17;
+   * @generated from field: optional string description = 17;
    */
-  description = "";
+  description?: string;
 
   /**
    *
    * @optional
    *
    * @description A collection of dynamic form fields for organization-specific data.
+   *
+   * @example []
+   *
+   * @format An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
    *
    * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
    */
@@ -329,17 +333,17 @@ export class AbsencesServiceCreateRequest extends Message<AbsencesServiceCreateR
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.AbsencesServiceCreateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 2, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
     { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 11, name: "user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 12, name: "leave_request_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 12, name: "leave_request_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
     { no: 13, name: "from_timestamp", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 14, name: "to_timestamp", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 15, name: "uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 16, name: "quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 17, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 17, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
 
@@ -365,7 +369,7 @@ export class AbsencesServiceCreateRequest extends Message<AbsencesServiceCreateR
  * Request message for updating an existing Absence record.
  * Only applicable for records in `DRAFT` or `REVISION` states.
  * This message allows for modifying the naming, leave request, start and end timestamps and quantity
- * of an established Action Code.
+ * of an established Absence.
  *
  * **Note:** Only fields provided in the request will typically be updated.
  * The unique system ID is required to locate the target record.
@@ -385,9 +389,9 @@ export class AbsencesServiceUpdateRequest extends Message<AbsencesServiceUpdateR
    *
    * @format May contain any UTF-8 characters or be left empty.
    *
-   * @generated from field: string user_comment = 1;
+   * @generated from field: optional string user_comment = 1;
    */
-  userComment = "";
+  userComment?: string;
 
   /**
    *
@@ -413,9 +417,9 @@ export class AbsencesServiceUpdateRequest extends Message<AbsencesServiceUpdateR
    *
    * @example true
    *
-   * @generated from field: bool notify_users = 3;
+   * @generated from field: optional bool notify_users = 3;
    */
-  notifyUsers = false;
+  notifyUsers?: boolean;
 
   /**
    *
@@ -429,13 +433,13 @@ export class AbsencesServiceUpdateRequest extends Message<AbsencesServiceUpdateR
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 vault_folder_id = 9;
+   * @generated from field: optional uint64 vault_folder_id = 9;
    */
-  vaultFolderId = protoInt64.zero;
+  vaultFolderId?: bigint;
 
   /**
    *
-   * @mandatory
+   * @optional
    *
    * @description Updated alphanumeric reference ID. Must contain at least 1 character.
    *
@@ -445,9 +449,9 @@ export class AbsencesServiceUpdateRequest extends Message<AbsencesServiceUpdateR
    *
    * @format Alphanumeric characters and spaces only. No special symbols or punctuation allowed.
    *
-   * @generated from field: string reference_id = 10;
+   * @generated from field: optional string reference_id = 10;
    */
-  referenceId = "";
+  referenceId?: string;
 
   /**
    *
@@ -461,13 +465,13 @@ export class AbsencesServiceUpdateRequest extends Message<AbsencesServiceUpdateR
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 leave_request_id = 12;
+   * @generated from field: optional uint64 leave_request_id = 12;
    */
-  leaveRequestId = protoInt64.zero;
+  leaveRequestId?: bigint;
 
   /**
    *
-   * @mandatory
+   * @optional
    *
    * @description Updated start timestamp in UNIX Epoch Seconds.
    *
@@ -477,13 +481,13 @@ export class AbsencesServiceUpdateRequest extends Message<AbsencesServiceUpdateR
    *
    * @format Must be a strictly positive integer (1 or greater).
    *
-   * @generated from field: uint64 from_timestamp = 13;
+   * @generated from field: optional uint64 from_timestamp = 13;
    */
-  fromTimestamp = protoInt64.zero;
+  fromTimestamp?: bigint;
 
   /**
    *
-   * @mandatory
+   * @optional
    *
    * @description Updated end timestamp in UNIX Epoch Seconds.
    *
@@ -493,13 +497,13 @@ export class AbsencesServiceUpdateRequest extends Message<AbsencesServiceUpdateR
    *
    * @format Must be a strictly positive integer (1 or greater).
    *
-   * @generated from field: uint64 to_timestamp = 14;
+   * @generated from field: optional uint64 to_timestamp = 14;
    */
-  toTimestamp = protoInt64.zero;
+  toTimestamp?: bigint;
 
   /**
    *
-   * @mandatory
+   * @optional
    *
    * @description Updated quantity in cents (x100).
    *
@@ -509,9 +513,9 @@ export class AbsencesServiceUpdateRequest extends Message<AbsencesServiceUpdateR
    *
    * @format Must be a strictly positive integer (1 or greater).
    *
-   * @generated from field: uint64 quantity = 16;
+   * @generated from field: optional uint64 quantity = 16;
    */
-  quantity = protoInt64.zero;
+  quantity?: bigint;
 
   /**
    *
@@ -525,15 +529,19 @@ export class AbsencesServiceUpdateRequest extends Message<AbsencesServiceUpdateR
    *
    * @format: Alphanumeric characters and spaces only. Can be left empty.
    *
-   * @generated from field: string description = 17;
+   * @generated from field: optional string description = 17;
    */
-  description = "";
+  description?: string;
 
   /**
    *
    * @optional
    *
-   * @description Updated custom dynamic form data.
+   * @description A collection of dynamic form fields for organization-specific data.
+   *
+   * @example []
+   *
+   * @format An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
    *
    * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
    */
@@ -547,16 +555,16 @@ export class AbsencesServiceUpdateRequest extends Message<AbsencesServiceUpdateR
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.AbsencesServiceUpdateRequest";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 2, name: "id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
-    { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 12, name: "leave_request_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 13, name: "from_timestamp", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 14, name: "to_timestamp", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 16, name: "quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 17, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 3, name: "notify_users", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
+    { no: 9, name: "vault_folder_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 10, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 12, name: "leave_request_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 13, name: "from_timestamp", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 14, name: "to_timestamp", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 16, name: "quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 17, name: "description", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 30, name: "form_data", kind: "message", T: FormFieldDatumCreateRequest, repeated: true },
   ]);
 
@@ -845,9 +853,9 @@ export class AbsencesServicePaginationReq extends Message<AbsencesServicePaginat
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -877,9 +885,9 @@ export class AbsencesServicePaginationReq extends Message<AbsencesServicePaginat
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -889,9 +897,9 @@ export class AbsencesServicePaginationReq extends Message<AbsencesServicePaginat
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -899,9 +907,9 @@ export class AbsencesServicePaginationReq extends Message<AbsencesServicePaginat
    *
    * @description The specific field key to sort the results by.
    *
-   * @generated from field: Scailo.ABSENCE_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.ABSENCE_SORT_KEY sort_key = 5;
    */
-  sortKey = ABSENCE_SORT_KEY.ABSENCE_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: ABSENCE_SORT_KEY;
 
   /**
    *
@@ -911,9 +919,9 @@ export class AbsencesServicePaginationReq extends Message<AbsencesServicePaginat
    *
    * @example STANDING
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   constructor(data?: PartialMessage<AbsencesServicePaginationReq>) {
     super();
@@ -923,12 +931,12 @@ export class AbsencesServicePaginationReq extends Message<AbsencesServicePaginat
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.AbsencesServicePaginationReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(ABSENCE_SORT_KEY) },
-    { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(ABSENCE_SORT_KEY), opt: true },
+    { no: 6, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): AbsencesServicePaginationReq {
@@ -1026,7 +1034,12 @@ export class AbsencesServicePaginationResponse extends Message<AbsencesServicePa
 
 /**
  *
- * Advanced filter request for searching absences using multiple logical criteria.
+ * Advanced filter request for searching and paginating absences using multiple logical criteria.
+ * This message encapsulates pagination controls, sorting keys, lifecycle status filters,
+ * timestamp ranges, and entity references.
+ *
+ * **Note:** This is the primary message layout used by the frontend and external API clients
+ * to build robust data-table queries, reporting views, and targeted record lookups.
  *
  * @generated from message Scailo.AbsencesServiceFilterReq
  */
@@ -1039,9 +1052,9 @@ export class AbsencesServiceFilterReq extends Message<AbsencesServiceFilterReq> 
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -1071,9 +1084,9 @@ export class AbsencesServiceFilterReq extends Message<AbsencesServiceFilterReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -1083,9 +1096,9 @@ export class AbsencesServiceFilterReq extends Message<AbsencesServiceFilterReq> 
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -1093,9 +1106,9 @@ export class AbsencesServiceFilterReq extends Message<AbsencesServiceFilterReq> 
    *
    * @description The field used for sorting.
    *
-   * @generated from field: Scailo.ABSENCE_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.ABSENCE_SORT_KEY sort_key = 5;
    */
-  sortKey = ABSENCE_SORT_KEY.ABSENCE_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: ABSENCE_SORT_KEY;
 
   /**
    *
@@ -1109,9 +1122,9 @@ export class AbsencesServiceFilterReq extends Message<AbsencesServiceFilterReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_start = 101;
+   * @generated from field: optional uint64 creation_timestamp_start = 101;
    */
-  creationTimestampStart = protoInt64.zero;
+  creationTimestampStart?: bigint;
 
   /**
    *
@@ -1125,9 +1138,9 @@ export class AbsencesServiceFilterReq extends Message<AbsencesServiceFilterReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_end = 102;
+   * @generated from field: optional uint64 creation_timestamp_end = 102;
    */
-  creationTimestampEnd = protoInt64.zero;
+  creationTimestampEnd?: bigint;
 
   /**
    *
@@ -1141,9 +1154,9 @@ export class AbsencesServiceFilterReq extends Message<AbsencesServiceFilterReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_start = 103;
+   * @generated from field: optional uint64 modification_timestamp_start = 103;
    */
-  modificationTimestampStart = protoInt64.zero;
+  modificationTimestampStart?: bigint;
 
   /**
    *
@@ -1157,9 +1170,9 @@ export class AbsencesServiceFilterReq extends Message<AbsencesServiceFilterReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_end = 104;
+   * @generated from field: optional uint64 modification_timestamp_end = 104;
    */
-  modificationTimestampEnd = protoInt64.zero;
+  modificationTimestampEnd?: bigint;
 
   /**
    *
@@ -1173,9 +1186,9 @@ export class AbsencesServiceFilterReq extends Message<AbsencesServiceFilterReq> 
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 8;
+   * @generated from field: optional string entity_uuid = 8;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
    *
@@ -1185,9 +1198,9 @@ export class AbsencesServiceFilterReq extends Message<AbsencesServiceFilterReq> 
    *
    * @example STANDING
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   /**
    *
@@ -1201,9 +1214,9 @@ export class AbsencesServiceFilterReq extends Message<AbsencesServiceFilterReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_start = 11;
+   * @generated from field: optional uint64 approved_on_start = 11;
    */
-  approvedOnStart = protoInt64.zero;
+  approvedOnStart?: bigint;
 
   /**
    *
@@ -1217,9 +1230,9 @@ export class AbsencesServiceFilterReq extends Message<AbsencesServiceFilterReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_end = 12;
+   * @generated from field: optional uint64 approved_on_end = 12;
    */
-  approvedOnEnd = protoInt64.zero;
+  approvedOnEnd?: bigint;
 
   /**
    *
@@ -1233,9 +1246,9 @@ export class AbsencesServiceFilterReq extends Message<AbsencesServiceFilterReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_by_user_id = 13;
+   * @generated from field: optional uint64 approved_by_user_id = 13;
    */
-  approvedByUserId = protoInt64.zero;
+  approvedByUserId?: bigint;
 
   /**
    *
@@ -1249,9 +1262,9 @@ export class AbsencesServiceFilterReq extends Message<AbsencesServiceFilterReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approver_role_id = 14;
+   * @generated from field: optional uint64 approver_role_id = 14;
    */
-  approverRoleId = protoInt64.zero;
+  approverRoleId?: bigint;
 
   /**
    *
@@ -1265,9 +1278,9 @@ export class AbsencesServiceFilterReq extends Message<AbsencesServiceFilterReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 completed_on_start = 15;
+   * @generated from field: optional uint64 completed_on_start = 15;
    */
-  completedOnStart = protoInt64.zero;
+  completedOnStart?: bigint;
 
   /**
    *
@@ -1281,9 +1294,9 @@ export class AbsencesServiceFilterReq extends Message<AbsencesServiceFilterReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 completed_on_end = 16;
+   * @generated from field: optional uint64 completed_on_end = 16;
    */
-  completedOnEnd = protoInt64.zero;
+  completedOnEnd?: bigint;
 
   /**
    *
@@ -1297,9 +1310,9 @@ export class AbsencesServiceFilterReq extends Message<AbsencesServiceFilterReq> 
    *
    * @format: Alphanumeric characters and spaces only. Can be left empty.
    *
-   * @generated from field: string reference_id = 20;
+   * @generated from field: optional string reference_id = 20;
    */
-  referenceId = "";
+  referenceId?: string;
 
   /**
    *
@@ -1313,9 +1326,9 @@ export class AbsencesServiceFilterReq extends Message<AbsencesServiceFilterReq> 
    *
    * @format: Alphanumeric characters and spaces only. Can be left empty.
    *
-   * @generated from field: string final_ref_number = 21;
+   * @generated from field: optional string final_ref_number = 21;
    */
-  finalRefNumber = "";
+  finalRefNumber?: string;
 
   /**
    *
@@ -1329,9 +1342,9 @@ export class AbsencesServiceFilterReq extends Message<AbsencesServiceFilterReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 user_id = 22;
+   * @generated from field: optional uint64 user_id = 22;
    */
-  userId = protoInt64.zero;
+  userId?: bigint;
 
   /**
    *
@@ -1345,9 +1358,9 @@ export class AbsencesServiceFilterReq extends Message<AbsencesServiceFilterReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 leave_request_id = 23;
+   * @generated from field: optional uint64 leave_request_id = 23;
    */
-  leaveRequestId = protoInt64.zero;
+  leaveRequestId?: bigint;
 
   /**
    *
@@ -1361,9 +1374,9 @@ export class AbsencesServiceFilterReq extends Message<AbsencesServiceFilterReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 from_timestamp_start = 24;
+   * @generated from field: optional uint64 from_timestamp_start = 24;
    */
-  fromTimestampStart = protoInt64.zero;
+  fromTimestampStart?: bigint;
 
   /**
    *
@@ -1377,9 +1390,9 @@ export class AbsencesServiceFilterReq extends Message<AbsencesServiceFilterReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 from_timestamp_end = 25;
+   * @generated from field: optional uint64 from_timestamp_end = 25;
    */
-  fromTimestampEnd = protoInt64.zero;
+  fromTimestampEnd?: bigint;
 
   /**
    *
@@ -1393,9 +1406,9 @@ export class AbsencesServiceFilterReq extends Message<AbsencesServiceFilterReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 to_timestamp_start = 26;
+   * @generated from field: optional uint64 to_timestamp_start = 26;
    */
-  toTimestampStart = protoInt64.zero;
+  toTimestampStart?: bigint;
 
   /**
    *
@@ -1409,9 +1422,9 @@ export class AbsencesServiceFilterReq extends Message<AbsencesServiceFilterReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 to_timestamp_end = 27;
+   * @generated from field: optional uint64 to_timestamp_end = 27;
    */
-  toTimestampEnd = protoInt64.zero;
+  toTimestampEnd?: bigint;
 
   /**
    *
@@ -1425,9 +1438,9 @@ export class AbsencesServiceFilterReq extends Message<AbsencesServiceFilterReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 uom_id = 28;
+   * @generated from field: optional uint64 uom_id = 28;
    */
-  uomId = protoInt64.zero;
+  uomId?: bigint;
 
   /**
    *
@@ -1441,9 +1454,9 @@ export class AbsencesServiceFilterReq extends Message<AbsencesServiceFilterReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 quantity_min = 29;
+   * @generated from field: optional uint64 quantity_min = 29;
    */
-  quantityMin = protoInt64.zero;
+  quantityMin?: bigint;
 
   /**
    *
@@ -1457,9 +1470,9 @@ export class AbsencesServiceFilterReq extends Message<AbsencesServiceFilterReq> 
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 quantity_max = 30;
+   * @generated from field: optional uint64 quantity_max = 30;
    */
-  quantityMax = protoInt64.zero;
+  quantityMax?: bigint;
 
   /**
    *
@@ -1480,9 +1493,9 @@ export class AbsencesServiceFilterReq extends Message<AbsencesServiceFilterReq> 
    *
    * @example true
    *
-   * @generated from field: bool include_form_data = 501;
+   * @generated from field: optional bool include_form_data = 501;
    */
-  includeFormData = false;
+  includeFormData?: boolean;
 
   constructor(data?: PartialMessage<AbsencesServiceFilterReq>) {
     super();
@@ -1492,36 +1505,36 @@ export class AbsencesServiceFilterReq extends Message<AbsencesServiceFilterReq> 
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.AbsencesServiceFilterReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(ABSENCE_SORT_KEY) },
-    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
-    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 15, name: "completed_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 23, name: "leave_request_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 24, name: "from_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 25, name: "from_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 26, name: "to_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 27, name: "to_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 28, name: "uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 29, name: "quantity_min", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 30, name: "quantity_max", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(ABSENCE_SORT_KEY), opt: true },
+    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
+    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 15, name: "completed_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 22, name: "user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 23, name: "leave_request_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 24, name: "from_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 25, name: "from_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 26, name: "to_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 27, name: "to_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 28, name: "uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 29, name: "quantity_min", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 30, name: "quantity_max", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
     { no: 500, name: "form_data", kind: "message", T: FormFieldDatumFilterRequest, repeated: true },
-    { no: 501, name: "include_form_data", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 501, name: "include_form_data", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): AbsencesServiceFilterReq {
@@ -1543,7 +1556,13 @@ export class AbsencesServiceFilterReq extends Message<AbsencesServiceFilterReq> 
 
 /**
  *
- * Request message to count records matching specific criteria.
+ * Target filter request for counting absence records matching specific logical criteria.
+ * This message encapsulates lifecycle status filters, timestamp ranges, workflow markers,
+ * and entity references to determine the total size of a targeted dataset.
+ *
+ * **Note:** This is the primary message layout used by backend calculation engines, reporting
+ * services, and frontend pagination headers to evaluate total record matches dynamically
+ * before or alongside retrieving paginated results.
  *
  * @generated from message Scailo.AbsencesServiceCountReq
  */
@@ -1556,9 +1575,9 @@ export class AbsencesServiceCountReq extends Message<AbsencesServiceCountReq> {
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -1572,9 +1591,9 @@ export class AbsencesServiceCountReq extends Message<AbsencesServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_start = 101;
+   * @generated from field: optional uint64 creation_timestamp_start = 101;
    */
-  creationTimestampStart = protoInt64.zero;
+  creationTimestampStart?: bigint;
 
   /**
    *
@@ -1588,9 +1607,9 @@ export class AbsencesServiceCountReq extends Message<AbsencesServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 creation_timestamp_end = 102;
+   * @generated from field: optional uint64 creation_timestamp_end = 102;
    */
-  creationTimestampEnd = protoInt64.zero;
+  creationTimestampEnd?: bigint;
 
   /**
    *
@@ -1604,9 +1623,9 @@ export class AbsencesServiceCountReq extends Message<AbsencesServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_start = 103;
+   * @generated from field: optional uint64 modification_timestamp_start = 103;
    */
-  modificationTimestampStart = protoInt64.zero;
+  modificationTimestampStart?: bigint;
 
   /**
    *
@@ -1620,9 +1639,9 @@ export class AbsencesServiceCountReq extends Message<AbsencesServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 modification_timestamp_end = 104;
+   * @generated from field: optional uint64 modification_timestamp_end = 104;
    */
-  modificationTimestampEnd = protoInt64.zero;
+  modificationTimestampEnd?: bigint;
 
   /**
    *
@@ -1636,9 +1655,9 @@ export class AbsencesServiceCountReq extends Message<AbsencesServiceCountReq> {
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 8;
+   * @generated from field: optional string entity_uuid = 8;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
    *
@@ -1648,9 +1667,9 @@ export class AbsencesServiceCountReq extends Message<AbsencesServiceCountReq> {
    *
    * @example STANDING
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   /**
    *
@@ -1664,9 +1683,9 @@ export class AbsencesServiceCountReq extends Message<AbsencesServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_start = 11;
+   * @generated from field: optional uint64 approved_on_start = 11;
    */
-  approvedOnStart = protoInt64.zero;
+  approvedOnStart?: bigint;
 
   /**
    *
@@ -1680,9 +1699,9 @@ export class AbsencesServiceCountReq extends Message<AbsencesServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_on_end = 12;
+   * @generated from field: optional uint64 approved_on_end = 12;
    */
-  approvedOnEnd = protoInt64.zero;
+  approvedOnEnd?: bigint;
 
   /**
    *
@@ -1696,9 +1715,9 @@ export class AbsencesServiceCountReq extends Message<AbsencesServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approved_by_user_id = 13;
+   * @generated from field: optional uint64 approved_by_user_id = 13;
    */
-  approvedByUserId = protoInt64.zero;
+  approvedByUserId?: bigint;
 
   /**
    *
@@ -1712,9 +1731,9 @@ export class AbsencesServiceCountReq extends Message<AbsencesServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 approver_role_id = 14;
+   * @generated from field: optional uint64 approver_role_id = 14;
    */
-  approverRoleId = protoInt64.zero;
+  approverRoleId?: bigint;
 
   /**
    *
@@ -1728,9 +1747,9 @@ export class AbsencesServiceCountReq extends Message<AbsencesServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 completed_on_start = 15;
+   * @generated from field: optional uint64 completed_on_start = 15;
    */
-  completedOnStart = protoInt64.zero;
+  completedOnStart?: bigint;
 
   /**
    *
@@ -1744,9 +1763,9 @@ export class AbsencesServiceCountReq extends Message<AbsencesServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 completed_on_end = 16;
+   * @generated from field: optional uint64 completed_on_end = 16;
    */
-  completedOnEnd = protoInt64.zero;
+  completedOnEnd?: bigint;
 
   /**
    *
@@ -1760,9 +1779,9 @@ export class AbsencesServiceCountReq extends Message<AbsencesServiceCountReq> {
    *
    * @format: Alphanumeric characters and spaces only. Can be left empty.
    *
-   * @generated from field: string reference_id = 20;
+   * @generated from field: optional string reference_id = 20;
    */
-  referenceId = "";
+  referenceId?: string;
 
   /**
    *
@@ -1776,9 +1795,9 @@ export class AbsencesServiceCountReq extends Message<AbsencesServiceCountReq> {
    *
    * @format: Alphanumeric characters and spaces only. Can be left empty.
    *
-   * @generated from field: string final_ref_number = 21;
+   * @generated from field: optional string final_ref_number = 21;
    */
-  finalRefNumber = "";
+  finalRefNumber?: string;
 
   /**
    *
@@ -1792,9 +1811,9 @@ export class AbsencesServiceCountReq extends Message<AbsencesServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 user_id = 22;
+   * @generated from field: optional uint64 user_id = 22;
    */
-  userId = protoInt64.zero;
+  userId?: bigint;
 
   /**
    *
@@ -1808,9 +1827,9 @@ export class AbsencesServiceCountReq extends Message<AbsencesServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 leave_request_id = 23;
+   * @generated from field: optional uint64 leave_request_id = 23;
    */
-  leaveRequestId = protoInt64.zero;
+  leaveRequestId?: bigint;
 
   /**
    *
@@ -1824,9 +1843,9 @@ export class AbsencesServiceCountReq extends Message<AbsencesServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 from_timestamp_start = 24;
+   * @generated from field: optional uint64 from_timestamp_start = 24;
    */
-  fromTimestampStart = protoInt64.zero;
+  fromTimestampStart?: bigint;
 
   /**
    *
@@ -1840,9 +1859,9 @@ export class AbsencesServiceCountReq extends Message<AbsencesServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 from_timestamp_end = 25;
+   * @generated from field: optional uint64 from_timestamp_end = 25;
    */
-  fromTimestampEnd = protoInt64.zero;
+  fromTimestampEnd?: bigint;
 
   /**
    *
@@ -1856,9 +1875,9 @@ export class AbsencesServiceCountReq extends Message<AbsencesServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 to_timestamp_start = 26;
+   * @generated from field: optional uint64 to_timestamp_start = 26;
    */
-  toTimestampStart = protoInt64.zero;
+  toTimestampStart?: bigint;
 
   /**
    *
@@ -1872,9 +1891,9 @@ export class AbsencesServiceCountReq extends Message<AbsencesServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 to_timestamp_end = 27;
+   * @generated from field: optional uint64 to_timestamp_end = 27;
    */
-  toTimestampEnd = protoInt64.zero;
+  toTimestampEnd?: bigint;
 
   /**
    *
@@ -1888,9 +1907,9 @@ export class AbsencesServiceCountReq extends Message<AbsencesServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 uom_id = 28;
+   * @generated from field: optional uint64 uom_id = 28;
    */
-  uomId = protoInt64.zero;
+  uomId?: bigint;
 
   /**
    *
@@ -1904,9 +1923,9 @@ export class AbsencesServiceCountReq extends Message<AbsencesServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 quantity_min = 29;
+   * @generated from field: optional uint64 quantity_min = 29;
    */
-  quantityMin = protoInt64.zero;
+  quantityMin?: bigint;
 
   /**
    *
@@ -1920,15 +1939,15 @@ export class AbsencesServiceCountReq extends Message<AbsencesServiceCountReq> {
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 quantity_max = 30;
+   * @generated from field: optional uint64 quantity_max = 30;
    */
-  quantityMax = protoInt64.zero;
+  quantityMax?: bigint;
 
   /**
    *
    * @optional
    *
-   * @description Custom field filters.
+   * @description Count based on dynamic form field values.
    *
    * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
    */
@@ -1942,30 +1961,30 @@ export class AbsencesServiceCountReq extends Message<AbsencesServiceCountReq> {
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.AbsencesServiceCountReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
-    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
-    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 15, name: "completed_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 23, name: "leave_request_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 24, name: "from_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 25, name: "from_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 26, name: "to_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 27, name: "to_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 28, name: "uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 29, name: "quantity_min", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 30, name: "quantity_max", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
+    { no: 101, name: "creation_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 102, name: "creation_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 103, name: "modification_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 104, name: "modification_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 8, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
+    { no: 11, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 12, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 13, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 14, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 15, name: "completed_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 16, name: "completed_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 20, name: "reference_id", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 21, name: "final_ref_number", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 22, name: "user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 23, name: "leave_request_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 24, name: "from_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 25, name: "from_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 26, name: "to_timestamp_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 27, name: "to_timestamp_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 28, name: "uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 29, name: "quantity_min", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 30, name: "quantity_max", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
     { no: 500, name: "form_data", kind: "message", T: FormFieldDatumFilterRequest, repeated: true },
   ]);
 
@@ -1988,7 +2007,13 @@ export class AbsencesServiceCountReq extends Message<AbsencesServiceCountReq> {
 
 /**
  *
- * Generic search request for finding absences using a free-text search key.
+ * Broad-spectrum search and lookup request for locating and paginating absences via text matching.
+ * This message encapsulates full-text query parameters, pagination controls, sorting keys,
+ * lifecycle status constraints, and other core references.
+ *
+ * **Note:** This is the primary message layout used for global search bars, fast-filtering dashboard
+ * inputs, and omni-box search utilities where users need to match loose textual terms against
+ * records while retaining structural pagination.
  *
  * @generated from message Scailo.AbsencesServiceSearchAllReq
  */
@@ -2001,9 +2026,9 @@ export class AbsencesServiceSearchAllReq extends Message<AbsencesServiceSearchAl
    *
    * @example ANY
    *
-   * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
    */
-  isActive = BOOL_FILTER.BOOL_FILTER_ANY_UNSPECIFIED;
+  isActive?: BOOL_FILTER;
 
   /**
    *
@@ -2033,9 +2058,9 @@ export class AbsencesServiceSearchAllReq extends Message<AbsencesServiceSearchAl
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 offset = 3;
+   * @generated from field: optional uint64 offset = 3;
    */
-  offset = protoInt64.zero;
+  offset?: bigint;
 
   /**
    *
@@ -2045,9 +2070,9 @@ export class AbsencesServiceSearchAllReq extends Message<AbsencesServiceSearchAl
    *
    * @example DESCENDING
    *
-   * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
    */
-  sortOrder = SORT_ORDER.ASCENDING_UNSPECIFIED;
+  sortOrder?: SORT_ORDER;
 
   /**
    *
@@ -2055,9 +2080,9 @@ export class AbsencesServiceSearchAllReq extends Message<AbsencesServiceSearchAl
    *
    * @description The field used for sorting.
    *
-   * @generated from field: Scailo.ABSENCE_SORT_KEY sort_key = 5;
+   * @generated from field: optional Scailo.ABSENCE_SORT_KEY sort_key = 5;
    */
-  sortKey = ABSENCE_SORT_KEY.ABSENCE_SORT_KEY_ID_UNSPECIFIED;
+  sortKey?: ABSENCE_SORT_KEY;
 
   /**
    *
@@ -2071,9 +2096,9 @@ export class AbsencesServiceSearchAllReq extends Message<AbsencesServiceSearchAl
    *
    * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
    *
-   * @generated from field: string entity_uuid = 6;
+   * @generated from field: optional string entity_uuid = 6;
    */
-  entityUuid = "";
+  entityUuid?: string;
 
   /**
    *
@@ -2083,13 +2108,13 @@ export class AbsencesServiceSearchAllReq extends Message<AbsencesServiceSearchAl
    *
    * @example STANDING
    *
-   * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+   * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
    */
-  status = STANDARD_LIFECYCLE_STATUS.ANY_UNSPECIFIED;
+  status?: STANDARD_LIFECYCLE_STATUS;
 
   /**
    *
-   * @mandatory
+   * @optional
    *
    * @description The search string to match against reference IDs.
    *
@@ -2099,9 +2124,9 @@ export class AbsencesServiceSearchAllReq extends Message<AbsencesServiceSearchAl
    *
    * @format: May contain any UTF-8 characters.
    *
-   * @generated from field: string search_key = 11;
+   * @generated from field: optional string search_key = 11;
    */
-  searchKey = "";
+  searchKey?: string;
 
   /**
    *
@@ -2115,9 +2140,9 @@ export class AbsencesServiceSearchAllReq extends Message<AbsencesServiceSearchAl
    *
    * @format Non-negative integer.
    *
-   * @generated from field: uint64 user_id = 22;
+   * @generated from field: optional uint64 user_id = 22;
    */
-  userId = protoInt64.zero;
+  userId?: bigint;
 
   constructor(data?: PartialMessage<AbsencesServiceSearchAllReq>) {
     super();
@@ -2127,15 +2152,15 @@ export class AbsencesServiceSearchAllReq extends Message<AbsencesServiceSearchAl
   static readonly runtime: typeof proto3 = proto3;
   static readonly typeName = "Scailo.AbsencesServiceSearchAllReq";
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
-    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER) },
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
     { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
-    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
-    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER) },
-    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(ABSENCE_SORT_KEY) },
-    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS) },
-    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 22, name: "user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(ABSENCE_SORT_KEY), opt: true },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "status", kind: "enum", T: proto3.getEnumType(STANDARD_LIFECYCLE_STATUS), opt: true },
+    { no: 11, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 22, name: "user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): AbsencesServiceSearchAllReq {

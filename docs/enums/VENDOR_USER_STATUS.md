@@ -2,7 +2,7 @@
 
 # Enumeration: VENDOR\_USER\_STATUS
 
-Describes the applicable statuses of vendor users
+Enum defining the applicable lifecycle and verification statuses for vendor users.
 
 **`Generated`**
 
@@ -22,7 +22,9 @@ from enum Scailo.VENDOR_USER_STATUS
 
 • **VENDOR\_USER\_STATUS\_ANY\_UNSPECIFIED** = ``0``
 
-Denotes that status be disregarded. This is used only within search APIs
+**`Description`**
+
+Denotes that the status filter should be disregarded. Used exclusively within search APIs to bypass status restrictions.
 
 **`Generated`**
 
@@ -30,7 +32,7 @@ from enum value: VENDOR_USER_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:307](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L307)
+[src/vendors.scailo_pb.ts:307](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L307)
 
 ___
 
@@ -38,7 +40,9 @@ ___
 
 • **VENDOR\_USER\_STATUS\_APPROVED** = ``1``
 
-Denotes that the vendor items must have been approved
+**`Description`**
+
+Denotes that the vendor user association has passed verification and is actively approved.
 
 **`Generated`**
 
@@ -46,7 +50,7 @@ from enum value: VENDOR_USER_STATUS_APPROVED = 1;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:314](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L314)
+[src/vendors.scailo_pb.ts:314](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L314)
 
 ___
 
@@ -54,7 +58,9 @@ ___
 
 • **VENDOR\_USER\_STATUS\_UNAPPROVED** = ``2``
 
-Denotes that the vendor items must be waiting for approval
+**`Description`**
+
+Denotes that the vendor user association is pending review and waiting for administrative approval.
 
 **`Generated`**
 
@@ -62,4 +68,4 @@ from enum value: VENDOR_USER_STATUS_UNAPPROVED = 2;
 
 #### Defined in
 
-[src/vendors.scailo_pb.ts:321](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/vendors.scailo_pb.ts#L321)
+[src/vendors.scailo_pb.ts:321](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/vendors.scailo_pb.ts#L321)

@@ -94,7 +94,7 @@ Message\&lt;SalesReturnsServiceFilterReq\&gt;.constructor
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:2109](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_returns.scailo_pb.ts#L2109)
+[src/sales_returns.scailo_pb.ts:2173](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_returns.scailo_pb.ts#L2173)
 
 ## Properties
 
@@ -128,7 +128,7 @@ from field: uint64 approved_by_user_id = 13;
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:1947](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_returns.scailo_pb.ts#L1947)
+[src/sales_returns.scailo_pb.ts:2011](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_returns.scailo_pb.ts#L2011)
 
 ___
 
@@ -162,7 +162,7 @@ from field: uint64 approved_on_end = 12;
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:1931](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_returns.scailo_pb.ts#L1931)
+[src/sales_returns.scailo_pb.ts:1995](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_returns.scailo_pb.ts#L1995)
 
 ___
 
@@ -196,7 +196,7 @@ from field: uint64 approved_on_start = 11;
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:1915](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_returns.scailo_pb.ts#L1915)
+[src/sales_returns.scailo_pb.ts:1979](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_returns.scailo_pb.ts#L1979)
 
 ___
 
@@ -230,7 +230,7 @@ from field: uint64 approver_role_id = 14;
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:1963](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_returns.scailo_pb.ts#L1963)
+[src/sales_returns.scailo_pb.ts:2027](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_returns.scailo_pb.ts#L2027)
 
 ___
 
@@ -246,7 +246,7 @@ from field: Scailo.SALES_RETURN_BILLING_STATUS billing_status = 40;
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:2055](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_returns.scailo_pb.ts#L2055)
+[src/sales_returns.scailo_pb.ts:2119](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_returns.scailo_pb.ts#L2119)
 
 ___
 
@@ -262,7 +262,7 @@ from field: uint64 buyer_client_id = 61;
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:2077](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_returns.scailo_pb.ts#L2077)
+[src/sales_returns.scailo_pb.ts:2141](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_returns.scailo_pb.ts#L2141)
 
 ___
 
@@ -296,7 +296,7 @@ from field: uint64 completed_on_end = 16;
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:1995](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_returns.scailo_pb.ts#L1995)
+[src/sales_returns.scailo_pb.ts:2059](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_returns.scailo_pb.ts#L2059)
 
 ___
 
@@ -330,7 +330,7 @@ from field: uint64 completed_on_start = 15;
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:1979](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_returns.scailo_pb.ts#L1979)
+[src/sales_returns.scailo_pb.ts:2043](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_returns.scailo_pb.ts#L2043)
 
 ___
 
@@ -347,7 +347,7 @@ from field: uint64 consignee_client_id = 60;
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:2070](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_returns.scailo_pb.ts#L2070)
+[src/sales_returns.scailo_pb.ts:2134](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_returns.scailo_pb.ts#L2134)
 
 ___
 
@@ -381,7 +381,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:1769](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_returns.scailo_pb.ts#L1769)
+[src/sales_returns.scailo_pb.ts:1833](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_returns.scailo_pb.ts#L1833)
 
 ___
 
@@ -415,7 +415,7 @@ from field: uint64 creation_timestamp_end = 102;
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:1839](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_returns.scailo_pb.ts#L1839)
+[src/sales_returns.scailo_pb.ts:1903](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_returns.scailo_pb.ts#L1903)
 
 ___
 
@@ -449,7 +449,7 @@ from field: uint64 creation_timestamp_start = 101;
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:1823](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_returns.scailo_pb.ts#L1823)
+[src/sales_returns.scailo_pb.ts:1887](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_returns.scailo_pb.ts#L1887)
 
 ___
 
@@ -483,7 +483,7 @@ from field: string entity_uuid = 8;
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:1887](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_returns.scailo_pb.ts#L1887)
+[src/sales_returns.scailo_pb.ts:1951](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_returns.scailo_pb.ts#L1951)
 
 ___
 
@@ -499,7 +499,7 @@ from field: uint64 family_id = 50;
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:2062](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_returns.scailo_pb.ts#L2062)
+[src/sales_returns.scailo_pb.ts:2126](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_returns.scailo_pb.ts#L2126)
 
 ___
 
@@ -531,7 +531,7 @@ from field: string final_ref_number = 21;
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:2027](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_returns.scailo_pb.ts#L2027)
+[src/sales_returns.scailo_pb.ts:2091](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_returns.scailo_pb.ts#L2091)
 
 ___
 
@@ -551,7 +551,7 @@ from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:2094](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_returns.scailo_pb.ts#L2094)
+[src/sales_returns.scailo_pb.ts:2158](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_returns.scailo_pb.ts#L2158)
 
 ___
 
@@ -578,7 +578,7 @@ from field: bool include_form_data = 501;
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:2107](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_returns.scailo_pb.ts#L2107)
+[src/sales_returns.scailo_pb.ts:2171](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_returns.scailo_pb.ts#L2171)
 
 ___
 
@@ -604,7 +604,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:1753](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_returns.scailo_pb.ts#L1753)
+[src/sales_returns.scailo_pb.ts:1817](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_returns.scailo_pb.ts#L1817)
 
 ___
 
@@ -620,7 +620,7 @@ from field: uint64 location_id = 25;
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:2048](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_returns.scailo_pb.ts#L2048)
+[src/sales_returns.scailo_pb.ts:2112](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_returns.scailo_pb.ts#L2112)
 
 ___
 
@@ -654,7 +654,7 @@ from field: uint64 modification_timestamp_end = 104;
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:1871](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_returns.scailo_pb.ts#L1871)
+[src/sales_returns.scailo_pb.ts:1935](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_returns.scailo_pb.ts#L1935)
 
 ___
 
@@ -688,7 +688,7 @@ from field: uint64 modification_timestamp_start = 103;
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:1855](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_returns.scailo_pb.ts#L1855)
+[src/sales_returns.scailo_pb.ts:1919](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_returns.scailo_pb.ts#L1919)
 
 ___
 
@@ -722,7 +722,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:1785](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_returns.scailo_pb.ts#L1785)
+[src/sales_returns.scailo_pb.ts:1849](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_returns.scailo_pb.ts#L1849)
 
 ___
 
@@ -738,7 +738,7 @@ from field: uint64 project_id = 62;
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:2084](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_returns.scailo_pb.ts#L2084)
+[src/sales_returns.scailo_pb.ts:2148](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_returns.scailo_pb.ts#L2148)
 
 ___
 
@@ -754,7 +754,7 @@ from field: Scailo.SALES_RETURN_REF_FROM ref_from = 22;
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:2034](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_returns.scailo_pb.ts#L2034)
+[src/sales_returns.scailo_pb.ts:2098](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_returns.scailo_pb.ts#L2098)
 
 ___
 
@@ -770,7 +770,7 @@ from field: uint64 ref_id = 23;
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:2041](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_returns.scailo_pb.ts#L2041)
+[src/sales_returns.scailo_pb.ts:2105](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_returns.scailo_pb.ts#L2105)
 
 ___
 
@@ -802,7 +802,7 @@ from field: string reference_id = 20;
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:2011](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_returns.scailo_pb.ts#L2011)
+[src/sales_returns.scailo_pb.ts:2075](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_returns.scailo_pb.ts#L2075)
 
 ___
 
@@ -822,7 +822,7 @@ from field: Scailo.SALES_RETURN_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:1807](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_returns.scailo_pb.ts#L1807)
+[src/sales_returns.scailo_pb.ts:1871](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_returns.scailo_pb.ts#L1871)
 
 ___
 
@@ -848,7 +848,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:1797](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_returns.scailo_pb.ts#L1797)
+[src/sales_returns.scailo_pb.ts:1861](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_returns.scailo_pb.ts#L1861)
 
 ___
 
@@ -874,7 +874,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:1899](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_returns.scailo_pb.ts#L1899)
+[src/sales_returns.scailo_pb.ts:1963](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_returns.scailo_pb.ts#L1963)
 
 ___
 
@@ -884,7 +884,7 @@ ___
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:2116](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_returns.scailo_pb.ts#L2116)
+[src/sales_returns.scailo_pb.ts:2180](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_returns.scailo_pb.ts#L2180)
 
 ___
 
@@ -894,7 +894,7 @@ ___
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:2114](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_returns.scailo_pb.ts#L2114)
+[src/sales_returns.scailo_pb.ts:2178](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_returns.scailo_pb.ts#L2178)
 
 ___
 
@@ -904,7 +904,7 @@ ___
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:2115](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_returns.scailo_pb.ts#L2115)
+[src/sales_returns.scailo_pb.ts:2179](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_returns.scailo_pb.ts#L2179)
 
 ## Methods
 
@@ -1192,7 +1192,7 @@ ___
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:2160](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_returns.scailo_pb.ts#L2160)
+[src/sales_returns.scailo_pb.ts:2224](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_returns.scailo_pb.ts#L2224)
 
 ___
 
@@ -1213,7 +1213,7 @@ ___
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:2148](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_returns.scailo_pb.ts#L2148)
+[src/sales_returns.scailo_pb.ts:2212](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_returns.scailo_pb.ts#L2212)
 
 ___
 
@@ -1234,7 +1234,7 @@ ___
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:2152](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_returns.scailo_pb.ts#L2152)
+[src/sales_returns.scailo_pb.ts:2216](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_returns.scailo_pb.ts#L2216)
 
 ___
 
@@ -1255,4 +1255,4 @@ ___
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:2156](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/sales_returns.scailo_pb.ts#L2156)
+[src/sales_returns.scailo_pb.ts:2220](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/sales_returns.scailo_pb.ts#L2220)

@@ -71,7 +71,7 @@ Message\&lt;TaxGroupsServiceUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/tax_groups.scailo_pb.ts:269](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/tax_groups.scailo_pb.ts#L269)
+[src/tax_groups.scailo_pb.ts:283](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/tax_groups.scailo_pb.ts#L283)
 
 ## Properties
 
@@ -87,7 +87,7 @@ from field: string code = 21;
 
 #### Defined in
 
-[src/tax_groups.scailo_pb.ts:260](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/tax_groups.scailo_pb.ts#L260)
+[src/tax_groups.scailo_pb.ts:274](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/tax_groups.scailo_pb.ts#L274)
 
 ___
 
@@ -103,7 +103,7 @@ from field: string description = 12;
 
 #### Defined in
 
-[src/tax_groups.scailo_pb.ts:267](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/tax_groups.scailo_pb.ts#L267)
+[src/tax_groups.scailo_pb.ts:281](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/tax_groups.scailo_pb.ts#L281)
 
 ___
 
@@ -111,7 +111,25 @@ ___
 
 • **id**: `bigint` = `protoInt64.zero`
 
-The ID of the record that needs to be updated
+**`Mandatory`**
+
+**`Description`**
+
+The unique internal identifier of the target record that needs to be updated.
+
+**`Example`**
+
+```ts
+1024
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -119,7 +137,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-[src/tax_groups.scailo_pb.ts:239](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/tax_groups.scailo_pb.ts#L239)
+[src/tax_groups.scailo_pb.ts:248](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/tax_groups.scailo_pb.ts#L248)
 
 ___
 
@@ -135,7 +153,7 @@ from field: string name = 10;
 
 #### Defined in
 
-[src/tax_groups.scailo_pb.ts:253](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/tax_groups.scailo_pb.ts#L253)
+[src/tax_groups.scailo_pb.ts:267](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/tax_groups.scailo_pb.ts#L267)
 
 ___
 
@@ -143,7 +161,17 @@ ___
 
 • **notifyUsers**: `boolean` = `false`
 
-Optional boolean value that denotes if a notification needs to be sent to users about the update to the record. This is useful when a subsequent operation needs to be performed immediately (such as send to verification after updating the revision)
+**`Optional`**
+
+**`Description`**
+
+Flag to trigger system notifications to relevant users upon update. Set to true if subsequent workflows (like verification) depend on this change.
+
+**`Example`**
+
+```ts
+true
+```
 
 **`Generated`**
 
@@ -151,7 +179,7 @@ from field: bool notify_users = 3;
 
 #### Defined in
 
-[src/tax_groups.scailo_pb.ts:246](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/tax_groups.scailo_pb.ts#L246)
+[src/tax_groups.scailo_pb.ts:260](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/tax_groups.scailo_pb.ts#L260)
 
 ___
 
@@ -167,7 +195,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-[src/tax_groups.scailo_pb.ts:232](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/tax_groups.scailo_pb.ts#L232)
+[src/tax_groups.scailo_pb.ts:232](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/tax_groups.scailo_pb.ts#L232)
 
 ___
 
@@ -177,7 +205,7 @@ ___
 
 #### Defined in
 
-[src/tax_groups.scailo_pb.ts:276](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/tax_groups.scailo_pb.ts#L276)
+[src/tax_groups.scailo_pb.ts:290](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/tax_groups.scailo_pb.ts#L290)
 
 ___
 
@@ -187,7 +215,7 @@ ___
 
 #### Defined in
 
-[src/tax_groups.scailo_pb.ts:274](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/tax_groups.scailo_pb.ts#L274)
+[src/tax_groups.scailo_pb.ts:288](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/tax_groups.scailo_pb.ts#L288)
 
 ___
 
@@ -197,7 +225,7 @@ ___
 
 #### Defined in
 
-[src/tax_groups.scailo_pb.ts:275](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/tax_groups.scailo_pb.ts#L275)
+[src/tax_groups.scailo_pb.ts:289](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/tax_groups.scailo_pb.ts#L289)
 
 ## Methods
 
@@ -485,7 +513,7 @@ ___
 
 #### Defined in
 
-[src/tax_groups.scailo_pb.ts:297](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/tax_groups.scailo_pb.ts#L297)
+[src/tax_groups.scailo_pb.ts:311](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/tax_groups.scailo_pb.ts#L311)
 
 ___
 
@@ -506,7 +534,7 @@ ___
 
 #### Defined in
 
-[src/tax_groups.scailo_pb.ts:285](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/tax_groups.scailo_pb.ts#L285)
+[src/tax_groups.scailo_pb.ts:299](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/tax_groups.scailo_pb.ts#L299)
 
 ___
 
@@ -527,7 +555,7 @@ ___
 
 #### Defined in
 
-[src/tax_groups.scailo_pb.ts:289](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/tax_groups.scailo_pb.ts#L289)
+[src/tax_groups.scailo_pb.ts:303](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/tax_groups.scailo_pb.ts#L303)
 
 ___
 
@@ -548,4 +576,4 @@ ___
 
 #### Defined in
 
-[src/tax_groups.scailo_pb.ts:293](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/tax_groups.scailo_pb.ts#L293)
+[src/tax_groups.scailo_pb.ts:307](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/tax_groups.scailo_pb.ts#L307)

@@ -2,7 +2,12 @@
 
 # Class: LedgersServiceCreateRequest
 
-Describes the parameters necessary to create a record
+Request message for creating and initializing a new financial or operational Ledger.
+This record maps accounting node hierarchies, unique account codes, structural types
+(leaf vs. non-leaf parent nodes), and compliance attributes within a tenant entity.
+
+**Note:** This is the primary entry point for Finance teams, Treasury, and Admins to
+construct or expand the Chart of Accounts and define transactional ledger groups.
 
 **`Generated`**
 
@@ -72,7 +77,7 @@ Message\&lt;LedgersServiceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:150](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/ledgers.scailo_pb.ts#L150)
+[src/ledgers.scailo_pb.ts:207](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/ledgers.scailo_pb.ts#L207)
 
 ## Properties
 
@@ -80,7 +85,25 @@ Message\&lt;LedgersServiceCreateRequest\&gt;.constructor
 
 • **code**: `string` = `""`
 
-The unique code by which the ledger is classified
+**`Mandatory`**
+
+**`Description`**
+
+The unique code or alphanumeric token by which the ledger account is classified in the Chart of Accounts.
+
+**`Example`**
+
+```ts
+"LEDGER-1010-OPEX"
+```
+
+**`Regex`**
+
+.+
+
+**`Format`**
+
+Must be a non-empty string.
 
 **`Generated`**
 
@@ -88,29 +111,47 @@ from field: string code = 11;
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:127](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/ledgers.scailo_pb.ts#L127)
+[src/ledgers.scailo_pb.ts:159](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/ledgers.scailo_pb.ts#L159)
 
 ___
 
 ### description
 
-• **description**: `string` = `""`
+• `Optional` **description**: `string`
 
-The description of the ledger
+**`Optional`**
+
+**`Description`**
+
+Clarifying details or context regarding the ledger's intended accounting use case, currency parameters, or scope.
+
+**`Example`**
+
+```ts
+"Tracks day-to-day corporate operating expenses, utilities, and minor regional software licenses."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
-from field: string description = 14;
+from field: optional string description = 14;
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:148](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/ledgers.scailo_pb.ts#L148)
+[src/ledgers.scailo_pb.ts:205](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/ledgers.scailo_pb.ts#L205)
 
 ___
 
 ### entityUuid
 
-• **entityUuid**: `string` = `""`
+• `Optional` **entityUuid**: `string`
 
 **`Optional`**
 
@@ -134,11 +175,11 @@ If provided, must be a valid v4 UUID in canonical hyphenated form.
 
 **`Generated`**
 
-from field: string entity_uuid = 1;
+from field: optional string entity_uuid = 1;
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:106](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/ledgers.scailo_pb.ts#L106)
+[src/ledgers.scailo_pb.ts:111](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/ledgers.scailo_pb.ts#L111)
 
 ___
 
@@ -146,7 +187,21 @@ ___
 
 • **isLeaf**: `boolean` = `false`
 
-Stores if this is a leaf ledger or a non-leaf ledger
+**`Mandatory`**
+
+**`Description`**
+
+Flag determining whether this ledger node is a terminal 'leaf' node that can directly hold transactional balances, or a 'non-leaf' grouping node.
+
+**`Example`**
+
+```ts
+true
+```
+
+**`Format`**
+
+Boolean value (`true` or `false`).
 
 **`Generated`**
 
@@ -154,7 +209,7 @@ from field: bool is_leaf = 13;
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:141](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/ledgers.scailo_pb.ts#L141)
+[src/ledgers.scailo_pb.ts:189](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/ledgers.scailo_pb.ts#L189)
 
 ___
 
@@ -162,7 +217,25 @@ ___
 
 • **name**: `string` = `""`
 
-The name of the ledger
+**`Mandatory`**
+
+**`Description`**
+
+The official or friendly descriptive name of the ledger account.
+
+**`Example`**
+
+```ts
+"General Operating Expenses"
+```
+
+**`Regex`**
+
+.+
+
+**`Format`**
+
+Must be a non-empty string.
 
 **`Generated`**
 
@@ -170,39 +243,75 @@ from field: string name = 10;
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:120](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/ledgers.scailo_pb.ts#L120)
+[src/ledgers.scailo_pb.ts:143](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/ledgers.scailo_pb.ts#L143)
 
 ___
 
 ### parentLedgerId
 
-• **parentLedgerId**: `bigint` = `protoInt64.zero`
+• `Optional` **parentLedgerId**: `bigint`
 
-The ID of the associated non-leaf parent ledger (0, if the first ledger that is being created is a leaf ledger)
+**`Optional`**
+
+**`Description`**
+
+The unique internal identifier of the parent non-leaf ledger. Defaults to 0 if this is the root or top-level node in the ledger hierarchy.
+
+**`Example`**
+
+```ts
+1024
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative 64-bit integer.
 
 **`Generated`**
 
-from field: uint64 parent_ledger_id = 12;
+from field: optional uint64 parent_ledger_id = 12;
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:134](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/ledgers.scailo_pb.ts#L134)
+[src/ledgers.scailo_pb.ts:175](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/ledgers.scailo_pb.ts#L175)
 
 ___
 
 ### userComment
 
-• **userComment**: `string` = `""`
+• `Optional` **userComment**: `string`
 
-Ledgers any comment that the user might add during this operation
+**`Optional`**
+
+**`Description`**
+
+Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+
+**`Example`**
+
+```ts
+"This is a comment for audit purposes."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
-from field: string user_comment = 2;
+from field: optional string user_comment = 2;
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:113](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/ledgers.scailo_pb.ts#L113)
+[src/ledgers.scailo_pb.ts:127](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/ledgers.scailo_pb.ts#L127)
 
 ___
 
@@ -212,7 +321,7 @@ ___
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:157](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/ledgers.scailo_pb.ts#L157)
+[src/ledgers.scailo_pb.ts:214](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/ledgers.scailo_pb.ts#L214)
 
 ___
 
@@ -222,7 +331,7 @@ ___
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:155](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/ledgers.scailo_pb.ts#L155)
+[src/ledgers.scailo_pb.ts:212](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/ledgers.scailo_pb.ts#L212)
 
 ___
 
@@ -232,7 +341,7 @@ ___
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:156](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/ledgers.scailo_pb.ts#L156)
+[src/ledgers.scailo_pb.ts:213](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/ledgers.scailo_pb.ts#L213)
 
 ## Methods
 
@@ -520,7 +629,7 @@ ___
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:179](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/ledgers.scailo_pb.ts#L179)
+[src/ledgers.scailo_pb.ts:236](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/ledgers.scailo_pb.ts#L236)
 
 ___
 
@@ -541,7 +650,7 @@ ___
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:167](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/ledgers.scailo_pb.ts#L167)
+[src/ledgers.scailo_pb.ts:224](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/ledgers.scailo_pb.ts#L224)
 
 ___
 
@@ -562,7 +671,7 @@ ___
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:171](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/ledgers.scailo_pb.ts#L171)
+[src/ledgers.scailo_pb.ts:228](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/ledgers.scailo_pb.ts#L228)
 
 ___
 
@@ -583,4 +692,4 @@ ___
 
 #### Defined in
 
-[src/ledgers.scailo_pb.ts:175](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/ledgers.scailo_pb.ts#L175)
+[src/ledgers.scailo_pb.ts:232](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/ledgers.scailo_pb.ts#L232)

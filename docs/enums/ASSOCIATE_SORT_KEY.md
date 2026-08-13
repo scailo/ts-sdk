@@ -2,7 +2,7 @@
 
 # Enumeration: ASSOCIATE\_SORT\_KEY
 
-Describes the available sort keys for retrieving associates
+Enumeration of fields available for sorting associate search results.
 
 **`Generated`**
 
@@ -27,7 +27,9 @@ from enum Scailo.ASSOCIATE_SORT_KEY
 
 • **ASSOCIATE\_SORT\_KEY\_CREATED\_AT** = ``1``
 
-Fetch ordered results by the creation timestamp
+**`Description`**
+
+Sort by the timestamp the record was initially created.
 
 **`Generated`**
 
@@ -35,7 +37,7 @@ from enum value: ASSOCIATE_SORT_KEY_CREATED_AT = 1;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:72](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/associates.scailo_pb.ts#L72)
+[src/associates.scailo_pb.ts:84](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/associates.scailo_pb.ts#L84)
 
 ___
 
@@ -43,7 +45,9 @@ ___
 
 • **ASSOCIATE\_SORT\_KEY\_FIRST\_NAME** = ``10``
 
-Fetch ordered results by first name
+**`Description`**
+
+Sort alphabetically by the user-provided first name.
 
 **`Generated`**
 
@@ -51,7 +55,7 @@ from enum value: ASSOCIATE_SORT_KEY_FIRST_NAME = 10;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:86](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/associates.scailo_pb.ts#L86)
+[src/associates.scailo_pb.ts:98](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/associates.scailo_pb.ts#L98)
 
 ___
 
@@ -59,7 +63,9 @@ ___
 
 • **ASSOCIATE\_SORT\_KEY\_ID\_UNSPECIFIED** = ``0``
 
-Fetch ordered results by id
+**`Description`**
+
+Default sort behavior (by internal ID).
 
 **`Generated`**
 
@@ -67,7 +73,7 @@ from enum value: ASSOCIATE_SORT_KEY_ID_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:65](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/associates.scailo_pb.ts#L65)
+[src/associates.scailo_pb.ts:77](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/associates.scailo_pb.ts#L77)
 
 ___
 
@@ -75,7 +81,9 @@ ___
 
 • **ASSOCIATE\_SORT\_KEY\_JOB\_TITLE** = ``14``
 
-Fetch ordered results by job title
+**`Description`**
+
+Sort alphabetically by the user-provided job title.
 
 **`Generated`**
 
@@ -83,7 +91,7 @@ from enum value: ASSOCIATE_SORT_KEY_JOB_TITLE = 14;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:114](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/associates.scailo_pb.ts#L114)
+[src/associates.scailo_pb.ts:126](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/associates.scailo_pb.ts#L126)
 
 ___
 
@@ -91,7 +99,9 @@ ___
 
 • **ASSOCIATE\_SORT\_KEY\_LAST\_NAME** = ``12``
 
-Fetch ordered results by last name
+**`Description`**
+
+Sort alphabetically by the user-provided last name.
 
 **`Generated`**
 
@@ -99,7 +109,7 @@ from enum value: ASSOCIATE_SORT_KEY_LAST_NAME = 12;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:100](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/associates.scailo_pb.ts#L100)
+[src/associates.scailo_pb.ts:112](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/associates.scailo_pb.ts#L112)
 
 ___
 
@@ -107,7 +117,9 @@ ___
 
 • **ASSOCIATE\_SORT\_KEY\_MIDDLE\_NAME** = ``11``
 
-Fetch ordered results by middle name
+**`Description`**
+
+Sort alphabetically by the user-provided middle name.
 
 **`Generated`**
 
@@ -115,7 +127,7 @@ from enum value: ASSOCIATE_SORT_KEY_MIDDLE_NAME = 11;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:93](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/associates.scailo_pb.ts#L93)
+[src/associates.scailo_pb.ts:105](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/associates.scailo_pb.ts#L105)
 
 ___
 
@@ -123,7 +135,9 @@ ___
 
 • **ASSOCIATE\_SORT\_KEY\_MODIFIED\_AT** = ``2``
 
-Fetch ordered results by the modified timestamp
+**`Description`**
+
+Sort by the timestamp the record was last modified.
 
 **`Generated`**
 
@@ -131,7 +145,7 @@ from enum value: ASSOCIATE_SORT_KEY_MODIFIED_AT = 2;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:79](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/associates.scailo_pb.ts#L79)
+[src/associates.scailo_pb.ts:91](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/associates.scailo_pb.ts#L91)
 
 ___
 
@@ -139,7 +153,9 @@ ___
 
 • **ASSOCIATE\_SORT\_KEY\_ORG\_NAME** = ``13``
 
-Fetch ordered results by organization name
+**`Description`**
+
+Sort alphabetically by the user-provided organization name.
 
 **`Generated`**
 
@@ -147,4 +163,4 @@ from enum value: ASSOCIATE_SORT_KEY_ORG_NAME = 13;
 
 #### Defined in
 
-[src/associates.scailo_pb.ts:107](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/associates.scailo_pb.ts#L107)
+[src/associates.scailo_pb.ts:119](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/associates.scailo_pb.ts#L119)

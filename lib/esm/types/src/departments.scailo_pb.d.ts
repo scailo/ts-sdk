@@ -3,67 +3,67 @@ import { Message, proto3 } from "@bufbuild/protobuf";
 import { ApprovalMetadata, BOOL_FILTER, EmployeeMetadata, LogbookLogConciseSLC, SORT_ORDER, STANDARD_LIFECYCLE_STATUS } from "./base.scailo_pb.js";
 /**
  *
- * Describes the available sort keys
+ * Enumeration of fields available for sorting department search results.
  *
  * @generated from enum Scailo.DEPARTMENT_SORT_KEY
  */
 export declare enum DEPARTMENT_SORT_KEY {
     /**
-     * Fetch ordered results by id
+     * @description Default sort behavior (by internal ID).
      *
      * @generated from enum value: DEPARTMENT_SORT_KEY_ID_UNSPECIFIED = 0;
      */
     DEPARTMENT_SORT_KEY_ID_UNSPECIFIED = 0,
     /**
-     * Fetch ordered results by the creation timestamp
+     * @description Sort by the timestamp the record was initially created.
      *
      * @generated from enum value: DEPARTMENT_SORT_KEY_CREATED_AT = 1;
      */
     DEPARTMENT_SORT_KEY_CREATED_AT = 1,
     /**
-     * Fetch ordered results by the modified timestamp
+     * @description Sort by the timestamp the record was last modified.
      *
      * @generated from enum value: DEPARTMENT_SORT_KEY_MODIFIED_AT = 2;
      */
     DEPARTMENT_SORT_KEY_MODIFIED_AT = 2,
     /**
-     * Fetch ordered results by the approved on timestamp
+     * @description Sort by the official approval timestamp.
      *
      * @generated from enum value: DEPARTMENT_SORT_KEY_APPROVED_ON = 3;
      */
     DEPARTMENT_SORT_KEY_APPROVED_ON = 3,
     /**
-     * Fetch ordered results by the approved by field
+     * @description Sort by the system ID of the approving user.
      *
      * @generated from enum value: DEPARTMENT_SORT_KEY_APPROVED_BY = 4;
      */
     DEPARTMENT_SORT_KEY_APPROVED_BY = 4,
     /**
-     * Fetch ordered results by the approver's role ID
+     * @description Sort by the security role ID used by the approver.
      *
      * @generated from enum value: DEPARTMENT_SORT_KEY_APPROVER_ROLE_ID = 5;
      */
     DEPARTMENT_SORT_KEY_APPROVER_ROLE_ID = 5,
     /**
-     * Fetch ordered results by the approver's completed on timestamp
+     * @description Sort by the timestamp of record completion.
      *
      * @generated from enum value: DEPARTMENT_SORT_KEY_COMPLETED_ON = 6;
      */
     DEPARTMENT_SORT_KEY_COMPLETED_ON = 6,
     /**
-     * Fetch ordered results by the name
+     * @description Sort alphabetically by the user-provided name.
      *
      * @generated from enum value: DEPARTMENT_SORT_KEY_NAME = 10;
      */
     DEPARTMENT_SORT_KEY_NAME = 10,
     /**
-     * Fetch ordered results by the code
+     * @description Sort alphabetically by the user-provided code.
      *
      * @generated from enum value: DEPARTMENT_SORT_KEY_CODE = 11;
      */
     DEPARTMENT_SORT_KEY_CODE = 11,
     /**
-     * Fetch ordered results by the head user ID
+     * @description Sort by the user ID of the head.
      *
      * @generated from enum value: DEPARTMENT_SORT_KEY_HEAD_USER_ID = 12;
      */
@@ -71,7 +71,12 @@ export declare enum DEPARTMENT_SORT_KEY {
 }
 /**
  *
- * Describes the parameters necessary to create a record
+ * Request message for creating and establishing a new corporate Department.
+ * This record tracks organizational unit hierarchies, internal classification codes,
+ * leadership assignments, and document management paths within a specific tenant entity.
+ *
+ * **Note:** This is the primary entry point for HR, Operations, and Admins to
+ * provision new corporate branches, functional teams, or operational cost centers.
  *
  * @generated from message Scailo.DepartmentsServiceCreateRequest
  */
@@ -88,15 +93,24 @@ export declare class DepartmentsServiceCreateRequest extends Message<Departments
      *
      * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
      *
-     * @generated from field: string entity_uuid = 1;
+     * @generated from field: optional string entity_uuid = 1;
      */
-    entityUuid: string;
+    entityUuid?: string;
     /**
-     * Stores any comment that the user might add during this operation
      *
-     * @generated from field: string user_comment = 2;
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
+     *
+     * @generated from field: optional string user_comment = 2;
      */
-    userComment: string;
+    userComment?: string;
     /**
      *
      * @optional
@@ -109,29 +123,65 @@ export declare class DepartmentsServiceCreateRequest extends Message<Departments
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 vault_folder_id = 9;
+     * @generated from field: optional uint64 vault_folder_id = 9;
      */
-    vaultFolderId: bigint;
+    vaultFolderId?: bigint;
     /**
-     * The name of the department
+     *
+     * @mandatory
+     *
+     * @description The official or friendly name of the department.
+     *
+     * @example "Engineering and Architecture"
+     *
+     * @regex .+
+     *
+     * @format Must be a non-empty string.
      *
      * @generated from field: string name = 10;
      */
     name: string;
     /**
-     * The code of the department
+     *
+     * @mandatory
+     *
+     * @description The unique code or internal alphanumeric token used to classify the department for billing or budgeting.
+     *
+     * @example "DEPT-ENG-04"
+     *
+     * @regex .+
+     *
+     * @format Must be a non-empty string.
      *
      * @generated from field: string code = 11;
      */
     code: string;
     /**
-     * The ID of the user who is the department head of this department
+     *
+     * @mandatory
+     *
+     * @description The unique internal identifier of the user assigned as the department head.
+     *
+     * @example 8842
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer greater than zero.
      *
      * @generated from field: uint64 head_user_id = 12;
      */
     headUserId: bigint;
     /**
-     * The description of the department
+     *
+     * @mandatory
+     *
+     * @description Expanded details outlining the core operational responsibilities, functions, or charter of the department.
+     *
+     * @example "Responsible for developing core cloud infrastructure and cross-platform software systems."
+     *
+     * @regex .+
+     *
+     * @format Must be a non-empty string.
      *
      * @generated from field: string description = 13;
      */
@@ -147,19 +197,43 @@ export declare class DepartmentsServiceCreateRequest extends Message<Departments
 }
 /**
  *
- * Describes the parameters necessary to update a record
+ * Request message for updating an existing Department record.
+ * Only applicable for records in `DRAFT` or `REVISION` states.
+ * This message allows for modifying the name, code, head user, and description
+ * of an established Department.
+ *
+ * **Note:** Only fields provided in the request will typically be updated.
+ * The unique system ID is required to locate the target record.
  *
  * @generated from message Scailo.DepartmentsServiceUpdateRequest
  */
 export declare class DepartmentsServiceUpdateRequest extends Message<DepartmentsServiceUpdateRequest> {
     /**
-     * Stores any comment that the user might add during this operation
      *
-     * @generated from field: string user_comment = 1;
+     * @optional
+     *
+     * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+     *
+     * @example "This is a comment for audit purposes."
+     *
+     * @regex .*
+     *
+     * @format May contain any UTF-8 characters or be left empty.
+     *
+     * @generated from field: optional string user_comment = 1;
      */
-    userComment: string;
+    userComment?: string;
     /**
-     * The ID of the record that needs to be updated
+     *
+     * @mandatory
+     *
+     * @description The unique internal identifier of the target record that needs to be updated.
+     *
+     * @example 1024
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
      *
      * @generated from field: uint64 id = 2;
      */
@@ -172,9 +246,9 @@ export declare class DepartmentsServiceUpdateRequest extends Message<Departments
      *
      * @example true
      *
-     * @generated from field: bool notify_users = 3;
+     * @generated from field: optional bool notify_users = 3;
      */
-    notifyUsers: boolean;
+    notifyUsers?: boolean;
     /**
      *
      * @optional
@@ -187,33 +261,69 @@ export declare class DepartmentsServiceUpdateRequest extends Message<Departments
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 vault_folder_id = 9;
+     * @generated from field: optional uint64 vault_folder_id = 9;
      */
-    vaultFolderId: bigint;
+    vaultFolderId?: bigint;
     /**
-     * The name of the department
      *
-     * @generated from field: string name = 10;
+     * @optional
+     *
+     * @description The official or friendly name of the department.
+     *
+     * @example "Engineering and Architecture"
+     *
+     * @regex .*
+     *
+     * @format Must be a non-empty string.
+     *
+     * @generated from field: optional string name = 10;
      */
-    name: string;
+    name?: string;
     /**
-     * The code of the department
      *
-     * @generated from field: string code = 11;
+     * @optional
+     *
+     * @description The unique code or internal alphanumeric token used to classify the department for billing or budgeting.
+     *
+     * @example "DEPT-ENG-04"
+     *
+     * @regex .*
+     *
+     * @format Must be a non-empty string.
+     *
+     * @generated from field: optional string code = 11;
      */
-    code: string;
+    code?: string;
     /**
-     * The ID of the user who is the department head of this department
      *
-     * @generated from field: uint64 head_user_id = 12;
+     * @optional
+     *
+     * @description The unique internal identifier of the user assigned as the department head.
+     *
+     * @example 8842
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer greater than zero.
+     *
+     * @generated from field: optional uint64 head_user_id = 12;
      */
-    headUserId: bigint;
+    headUserId?: bigint;
     /**
-     * The description of the department
      *
-     * @generated from field: string description = 13;
+     * @optional
+     *
+     * @description Expanded details outlining the core operational responsibilities, functions, or charter of the department.
+     *
+     * @example "Responsible for developing core cloud infrastructure and cross-platform software systems."
+     *
+     * @regex .*
+     *
+     * @format Must be a non-empty string.
+     *
+     * @generated from field: optional string description = 13;
      */
-    description: string;
+    description?: string;
     constructor(data?: PartialMessage<DepartmentsServiceUpdateRequest>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.DepartmentsServiceUpdateRequest";
@@ -225,7 +335,7 @@ export declare class DepartmentsServiceUpdateRequest extends Message<Departments
 }
 /**
  *
- * Describes the parameters that are part of a standard response
+ * Represents a full Department within the system.
  *
  * @generated from message Scailo.Department
  */
@@ -286,25 +396,37 @@ export declare class Department extends Message<Department> {
      */
     vaultFolderId: bigint;
     /**
-     * The name of the department
+     *
+     * @description The official or friendly name of the department.
+     *
+     * @example "Engineering and Architecture"
      *
      * @generated from field: string name = 10;
      */
     name: string;
     /**
-     * The code of the department
+     *
+     * @description The unique code or internal alphanumeric token used to classify the department for billing or budgeting.
+     *
+     * @example "DEPT-ENG-04"
      *
      * @generated from field: string code = 11;
      */
     code: string;
     /**
-     * The ID of the user who is the department head of this department
+     *
+     * @description The unique internal identifier of the user assigned as the department head.
+     *
+     * @example 8842
      *
      * @generated from field: uint64 head_user_id = 12;
      */
     headUserId: bigint;
     /**
-     * The description of the department
+     *
+     * @description Expanded details outlining the core operational responsibilities, functions, or charter of the department.
+     *
+     * @example "Responsible for developing core cloud infrastructure and cross-platform software systems."
      *
      * @generated from field: string description = 13;
      */
@@ -320,13 +442,13 @@ export declare class Department extends Message<Department> {
 }
 /**
  *
- * Describes the message consisting of the list of departments
+ * Container message for a collection of Department records.
  *
  * @generated from message Scailo.DepartmentsList
  */
 export declare class DepartmentsList extends Message<DepartmentsList> {
     /**
-     * List of records
+     * @description An array of Department records.
      *
      * @generated from field: repeated Scailo.Department list = 1;
      */
@@ -342,7 +464,7 @@ export declare class DepartmentsList extends Message<DepartmentsList> {
 }
 /**
  *
- * Describes a pagination request to retrieve records
+ * Pagination request for retrieving slices of Department records.
  *
  * @generated from message Scailo.DepartmentsServicePaginationReq
  */
@@ -355,9 +477,9 @@ export declare class DepartmentsServicePaginationReq extends Message<Departments
      *
      * @example ANY
      *
-     * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+     * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
      */
-    isActive: BOOL_FILTER;
+    isActive?: BOOL_FILTER;
     /**
      *
      * @mandatory
@@ -385,9 +507,9 @@ export declare class DepartmentsServicePaginationReq extends Message<Departments
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 offset = 3;
+     * @generated from field: optional uint64 offset = 3;
      */
-    offset: bigint;
+    offset?: bigint;
     /**
      *
      * @optional
@@ -396,24 +518,29 @@ export declare class DepartmentsServicePaginationReq extends Message<Departments
      *
      * @example DESCENDING
      *
-     * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+     * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
      */
-    sortOrder: SORT_ORDER;
+    sortOrder?: SORT_ORDER;
     /**
      *
      * @optional
      *
      * @description The specific field key to sort the results by.
      *
-     * @generated from field: Scailo.DEPARTMENT_SORT_KEY sort_key = 5;
+     * @generated from field: optional Scailo.DEPARTMENT_SORT_KEY sort_key = 5;
      */
-    sortKey: DEPARTMENT_SORT_KEY;
+    sortKey?: DEPARTMENT_SORT_KEY;
     /**
-     * The status of this department
      *
-     * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
+     * @optional
+     *
+     * @description Filter results by a specific lifecycle status.
+     *
+     * @example STANDING
+     *
+     * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
      */
-    status: STANDARD_LIFECYCLE_STATUS;
+    status?: STANDARD_LIFECYCLE_STATUS;
     constructor(data?: PartialMessage<DepartmentsServicePaginationReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.DepartmentsServicePaginationReq";
@@ -425,7 +552,7 @@ export declare class DepartmentsServicePaginationReq extends Message<Departments
 }
 /**
  *
- * Describes the response to a pagination request
+ * Response message for paginated queries, including total counts for UI elements.
  *
  * @generated from message Scailo.DepartmentsServicePaginationResponse
  */
@@ -475,7 +602,12 @@ export declare class DepartmentsServicePaginationResponse extends Message<Depart
 }
 /**
  *
- * Describes the base request payload of a filter search
+ * Advanced filter request for searching and paginating departments using multiple logical criteria.
+ * This message encapsulates pagination controls, sorting keys, lifecycle status filters,
+ * timestamp ranges, and entity references.
+ *
+ * **Note:** This is the primary message layout used by the frontend and external API clients
+ * to build robust data-table queries, reporting views, and targeted record lookups.
  *
  * @generated from message Scailo.DepartmentsServiceFilterReq
  */
@@ -488,9 +620,9 @@ export declare class DepartmentsServiceFilterReq extends Message<DepartmentsServ
      *
      * @example ANY
      *
-     * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+     * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
      */
-    isActive: BOOL_FILTER;
+    isActive?: BOOL_FILTER;
     /**
      *
      * @mandatory
@@ -518,9 +650,9 @@ export declare class DepartmentsServiceFilterReq extends Message<DepartmentsServ
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 offset = 3;
+     * @generated from field: optional uint64 offset = 3;
      */
-    offset: bigint;
+    offset?: bigint;
     /**
      *
      * @optional
@@ -529,18 +661,18 @@ export declare class DepartmentsServiceFilterReq extends Message<DepartmentsServ
      *
      * @example DESCENDING
      *
-     * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+     * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
      */
-    sortOrder: SORT_ORDER;
+    sortOrder?: SORT_ORDER;
     /**
      *
      * @optional
      *
      * @description The field used for sorting.
      *
-     * @generated from field: Scailo.DEPARTMENT_SORT_KEY sort_key = 5;
+     * @generated from field: optional Scailo.DEPARTMENT_SORT_KEY sort_key = 5;
      */
-    sortKey: DEPARTMENT_SORT_KEY;
+    sortKey?: DEPARTMENT_SORT_KEY;
     /**
      *
      * @optional
@@ -553,9 +685,9 @@ export declare class DepartmentsServiceFilterReq extends Message<DepartmentsServ
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 creation_timestamp_start = 101;
+     * @generated from field: optional uint64 creation_timestamp_start = 101;
      */
-    creationTimestampStart: bigint;
+    creationTimestampStart?: bigint;
     /**
      *
      * @optional
@@ -568,9 +700,9 @@ export declare class DepartmentsServiceFilterReq extends Message<DepartmentsServ
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 creation_timestamp_end = 102;
+     * @generated from field: optional uint64 creation_timestamp_end = 102;
      */
-    creationTimestampEnd: bigint;
+    creationTimestampEnd?: bigint;
     /**
      *
      * @optional
@@ -583,9 +715,9 @@ export declare class DepartmentsServiceFilterReq extends Message<DepartmentsServ
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 modification_timestamp_start = 103;
+     * @generated from field: optional uint64 modification_timestamp_start = 103;
      */
-    modificationTimestampStart: bigint;
+    modificationTimestampStart?: bigint;
     /**
      *
      * @optional
@@ -598,9 +730,9 @@ export declare class DepartmentsServiceFilterReq extends Message<DepartmentsServ
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 modification_timestamp_end = 104;
+     * @generated from field: optional uint64 modification_timestamp_end = 104;
      */
-    modificationTimestampEnd: bigint;
+    modificationTimestampEnd?: bigint;
     /**
      *
      * @optional
@@ -613,9 +745,9 @@ export declare class DepartmentsServiceFilterReq extends Message<DepartmentsServ
      *
      * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
      *
-     * @generated from field: string entity_uuid = 8;
+     * @generated from field: optional string entity_uuid = 8;
      */
-    entityUuid: string;
+    entityUuid?: string;
     /**
      *
      * @optional
@@ -624,9 +756,9 @@ export declare class DepartmentsServiceFilterReq extends Message<DepartmentsServ
      *
      * @example STANDING
      *
-     * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+     * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
      */
-    status: STANDARD_LIFECYCLE_STATUS;
+    status?: STANDARD_LIFECYCLE_STATUS;
     /**
      *
      * @optional
@@ -639,9 +771,9 @@ export declare class DepartmentsServiceFilterReq extends Message<DepartmentsServ
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approved_on_start = 11;
+     * @generated from field: optional uint64 approved_on_start = 11;
      */
-    approvedOnStart: bigint;
+    approvedOnStart?: bigint;
     /**
      *
      * @optional
@@ -654,9 +786,9 @@ export declare class DepartmentsServiceFilterReq extends Message<DepartmentsServ
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approved_on_end = 12;
+     * @generated from field: optional uint64 approved_on_end = 12;
      */
-    approvedOnEnd: bigint;
+    approvedOnEnd?: bigint;
     /**
      *
      * @optional
@@ -669,9 +801,9 @@ export declare class DepartmentsServiceFilterReq extends Message<DepartmentsServ
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approved_by_user_id = 13;
+     * @generated from field: optional uint64 approved_by_user_id = 13;
      */
-    approvedByUserId: bigint;
+    approvedByUserId?: bigint;
     /**
      *
      * @optional
@@ -684,9 +816,9 @@ export declare class DepartmentsServiceFilterReq extends Message<DepartmentsServ
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approver_role_id = 14;
+     * @generated from field: optional uint64 approver_role_id = 14;
      */
-    approverRoleId: bigint;
+    approverRoleId?: bigint;
     /**
      *
      * @optional
@@ -699,9 +831,9 @@ export declare class DepartmentsServiceFilterReq extends Message<DepartmentsServ
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 completed_on_start = 15;
+     * @generated from field: optional uint64 completed_on_start = 15;
      */
-    completedOnStart: bigint;
+    completedOnStart?: bigint;
     /**
      *
      * @optional
@@ -714,27 +846,54 @@ export declare class DepartmentsServiceFilterReq extends Message<DepartmentsServ
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 completed_on_end = 16;
+     * @generated from field: optional uint64 completed_on_end = 16;
      */
-    completedOnEnd: bigint;
+    completedOnEnd?: bigint;
     /**
-     * The name of the department
      *
-     * @generated from field: string name = 20;
+     * @optional
+     *
+     * @description The official or friendly name of the department.
+     *
+     * @example "Engineering and Architecture"
+     *
+     * @regex .*
+     *
+     * @format Must be a non-empty string.
+     *
+     * @generated from field: optional string name = 20;
      */
-    name: string;
+    name?: string;
     /**
-     * The code of the department
      *
-     * @generated from field: string code = 21;
+     * @optional
+     *
+     * @description The unique code or internal alphanumeric token used to classify the department for billing or budgeting.
+     *
+     * @example "DEPT-ENG-04"
+     *
+     * @regex .*
+     *
+     * @format Must be a non-empty string.
+     *
+     * @generated from field: optional string code = 21;
      */
-    code: string;
+    code?: string;
     /**
-     * The user ID of the head
      *
-     * @generated from field: uint64 head_user_id = 22;
+     * @optional
+     *
+     * @description The unique internal identifier of the user assigned as the department head.
+     *
+     * @example 8842
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer greater than zero.
+     *
+     * @generated from field: optional uint64 head_user_id = 22;
      */
-    headUserId: bigint;
+    headUserId?: bigint;
     constructor(data?: PartialMessage<DepartmentsServiceFilterReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.DepartmentsServiceFilterReq";
@@ -746,7 +905,13 @@ export declare class DepartmentsServiceFilterReq extends Message<DepartmentsServ
 }
 /**
  *
- * Describes the base request payload of a count search
+ * Target filter request for counting department records matching specific logical criteria.
+ * This message encapsulates lifecycle status filters, timestamp ranges, workflow markers,
+ * and entity references to determine the total size of a targeted dataset.
+ *
+ * **Note:** This is the primary message layout used by backend calculation engines, reporting
+ * services, and frontend pagination headers to evaluate total record matches dynamically
+ * before or alongside retrieving paginated results.
  *
  * @generated from message Scailo.DepartmentsServiceCountReq
  */
@@ -759,9 +924,9 @@ export declare class DepartmentsServiceCountReq extends Message<DepartmentsServi
      *
      * @example ANY
      *
-     * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+     * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
      */
-    isActive: BOOL_FILTER;
+    isActive?: BOOL_FILTER;
     /**
      *
      * @optional
@@ -774,9 +939,9 @@ export declare class DepartmentsServiceCountReq extends Message<DepartmentsServi
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 creation_timestamp_start = 101;
+     * @generated from field: optional uint64 creation_timestamp_start = 101;
      */
-    creationTimestampStart: bigint;
+    creationTimestampStart?: bigint;
     /**
      *
      * @optional
@@ -789,9 +954,9 @@ export declare class DepartmentsServiceCountReq extends Message<DepartmentsServi
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 creation_timestamp_end = 102;
+     * @generated from field: optional uint64 creation_timestamp_end = 102;
      */
-    creationTimestampEnd: bigint;
+    creationTimestampEnd?: bigint;
     /**
      *
      * @optional
@@ -804,9 +969,9 @@ export declare class DepartmentsServiceCountReq extends Message<DepartmentsServi
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 modification_timestamp_start = 103;
+     * @generated from field: optional uint64 modification_timestamp_start = 103;
      */
-    modificationTimestampStart: bigint;
+    modificationTimestampStart?: bigint;
     /**
      *
      * @optional
@@ -819,9 +984,9 @@ export declare class DepartmentsServiceCountReq extends Message<DepartmentsServi
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 modification_timestamp_end = 104;
+     * @generated from field: optional uint64 modification_timestamp_end = 104;
      */
-    modificationTimestampEnd: bigint;
+    modificationTimestampEnd?: bigint;
     /**
      *
      * @optional
@@ -834,9 +999,9 @@ export declare class DepartmentsServiceCountReq extends Message<DepartmentsServi
      *
      * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
      *
-     * @generated from field: string entity_uuid = 8;
+     * @generated from field: optional string entity_uuid = 8;
      */
-    entityUuid: string;
+    entityUuid?: string;
     /**
      *
      * @optional
@@ -845,9 +1010,9 @@ export declare class DepartmentsServiceCountReq extends Message<DepartmentsServi
      *
      * @example STANDING
      *
-     * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+     * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
      */
-    status: STANDARD_LIFECYCLE_STATUS;
+    status?: STANDARD_LIFECYCLE_STATUS;
     /**
      *
      * @optional
@@ -860,9 +1025,9 @@ export declare class DepartmentsServiceCountReq extends Message<DepartmentsServi
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approved_on_start = 11;
+     * @generated from field: optional uint64 approved_on_start = 11;
      */
-    approvedOnStart: bigint;
+    approvedOnStart?: bigint;
     /**
      *
      * @optional
@@ -875,9 +1040,9 @@ export declare class DepartmentsServiceCountReq extends Message<DepartmentsServi
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approved_on_end = 12;
+     * @generated from field: optional uint64 approved_on_end = 12;
      */
-    approvedOnEnd: bigint;
+    approvedOnEnd?: bigint;
     /**
      *
      * @optional
@@ -890,9 +1055,9 @@ export declare class DepartmentsServiceCountReq extends Message<DepartmentsServi
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approved_by_user_id = 13;
+     * @generated from field: optional uint64 approved_by_user_id = 13;
      */
-    approvedByUserId: bigint;
+    approvedByUserId?: bigint;
     /**
      *
      * @optional
@@ -905,9 +1070,9 @@ export declare class DepartmentsServiceCountReq extends Message<DepartmentsServi
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approver_role_id = 14;
+     * @generated from field: optional uint64 approver_role_id = 14;
      */
-    approverRoleId: bigint;
+    approverRoleId?: bigint;
     /**
      *
      * @optional
@@ -920,9 +1085,9 @@ export declare class DepartmentsServiceCountReq extends Message<DepartmentsServi
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 completed_on_start = 15;
+     * @generated from field: optional uint64 completed_on_start = 15;
      */
-    completedOnStart: bigint;
+    completedOnStart?: bigint;
     /**
      *
      * @optional
@@ -935,27 +1100,54 @@ export declare class DepartmentsServiceCountReq extends Message<DepartmentsServi
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 completed_on_end = 16;
+     * @generated from field: optional uint64 completed_on_end = 16;
      */
-    completedOnEnd: bigint;
+    completedOnEnd?: bigint;
     /**
-     * The name of the department
      *
-     * @generated from field: string name = 20;
+     * @optional
+     *
+     * @description The official or friendly name of the department.
+     *
+     * @example "Engineering and Architecture"
+     *
+     * @regex .*
+     *
+     * @format Must be a non-empty string.
+     *
+     * @generated from field: optional string name = 20;
      */
-    name: string;
+    name?: string;
     /**
-     * The code of the department
      *
-     * @generated from field: string code = 21;
+     * @optional
+     *
+     * @description The unique code or internal alphanumeric token used to classify the department for billing or budgeting.
+     *
+     * @example "DEPT-ENG-04"
+     *
+     * @regex .*
+     *
+     * @format Must be a non-empty string.
+     *
+     * @generated from field: optional string code = 21;
      */
-    code: string;
+    code?: string;
     /**
-     * The user ID of the head
      *
-     * @generated from field: uint64 head_user_id = 22;
+     * @optional
+     *
+     * @description The unique internal identifier of the user assigned as the department head.
+     *
+     * @example 8842
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer greater than zero.
+     *
+     * @generated from field: optional uint64 head_user_id = 22;
      */
-    headUserId: bigint;
+    headUserId?: bigint;
     constructor(data?: PartialMessage<DepartmentsServiceCountReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.DepartmentsServiceCountReq";
@@ -967,7 +1159,13 @@ export declare class DepartmentsServiceCountReq extends Message<DepartmentsServi
 }
 /**
  *
- * Describes the request payload for performing a generic search operation on records
+ * Broad-spectrum search and lookup request for locating and paginating currencies via text matching.
+ * This message encapsulates full-text query parameters, pagination controls, sorting keys,
+ * lifecycle status constraints, and other core references.
+ *
+ * **Note:** This is the primary message layout used for global search bars, fast-filtering dashboard
+ * inputs, and omni-box search utilities where users need to match loose textual terms against
+ * records while retaining structural pagination.
  *
  * @generated from message Scailo.DepartmentsServiceSearchAllReq
  */
@@ -980,9 +1178,9 @@ export declare class DepartmentsServiceSearchAllReq extends Message<DepartmentsS
      *
      * @example ANY
      *
-     * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+     * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
      */
-    isActive: BOOL_FILTER;
+    isActive?: BOOL_FILTER;
     /**
      *
      * @mandatory
@@ -1010,9 +1208,9 @@ export declare class DepartmentsServiceSearchAllReq extends Message<DepartmentsS
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 offset = 3;
+     * @generated from field: optional uint64 offset = 3;
      */
-    offset: bigint;
+    offset?: bigint;
     /**
      *
      * @optional
@@ -1021,18 +1219,18 @@ export declare class DepartmentsServiceSearchAllReq extends Message<DepartmentsS
      *
      * @example DESCENDING
      *
-     * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+     * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
      */
-    sortOrder: SORT_ORDER;
+    sortOrder?: SORT_ORDER;
     /**
      *
      * @optional
      *
      * @description The field used for sorting.
      *
-     * @generated from field: Scailo.DEPARTMENT_SORT_KEY sort_key = 5;
+     * @generated from field: optional Scailo.DEPARTMENT_SORT_KEY sort_key = 5;
      */
-    sortKey: DEPARTMENT_SORT_KEY;
+    sortKey?: DEPARTMENT_SORT_KEY;
     /**
      *
      * @optional
@@ -1045,9 +1243,9 @@ export declare class DepartmentsServiceSearchAllReq extends Message<DepartmentsS
      *
      * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
      *
-     * @generated from field: string entity_uuid = 6;
+     * @generated from field: optional string entity_uuid = 6;
      */
-    entityUuid: string;
+    entityUuid?: string;
     /**
      *
      * @optional
@@ -1056,12 +1254,12 @@ export declare class DepartmentsServiceSearchAllReq extends Message<DepartmentsS
      *
      * @example STANDING
      *
-     * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+     * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
      */
-    status: STANDARD_LIFECYCLE_STATUS;
+    status?: STANDARD_LIFECYCLE_STATUS;
     /**
      *
-     * @mandatory
+     * @optional
      *
      * @description The search string to match against reference IDs.
      *
@@ -1071,9 +1269,9 @@ export declare class DepartmentsServiceSearchAllReq extends Message<DepartmentsS
      *
      * @format: May contain any UTF-8 characters.
      *
-     * @generated from field: string search_key = 11;
+     * @generated from field: optional string search_key = 11;
      */
-    searchKey: string;
+    searchKey?: string;
     constructor(data?: PartialMessage<DepartmentsServiceSearchAllReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.DepartmentsServiceSearchAllReq";

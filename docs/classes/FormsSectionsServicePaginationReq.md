@@ -70,7 +70,7 @@ Message\&lt;FormsSectionsServicePaginationReq\&gt;.constructor
 
 #### Defined in
 
-[src/forms_sections.scailo_pb.ts:526](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/forms_sections.scailo_pb.ts#L526)
+[src/forms_sections.scailo_pb.ts:544](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/forms_sections.scailo_pb.ts#L544)
 
 ## Properties
 
@@ -104,7 +104,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-[src/forms_sections.scailo_pb.ts:486](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/forms_sections.scailo_pb.ts#L486)
+[src/forms_sections.scailo_pb.ts:504](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/forms_sections.scailo_pb.ts#L504)
 
 ___
 
@@ -130,7 +130,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/forms_sections.scailo_pb.ts:470](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/forms_sections.scailo_pb.ts#L470)
+[src/forms_sections.scailo_pb.ts:488](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/forms_sections.scailo_pb.ts#L488)
 
 ___
 
@@ -164,7 +164,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-[src/forms_sections.scailo_pb.ts:502](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/forms_sections.scailo_pb.ts#L502)
+[src/forms_sections.scailo_pb.ts:520](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/forms_sections.scailo_pb.ts#L520)
 
 ___
 
@@ -184,7 +184,7 @@ from field: Scailo.FORM_SECTION_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-[src/forms_sections.scailo_pb.ts:524](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/forms_sections.scailo_pb.ts#L524)
+[src/forms_sections.scailo_pb.ts:542](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/forms_sections.scailo_pb.ts#L542)
 
 ___
 
@@ -210,7 +210,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-[src/forms_sections.scailo_pb.ts:514](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/forms_sections.scailo_pb.ts#L514)
+[src/forms_sections.scailo_pb.ts:532](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/forms_sections.scailo_pb.ts#L532)
 
 ___
 
@@ -220,7 +220,7 @@ ___
 
 #### Defined in
 
-[src/forms_sections.scailo_pb.ts:533](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/forms_sections.scailo_pb.ts#L533)
+[src/forms_sections.scailo_pb.ts:551](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/forms_sections.scailo_pb.ts#L551)
 
 ___
 
@@ -230,7 +230,7 @@ ___
 
 #### Defined in
 
-[src/forms_sections.scailo_pb.ts:531](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/forms_sections.scailo_pb.ts#L531)
+[src/forms_sections.scailo_pb.ts:549](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/forms_sections.scailo_pb.ts#L549)
 
 ___
 
@@ -240,7 +240,7 @@ ___
 
 #### Defined in
 
-[src/forms_sections.scailo_pb.ts:532](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/forms_sections.scailo_pb.ts#L532)
+[src/forms_sections.scailo_pb.ts:550](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/forms_sections.scailo_pb.ts#L550)
 
 ## Methods
 
@@ -528,7 +528,7 @@ ___
 
 #### Defined in
 
-[src/forms_sections.scailo_pb.ts:553](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/forms_sections.scailo_pb.ts#L553)
+[src/forms_sections.scailo_pb.ts:571](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/forms_sections.scailo_pb.ts#L571)
 
 ___
 
@@ -549,7 +549,7 @@ ___
 
 #### Defined in
 
-[src/forms_sections.scailo_pb.ts:541](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/forms_sections.scailo_pb.ts#L541)
+[src/forms_sections.scailo_pb.ts:559](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/forms_sections.scailo_pb.ts#L559)
 
 ___
 
@@ -570,7 +570,7 @@ ___
 
 #### Defined in
 
-[src/forms_sections.scailo_pb.ts:545](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/forms_sections.scailo_pb.ts#L545)
+[src/forms_sections.scailo_pb.ts:563](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/forms_sections.scailo_pb.ts#L563)
 
 ___
 
@@ -591,4 +591,4 @@ ___
 
 #### Defined in
 
-[src/forms_sections.scailo_pb.ts:549](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/forms_sections.scailo_pb.ts#L549)
+[src/forms_sections.scailo_pb.ts:567](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/forms_sections.scailo_pb.ts#L567)

@@ -1,10 +1,13 @@
 import { Vendor, VendorItem, VendorItemHistoryRequest, VendorItemsList, VendorItemsSearchRequest, VendorsList, VendorsServiceCountReq, VendorsServiceCreateRequest, VendorsServiceFilterReq, VendorsServiceItemCreateRequest, VendorsServiceItemUpdateRequest, VendorsServicePaginatedItemsResponse, VendorsServicePaginatedRequiredItemsResponse, VendorsServicePaginatedUsersResponse, VendorsServicePaginationReq, VendorsServicePaginationResponse, VendorsServiceSearchAllReq, VendorsServiceUpdateRequest, VendorsServiceUserCreateRequest, VendorUser, VendorUsersList, VendorUsersSearchRequest } from "./vendors.scailo_pb.js";
 import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithUserComment, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
+import { VaultFolderAttachRequest } from "./vault_folders.scailo_pb.js";
 import { MagicLink, MagicLinksServiceCreateRequestForSpecificResource } from "./magic_links.scailo_pb.js";
 /**
  *
- * Describes the common methods applicable on each vendor
+ * The VendorsService manages the full lifecycle of vendor records.
+ * It provides standard CRUD operations alongside a robust state machine for
+ * verification, manager approval, and completion.
  *
  * @generated from service Scailo.VendorsService
  */
@@ -12,7 +15,18 @@ export declare const VendorsService: {
     readonly typeName: "Scailo.VendorsService";
     readonly methods: {
         /**
-         * Create and send for verification
+         * Creates a new record and immediately moves it to the verification workflow.
+         *
+         * This method validates all required fields.
+         * The record is created with a `STANDARD_LIFECYCLE_STATUS.PREVERIFY` status.
+         *
+         * **Side Effects:**
+         * - Generates a unique system UUID.
+         * - Records an audit log for the "Create" action.
+         * - May trigger automated verification workflows.
+         *
+         * **Errors:**
+         * - `INVALID_ARGUMENT`: If validation rules fail (e.g., negative quantity, invalid timestamps).
          *
          * @generated from rpc Scailo.VendorsService.Create
          */
@@ -200,13 +214,37 @@ export declare const VendorsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Send Email
+         * Triggers an automated email notification related to the record.
+         *
+         * **Side Effects:**
+         * - Dispatches a structured email to the designated recipients based on the provided attributes.
+         * - Appends an entry to the system communication logs for auditing purposes.
          *
          * @generated from rpc Scailo.VendorsService.SendEmail
          */
         readonly sendEmail: {
             readonly name: "SendEmail";
             readonly I: typeof IdentifierWithEmailAttributes;
+            readonly O: typeof IdentifierResponse;
+            readonly kind: MethodKind.Unary;
+        };
+        /**
+         * Attaches a specified folder directly to a record without requiring a full revision workflow.
+         *
+         * This is a convenience API designed to bypass the traditional multi-step modification lifecycle
+         * (e.g., creating a revision, updating data, submitting for verification, and awaiting approval).
+         * It allows for the immediate, single-step association of a vault folder.
+         *
+         * **Side Effects & Lifecycle:**
+         * * The overall status of the record remains unchanged.
+         * * The record's modification timestamp is automatically updated to the current time.
+         * * An entry is appended to the record's audit log tracking this attachment.
+         *
+         * @generated from rpc Scailo.VendorsService.AttachVaultFolder
+         */
+        readonly attachVaultFolder: {
+            readonly name: "AttachVaultFolder";
+            readonly I: typeof VaultFolderAttachRequest;
             readonly O: typeof IdentifierResponse;
             readonly kind: MethodKind.Unary;
         };
@@ -224,7 +262,11 @@ export declare const VendorsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Add an item to a vendor
+         * Associates a new catalog item with an existing vendor profile.
+         *
+         * **Side Effects:**
+         * - Validates item constraints including price deviation limits, tax groups, and order quantities.
+         * - Depending on system configurations, may place the new vendor item association into a pending approval state.
          *
          * @generated from rpc Scailo.VendorsService.AddVendorItem
          */
@@ -235,7 +277,11 @@ export declare const VendorsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Modify an item in a vendor
+         * Updates the configurations and metadata of an existing vendor item association.
+         *
+         * **Side Effects:**
+         * - Modifies unit pricing, catalog mappings, or order constraints.
+         * - May trigger a re-approval workflow or audit flag depending on the severity of the modifications.
          *
          * @generated from rpc Scailo.VendorsService.ModifyVendorItem
          */
@@ -246,7 +292,11 @@ export declare const VendorsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Approve an item in a vendor
+         * Approves a pending vendor item record, finalizing its availability within the purchasing catalog.
+         *
+         * **Side Effects:**
+         * - Activates the item mapping for downstream procurement and ordering workflows.
+         * - Appends the required approval metadata and audit comment to the record history.
          *
          * @generated from rpc Scailo.VendorsService.ApproveVendorItem
          */
@@ -257,7 +307,11 @@ export declare const VendorsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Delete an item in a vendor
+         * Permanently removes or deactivates an item association from a vendor profile.
+         *
+         * **Side Effects:**
+         * - Revokes catalog visibility and prevents future orders for this specific item configuration.
+         * - Logs the deletion justification comment into the system compliance log.
          *
          * @generated from rpc Scailo.VendorsService.DeleteVendorItem
          */
@@ -268,9 +322,9 @@ export declare const VendorsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Reorder items in a vendor
-         * rpc ReorderVendorItems(ReorderItemsRequest) returns (IdentifierResponse);
-         * View Vendor Item by ID
+         * Retrieves the complete, granular details of a specific vendor item by its internal sequence ID.
+         *
+         * This is a read-only operation that fetches full metadata, pricing configurations, quantity constraints, and approval histories.
          *
          * @generated from rpc Scailo.VendorsService.ViewVendorItemByID
          */
@@ -281,7 +335,9 @@ export declare const VendorsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View approved vendor items for given vendor ID with pagination
+         * Lists active, approved item associations for a specific vendor using pagination controls.
+         *
+         * This read-only query is optimized for catalog browsing and procurement, returning only items that are fully authorized and available for ordering.
          *
          * @generated from rpc Scailo.VendorsService.ViewPaginatedApprovedVendorItems
          */
@@ -292,7 +348,9 @@ export declare const VendorsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View unapproved vendor items for given vendor ID with pagination
+         * Lists pending or unapproved item associations for a specific vendor using pagination controls.
+         *
+         * This read-only query is optimized for administrative and managerial workflows to easily identify records requiring review or authorization.
          *
          * @generated from rpc Scailo.VendorsService.ViewPaginatedUnapprovedVendorItems
          */
@@ -303,7 +361,9 @@ export declare const VendorsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View the history of the vendor item
+         * Retrieves the historical audit trail and lifecycle changes of a specific vendor item record.
+         *
+         * This read-only operation aggregates the chronological evolution of the item, allowing tracking of price shifts, limit updates, and approval state changes.
          *
          * @generated from rpc Scailo.VendorsService.ViewVendorItemHistory
          */
@@ -314,7 +374,9 @@ export declare const VendorsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Search through vendor items with pagination
+         * Searches through vendor item records using filters, status flags, and pagination tokens.
+         *
+         * This read-only query is optimized for administrative data grids, supporting complex lookups, multi-attribute filtering, and explicit windowing parameters (count and offset).
          *
          * @generated from rpc Scailo.VendorsService.SearchItemsWithPagination
          */
@@ -325,7 +387,9 @@ export declare const VendorsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Search through vendor items that are required with pagination
+         * Searches through vendor items that have explicitly requested operational quantities, utilizing filters and pagination.
+         *
+         * This read-only query pairs the base vendor item entities alongside their operational demand metadata to facilitate targeted inventory and requisition views.
          *
          * @generated from rpc Scailo.VendorsService.SearchRequiredItemsWithPagination
          */
@@ -336,8 +400,13 @@ export declare const VendorsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * CSV operations
-         * Download the CSV file with the associated line items. The same file could then be used to upload line items.
+         * Retrieves the underlying file or document payload associated with a specific entity
+         * using its universally unique identifier (UUID).
+         *
+         * This endpoint is designed for versatile resource retrieval and is commonly utilized
+         * to facilitate direct, secure, or public-facing downloads. By relying on an obscure
+         * UUID rather than predictable internal sequential IDs, it ensures that external
+         * download links remain unguessable and safe for broad distribution.
          *
          * @generated from rpc Scailo.VendorsService.DownloadItemsAsCSV
          */
@@ -348,7 +417,9 @@ export declare const VendorsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Download the CSV template that could be used to upload items
+         * Retrieves a standardized CSV template used for batch uploading vendor items.
+         *
+         * This read-only operation provides a boilerplate file containing the expected column headers and formatting guidelines required by the system's ingestion engine.
          *
          * @generated from rpc Scailo.VendorsService.DownloadItemsTemplateAsCSV
          */
@@ -359,7 +430,11 @@ export declare const VendorsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Upload items using a CSV file. Returns an error in case duplicates are found (family code and uom code are unique)
+         * Processes a batch ingestion of vendor items via a provided CSV file payload.
+         *
+         * **Side Effects:**
+         * - Parses the uploaded file and attempts to bulk-create item associations.
+         * - Validates each row against strict uniqueness constraints; actively rejects the payload and returns an error state if duplicate identifiers are detected (e.g., family code and UOM code must be unique).
          *
          * @generated from rpc Scailo.VendorsService.UploadVendorItems
          */
@@ -370,7 +445,11 @@ export declare const VendorsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Add a user
+         * Associates a new personnel user with an existing vendor.
+         *
+         * **Side Effects:**
+         * - Validates the structural relationship between the vendor and user.
+         * - Depending on system configurations, may place the new vendor user association into a pending approval state.
          *
          * @generated from rpc Scailo.VendorsService.AddVendorUser
          */
@@ -381,7 +460,11 @@ export declare const VendorsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Approve a user
+         * Approves a pending vendor user record, finalizing their access and mapping to the vendor account.
+         *
+         * **Side Effects:**
+         * - Activates the user mapping within the vendor scope.
+         * - Appends the required approval metadata and audit comment to the record history.
          *
          * @generated from rpc Scailo.VendorsService.ApproveVendorUser
          */
@@ -392,7 +475,11 @@ export declare const VendorsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Delete a user
+         * Permanently removes or deactivates a user association from a vendor profile.
+         *
+         * **Side Effects:**
+         * - Revokes vendor-specific context, tenancy permissions, and data access linked to this user.
+         * - Logs the deletion justification comment into the system compliance log.
          *
          * @generated from rpc Scailo.VendorsService.DeleteVendorUser
          */
@@ -403,7 +490,9 @@ export declare const VendorsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View a user for the given ID
+         * Retrieves the complete, granular details of a specific vendor user by its internal sequence ID.
+         *
+         * This is a read-only operation that fetches full metadata, user contexts, and approval histories.
          *
          * @generated from rpc Scailo.VendorsService.ViewVendorUserByID
          */
@@ -414,7 +503,9 @@ export declare const VendorsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View all users for given vendor ID
+         * Lists all user associations mapped to a given vendor unique internal identifier.
+         *
+         * This read-only query aggregates and returns the collection of personnel assigned to the vendor entity.
          *
          * @generated from rpc Scailo.VendorsService.ViewVendorUsers
          */
@@ -425,7 +516,10 @@ export declare const VendorsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Search through vendor users with pagination
+         * Searches through vendor user records using filters, status flags, and pagination tokens.
+         *
+         * This read-only query is optimized for administrative data grids, supporting complex lookups,
+         * multi-tenant isolation, and explicit windowing parameters (count and offset).
          *
          * @generated from rpc Scailo.VendorsService.SearchVendorUsersWithPagination
          */
@@ -458,7 +552,12 @@ export declare const VendorsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View by Code (returns the latest record in case of duplicates)
+         * Retrieves a single record via the assigned internal code. In case duplicates are found, this method retrieves the latest record.
+         *
+         * **Note:** High-volume compliance data, audit records, and system logs are excluded from the response payload.
+         *
+         * **Errors:**
+         * - `NOT_FOUND`: If the provided internal code does not exist.
          *
          * @generated from rpc Scailo.VendorsService.ViewByCode
          */
@@ -491,7 +590,9 @@ export declare const VendorsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View only essential components (without logs) that matches the first given email address
+         * Retrieves a vendor record using their primary email address, omitting compliance logs and non-essential metadata.
+         *
+         * This operation is tailored for fast, low-overhead lookups where only core profile traits and basic identification keys are required.
          *
          * @generated from rpc Scailo.VendorsService.ViewEssentialByEmail
          */
@@ -502,7 +603,9 @@ export declare const VendorsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View only essential components (without logs) that matches the first given phone number
+         * Retrieves a vendor record using their primary phone number, omitting compliance logs and non-essential metadata.
+         *
+         * This operation is tailored for fast, low-overhead lookups where only core profile traits and basic identification keys are required.
          *
          * @generated from rpc Scailo.VendorsService.ViewEssentialByPhone
          */
@@ -557,7 +660,13 @@ export declare const VendorsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * View vendors that have been associated with the given family ID (returns vendors that have not been approved for the family as well)
+         * Retrieves a comprehensive list of all vendor profiles associated with a specific family.
+         *
+         * This read-only query aggregates the entire supply chain footprint for a given item family.
+         * It intentionally returns all associated vendors regardless of their current lifecycle state—meaning
+         * both fully approved suppliers and those still pending authorization or review are included in the response.
+         * This is primarily utilized by procurement administrators and catalog managers to audit supplier mappings,
+         * assess sourcing redundancy, and track pending vendor linkages before they are finalized.
          *
          * @generated from rpc Scailo.VendorsService.ViewVendorsForFamily
          */
@@ -568,8 +677,13 @@ export declare const VendorsService: {
             readonly kind: MethodKind.Unary;
         };
         /**
-         * Other view operations
-         * Download vendor with the given IdentifierUUID (can be used to allow public downloads)
+         * Retrieves the underlying file or document payload associated with a specific entity
+         * using its universally unique identifier (UUID).
+         *
+         * This endpoint is designed for versatile resource retrieval and is commonly utilized
+         * to facilitate direct, secure, or public-facing downloads. By relying on an obscure
+         * UUID rather than predictable internal sequential IDs, it ensures that external
+         * download links remain unguessable and safe for broad distribution.
          *
          * @generated from rpc Scailo.VendorsService.DownloadByUUID
          */

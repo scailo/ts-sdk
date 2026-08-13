@@ -79,7 +79,7 @@ Message\&lt;EquipmentsServiceUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/equipments.scailo_pb.ts:327](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/equipments.scailo_pb.ts#L327)
+[src/equipments.scailo_pb.ts:368](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/equipments.scailo_pb.ts#L368)
 
 ## Properties
 
@@ -95,7 +95,7 @@ from field: string description = 60;
 
 #### Defined in
 
-[src/equipments.scailo_pb.ts:318](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/equipments.scailo_pb.ts#L318)
+[src/equipments.scailo_pb.ts:352](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/equipments.scailo_pb.ts#L352)
 
 ___
 
@@ -103,7 +103,21 @@ ___
 
 • **formData**: [`FormFieldDatumCreateRequest`](FormFieldDatumCreateRequest.md)[] = `[]`
 
-The list of dynamic forms
+**`Optional`**
+
+**`Description`**
+
+A collection of dynamic form fields for organization-specific data.
+
+**`Example`**
+
+```ts
+[]
+```
+
+**`Format`**
+
+An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
 
 **`Generated`**
 
@@ -111,7 +125,7 @@ from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 80;
 
 #### Defined in
 
-[src/equipments.scailo_pb.ts:325](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/equipments.scailo_pb.ts#L325)
+[src/equipments.scailo_pb.ts:366](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/equipments.scailo_pb.ts#L366)
 
 ___
 
@@ -119,7 +133,25 @@ ___
 
 • **id**: `bigint` = `protoInt64.zero`
 
-The ID of the record that needs to be updated
+**`Mandatory`**
+
+**`Description`**
+
+The unique internal identifier of the target record that needs to be updated.
+
+**`Example`**
+
+```ts
+1024
+```
+
+**`Regex`**
+
+^[0-9]+$
+
+**`Format`**
+
+Non-negative integer.
 
 **`Generated`**
 
@@ -127,7 +159,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-[src/equipments.scailo_pb.ts:236](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/equipments.scailo_pb.ts#L236)
+[src/equipments.scailo_pb.ts:270](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/equipments.scailo_pb.ts#L270)
 
 ___
 
@@ -143,7 +175,7 @@ from field: string internal_item_code = 35;
 
 #### Defined in
 
-[src/equipments.scailo_pb.ts:262](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/equipments.scailo_pb.ts#L262)
+[src/equipments.scailo_pb.ts:296](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/equipments.scailo_pb.ts#L296)
 
 ___
 
@@ -159,7 +191,7 @@ from field: bool is_qc_report_public = 52;
 
 #### Defined in
 
-[src/equipments.scailo_pb.ts:304](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/equipments.scailo_pb.ts#L304)
+[src/equipments.scailo_pb.ts:338](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/equipments.scailo_pb.ts#L338)
 
 ___
 
@@ -185,7 +217,7 @@ from field: bool notify_users = 3;
 
 #### Defined in
 
-[src/equipments.scailo_pb.ts:248](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/equipments.scailo_pb.ts#L248)
+[src/equipments.scailo_pb.ts:282](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/equipments.scailo_pb.ts#L282)
 
 ___
 
@@ -201,7 +233,7 @@ from field: string remaining_dimensions = 55;
 
 #### Defined in
 
-[src/equipments.scailo_pb.ts:311](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/equipments.scailo_pb.ts#L311)
+[src/equipments.scailo_pb.ts:345](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/equipments.scailo_pb.ts#L345)
 
 ___
 
@@ -217,7 +249,7 @@ from field: uint64 secondary_quantity = 39;
 
 #### Defined in
 
-[src/equipments.scailo_pb.ts:276](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/equipments.scailo_pb.ts#L276)
+[src/equipments.scailo_pb.ts:310](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/equipments.scailo_pb.ts#L310)
 
 ___
 
@@ -233,7 +265,7 @@ from field: uint64 secondary_uom_id = 38;
 
 #### Defined in
 
-[src/equipments.scailo_pb.ts:269](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/equipments.scailo_pb.ts#L269)
+[src/equipments.scailo_pb.ts:303](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/equipments.scailo_pb.ts#L303)
 
 ___
 
@@ -249,7 +281,7 @@ from field: uint64 shelf_life_timestamp = 40;
 
 #### Defined in
 
-[src/equipments.scailo_pb.ts:283](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/equipments.scailo_pb.ts#L283)
+[src/equipments.scailo_pb.ts:317](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/equipments.scailo_pb.ts#L317)
 
 ___
 
@@ -265,7 +297,7 @@ from field: uint64 storage_id = 51;
 
 #### Defined in
 
-[src/equipments.scailo_pb.ts:297](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/equipments.scailo_pb.ts#L297)
+[src/equipments.scailo_pb.ts:331](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/equipments.scailo_pb.ts#L331)
 
 ___
 
@@ -273,7 +305,25 @@ ___
 
 • **userComment**: `string` = `""`
 
-Stores any comment that the user might add during this operation
+**`Optional`**
+
+**`Description`**
+
+Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+
+**`Example`**
+
+```ts
+"This is a comment for audit purposes."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
@@ -281,7 +331,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-[src/equipments.scailo_pb.ts:229](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/equipments.scailo_pb.ts#L229)
+[src/equipments.scailo_pb.ts:254](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/equipments.scailo_pb.ts#L254)
 
 ___
 
@@ -297,7 +347,7 @@ from field: uint64 vault_folder_id = 18;
 
 #### Defined in
 
-[src/equipments.scailo_pb.ts:255](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/equipments.scailo_pb.ts#L255)
+[src/equipments.scailo_pb.ts:289](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/equipments.scailo_pb.ts#L289)
 
 ___
 
@@ -313,7 +363,7 @@ from field: uint64 warranty_timestamp = 41;
 
 #### Defined in
 
-[src/equipments.scailo_pb.ts:290](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/equipments.scailo_pb.ts#L290)
+[src/equipments.scailo_pb.ts:324](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/equipments.scailo_pb.ts#L324)
 
 ___
 
@@ -323,7 +373,7 @@ ___
 
 #### Defined in
 
-[src/equipments.scailo_pb.ts:334](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/equipments.scailo_pb.ts#L334)
+[src/equipments.scailo_pb.ts:375](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/equipments.scailo_pb.ts#L375)
 
 ___
 
@@ -333,7 +383,7 @@ ___
 
 #### Defined in
 
-[src/equipments.scailo_pb.ts:332](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/equipments.scailo_pb.ts#L332)
+[src/equipments.scailo_pb.ts:373](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/equipments.scailo_pb.ts#L373)
 
 ___
 
@@ -343,7 +393,7 @@ ___
 
 #### Defined in
 
-[src/equipments.scailo_pb.ts:333](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/equipments.scailo_pb.ts#L333)
+[src/equipments.scailo_pb.ts:374](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/equipments.scailo_pb.ts#L374)
 
 ## Methods
 
@@ -631,7 +681,7 @@ ___
 
 #### Defined in
 
-[src/equipments.scailo_pb.ts:363](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/equipments.scailo_pb.ts#L363)
+[src/equipments.scailo_pb.ts:404](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/equipments.scailo_pb.ts#L404)
 
 ___
 
@@ -652,7 +702,7 @@ ___
 
 #### Defined in
 
-[src/equipments.scailo_pb.ts:351](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/equipments.scailo_pb.ts#L351)
+[src/equipments.scailo_pb.ts:392](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/equipments.scailo_pb.ts#L392)
 
 ___
 
@@ -673,7 +723,7 @@ ___
 
 #### Defined in
 
-[src/equipments.scailo_pb.ts:355](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/equipments.scailo_pb.ts#L355)
+[src/equipments.scailo_pb.ts:396](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/equipments.scailo_pb.ts#L396)
 
 ___
 
@@ -694,4 +744,4 @@ ___
 
 #### Defined in
 
-[src/equipments.scailo_pb.ts:359](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/equipments.scailo_pb.ts#L359)
+[src/equipments.scailo_pb.ts:400](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/equipments.scailo_pb.ts#L400)

@@ -70,7 +70,7 @@ Message\&lt;LabelsServiceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/labels.scailo_pb.ts:307](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/labels.scailo_pb.ts#L307)
+[src/labels.scailo_pb.ts:316](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/labels.scailo_pb.ts#L316)
 
 ## Properties
 
@@ -86,7 +86,7 @@ from field: string code = 21;
 
 #### Defined in
 
-[src/labels.scailo_pb.ts:298](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/labels.scailo_pb.ts#L298)
+[src/labels.scailo_pb.ts:307](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/labels.scailo_pb.ts#L307)
 
 ___
 
@@ -102,7 +102,7 @@ from field: string description = 11;
 
 #### Defined in
 
-[src/labels.scailo_pb.ts:305](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/labels.scailo_pb.ts#L305)
+[src/labels.scailo_pb.ts:314](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/labels.scailo_pb.ts#L314)
 
 ___
 
@@ -136,7 +136,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-[src/labels.scailo_pb.ts:277](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/labels.scailo_pb.ts#L277)
+[src/labels.scailo_pb.ts:277](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/labels.scailo_pb.ts#L277)
 
 ___
 
@@ -152,7 +152,7 @@ from field: string name = 10;
 
 #### Defined in
 
-[src/labels.scailo_pb.ts:291](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/labels.scailo_pb.ts#L291)
+[src/labels.scailo_pb.ts:300](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/labels.scailo_pb.ts#L300)
 
 ___
 
@@ -160,7 +160,25 @@ ___
 
 • **userComment**: `string` = `""`
 
-Stores any comment that the user might add during this operation
+**`Optional`**
+
+**`Description`**
+
+Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+
+**`Example`**
+
+```ts
+"This is a comment for audit purposes."
+```
+
+**`Regex`**
+
+.*
+
+**`Format`**
+
+May contain any UTF-8 characters or be left empty.
 
 **`Generated`**
 
@@ -168,7 +186,7 @@ from field: string user_comment = 2;
 
 #### Defined in
 
-[src/labels.scailo_pb.ts:284](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/labels.scailo_pb.ts#L284)
+[src/labels.scailo_pb.ts:293](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/labels.scailo_pb.ts#L293)
 
 ___
 
@@ -178,7 +196,7 @@ ___
 
 #### Defined in
 
-[src/labels.scailo_pb.ts:314](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/labels.scailo_pb.ts#L314)
+[src/labels.scailo_pb.ts:323](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/labels.scailo_pb.ts#L323)
 
 ___
 
@@ -188,7 +206,7 @@ ___
 
 #### Defined in
 
-[src/labels.scailo_pb.ts:312](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/labels.scailo_pb.ts#L312)
+[src/labels.scailo_pb.ts:321](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/labels.scailo_pb.ts#L321)
 
 ___
 
@@ -198,7 +216,7 @@ ___
 
 #### Defined in
 
-[src/labels.scailo_pb.ts:313](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/labels.scailo_pb.ts#L313)
+[src/labels.scailo_pb.ts:322](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/labels.scailo_pb.ts#L322)
 
 ## Methods
 
@@ -486,7 +504,7 @@ ___
 
 #### Defined in
 
-[src/labels.scailo_pb.ts:334](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/labels.scailo_pb.ts#L334)
+[src/labels.scailo_pb.ts:343](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/labels.scailo_pb.ts#L343)
 
 ___
 
@@ -507,7 +525,7 @@ ___
 
 #### Defined in
 
-[src/labels.scailo_pb.ts:322](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/labels.scailo_pb.ts#L322)
+[src/labels.scailo_pb.ts:331](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/labels.scailo_pb.ts#L331)
 
 ___
 
@@ -528,7 +546,7 @@ ___
 
 #### Defined in
 
-[src/labels.scailo_pb.ts:326](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/labels.scailo_pb.ts#L326)
+[src/labels.scailo_pb.ts:335](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/labels.scailo_pb.ts#L335)
 
 ___
 
@@ -549,4 +567,4 @@ ___
 
 #### Defined in
 
-[src/labels.scailo_pb.ts:330](https://github.com/scailo/ts-sdk/blob/461e4636e5d66d843a0d6b6725bd0f098efd513a/src/labels.scailo_pb.ts#L330)
+[src/labels.scailo_pb.ts:339](https://github.com/scailo/ts-sdk/blob/5a2267559695586190ebf6471cda3cb644ff1ee9/src/labels.scailo_pb.ts#L339)

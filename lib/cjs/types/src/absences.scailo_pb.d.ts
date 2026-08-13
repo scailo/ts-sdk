@@ -112,9 +112,9 @@ export declare class AbsencesServiceCreateRequest extends Message<AbsencesServic
      *
      * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
      *
-     * @generated from field: string entity_uuid = 1;
+     * @generated from field: optional string entity_uuid = 1;
      */
-    entityUuid: string;
+    entityUuid?: string;
     /**
      *
      * @optional
@@ -127,9 +127,9 @@ export declare class AbsencesServiceCreateRequest extends Message<AbsencesServic
      *
      * @format May contain any UTF-8 characters or be left empty.
      *
-     * @generated from field: string user_comment = 2;
+     * @generated from field: optional string user_comment = 2;
      */
-    userComment: string;
+    userComment?: string;
     /**
      *
      * @optional
@@ -142,9 +142,9 @@ export declare class AbsencesServiceCreateRequest extends Message<AbsencesServic
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 vault_folder_id = 9;
+     * @generated from field: optional uint64 vault_folder_id = 9;
      */
-    vaultFolderId: bigint;
+    vaultFolderId?: bigint;
     /**
      *
      * @mandatory
@@ -187,9 +187,9 @@ export declare class AbsencesServiceCreateRequest extends Message<AbsencesServic
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 leave_request_id = 12;
+     * @generated from field: optional uint64 leave_request_id = 12;
      */
-    leaveRequestId: bigint;
+    leaveRequestId?: bigint;
     /**
      *
      * @mandatory
@@ -262,14 +262,18 @@ export declare class AbsencesServiceCreateRequest extends Message<AbsencesServic
      *
      * @format: Alphanumeric characters and spaces only. Can be left empty.
      *
-     * @generated from field: string description = 17;
+     * @generated from field: optional string description = 17;
      */
-    description: string;
+    description?: string;
     /**
      *
      * @optional
      *
      * @description A collection of dynamic form fields for organization-specific data.
+     *
+     * @example []
+     *
+     * @format An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
      *
      * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
      */
@@ -288,7 +292,7 @@ export declare class AbsencesServiceCreateRequest extends Message<AbsencesServic
  * Request message for updating an existing Absence record.
  * Only applicable for records in `DRAFT` or `REVISION` states.
  * This message allows for modifying the naming, leave request, start and end timestamps and quantity
- * of an established Action Code.
+ * of an established Absence.
  *
  * **Note:** Only fields provided in the request will typically be updated.
  * The unique system ID is required to locate the target record.
@@ -308,9 +312,9 @@ export declare class AbsencesServiceUpdateRequest extends Message<AbsencesServic
      *
      * @format May contain any UTF-8 characters or be left empty.
      *
-     * @generated from field: string user_comment = 1;
+     * @generated from field: optional string user_comment = 1;
      */
-    userComment: string;
+    userComment?: string;
     /**
      *
      * @mandatory
@@ -334,9 +338,9 @@ export declare class AbsencesServiceUpdateRequest extends Message<AbsencesServic
      *
      * @example true
      *
-     * @generated from field: bool notify_users = 3;
+     * @generated from field: optional bool notify_users = 3;
      */
-    notifyUsers: boolean;
+    notifyUsers?: boolean;
     /**
      *
      * @optional
@@ -349,12 +353,12 @@ export declare class AbsencesServiceUpdateRequest extends Message<AbsencesServic
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 vault_folder_id = 9;
+     * @generated from field: optional uint64 vault_folder_id = 9;
      */
-    vaultFolderId: bigint;
+    vaultFolderId?: bigint;
     /**
      *
-     * @mandatory
+     * @optional
      *
      * @description Updated alphanumeric reference ID. Must contain at least 1 character.
      *
@@ -364,9 +368,9 @@ export declare class AbsencesServiceUpdateRequest extends Message<AbsencesServic
      *
      * @format Alphanumeric characters and spaces only. No special symbols or punctuation allowed.
      *
-     * @generated from field: string reference_id = 10;
+     * @generated from field: optional string reference_id = 10;
      */
-    referenceId: string;
+    referenceId?: string;
     /**
      *
      * @optional
@@ -379,12 +383,12 @@ export declare class AbsencesServiceUpdateRequest extends Message<AbsencesServic
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 leave_request_id = 12;
+     * @generated from field: optional uint64 leave_request_id = 12;
      */
-    leaveRequestId: bigint;
+    leaveRequestId?: bigint;
     /**
      *
-     * @mandatory
+     * @optional
      *
      * @description Updated start timestamp in UNIX Epoch Seconds.
      *
@@ -394,12 +398,12 @@ export declare class AbsencesServiceUpdateRequest extends Message<AbsencesServic
      *
      * @format Must be a strictly positive integer (1 or greater).
      *
-     * @generated from field: uint64 from_timestamp = 13;
+     * @generated from field: optional uint64 from_timestamp = 13;
      */
-    fromTimestamp: bigint;
+    fromTimestamp?: bigint;
     /**
      *
-     * @mandatory
+     * @optional
      *
      * @description Updated end timestamp in UNIX Epoch Seconds.
      *
@@ -409,12 +413,12 @@ export declare class AbsencesServiceUpdateRequest extends Message<AbsencesServic
      *
      * @format Must be a strictly positive integer (1 or greater).
      *
-     * @generated from field: uint64 to_timestamp = 14;
+     * @generated from field: optional uint64 to_timestamp = 14;
      */
-    toTimestamp: bigint;
+    toTimestamp?: bigint;
     /**
      *
-     * @mandatory
+     * @optional
      *
      * @description Updated quantity in cents (x100).
      *
@@ -424,9 +428,9 @@ export declare class AbsencesServiceUpdateRequest extends Message<AbsencesServic
      *
      * @format Must be a strictly positive integer (1 or greater).
      *
-     * @generated from field: uint64 quantity = 16;
+     * @generated from field: optional uint64 quantity = 16;
      */
-    quantity: bigint;
+    quantity?: bigint;
     /**
      *
      * @optional
@@ -439,14 +443,18 @@ export declare class AbsencesServiceUpdateRequest extends Message<AbsencesServic
      *
      * @format: Alphanumeric characters and spaces only. Can be left empty.
      *
-     * @generated from field: string description = 17;
+     * @generated from field: optional string description = 17;
      */
-    description: string;
+    description?: string;
     /**
      *
      * @optional
      *
-     * @description Updated custom dynamic form data.
+     * @description A collection of dynamic form fields for organization-specific data.
+     *
+     * @example []
+     *
+     * @format An array/list of FormFieldDatumCreateRequest entries. Can be left empty if no custom attributes are needed.
      *
      * @generated from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
      */
@@ -656,9 +664,9 @@ export declare class AbsencesServicePaginationReq extends Message<AbsencesServic
      *
      * @example ANY
      *
-     * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+     * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
      */
-    isActive: BOOL_FILTER;
+    isActive?: BOOL_FILTER;
     /**
      *
      * @mandatory
@@ -686,9 +694,9 @@ export declare class AbsencesServicePaginationReq extends Message<AbsencesServic
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 offset = 3;
+     * @generated from field: optional uint64 offset = 3;
      */
-    offset: bigint;
+    offset?: bigint;
     /**
      *
      * @optional
@@ -697,18 +705,18 @@ export declare class AbsencesServicePaginationReq extends Message<AbsencesServic
      *
      * @example DESCENDING
      *
-     * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+     * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
      */
-    sortOrder: SORT_ORDER;
+    sortOrder?: SORT_ORDER;
     /**
      *
      * @optional
      *
      * @description The specific field key to sort the results by.
      *
-     * @generated from field: Scailo.ABSENCE_SORT_KEY sort_key = 5;
+     * @generated from field: optional Scailo.ABSENCE_SORT_KEY sort_key = 5;
      */
-    sortKey: ABSENCE_SORT_KEY;
+    sortKey?: ABSENCE_SORT_KEY;
     /**
      *
      * @optional
@@ -717,9 +725,9 @@ export declare class AbsencesServicePaginationReq extends Message<AbsencesServic
      *
      * @example STANDING
      *
-     * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
+     * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 6;
      */
-    status: STANDARD_LIFECYCLE_STATUS;
+    status?: STANDARD_LIFECYCLE_STATUS;
     constructor(data?: PartialMessage<AbsencesServicePaginationReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.AbsencesServicePaginationReq";
@@ -781,7 +789,12 @@ export declare class AbsencesServicePaginationResponse extends Message<AbsencesS
 }
 /**
  *
- * Advanced filter request for searching absences using multiple logical criteria.
+ * Advanced filter request for searching and paginating absences using multiple logical criteria.
+ * This message encapsulates pagination controls, sorting keys, lifecycle status filters,
+ * timestamp ranges, and entity references.
+ *
+ * **Note:** This is the primary message layout used by the frontend and external API clients
+ * to build robust data-table queries, reporting views, and targeted record lookups.
  *
  * @generated from message Scailo.AbsencesServiceFilterReq
  */
@@ -794,9 +807,9 @@ export declare class AbsencesServiceFilterReq extends Message<AbsencesServiceFil
      *
      * @example ANY
      *
-     * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+     * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
      */
-    isActive: BOOL_FILTER;
+    isActive?: BOOL_FILTER;
     /**
      *
      * @mandatory
@@ -824,9 +837,9 @@ export declare class AbsencesServiceFilterReq extends Message<AbsencesServiceFil
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 offset = 3;
+     * @generated from field: optional uint64 offset = 3;
      */
-    offset: bigint;
+    offset?: bigint;
     /**
      *
      * @optional
@@ -835,18 +848,18 @@ export declare class AbsencesServiceFilterReq extends Message<AbsencesServiceFil
      *
      * @example DESCENDING
      *
-     * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+     * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
      */
-    sortOrder: SORT_ORDER;
+    sortOrder?: SORT_ORDER;
     /**
      *
      * @optional
      *
      * @description The field used for sorting.
      *
-     * @generated from field: Scailo.ABSENCE_SORT_KEY sort_key = 5;
+     * @generated from field: optional Scailo.ABSENCE_SORT_KEY sort_key = 5;
      */
-    sortKey: ABSENCE_SORT_KEY;
+    sortKey?: ABSENCE_SORT_KEY;
     /**
      *
      * @optional
@@ -859,9 +872,9 @@ export declare class AbsencesServiceFilterReq extends Message<AbsencesServiceFil
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 creation_timestamp_start = 101;
+     * @generated from field: optional uint64 creation_timestamp_start = 101;
      */
-    creationTimestampStart: bigint;
+    creationTimestampStart?: bigint;
     /**
      *
      * @optional
@@ -874,9 +887,9 @@ export declare class AbsencesServiceFilterReq extends Message<AbsencesServiceFil
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 creation_timestamp_end = 102;
+     * @generated from field: optional uint64 creation_timestamp_end = 102;
      */
-    creationTimestampEnd: bigint;
+    creationTimestampEnd?: bigint;
     /**
      *
      * @optional
@@ -889,9 +902,9 @@ export declare class AbsencesServiceFilterReq extends Message<AbsencesServiceFil
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 modification_timestamp_start = 103;
+     * @generated from field: optional uint64 modification_timestamp_start = 103;
      */
-    modificationTimestampStart: bigint;
+    modificationTimestampStart?: bigint;
     /**
      *
      * @optional
@@ -904,9 +917,9 @@ export declare class AbsencesServiceFilterReq extends Message<AbsencesServiceFil
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 modification_timestamp_end = 104;
+     * @generated from field: optional uint64 modification_timestamp_end = 104;
      */
-    modificationTimestampEnd: bigint;
+    modificationTimestampEnd?: bigint;
     /**
      *
      * @optional
@@ -919,9 +932,9 @@ export declare class AbsencesServiceFilterReq extends Message<AbsencesServiceFil
      *
      * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
      *
-     * @generated from field: string entity_uuid = 8;
+     * @generated from field: optional string entity_uuid = 8;
      */
-    entityUuid: string;
+    entityUuid?: string;
     /**
      *
      * @optional
@@ -930,9 +943,9 @@ export declare class AbsencesServiceFilterReq extends Message<AbsencesServiceFil
      *
      * @example STANDING
      *
-     * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+     * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
      */
-    status: STANDARD_LIFECYCLE_STATUS;
+    status?: STANDARD_LIFECYCLE_STATUS;
     /**
      *
      * @optional
@@ -945,9 +958,9 @@ export declare class AbsencesServiceFilterReq extends Message<AbsencesServiceFil
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approved_on_start = 11;
+     * @generated from field: optional uint64 approved_on_start = 11;
      */
-    approvedOnStart: bigint;
+    approvedOnStart?: bigint;
     /**
      *
      * @optional
@@ -960,9 +973,9 @@ export declare class AbsencesServiceFilterReq extends Message<AbsencesServiceFil
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approved_on_end = 12;
+     * @generated from field: optional uint64 approved_on_end = 12;
      */
-    approvedOnEnd: bigint;
+    approvedOnEnd?: bigint;
     /**
      *
      * @optional
@@ -975,9 +988,9 @@ export declare class AbsencesServiceFilterReq extends Message<AbsencesServiceFil
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approved_by_user_id = 13;
+     * @generated from field: optional uint64 approved_by_user_id = 13;
      */
-    approvedByUserId: bigint;
+    approvedByUserId?: bigint;
     /**
      *
      * @optional
@@ -990,9 +1003,9 @@ export declare class AbsencesServiceFilterReq extends Message<AbsencesServiceFil
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approver_role_id = 14;
+     * @generated from field: optional uint64 approver_role_id = 14;
      */
-    approverRoleId: bigint;
+    approverRoleId?: bigint;
     /**
      *
      * @optional
@@ -1005,9 +1018,9 @@ export declare class AbsencesServiceFilterReq extends Message<AbsencesServiceFil
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 completed_on_start = 15;
+     * @generated from field: optional uint64 completed_on_start = 15;
      */
-    completedOnStart: bigint;
+    completedOnStart?: bigint;
     /**
      *
      * @optional
@@ -1020,9 +1033,9 @@ export declare class AbsencesServiceFilterReq extends Message<AbsencesServiceFil
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 completed_on_end = 16;
+     * @generated from field: optional uint64 completed_on_end = 16;
      */
-    completedOnEnd: bigint;
+    completedOnEnd?: bigint;
     /**
      *
      * @optional
@@ -1035,9 +1048,9 @@ export declare class AbsencesServiceFilterReq extends Message<AbsencesServiceFil
      *
      * @format: Alphanumeric characters and spaces only. Can be left empty.
      *
-     * @generated from field: string reference_id = 20;
+     * @generated from field: optional string reference_id = 20;
      */
-    referenceId: string;
+    referenceId?: string;
     /**
      *
      * @optional
@@ -1050,9 +1063,9 @@ export declare class AbsencesServiceFilterReq extends Message<AbsencesServiceFil
      *
      * @format: Alphanumeric characters and spaces only. Can be left empty.
      *
-     * @generated from field: string final_ref_number = 21;
+     * @generated from field: optional string final_ref_number = 21;
      */
-    finalRefNumber: string;
+    finalRefNumber?: string;
     /**
      *
      * @optional
@@ -1065,9 +1078,9 @@ export declare class AbsencesServiceFilterReq extends Message<AbsencesServiceFil
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 user_id = 22;
+     * @generated from field: optional uint64 user_id = 22;
      */
-    userId: bigint;
+    userId?: bigint;
     /**
      *
      * @optional
@@ -1080,9 +1093,9 @@ export declare class AbsencesServiceFilterReq extends Message<AbsencesServiceFil
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 leave_request_id = 23;
+     * @generated from field: optional uint64 leave_request_id = 23;
      */
-    leaveRequestId: bigint;
+    leaveRequestId?: bigint;
     /**
      *
      * @optional
@@ -1095,9 +1108,9 @@ export declare class AbsencesServiceFilterReq extends Message<AbsencesServiceFil
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 from_timestamp_start = 24;
+     * @generated from field: optional uint64 from_timestamp_start = 24;
      */
-    fromTimestampStart: bigint;
+    fromTimestampStart?: bigint;
     /**
      *
      * @optional
@@ -1110,9 +1123,9 @@ export declare class AbsencesServiceFilterReq extends Message<AbsencesServiceFil
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 from_timestamp_end = 25;
+     * @generated from field: optional uint64 from_timestamp_end = 25;
      */
-    fromTimestampEnd: bigint;
+    fromTimestampEnd?: bigint;
     /**
      *
      * @optional
@@ -1125,9 +1138,9 @@ export declare class AbsencesServiceFilterReq extends Message<AbsencesServiceFil
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 to_timestamp_start = 26;
+     * @generated from field: optional uint64 to_timestamp_start = 26;
      */
-    toTimestampStart: bigint;
+    toTimestampStart?: bigint;
     /**
      *
      * @optional
@@ -1140,9 +1153,9 @@ export declare class AbsencesServiceFilterReq extends Message<AbsencesServiceFil
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 to_timestamp_end = 27;
+     * @generated from field: optional uint64 to_timestamp_end = 27;
      */
-    toTimestampEnd: bigint;
+    toTimestampEnd?: bigint;
     /**
      *
      * @optional
@@ -1155,9 +1168,9 @@ export declare class AbsencesServiceFilterReq extends Message<AbsencesServiceFil
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 uom_id = 28;
+     * @generated from field: optional uint64 uom_id = 28;
      */
-    uomId: bigint;
+    uomId?: bigint;
     /**
      *
      * @optional
@@ -1170,9 +1183,9 @@ export declare class AbsencesServiceFilterReq extends Message<AbsencesServiceFil
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 quantity_min = 29;
+     * @generated from field: optional uint64 quantity_min = 29;
      */
-    quantityMin: bigint;
+    quantityMin?: bigint;
     /**
      *
      * @optional
@@ -1185,9 +1198,9 @@ export declare class AbsencesServiceFilterReq extends Message<AbsencesServiceFil
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 quantity_max = 30;
+     * @generated from field: optional uint64 quantity_max = 30;
      */
-    quantityMax: bigint;
+    quantityMax?: bigint;
     /**
      *
      * @optional
@@ -1206,9 +1219,9 @@ export declare class AbsencesServiceFilterReq extends Message<AbsencesServiceFil
      *
      * @example true
      *
-     * @generated from field: bool include_form_data = 501;
+     * @generated from field: optional bool include_form_data = 501;
      */
-    includeFormData: boolean;
+    includeFormData?: boolean;
     constructor(data?: PartialMessage<AbsencesServiceFilterReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.AbsencesServiceFilterReq";
@@ -1220,7 +1233,13 @@ export declare class AbsencesServiceFilterReq extends Message<AbsencesServiceFil
 }
 /**
  *
- * Request message to count records matching specific criteria.
+ * Target filter request for counting absence records matching specific logical criteria.
+ * This message encapsulates lifecycle status filters, timestamp ranges, workflow markers,
+ * and entity references to determine the total size of a targeted dataset.
+ *
+ * **Note:** This is the primary message layout used by backend calculation engines, reporting
+ * services, and frontend pagination headers to evaluate total record matches dynamically
+ * before or alongside retrieving paginated results.
  *
  * @generated from message Scailo.AbsencesServiceCountReq
  */
@@ -1233,9 +1252,9 @@ export declare class AbsencesServiceCountReq extends Message<AbsencesServiceCoun
      *
      * @example ANY
      *
-     * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+     * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
      */
-    isActive: BOOL_FILTER;
+    isActive?: BOOL_FILTER;
     /**
      *
      * @optional
@@ -1248,9 +1267,9 @@ export declare class AbsencesServiceCountReq extends Message<AbsencesServiceCoun
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 creation_timestamp_start = 101;
+     * @generated from field: optional uint64 creation_timestamp_start = 101;
      */
-    creationTimestampStart: bigint;
+    creationTimestampStart?: bigint;
     /**
      *
      * @optional
@@ -1263,9 +1282,9 @@ export declare class AbsencesServiceCountReq extends Message<AbsencesServiceCoun
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 creation_timestamp_end = 102;
+     * @generated from field: optional uint64 creation_timestamp_end = 102;
      */
-    creationTimestampEnd: bigint;
+    creationTimestampEnd?: bigint;
     /**
      *
      * @optional
@@ -1278,9 +1297,9 @@ export declare class AbsencesServiceCountReq extends Message<AbsencesServiceCoun
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 modification_timestamp_start = 103;
+     * @generated from field: optional uint64 modification_timestamp_start = 103;
      */
-    modificationTimestampStart: bigint;
+    modificationTimestampStart?: bigint;
     /**
      *
      * @optional
@@ -1293,9 +1312,9 @@ export declare class AbsencesServiceCountReq extends Message<AbsencesServiceCoun
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 modification_timestamp_end = 104;
+     * @generated from field: optional uint64 modification_timestamp_end = 104;
      */
-    modificationTimestampEnd: bigint;
+    modificationTimestampEnd?: bigint;
     /**
      *
      * @optional
@@ -1308,9 +1327,9 @@ export declare class AbsencesServiceCountReq extends Message<AbsencesServiceCoun
      *
      * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
      *
-     * @generated from field: string entity_uuid = 8;
+     * @generated from field: optional string entity_uuid = 8;
      */
-    entityUuid: string;
+    entityUuid?: string;
     /**
      *
      * @optional
@@ -1319,9 +1338,9 @@ export declare class AbsencesServiceCountReq extends Message<AbsencesServiceCoun
      *
      * @example STANDING
      *
-     * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+     * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
      */
-    status: STANDARD_LIFECYCLE_STATUS;
+    status?: STANDARD_LIFECYCLE_STATUS;
     /**
      *
      * @optional
@@ -1334,9 +1353,9 @@ export declare class AbsencesServiceCountReq extends Message<AbsencesServiceCoun
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approved_on_start = 11;
+     * @generated from field: optional uint64 approved_on_start = 11;
      */
-    approvedOnStart: bigint;
+    approvedOnStart?: bigint;
     /**
      *
      * @optional
@@ -1349,9 +1368,9 @@ export declare class AbsencesServiceCountReq extends Message<AbsencesServiceCoun
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approved_on_end = 12;
+     * @generated from field: optional uint64 approved_on_end = 12;
      */
-    approvedOnEnd: bigint;
+    approvedOnEnd?: bigint;
     /**
      *
      * @optional
@@ -1364,9 +1383,9 @@ export declare class AbsencesServiceCountReq extends Message<AbsencesServiceCoun
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approved_by_user_id = 13;
+     * @generated from field: optional uint64 approved_by_user_id = 13;
      */
-    approvedByUserId: bigint;
+    approvedByUserId?: bigint;
     /**
      *
      * @optional
@@ -1379,9 +1398,9 @@ export declare class AbsencesServiceCountReq extends Message<AbsencesServiceCoun
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 approver_role_id = 14;
+     * @generated from field: optional uint64 approver_role_id = 14;
      */
-    approverRoleId: bigint;
+    approverRoleId?: bigint;
     /**
      *
      * @optional
@@ -1394,9 +1413,9 @@ export declare class AbsencesServiceCountReq extends Message<AbsencesServiceCoun
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 completed_on_start = 15;
+     * @generated from field: optional uint64 completed_on_start = 15;
      */
-    completedOnStart: bigint;
+    completedOnStart?: bigint;
     /**
      *
      * @optional
@@ -1409,9 +1428,9 @@ export declare class AbsencesServiceCountReq extends Message<AbsencesServiceCoun
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 completed_on_end = 16;
+     * @generated from field: optional uint64 completed_on_end = 16;
      */
-    completedOnEnd: bigint;
+    completedOnEnd?: bigint;
     /**
      *
      * @optional
@@ -1424,9 +1443,9 @@ export declare class AbsencesServiceCountReq extends Message<AbsencesServiceCoun
      *
      * @format: Alphanumeric characters and spaces only. Can be left empty.
      *
-     * @generated from field: string reference_id = 20;
+     * @generated from field: optional string reference_id = 20;
      */
-    referenceId: string;
+    referenceId?: string;
     /**
      *
      * @optional
@@ -1439,9 +1458,9 @@ export declare class AbsencesServiceCountReq extends Message<AbsencesServiceCoun
      *
      * @format: Alphanumeric characters and spaces only. Can be left empty.
      *
-     * @generated from field: string final_ref_number = 21;
+     * @generated from field: optional string final_ref_number = 21;
      */
-    finalRefNumber: string;
+    finalRefNumber?: string;
     /**
      *
      * @optional
@@ -1454,9 +1473,9 @@ export declare class AbsencesServiceCountReq extends Message<AbsencesServiceCoun
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 user_id = 22;
+     * @generated from field: optional uint64 user_id = 22;
      */
-    userId: bigint;
+    userId?: bigint;
     /**
      *
      * @optional
@@ -1469,9 +1488,9 @@ export declare class AbsencesServiceCountReq extends Message<AbsencesServiceCoun
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 leave_request_id = 23;
+     * @generated from field: optional uint64 leave_request_id = 23;
      */
-    leaveRequestId: bigint;
+    leaveRequestId?: bigint;
     /**
      *
      * @optional
@@ -1484,9 +1503,9 @@ export declare class AbsencesServiceCountReq extends Message<AbsencesServiceCoun
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 from_timestamp_start = 24;
+     * @generated from field: optional uint64 from_timestamp_start = 24;
      */
-    fromTimestampStart: bigint;
+    fromTimestampStart?: bigint;
     /**
      *
      * @optional
@@ -1499,9 +1518,9 @@ export declare class AbsencesServiceCountReq extends Message<AbsencesServiceCoun
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 from_timestamp_end = 25;
+     * @generated from field: optional uint64 from_timestamp_end = 25;
      */
-    fromTimestampEnd: bigint;
+    fromTimestampEnd?: bigint;
     /**
      *
      * @optional
@@ -1514,9 +1533,9 @@ export declare class AbsencesServiceCountReq extends Message<AbsencesServiceCoun
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 to_timestamp_start = 26;
+     * @generated from field: optional uint64 to_timestamp_start = 26;
      */
-    toTimestampStart: bigint;
+    toTimestampStart?: bigint;
     /**
      *
      * @optional
@@ -1529,9 +1548,9 @@ export declare class AbsencesServiceCountReq extends Message<AbsencesServiceCoun
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 to_timestamp_end = 27;
+     * @generated from field: optional uint64 to_timestamp_end = 27;
      */
-    toTimestampEnd: bigint;
+    toTimestampEnd?: bigint;
     /**
      *
      * @optional
@@ -1544,9 +1563,9 @@ export declare class AbsencesServiceCountReq extends Message<AbsencesServiceCoun
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 uom_id = 28;
+     * @generated from field: optional uint64 uom_id = 28;
      */
-    uomId: bigint;
+    uomId?: bigint;
     /**
      *
      * @optional
@@ -1559,9 +1578,9 @@ export declare class AbsencesServiceCountReq extends Message<AbsencesServiceCoun
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 quantity_min = 29;
+     * @generated from field: optional uint64 quantity_min = 29;
      */
-    quantityMin: bigint;
+    quantityMin?: bigint;
     /**
      *
      * @optional
@@ -1574,14 +1593,14 @@ export declare class AbsencesServiceCountReq extends Message<AbsencesServiceCoun
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 quantity_max = 30;
+     * @generated from field: optional uint64 quantity_max = 30;
      */
-    quantityMax: bigint;
+    quantityMax?: bigint;
     /**
      *
      * @optional
      *
-     * @description Custom field filters.
+     * @description Count based on dynamic form field values.
      *
      * @generated from field: repeated Scailo.FormFieldDatumFilterRequest form_data = 500;
      */
@@ -1597,7 +1616,13 @@ export declare class AbsencesServiceCountReq extends Message<AbsencesServiceCoun
 }
 /**
  *
- * Generic search request for finding absences using a free-text search key.
+ * Broad-spectrum search and lookup request for locating and paginating absences via text matching.
+ * This message encapsulates full-text query parameters, pagination controls, sorting keys,
+ * lifecycle status constraints, and other core references.
+ *
+ * **Note:** This is the primary message layout used for global search bars, fast-filtering dashboard
+ * inputs, and omni-box search utilities where users need to match loose textual terms against
+ * records while retaining structural pagination.
  *
  * @generated from message Scailo.AbsencesServiceSearchAllReq
  */
@@ -1610,9 +1635,9 @@ export declare class AbsencesServiceSearchAllReq extends Message<AbsencesService
      *
      * @example ANY
      *
-     * @generated from field: Scailo.BOOL_FILTER is_active = 1;
+     * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
      */
-    isActive: BOOL_FILTER;
+    isActive?: BOOL_FILTER;
     /**
      *
      * @mandatory
@@ -1640,9 +1665,9 @@ export declare class AbsencesServiceSearchAllReq extends Message<AbsencesService
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 offset = 3;
+     * @generated from field: optional uint64 offset = 3;
      */
-    offset: bigint;
+    offset?: bigint;
     /**
      *
      * @optional
@@ -1651,18 +1676,18 @@ export declare class AbsencesServiceSearchAllReq extends Message<AbsencesService
      *
      * @example DESCENDING
      *
-     * @generated from field: Scailo.SORT_ORDER sort_order = 4;
+     * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
      */
-    sortOrder: SORT_ORDER;
+    sortOrder?: SORT_ORDER;
     /**
      *
      * @optional
      *
      * @description The field used for sorting.
      *
-     * @generated from field: Scailo.ABSENCE_SORT_KEY sort_key = 5;
+     * @generated from field: optional Scailo.ABSENCE_SORT_KEY sort_key = 5;
      */
-    sortKey: ABSENCE_SORT_KEY;
+    sortKey?: ABSENCE_SORT_KEY;
     /**
      *
      * @optional
@@ -1675,9 +1700,9 @@ export declare class AbsencesServiceSearchAllReq extends Message<AbsencesService
      *
      * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
      *
-     * @generated from field: string entity_uuid = 6;
+     * @generated from field: optional string entity_uuid = 6;
      */
-    entityUuid: string;
+    entityUuid?: string;
     /**
      *
      * @optional
@@ -1686,12 +1711,12 @@ export declare class AbsencesServiceSearchAllReq extends Message<AbsencesService
      *
      * @example STANDING
      *
-     * @generated from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
+     * @generated from field: optional Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
      */
-    status: STANDARD_LIFECYCLE_STATUS;
+    status?: STANDARD_LIFECYCLE_STATUS;
     /**
      *
-     * @mandatory
+     * @optional
      *
      * @description The search string to match against reference IDs.
      *
@@ -1701,9 +1726,9 @@ export declare class AbsencesServiceSearchAllReq extends Message<AbsencesService
      *
      * @format: May contain any UTF-8 characters.
      *
-     * @generated from field: string search_key = 11;
+     * @generated from field: optional string search_key = 11;
      */
-    searchKey: string;
+    searchKey?: string;
     /**
      *
      * @optional
@@ -1716,9 +1741,9 @@ export declare class AbsencesServiceSearchAllReq extends Message<AbsencesService
      *
      * @format Non-negative integer.
      *
-     * @generated from field: uint64 user_id = 22;
+     * @generated from field: optional uint64 user_id = 22;
      */
-    userId: bigint;
+    userId?: bigint;
     constructor(data?: PartialMessage<AbsencesServiceSearchAllReq>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.AbsencesServiceSearchAllReq";
