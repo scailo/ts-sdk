@@ -1069,6 +1069,36 @@ export declare class OutwardJobFreeIssueMaterialItemsSearchRequest extends Messa
      * @generated from field: string search_key = 40;
      */
     searchKey: string;
+    /**
+     *
+     * @optional
+     *
+     * @description Filter line items by the unique internal identifier of the vendor associated with the linked source document (e.g., Outward Job).
+     *
+     * @example 1051
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
+     *
+     * @generated from field: uint64 vendor_id = 200;
+     */
+    vendorId: bigint;
+    /**
+     *
+     * @optional
+     *
+     * @description Filter line items by the unique internal identifier of the outward job.
+     *
+     * @example 1024
+     *
+     * @regex ^[1-9][0-9]*$
+     *
+     * @format Unsigned 64-bit integer greater than 0.
+     *
+     * @generated from field: uint64 outward_job_id = 210;
+     */
+    outwardJobId: bigint;
     constructor(data?: PartialMessage<OutwardJobFreeIssueMaterialItemsSearchRequest>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.OutwardJobFreeIssueMaterialItemsSearchRequest";

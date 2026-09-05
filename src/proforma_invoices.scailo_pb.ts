@@ -4346,6 +4346,38 @@ export class ProformaInvoiceItemsSearchRequest extends Message<ProformaInvoiceIt
    */
   searchKey?: string;
 
+  /**
+   *
+   * @optional
+   *
+   * @description Filter line items by the unique internal identifier of the buyer client (the entity financially responsible) associated with the linked source document (e.g., Sales Order).
+   *
+   * @example 1051
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 buyer_client_id = 200;
+   */
+  buyerClientId?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Filter line items by the unique internal identifier of the sales order.
+   *
+   * @example 1024
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: optional uint64 sales_order_id = 210;
+   */
+  salesOrderId?: bigint;
+
   constructor(data?: PartialMessage<ProformaInvoiceItemsSearchRequest>) {
     super();
     proto3.util.initPartial(data, this);
@@ -4371,6 +4403,8 @@ export class ProformaInvoiceItemsSearchRequest extends Message<ProformaInvoiceIt
     { no: 25, name: "client_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
     { no: 27, name: "tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
     { no: 40, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 200, name: "buyer_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 210, name: "sales_order_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): ProformaInvoiceItemsSearchRequest {

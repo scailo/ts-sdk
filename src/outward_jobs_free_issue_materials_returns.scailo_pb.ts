@@ -1396,6 +1396,38 @@ export class OutwardJobFreeIssueMaterialReturnItemsSearchRequest extends Message
    */
   searchKey = "";
 
+  /**
+   *
+   * @optional
+   *
+   * @description Filter line items by the unique internal identifier of the vendor associated with the linked source document (e.g., Outward Job).
+   *
+   * @example 1051
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: uint64 vendor_id = 200;
+   */
+  vendorId = protoInt64.zero;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Filter line items by the unique internal identifier of the outward job.
+   *
+   * @example 1024
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: uint64 outward_job_id = 210;
+   */
+  outwardJobId = protoInt64.zero;
+
   constructor(data?: PartialMessage<OutwardJobFreeIssueMaterialReturnItemsSearchRequest>) {
     super();
     proto3.util.initPartial(data, this);
@@ -1420,6 +1452,8 @@ export class OutwardJobFreeIssueMaterialReturnItemsSearchRequest extends Message
     { no: 23, name: "item_hash", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 24, name: "vendor_uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 40, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 200, name: "vendor_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 210, name: "outward_job_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): OutwardJobFreeIssueMaterialReturnItemsSearchRequest {

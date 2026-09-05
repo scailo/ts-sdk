@@ -73,7 +73,7 @@ Message\&lt;BankAccount\&gt;.constructor
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:421](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/bank_accounts.scailo_pb.ts#L421)
+[src/bank_accounts.scailo_pb.ts:421](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/bank_accounts.scailo_pb.ts#L421)
 
 ## Properties
 
@@ -91,7 +91,7 @@ from field: Scailo.ApprovalMetadata approval_metadata = 3;
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:375](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/bank_accounts.scailo_pb.ts#L375)
+[src/bank_accounts.scailo_pb.ts:375](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/bank_accounts.scailo_pb.ts#L375)
 
 ___
 
@@ -115,7 +115,7 @@ from field: string code = 11;
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:411](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/bank_accounts.scailo_pb.ts#L411)
+[src/bank_accounts.scailo_pb.ts:411](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/bank_accounts.scailo_pb.ts#L411)
 
 ___
 
@@ -139,7 +139,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:359](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/bank_accounts.scailo_pb.ts#L359)
+[src/bank_accounts.scailo_pb.ts:359](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/bank_accounts.scailo_pb.ts#L359)
 
 ___
 
@@ -157,7 +157,7 @@ from field: repeated Scailo.FormFieldDatum form_data = 30;
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:419](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/bank_accounts.scailo_pb.ts#L419)
+[src/bank_accounts.scailo_pb.ts:419](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/bank_accounts.scailo_pb.ts#L419)
 
 ___
 
@@ -175,7 +175,7 @@ from field: repeated Scailo.LogbookLogConciseSLC logs = 5;
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:391](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/bank_accounts.scailo_pb.ts#L391)
+[src/bank_accounts.scailo_pb.ts:391](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/bank_accounts.scailo_pb.ts#L391)
 
 ___
 
@@ -193,7 +193,7 @@ from field: Scailo.EmployeeMetadata metadata = 2;
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:367](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/bank_accounts.scailo_pb.ts#L367)
+[src/bank_accounts.scailo_pb.ts:367](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/bank_accounts.scailo_pb.ts#L367)
 
 ___
 
@@ -217,7 +217,7 @@ from field: string name = 10;
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:401](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/bank_accounts.scailo_pb.ts#L401)
+[src/bank_accounts.scailo_pb.ts:401](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/bank_accounts.scailo_pb.ts#L401)
 
 ___
 
@@ -235,7 +235,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 4;
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:383](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/bank_accounts.scailo_pb.ts#L383)
+[src/bank_accounts.scailo_pb.ts:383](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/bank_accounts.scailo_pb.ts#L383)
 
 ___
 
@@ -245,7 +245,7 @@ ___
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:428](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/bank_accounts.scailo_pb.ts#L428)
+[src/bank_accounts.scailo_pb.ts:428](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/bank_accounts.scailo_pb.ts#L428)
 
 ___
 
@@ -255,7 +255,7 @@ ___
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:426](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/bank_accounts.scailo_pb.ts#L426)
+[src/bank_accounts.scailo_pb.ts:426](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/bank_accounts.scailo_pb.ts#L426)
 
 ___
 
@@ -265,7 +265,7 @@ ___
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:427](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/bank_accounts.scailo_pb.ts#L427)
+[src/bank_accounts.scailo_pb.ts:427](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/bank_accounts.scailo_pb.ts#L427)
 
 ## Methods
 
@@ -553,7 +553,7 @@ ___
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:451](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/bank_accounts.scailo_pb.ts#L451)
+[src/bank_accounts.scailo_pb.ts:451](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/bank_accounts.scailo_pb.ts#L451)
 
 ___
 
@@ -574,7 +574,7 @@ ___
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:439](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/bank_accounts.scailo_pb.ts#L439)
+[src/bank_accounts.scailo_pb.ts:439](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/bank_accounts.scailo_pb.ts#L439)
 
 ___
 
@@ -595,7 +595,7 @@ ___
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:443](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/bank_accounts.scailo_pb.ts#L443)
+[src/bank_accounts.scailo_pb.ts:443](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/bank_accounts.scailo_pb.ts#L443)
 
 ___
 
@@ -616,4 +616,4 @@ ___
 
 #### Defined in
 
-[src/bank_accounts.scailo_pb.ts:447](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/bank_accounts.scailo_pb.ts#L447)
+[src/bank_accounts.scailo_pb.ts:447](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/bank_accounts.scailo_pb.ts#L447)

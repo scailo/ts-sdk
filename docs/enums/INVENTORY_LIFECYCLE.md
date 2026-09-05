@@ -37,7 +37,7 @@ from enum value: INVENTORY_LIFECYCLE_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:851](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/base.scailo_pb.ts#L851)
+[src/base.scailo_pb.ts:859](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/base.scailo_pb.ts#L859)
 
 ___
 
@@ -53,7 +53,7 @@ from enum value: INVENTORY_LIFECYCLE_CONSUMED = 4;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:879](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/base.scailo_pb.ts#L879)
+[src/base.scailo_pb.ts:887](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/base.scailo_pb.ts#L887)
 
 ___
 
@@ -69,7 +69,7 @@ from enum value: INVENTORY_LIFECYCLE_DISCARDED = 8;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:907](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/base.scailo_pb.ts#L907)
+[src/base.scailo_pb.ts:915](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/base.scailo_pb.ts#L915)
 
 ___
 
@@ -85,7 +85,7 @@ from enum value: INVENTORY_LIFECYCLE_ISSUED = 9;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:914](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/base.scailo_pb.ts#L914)
+[src/base.scailo_pb.ts:922](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/base.scailo_pb.ts#L922)
 
 ___
 
@@ -101,7 +101,7 @@ from enum value: INVENTORY_LIFECYCLE_QC = 1;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:858](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/base.scailo_pb.ts#L858)
+[src/base.scailo_pb.ts:866](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/base.scailo_pb.ts#L866)
 
 ___
 
@@ -117,7 +117,7 @@ from enum value: INVENTORY_LIFECYCLE_REJECTED = 5;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:886](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/base.scailo_pb.ts#L886)
+[src/base.scailo_pb.ts:894](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/base.scailo_pb.ts#L894)
 
 ___
 
@@ -133,7 +133,7 @@ from enum value: INVENTORY_LIFECYCLE_RETURNABLE = 7;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:900](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/base.scailo_pb.ts#L900)
+[src/base.scailo_pb.ts:908](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/base.scailo_pb.ts#L908)
 
 ___
 
@@ -149,7 +149,7 @@ from enum value: INVENTORY_LIFECYCLE_REWORK = 3;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:872](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/base.scailo_pb.ts#L872)
+[src/base.scailo_pb.ts:880](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/base.scailo_pb.ts#L880)
 
 ___
 
@@ -165,7 +165,7 @@ from enum value: INVENTORY_LIFECYCLE_SCRAP = 6;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:893](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/base.scailo_pb.ts#L893)
+[src/base.scailo_pb.ts:901](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/base.scailo_pb.ts#L901)
 
 ___
 
@@ -181,4 +181,4 @@ from enum value: INVENTORY_LIFECYCLE_STORE = 2;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:865](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/base.scailo_pb.ts#L865)
+[src/base.scailo_pb.ts:873](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/base.scailo_pb.ts#L873)

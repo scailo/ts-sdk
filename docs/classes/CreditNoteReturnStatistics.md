@@ -68,7 +68,7 @@ Message\&lt;CreditNoteReturnStatistics\&gt;.constructor
 
 #### Defined in
 
-[src/credit_notes.scailo_pb.ts:3485](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/credit_notes.scailo_pb.ts#L3485)
+[src/credit_notes.scailo_pb.ts:3519](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/credit_notes.scailo_pb.ts#L3519)
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: uint64 billed_quantity = 2;
 
 #### Defined in
 
-[src/credit_notes.scailo_pb.ts:3476](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/credit_notes.scailo_pb.ts#L3476)
+[src/credit_notes.scailo_pb.ts:3510](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/credit_notes.scailo_pb.ts#L3510)
 
 ___
 
@@ -100,7 +100,7 @@ from field: uint64 family_id = 1;
 
 #### Defined in
 
-[src/credit_notes.scailo_pb.ts:3469](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/credit_notes.scailo_pb.ts#L3469)
+[src/credit_notes.scailo_pb.ts:3503](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/credit_notes.scailo_pb.ts#L3503)
 
 ___
 
@@ -116,7 +116,7 @@ from field: uint64 returned_quantity = 3;
 
 #### Defined in
 
-[src/credit_notes.scailo_pb.ts:3483](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/credit_notes.scailo_pb.ts#L3483)
+[src/credit_notes.scailo_pb.ts:3517](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/credit_notes.scailo_pb.ts#L3517)
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-[src/credit_notes.scailo_pb.ts:3492](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/credit_notes.scailo_pb.ts#L3492)
+[src/credit_notes.scailo_pb.ts:3526](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/credit_notes.scailo_pb.ts#L3526)
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-[src/credit_notes.scailo_pb.ts:3490](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/credit_notes.scailo_pb.ts#L3490)
+[src/credit_notes.scailo_pb.ts:3524](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/credit_notes.scailo_pb.ts#L3524)
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-[src/credit_notes.scailo_pb.ts:3491](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/credit_notes.scailo_pb.ts#L3491)
+[src/credit_notes.scailo_pb.ts:3525](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/credit_notes.scailo_pb.ts#L3525)
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-[src/credit_notes.scailo_pb.ts:3510](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/credit_notes.scailo_pb.ts#L3510)
+[src/credit_notes.scailo_pb.ts:3544](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/credit_notes.scailo_pb.ts#L3544)
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-[src/credit_notes.scailo_pb.ts:3498](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/credit_notes.scailo_pb.ts#L3498)
+[src/credit_notes.scailo_pb.ts:3532](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/credit_notes.scailo_pb.ts#L3532)
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-[src/credit_notes.scailo_pb.ts:3502](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/credit_notes.scailo_pb.ts#L3502)
+[src/credit_notes.scailo_pb.ts:3536](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/credit_notes.scailo_pb.ts#L3536)
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-[src/credit_notes.scailo_pb.ts:3506](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/credit_notes.scailo_pb.ts#L3506)
+[src/credit_notes.scailo_pb.ts:3540](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/credit_notes.scailo_pb.ts#L3540)

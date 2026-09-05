@@ -2641,6 +2641,38 @@ export class WorkOrderItemsSearchRequest extends Message<WorkOrderItemsSearchReq
    */
   searchKey = "";
 
+  /**
+   *
+   * @optional
+   *
+   * @description Filter line items by the unique internal identifier of the buyer client (the entity financially responsible) associated with the linked source document (e.g., Sales Order).
+   *
+   * @example 1051
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: uint64 buyer_client_id = 200;
+   */
+  buyerClientId = protoInt64.zero;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Filter line items by the unique internal identifier of the sales order.
+   *
+   * @example 1024
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: uint64 sales_order_id = 210;
+   */
+  salesOrderId = protoInt64.zero;
+
   constructor(data?: PartialMessage<WorkOrderItemsSearchRequest>) {
     super();
     proto3.util.initPartial(data, this);
@@ -2666,6 +2698,8 @@ export class WorkOrderItemsSearchRequest extends Message<WorkOrderItemsSearchReq
     { no: 29, name: "delivery_date_start", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 30, name: "delivery_date_end", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 40, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 200, name: "buyer_client_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 210, name: "sales_order_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): WorkOrderItemsSearchRequest {

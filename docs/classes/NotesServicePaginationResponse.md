@@ -69,7 +69,7 @@ Message\&lt;NotesServicePaginationResponse\&gt;.constructor
 
 #### Defined in
 
-[src/notes.scailo_pb.ts:804](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/notes.scailo_pb.ts#L804)
+[src/notes.scailo_pb.ts:804](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/notes.scailo_pb.ts#L804)
 
 ## Properties
 
@@ -93,7 +93,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-[src/notes.scailo_pb.ts:774](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/notes.scailo_pb.ts#L774)
+[src/notes.scailo_pb.ts:774](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/notes.scailo_pb.ts#L774)
 
 ___
 
@@ -117,7 +117,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-[src/notes.scailo_pb.ts:784](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/notes.scailo_pb.ts#L784)
+[src/notes.scailo_pb.ts:784](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/notes.scailo_pb.ts#L784)
 
 ___
 
@@ -135,7 +135,7 @@ from field: repeated Scailo.Note payload = 4;
 
 #### Defined in
 
-[src/notes.scailo_pb.ts:802](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/notes.scailo_pb.ts#L802)
+[src/notes.scailo_pb.ts:802](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/notes.scailo_pb.ts#L802)
 
 ___
 
@@ -159,7 +159,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-[src/notes.scailo_pb.ts:794](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/notes.scailo_pb.ts#L794)
+[src/notes.scailo_pb.ts:794](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/notes.scailo_pb.ts#L794)
 
 ___
 
@@ -169,7 +169,7 @@ ___
 
 #### Defined in
 
-[src/notes.scailo_pb.ts:811](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/notes.scailo_pb.ts#L811)
+[src/notes.scailo_pb.ts:811](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/notes.scailo_pb.ts#L811)
 
 ___
 
@@ -179,7 +179,7 @@ ___
 
 #### Defined in
 
-[src/notes.scailo_pb.ts:809](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/notes.scailo_pb.ts#L809)
+[src/notes.scailo_pb.ts:809](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/notes.scailo_pb.ts#L809)
 
 ___
 
@@ -189,7 +189,7 @@ ___
 
 #### Defined in
 
-[src/notes.scailo_pb.ts:810](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/notes.scailo_pb.ts#L810)
+[src/notes.scailo_pb.ts:810](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/notes.scailo_pb.ts#L810)
 
 ## Methods
 
@@ -477,7 +477,7 @@ ___
 
 #### Defined in
 
-[src/notes.scailo_pb.ts:830](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/notes.scailo_pb.ts#L830)
+[src/notes.scailo_pb.ts:830](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/notes.scailo_pb.ts#L830)
 
 ___
 
@@ -498,7 +498,7 @@ ___
 
 #### Defined in
 
-[src/notes.scailo_pb.ts:818](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/notes.scailo_pb.ts#L818)
+[src/notes.scailo_pb.ts:818](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/notes.scailo_pb.ts#L818)
 
 ___
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-[src/notes.scailo_pb.ts:822](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/notes.scailo_pb.ts#L822)
+[src/notes.scailo_pb.ts:822](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/notes.scailo_pb.ts#L822)
 
 ___
 
@@ -540,4 +540,4 @@ ___
 
 #### Defined in
 
-[src/notes.scailo_pb.ts:826](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/notes.scailo_pb.ts#L826)
+[src/notes.scailo_pb.ts:826](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/notes.scailo_pb.ts#L826)

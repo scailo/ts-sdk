@@ -32,7 +32,7 @@ from enum value: TEAM_MEMBER_STATUS_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:188](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/teams.scailo_pb.ts#L188)
+[src/teams.scailo_pb.ts:188](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/teams.scailo_pb.ts#L188)
 
 ___
 
@@ -50,7 +50,7 @@ from enum value: TEAM_MEMBER_STATUS_APPROVED = 1;
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:195](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/teams.scailo_pb.ts#L195)
+[src/teams.scailo_pb.ts:195](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/teams.scailo_pb.ts#L195)
 
 ___
 
@@ -68,4 +68,4 @@ from enum value: TEAM_MEMBER_STATUS_UNAPPROVED = 2;
 
 #### Defined in
 
-[src/teams.scailo_pb.ts:202](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/teams.scailo_pb.ts#L202)
+[src/teams.scailo_pb.ts:202](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/teams.scailo_pb.ts#L202)

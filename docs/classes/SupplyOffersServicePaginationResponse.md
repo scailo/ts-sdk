@@ -69,7 +69,7 @@ Message\&lt;SupplyOffersServicePaginationResponse\&gt;.constructor
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:1876](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/supply_offers.scailo_pb.ts#L1876)
+[src/supply_offers.scailo_pb.ts:1876](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/supply_offers.scailo_pb.ts#L1876)
 
 ## Properties
 
@@ -93,7 +93,7 @@ from field: uint64 count = 1;
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:1846](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/supply_offers.scailo_pb.ts#L1846)
+[src/supply_offers.scailo_pb.ts:1846](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/supply_offers.scailo_pb.ts#L1846)
 
 ___
 
@@ -117,7 +117,7 @@ from field: uint64 offset = 2;
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:1856](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/supply_offers.scailo_pb.ts#L1856)
+[src/supply_offers.scailo_pb.ts:1856](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/supply_offers.scailo_pb.ts#L1856)
 
 ___
 
@@ -135,7 +135,7 @@ from field: repeated Scailo.SupplyOffer payload = 4;
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:1874](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/supply_offers.scailo_pb.ts#L1874)
+[src/supply_offers.scailo_pb.ts:1874](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/supply_offers.scailo_pb.ts#L1874)
 
 ___
 
@@ -159,7 +159,7 @@ from field: uint64 total = 3;
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:1866](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/supply_offers.scailo_pb.ts#L1866)
+[src/supply_offers.scailo_pb.ts:1866](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/supply_offers.scailo_pb.ts#L1866)
 
 ___
 
@@ -169,7 +169,7 @@ ___
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:1883](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/supply_offers.scailo_pb.ts#L1883)
+[src/supply_offers.scailo_pb.ts:1883](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/supply_offers.scailo_pb.ts#L1883)
 
 ___
 
@@ -179,7 +179,7 @@ ___
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:1881](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/supply_offers.scailo_pb.ts#L1881)
+[src/supply_offers.scailo_pb.ts:1881](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/supply_offers.scailo_pb.ts#L1881)
 
 ___
 
@@ -189,7 +189,7 @@ ___
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:1882](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/supply_offers.scailo_pb.ts#L1882)
+[src/supply_offers.scailo_pb.ts:1882](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/supply_offers.scailo_pb.ts#L1882)
 
 ## Methods
 
@@ -477,7 +477,7 @@ ___
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:1902](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/supply_offers.scailo_pb.ts#L1902)
+[src/supply_offers.scailo_pb.ts:1902](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/supply_offers.scailo_pb.ts#L1902)
 
 ___
 
@@ -498,7 +498,7 @@ ___
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:1890](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/supply_offers.scailo_pb.ts#L1890)
+[src/supply_offers.scailo_pb.ts:1890](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/supply_offers.scailo_pb.ts#L1890)
 
 ___
 
@@ -519,7 +519,7 @@ ___
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:1894](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/supply_offers.scailo_pb.ts#L1894)
+[src/supply_offers.scailo_pb.ts:1894](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/supply_offers.scailo_pb.ts#L1894)
 
 ___
 
@@ -540,4 +540,4 @@ ___
 
 #### Defined in
 
-[src/supply_offers.scailo_pb.ts:1898](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/supply_offers.scailo_pb.ts#L1898)
+[src/supply_offers.scailo_pb.ts:1898](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/supply_offers.scailo_pb.ts#L1898)

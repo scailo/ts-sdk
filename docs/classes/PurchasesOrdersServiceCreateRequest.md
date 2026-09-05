@@ -80,7 +80,7 @@ Message\&lt;PurchasesOrdersServiceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/purchases_orders.scailo_pb.ts:581](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/purchases_orders.scailo_pb.ts#L581)
+[src/purchases_orders.scailo_pb.ts:581](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/purchases_orders.scailo_pb.ts#L581)
 
 ## Properties
 
@@ -96,7 +96,7 @@ from field: uint64 buyer_location_id = 13;
 
 #### Defined in
 
-[src/purchases_orders.scailo_pb.ts:509](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/purchases_orders.scailo_pb.ts#L509)
+[src/purchases_orders.scailo_pb.ts:509](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/purchases_orders.scailo_pb.ts#L509)
 
 ___
 
@@ -112,7 +112,7 @@ from field: uint64 consignee_location_id = 12;
 
 #### Defined in
 
-[src/purchases_orders.scailo_pb.ts:502](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/purchases_orders.scailo_pb.ts#L502)
+[src/purchases_orders.scailo_pb.ts:502](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/purchases_orders.scailo_pb.ts#L502)
 
 ___
 
@@ -128,7 +128,7 @@ from field: uint64 currency_id = 15;
 
 #### Defined in
 
-[src/purchases_orders.scailo_pb.ts:523](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/purchases_orders.scailo_pb.ts#L523)
+[src/purchases_orders.scailo_pb.ts:523](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/purchases_orders.scailo_pb.ts#L523)
 
 ___
 
@@ -162,7 +162,7 @@ from field: string entity_uuid = 1;
 
 #### Defined in
 
-[src/purchases_orders.scailo_pb.ts:447](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/purchases_orders.scailo_pb.ts#L447)
+[src/purchases_orders.scailo_pb.ts:447](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/purchases_orders.scailo_pb.ts#L447)
 
 ___
 
@@ -192,7 +192,7 @@ from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
 
 #### Defined in
 
-[src/purchases_orders.scailo_pb.ts:579](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/purchases_orders.scailo_pb.ts#L579)
+[src/purchases_orders.scailo_pb.ts:579](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/purchases_orders.scailo_pb.ts#L579)
 
 ___
 
@@ -208,7 +208,7 @@ from field: uint64 miscellaneous_cost = 17;
 
 #### Defined in
 
-[src/purchases_orders.scailo_pb.ts:537](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/purchases_orders.scailo_pb.ts#L537)
+[src/purchases_orders.scailo_pb.ts:537](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/purchases_orders.scailo_pb.ts#L537)
 
 ___
 
@@ -224,7 +224,7 @@ from field: uint64 overall_discount = 18;
 
 #### Defined in
 
-[src/purchases_orders.scailo_pb.ts:544](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/purchases_orders.scailo_pb.ts#L544)
+[src/purchases_orders.scailo_pb.ts:544](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/purchases_orders.scailo_pb.ts#L544)
 
 ___
 
@@ -240,7 +240,7 @@ from field: uint64 payment_advance = 20;
 
 #### Defined in
 
-[src/purchases_orders.scailo_pb.ts:558](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/purchases_orders.scailo_pb.ts#L558)
+[src/purchases_orders.scailo_pb.ts:558](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/purchases_orders.scailo_pb.ts#L558)
 
 ___
 
@@ -256,7 +256,7 @@ from field: uint64 payment_cycle_in_days = 21;
 
 #### Defined in
 
-[src/purchases_orders.scailo_pb.ts:565](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/purchases_orders.scailo_pb.ts#L565)
+[src/purchases_orders.scailo_pb.ts:565](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/purchases_orders.scailo_pb.ts#L565)
 
 ___
 
@@ -272,7 +272,7 @@ from field: uint64 project_id = 16;
 
 #### Defined in
 
-[src/purchases_orders.scailo_pb.ts:530](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/purchases_orders.scailo_pb.ts#L530)
+[src/purchases_orders.scailo_pb.ts:530](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/purchases_orders.scailo_pb.ts#L530)
 
 ___
 
@@ -306,7 +306,7 @@ from field: string reference_id = 10;
 
 #### Defined in
 
-[src/purchases_orders.scailo_pb.ts:495](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/purchases_orders.scailo_pb.ts#L495)
+[src/purchases_orders.scailo_pb.ts:495](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/purchases_orders.scailo_pb.ts#L495)
 
 ___
 
@@ -322,7 +322,7 @@ from field: int64 round_off = 19;
 
 #### Defined in
 
-[src/purchases_orders.scailo_pb.ts:551](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/purchases_orders.scailo_pb.ts#L551)
+[src/purchases_orders.scailo_pb.ts:551](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/purchases_orders.scailo_pb.ts#L551)
 
 ___
 
@@ -356,7 +356,7 @@ from field: string user_comment = 2;
 
 #### Defined in
 
-[src/purchases_orders.scailo_pb.ts:463](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/purchases_orders.scailo_pb.ts#L463)
+[src/purchases_orders.scailo_pb.ts:463](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/purchases_orders.scailo_pb.ts#L463)
 
 ___
 
@@ -390,7 +390,7 @@ from field: uint64 vault_folder_id = 9;
 
 #### Defined in
 
-[src/purchases_orders.scailo_pb.ts:479](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/purchases_orders.scailo_pb.ts#L479)
+[src/purchases_orders.scailo_pb.ts:479](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/purchases_orders.scailo_pb.ts#L479)
 
 ___
 
@@ -406,7 +406,7 @@ from field: uint64 vendor_id = 14;
 
 #### Defined in
 
-[src/purchases_orders.scailo_pb.ts:516](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/purchases_orders.scailo_pb.ts#L516)
+[src/purchases_orders.scailo_pb.ts:516](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/purchases_orders.scailo_pb.ts#L516)
 
 ___
 
@@ -416,7 +416,7 @@ ___
 
 #### Defined in
 
-[src/purchases_orders.scailo_pb.ts:588](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/purchases_orders.scailo_pb.ts#L588)
+[src/purchases_orders.scailo_pb.ts:588](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/purchases_orders.scailo_pb.ts#L588)
 
 ___
 
@@ -426,7 +426,7 @@ ___
 
 #### Defined in
 
-[src/purchases_orders.scailo_pb.ts:586](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/purchases_orders.scailo_pb.ts#L586)
+[src/purchases_orders.scailo_pb.ts:586](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/purchases_orders.scailo_pb.ts#L586)
 
 ___
 
@@ -436,7 +436,7 @@ ___
 
 #### Defined in
 
-[src/purchases_orders.scailo_pb.ts:587](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/purchases_orders.scailo_pb.ts#L587)
+[src/purchases_orders.scailo_pb.ts:587](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/purchases_orders.scailo_pb.ts#L587)
 
 ## Methods
 
@@ -724,7 +724,7 @@ ___
 
 #### Defined in
 
-[src/purchases_orders.scailo_pb.ts:618](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/purchases_orders.scailo_pb.ts#L618)
+[src/purchases_orders.scailo_pb.ts:618](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/purchases_orders.scailo_pb.ts#L618)
 
 ___
 
@@ -745,7 +745,7 @@ ___
 
 #### Defined in
 
-[src/purchases_orders.scailo_pb.ts:606](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/purchases_orders.scailo_pb.ts#L606)
+[src/purchases_orders.scailo_pb.ts:606](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/purchases_orders.scailo_pb.ts#L606)
 
 ___
 
@@ -766,7 +766,7 @@ ___
 
 #### Defined in
 
-[src/purchases_orders.scailo_pb.ts:610](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/purchases_orders.scailo_pb.ts#L610)
+[src/purchases_orders.scailo_pb.ts:610](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/purchases_orders.scailo_pb.ts#L610)
 
 ___
 
@@ -787,4 +787,4 @@ ___
 
 #### Defined in
 
-[src/purchases_orders.scailo_pb.ts:614](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/purchases_orders.scailo_pb.ts#L614)
+[src/purchases_orders.scailo_pb.ts:614](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/purchases_orders.scailo_pb.ts#L614)

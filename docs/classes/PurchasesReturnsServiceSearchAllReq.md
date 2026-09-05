@@ -77,7 +77,7 @@ Message\&lt;PurchasesReturnsServiceSearchAllReq\&gt;.constructor
 
 #### Defined in
 
-[src/purchases_returns.scailo_pb.ts:2713](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/purchases_returns.scailo_pb.ts#L2713)
+[src/purchases_returns.scailo_pb.ts:2733](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/purchases_returns.scailo_pb.ts#L2733)
 
 ## Properties
 
@@ -93,7 +93,7 @@ from field: Scailo.PURCHASE_RETURN_BILLING_STATUS billing_status = 40;
 
 #### Defined in
 
-[src/purchases_returns.scailo_pb.ts:2704](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/purchases_returns.scailo_pb.ts#L2704)
+[src/purchases_returns.scailo_pb.ts:2724](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/purchases_returns.scailo_pb.ts#L2724)
 
 ___
 
@@ -127,7 +127,7 @@ from field: int64 count = 2;
 
 #### Defined in
 
-[src/purchases_returns.scailo_pb.ts:2601](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/purchases_returns.scailo_pb.ts#L2601)
+[src/purchases_returns.scailo_pb.ts:2621](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/purchases_returns.scailo_pb.ts#L2621)
 
 ___
 
@@ -161,7 +161,7 @@ from field: string entity_uuid = 6;
 
 #### Defined in
 
-[src/purchases_returns.scailo_pb.ts:2655](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/purchases_returns.scailo_pb.ts#L2655)
+[src/purchases_returns.scailo_pb.ts:2675](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/purchases_returns.scailo_pb.ts#L2675)
 
 ___
 
@@ -187,7 +187,7 @@ from field: Scailo.BOOL_FILTER is_active = 1;
 
 #### Defined in
 
-[src/purchases_returns.scailo_pb.ts:2585](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/purchases_returns.scailo_pb.ts#L2585)
+[src/purchases_returns.scailo_pb.ts:2605](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/purchases_returns.scailo_pb.ts#L2605)
 
 ___
 
@@ -221,7 +221,7 @@ from field: uint64 offset = 3;
 
 #### Defined in
 
-[src/purchases_returns.scailo_pb.ts:2617](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/purchases_returns.scailo_pb.ts#L2617)
+[src/purchases_returns.scailo_pb.ts:2637](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/purchases_returns.scailo_pb.ts#L2637)
 
 ___
 
@@ -237,7 +237,7 @@ from field: Scailo.PURCHASE_RETURN_REF_FROM ref_from = 22;
 
 #### Defined in
 
-[src/purchases_returns.scailo_pb.ts:2690](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/purchases_returns.scailo_pb.ts#L2690)
+[src/purchases_returns.scailo_pb.ts:2710](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/purchases_returns.scailo_pb.ts#L2710)
 
 ___
 
@@ -253,7 +253,7 @@ from field: uint64 ref_id = 23;
 
 #### Defined in
 
-[src/purchases_returns.scailo_pb.ts:2697](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/purchases_returns.scailo_pb.ts#L2697)
+[src/purchases_returns.scailo_pb.ts:2717](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/purchases_returns.scailo_pb.ts#L2717)
 
 ___
 
@@ -285,7 +285,7 @@ from field: string search_key = 11;
 
 #### Defined in
 
-[src/purchases_returns.scailo_pb.ts:2683](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/purchases_returns.scailo_pb.ts#L2683)
+[src/purchases_returns.scailo_pb.ts:2703](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/purchases_returns.scailo_pb.ts#L2703)
 
 ___
 
@@ -305,7 +305,7 @@ from field: Scailo.PURCHASE_RETURN_SORT_KEY sort_key = 5;
 
 #### Defined in
 
-[src/purchases_returns.scailo_pb.ts:2639](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/purchases_returns.scailo_pb.ts#L2639)
+[src/purchases_returns.scailo_pb.ts:2659](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/purchases_returns.scailo_pb.ts#L2659)
 
 ___
 
@@ -331,7 +331,7 @@ from field: Scailo.SORT_ORDER sort_order = 4;
 
 #### Defined in
 
-[src/purchases_returns.scailo_pb.ts:2629](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/purchases_returns.scailo_pb.ts#L2629)
+[src/purchases_returns.scailo_pb.ts:2649](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/purchases_returns.scailo_pb.ts#L2649)
 
 ___
 
@@ -357,7 +357,7 @@ from field: Scailo.STANDARD_LIFECYCLE_STATUS status = 10;
 
 #### Defined in
 
-[src/purchases_returns.scailo_pb.ts:2667](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/purchases_returns.scailo_pb.ts#L2667)
+[src/purchases_returns.scailo_pb.ts:2687](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/purchases_returns.scailo_pb.ts#L2687)
 
 ___
 
@@ -373,7 +373,7 @@ from field: uint64 vendor_id = 50;
 
 #### Defined in
 
-[src/purchases_returns.scailo_pb.ts:2711](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/purchases_returns.scailo_pb.ts#L2711)
+[src/purchases_returns.scailo_pb.ts:2731](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/purchases_returns.scailo_pb.ts#L2731)
 
 ___
 
@@ -383,7 +383,7 @@ ___
 
 #### Defined in
 
-[src/purchases_returns.scailo_pb.ts:2720](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/purchases_returns.scailo_pb.ts#L2720)
+[src/purchases_returns.scailo_pb.ts:2740](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/purchases_returns.scailo_pb.ts#L2740)
 
 ___
 
@@ -393,7 +393,7 @@ ___
 
 #### Defined in
 
-[src/purchases_returns.scailo_pb.ts:2718](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/purchases_returns.scailo_pb.ts#L2718)
+[src/purchases_returns.scailo_pb.ts:2738](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/purchases_returns.scailo_pb.ts#L2738)
 
 ___
 
@@ -403,7 +403,7 @@ ___
 
 #### Defined in
 
-[src/purchases_returns.scailo_pb.ts:2719](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/purchases_returns.scailo_pb.ts#L2719)
+[src/purchases_returns.scailo_pb.ts:2739](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/purchases_returns.scailo_pb.ts#L2739)
 
 ## Methods
 
@@ -691,7 +691,7 @@ ___
 
 #### Defined in
 
-[src/purchases_returns.scailo_pb.ts:2747](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/purchases_returns.scailo_pb.ts#L2747)
+[src/purchases_returns.scailo_pb.ts:2767](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/purchases_returns.scailo_pb.ts#L2767)
 
 ___
 
@@ -712,7 +712,7 @@ ___
 
 #### Defined in
 
-[src/purchases_returns.scailo_pb.ts:2735](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/purchases_returns.scailo_pb.ts#L2735)
+[src/purchases_returns.scailo_pb.ts:2755](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/purchases_returns.scailo_pb.ts#L2755)
 
 ___
 
@@ -733,7 +733,7 @@ ___
 
 #### Defined in
 
-[src/purchases_returns.scailo_pb.ts:2739](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/purchases_returns.scailo_pb.ts#L2739)
+[src/purchases_returns.scailo_pb.ts:2759](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/purchases_returns.scailo_pb.ts#L2759)
 
 ___
 
@@ -754,4 +754,4 @@ ___
 
 #### Defined in
 
-[src/purchases_returns.scailo_pb.ts:2743](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/purchases_returns.scailo_pb.ts#L2743)
+[src/purchases_returns.scailo_pb.ts:2763](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/purchases_returns.scailo_pb.ts#L2763)

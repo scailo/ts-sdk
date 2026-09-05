@@ -68,7 +68,7 @@ Message\&lt;MeetingsServiceSetRSVPRequest\&gt;.constructor
 
 #### Defined in
 
-[src/meetings.scailo_pb.ts:2778](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/meetings.scailo_pb.ts#L2778)
+[src/meetings.scailo_pb.ts:2778](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/meetings.scailo_pb.ts#L2778)
 
 ## Properties
 
@@ -84,7 +84,7 @@ from field: Scailo.MEETING_RSVP rsvp = 11;
 
 #### Defined in
 
-[src/meetings.scailo_pb.ts:2776](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/meetings.scailo_pb.ts#L2776)
+[src/meetings.scailo_pb.ts:2776](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/meetings.scailo_pb.ts#L2776)
 
 ___
 
@@ -100,7 +100,7 @@ from field: string user_comment = 1;
 
 #### Defined in
 
-[src/meetings.scailo_pb.ts:2762](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/meetings.scailo_pb.ts#L2762)
+[src/meetings.scailo_pb.ts:2762](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/meetings.scailo_pb.ts#L2762)
 
 ___
 
@@ -116,7 +116,7 @@ from field: string uuid = 10;
 
 #### Defined in
 
-[src/meetings.scailo_pb.ts:2769](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/meetings.scailo_pb.ts#L2769)
+[src/meetings.scailo_pb.ts:2769](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/meetings.scailo_pb.ts#L2769)
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-[src/meetings.scailo_pb.ts:2785](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/meetings.scailo_pb.ts#L2785)
+[src/meetings.scailo_pb.ts:2785](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/meetings.scailo_pb.ts#L2785)
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-[src/meetings.scailo_pb.ts:2783](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/meetings.scailo_pb.ts#L2783)
+[src/meetings.scailo_pb.ts:2783](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/meetings.scailo_pb.ts#L2783)
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-[src/meetings.scailo_pb.ts:2784](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/meetings.scailo_pb.ts#L2784)
+[src/meetings.scailo_pb.ts:2784](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/meetings.scailo_pb.ts#L2784)
 
 ## Methods
 
@@ -434,7 +434,7 @@ ___
 
 #### Defined in
 
-[src/meetings.scailo_pb.ts:2803](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/meetings.scailo_pb.ts#L2803)
+[src/meetings.scailo_pb.ts:2803](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/meetings.scailo_pb.ts#L2803)
 
 ___
 
@@ -455,7 +455,7 @@ ___
 
 #### Defined in
 
-[src/meetings.scailo_pb.ts:2791](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/meetings.scailo_pb.ts#L2791)
+[src/meetings.scailo_pb.ts:2791](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/meetings.scailo_pb.ts#L2791)
 
 ___
 
@@ -476,7 +476,7 @@ ___
 
 #### Defined in
 
-[src/meetings.scailo_pb.ts:2795](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/meetings.scailo_pb.ts#L2795)
+[src/meetings.scailo_pb.ts:2795](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/meetings.scailo_pb.ts#L2795)
 
 ___
 
@@ -497,4 +497,4 @@ ___
 
 #### Defined in
 
-[src/meetings.scailo_pb.ts:2799](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/meetings.scailo_pb.ts#L2799)
+[src/meetings.scailo_pb.ts:2799](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/meetings.scailo_pb.ts#L2799)

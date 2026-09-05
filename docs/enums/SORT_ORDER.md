@@ -29,7 +29,7 @@ from enum value: ASCENDING_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:21](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/base.scailo_pb.ts#L21)
+[src/base.scailo_pb.ts:21](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/base.scailo_pb.ts#L21)
 
 ___
 
@@ -45,4 +45,4 @@ from enum value: DESCENDING = 1;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:28](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/base.scailo_pb.ts#L28)
+[src/base.scailo_pb.ts:28](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/base.scailo_pb.ts#L28)

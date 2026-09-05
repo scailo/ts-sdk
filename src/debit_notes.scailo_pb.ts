@@ -1862,6 +1862,24 @@ export class DebitNoteItemsSearchRequest extends Message<DebitNoteItemsSearchReq
    */
   searchKey = "";
 
+  /**
+   * ------------------------------------------
+   * Extra filters
+   * The ID of the associated vendor
+   *
+   * @generated from field: uint64 vendor_id = 200;
+   */
+  vendorId = protoInt64.zero;
+
+  /**
+   * The ID of the associated purchase order
+   *
+   * ------------------------------------------
+   *
+   * @generated from field: uint64 purchase_order_id = 210;
+   */
+  purchaseOrderId = protoInt64.zero;
+
   constructor(data?: PartialMessage<DebitNoteItemsSearchRequest>) {
     super();
     proto3.util.initPartial(data, this);
@@ -1886,6 +1904,8 @@ export class DebitNoteItemsSearchRequest extends Message<DebitNoteItemsSearchReq
     { no: 23, name: "vendor_uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 27, name: "tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 40, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 200, name: "vendor_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 210, name: "purchase_order_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): DebitNoteItemsSearchRequest {

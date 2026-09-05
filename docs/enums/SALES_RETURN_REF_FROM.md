@@ -29,7 +29,7 @@ from enum value: SALES_RETURN_REF_FROM_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/sales_returns.scailo_pb.ts#L23)
+[src/sales_returns.scailo_pb.ts:23](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/sales_returns.scailo_pb.ts#L23)
 
 ___
 
@@ -45,4 +45,4 @@ from enum value: SALES_RETURN_REF_FROM_SALES_ORDER = 1;
 
 #### Defined in
 
-[src/sales_returns.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/sales_returns.scailo_pb.ts#L30)
+[src/sales_returns.scailo_pb.ts:30](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/sales_returns.scailo_pb.ts#L30)

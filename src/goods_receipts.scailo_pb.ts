@@ -1688,11 +1688,18 @@ export class GoodsReceiptItemsSearchRequest extends Message<GoodsReceiptItemsSea
    * Extra filters
    * The ID of the associated vendor
    *
-   * ------------------------------------------
-   *
    * @generated from field: uint64 vendor_id = 200;
    */
   vendorId = protoInt64.zero;
+
+  /**
+   * The ID of the associated purchase order
+   *
+   * ------------------------------------------
+   *
+   * @generated from field: uint64 purchase_order_id = 210;
+   */
+  purchaseOrderId = protoInt64.zero;
 
   constructor(data?: PartialMessage<GoodsReceiptItemsSearchRequest>) {
     super();
@@ -1718,6 +1725,7 @@ export class GoodsReceiptItemsSearchRequest extends Message<GoodsReceiptItemsSea
     { no: 24, name: "vendor_uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 40, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 200, name: "vendor_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 210, name: "purchase_order_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
   ]);
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): GoodsReceiptItemsSearchRequest {

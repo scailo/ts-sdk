@@ -742,6 +742,13 @@ export enum FORM_FIELD_ELEMENT {
    * @generated from enum value: FORM_FIELD_ELEMENT_URL = 100;
    */
   FORM_FIELD_ELEMENT_URL = 100,
+
+  /**
+   * The element is a file
+   *
+   * @generated from enum value: FORM_FIELD_ELEMENT_FILE = 110;
+   */
+  FORM_FIELD_ELEMENT_FILE = 110,
 }
 // Retrieve enum metadata with: proto3.getEnumType(FORM_FIELD_ELEMENT)
 proto3.util.setEnumType(FORM_FIELD_ELEMENT, "Scailo.FORM_FIELD_ELEMENT", [
@@ -756,6 +763,7 @@ proto3.util.setEnumType(FORM_FIELD_ELEMENT, "Scailo.FORM_FIELD_ELEMENT", [
   { no: 80, name: "FORM_FIELD_ELEMENT_PHONE" },
   { no: 90, name: "FORM_FIELD_ELEMENT_NUMBER" },
   { no: 100, name: "FORM_FIELD_ELEMENT_URL" },
+  { no: 110, name: "FORM_FIELD_ELEMENT_FILE" },
 ]);
 
 /**

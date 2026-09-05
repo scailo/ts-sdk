@@ -78,7 +78,7 @@ Message\&lt;QuestionnaireSectionsServiceCreateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/questionnaire_sections.scailo_pb.ts:240](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_sections.scailo_pb.ts#L240)
+[src/questionnaire_sections.scailo_pb.ts:422](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/questionnaire_sections.scailo_pb.ts#L422)
 
 ## Properties
 
@@ -112,7 +112,7 @@ from field: optional string description = 20;
 
 #### Defined in
 
-[src/questionnaire_sections.scailo_pb.ts:224](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_sections.scailo_pb.ts#L224)
+[src/questionnaire_sections.scailo_pb.ts:406](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/questionnaire_sections.scailo_pb.ts#L406)
 
 ___
 
@@ -146,7 +146,7 @@ from field: optional string entity_uuid = 1;
 
 #### Defined in
 
-[src/questionnaire_sections.scailo_pb.ts:128](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_sections.scailo_pb.ts#L128)
+[src/questionnaire_sections.scailo_pb.ts:310](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/questionnaire_sections.scailo_pb.ts#L310)
 
 ___
 
@@ -176,7 +176,7 @@ from field: repeated Scailo.FormFieldDatumCreateRequest form_data = 30;
 
 #### Defined in
 
-[src/questionnaire_sections.scailo_pb.ts:238](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_sections.scailo_pb.ts#L238)
+[src/questionnaire_sections.scailo_pb.ts:420](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/questionnaire_sections.scailo_pb.ts#L420)
 
 ___
 
@@ -210,7 +210,7 @@ from field: uint64 questionnaire_template_id = 12;
 
 #### Defined in
 
-[src/questionnaire_sections.scailo_pb.ts:192](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_sections.scailo_pb.ts#L192)
+[src/questionnaire_sections.scailo_pb.ts:374](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/questionnaire_sections.scailo_pb.ts#L374)
 
 ___
 
@@ -244,7 +244,7 @@ from field: string reference_id = 10;
 
 #### Defined in
 
-[src/questionnaire_sections.scailo_pb.ts:176](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_sections.scailo_pb.ts#L176)
+[src/questionnaire_sections.scailo_pb.ts:358](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/questionnaire_sections.scailo_pb.ts#L358)
 
 ___
 
@@ -278,7 +278,7 @@ from field: uint64 sort_order = 13;
 
 #### Defined in
 
-[src/questionnaire_sections.scailo_pb.ts:208](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_sections.scailo_pb.ts#L208)
+[src/questionnaire_sections.scailo_pb.ts:390](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/questionnaire_sections.scailo_pb.ts#L390)
 
 ___
 
@@ -312,7 +312,7 @@ from field: optional string user_comment = 2;
 
 #### Defined in
 
-[src/questionnaire_sections.scailo_pb.ts:144](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_sections.scailo_pb.ts#L144)
+[src/questionnaire_sections.scailo_pb.ts:326](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/questionnaire_sections.scailo_pb.ts#L326)
 
 ___
 
@@ -346,7 +346,7 @@ from field: optional uint64 vault_folder_id = 9;
 
 #### Defined in
 
-[src/questionnaire_sections.scailo_pb.ts:160](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_sections.scailo_pb.ts#L160)
+[src/questionnaire_sections.scailo_pb.ts:342](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/questionnaire_sections.scailo_pb.ts#L342)
 
 ___
 
@@ -356,7 +356,7 @@ ___
 
 #### Defined in
 
-[src/questionnaire_sections.scailo_pb.ts:247](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_sections.scailo_pb.ts#L247)
+[src/questionnaire_sections.scailo_pb.ts:429](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/questionnaire_sections.scailo_pb.ts#L429)
 
 ___
 
@@ -366,7 +366,7 @@ ___
 
 #### Defined in
 
-[src/questionnaire_sections.scailo_pb.ts:245](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_sections.scailo_pb.ts#L245)
+[src/questionnaire_sections.scailo_pb.ts:427](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/questionnaire_sections.scailo_pb.ts#L427)
 
 ___
 
@@ -376,7 +376,7 @@ ___
 
 #### Defined in
 
-[src/questionnaire_sections.scailo_pb.ts:246](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_sections.scailo_pb.ts#L246)
+[src/questionnaire_sections.scailo_pb.ts:428](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/questionnaire_sections.scailo_pb.ts#L428)
 
 ## Methods
 
@@ -664,7 +664,7 @@ ___
 
 #### Defined in
 
-[src/questionnaire_sections.scailo_pb.ts:270](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_sections.scailo_pb.ts#L270)
+[src/questionnaire_sections.scailo_pb.ts:452](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/questionnaire_sections.scailo_pb.ts#L452)
 
 ___
 
@@ -685,7 +685,7 @@ ___
 
 #### Defined in
 
-[src/questionnaire_sections.scailo_pb.ts:258](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_sections.scailo_pb.ts#L258)
+[src/questionnaire_sections.scailo_pb.ts:440](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/questionnaire_sections.scailo_pb.ts#L440)
 
 ___
 
@@ -706,7 +706,7 @@ ___
 
 #### Defined in
 
-[src/questionnaire_sections.scailo_pb.ts:262](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_sections.scailo_pb.ts#L262)
+[src/questionnaire_sections.scailo_pb.ts:444](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/questionnaire_sections.scailo_pb.ts#L444)
 
 ___
 
@@ -727,4 +727,4 @@ ___
 
 #### Defined in
 
-[src/questionnaire_sections.scailo_pb.ts:266](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/questionnaire_sections.scailo_pb.ts#L266)
+[src/questionnaire_sections.scailo_pb.ts:448](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/questionnaire_sections.scailo_pb.ts#L448)

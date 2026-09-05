@@ -3,8 +3,8 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import { QuestionnaireSection, QuestionnaireSectionsList, QuestionnaireSectionsServiceCountReq, QuestionnaireSectionsServiceCreateRequest, QuestionnaireSectionsServiceFilterReq, QuestionnaireSectionsServicePaginationReq, QuestionnaireSectionsServicePaginationResponse, QuestionnaireSectionsServiceSearchAllReq, QuestionnaireSectionsServiceUpdateRequest } from "./questionnaire_sections.scailo_pb.js";
-import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
+import { QuestionnaireSection, QuestionnaireSectionConditionalRule, QuestionnaireSectionConditionalRuleHistoryRequest, QuestionnaireSectionConditionalRulesList, QuestionnaireSectionConditionalRulesSearchRequest, QuestionnaireSectionsList, QuestionnaireSectionsServiceConditionalRuleCreateRequest, QuestionnaireSectionsServiceConditionalRuleUpdateRequest, QuestionnaireSectionsServiceCountReq, QuestionnaireSectionsServiceCreateRequest, QuestionnaireSectionsServiceFilterReq, QuestionnaireSectionsServiceMultipleConditionalRulesCreateRequest, QuestionnaireSectionsServicePaginatedConditionalRulesResponse, QuestionnaireSectionsServicePaginationReq, QuestionnaireSectionsServicePaginationResponse, QuestionnaireSectionsServiceSearchAllReq, QuestionnaireSectionsServiceUpdateRequest } from "./questionnaire_sections.scailo_pb.js";
+import { ActiveStatus, CountInSLCStatusRequest, CountResponse, Empty, Identifier, IdentifierResponse, IdentifiersList, IdentifierUUID, IdentifierUUIDsList, IdentifierUUIDWithFile, IdentifierUUIDWithUserComment, IdentifierWithEmailAttributes, IdentifierWithSearchKey, IdentifierWithUserComment, SimpleSearchReq, StandardFile } from "./base.scailo_pb.js";
 import { MethodKind } from "@bufbuild/protobuf";
 import { VaultFolderAttachRequest } from "./vault_folders.scailo_pb.js";
 
@@ -297,6 +297,219 @@ export const QuestionnaireSectionsService = {
       name: "AttachVaultFolder",
       I: VaultFolderAttachRequest,
       O: IdentifierResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Appends multiple conditional rules to an existing Questionnaire Section in a single batch transaction.
+     *
+     * **Side Effects:**
+     * - Dynamically calculates base pricing, discounts, and taxes for each item in the batch.
+     * - Attaches the newly created conditional rules to the parent questionnaire section.
+     * - May place the items into a pending approval state depending on system configuration.
+     * - Appends a unified audit trail entry tracking the batch creation event.
+     *
+     * @generated from rpc Scailo.QuestionnaireSectionsService.AddMultipleConditionalRules
+     */
+    addMultipleConditionalRules: {
+      name: "AddMultipleConditionalRules",
+      I: QuestionnaireSectionsServiceMultipleConditionalRulesCreateRequest,
+      O: IdentifierResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Appends a single conditional rule to an existing Questionnaire Section.
+     *
+     * **Side Effects:**
+     * - Validates product family eligibility and calculates financial totals for the requested quantities.
+     * - Attaches the new conditional rule to the parent order.
+     * - Appends an audit trail entry tracking the creation and user justification.
+     *
+     * @generated from rpc Scailo.QuestionnaireSectionsService.AddConditionalRule
+     */
+    addConditionalRule: {
+      name: "AddConditionalRule",
+      I: QuestionnaireSectionsServiceConditionalRuleCreateRequest,
+      O: IdentifiersList,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Modifies the core transactional parameters (including quantities and client units) of an existing conditional rule.
+     *
+     * **Side Effects:**
+     * - Overwrites the previous quantities, terms, and specifications of the item.
+     * - Triggers a recalculation of the parent questionnaire section's grand total.
+     * - May reset the item's approval status, requiring re-authorization.
+     * - Appends an audit trail entry tracking the modifications.
+     *
+     * @generated from rpc Scailo.QuestionnaireSectionsService.ModifyConditionalRule
+     */
+    modifyConditionalRule: {
+      name: "ModifyConditionalRule",
+      I: QuestionnaireSectionsServiceConditionalRuleUpdateRequest,
+      O: IdentifiersList,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Approves a pending conditional rule, finalizing its active status within the questionnaire section.
+     *
+     * **Side Effects:**
+     * - Activates the conditional rule, making it eligible for dispatch and invoicing workflows.
+     * - Appends the required approval metadata, timestamp, and audit comment to the record's history.
+     *
+     * @generated from rpc Scailo.QuestionnaireSectionsService.ApproveConditionalRule
+     */
+    approveConditionalRule: {
+      name: "ApproveConditionalRule",
+      I: IdentifierWithUserComment,
+      O: IdentifierResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Permanently removes or deactivates a conditional rule from the questionnaire section.
+     *
+     * **Side Effects:**
+     * - Revokes the item from the order, subtracting its value from the grand total.
+     * - Logs the deletion justification comment into the system compliance log.
+     *
+     * @generated from rpc Scailo.QuestionnaireSectionsService.DeleteConditionalRule
+     */
+    deleteConditionalRule: {
+      name: "DeleteConditionalRule",
+      I: IdentifierWithUserComment,
+      O: IdentifierResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Retrieves the complete, finalized details of a specific conditional rule by its internal sequence ID.
+     *
+     * This is a read-only operation that fetches full metadata, approval histories, and calculated financial values.
+     *
+     * @generated from rpc Scailo.QuestionnaireSectionsService.ViewConditionalRuleByID
+     */
+    viewConditionalRuleByID: {
+      name: "ViewConditionalRuleByID",
+      I: Identifier,
+      O: QuestionnaireSectionConditionalRule,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Lists all active, fully approved conditional rules mapped to a specific questionnaire section ID.
+     *
+     * This read-only query is optimized for rendering the finalized order summary on frontend interfaces and printed invoices.
+     *
+     * @generated from rpc Scailo.QuestionnaireSectionsService.ViewApprovedConditionalRules
+     */
+    viewApprovedConditionalRules: {
+      name: "ViewApprovedConditionalRules",
+      I: IdentifierWithSearchKey,
+      O: QuestionnaireSectionConditionalRulesList,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Lists pending or unapproved conditional rules mapped to a specific questionnaire section ID.
+     *
+     * This read-only query is utilized primarily by administrative dashboards to quickly identify order lines awaiting financial or operational authorization.
+     *
+     * @generated from rpc Scailo.QuestionnaireSectionsService.ViewUnapprovedConditionalRules
+     */
+    viewUnapprovedConditionalRules: {
+      name: "ViewUnapprovedConditionalRules",
+      I: IdentifierWithSearchKey,
+      O: QuestionnaireSectionConditionalRulesList,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Retrieves the historical audit trail and lifecycle changes of a specific conditional rule.
+     *
+     * This read-only operation aggregates the chronological evolution of the item, tracking term adjustments, specification updates, and state changes.
+     *
+     * @generated from rpc Scailo.QuestionnaireSectionsService.ViewConditionalRuleHistory
+     */
+    viewConditionalRuleHistory: {
+      name: "ViewConditionalRuleHistory",
+      I: QuestionnaireSectionConditionalRuleHistoryRequest,
+      O: QuestionnaireSectionConditionalRulesList,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Lists active, approved conditional rules using robust pagination controls.
+     *
+     * This read-only query is optimized for rendering extremely large orders in frontend data tables, supporting explicit windowing parameters.
+     *
+     * @generated from rpc Scailo.QuestionnaireSectionsService.ViewPaginatedApprovedConditionalRules
+     */
+    viewPaginatedApprovedConditionalRules: {
+      name: "ViewPaginatedApprovedConditionalRules",
+      I: QuestionnaireSectionConditionalRulesSearchRequest,
+      O: QuestionnaireSectionsServicePaginatedConditionalRulesResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Lists pending or unapproved conditional rules using robust pagination controls.
+     *
+     * This read-only query is optimized for administrative review dashboards handling high volumes of unapproved items.
+     *
+     * @generated from rpc Scailo.QuestionnaireSectionsService.ViewPaginatedUnapprovedConditionalRules
+     */
+    viewPaginatedUnapprovedConditionalRules: {
+      name: "ViewPaginatedUnapprovedConditionalRules",
+      I: QuestionnaireSectionConditionalRulesSearchRequest,
+      O: QuestionnaireSectionsServicePaginatedConditionalRulesResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Searches through all conditional rules using advanced filters, status flags, fuzzy text matching, and pagination.
+     *
+     * This read-only query is the primary entry point for complex lookups across massive order catalogs.
+     *
+     * @generated from rpc Scailo.QuestionnaireSectionsService.SearchConditionalRulesWithPagination
+     */
+    searchConditionalRulesWithPagination: {
+      name: "SearchConditionalRulesWithPagination",
+      I: QuestionnaireSectionConditionalRulesSearchRequest,
+      O: QuestionnaireSectionsServicePaginatedConditionalRulesResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Exports the current list of conditional rules for a specific questionnaire section into a downloadable CSV file.
+     *
+     * This read-only operation is used by administrators to audit large orders offline, or as a baseline to modify items locally before executing a bulk upload.
+     *
+     * @generated from rpc Scailo.QuestionnaireSectionsService.DownloadConditionalRulesAsCSV
+     */
+    downloadConditionalRulesAsCSV: {
+      name: "DownloadConditionalRulesAsCSV",
+      I: IdentifierUUID,
+      O: StandardFile,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Generates and downloads a blank, structurally compliant CSV template.
+     *
+     * This read-only operation provides clients with the exact column headers required to successfully perform a bulk line-item upload.
+     *
+     * @generated from rpc Scailo.QuestionnaireSectionsService.DownloadConditionalRulesTemplateAsCSV
+     */
+    downloadConditionalRulesTemplateAsCSV: {
+      name: "DownloadConditionalRulesTemplateAsCSV",
+      I: Empty,
+      O: StandardFile,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * Processes a bulk ingestion of conditional rules for a specific questionnaire section via a CSV file upload.
+     *
+     * **Side Effects:**
+     * - **CRITICAL:** This is an idempotent, destructive operation. It automatically deletes all existing conditional rules currently mapped to the questionnaire section before applying the new items from the CSV.
+     * - Wipes the current active list and replaces it entirely with the parsed file contents.
+     * - Triggers recalculations of order totals and appends creation audit logs for the newly imported items.
+     *
+     * @generated from rpc Scailo.QuestionnaireSectionsService.UploadConditionalRules
+     */
+    uploadConditionalRules: {
+      name: "UploadConditionalRules",
+      I: IdentifierUUIDWithFile,
+      O: IdentifiersList,
       kind: MethodKind.Unary,
     },
     /**

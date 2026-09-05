@@ -2545,11 +2545,17 @@ export declare class VendorInvoiceItemsSearchRequest extends Message<VendorInvoi
      * Extra filters
      * The ID of the associated vendor
      *
-     * ------------------------------------------
-     *
      * @generated from field: uint64 vendor_id = 200;
      */
     vendorId: bigint;
+    /**
+     * The ID of the associated purchase order
+     *
+     * ------------------------------------------
+     *
+     * @generated from field: uint64 purchase_order_id = 210;
+     */
+    purchaseOrderId: bigint;
     constructor(data?: PartialMessage<VendorInvoiceItemsSearchRequest>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.VendorInvoiceItemsSearchRequest";

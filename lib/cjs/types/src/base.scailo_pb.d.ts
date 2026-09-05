@@ -562,7 +562,13 @@ export declare enum FORM_FIELD_ELEMENT {
      *
      * @generated from enum value: FORM_FIELD_ELEMENT_URL = 100;
      */
-    FORM_FIELD_ELEMENT_URL = 100
+    FORM_FIELD_ELEMENT_URL = 100,
+    /**
+     * The element is a file
+     *
+     * @generated from enum value: FORM_FIELD_ELEMENT_FILE = 110;
+     */
+    FORM_FIELD_ELEMENT_FILE = 110
 }
 /**
  *

@@ -1974,6 +1974,36 @@ export declare class WorkOrderItemsSearchRequest extends Message<WorkOrderItemsS
      * @generated from field: string search_key = 40;
      */
     searchKey: string;
+    /**
+     *
+     * @optional
+     *
+     * @description Filter line items by the unique internal identifier of the buyer client (the entity financially responsible) associated with the linked source document (e.g., Sales Order).
+     *
+     * @example 1051
+     *
+     * @regex ^[0-9]+$
+     *
+     * @format Non-negative integer.
+     *
+     * @generated from field: uint64 buyer_client_id = 200;
+     */
+    buyerClientId: bigint;
+    /**
+     *
+     * @optional
+     *
+     * @description Filter line items by the unique internal identifier of the sales order.
+     *
+     * @example 1024
+     *
+     * @regex ^[1-9][0-9]*$
+     *
+     * @format Unsigned 64-bit integer greater than 0.
+     *
+     * @generated from field: uint64 sales_order_id = 210;
+     */
+    salesOrderId: bigint;
     constructor(data?: PartialMessage<WorkOrderItemsSearchRequest>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.WorkOrderItemsSearchRequest";

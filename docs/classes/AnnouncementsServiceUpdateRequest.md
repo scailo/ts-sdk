@@ -79,7 +79,7 @@ Message\&lt;AnnouncementsServiceUpdateRequest\&gt;.constructor
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:404](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/announcements.scailo_pb.ts#L404)
+[src/announcements.scailo_pb.ts:404](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/announcements.scailo_pb.ts#L404)
 
 ## Properties
 
@@ -113,7 +113,7 @@ from field: optional string description = 11;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:370](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/announcements.scailo_pb.ts#L370)
+[src/announcements.scailo_pb.ts:370](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/announcements.scailo_pb.ts#L370)
 
 ___
 
@@ -147,7 +147,7 @@ from field: optional uint64 end_on = 13;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:402](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/announcements.scailo_pb.ts#L402)
+[src/announcements.scailo_pb.ts:402](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/announcements.scailo_pb.ts#L402)
 
 ___
 
@@ -181,7 +181,7 @@ from field: uint64 id = 2;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:310](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/announcements.scailo_pb.ts#L310)
+[src/announcements.scailo_pb.ts:310](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/announcements.scailo_pb.ts#L310)
 
 ___
 
@@ -207,7 +207,7 @@ from field: optional bool notify_users = 3;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:322](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/announcements.scailo_pb.ts#L322)
+[src/announcements.scailo_pb.ts:322](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/announcements.scailo_pb.ts#L322)
 
 ___
 
@@ -241,7 +241,7 @@ from field: optional uint64 start_on = 12;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:386](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/announcements.scailo_pb.ts#L386)
+[src/announcements.scailo_pb.ts:386](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/announcements.scailo_pb.ts#L386)
 
 ___
 
@@ -275,7 +275,7 @@ from field: optional string title = 10;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:354](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/announcements.scailo_pb.ts#L354)
+[src/announcements.scailo_pb.ts:354](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/announcements.scailo_pb.ts#L354)
 
 ___
 
@@ -309,7 +309,7 @@ from field: optional string user_comment = 1;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:294](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/announcements.scailo_pb.ts#L294)
+[src/announcements.scailo_pb.ts:294](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/announcements.scailo_pb.ts#L294)
 
 ___
 
@@ -343,7 +343,7 @@ from field: optional uint64 vault_folder_id = 9;
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:338](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/announcements.scailo_pb.ts#L338)
+[src/announcements.scailo_pb.ts:338](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/announcements.scailo_pb.ts#L338)
 
 ___
 
@@ -353,7 +353,7 @@ ___
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:411](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/announcements.scailo_pb.ts#L411)
+[src/announcements.scailo_pb.ts:411](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/announcements.scailo_pb.ts#L411)
 
 ___
 
@@ -363,7 +363,7 @@ ___
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:409](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/announcements.scailo_pb.ts#L409)
+[src/announcements.scailo_pb.ts:409](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/announcements.scailo_pb.ts#L409)
 
 ___
 
@@ -373,7 +373,7 @@ ___
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:410](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/announcements.scailo_pb.ts#L410)
+[src/announcements.scailo_pb.ts:410](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/announcements.scailo_pb.ts#L410)
 
 ## Methods
 
@@ -661,7 +661,7 @@ ___
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:434](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/announcements.scailo_pb.ts#L434)
+[src/announcements.scailo_pb.ts:434](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/announcements.scailo_pb.ts#L434)
 
 ___
 
@@ -682,7 +682,7 @@ ___
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:422](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/announcements.scailo_pb.ts#L422)
+[src/announcements.scailo_pb.ts:422](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/announcements.scailo_pb.ts#L422)
 
 ___
 
@@ -703,7 +703,7 @@ ___
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:426](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/announcements.scailo_pb.ts#L426)
+[src/announcements.scailo_pb.ts:426](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/announcements.scailo_pb.ts#L426)
 
 ___
 
@@ -724,4 +724,4 @@ ___
 
 #### Defined in
 
-[src/announcements.scailo_pb.ts:430](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/announcements.scailo_pb.ts#L430)
+[src/announcements.scailo_pb.ts:430](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/announcements.scailo_pb.ts#L430)

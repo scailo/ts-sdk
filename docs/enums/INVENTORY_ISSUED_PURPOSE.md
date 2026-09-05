@@ -40,7 +40,7 @@ from enum value: INVENTORY_ISSUED_PURPOSE_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:1108](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/base.scailo_pb.ts#L1108)
+[src/base.scailo_pb.ts:1116](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/base.scailo_pb.ts#L1116)
 
 ___
 
@@ -56,7 +56,7 @@ from enum value: INVENTORY_ISSUED_PURPOSE_GOODS_DISPATCH = 5;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:1143](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/base.scailo_pb.ts#L1143)
+[src/base.scailo_pb.ts:1151](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/base.scailo_pb.ts#L1151)
 
 ___
 
@@ -72,7 +72,7 @@ from enum value: INVENTORY_ISSUED_PURPOSE_INITIAL_STOCK = 7;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:1157](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/base.scailo_pb.ts#L1157)
+[src/base.scailo_pb.ts:1165](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/base.scailo_pb.ts#L1165)
 
 ___
 
@@ -88,7 +88,7 @@ from enum value: INVENTORY_ISSUED_PURPOSE_INTAKE = 6;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:1150](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/base.scailo_pb.ts#L1150)
+[src/base.scailo_pb.ts:1158](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/base.scailo_pb.ts#L1158)
 
 ___
 
@@ -104,7 +104,7 @@ from enum value: INVENTORY_ISSUED_PURPOSE_INWARD_JOB_FREE_ISSUE_MATERIAL_RETURN 
 
 #### Defined in
 
-[src/base.scailo_pb.ts:1192](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/base.scailo_pb.ts#L1192)
+[src/base.scailo_pb.ts:1200](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/base.scailo_pb.ts#L1200)
 
 ___
 
@@ -120,7 +120,7 @@ from enum value: INVENTORY_ISSUED_PURPOSE_OUTWARD_JOB_FREE_ISSUE_MATERIAL = 10;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:1178](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/base.scailo_pb.ts#L1178)
+[src/base.scailo_pb.ts:1186](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/base.scailo_pb.ts#L1186)
 
 ___
 
@@ -136,7 +136,7 @@ from enum value: INVENTORY_ISSUED_PURPOSE_OUTWARD_JOB_FREE_ISSUE_MATERIAL_RETURN
 
 #### Defined in
 
-[src/base.scailo_pb.ts:1185](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/base.scailo_pb.ts#L1185)
+[src/base.scailo_pb.ts:1193](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/base.scailo_pb.ts#L1193)
 
 ___
 
@@ -152,7 +152,7 @@ from enum value: INVENTORY_ISSUED_PURPOSE_PURCHASE_RETURN = 9;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:1171](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/base.scailo_pb.ts#L1171)
+[src/base.scailo_pb.ts:1179](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/base.scailo_pb.ts#L1179)
 
 ___
 
@@ -168,7 +168,7 @@ from enum value: INVENTORY_ISSUED_PURPOSE_SALES_RETURN = 8;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:1164](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/base.scailo_pb.ts#L1164)
+[src/base.scailo_pb.ts:1172](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/base.scailo_pb.ts#L1172)
 
 ___
 
@@ -184,7 +184,7 @@ from enum value: INVENTORY_ISSUED_PURPOSE_STOCK_AUDIT = 2;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:1122](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/base.scailo_pb.ts#L1122)
+[src/base.scailo_pb.ts:1130](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/base.scailo_pb.ts#L1130)
 
 ___
 
@@ -200,7 +200,7 @@ from enum value: INVENTORY_ISSUED_PURPOSE_STOCK_ISSUANCE = 1;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:1115](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/base.scailo_pb.ts#L1115)
+[src/base.scailo_pb.ts:1123](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/base.scailo_pb.ts#L1123)
 
 ___
 
@@ -216,7 +216,7 @@ from enum value: INVENTORY_ISSUED_PURPOSE_STOCK_RETURN = 4;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:1136](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/base.scailo_pb.ts#L1136)
+[src/base.scailo_pb.ts:1144](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/base.scailo_pb.ts#L1144)
 
 ___
 
@@ -232,4 +232,4 @@ from enum value: INVENTORY_ISSUED_PURPOSE_STOCK_SPLIT = 3;
 
 #### Defined in
 
-[src/base.scailo_pb.ts:1129](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/base.scailo_pb.ts#L1129)
+[src/base.scailo_pb.ts:1137](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/base.scailo_pb.ts#L1137)

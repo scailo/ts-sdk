@@ -100,6 +100,188 @@ proto3.util.setEnumType(QUESTIONNAIRE_SECTION_SORT_KEY, "Scailo.QUESTIONNAIRE_SE
 ]);
 
 /**
+ * @generated from enum Scailo.QUESTIONNAIRE_SECTION_SERVICE_CONDITIONAL_RULE_OPERATOR
+ */
+export enum QUESTIONNAIRE_SECTION_SERVICE_CONDITIONAL_RULE_OPERATOR {
+  /**
+   * @description Default sort behavior (by internal item sequence ID).
+   *
+   * @generated from enum value: QUESTIONNAIRE_SECTION_SERVICE_CONDITIONAL_RULE_OPERATOR_UNSPECIFIED = 0;
+   */
+  QUESTIONNAIRE_SECTION_SERVICE_CONDITIONAL_RULE_OPERATOR_UNSPECIFIED = 0,
+}
+// Retrieve enum metadata with: proto3.getEnumType(QUESTIONNAIRE_SECTION_SERVICE_CONDITIONAL_RULE_OPERATOR)
+proto3.util.setEnumType(QUESTIONNAIRE_SECTION_SERVICE_CONDITIONAL_RULE_OPERATOR, "Scailo.QUESTIONNAIRE_SECTION_SERVICE_CONDITIONAL_RULE_OPERATOR", [
+  { no: 0, name: "QUESTIONNAIRE_SECTION_SERVICE_CONDITIONAL_RULE_OPERATOR_UNSPECIFIED" },
+]);
+
+/**
+ *
+ * Enumeration of fields available for sorting sales order item search results.
+ *
+ * @generated from enum Scailo.QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY
+ */
+export enum QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY {
+  /**
+   * @description Default sort behavior (by internal item sequence ID).
+   *
+   * @generated from enum value: QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY_ID_UNSPECIFIED = 0;
+   */
+  QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY_ID_UNSPECIFIED = 0,
+
+  /**
+   * @description Sort by the timestamp the item record was initially created.
+   *
+   * @generated from enum value: QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY_CREATED_AT = 1;
+   */
+  QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY_CREATED_AT = 1,
+
+  /**
+   * @description Sort by the timestamp the item record was last modified.
+   *
+   * @generated from enum value: QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY_MODIFIED_AT = 2;
+   */
+  QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY_MODIFIED_AT = 2,
+
+  /**
+   * @description Sort by the official approval timestamp of the item.
+   *
+   * @generated from enum value: QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY_APPROVED_ON = 3;
+   */
+  QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY_APPROVED_ON = 3,
+
+  /**
+   * @description Sort by the system ID of the approving user.
+   *
+   * @generated from enum value: QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY_APPROVED_BY = 4;
+   */
+  QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY_APPROVED_BY = 4,
+
+  /**
+   * @description Sort by the security role ID used by the approver.
+   *
+   * @generated from enum value: QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY_APPROVER_ROLE_ID = 5;
+   */
+  QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY_APPROVER_ROLE_ID = 5,
+
+  /**
+   * @description Sort by the internal ID of the family.
+   *
+   * @generated from enum value: QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY_FAMILY_ID = 10;
+   */
+  QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY_FAMILY_ID = 10,
+
+  /**
+   * @description Sort by the ordered quantity evaluated in the internal unit of measure.
+   *
+   * @generated from enum value: QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY_INTERNAL_QUANTITY = 11;
+   */
+  QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY_INTERNAL_QUANTITY = 11,
+
+  /**
+   * @description Sort by the internal ID of the client's requested unit of measure.
+   *
+   * @generated from enum value: QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY_CLIENT_UOM_ID = 12;
+   */
+  QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY_CLIENT_UOM_ID = 12,
+
+  /**
+   * @description Sort by the ordered quantity evaluated in the client's unit of measure.
+   *
+   * @generated from enum value: QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY_CLIENT_QUANTITY = 13;
+   */
+  QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY_CLIENT_QUANTITY = 13,
+
+  /**
+   * @description Sort alphabetically by the client's specific family code or SKU.
+   *
+   * @generated from enum value: QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY_CLIENT_FAMILY_CODE = 14;
+   */
+  QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY_CLIENT_FAMILY_CODE = 14,
+
+  /**
+   * @description Sort by the agreed-upon base unit price.
+   *
+   * @generated from enum value: QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY_UNIT_PRICE = 15;
+   */
+  QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY_UNIT_PRICE = 15,
+
+  /**
+   * @description Sort by the internal ID of the assigned tax group.
+   *
+   * @generated from enum value: QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY_TAX_GROUP_ID = 16;
+   */
+  QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY_TAX_GROUP_ID = 16,
+
+  /**
+   * @description Sort by the percentage discount applied to the item.
+   *
+   * @generated from enum value: QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY_DISCOUNT = 17;
+   */
+  QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY_DISCOUNT = 17,
+
+  /**
+   * @description Sort chronologically by the target delivery date for the item.
+   *
+   * @generated from enum value: QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY_DELIVERY_DATE = 18;
+   */
+  QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY_DELIVERY_DATE = 18,
+}
+// Retrieve enum metadata with: proto3.getEnumType(QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY)
+proto3.util.setEnumType(QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY, "Scailo.QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY", [
+  { no: 0, name: "QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY_ID_UNSPECIFIED" },
+  { no: 1, name: "QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY_CREATED_AT" },
+  { no: 2, name: "QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY_MODIFIED_AT" },
+  { no: 3, name: "QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY_APPROVED_ON" },
+  { no: 4, name: "QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY_APPROVED_BY" },
+  { no: 5, name: "QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY_APPROVER_ROLE_ID" },
+  { no: 10, name: "QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY_FAMILY_ID" },
+  { no: 11, name: "QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY_INTERNAL_QUANTITY" },
+  { no: 12, name: "QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY_CLIENT_UOM_ID" },
+  { no: 13, name: "QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY_CLIENT_QUANTITY" },
+  { no: 14, name: "QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY_CLIENT_FAMILY_CODE" },
+  { no: 15, name: "QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY_UNIT_PRICE" },
+  { no: 16, name: "QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY_TAX_GROUP_ID" },
+  { no: 17, name: "QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY_DISCOUNT" },
+  { no: 18, name: "QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY_DELIVERY_DATE" },
+]);
+
+/**
+ *
+ * Enum defining the applicable lifecycle and verification statuses for sales order items.
+ *
+ * @generated from enum Scailo.QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_STATUS
+ */
+export enum QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_STATUS {
+  /**
+   * @description Denotes that the status filter should be disregarded. Used exclusively within search APIs to bypass status restrictions.
+   *
+   * @generated from enum value: QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_STATUS_ANY_UNSPECIFIED = 0;
+   */
+  QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_STATUS_ANY_UNSPECIFIED = 0,
+
+  /**
+   * @description Denotes that the sales order item association has passed verification and is actively approved.
+   *
+   * @generated from enum value: QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_STATUS_APPROVED = 1;
+   */
+  QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_STATUS_APPROVED = 1,
+
+  /**
+   * @description Denotes that the sales order item association is pending review and waiting for administrative approval.
+   *
+   * @generated from enum value: QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_STATUS_UNAPPROVED = 2;
+   */
+  QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_STATUS_UNAPPROVED = 2,
+}
+// Retrieve enum metadata with: proto3.getEnumType(QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_STATUS)
+proto3.util.setEnumType(QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_STATUS, "Scailo.QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_STATUS", [
+  { no: 0, name: "QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_STATUS_ANY_UNSPECIFIED" },
+  { no: 1, name: "QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_STATUS_APPROVED" },
+  { no: 2, name: "QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_STATUS_UNAPPROVED" },
+]);
+
+/**
  *
  * Request message for defining and creating a new Section within a Questionnaire Template.
  * This record acts as a structural container to logically group survey questions,
@@ -1735,6 +1917,1619 @@ export class QuestionnaireSectionsServiceSearchAllReq extends Message<Questionna
 
   static equals(a: QuestionnaireSectionsServiceSearchAllReq | PlainMessage<QuestionnaireSectionsServiceSearchAllReq> | undefined, b: QuestionnaireSectionsServiceSearchAllReq | PlainMessage<QuestionnaireSectionsServiceSearchAllReq> | undefined): boolean {
     return proto3.util.equals(QuestionnaireSectionsServiceSearchAllReq, a, b);
+  }
+}
+
+/**
+ *
+ * Request message for appending a new individual line item to an existing Questionnaire Section.
+ * This payload defines the specific family, quantities mapped between internal
+ * and client-specific units of measure, commercial terms (price, tax, discount),
+ * and delivery expectations for the item.
+ *
+ * @generated from message Scailo.QuestionnaireSectionsServiceConditionalRuleCreateRequest
+ */
+export class QuestionnaireSectionsServiceConditionalRuleCreateRequest extends Message<QuestionnaireSectionsServiceConditionalRuleCreateRequest> {
+  /**
+   *
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
+   */
+  userComment?: string;
+
+  /**
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the parent questionnaire section to which this item will be attached.
+   *
+   * @example 1024
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: uint64 questionnaire_section_id = 10;
+   */
+  questionnaireSectionId = protoInt64.zero;
+
+  /**
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the family or catalog item being ordered.
+   *
+   * @example 505
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: uint64 family_id = 12;
+   */
+  familyId = protoInt64.zero;
+
+  /**
+   *
+   * @mandatory
+   *
+   * @description The ordered quantity represented in the system's internal base unit of measure. Stored in subunits (cents) to maintain fractional precision.
+   *
+   * @example 10000
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: uint64 internal_quantity = 13;
+   */
+  internalQuantity = protoInt64.zero;
+
+  /**
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the Unit of Measure (UOM) requested by the client for this item.
+   *
+   * @example 12
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: uint64 client_uom_id = 14;
+   */
+  clientUomId = protoInt64.zero;
+
+  /**
+   *
+   * @mandatory
+   *
+   * @description The ordered quantity represented in the client's specific unit of measure. Stored in subunits (cents) to maintain fractional precision.
+   *
+   * @example 5000
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: uint64 client_quantity = 15;
+   */
+  clientQuantity = protoInt64.zero;
+
+  /**
+   *
+   * @optional
+   *
+   * @description The client's specific alphanumeric part number, SKU, or family code used for their internal referencing.
+   *
+   * @example "CLI-SKU-992"
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string client_family_code = 16;
+   */
+  clientFamilyCode?: string;
+
+  /**
+   *
+   * @mandatory
+   *
+   * @description The agreed-upon price per unit for this item, represented in the base currency subunit (e.g., cents).
+   *
+   * @example 2500
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: uint64 unit_price = 17;
+   */
+  unitPrice = protoInt64.zero;
+
+  /**
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the tax group or tax bracket applicable to this specific line item.
+   *
+   * @example 4
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: uint64 tax_group_id = 18;
+   */
+  taxGroupId = protoInt64.zero;
+
+  /**
+   *
+   * @mandatory
+   *
+   * @description The discount percentage applied to this specific item, represented in subunits (e.g., 1500 for 15.00%).
+   *
+   * @example 1500
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: uint64 discount = 19;
+   */
+  discount = protoInt64.zero;
+
+  /**
+   *
+   * @mandatory
+   *
+   * @description The specific target delivery date for this line item, which may differ from the overall order's delivery schedule.
+   *
+   * @example "2023-11-15"
+   *
+   * @regex .+
+   *
+   * @format Must be a non-empty string. Expected to follow the standard date format designated by the client (e.g., YYYY-MM-DD).
+   *
+   * @generated from field: string delivery_date = 20;
+   */
+  deliveryDate = "";
+
+  /**
+   *
+   * @optional
+   *
+   * @description Additional custom textual requirements, manufacturing notes, or specifications for fulfilling this item.
+   *
+   * @example "Requires double-reinforced packaging for international transit."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string specifications = 21;
+   */
+  specifications?: string;
+
+  /**
+   *
+   * @optional
+   *
+   * @description A boolean flag indicating whether this specific line item is eligible to be processed for invoicing.
+   *
+   * @example true
+   *
+   * @regex ^(?:true|false)$
+   *
+   * @format Boolean true or false.
+   *
+   * @generated from field: optional bool is_invoiceable = 22;
+   */
+  isInvoiceable?: boolean;
+
+  constructor(data?: PartialMessage<QuestionnaireSectionsServiceConditionalRuleCreateRequest>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.QuestionnaireSectionsServiceConditionalRuleCreateRequest";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "questionnaire_section_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 12, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 13, name: "internal_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 14, name: "client_uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 15, name: "client_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 16, name: "client_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 17, name: "unit_price", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 18, name: "tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 19, name: "discount", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 20, name: "delivery_date", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 22, name: "is_invoiceable", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): QuestionnaireSectionsServiceConditionalRuleCreateRequest {
+    return new QuestionnaireSectionsServiceConditionalRuleCreateRequest().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QuestionnaireSectionsServiceConditionalRuleCreateRequest {
+    return new QuestionnaireSectionsServiceConditionalRuleCreateRequest().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QuestionnaireSectionsServiceConditionalRuleCreateRequest {
+    return new QuestionnaireSectionsServiceConditionalRuleCreateRequest().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: QuestionnaireSectionsServiceConditionalRuleCreateRequest | PlainMessage<QuestionnaireSectionsServiceConditionalRuleCreateRequest> | undefined, b: QuestionnaireSectionsServiceConditionalRuleCreateRequest | PlainMessage<QuestionnaireSectionsServiceConditionalRuleCreateRequest> | undefined): boolean {
+    return proto3.util.equals(QuestionnaireSectionsServiceConditionalRuleCreateRequest, a, b);
+  }
+}
+
+/**
+ *
+ * Represents a single line item payload within a bulk creation request.
+ * Contains the exact same transactional parameters as a standard item creation request,
+ * omitting the parent order ID which is declared once at the batch level.
+ *
+ * @generated from message Scailo.QuestionnaireSectionsServiceMultipleConditionalRulesSingleton
+ */
+export class QuestionnaireSectionsServiceMultipleConditionalRulesSingleton extends Message<QuestionnaireSectionsServiceMultipleConditionalRulesSingleton> {
+  /**
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the family or catalog item being ordered.
+   *
+   * @example 505
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: uint64 family_id = 12;
+   */
+  familyId = protoInt64.zero;
+
+  /**
+   *
+   * @mandatory
+   *
+   * @description The ordered quantity represented in the system's internal base unit of measure. Stored in subunits (cents) to maintain fractional precision.
+   *
+   * @example 10000
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: uint64 internal_quantity = 13;
+   */
+  internalQuantity = protoInt64.zero;
+
+  /**
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the Unit of Measure (UOM) requested by the client for this item.
+   *
+   * @example 12
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: uint64 client_uom_id = 14;
+   */
+  clientUomId = protoInt64.zero;
+
+  /**
+   *
+   * @mandatory
+   *
+   * @description The ordered quantity represented in the client's specific unit of measure. Stored in subunits (cents) to maintain fractional precision.
+   *
+   * @example 5000
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: uint64 client_quantity = 15;
+   */
+  clientQuantity = protoInt64.zero;
+
+  /**
+   *
+   * @optional
+   *
+   * @description The client's specific alphanumeric part number, SKU, or family code used for their internal referencing.
+   *
+   * @example "CLI-SKU-992"
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string client_family_code = 16;
+   */
+  clientFamilyCode?: string;
+
+  /**
+   *
+   * @mandatory
+   *
+   * @description The agreed-upon price per unit for this item, represented in the base currency subunit (e.g., cents).
+   *
+   * @example 2500
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: uint64 unit_price = 17;
+   */
+  unitPrice = protoInt64.zero;
+
+  /**
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the tax group or tax bracket applicable to this specific line item.
+   *
+   * @example 4
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: uint64 tax_group_id = 18;
+   */
+  taxGroupId = protoInt64.zero;
+
+  /**
+   *
+   * @mandatory
+   *
+   * @description The discount percentage applied to this specific item, represented in subunits (e.g., 1500 for 15.00%).
+   *
+   * @example 1500
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: uint64 discount = 19;
+   */
+  discount = protoInt64.zero;
+
+  /**
+   *
+   * @mandatory
+   *
+   * @description The specific target delivery date for this line item, which may differ from the overall order's delivery schedule.
+   *
+   * @example "2023-11-15"
+   *
+   * @regex .+
+   *
+   * @format Must be a non-empty string. Expected to follow the standard date format designated by the client (e.g., YYYY-MM-DD).
+   *
+   * @generated from field: string delivery_date = 20;
+   */
+  deliveryDate = "";
+
+  /**
+   *
+   * @optional
+   *
+   * @description Additional custom textual requirements, manufacturing notes, or specifications for fulfilling this item.
+   *
+   * @example "Requires double-reinforced packaging for international transit."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string specifications = 21;
+   */
+  specifications?: string;
+
+  /**
+   *
+   * @optional
+   *
+   * @description A boolean flag indicating whether this specific line item is eligible to be processed for invoicing.
+   *
+   * @example true
+   *
+   * @regex ^(?:true|false)$
+   *
+   * @format Boolean true or false.
+   *
+   * @generated from field: optional bool is_invoiceable = 22;
+   */
+  isInvoiceable?: boolean;
+
+  constructor(data?: PartialMessage<QuestionnaireSectionsServiceMultipleConditionalRulesSingleton>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.QuestionnaireSectionsServiceMultipleConditionalRulesSingleton";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 12, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 13, name: "internal_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 14, name: "client_uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 15, name: "client_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 16, name: "client_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 17, name: "unit_price", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 18, name: "tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 19, name: "discount", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 20, name: "delivery_date", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 22, name: "is_invoiceable", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): QuestionnaireSectionsServiceMultipleConditionalRulesSingleton {
+    return new QuestionnaireSectionsServiceMultipleConditionalRulesSingleton().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QuestionnaireSectionsServiceMultipleConditionalRulesSingleton {
+    return new QuestionnaireSectionsServiceMultipleConditionalRulesSingleton().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QuestionnaireSectionsServiceMultipleConditionalRulesSingleton {
+    return new QuestionnaireSectionsServiceMultipleConditionalRulesSingleton().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: QuestionnaireSectionsServiceMultipleConditionalRulesSingleton | PlainMessage<QuestionnaireSectionsServiceMultipleConditionalRulesSingleton> | undefined, b: QuestionnaireSectionsServiceMultipleConditionalRulesSingleton | PlainMessage<QuestionnaireSectionsServiceMultipleConditionalRulesSingleton> | undefined): boolean {
+    return proto3.util.equals(QuestionnaireSectionsServiceMultipleConditionalRulesSingleton, a, b);
+  }
+}
+
+/**
+ *
+ * Request message for appending multiple line items to a Questionnaire Section in a single batch transaction.
+ * Optimized for scenarios like order imports or autofill operations where dozens of items
+ * are attached simultaneously to a parent record.
+ *
+ * @generated from message Scailo.QuestionnaireSectionsServiceMultipleConditionalRulesCreateRequest
+ */
+export class QuestionnaireSectionsServiceMultipleConditionalRulesCreateRequest extends Message<QuestionnaireSectionsServiceMultipleConditionalRulesCreateRequest> {
+  /**
+   *
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
+   */
+  userComment?: string;
+
+  /**
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the parent questionnaire section to which this batch of items will be attached.
+   *
+   * @example 1024
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: uint64 questionnaire_section_id = 10;
+   */
+  questionnaireSectionId = protoInt64.zero;
+
+  /**
+   *
+   * @mandatory
+   *
+   * @description An array containing the individual line item payloads to be appended to the order.
+   *
+   * @example []
+   *
+   * @format Repeated array of QuestionnaireSectionsServiceMultipleConditionalRulesSingleton message blocks.
+   *
+   * @generated from field: repeated Scailo.QuestionnaireSectionsServiceMultipleConditionalRulesSingleton list = 11;
+   */
+  list: QuestionnaireSectionsServiceMultipleConditionalRulesSingleton[] = [];
+
+  constructor(data?: PartialMessage<QuestionnaireSectionsServiceMultipleConditionalRulesCreateRequest>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.QuestionnaireSectionsServiceMultipleConditionalRulesCreateRequest";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 10, name: "questionnaire_section_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 11, name: "list", kind: "message", T: QuestionnaireSectionsServiceMultipleConditionalRulesSingleton, repeated: true },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): QuestionnaireSectionsServiceMultipleConditionalRulesCreateRequest {
+    return new QuestionnaireSectionsServiceMultipleConditionalRulesCreateRequest().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QuestionnaireSectionsServiceMultipleConditionalRulesCreateRequest {
+    return new QuestionnaireSectionsServiceMultipleConditionalRulesCreateRequest().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QuestionnaireSectionsServiceMultipleConditionalRulesCreateRequest {
+    return new QuestionnaireSectionsServiceMultipleConditionalRulesCreateRequest().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: QuestionnaireSectionsServiceMultipleConditionalRulesCreateRequest | PlainMessage<QuestionnaireSectionsServiceMultipleConditionalRulesCreateRequest> | undefined, b: QuestionnaireSectionsServiceMultipleConditionalRulesCreateRequest | PlainMessage<QuestionnaireSectionsServiceMultipleConditionalRulesCreateRequest> | undefined): boolean {
+    return proto3.util.equals(QuestionnaireSectionsServiceMultipleConditionalRulesCreateRequest, a, b);
+  }
+}
+
+/**
+ *
+ * Request message for modifying the core transactional parameters of an existing Questionnaire Section line item.
+ * Supports updating quantities, commercial terms, delivery dates, and specifications,
+ * typically utilized during order negotiation or amendment phases.
+ *
+ * @generated from message Scailo.QuestionnaireSectionsServiceConditionalRuleUpdateRequest
+ */
+export class QuestionnaireSectionsServiceConditionalRuleUpdateRequest extends Message<QuestionnaireSectionsServiceConditionalRuleUpdateRequest> {
+  /**
+   *
+   * @optional
+   *
+   * @description Audit log comment or justification for creating this record. This is stored in the record's history for compliance purposes.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string user_comment = 1;
+   */
+  userComment?: string;
+
+  /**
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target record that needs to be updated.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: uint64 id = 2;
+   */
+  id = protoInt64.zero;
+
+  /**
+   *
+   * @mandatory
+   *
+   * @description The updated ordered quantity represented in the system's internal base unit of measure. Stored in subunits (cents).
+   *
+   * @example 10000
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: uint64 internal_quantity = 13;
+   */
+  internalQuantity = protoInt64.zero;
+
+  /**
+   *
+   * @mandatory
+   *
+   * @description The updated unique internal identifier of the Unit of Measure (UOM) requested by the client.
+   *
+   * @example 12
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: uint64 client_uom_id = 14;
+   */
+  clientUomId = protoInt64.zero;
+
+  /**
+   *
+   * @mandatory
+   *
+   * @description The updated ordered quantity represented in the client's specific unit of measure. Stored in subunits (cents).
+   *
+   * @example 5000
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: uint64 client_quantity = 15;
+   */
+  clientQuantity = protoInt64.zero;
+
+  /**
+   *
+   * @optional
+   *
+   * @description The updated client's specific alphanumeric part number, SKU, or family code.
+   *
+   * @example "CLI-SKU-992"
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string client_family_code = 16;
+   */
+  clientFamilyCode?: string;
+
+  /**
+   *
+   * @mandatory
+   *
+   * @description The updated price per unit for this item, represented in the base currency subunit (e.g., cents).
+   *
+   * @example 2500
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: uint64 unit_price = 17;
+   */
+  unitPrice = protoInt64.zero;
+
+  /**
+   *
+   * @mandatory
+   *
+   * @description The updated unique internal identifier of the tax group or tax bracket applicable to this item.
+   *
+   * @example 4
+   *
+   * @regex ^[1-9][0-9]*$
+   *
+   * @format Unsigned 64-bit integer greater than 0.
+   *
+   * @generated from field: uint64 tax_group_id = 18;
+   */
+  taxGroupId = protoInt64.zero;
+
+  /**
+   *
+   * @mandatory
+   *
+   * @description The updated discount percentage applied to this specific item, represented in subunits (e.g., 1500 for 15.00%).
+   *
+   * @example 1500
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: uint64 discount = 19;
+   */
+  discount = protoInt64.zero;
+
+  /**
+   *
+   * @mandatory
+   *
+   * @description The updated specific target delivery date for this line item.
+   *
+   * @example "2023-11-15"
+   *
+   * @regex .*
+   *
+   * @format Must be a non-empty string.
+   *
+   * @generated from field: string delivery_date = 20;
+   */
+  deliveryDate = "";
+
+  /**
+   *
+   * @optional
+   *
+   * @description Updated custom textual requirements, manufacturing notes, or specifications for fulfilling this item.
+   *
+   * @example "Requires double-reinforced packaging for international transit."
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string specifications = 21;
+   */
+  specifications?: string;
+
+  /**
+   *
+   * @optional
+   *
+   * @description A boolean flag indicating whether this specific line item is eligible to be processed for invoicing.
+   *
+   * @example true
+   *
+   * @regex ^(?:true|false)$
+   *
+   * @format Boolean true or false.
+   *
+   * @generated from field: optional bool is_invoiceable = 22;
+   */
+  isInvoiceable?: boolean;
+
+  constructor(data?: PartialMessage<QuestionnaireSectionsServiceConditionalRuleUpdateRequest>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.QuestionnaireSectionsServiceConditionalRuleUpdateRequest";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 2, name: "id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 13, name: "internal_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 14, name: "client_uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 15, name: "client_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 16, name: "client_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 17, name: "unit_price", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 18, name: "tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 19, name: "discount", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 20, name: "delivery_date", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 22, name: "is_invoiceable", kind: "scalar", T: 8 /* ScalarType.BOOL */, opt: true },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): QuestionnaireSectionsServiceConditionalRuleUpdateRequest {
+    return new QuestionnaireSectionsServiceConditionalRuleUpdateRequest().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QuestionnaireSectionsServiceConditionalRuleUpdateRequest {
+    return new QuestionnaireSectionsServiceConditionalRuleUpdateRequest().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QuestionnaireSectionsServiceConditionalRuleUpdateRequest {
+    return new QuestionnaireSectionsServiceConditionalRuleUpdateRequest().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: QuestionnaireSectionsServiceConditionalRuleUpdateRequest | PlainMessage<QuestionnaireSectionsServiceConditionalRuleUpdateRequest> | undefined, b: QuestionnaireSectionsServiceConditionalRuleUpdateRequest | PlainMessage<QuestionnaireSectionsServiceConditionalRuleUpdateRequest> | undefined): boolean {
+    return proto3.util.equals(QuestionnaireSectionsServiceConditionalRuleUpdateRequest, a, b);
+  }
+}
+
+/**
+ *
+ * Represents a complete, finalized Questionnaire Section Item entity within the system.
+ * This message encapsulates the comprehensive state of a single ordered product or service,
+ * including its relationship to the parent order, mapped quantities across internal and client units,
+ * commercial terms (pricing, taxes, discounts), delivery schedules, and derived financial calculations.
+ *
+ * **Note:** This payload is utilized in read operations to provide clients and downstream systems
+ * (like billing or fulfillment) with the exact, immutable state of an individual line item.
+ *
+ * @generated from message Scailo.QuestionnaireSectionConditionalRule
+ */
+export class QuestionnaireSectionConditionalRule extends Message<QuestionnaireSectionConditionalRule> {
+  /**
+   *
+   * @description The organization's globally unique identifier.
+   *
+   * @example "550e8400-e29b-41d4-a716-446655440000"
+   *
+   * @generated from field: string entity_uuid = 1;
+   */
+  entityUuid = "";
+
+  /**
+   *
+   * @description Standard employee and record metadata including timestamps.
+   *
+   * @generated from field: Scailo.EmployeeMetadata metadata = 2;
+   */
+  metadata?: EmployeeMetadata;
+
+  /**
+   *
+   * @description Detailed approval workflow state (Approver ID, Role, and Timestamps).
+   *
+   * @generated from field: Scailo.ApprovalMetadata approval_metadata = 3;
+   */
+  approvalMetadata?: ApprovalMetadata;
+
+  /**
+   *
+   * @description A boolean flag indicating whether this specific record requires further administrative approval.
+   *
+   * @example false
+   *
+   * @format Boolean true or false.
+   *
+   * @generated from field: bool need_approval = 4;
+   */
+  needApproval = false;
+
+  /**
+   *
+   * @description Audit log comment or justification captured during the last modification or transactional operation.
+   *
+   * @example "This is a comment for audit purposes."
+   *
+   * @generated from field: string user_comment = 5;
+   */
+  userComment = "";
+
+  /**
+   *
+   * @description The unique internal identifier of the parent questionnaire section to which this line item belongs.
+   *
+   * @example 1024
+   *
+   * @generated from field: uint64 questionnaire_section_id = 10;
+   */
+  questionnaireSectionId = protoInt64.zero;
+
+  /**
+   *
+   * @description The unique internal sequence identifier of another questionnaire section line item that this item is bundled or packaged with.
+   *
+   * @example 1025
+   *
+   * @generated from field: uint64 bundled_with_id = 11;
+   */
+  bundledWithId = protoInt64.zero;
+
+  /**
+   *
+   * @description The unique internal identifier of the family or catalog item being ordered.
+   *
+   * @example 505
+   *
+   * @generated from field: uint64 family_id = 12;
+   */
+  familyId = protoInt64.zero;
+
+  /**
+   *
+   * @description The ordered quantity represented in the system's internal base unit of measure. Stored in subunits (cents).
+   *
+   * @example 10000
+   *
+   * @generated from field: uint64 internal_quantity = 13;
+   */
+  internalQuantity = protoInt64.zero;
+
+  /**
+   *
+   * @description The unique internal identifier of the Unit of Measure (UOM) requested by the client for this item.
+   *
+   * @example 12
+   *
+   * @generated from field: uint64 client_uom_id = 14;
+   */
+  clientUomId = protoInt64.zero;
+
+  /**
+   *
+   * @description The ordered quantity represented in the client's specific unit of measure. Stored in subunits (cents).
+   *
+   * @example 5000
+   *
+   * @generated from field: uint64 client_quantity = 15;
+   */
+  clientQuantity = protoInt64.zero;
+
+  /**
+   *
+   * @description The client's specific alphanumeric part number, SKU, or family code used for their internal referencing.
+   *
+   * @example "CLI-SKU-992"
+   *
+   * @generated from field: string client_family_code = 16;
+   */
+  clientFamilyCode = "";
+
+  /**
+   *
+   * @description The agreed-upon price per unit for this item before discounts, represented in the base currency subunit (e.g., cents).
+   *
+   * @example 2500
+   *
+   * @generated from field: uint64 unit_price = 17;
+   */
+  unitPrice = protoInt64.zero;
+
+  /**
+   *
+   * @description The unique internal identifier of the tax group or tax bracket applicable to this specific line item.
+   *
+   * @example 4
+   *
+   * @generated from field: uint64 tax_group_id = 18;
+   */
+  taxGroupId = protoInt64.zero;
+
+  /**
+   *
+   * @description The discount percentage applied to this specific item, represented in subunits (e.g., 1500 for 15.00%).
+   *
+   * @example 1500
+   *
+   * @generated from field: uint64 discount = 19;
+   */
+  discount = protoInt64.zero;
+
+  /**
+   *
+   * @description The specific target delivery date for this line item.
+   *
+   * @example "2023-11-15"
+   *
+   * @generated from field: string delivery_date = 20;
+   */
+  deliveryDate = "";
+
+  /**
+   *
+   * @description Additional custom textual requirements, manufacturing notes, or specifications for fulfilling this item.
+   *
+   * @example "Requires double-reinforced packaging for international transit."
+   *
+   * @generated from field: string specifications = 21;
+   */
+  specifications = "";
+
+  /**
+   *
+   * @description A boolean flag indicating whether this specific line item is eligible to be processed for invoicing.
+   *
+   * @example true
+   *
+   * @generated from field: bool is_invoiceable = 22;
+   */
+  isInvoiceable = false;
+
+  /**
+   *
+   * @description The system-calculated net price per unit after the applied discount has been subtracted from the base unit price. Represented in the base currency subunit (e.g., cents).
+   *
+   * @example 2125
+   *
+   * @generated from field: uint64 discounted_unit_price = 30;
+   */
+  discountedUnitPrice = protoInt64.zero;
+
+  constructor(data?: PartialMessage<QuestionnaireSectionConditionalRule>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.QuestionnaireSectionConditionalRule";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "metadata", kind: "message", T: EmployeeMetadata },
+    { no: 3, name: "approval_metadata", kind: "message", T: ApprovalMetadata },
+    { no: 4, name: "need_approval", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 5, name: "user_comment", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 10, name: "questionnaire_section_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 11, name: "bundled_with_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 12, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 13, name: "internal_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 14, name: "client_uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 15, name: "client_quantity", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 16, name: "client_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 17, name: "unit_price", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 18, name: "tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 19, name: "discount", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 20, name: "delivery_date", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 21, name: "specifications", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 22, name: "is_invoiceable", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
+    { no: 30, name: "discounted_unit_price", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): QuestionnaireSectionConditionalRule {
+    return new QuestionnaireSectionConditionalRule().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QuestionnaireSectionConditionalRule {
+    return new QuestionnaireSectionConditionalRule().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QuestionnaireSectionConditionalRule {
+    return new QuestionnaireSectionConditionalRule().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: QuestionnaireSectionConditionalRule | PlainMessage<QuestionnaireSectionConditionalRule> | undefined, b: QuestionnaireSectionConditionalRule | PlainMessage<QuestionnaireSectionConditionalRule> | undefined): boolean {
+    return proto3.util.equals(QuestionnaireSectionConditionalRule, a, b);
+  }
+}
+
+/**
+ *
+ * Container message for a collection of Questionnaire Section Item records.
+ *
+ * @generated from message Scailo.QuestionnaireSectionConditionalRulesList
+ */
+export class QuestionnaireSectionConditionalRulesList extends Message<QuestionnaireSectionConditionalRulesList> {
+  /**
+   * @description An array of Questionnaire Section Item records.
+   *
+   * @generated from field: repeated Scailo.QuestionnaireSectionConditionalRule list = 1;
+   */
+  list: QuestionnaireSectionConditionalRule[] = [];
+
+  constructor(data?: PartialMessage<QuestionnaireSectionConditionalRulesList>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.QuestionnaireSectionConditionalRulesList";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "list", kind: "message", T: QuestionnaireSectionConditionalRule, repeated: true },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): QuestionnaireSectionConditionalRulesList {
+    return new QuestionnaireSectionConditionalRulesList().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QuestionnaireSectionConditionalRulesList {
+    return new QuestionnaireSectionConditionalRulesList().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QuestionnaireSectionConditionalRulesList {
+    return new QuestionnaireSectionConditionalRulesList().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: QuestionnaireSectionConditionalRulesList | PlainMessage<QuestionnaireSectionConditionalRulesList> | undefined, b: QuestionnaireSectionConditionalRulesList | PlainMessage<QuestionnaireSectionConditionalRulesList> | undefined): boolean {
+    return proto3.util.equals(QuestionnaireSectionConditionalRulesList, a, b);
+  }
+}
+
+/**
+ *
+ * Represents the request payload containing the parameter constraints required to
+ * retrieve the historical audit trail and lifecycle changes of a specific questionnaire section conditional rule record.
+ *
+ * @generated from message Scailo.QuestionnaireSectionConditionalRuleHistoryRequest
+ */
+export class QuestionnaireSectionConditionalRuleHistoryRequest extends Message<QuestionnaireSectionConditionalRuleHistoryRequest> {
+  /**
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target questionnaire section associated with the historical record.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer greater than zero.
+   *
+   * @generated from field: uint64 questionnaire_section_id = 10;
+   */
+  questionnaireSectionId = protoInt64.zero;
+
+  /**
+   *
+   * @mandatory
+   *
+   * @description The unique internal identifier of the target family associated with the historical record.
+   *
+   * @example 582
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer greater than zero.
+   *
+   * @generated from field: uint64 family_id = 11;
+   */
+  familyId = protoInt64.zero;
+
+  constructor(data?: PartialMessage<QuestionnaireSectionConditionalRuleHistoryRequest>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.QuestionnaireSectionConditionalRuleHistoryRequest";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 10, name: "questionnaire_section_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 11, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): QuestionnaireSectionConditionalRuleHistoryRequest {
+    return new QuestionnaireSectionConditionalRuleHistoryRequest().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QuestionnaireSectionConditionalRuleHistoryRequest {
+    return new QuestionnaireSectionConditionalRuleHistoryRequest().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QuestionnaireSectionConditionalRuleHistoryRequest {
+    return new QuestionnaireSectionConditionalRuleHistoryRequest().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: QuestionnaireSectionConditionalRuleHistoryRequest | PlainMessage<QuestionnaireSectionConditionalRuleHistoryRequest> | undefined, b: QuestionnaireSectionConditionalRuleHistoryRequest | PlainMessage<QuestionnaireSectionConditionalRuleHistoryRequest> | undefined): boolean {
+    return proto3.util.equals(QuestionnaireSectionConditionalRuleHistoryRequest, a, b);
+  }
+}
+
+/**
+ *
+ * Request payload structure used to search and filter Questionnaire Section Conditional Rule records.
+ * Supports pagination controls, tenancy isolation, status grouping, and text-based matching.
+ *
+ * @generated from message Scailo.QuestionnaireSectionConditionalRulesSearchRequest
+ */
+export class QuestionnaireSectionConditionalRulesSearchRequest extends Message<QuestionnaireSectionConditionalRulesSearchRequest> {
+  /**
+   *
+   * @optional
+   *
+   * @description Filter by active status. If `true`, then returns only active records. If `false`, then returns only inactive records.
+   *
+   * @example ANY
+   *
+   * @generated from field: optional Scailo.BOOL_FILTER is_active = 1;
+   */
+  isActive?: BOOL_FILTER;
+
+  /**
+   *
+   * @mandatory
+   *
+   * @description Number of records to fetch. **Critical:** Use `-1` to retrieve all records. A value of `0` will return no results. Default is `0`.
+   *
+   * @example 100
+   *
+   * @regex ^(?:-1|0|[1-9][0-9]*)$
+   *
+   * @format Must be -1 or any non-negative integer (>= -1).
+   *
+   * @generated from field: int64 count = 2;
+   */
+  count = protoInt64.zero;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Number of records to skip (offset) for pagination.
+   *
+   * @example 0
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 offset = 3;
+   */
+  offset?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Sort direction.
+   *
+   * @example DESCENDING
+   *
+   * @generated from field: optional Scailo.SORT_ORDER sort_order = 4;
+   */
+  sortOrder?: SORT_ORDER;
+
+  /**
+   *
+   * @optional
+   *
+   * @description The field used for sorting.
+   *
+   * @generated from field: optional Scailo.QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY sort_key = 5;
+   */
+  sortKey?: QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Filter by the organization UUID.
+   *
+   * @example "550e8400-e29b-41d4-a716-446655440000"
+   *
+   * @regex ^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$
+   *
+   * @format If provided, must be a valid v4 UUID in canonical hyphenated form.
+   *
+   * @generated from field: optional string entity_uuid = 6;
+   */
+  entityUuid?: string;
+
+  /**
+   *
+   * @optional
+   *
+   * @description The field used for sorting.
+   *
+   * @generated from field: optional Scailo.QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_STATUS status = 7;
+   */
+  status?: QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_STATUS;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Filter records approved ON or AFTER this UNIX timestamp.
+   *
+   * @example 1672531200
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 approved_on_start = 10;
+   */
+  approvedOnStart?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Filter records approved ON or BEFORE this UNIX timestamp.
+   *
+   * @example 1704067199
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 approved_on_end = 11;
+   */
+  approvedOnEnd?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Filter by the specific user ID who approved the records.
+   *
+   * @example 501
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 approved_by_user_id = 12;
+   */
+  approvedByUserId?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Filter by the role ID of the approver.
+   *
+   * @example 5
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 approver_role_id = 13;
+   */
+  approverRoleId?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Filter line items belonging to a specific parent sales order.
+   *
+   * @example 1024
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 sales_order_id = 20;
+   */
+  salesOrderId?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Filter by the internal identifier of the primary sales order line item that this item is bundled with.
+   *
+   * @example 1025
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 bundled_with_id = 21;
+   */
+  bundledWithId?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Filter line items belonging to a specific family.
+   *
+   * @example 505
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 family_id = 22;
+   */
+  familyId?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Filter line items requesting a specific client Unit of Measure (UOM).
+   *
+   * @example 12
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 client_uom_id = 23;
+   */
+  clientUomId?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Fuzzy match for the client's specific alphanumeric part number, SKU, or family code.
+   *
+   * @example "CLI-SKU-992"
+   *
+   * @regex .*
+   *
+   * @format May contain any UTF-8 characters or be left empty.
+   *
+   * @generated from field: optional string client_family_code = 26;
+   */
+  clientFamilyCode?: string;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Filter line items mapped to a specific tax group.
+   *
+   * @example 4
+   *
+   * @regex ^[0-9]+$
+   *
+   * @format Non-negative integer.
+   *
+   * @generated from field: optional uint64 tax_group_id = 27;
+   */
+  taxGroupId?: bigint;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Filter line items scheduled for exact delivery on this specific date.
+   *
+   * @example "2023-11-15"
+   *
+   * @regex .*
+   *
+   * @format String following the standard date format (e.g., YYYY-MM-DD).
+   *
+   * @generated from field: optional string delivery_date_exact = 28;
+   */
+  deliveryDateExact?: string;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Filter line items scheduled for delivery ON or AFTER this specific date.
+   *
+   * @example "2023-11-01"
+   *
+   * @regex .*
+   *
+   * @format String following the standard date format (e.g., YYYY-MM-DD).
+   *
+   * @generated from field: optional string delivery_date_start = 29;
+   */
+  deliveryDateStart?: string;
+
+  /**
+   *
+   * @optional
+   *
+   * @description Filter line items scheduled for delivery ON or BEFORE this specific date.
+   *
+   * @example "2023-11-30"
+   *
+   * @regex .*
+   *
+   * @format String following the standard date format (e.g., YYYY-MM-DD).
+   *
+   * @generated from field: optional string delivery_date_end = 30;
+   */
+  deliveryDateEnd?: string;
+
+  /**
+   *
+   * @optional
+   *
+   * @description The search string to match against reference IDs.
+   *
+   * @example "Medical 2023"
+   *
+   * @regex .*
+   *
+   * @format: May contain any UTF-8 characters.
+   *
+   * @generated from field: optional string search_key = 40;
+   */
+  searchKey?: string;
+
+  constructor(data?: PartialMessage<QuestionnaireSectionConditionalRulesSearchRequest>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.QuestionnaireSectionConditionalRulesSearchRequest";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "is_active", kind: "enum", T: proto3.getEnumType(BOOL_FILTER), opt: true },
+    { no: 2, name: "count", kind: "scalar", T: 3 /* ScalarType.INT64 */ },
+    { no: 3, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 4, name: "sort_order", kind: "enum", T: proto3.getEnumType(SORT_ORDER), opt: true },
+    { no: 5, name: "sort_key", kind: "enum", T: proto3.getEnumType(QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_SORT_KEY), opt: true },
+    { no: 6, name: "entity_uuid", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 7, name: "status", kind: "enum", T: proto3.getEnumType(QUESTIONNAIRE_SECTION_CONDITIONAL_RULE_STATUS), opt: true },
+    { no: 10, name: "approved_on_start", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 11, name: "approved_on_end", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 12, name: "approved_by_user_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 13, name: "approver_role_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 20, name: "sales_order_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 21, name: "bundled_with_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 22, name: "family_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 23, name: "client_uom_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 26, name: "client_family_code", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 27, name: "tax_group_id", kind: "scalar", T: 4 /* ScalarType.UINT64 */, opt: true },
+    { no: 28, name: "delivery_date_exact", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 29, name: "delivery_date_start", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 30, name: "delivery_date_end", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+    { no: 40, name: "search_key", kind: "scalar", T: 9 /* ScalarType.STRING */, opt: true },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): QuestionnaireSectionConditionalRulesSearchRequest {
+    return new QuestionnaireSectionConditionalRulesSearchRequest().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QuestionnaireSectionConditionalRulesSearchRequest {
+    return new QuestionnaireSectionConditionalRulesSearchRequest().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QuestionnaireSectionConditionalRulesSearchRequest {
+    return new QuestionnaireSectionConditionalRulesSearchRequest().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: QuestionnaireSectionConditionalRulesSearchRequest | PlainMessage<QuestionnaireSectionConditionalRulesSearchRequest> | undefined, b: QuestionnaireSectionConditionalRulesSearchRequest | PlainMessage<QuestionnaireSectionConditionalRulesSearchRequest> | undefined): boolean {
+    return proto3.util.equals(QuestionnaireSectionConditionalRulesSearchRequest, a, b);
+  }
+}
+
+/**
+ *
+ * Paginated response packet containing a subset of Questionnaire Section Conditional Rule records.
+ * Includes complete operational state parameters for rendering frontend data grids and tables.
+ *
+ * @generated from message Scailo.QuestionnaireSectionsServicePaginatedConditionalRulesResponse
+ */
+export class QuestionnaireSectionsServicePaginatedConditionalRulesResponse extends Message<QuestionnaireSectionsServicePaginatedConditionalRulesResponse> {
+  /**
+   *
+   * @description Number of records returned in the current response slice.
+   *
+   * @example 50
+   *
+   * @generated from field: uint64 count = 1;
+   */
+  count = protoInt64.zero;
+
+  /**
+   *
+   * @description The offset provided in the request.
+   *
+   * @example 0
+   *
+   * @generated from field: uint64 offset = 2;
+   */
+  offset = protoInt64.zero;
+
+  /**
+   *
+   * @description The total number of records matching the criteria.
+   *
+   * @example 1250
+   *
+   * @generated from field: uint64 total = 3;
+   */
+  total = protoInt64.zero;
+
+  /**
+   *
+   * @description The array of records for the current page.
+   *
+   * @generated from field: repeated Scailo.QuestionnaireSectionConditionalRule payload = 4;
+   */
+  payload: QuestionnaireSectionConditionalRule[] = [];
+
+  constructor(data?: PartialMessage<QuestionnaireSectionsServicePaginatedConditionalRulesResponse>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "Scailo.QuestionnaireSectionsServicePaginatedConditionalRulesResponse";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "count", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 2, name: "offset", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 3, name: "total", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+    { no: 4, name: "payload", kind: "message", T: QuestionnaireSectionConditionalRule, repeated: true },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): QuestionnaireSectionsServicePaginatedConditionalRulesResponse {
+    return new QuestionnaireSectionsServicePaginatedConditionalRulesResponse().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): QuestionnaireSectionsServicePaginatedConditionalRulesResponse {
+    return new QuestionnaireSectionsServicePaginatedConditionalRulesResponse().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): QuestionnaireSectionsServicePaginatedConditionalRulesResponse {
+    return new QuestionnaireSectionsServicePaginatedConditionalRulesResponse().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: QuestionnaireSectionsServicePaginatedConditionalRulesResponse | PlainMessage<QuestionnaireSectionsServicePaginatedConditionalRulesResponse> | undefined, b: QuestionnaireSectionsServicePaginatedConditionalRulesResponse | PlainMessage<QuestionnaireSectionsServicePaginatedConditionalRulesResponse> | undefined): boolean {
+    return proto3.util.equals(QuestionnaireSectionsServicePaginatedConditionalRulesResponse, a, b);
   }
 }
 

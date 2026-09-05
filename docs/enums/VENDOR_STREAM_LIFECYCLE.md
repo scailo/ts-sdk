@@ -31,7 +31,7 @@ from enum value: VENDOR_STREAM_LIFECYCLE_ANY_UNSPECIFIED = 0;
 
 #### Defined in
 
-[src/vendor_streams.scailo_pb.ts:22](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/vendor_streams.scailo_pb.ts#L22)
+[src/vendor_streams.scailo_pb.ts:22](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/vendor_streams.scailo_pb.ts#L22)
 
 ___
 
@@ -47,7 +47,7 @@ from enum value: VENDOR_STREAM_LIFECYCLE_CANCELLED = 3;
 
 #### Defined in
 
-[src/vendor_streams.scailo_pb.ts:43](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/vendor_streams.scailo_pb.ts#L43)
+[src/vendor_streams.scailo_pb.ts:43](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/vendor_streams.scailo_pb.ts#L43)
 
 ___
 
@@ -63,7 +63,7 @@ from enum value: VENDOR_STREAM_LIFECYCLE_COMPLETED = 2;
 
 #### Defined in
 
-[src/vendor_streams.scailo_pb.ts:36](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/vendor_streams.scailo_pb.ts#L36)
+[src/vendor_streams.scailo_pb.ts:36](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/vendor_streams.scailo_pb.ts#L36)
 
 ___
 
@@ -79,4 +79,4 @@ from enum value: VENDOR_STREAM_LIFECYCLE_OPEN = 1;
 
 #### Defined in
 
-[src/vendor_streams.scailo_pb.ts:29](https://github.com/scailo/ts-sdk/blob/c6e06d09250720c006b2c1e8bd2b3c90c5233eb7/src/vendor_streams.scailo_pb.ts#L29)
+[src/vendor_streams.scailo_pb.ts:29](https://github.com/scailo/ts-sdk/blob/f37a917056fa07ad1e724eb2186f44b6118185e2/src/vendor_streams.scailo_pb.ts#L29)

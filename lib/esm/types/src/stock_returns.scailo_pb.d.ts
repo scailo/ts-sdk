@@ -1823,6 +1823,21 @@ export declare class StockReturnItemsSearchRequest extends Message<StockReturnIt
      * @generated from field: string search_key = 40;
      */
     searchKey: string;
+    /**
+     *
+     * @optional
+     *
+     * @description Filter line items by the unique internal identifier of the stock issuance.
+     *
+     * @example 1024
+     *
+     * @regex ^[1-9][0-9]*$
+     *
+     * @format Unsigned 64-bit integer greater than 0.
+     *
+     * @generated from field: uint64 stock_issuance_id = 200;
+     */
+    stockIssuanceId: bigint;
     constructor(data?: PartialMessage<StockReturnItemsSearchRequest>);
     static readonly runtime: typeof proto3;
     static readonly typeName = "Scailo.StockReturnItemsSearchRequest";
